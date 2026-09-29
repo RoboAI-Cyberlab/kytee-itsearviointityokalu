@@ -1,0 +1,155 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Tilannekuva
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- poikkeamatilanteiden käsittelyn asiantuntija
+- kyberturvallisuusvalvomon (SOC) johto
+- IT- ja OT-omaisuuden lokituksesta ja valvonnasta vastaava asiantuntija
+</Roles>
+
+---
+<ObjectiveTitle name="situation-1">Lokienhallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="situation-1a">Lokitietoa kerätään toiminnon kannalta tärkeistä laitteista, ohjelmistoista ja tietovarannoista.</PracticeTitle>
+
+### Merkitys
+
+Lokienhallinta on keskeinen osa organisaation kyberturvallisuuden tilannekuvaa. Se mahdollistaa tapahtumien seurannan, poikkeamien tunnistamisen ja reagoinnin mahdollisiin uhkiin. Hyvin toteutettu lokitus auttaa ymmärtämään järjestelmän normaalia toimintaa sekä havaitsemaan ja analysoimaan mahdollisia tietoturvapoikkeamia.
+
+Tässä arvioidaan, onko organisaatio ottanut käyttöön järjestelmällisen lokien keräämisen toiminnon kannalta tärkeistä omaisuuseristä. Omaisuuserät voivat sisältää: 
+- IT-laitteet ja -järjestelmät (esim. palvelimet, työasemat, verkkolaitteet) 
+- OT-järjestelmät (esim. teollisuusautomaatiolaitteet, IoT-laitteet) 
+- Tietovarannot (esim. tietokannat, pilvipalvelut) 
+- Ohjelmistot (esim. käyttöjärjestelmät, kriittiset sovellukset)
+
+Lokitettavia tapahtumia voivat olla: 
+- Pääsynhallintaan liittyvät tapahtumat: Henkilöiden, laitteiden tai ohjelmistojen suorittamat kirjautumiset ja pääsyyritykset. 
+- Poikkeavat tapahtumat: Odottamattomat yhteydet, epäilyttävät prosessit tai järjestelmän häiriöt. 
+- Konfiguraatiomuutokset: Tärkeiden laitteiden ja ohjelmistojen asetusten muutokset. 
+- Verkkoyhteyksiin liittyvät tapahtumat: Uudet laitteet, jotka liittyvät verkkoon ilman lupaa. 
+- Resurssien käyttö: Esim. palvelinten, sovellusten tai tietokantojen ylikuormitus tai odottamaton sammutus.
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Lokitusta ei ole käytössä tai sen kattavuudesta ei ole tietoa.
+- **Osittain toteutettu**: Lokitusta tehdään joissain järjestelmissä tai vain tietyn tyyppisille tapahtumille, mutta se ei kata kaikkia tärkeitä omaisuuseriä.
+- **Enimmäkseen toteutettu**: Lokitusta tehdään kattavasti, mutta siinä voi olla joitain puutteita (esim. puuttuvia kohteita tai epäyhtenäisiä käytäntöjä).
+- **Täysin toteutettu**: Lokitusta tehdään järjestelmällisesti kaikista toiminnon kannalta tärkeistä laitteista, ohjelmistoista ja tietovarannoista. Lokit ovat saatavilla analysointia varten, ja niitä valvotaan aktiivisesti.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialailta
+
+> **Elintarvikeyritys** kerää lokitietoa tuotantolinjan valvontajärjestelmistä, joissa seurataan automaation toimintaa ja mahdollisia häiriöitä.
+
+> **Kuljetusyritys** tallentaa ajoneuvojen GPS-seurannan ja ajoneuvojen hallintajärjestelmien tapahtumalokit epäilyttävien liikkeiden tai poikkeamien havaitsemiseksi.
+
+> **Vesilaitos** lokittaa automaatiojärjestelmän muutokset ja havaitsee, jos kriittisiin järjestelmiin tehdään luvattomia muutoksia.
+
+> **Sähköyhtiö** kerää lokitietoa sähköverkkoon liittyvistä tapahtumista, kuten odottamattomista yhteyksistä tai epäilyttävistä käyttöoikeusyrityksistä.
+
+### Kehitysehdotuksia: 
+- Lokienhallintapolitiikka: Määritä selkeät käytännöt siitä, mitä tietoja lokitetaan ja kuinka kauan niitä säilytetään. 
+- Automaattinen analyysi: Hyödynnä SIEM (Security Information and Event Management) -järjestelmää tai vastaavaa lokien analysointityökalua, jotta poikkeamat havaitaan nopeasti. 
+- Säännöllinen tarkastelu: Varmista, että lokitietoja tarkastellaan säännöllisesti mahdollisten uhkien ja väärinkäytösten havaitsemiseksi. 
+- Varmuuskopiot: Lokitietojen säilytys ja varmuuskopiointi on tärkeää erityisesti tutkinnan mahdollistamiseksi kyberpoikkeamatilanteissa. 
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Ota käyttöön tärkeiden omaisuuserien kirjaaminen/lokitus. Esimerkkejä toiminnoista, joita  voidaan kirjata/lokittaa, ovat henkilöiden, esineiden ja yhteisöjen toimet, kun ne käyttävät omaisuuseriä, toimintojen suorittamista häristevät tapahtumat, omaisuuserien tehtävät muutokset, jotka poikkeavat peruskonfiguraatioista, odottamattomat omaisuuserät, jotka yhdistyvät verkkoihin, ja kaikki odottamattomat tai epäilyttävät toiminnot. Tähän voi sisältyä myös tahattomasti sammutetut, poistetut tai ""resurssit käyttäneet"" virtualisoidut omaisuuserät.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ASSET-1a:n toteuttaminen tarjoaa syötteen, joista voi olla hyötyä tämän käytännön toteutumisen arvionnissa ja toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: SITUATION-1a, SITUATION-1b, SITUATION-1c, SITUATION-1d, SITUATION-1f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="situation-2">Ympäristöjen valvonta</ObjectiveTitle>
+---
+
+<PracticeTitle name="situation-2a">Lokitietojen tarkastelua ja muuta kyberturvallisuusvalvontaa tehdään.</PracticeTitle>
+
+### Merkitys  
+Tapahtumalokien säännöllinen tarkastelu ja katselmus (manuaalisesti tai automaattisilla työkaluilla) on kriittinen valvontatoimi, joka on olennaisen tärkeää tilannetietoisuuden ylläpidon kannalta. Sen avulla voidaan esimerkiksi havaita kyberturvallisuustapahtumia tai -heikkouksia.
+
+Lokit voivat tarjota tietoa muun muassa seuraavista ilmiöistä:  
+- **Käyttäjäympäristön muutokset**, jotka voivat vaikuttaa pääsyoikeuksiin tai aiheuttaa hälytyksiä tärkeiden järjestelmien käytettävyydessä.  
+- **Poikkeamat järjestelmien toiminnassa**, kuten tahattomasti pois päältä kytketyt tai resurssinsa loppuun käyttäneet virtualisoidut omaisuuserät.  
+- **Tietoturvapäivitysten ja -korjausten tilanne**, kuten havaitseminen siitä, että järjestelmäpäivityksiä ei ole sovellettu, koska laitteet olivat pois päältä tarkistushetkellä.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Lokitusta ei ole käytössä tai sen kattavuudesta ei ole tietoa.  
+- **Osittain toteutettu**: Lokitusta tehdään joissain järjestelmissä, mutta se ei kata kaikkia tärkeitä omaisuuseriä. Manuaalisia tai automatisoituja tarkastuksia tehdään harvakseltaan.  
+- **Enimmäkseen toteutettu**: Lokitusta tehdään kattavasti ja analysointiprosessit ovat säännöllisiä, mutta vielä on joitakin puutteita (esim. puuttuvia kohteita tai epäyhtenäisiä käytäntöjä).  
+- **Täysin toteutettu**: Lokitusta tehdään järjestelmällisesti kaikista toiminnon kannalta tärkeistä laitteista, ohjelmistoista ja tietovarannoista. Automatisoidut valvontatyökalut hälyttävät poikkeamista ja tiedot integroidaan osaksi kyberturvallisuusprosessia.  
+</AnswerOptions>  
+
+### **Esimerkkejä eri toimialoilta**  
+
+> **Elintarvikeyritys:** Seuraa tuotantolinjojen valvontajärjestelmien lokitietoja havaitakseen poikkeamia, kuten luvattomia pääsyyrityksiä tai järjestelmämuutoksia, jotka voivat vaarantaa elintarviketurvallisuuden.  
+
+> **Kuljetusliike:** Käyttää GPS-seurantalaitteiden ja ajoneuvojen telemetriatietojen lokeja tarkkaillakseen mahdollisia kyberhyökkäyksiä, kuten reititystietojen manipulointia tai luvattomia yhteydenottoja ajoneuvojen järjestelmiin.  
+
+> **Sähköyhtiö:** Valvoo sähköverkkojen hallintajärjestelmien tapahtumalokeja tunnistaakseen palvelunestohyökkäykset tai järjestelmien luvattomat muutokset.  
+
+> **Vesilaitos:** Seuraa pumppuasemien ja SCADA-järjestelmien lokitietoja varmistaakseen, että automaatiojärjestelmät toimivat suunnitellusti ja ettei kriittiseen infrastruktuuriin ole kohdistunut kyberuhkia.  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tapahtumalokien säännöllinen tarkastelu ja katselmus (manuaalisesti tai automaattisilla työkaluilla) on kriittinen valvontatoimi, joka on olennaisen tärkeää tilannetietoisuuden ylläpidon kannalta (esim. havaitsemalla kyberturvallisuustapahtumia tai -heikkouksia). Lokit voivat esimerkiksi antaa tietoa käyttäjäympäristön muutoksista, jotka voivat tarvittaessa johtaa muutoksiin pääsyoikeuksissa tai aiheuttaa hälytyksiä, kun toiminnon suorittamisen kannalta tärkeät järjestelmät eivät ole käytettävissä. Toinen esimerkki tästä ovat tahattomasti pois päältä kytketyt, poistetut tai ""resurssit loppuun käyttäneet"" virtualisoidut omaisuuserät, jotka voivat laukaista hälytyksiä, joista järjestelmänvalvojat voivat päätellä, että järjestelmäpäivityksistä tai -korjauksista ei ehkä ole sovellettu näihin järjestelmiin niiden ollessa pois päältä tai kykenemättöminä reagoimaan.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: SITUATION-2a, SITUATION-2b, SITUATION-2c, SITUATION-2f, SITUATION-2g.
+</CollapsibleSection>
+
+<PracticeTitle name="situation-2b">IT- ja OT-ympäristöjen valvontatietoja katselmoidaan säännöllisesti poikkeavan toiminnan ja mahdollisten kybertapahtumien varalta.</PracticeTitle>
+
+### Merkitys
+
+Säännöllinen valvontatietojen analysointi on olennainen osa organisaation kyberturvallisuuden tilannekuvaa. Poikkeavalla toiminnalla tarkoitetaan kaikkea, mikä on epäjohdonmukaista, yllättävää tai odottamatonta organisaation normaaliin toimintaympäristöön nähden. Valvontatietojen katselmointi auttaa tunnistamaan kyberturvallisuustapahtumat varhaisessa vaiheessa ja estämään niiden haitalliset vaikutukset.
+
+Valvonnan osa-alueita ovat:
+- **Verkkolokitiedot:** luvattomat yhteydet ja epätavalliset liikennemallit.
+- **Järjestelmäkäyttäytyminen:** palveluiden odottamattomat kaatumiset tai resurssien epätavallinen käyttö.
+- **Anturilukemat:** poikkeamat normaalista toiminnasta, kuten laitteiston tai prosessien epänormaalit arvot.
+- **Henkilöstön havainnot:** valvomohenkilöstön tai muun operatiivisen henkilöstön tekemät epätavalliset havainnot.
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Valvontatietoja ei tarkastella säännöllisesti, tai ei ole tietoa siitä, miten tätä tehdään.
+- **Osittain toteutettu**: Joitain valvontatietoja tarkastellaan, mutta se on satunnaista tai koskee vain tiettyjä järjestelmiä.
+- **Enimmäkseen toteutettu**: Valvontatietoja tarkastellaan säännöllisesti, mutta kattavuudessa tai käytännöissä on vielä joitakin puutteita.
+- **Täysin toteutettu**: IT- ja OT-ympäristöjen valvontatiedot katselmoidaan järjestelmällisesti, ja tarkastelut ovat osa organisaation vakiintuneita prosesseja. Epäilyttävistä havainnoista raportoidaan ja ne analysoidaan osana kyberturvallisuustoimintaa.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys:** Tarkastelee tuotantolinjojen automaatiojärjestelmien anturilukemia poikkeamien havaitsemiseksi ja valvoo IT-verkkolokia luvattomien pääsyyritysten tunnistamiseksi.
+
+> **Kuljetusliike:** Seuraa ajoneuvoseurantajärjestelmien lokitietoja havaitakseen epätavalliset GPS-signaalien muutokset, jotka voivat viitata tietoturvaongelmiin.
+
+> **Sähköyhtiö:** Monitoroi SCADA-järjestelmien lokitietoja ja henkilöstöhavaintoja varmistaakseen, ettei järjestelmään ole tehty luvattomia muutoksia.
+
+> **Vesilaitos:** Käyttää reaaliaikaista verkonvalvontaa tunnistaakseen poikkeavan tiedonsiirron vedenkäsittelylaitoksen hallintajärjestelmissä.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Poikkeavalla toiminnalla tarkoitetaan toimintaa, joka on epäjohdonmukaista tai poikkeaa tavanomaisesta, normaalista tai odotetusta. Valvonnan pitäisi tuottaa tietoa, jota organisaatio tarvitsee tunnistakseen, onko siihen kohdistunut kyberturvallisuustapahtuma, joka saattaa vaatia toimia organisaatioon kohdistuvien vaikutusten estämiseksi. Tähän voi kuulua esimerkiksi verkkolokitietojen tarkastelu, jotta voidaan tunnistaa luvattomat yhteydet toimintojen toteuttamisen kannalta tärkeisiin omaisuuseriin (lsitteisiin, tietovarantoihin). Tähän voi kuulua myös valvomohenkilöstön ja muun operatiivisen henkilöstön havainnot epätavallisista järjestelmävasteista, anturilukemista tai muusta selittämättömästä toiminnasta operatiivisissa järjestelmissä. Tämän käytännön tarkoituksena on sisällyttää ihmiset osaksi organisaation tapaa toteuttaa järjestelmien valvonta.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: SITUATION-2a, SITUATION-2b, SITUATION-2c, SITUATION-2f, SITUATION-2g.
+</CollapsibleSection>
+
+---
+
+_Ohjetta päivitetty: 28.1.2025_

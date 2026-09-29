@@ -1,0 +1,263 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Riskhantering
+
+<Roles>
+- Ledning för cybersäkerhet
+- IT-ledning
+- OT-ledning
+- Specialist för företagets riskhantering
+- Specialist för cybersäkerhetsrisk
+- Representant för intern revision
+- Representant för juridiska avdelningen
+</Roles>
+
+---
+<ObjectiveTitle name="risk-1">Plan för hantering av cyberrisker</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-1a">Organisationens hantering av cyberrisker vägleds av en plan (till exempel en strategi eller liknande policy på ledningsnivå). Utveckling och underhåll behöver inte vara systematiskt och regelbundet</PracticeTitle>
+
+### Fråga
+
+Har organisationen en tydlig plan eller strategi som definierar hur cyberrisker identifieras, bedöms, hanteras och övervakas? Innehåller planen vägledning om hur den stödjer organisationens bredare mål och definierar acceptabla risknivåer? Presenterar strategin konkreta metoder för att svara på risker, såsom att minska, överföra, undvika eller acceptera dem?
+
+### Betydelse
+
+En plan för hantering av cyberrisker är en nyckelkomponent i organisationens cybersäkerhetsprogram. Den skapar en gemensam syn på cyberrisker och ger vägledning för att hantera dem. En väldefinierad plan hjälper organisationen att prioritera resurser, identifiera de viktigaste riskerna och förbereda sig för störningar. Den stödjer också uppnåendet av organisationens strategiska mål genom att säkerställa att cyberrisker hanteras som en del av den bredare riskhanteringsstrategin.
+
+<Box>
+### Svarsinstruktioner
+
+Bedöm i vilken utsträckning organisationens plan för hantering av cyberrisker finns och är funktionell:
+- **Inte implementerad eller ingen information**: Ingen plan finns eller information är otillgänglig.
+- **Delvis implementerad**: En plan finns, men den är ofullständig eller används inte konsekvent.
+- **Mestadels implementerad**: Planen är omfattande, men dess implementering eller uppdatering behöver förbättras.
+- **Helt implementerad**: Planen är omfattande, uppdaterad och används systematiskt.
+</Box>
+
+### Exempel
+
+Företaget har en strategi för hantering av cyberrisker som inkluderar mål och en plan för riskidentifiering, analys, hantering och övervakning. Strategin täcker riskbedömningskriterier, prioriteringsprocesser och åtgärder såsom att överföra risk genom försäkring och minska risk genom tekniska medel.
+
+Även om strategiunderhåll ännu inte är helt systematiskt, har de viktigaste riskområdena, såsom störningar i försörjningskedjan och risker för dataintrång, identifierats. Till exempel är ERP- och OT-systemsårbarhetsanalys en del av strategiinriktad verksamhet.
+
+Företaget planerar att utveckla strategin genom att implementera en regelbunden bedömningsprocess som säkerställer dess fortsatta aktualitet. Målet är också att öka personalens cybersäkerhetsutbildning och utveckla riskhanteringsprocesser så att organisationen kan reagera mer effektivt på föränderliga hot.
+
+<CollapsibleSection title="Exempeldokument">
+### Strategi för hantering av cybersäkerhetsrisker - Livsmedel AB
+
+### Introduktion
+
+Livsmedelsföretag AB verkar på internationella livsmedelsmarknader och är engagerat i att säkerställa verksamhetskontinuitet, kundinformationssäkerhet och efterlevnad av lagstiftning och standarder. Denna strategi för hantering av cybersäkerhetsrisker beskriver företagets tillvägagångssätt för att identifiera, analysera, hantera och svara på cyberrisker.
+
+### Strategimål
+
+- Identifiera, bedöma och prioritera Livsmedel ABs cyberrisker.
+- Utveckla och underhålla processer som säkerställer effektiv respons på cyberhot.
+- Skydda affärskritisk information, processer och system.
+- Öka personalens cybersäkerhetsmedvetenhet och kompetens.
+- Förbereda för kontinuitetshantering i cyberhotsituationer.
+
+### Åtgärder och aktiviteter
+
+1. Cyberriskidentifiering
+
+- Skapa och kontinuerligt uppdatera en omfattande riskbedömning av livsmedelsproduktion, försörjningskedja och kunddataskydd.
+- Använd branschhotmodeller och aktuella rapporter (t.ex. CERT och ENISA).
+- Genomför regelbundna sårbarhetsbedömningar.
+
+2. Cyberriskanalys och prioritering
+
+- Risker grupperas i tre huvudkategorier:
+  a) Affärsprocesser (t.ex. störningar i försörjningskedjan).
+  b) Informationsteknikhot (t.ex. ransomware-attacker).
+  c) Regelefterlevnad (t.ex. GDPR).
+- Prioritering utförs med en riskmatris: påverkan (hög/låg) x sannolikhet (hög/låg).
+- Riskanalysverktyg såsom ISO/IEC 27005-standardmetoder används.
+
+3. Åtgärder
+
+- Utveckla reaktiva och proaktiva driftsmodeller.
+- Använd följande responsmetoder:
+  - Riskun dvikande (t.ex. ta bort onödiga IT-system).
+  - Risköverföring (t.ex. försäkring).
+  - Riskhantering (t.ex. implementera nya skyddsmekanismer).
+  - Riskacceptans (om påverkan är liten).
+
+4. Personalutbildning
+
+- Genomför årlig informationssäkerhetsutbildning.
+- Organisera cyberövningar (t.ex. simulerade phishing-attacker).
+
+5. Övervakning och utvärdering
+
+- Övervaka effektiviteten av riskhanteringsåtgärder regelbundet.
+- Genomför halvårsvisa revisioner och ledningsrapportering.
+
+### Strategiimplementering
+
+| Uppgift                                | Ansvarig person                 | Tidslinje  |
+| -------------------------------------- | ------------------------------- | ---------- |
+| Förberedelse av riskbedömning          | Informationssäkerhetschef       | Månad 1    |
+| Implementering av sårbarhetsbedömning  | IT-avdelning                    | Kontinuerlig |
+| Organisation av personalutbildning     | HR-avdelning                    | Månad 3    |
+| Skapande av responsprocess             | Riskhanteringsteam              | Månader 2-4 |
+| Strategirevision                       | Extern revisor                  | Månad 6    |
+
+### Övervakning och kontinuerlig förbättring
+
+Strategin utvärderas och uppdateras årligen, eller när betydande förändringar inträffar i hotmiljön eller verksamheten. Alla identifierade brister dokumenteras och åtgärdas omedelbart.
+
+### Godkännande
+
+Denna strategi har godkänts av Livsmedel ABs ledningsgrupp. Dokumentet vägleder alla företagsaktörer i cybersäkerhetsfrågor.
+Datum: [xx.xx.xxxx]
+Underskrift: [Ledningsgruppens ordförande]
+</CollapsibleSection>
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Organisationen utvecklar, implementerar och underhåller en strategi/handlingsplan för hantering av cybersäkerhetsrisker som, i sin enklaste form, inkluderar en lista över mål för hantering av cyberrisker och relaterade åtgärder, aktiviteter och uppgifter, samt en plan för deras implementering.
+
+I ett C2M2-baserat program kan handlingsplanens områden vara i linje med C2M2 RISK-domänens mål och relaterade metoder. Till exempel kan strategin inkludera viktig information om organisationens processer för att identifiera, analysera och svara på cyberrisker. Mer detaljerade detaljer kan inkludera högnivåkategorier för att aggregera risker, kriterier för att bestämma cyberriskprioritet, och en sammanfattning av riskhanteringsmetoder tillämpade på risker, och fördelning av strategiimplementeringsansvar.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: RISK-1a, RISK-1b, RISK-1c, RISK-1g, RISK-1h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-2">Cyberriskidentifiering</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-2a">Cyberrisker identifieras. Aktivitet behöver inte vara systematisk och regelbunden</PracticeTitle>
+
+### Fråga
+
+Har organisationen en process för att identifiera cyberrisker, såsom cyberhot, systemsårbarheter och störningar som kan äventyra tillgångs- och tjänsteoperativ kapacitet?
+
+Hur identifierar organisationen cyberrisker såsom cyberhot, sårbarheter eller störningshändelser som påverkar dess tillgångar och tjänsteoperativ kapacitet? Är identifieringen omfattande och sträcker den sig till alla organisationens nyckelfunktioner?
+
+### Betydelse
+
+Cyberriskidentifiering är en nyckelkomponent i organisationens cybersäkerhetshantering och riskhanteringsprocess. Den skapar grunden för effektiv riskbedömning, prioritering och hantering. Utan en tydlig identifieringsprocess riskerar organisationen att betydande hot förbises, vilket kan leda till affärsstörningar, säkerhetsbrott eller bristande regelefterlevnad.
+
+### Svarsinstruktioner
+
+Bedöm i vilken utsträckning organisationen identifierar cyberrisker:
+- **Inte implementerad eller ingen information**: Cyberrisker identifieras inte, och ingen process finns.
+- **Delvis implementerad**: Vissa cyberrisker identifieras, men processen är oklar, slumpmässig eller fokuserar endast på vissa hot.
+- **Mestadels implementerad**: Cyberriskidentifiering täcker de flesta kritiska hot, men metoder behöver förbättras, och processen är inte helt regelbunden.
+- **Helt implementerad**: Cyberriskidentifiering är omfattande, regelbunden och systematisk.
+
+### Exempel
+
+Företaget identifierar cyberrisker, såsom cyberhot, sårbarheter och störningar som kan påverka dess kritiska tillgångar och system. Processen är ännu inte helt systematisk, men viktiga hot, såsom dataintrångsförsök och programvaruuppdateringssårbarheter, övervakas aktivt. Identifiering baseras på flera källor, såsom branschhotrapporter, programvaruleverantörsbulletiner och interna systemanalysresultat. De mest betydande riskerna dokumenteras och utvärderas från fall till fall, men en regelbunden bedömningspraxis saknas.
+
+Företaget planerar att utveckla ett mer systematiskt tillvägagångssätt där cyberrisker utvärderas och övervakas kontinuerligt. Detta stödjer organisationens mål att förbättra motståndskraft och skydda verksamhetskontinuitet.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Cyberriskidentifiering är en väsentlig del av riskhantering. Det kräver att organisationen identifierar hottyper, sårbarheter och störningar som kan utgöra en risk för tillgångs- och tjänsteoperativ kapacitet. Identifierade risker bildar baslinjen från vilken en kontinuerlig riskhanteringsprocess kan skapas och hanteras.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: RISK-2a, RISK-2b, RISK-2c, RISK-2g, RISK-2h, RISK-2i, RISK-2j, RISK-2k, RISK-2l, RISK-2m.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-3">Riskanalys</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-3a">Cyberrisker prioriteras baserat på deras bedömda påverkan</PracticeTitle>
+
+### Fråga
+
+Hur analyserar organisationen identifierade cyberrisker och bedömer deras potentiella påverkan på verksamheten? Används analysresultat i riskprioritering, och hur bestäms prioriteringar baserat på till exempel säkerhets-, operativa och finansiella påverkningar? (T.ex. återställningskostnader, driftstoppskostnader, dataförlustkostnader.)
+
+### Betydelse
+
+Cyberriskanalys är en kritisk del av organisationens cybersäkerhetshantering. Det hjälper till att förstå riskallvarlighet och prioritera åtgärder som kan förhindra eller mildra deras påverkan. Riskbedömning och prioritering gör det möjligt för organisationen att allokera resurser effektivt till de mest kritiska frågorna, såsom dataintrång, systemavbrott eller finansiella skador som hotar verksamhetskontinuitet. Väl genomförd analys och prioritering stödjer strategisk planering av cybersäkerhet och förbättrar organisationens förmåga att hantera och förhindra risker.
+
+### Svarsinstruktioner
+
+Bedöm hur omfattande organisationen analyserar och prioriterar cyberrisker:
+- **Inte implementerad eller ingen information**: Riskanalys och prioritering används inte, eller det finns ingen information om det.
+- **Delvis implementerad**: Riskanalys och prioritering har påbörjats, men metoderna är inte konsekventa eller omfattande.
+- **Mestadels implementerad**: Riskanalys och prioritering används i stor utsträckning, men det kan finnas vissa luckor i processen, såsom analysdetalj eller prioriteringskonsistens.
+- **Helt implementerad**: Riskanalys och prioritering är systematisk och omfattande, och tillämpas konsekvent i hela organisationen.
+
+### Exempel
+
+Företaget har implementerat en cyberriskanalysprocess där risker klassificeras på en trestegs skala: hög, medel och låg. Till exempel bedöms kunddataskydd som hög risk eftersom det kan orsaka betydande finansiella och säkerhetspåverkningar. Produktionsanläggningens programvarufel klassificeras som medel eftersom de kan orsaka korta produktionsförseningar. Riskprioritering beaktar också finansiella påverkningar, såsom driftstoppskostnader.
+
+Även om företaget redan har inkorporerat riskanalys i sin verksamhet, behöver processen utveckling för mindre risker, och målet är att utöka analysen för att täcka alla organisatoriska delar.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Den potentiella påverkan av identifierade risker på organisationen bör bedömas och användas för att prioritera cyberrisker. Högre prioritet cyberrisker bör få mer uppmärksamhet vid bestämning av möjliga begränsningsåtgärder eller motåtgärder. Prioritering bör fokusera på kriterier som anses viktiga för verksamheten, såsom säkerhetspåverkningar, operativa påverkningar och finansiella påverkningar (t.ex. återställningskostnader, potentiella driftstopps- eller förlorad datakostnader). Prioritering kan använda kvalitativa metoder för att indikera relativ påverkansnivå (t.ex. hög, medel, låg).
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: RISK-3a, RISK-3b.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-4">Riskrespons</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-4a">Riskresponsåtgärder (såsom riskreducering, acceptans, undvikande eller överföring) används för cyberrisker.</PracticeTitle>
+
+### Fråga
+
+Har organisationen tydliga responsåtgärder för cyberrisker, såsom riskreducering, acceptans, undvikande eller överföring? Hur bestämmer organisationen hanteringsmetoden för varje identifierad risk, och utvärderas effektiviteten och adekvatheten av implementerade åtgärder regelbundet?
+
+Har organisationen tydliga procedurer för hur man svarar på cyberrisker? Till exempel, används riskreducering, acceptans, undvikande eller överföring, och beslutas varje risk individuellt om hur man ska hantera? Dessutom, finns det regelbunden utvärdering av om implementerade åtgärder är adekvata och effektiva?
+
+### Betydelse
+
+Responsåtgärder för hantering av cyberrisker är en nyckelkomponent i organisationens omfattande riskhantering. De möjliggör riskhantering på ett prioriterat och systematiskt sätt, vilket förbättrar organisationens motståndskraft och förmåga att anpassa sig till föränderliga hotlandskap. Adekvata och effektiva riskhanteringsåtgärder minskar avsevärt affärsskador och säkerställer organisatorisk kontinuitet i kritiska situationer. Regelbunden utvärdering hjälper till att säkerställa att åtgärder är aktuella och lämpliga i en föränderlig driftmiljö.
+
+### Svarsinstruktioner
+
+Bedöm i vilken utsträckning organisationen har utvecklat och implementerat tydliga responsåtgärder för hantering av cyberrisker:
+- **Inte implementerad eller ingen information**: Responsåtgärder för riskhantering är inte definierade eller information om deras existens saknas.
+- **Delvis implementerad**: Riskresponsåtgärder är definierade, men deras täckning är begränsad eller deras implementering är inte systematisk.
+- **Mestadels implementerad**: Responsåtgärder för riskhantering täcker de flesta identifierade risker, men det finns utrymme för förbättring i bedömningspraxis eller processdetaljer.
+- **Helt implementerad**: Organisationen använder omfattande och regelbundet utvärderade responsåtgärder som är integrerade i dess riskhanteringsstrategi.
+
+### Exempel
+
+Företaget har olika och systematiska responsåtgärder för hantering av cyberrisker. Företaget bestämmer en lämplig hanteringsmetod för varje identifierad risk, som kan vara till exempel riskreducering (t.ex. lägga till skyddsmekanismer till IT-system), risköverföring (t.ex. försäkring), eller riskacceptans när riskpåverkningar är minimala.
+
+Företagets riskresponsprocess baseras på riskanalys med hjälp av en riskmatris för att stödja prioritering. Effektiviteten och adekvatheten av implementerade åtgärder utvärderas regelbundet genom revisioner och störningsövningar. Dessutom uppdaterar organisationen riskhanteringsåtgärder när driftmiljön förändras för att säkerställa att de förblir aktuella.
+
+I framtiden planerar företaget att implementera automatiserade övervaknings- och rapporteringsverktyg som förbättrar riskhanteringens realtidskapacitet och effektivitet.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+När risker för funktionen har identifierats måste organisationen besluta hur man svarar på dessa risker. Respons börjar med att ge varje risk eller riskklass meddelande/instruktion om organisationens avsikt att hantera risken. Till exempel betyder riskreducering aktiva åtgärder för att minimera risk; risköverföring är att överföra risk genom kontrakt från en part till en annan, till exempel genom försäkring, avstående från överenskommet ansvar med en kund, eller skadeståndsavtal med en leverantör.
+
+Riskresponser bör utvecklas som en del av riskhanteringsstrategin. Riskhanteringsåtgärder kan variera mycket mellan organisationer, men inkluderar vanligtvis:
+
+- riskun dvikande - ändra verksamhet för att undvika risk samtidigt som väsentlig tjänst fortfarande tillhandahålls.
+- riskacceptans - erkänna risk men medvetet inte vidta någon åtgärd (i princip acceptera potentiella konsekvenser av risken).
+- risköverföring - överföra risk till en villig och kapabel part.
+- riskreducering - implementera aktiva åtgärder för att minimera risk.
+- riskövervakning - genomföra ytterligare undersökning och skjuta upp riskrelaterade åtgärder tills behovet att ta itu med risken är uppenbart.
+
+Organisationens riskhanteringsåtgärdsprocess bör komma ihåg att inte alla identifierade risker behöver mildras. Utöver riskreducering bör riskun dvikande, acceptans eller överföring övervägas.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: RISK-4a, RISK-4b, RISK-4e.
+</CollapsibleSection>
+
+---
+
+_Vägledningen uppdaterad: 28.1.2025_

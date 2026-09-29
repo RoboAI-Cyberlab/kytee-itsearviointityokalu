@@ -1,0 +1,155 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Situational awareness
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- Incident response specialist
+- Security operations center (SOC) leadership
+- IT and OT asset logging and monitoring specialist
+</Roles>
+
+---
+<ObjectiveTitle name="situation-1">Log management</ObjectiveTitle>
+---
+
+<PracticeTitle name="situation-1a">Log information is collected from devices, software, and data repositories important to the function.</PracticeTitle>
+
+### Significance
+
+Log management is a key component of organizational cybersecurity situational awareness. It enables event monitoring, anomaly detection, and response to potential threats. Well-implemented logging helps understand normal system operation and detect and analyze potential security incidents.
+
+This assesses whether the organization has implemented systematic log collection from function-critical assets. Assets may include:
+- IT devices and systems (e.g., servers, workstations, network devices)
+- OT systems (e.g., industrial automation devices, IoT devices)
+- Data repositories (e.g., databases, cloud services)
+- Software (e.g., operating systems, critical applications)
+
+Events to be logged may include:
+- Access management events: Logins and access attempts by individuals, devices, or software.
+- Anomalous events: Unexpected connections, suspicious processes, or system disruptions.
+- Configuration changes: Changes to settings of important devices and software.
+- Network connection events: New devices connecting to the network without authorization.
+- Resource usage: Overloading or unexpected shutdown of servers, applications, or databases.
+
+<AnswerOptions>
+- **Not implemented or no information**: Logging is not in use or there is no information about its coverage.
+- **Partially implemented**: Logging is done in some systems or only for certain types of events, but does not cover all important assets.
+- **Mostly implemented**: Logging is comprehensive, but may have some deficiencies (e.g., missing targets or inconsistent practices).
+- **Fully implemented**: Logging is systematically done for all function-critical devices, software, and data repositories. Logs are available for analysis and actively monitored.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company** collects log information from production line monitoring systems that track automation operation and potential disruptions.
+
+> **Transport company** records vehicle GPS tracking and vehicle management system event logs to detect suspicious movements or anomalies.
+
+> **Water utility** logs automation system changes and detects if unauthorized modifications are made to critical systems.
+
+> **Power company** collects log information from power grid events, such as unexpected connections or suspicious access attempts.
+
+### Development suggestions:
+- Log management policy: Define clear practices for what information is logged and how long it is retained.
+- Automated analysis: Utilize SIEM (Security Information and Event Management) system or similar log analysis tool so anomalies are detected quickly.
+- Regular review: Ensure log information is reviewed regularly to detect potential threats and misuse.
+- Backups: Log data retention and backup is important especially to enable investigation during cyber incidents.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Implement logging/auditing of important assets. Examples of functions that can be logged/audited include actions by individuals, devices, and entities when they use assets, events that disrupt function performance, asset task changes that deviate from baseline configurations, unexpected assets connecting to networks, and any unexpected or suspicious operations. This may also include inadvertently shut down, deleted, or "resource exhausted" virtualized assets.
+
+Related practices:
+
+- Input: Implementation of ASSET-1a provides input that may be useful in assessing and implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: SITUATION-1a, SITUATION-1b, SITUATION-1c, SITUATION-1d, SITUATION-1f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="situation-2">Environment monitoring</ObjectiveTitle>
+---
+
+<PracticeTitle name="situation-2a">Log information review and other cybersecurity monitoring is performed.</PracticeTitle>
+
+### Significance
+Regular review and examination of event logs (manually or with automated tools) is a critical monitoring activity essential for maintaining situational awareness. It enables detection of cybersecurity events or vulnerabilities, for example.
+
+Logs can provide information about phenomena such as:
+- **User environment changes** that may affect access rights or trigger alerts about critical system availability.
+- **Anomalies in system operation**, such as inadvertently shut down or resource-exhausted virtualized assets.
+- **Security update and patch status**, such as detecting that system updates were not applied because devices were offline during the check.
+
+<AnswerOptions>
+- **Not implemented or no information**: Logging is not in use or there is no information about its coverage.
+- **Partially implemented**: Logging is done in some systems, but does not cover all important assets. Manual or automated checks are done infrequently.
+- **Mostly implemented**: Logging is comprehensive and analysis processes are regular, but there are still some deficiencies (e.g., missing targets or inconsistent practices).
+- **Fully implemented**: Logging is systematically done for all function-critical devices, software, and data repositories. Automated monitoring tools alert on anomalies and information is integrated into the cybersecurity process.
+</AnswerOptions>
+
+### **Examples from different industries**
+
+> **Food company:** Monitors production line monitoring system log information to detect anomalies such as unauthorized access attempts or system changes that could compromise food safety.
+
+> **Transport company:** Uses GPS tracking device and vehicle telemetry data logs to monitor potential cyberattacks, such as routing data manipulation or unauthorized connections to vehicle systems.
+
+> **Power company:** Monitors power grid management system event logs to identify denial-of-service attacks or unauthorized system changes.
+
+> **Water utility:** Monitors pump station and SCADA system log information to ensure automation systems operate as planned and critical infrastructure has not been subject to cyber threats.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Regular review and examination of event logs (manually or with automated tools) is a critical monitoring activity essential for maintaining situational awareness (e.g., detecting cybersecurity events or vulnerabilities). For example, logs can provide information about user environment changes that may lead to access rights changes when necessary or trigger alerts when systems critical to function performance are unavailable. Another example is inadvertently shut down, deleted, or "resource exhausted" virtualized assets that may trigger alerts from which system administrators can infer that system updates or patches may not have been applied to these systems while they were offline or unable to respond.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: SITUATION-2a, SITUATION-2b, SITUATION-2c, SITUATION-2f, SITUATION-2g.
+</CollapsibleSection>
+
+<PracticeTitle name="situation-2b">IT and OT environment monitoring information is regularly reviewed for anomalous activity and potential cyber events.</PracticeTitle>
+
+### Significance
+
+Regular analysis of monitoring information is an essential part of organizational cybersecurity situational awareness. Anomalous activity refers to anything that is inconsistent, surprising, or unexpected relative to the organization's normal operating environment. Reviewing monitoring information helps identify cybersecurity events at an early stage and prevent their harmful effects.
+
+Monitoring areas include:
+- **Network log information:** unauthorized connections and unusual traffic patterns.
+- **System behavior:** unexpected service crashes or unusual resource usage.
+- **Sensor readings:** deviations from normal operation, such as abnormal hardware or process values.
+- **Staff observations:** unusual observations made by operations center staff or other operational personnel.
+
+<AnswerOptions>
+- **Not implemented or no information**: Monitoring information is not reviewed regularly, or there is no information about how this is done.
+- **Partially implemented**: Some monitoring information is reviewed, but it is random or concerns only certain systems.
+- **Mostly implemented**: Monitoring information is reviewed regularly, but there are still some deficiencies in coverage or practices.
+- **Fully implemented**: IT and OT environment monitoring information is systematically reviewed, and reviews are part of the organization's established processes. Suspicious findings are reported and analyzed as part of cybersecurity operations.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company:** Reviews production line automation system sensor readings to detect anomalies and monitors IT network logs to identify unauthorized access attempts.
+
+> **Transport company:** Monitors vehicle tracking system log information to detect unusual GPS signal changes that may indicate security issues.
+
+> **Power company:** Monitors SCADA system log information and staff observations to ensure no unauthorized changes have been made to the system.
+
+> **Water utility:** Uses real-time network monitoring to identify anomalous data transmission in water treatment facility management systems.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Anomalous activity refers to activity that is inconsistent with or deviates from what is customary, normal, or expected. Monitoring should produce information the organization needs to identify whether it has experienced a cybersecurity event that may require action to prevent impacts to the organization. This may include, for example, reviewing network log information to identify unauthorized connections to assets important for function performance (devices, data repositories). This may also include operations center staff and other operational personnel observations of unusual system responses, sensor readings, or other unexplained activity in operational systems. The purpose of this practice is to include people as part of the organization's approach to implementing system monitoring.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: SITUATION-2a, SITUATION-2b, SITUATION-2c, SITUATION-2f, SITUATION-2g.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 1/28/2025_

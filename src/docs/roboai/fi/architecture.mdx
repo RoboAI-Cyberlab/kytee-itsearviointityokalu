@@ -1,0 +1,493 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Kyberturvallisuusarkkitehtuuri
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- IT- ja OT-arkkitehtuurista vastaava asiantuntija
+- kyberturvallisuusarkkitehtuurista vastaava asiantuntija
+- IT- ja OT-ohjelmistokehityksestä vastaava asiantuntija
+- tietosuojasta ja yksityisyydestä vastaava asiantuntija
+</Roles>
+
+---
+<ObjectiveTitle name="architecture-1">Kyberarkkitehtuurin kehittäminen</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-1a">Organisaatiolla on suunnitelma tai strategia kehittämiselle.</PracticeTitle>
+
+### Merkitys
+
+Kyberarkkitehtuurin kehittämisstrategia on kriittinen, koska:
+- **Se määrittelee tietoturvallisen teknologiarakenteen ja suojausratkaisut.** Ilman suunnitelmaa organisaatio voi tehdä hajanaisia ja tehottomia päätöksiä kyberturvallisuuden suhteen.  
+- **Strateginen lähestymistapa mahdollistaa järjestelmällisen kehityksen ja priorisoinnin.** Tämä auttaa tunnistamaan keskeiset riskit ja suojaamaan liiketoimintakriittiset resurssit.  
+- **Selkeä vastuunjako varmistaa, että kyberarkkitehtuuri kehittyy suunnitellusti ja tehokkaasti.** Ilman vastuiden määrittelyä kehittäminen voi jäädä satunnaiseksi ja hallitsemattomaksi.  
+- **Kyberarkkitehtuurin kehittämissuunnitelma tukee organisaation kokonaisstrategiaa.** Kun tietoturva sisällytetään osaksi IT-strategiaa, sen merkitys ymmärretään paremmin koko organisaatiossa.  
+
+Arviointikysymykset:
+- Onko organisaatiolla virallinen **kyberarkkitehtuurin kehittämissuunnitelma** tai strategia?  
+- Onko suunnitelmassa määritelty **tavoitteet, prioriteetit ja vastuut** kyberarkkitehtuurin kehittämiselle?  
+- Sisältääkö strategia toimenpiteitä **luvattoman pääsyn estämiseen** ja **pääsynhallinnan ratkaisujen määrittämiseen**?  
+- Seurataanko kyberarkkitehtuurin kehitystä ja arvioidaanko sen tehokkuutta säännöllisesti?  
+- Onko arkkitehtuuristrategian toteuttamisesta **yhteisymmärrys** organisaation sisällä?  
+
+Kyberarkkitehtuurin kehittämisen keskeiset osa-alueet:
+
+1. **Strategian ja suunnitelman määrittely**  
+   - Kyberarkkitehtuurin tavoitteet on määritelty, ja ne tukevat organisaation liiketoimintatavoitteita.  
+   - Strategiassa huomioidaan **luvattoman pääsyn estäminen** ja **pääsynhallinnan ratkaisut**.  
+
+2. **Prioriteetit ja painopistealueet**  
+   - Suunnitelmassa priorisoidaan **kriittiset suojausmekanismit** ja järjestelmien turvallisuusparannukset.  
+   - Riskiperusteinen lähestymistapa varmistaa, että resurssit kohdennetaan tehokkaasti.  
+
+3. **Vastuut ja hallintamalli**  
+   - Organisaatio on määritellyt kyberarkkitehtuurin kehittämisestä vastaavat tahot.  
+   - Vastuut ja roolit on selkeästi jaettu IT-osaston, tietoturvayksikön ja liiketoiminnan välillä.  
+
+4. **Seuranta ja arviointi**  
+   - Strategian toteutumista seurataan **säännöllisten arviointien ja auditointien avulla**.  
+   - Käytössä on **mittarit ja KPI:t**, joilla seurataan kyberarkkitehtuurin kehittymistä ja tehokkuutta.  
+
+5. **Yhteisymmärrys ja päätöksenteko**  
+   - Arkkitehtuuristrategia on hyväksytty organisaation sisällä, ja päätökset ovat johdon ja IT-asiantuntijoiden kesken yksimielisiä.  
+   - Dokumentaatio ja ohjeistukset ovat saatavilla ja tukevat organisaation tietoturvakulttuuria.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole määriteltyä kyberarkkitehtuurin kehittämissuunnitelmaa tai siitä ei ole tietoa.  
+- **Osittain toteutettu**: Jotain kehitystyötä tehdään, mutta strategia on puutteellinen eikä sisällä selkeitä tavoitteita, prioriteetteja tai vastuunjakoa.  
+- **Enimmäkseen toteutettu**: Kyberarkkitehtuurin kehittämissuunnitelma on laadittu ja sitä seurataan, mutta se ei kata kaikkia kriittisiä osa-alueita.  
+- **Täysin toteutettu**: Organisaatiolla on kattava strategia, joka sisältää tavoitteet, prioriteetit, vastuut ja seurannan. Sen toteutusta seurataan säännöllisesti ja sen mukaisia toimenpiteitä viedään aktiivisesti eteenpäin.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuudessa kyberarkkitehtuurin kehittämisstrategia keskittyy tuotantoprosessien ja toimitusketjun suojaamiseen. Tietoturva on integroitu teollisuusautomaation suunnitteluun ja pääsynhallintaratkaisuihin.
+
+> **Vesilaitos**  
+Vesihuolto-organisaation kyberarkkitehtuuristrategia painottaa järjestelmien turvallisuutta ja eriytettyjä verkkoarkkitehtuureja. Tavoitteena on varmistaa, että kriittiset infrastruktuurit ovat suojattuja ja käytettävissä myös poikkeustilanteissa.  
+
+> **Sähköyhtiö**  
+Energiayhtiö on laatinut kyberarkkitehtuuristrategian, jossa prioriteettina on kriittisen infrastruktuurin suojaaminen ja tietoturvapoikkeamien hallinta. Se sisältää erilliset suojausratkaisut sähköverkkoihin ja niihin liittyviin tietojärjestelmiin.  
+
+### Lisätiedot
+
+- **Kyberarkkitehtuurin kehittämissuunnitelma määrittelee organisaation turvallisen teknologiaympäristön.**  
+- **Dokumentoitu strategia auttaa kehittämään tietoturvakäytäntöjä järjestelmällisesti ja tehokkaasti.**  
+- **Suunnitelman seuranta varmistaa, että tavoitteet ja prioriteetit toteutuvat organisaation toiminnassa.**  
+- **Pääsynhallinta ja luvattoman pääsyn estäminen ovat keskeisiä osa-alueita arkkitehtuurin suunnittelussa.**  
+- **Säännöllinen auditointi varmistaa strategian ajantasaisuuden ja tehokkuuden.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kyberturvallisuusarkkitehtuurin kehittämiselle on strategia tai suunnitelma sekä sille on määritelty toivottu lopputulos ja yhteisymmärrys, miten se saavutetaan. Arkkitehtuuristrategia voi keskittyä esimerkiksi luvattoman pääsyn estämiseen, ja suunnittelupäätöksistä ollaan yksimielisiä koskien ehdotettuja todennus- ja pääsynhallinnan ratkaisuja.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ARCHITECTURE-1a, ARCHITECTURE-1b, ARCHITECTURE-1h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-2">Tietoverkkojen suojaus osana kyberarkkitehtuuria</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-2a">Verkon suojauksia on toteutettu ainakin tapauskohtaisesti.</PracticeTitle>
+
+### Merkitys
+
+Tietoverkkojen suojaus on keskeinen osa kyberturvallisuusarkkitehtuuria, koska:
+- **Verkkosuojausten puutteet voivat altistaa organisaation kyberhyökkäyksille.** Ilman segmentointia tai IDS/IPS-järjestelmiä hyökkääjät voivat liikkua vapaasti verkossa.  
+- **Tapauskohtaisesti toteutetut suojaukset voivat jättää kriittisiä aukkoja turvallisuuteen.** Ilman dokumentoitua prosessia suojausten kattavuus voi jäädä riittämättömäksi.  
+- **Standardoitu ja dokumentoitu verkkosuojaus auttaa noudattamaan lainsäädäntöä ja säädöksiä.** Esimerkiksi **ISO 27001 ja NIST CSF** edellyttävät tietoverkkojen suojauksen hallintaa.  
+- **Säännöllinen seuranta ja arviointi mahdollistavat suojauksen jatkuvan kehittämisen.** Organisaation tulee arvioida ja päivittää verkkoturvakäytäntöjään kyberuhkien muuttuessa.  
+
+Arviointikysymykset:
+- Onko organisaatio toteuttanut **verkkosuojauksia, kuten palomuureja, IDS/IPS-järjestelmiä tai segmentointia**?  
+- Vastaavatko toteutetut suojausratkaisut organisaation **kyberarkkitehtuurin strategiaa tai toimintasuunnitelmaa**?  
+- Ovatko suojaukset **standardoituja ja dokumentoituja**, vai toteutetaanko niitä tapauskohtaisesti ilman selkeää prosessia?  
+- Onko organisaatiolla **verkkoturvallisuuteen liittyviä sääntöjä ja käytäntöjä**, jotka ohjaavat tietoverkkojen suojausta?  
+- Suorittaako organisaatio **säännöllisiä arviointeja ja testauksia**, joilla varmistetaan suojausten tehokkuus?  
+
+Tietoverkkojen suojauksen toteutus organisaatiossa:
+
+1. **Verkon segmentointi ja suojaukset**  
+   - **Sisäverkon segmentointi kriittisten järjestelmien suojaamiseksi** (esim. tuotantoverkko vs. toimistoverkko).  
+   - **Palomuurisäännöt ja verkkoliikenteen valvonta**, jotka rajoittavat liikennettä tarpeenmukaisesti.  
+
+2. **Tietoverkon aktiivinen seuranta ja analysointi**  
+   - **Intrusion Detection System (IDS) ja Intrusion Prevention System (IPS)** -järjestelmien käyttö epäilyttävän liikenteen tunnistamiseen ja estämiseen.  
+   - **SIEM-järjestelmät**, jotka keräävät ja analysoivat lokitietoja tietoturvapoikkeamien varalta.  
+
+3. **Zero Trust -periaate ja pääsynhallinta**  
+   - **Monivaiheinen todennus (MFA)** verkkopalveluihin kirjautuessa.  
+   - **Vähiten oikeuksien periaate (Least Privilege)** – käyttäjät saavat vain välttämättömät pääsyoikeudet verkossa.  
+
+4. **Suojausten testaus ja päivitykset**  
+   - **Haavoittuvuuksien arvioinnit ja penetraatiotestaukset**, joilla testataan verkon turvallisuutta.  
+   - **Tietoturvapolitiikkojen ja käytäntöjen säännöllinen tarkistaminen ja päivittäminen** uusimpien uhkien perusteella.  
+
+5. **Dokumentointi ja jatkuva parantaminen**  
+   - **Kyberarkkitehtuuristrategiassa määritellyt verkkosuojaustavoitteet ja käytännöt**.  
+   - **Suojausten auditointi ja dokumentointi**, jotta niiden tehokkuutta voidaan arvioida ja parantaa.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole tietoverkkojen suojaustoimenpiteitä tai niiden toteutuksesta ei ole tietoa.  
+- **Osittain toteutettu**: Joitakin verkkosuojaustoimenpiteitä on toteutettu, mutta ne eivät ole systemaattisia tai standardien mukaisia.  
+- **Enimmäkseen toteutettu**: Verkon suojauksia on toteutettu laajasti, mutta dokumentointi tai seuranta voi olla puutteellista.  
+- **Täysin toteutettu**: Organisaatio on toteuttanut kattavat verkkosuojaustoimenpiteet, jotka vastaavat kyberarkkitehtuuristrategian tavoitteita ja standardoituja vaatimuksia. 
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarvikeyrityksen tuotantoverkko on eriytetty toimistoverkosta, ja palomuurit estävät tarpeettoman liikenteen. IDS/IPS-järjestelmät havaitsevat mahdolliset tunkeutumisyritykset.  
+
+> **Vesilaitos**  
+Vesihuollon järjestelmät on suojattu erillisellä verkolla, johon ei ole pääsyä ulkoisista yhteyksistä. Tietoturva-asiantuntijat seuraavat verkkoliikennettä ja reagoivat hälytyksiin reaaliaikaisesti.  
+
+> **Sähköyhtiö**  
+Energiayhtiön verkkoarkkitehtuuri perustuu segmentointiin ja jatkuvaan valvontaan. SIEM-järjestelmä analysoi verkkotapahtumia, ja käyttöoikeudet on rajattu vain kriittisiin järjestelmiin tarvittaville työntekijöille.  
+
+### Lisätiedot
+
+- **Tietoverkkojen suojaukset tulee toteuttaa organisaation kyberarkkitehtuuristrategian mukaisesti.**  
+- **Segmentointi, palomuurisäännöt ja pääsynhallinta ovat keskeisiä verkkosuojauksen elementtejä.**  
+- **Organisaation tulisi dokumentoida suojauskäytännöt ja seurata niiden tehokkuutta säännöllisesti.**  
+- **Säännölliset testaukset ja auditoinnit varmistavat verkkosuojausten ajantasaisuuden ja tehokkuuden.**  
+- **Zero Trust -mallin hyödyntäminen lisää verkkoturvallisuutta ja estää luvattoman liikenteen.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Suojaukset toteutetaan siten, että ne vastaavat kyberturvallisuusarkkitehtuurin strategiassa / toimintasuunnitelmassa määriteltyjä tavoitteita. Näiden suojausten toteuttaminen perustuu standardoituihin vaatimuksiin, jotka on dokumentoitu kyberturvallisuusarkkitehtuurissa. Koska nämä käytännöt voidaan toteuttaa tapauskohtaisesti, ne voivat olla yleisesti ottaen näiden vaatimusten mukaisia, mutta niitä ei välttämättä toteuteta dokumentoidun prosessin tai menettelyn mukaisesti.
+
+Aiheeseen liittyvät käytännöt:
+
+-Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ARCHITECTURE-2a, ARCHITECTURE-2c, ARCHITECTURE-2e, ARCHITECTURE-2f, ARCHITECTURE-2g, ARCHITECTURE-2k.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="architecture-2b">Organisaation IT-järjestelmät on eriytetty mahdollisista OT-järjestelmistä segmentoimalla ne joko fyysisesti tai loogisesti.</PracticeTitle>
+
+### Merkitys
+
+IT- ja OT-järjestelmien eriyttäminen on tärkeää, koska:
+- **Segmentointi tarjoaa ensimmäisen puolustuslinjan hyökkäyksiä vastaan.** Ilman segmentointia haittaohjelmat ja hyökkääjät voivat liikkua vapaasti eri järjestelmien välillä.  
+- **Hyökkäysten leviämistä voidaan hillitä tehokkaasti erottamalla eri järjestelmät toisistaan.** Tämä suojaa kriittisiä OT-järjestelmiä, kuten tuotantoverkkoja tai infrastruktuurin hallintajärjestelmiä.  
+- **Palomuureilla, DMZ-ratkaisuilla ja luottamusvyöhykkeillä voidaan hallita ja rajoittaa liikennettä eri verkkoalueiden välillä.** Näin varmistetaan, että vain valtuutetut järjestelmät ja käyttäjät voivat kommunikoida keskenään.  
+- **Segmentointi tukee organisaation tietoturvastandardeja ja sääntelyvaatimuksia.** Esimerkiksi **IEC 62443, NIST CSF ja ISO 27001** suosittelevat IT- ja OT-järjestelmien erottamista turvallisuusriskien vähentämiseksi.  
+
+Arviointikysymykset:
+- Onko IT- ja OT-järjestelmien välinen liikenne erotettu palomuureilla, DMZ-alueilla tai muilla teknisillä keinoilla?  
+- Onko organisaatio toteuttanut segmentoinnin arkkitehtuuristrategiansa mukaisesti, vaikka se ei olisi täysin säännöllistä ja systemaattista?  
+- Onko segmentointia käytetty hyökkäysten leviämisen estämiseksi ja kriittisten järjestelmien suojaamiseksi?  
+- Onko segmentoinnissa hyödynnetty luottamusvyöhykkeitä (Trust Zones), demilitarisoituja vyöhykkeitä (DMZ) tai muita verkon erottelukeinoja?  
+- Huom: Jos organisaatiolla ei ole OT-järjestelmiä, käytäntö on "täysin toteutettu".  
+
+IT- ja OT-ympäristöjen segmentoinnin toteutus organisaatiossa:
+
+1. **Fyysinen tai looginen segmentointi**  
+   - IT- ja OT-järjestelmät on **erotettu fyysisesti**, esimerkiksi erillisillä verkkolaitteilla ja kaapeloinnilla.  
+   - IT- ja OT-järjestelmät on **erotettu loogisesti**, kuten VLAN-tekniikalla tai palomuurisäännöillä.  
+
+2. **Palomuurit ja liikenteen hallinta**  
+   - **Palomuurit ja ACL-säännöt** rajoittavat liikennettä IT- ja OT-verkkojen välillä.  
+   - **DMZ-alueet (demilitarisoidut vyöhykkeet)** toimivat puskurialueena julkisten ja sisäisten verkkojen välillä.  
+
+3. **Luottamusvyöhykkeet ja pääsynhallinta**  
+   - Verkko on jaettu **luottamusvyöhykkeisiin**, joissa eri järjestelmät pääsevät käsiksi vain niihin palveluihin, joita ne tarvitsevat.  
+   - OT-järjestelmien käyttö vaatii **vahvan todennuksen ja valvotun etäkäytön** (esim. VPN tai jump host -ratkaisut).  
+
+4. **Monitorointi ja uhkien tunnistus**  
+   - Verkkoa valvotaan **Intrusion Detection Systems (IDS) ja Intrusion Prevention Systems (IPS)** -järjestelmillä.  
+   - Liikennettä analysoidaan **Security Information and Event Management (SIEM)** -ratkaisuilla, jotka hälyttävät epäilyttävästä toiminnasta.  
+
+5. **Dokumentointi ja jatkuva kehittäminen**  
+   - **Segmentointiratkaisut on dokumentoitu kyberarkkitehtuuristrategiassa.**  
+   - Segmentointikäytännöt **tarkistetaan säännöllisesti ja päivitetään** uusien uhkien mukaisesti.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: IT- ja OT-järjestelmät eivät ole erotettuja, tai segmentointikäytännöistä ei ole tietoa.  
+- **Osittain toteutettu**: Järjestelmät on osittain segmentoitu, mutta se ei kata kaikkia kriittisiä alueita tai perustuu tapauskohtaiseen suojaukseen.  
+- **Enimmäkseen toteutettu**: IT- ja OT-järjestelmien segmentointi on laajasti käytössä, mutta se ei ole täysin systemaattinen tai jatkuvasti ylläpidetty.  
+- **Täysin toteutettu**: IT- ja OT-järjestelmät on erotettu selkeästi fyysisellä tai loogisella segmentoinnilla, ja segmentoinnin toimivuutta valvotaan ja dokumentoidaan säännöllisesti. **(Jos organisaatiolla ei ole OT-järjestelmiä, aseta käytäntö "täysin toteutetuksi.")**  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketuotannossa IT-verkko on erotettu tuotantoverkosta VLAN-konfiguraatioilla ja palomuureilla. OT-järjestelmät ovat suojattu erillisellä hallintaverkolla, johon pääsee vain hyväksytyillä tunnuksilla.  
+
+> **Vesilaitos**  
+Vesihuollossa järjestelmät on erotettu internetistä ja toimistoverkosta erillisillä palomuureilla ja DMZ-ratkaisuilla. IT-osasto hallitsee pääsyä OT-verkkoon erillisillä jump host -järjestelmillä.  
+
+> **Sähköyhtiö**  
+Energiayhtiössä kriittiset sähköverkkojärjestelmät on fyysisesti erotettu IT-järjestelmistä. OT-verkon liikennettä seurataan reaaliaikaisesti IDS/IPS-järjestelmillä, ja kaikki etäyhteydet ovat valvottuja.  
+
+### Lisätiedot
+
+- **Segmentointi voi olla fyysistä (erilliset verkkolaitteet) tai loogista (palomuurit, VLAN-konfiguraatiot, ACL-säännöt).**  
+- **DMZ-alueet ja luottamusvyöhykkeet auttavat suojaamaan kriittisiä järjestelmiä ja rajoittamaan liikennettä.**  
+- **OT-ympäristöissä IT:n ja OT:n yhdistäminen ilman segmentointia voi altistaa kriittiset järjestelmät haittaohjelmille ja kyberhyökkäyksille.**  
+- **Organisaation tulisi dokumentoida segmentointikäytännöt ja päivittää niitä säännöllisesti uusien tietoturvavaatimusten mukaisesti.** 
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tämä on minimi lähestymistapa, joka ulottuu palomuureista etäyhteyspalvelimiin. Segmentointi on arkkitehtuurinen taktiikka, joka tarjoaa ensimmäisen puolustuslinjan, jolla pyritään hillitsemään hyökkäysten leviämistä ja estämään pahojen toimijoiden kulkeminen järjestelmien läpi (esim. verkkopuolen järjestelmät, IT-järjestelmät ja OT-järjestelmät). Segmentointiin voi sisältyä erottelu, luottamusvyöhykkeiden toteuttaminen, demilitarisoitujen vyöhykkeiden (DMZ) toteuttaminen tai muita arkkitehtuuritaktiikoita.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ASSET-1c:n ja ASSET-1d:n toteuttaminen tarjoaa syötteen, joista voi olla hyötyä tämän käytännön toteutumisen arvionnissa ja toteuttamisessa.
+Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ARCHITECTURE-2b, ARCHITECTURE-2d, ARCHITECTURE-2h, ARCHITECTURE-2i, ARCHITECTURE-2j, ARCHITECTURE-2l.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-3">Laitteiden ja ohjelmistojen turvallisuus osana kyberarkkitehtuuria</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-3a">Käyttöoikeuksien ja pääsynhallinan kontrolleja/suojausmekanismeja on käytössä toiminnon kannalta tärkeille laitteille, ohjelmistoille ja tietovarannoille.</PracticeTitle>
+
+### Merkitys
+
+Pääsynhallinnan kontrollit ja suojausmekanismit ovat keskeisiä kyberturvallisuuden kannalta, koska:
+- **Ne estävät luvattoman pääsyn kriittisiin järjestelmiin ja tietoihin.** Ilman pääsynhallintamekanismeja hyökkääjät voivat saada haltuunsa arkaluontoisia tietoja ja järjestelmiä.  
+- **Pääsynhallinta tukee tietoturvastandardeja ja sääntelyvaatimuksia.** Esimerkiksi **ISO 27001, NIST CSF ja IEC 62443** vaativat pääsynhallinnan toteuttamista ja valvontaa.  
+- **Lokitiedot mahdollistavat poikkeamien havaitsemisen ja tutkinnan.** Ilman valvontaa on vaikea tunnistaa luvattomia pääsyyrityksiä.  
+- **Fyysiset ja loogiset pääsynhallinnan kontrollit suojaavat sekä IT- että OT-ympäristöjä.** Pääsyn rajoittaminen vähentää sisäpiirin uhkien ja kyberhyökkäysten riskiä.  
+
+Arviointikysymykset:
+- Onko organisaatiolla käyttöoikeuksien hallintaan liittyviä teknisiä ja hallinnollisia kontrolleja?  
+- Suojataanko IT- ja OT-järjestelmät tunnistautumis- ja pääsynhallintamekanismeilla?  
+- Onko fyysisille omaisuuserille (esim. palvelimet, työasemat) toteutettu fyysinen pääsynhallinta (esim. lukot, kulkulupajärjestelmät)?  
+- Käytetäänkö lokitusta ja valvontajärjestelmiä epäilyttävän toiminnan tunnistamiseen?  
+- Sisältyvätkö käyttöoikeuksien hallintaan liittyvät riskit kyberarkkitehtuuristrategiaan?  
+
+Pääsynhallinnan kontrollien toteutus organisaatiossa:
+
+1. **Loogiset kontrollit**  
+   - **Hallinnolliset kontrollit:** Käyttöoikeuspolitiikat, menettelyt ja hyväksyntäprosessit käyttöoikeuksille.  
+   - **Operatiiviset kontrollit:** Käyttöoikeuksien säännöllinen tarkistaminen, järjestelmien kapasiteetinhallinta.  
+   - **Tekniset kontrollit:** Monivaiheinen todennus (MFA), roolipohjainen pääsynhallinta (RBAC), lokitusjärjestelmät.  
+
+2. **Fyysiset kontrollit**  
+   - **Hallinnolliset kontrollit:** Pääsyoikeuksia koskevat käytännöt ja ohjeistukset.  
+   - **Toiminnalliset kontrollit:** Aidat, lukot, kameravalvonta, vartiointi.  
+   - **Tekniset kontrollit:** Sähköiset kulkuluvat, liikkeentunnistimet, sisäänkäyntipisteiden automaattinen kirjaaminen.  
+
+3. **IT- ja OT-ympäristöjen suojaus**  
+   - IT- ja OT-järjestelmien pääsynhallinta on **eriytetty ja rajoitettu vain valtuutetuille käyttäjille**.  
+   - Käytössä on **eriytetyt hallintaverkot ja suojatut etäyhteysratkaisut (VPN, jump host -ratkaisut)**.  
+
+4. **Lokitus ja valvonta**  
+   - **SIEM-järjestelmät (Security Information and Event Management)** analysoivat ja hälyttävät epäilyttävästä toiminnasta.  
+   - **Käyttöoikeuksien ja pääsynhallinnan auditoinnit** suoritetaan säännöllisesti.  
+
+5. **Dokumentointi ja jatkuva kehittäminen**  
+   - **Pääsynhallinnan käytännöt ja kontrollit on dokumentoitu kyberarkkitehtuuristrategiassa.**  
+   - Kontrollien tehokkuutta arvioidaan **säännöllisesti ja parannetaan uusien uhkien perusteella**.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Pääsynhallintaan liittyviä kontrollimekanismeja ei ole käytössä, tai niiden tilasta ei ole tietoa.  
+- **Osittain toteutettu**: Joitakin pääsynhallinnan kontrolleja on käytössä, mutta ne eivät kata kaikkia toiminnon kannalta tärkeitä laitteita, ohjelmistoja tai tietovarantoja.  
+- **Enimmäkseen toteutettu**: Pääsynhallinnan kontrollit ovat laajasti käytössä, mutta niiden dokumentaatiossa tai seurannassa voi olla puutteita.  
+- **Täysin toteutettu**: Organisaatiolla on kattavat pääsynhallinnan kontrollit, jotka kattavat kaikki kriittiset laitteet, ohjelmistot ja tietovarannot, ja niiden tehokkuutta seurataan ja arvioidaan säännöllisesti.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarvikeyrityksessä tuotantolaitoksen järjestelmiin pääsy on rajoitettu vain valtuutetuille työntekijöille, ja käytössä on monivaiheinen todennus (MFA) sekä roolipohjainen pääsynhallinta (RBAC). Fyysiset tilat on suojattu kulkulupajärjestelmillä.  
+
+> **Vesilaitos**  
+Vesihuolto-organisaation järjestelmät ovat erillisessä hallintaverkossa, ja niiden pääsyyn vaaditaan hyväksytty etäyhteysratkaisu (VPN) sekä vahva tunnistautuminen. Kaikki käyttöoikeudet kirjataan lokiin ja analysoidaan tietoturvapoikkeamien varalta.  
+
+> **Sähköyhtiö**  
+Energiayhtiössä on käytössä Zero Trust -pääsynhallintamalli, jossa kaikkien käyttäjien ja laitteiden pääsyoikeudet tarkistetaan jokaisella kirjautumiskerralla. Pääsynhallinta perustuu rooleihin, ja valvonta on jatkuvaa SIEM-järjestelmällä.  
+
+### Lisätiedot
+
+- **Loogiset ja fyysiset kontrollit ovat keskeisiä pääsynhallinnan hallinnassa.**  
+- **Käyttäjätunnistautumiseen tulisi käyttää monivaiheista todennusta (MFA) ja roolipohjaista pääsynhallintaa (RBAC).**  
+- **Pääsynhallinnan dokumentaatio on tärkeää, jotta voidaan varmistaa järjestelmien ja tietojen turvallisuus.**  
+- **Fyysiset valvontakeinot, kuten kameravalvonta ja kulkuluvat, auttavat estämään luvattoman pääsyn kriittisiin tiloihin.**  
+- **Lokitiedot ja analytiikka auttavat tunnistamaan epäilyttävää toimintaa ja mahdollistavat tietoturvapoikkeamien nopean havaitsemisen.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kyberturvallisuuden hallintatoimia toteutetaan niiden riskien hallitsemiseksi, jotka liittyvät luvattomaan ja/tai asiattomaan pääsyyn IT-, OT-omaisuuteen ja tietovarantoihin, fyysinen omaisuus mukaan lukien. Loogiset kontrollit voivat olla hallinnollisia (esim. toimintaperiaatteet, menettelyt), operatiivisia (esim. järjestelmän ylläpito, kapasiteetin hallinta) ja teknisiä (esim. todennusjärjestelmät, järjestelmän lokitus). Fyysinen valvonta voi olla myös hallinnollista (esim. toimintaperiaatteet, menettelyt), toiminnallista (esim. aidat, lukot, opasteet) ja teknistä (esim. sähköiset kulkulupalukijat, liikkeentunnistimet, sisäänkäyntipisteiden kirjaaminen).
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ASSET-1a:n ja ASSET-2a:n toteuttaminen tarjoaa tietoja, joista voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ARCHITECTURE-3a, ARCHITECTURE-3b, ARCHITECTURE-3c, ARCHITECTURE-3d, ARCHITECTURE-3h, ARCHITECTURE-3k.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="architecture-3b">Päätelaitteiden suojausmekanismeja, kuten turvalliset konfiguraatiot, tietoturvaohjelmistot ja päätelaitteiden valvonta, on käytössä toiminnon kannalta tärkeille laitteille, ohjelmistoille ja tietovarannoille.</PracticeTitle>
+
+### Merkitys
+
+Päätelaitteiden suojausmekanismit ovat kriittisiä kyberturvallisuudessa, koska:
+- **Päätelaitteet ovat ensisijaisia kohteita kyberhyökkäyksille.** Heikosti suojatut laitteet voivat toimia hyökkäysvektoreina koko organisaatiolle.  
+- **Turvalliset konfiguraatiot ja kovennetut asetukset vähentävät hyökkäyspinta-alaa.** Oletusasetukset voivat sisältää tietoturva-aukkoja, joita hyökkääjät voivat hyödyntää.  
+- **Haittaohjelmien torjunta ja päätelaitteiden valvonta havaitsevat ja estävät tunkeutumisyrityksiä.** EDR- ja HID-järjestelmät analysoivat käyttäytymismalleja ja torjuvat poikkeamat automaattisesti.  
+- **Tietojen menetyksen esto (DLP) estää arkaluontoisten tietojen vuotamisen.** Inhimilliset virheet voivat johtaa tahattomiin tietovuotoihin ilman suojaustoimia.  
+- **Päätelaitteiden suojaaminen tukee säädösten ja standardien noudattamista.** Esimerkiksi **ISO 27001, NIST 800-171 ja IEC 62443** edellyttävät päätelaitteiden tietoturvakontrolleja.  
+
+Arviointikysymykset:
+- Onko organisaatiolla käytössä **turvalliset konfiguraatiot ja kovennetut asetukset** päätelaitteille?  
+- Käytetäänkö päätelaitteissa **EDR- ja HID-järjestelmiä** haittaohjelmien ja tunkeutumisten torjumiseksi?  
+- Onko tietoturvaohjelmistot, kuten **haittaohjelmien torjuntaohjelmistot ja palomuurit**, asennettu ja päivitetty?  
+- Onko päätelaitteiden käyttöä ja tietoliikennettä **valvottu ja analysoitu** epäilyttävän toiminnan havaitsemiseksi?  
+- Onko tietojen menetyksen estämiseen (DLP) liittyviä käytäntöjä ja ohjelmistoja käytössä?  
+
+Päätelaitteiden suojausmekanismien toteutus organisaatiossa:
+
+1. **Turvalliset konfiguraatiot ja kovennus**  
+   - Oletusasetukset poistetaan ja **turvalliset konfiguraatiot otetaan käyttöön** IT- ja OT-laitteille.  
+   - Käytössä on **konfiguraatiokäytännöt ja -säännöt**, jotka määrittelevät päätelaitteiden turvallisuusasetukset.  
+
+2. **Tietoturvaohjelmistot ja päätelaitteiden valvonta**  
+   - **Haittaohjelmien torjuntaohjelmistot** (esim. virustorjunta, endpoint protection).  
+   - **EDR (Endpoint Detection and Response)** -järjestelmät haitallisen toiminnan havaitsemiseksi ja torjumiseksi.  
+   - **Isäntäpohjainen tunkeutumisen havaitseminen (HID)** ja palomuurit päätelaitteiden suojaamiseksi.  
+
+3. **Tietojen suojaaminen ja menetyksen estäminen (DLP)**  
+   - Käytössä on **DLP-työkalut**, jotka estävät arkaluontoisten tietojen siirtymisen ulos organisaatiosta.  
+   - Tiedon luokittelukäytännöt ja käyttöoikeuksien hallinta estävät asiattoman pääsyn tietoihin.  
+
+4. **Lokitus ja päätelaitteiden seuranta**  
+   - **Valvontaohjelmistot analysoivat päätelaitteiden toimintaa** ja hälyttävät poikkeamista.  
+   - **Käyttölokit tallennetaan ja niitä analysoidaan säännöllisesti** tietoturvapoikkeamien varalta.  
+
+5. **Dokumentointi ja jatkuva kehittäminen**  
+   - **Päätelaitteiden suojausmekanismit on määritelty ja dokumentoitu kyberarkkitehtuuristrategiassa.**  
+   - Turvallisuusasetukset ja käytännöt **tarkistetaan säännöllisesti ja päivitetään uusien uhkien mukaisesti**.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Päätelaitteiden suojausmekanismeja ei ole käytössä, tai niiden tilasta ei ole tietoa.  
+- **Osittain toteutettu**: Joitakin päätelaitteiden suojauksia on käytössä, mutta ne eivät kata kaikkia kriittisiä laitteita, ohjelmistoja tai tietovarantoja.  
+- **Enimmäkseen toteutettu**: Suojausmekanismit ovat laajasti käytössä, mutta niiden dokumentaatiossa, valvonnassa tai seurannassa voi olla puutteita.  
+- **Täysin toteutettu**: Organisaatiolla on kattavat päätelaitteiden suojausmekanismit, jotka kattavat kaikki kriittiset laitteet, ohjelmistot ja tietovarannot, ja niiden tehokkuutta seurataan ja arvioidaan säännöllisesti.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuuden tuotantolaitoksissa kaikki päätelaitteet on suojattu EDR-järjestelmillä ja roolipohjaisella pääsynhallinnalla (RBAC). Työasemiin on asennettu haittaohjelmien torjunta ja päätelaitteiden turvallisuusasetukset ovat standardisoituja.  
+
+> **Vesilaitos**  
+Vesihuollossa järjestelmien päätelaitteet on kovennettu ja eristetty erillisille hallintaverkoille, ja niiden käyttö vaatii vahvan tunnistautumisen. HID-järjestelmät analysoivat päätelaitteiden liikennettä poikkeavuuksien varalta.  
+
+> **Sähköyhtiö**  
+Energiayhtiössä on käytössä Zero Trust -periaate, jossa päätelaitteet tarkistetaan jokaisella kirjautumisella. SIEM-järjestelmät analysoivat päätelaitteiden lokitiedot, ja tietoturvapoikkeamat raportoidaan automaattisesti.  
+
+### Lisätiedot
+
+- **Päätelaitteiden suojaaminen estää haittaohjelmia ja estää tietovuotoja.**  
+- **Konfiguraation koventaminen ja standardoidut asetukset vähentävät haavoittuvuuksia.**  
+- **EDR- ja HID-järjestelmät mahdollistavat poikkeamien nopean tunnistamisen ja reagoinnin.**  
+- **DLP-työkalut estävät arkaluontoisten tietojen tahattoman tai luvattoman vuotamisen.**  
+- **Säännölliset turvallisuustarkastukset ja auditoinnit varmistavat suojausmekanismien toimivuuden.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Päätelaitteen suojauksella tarkoitetaan kyberturvallisuuden hallintatoimia, joita sovelletaan suoraan IT- ja OT-omaisuuseriin. Näissä hallintatoimissa olisi keskityttävä päätelaitteiden turvallisuusriskien kuten haavoittuvuuksien hyväksikäytön, hyökkäysten ja inhimillisen erehdyksen aiheuttamien tahattomien tietovuotojen ehkäisemiseen. Päätelaitteen suojauksiin voivat kuulua konfiguraation koventaminen, konfiguraatiokäytännöt ja -säännöt, päätelaitteen havaitsemis- ja reagointiohjelmistot (EDR), haittaohjelmien torjuntaohjelmistot, valvontaohjelmistot, tietojen menettämisen estotyökalut (DLP), isäntäpohjaiset tunkeutumisen havaitseminen (HID) ja palomuurit sekä muut suojaukset.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ASSET-1a:n toteuttaminen tarjoaa syötteen, joista voi olla hyötyä tämän käytännön toteutumisen arvionnissa ja toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ARCHITECTURE-3a, ARCHITECTURE-3b, ARCHITECTURE-3c, ARCHITECTURE-3d, ARCHITECTURE-3h, ARCHITECTURE-3k.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-5">Tietojen suojaus osana kyberarkkitehtuuria</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-5a">Tallennettua arkaluontoista tietoa ("data at rest") suojataan.</PracticeTitle>
+
+### Merkitys
+
+Tallennetun arkaluontoisen tiedon suojaaminen on tärkeää, koska:
+- **Tietovuodot voivat aiheuttaa merkittäviä taloudellisia ja mainehaittoja.** Tietoturvarikkomukset voivat johtaa sakkoihin ja asiakasluottamuksen menetykseen.  
+- **Lait ja säädökset edellyttävät arkaluontoisen tiedon suojaamista.** Esimerkiksi **GDPR, NIST 800-53 ja ISO 27001** määrittelevät vaatimuksia tietojen suojaamiselle.  
+- **Salaamattomat ja valvomattomat tiedot ovat alttiita luvattomalle käytölle ja manipuloinnille.**  
+- **Tietojen suojaaminen vähentää tietoturvarikkomusten ja kyberhyökkäysten vaikutuksia.** Jos hyökkääjä saa käsiinsä salattua dataa, sen hyödyntäminen ilman avainta on vaikeampaa.  
+
+Arviointikysymykset:
+- Onko organisaatiolla käytössä salausmenetelmiä tallennetun datan suojaamiseksi?  
+- Onko arkaluontoiseen tietoon pääsy rajattu ja hallittu käyttöoikeuksilla?  
+- Onko tallennettu tieto suojattu valtuutus- ja todennustekniikoilla?  
+- Käytetäänkö tietojen peittämistä (masking) tai tokenisaatiota arkaluontoisten tietojen suojaukseen?  
+- Onko varmuuskopiot suojattu ja hallinnoitu samalla tasolla kuin tuotantodataa?  
+
+Tallennetun tiedon suojaus organisaatiossa:
+
+1. **Todennustekniikat ja pääsyoikeuksien hallinta**  
+   - **Monivaiheinen tunnistaminen (MFA)** arkaluontoisiin tietoihin pääsyssä.  
+   - **Roolipohjainen pääsynhallinta (RBAC)** rajoittaa pääsyn vain niille käyttäjille, joilla on työtehtävänsä kannalta tarve.  
+   - **Digitaaliset varmenteet** ja vahva tunnistautuminen suojaavat tiedostoihin ja tietokantoihin pääsyä.  
+
+2. **Valtuutustekniikat ja pääsynvalvonta**  
+   - Käytössä on **pääsynvalvontamekanismit**, jotka estävät luvattoman pääsyn arkaluontoisiin tietoihin.  
+   - **Auditointilokit tallentavat kaikki tietopyynnöt ja pääsyyritykset**, ja epäilyttävä toiminta hälyttää valvontajärjestelmät.  
+
+3. **Salaus ja tietojen peittäminen (masking, tokenisaatio)**  
+   - **Tietojen salaus (AES-256, RSA)** tallennusvaiheessa ja levossa (data at rest).  
+   - **Tietojen peittäminen ja tokenisaatio** estävät arkaluontoisen tiedon paljastumisen tarpeettomille käyttäjille.  
+
+4. **Varmuuskopiot ja tietojen eheys**  
+   - **Varmuuskopiot salataan ja tallennetaan turvallisiin sijainteihin**, erillään tuotantoympäristöstä.  
+   - **Tietojen eheystarkistukset (hashing) varmistavat, että tietoja ei ole muokattu luvattomasti.**  
+
+5. **Dokumentointi ja jatkuva kehittäminen**  
+   - **Tietosuojakäytännöt on dokumentoitu ja niiden noudattamista seurataan säännöllisesti.**  
+   - **Salausavainten ja käyttöoikeuksien hallintakäytännöt päivitetään** tietoturvauhkien kehittyessä.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Tallennetun arkaluontoisen tiedon suojaamiseen liittyviä mekanismeja ei ole käytössä, tai niiden tilasta ei ole tietoa.  
+- **Osittain toteutettu**: Joitakin suojaustoimia on käytössä, mutta ne eivät kata kaikkia arkaluontoisia tietoja tai niissä on merkittäviä puutteita.  
+- **Enimmäkseen toteutettu**: Suojausmenetelmät ovat laajasti käytössä, mutta niiden dokumentaatiossa, hallinnassa tai seurannassa voi olla kehittämisen varaa.  
+- **Täysin toteutettu**: Organisaatiolla on kattavat tietojen suojausmekanismit, jotka kattavat kaikki kriittiset tiedot, ja niiden tehokkuutta seurataan ja arvioidaan säännöllisesti.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Tuotantotiedot ja reseptit on suojattu AES-256-salauksella ja roolipohjaisella pääsynhallinnalla. Arkaluontoisiin tietoihin pääsy edellyttää monivaiheista todennusta.  
+
+> **Kuljetusliike**  
+Logistiikkayrityksen asiakastiedot ja reittisuunnitelmat tallennetaan salattuihin tietokantoihin, ja pääsy niihin edellyttää vahvaa tunnistautumista.  
+
+> **Vesilaitos**  
+Vesihuollon järjestelmän lokitiedot tallennetaan erilliselle salatulle palvelimelle, johon pääsevät vain valtuutetut käyttäjät. Tietojen eheys varmistetaan hash-funktioilla.  
+
+> **Sähköyhtiö**  
+Energiayhtiön asiakas- ja laskutustiedot on suojattu tokenisaatiolla, jolloin vain valtuutetut järjestelmät voivat palauttaa tiedot alkuperäiseen muotoonsa.  
+
+### Lisätiedot
+
+- **Tallennettu arkaluontoinen tieto on suojattava salauksella, pääsynhallinnalla ja valvontajärjestelmillä.**  
+- **Tietojen peittäminen (masking) ja tokenisaatio auttavat estämään tarpeettoman tietojen paljastumisen.**  
+- **Auditointilokit ja tietojen eheystarkistukset varmistavat, että tietojen manipulointi voidaan havaita.**  
+- **Tietoturvastandardit, kuten GDPR, NIST ja ISO 27001, asettavat vaatimuksia arkaluontoisten tietojen suojaamiselle.**  
+- **Varmuuskopiot on suojattava samalla tavalla kuin tuotantodataa, jotta ne eivät ole haavoittuvia hyökkäyksille.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Todennustekniikat (esim. pääsyoikeuksien hallinta, digitaaliset varmenteet, biometrinen tunnistus, monivaiheinen tunnistaminen), valtuutustekniikat (esim. pääsynvalvontamekanismit) ja suojaustekniikat (esim. salaus ja tietojen peittäminen) ovat tyypillisiä arkkitehtuuritaktiikoita arkaluonteisten tietojen, jotka voivat aiheuttaa esimerkiksi tietovuodossa voivat aiheuttaa haittaa toiminnalle, suojaamiseksi. Tähä lukeutuvat esimerkiksi henkilötiedot, taloustiedot, liiketoiminnan salassapidettävät tiedot, salassapidettävät laki- ja sopimustiedot. Tämän käytännön toteuttaminen ei edellytä useiden tekniikoiden soveltamista. Lepotilassa oleviin tietoihin voi sisältyä tietoja, jotka on tallennettu lepotilassa oleviin virtualisoituihin resursseihin.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ARCHITECTURE-5a, ARCHITECTURE-5b, ARCHITECTURE-5c, ARCHITECTURE-5d, ARCHITECTURE-5e, ARCHITECTURE-5g, ARCHITECTURE-5h.
+</CollapsibleSection>
+
+---
+
+_Ohjetta päivitetty: 19.3.2025_

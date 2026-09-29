@@ -1,0 +1,767 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Threat and Vulnerability Management
+
+<TableOfContents>
+- [THREAT-1. Vulnerability reduction](#threat-1)
+  - [THREAT-1a. Appropriate sources of information about vulnerabilities have been identified.](#threat-1a)
+  - [THREAT-1b. Information about vulnerabilities is collected and interpreted at least on an ad hoc basis.](#threat-1b)
+  - [THREAT-1c. Vulnerability assessments are performed at least on an ad hoc basis.](#threat-1c)
+  - [THREAT-1d. Relevant vulnerabilities are addressed.](#threat-1d)
+- [THREAT-2. Threat defense and information sharing](#threat-2)
+  - [THREAT-2a. Appropriate sources of information for threat identification have been identified.](#threat-2a)
+  - [THREAT-2b. Cyber threat information is collected and interpreted at least on an ad hoc basis.](#threat-2b)
+  - [THREAT-2c. Threat actor objectives targeting the function have been identified at least on an ad hoc basis.](#threat-2c)
+  - [THREAT-2d. Relevant threats are addressed (e.g., by increasing monitoring or tracking threat developments).](#threat-2d)
+</TableOfContents>
+
+Cyber threats refer to potential malicious activities or events that can harm an organization's information systems or data. Vulnerabilities, on the other hand, are weaknesses in systems, software, or processes that can be exploited by threat actors. Together, they form the basis of cybersecurity risk management, where an organization seeks to identify and reduce potential threats and vulnerabilities.
+
+**Objectives:**
+
+1. **Vulnerability reduction**: The organization aims to identify, assess, and address vulnerabilities in its systems and processes that could endanger the operation or security of critical functions. Vulnerability management includes continuous monitoring, assessment of potential vulnerabilities, and systematic measures to mitigate them.
+
+2. **Threat defense and information sharing**: The organization aims to identify cyber threats that may target its operations and develop defense mechanisms to prevent or respond to these threats. Threat defense also includes active information sharing, both within the organization and with external partners, such as authorities or industry networks, to respond to evolving threats in a coordinated manner.
+
+These objectives help the organization build a comprehensive picture of the threats and vulnerabilities affecting its operations, and enable it to respond quickly and effectively to changing threat landscapes. By improving threat and vulnerability management, the organization can ensure better cybersecurity and protection of critical functions.
+
+---
+
+<ObjectiveTitle name="threat-1">Vulnerability reduction</ObjectiveTitle>
+
+### Significance
+
+This objective focuses on systematically identifying and addressing vulnerabilities in the organization's information systems. **Vulnerabilities** are weaknesses that can be exploited by threat actors to gain unauthorized access, disrupt operations, or cause other damage. Identifying and addressing vulnerabilities helps reduce the likelihood of successful cyber attacks and minimizes their impacts.
+
+The organization aims to actively identify and assess vulnerabilities, for example through vulnerability scanning and security assessments, and develop measures to address them. This includes both technical aspects, such as software updates, and organizational measures, such as improving processes and training.
+
+### Answer instructions
+
+This objective assesses how effectively the organization identifies, evaluates, and addresses vulnerabilities in its information systems and processes. The objective is to reduce risks arising from vulnerabilities through systematic monitoring and corrective actions.
+
+When evaluating this objective, consider:
+
+- How systematically does the organization identify vulnerabilities in its systems and software?
+- Are vulnerability information sources, such as software vendor bulletins or security community reports, used regularly?
+- Are vulnerability assessments performed, and how systematically and regularly are they conducted?
+- How quickly and effectively does the organization respond to identified vulnerabilities?
+- Are there processes in place to ensure that corrective actions, such as security updates or configuration changes, are implemented promptly?
+
+This objective helps reduce the attack surface and vulnerability of information systems, improving the organization's overall cybersecurity.
+
+---
+
+<PracticeTitle name="threat-1a">Appropriate sources of vulnerability information have been identified.</PracticeTitle>
+
+### Question
+
+Has the organization identified suitable sources for obtaining information about vulnerabilities affecting its systems? Such sources may include software vendor security bulletins, security communities (such as CERT networks), or international security vulnerability databases. It's also important to assess whether these sources are actively used, even if the activity is not yet fully systematic.
+
+### Significance
+
+Identifying suitable vulnerability information sources is an essential part of the organization's ability to respond to cybersecurity risks. Keeping systems secure and up-to-date requires the organization to have access to current and reliable information about known vulnerabilities, such as security gaps in software or system configuration issues. This information helps the organization assess risks and take necessary actions to address vulnerabilities before threat actors can exploit them.
+
+<AnswerOptions>
+Evaluate to what extent the organization utilizes appropriate vulnerability information sources:
+
+- **Not implemented or no information**: The organization has not identified vulnerability information sources or information on this matter is not available.
+- **Partially implemented**: The organization has identified some vulnerability information sources, but their use is limited or irregular.
+- **Mostly implemented**: Vulnerability information sources are widely used, but usage is not fully systematic or regular.
+- **Fully implemented**: The organization comprehensively and regularly utilizes appropriate vulnerability information sources to identify vulnerabilities.
+</AnswerOptions>
+
+### Example
+
+The company uses multiple information sources to identify vulnerabilities, such as software vendors' security bulletins, Finnish National Cyber Security Centre notifications, and international security community reports like CERT networks. These sources are utilized primarily when vulnerabilities are detected or when updates are installed. However, vulnerability information sources are not systematically monitored, but are consulted on an as-needed basis. In the future, the company aims to develop a more systematic approach where vulnerability information is collected and utilized more regularly and proactively.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd has identified several suitable information sources for vulnerability identification, but the utilization of these sources occurs on an ad hoc basis and is not yet systematic or regular at level 1. Vulnerability information is retrieved from sources as needed, especially when vulnerabilities are detected or when systems require updates.
+
+### Suitable sources for vulnerability identification
+
+The company has access to several different sources related to vulnerability identification, but the utilization of this information is not yet fully established or regular. Information sources are used especially to identify vulnerabilities in critical systems, such as ERP and SCADA systems, when deviations or vulnerabilities are detected.
+
+- Software vendor security bulletins: Software vendors, such as ERP and SCADA system providers, publish information about known vulnerabilities and risks related to their software. The company utilizes this information especially in conjunction with system updates.
+- Cyber Security Centre notifications: The company monitors notifications and alerts from the Finnish National Cyber Security Centre, which provide timely information about new cyber threats and known vulnerabilities. This information is used for vulnerability identification especially when it directly relates to the software or equipment used by the company.
+- Security communities and expert networks: The company follows security community channels, such as CERT networks (Computer Emergency Response Team), which regularly publish reports on known vulnerabilities and security incidents. These sources are utilized when a new vulnerability is detected that requires more detailed analysis.
+- International security vulnerability databases: The company also obtains vulnerability information from international databases, such as CVE (Common Vulnerabilities and Exposures) or NVD (National Vulnerability Database). These sources provide information about globally known vulnerabilities that may affect the systems used by the company.
+
+### Case-by-case use of information sources
+
+Information sources are used on an ad hoc basis, meaning information is sought and utilized when vulnerabilities are detected or when there is a need to assess a particular system's security status. Information collection and utilization are not systematic, nor are they checked at regular intervals.
+
+- Case-by-case use: The company monitors information sources especially when suspicious activity or possible vulnerabilities are detected in information systems. This may occur, for example, when IT or OT systems exhibit abnormal behavior.
+- No regular checking: Since vulnerability information sources are not monitored regularly, information is mainly sought when there is a specific need. This means that information is not checked proactively, but sources are relied upon when vulnerabilities are already detected.
+
+### Diversity and utilization of information sources
+
+Food Company utilizes several different sources that provide comprehensive information about various vulnerabilities, such as security gaps in software, hardware, or network equipment. These sources are used especially for vulnerability identification and risk assessment.
+
+- Local and national information sources: The Finnish National Cyber Security Centre's bulletins and alerts are important especially for identifying nationally significant cybersecurity vulnerabilities. This information is used in situations where vulnerabilities may more broadly affect the entire industry or national infrastructure.
+- International sources: International vulnerability information sources, such as software vendor and security organization reports, provide information especially about globally spreading vulnerabilities that may also affect the food company's systems. This information is used when vulnerabilities relate to international software or systems.
+- Interpretation of vulnerability information: Collected vulnerability information is analyzed and interpreted as needed to determine how vulnerabilities affect the company's critical systems and processes. This helps the company make informed decisions to prevent possible vulnerabilities or reduce their impacts.
+
+### Use of information in addressing vulnerabilities
+
+Collected vulnerability information helps the company make decisions about necessary actions to address vulnerabilities or mitigate their impacts. These actions may be implemented, for example, by installing updates or changing system configurations to improve security.
+
+- Installing updates: When information sources provide information about critical vulnerabilities, the company installs necessary updates or patches on a case-by-case basis. This helps ensure that vulnerabilities are addressed quickly and their impacts can be minimized.
+- Configuration management: If vulnerability information indicates that certain system configurations may be vulnerable to exploitation, the company modifies these configurations. This may involve, for example, restricting access rights or changing network settings.
+- Monitoring enhancement: If vulnerability information indicates an increased risk to certain systems, the company may increase monitoring of those systems. This may especially mean enhancing network monitoring or continuous surveillance of certain devices and software.
+
+### Risks and challenges at level 1
+
+Since vulnerability information collection and utilization are not systematic, there is a risk that certain vulnerabilities may not be detected in time or that vulnerability information becomes outdated before it is acted upon. This may lead to some vulnerabilities being realized without the company being adequately prepared for them.
+
+- Information aging: Since information sources are not monitored regularly, it is possible that some vulnerability information becomes outdated before there is time to react to it. This may weaken the company's ability to address new or rapidly evolving vulnerabilities.
+- Reactive approach: Vulnerability identification is currently based on a reactive operating model, which means that vulnerabilities are mainly reacted to when they have already been detected. The proactive approach is weaker because vulnerability information is not checked regularly.
+
+### Development plan
+
+Food Company Ltd recognizes the need to develop vulnerability information collection and utilization processes. The goal is to create a more systematic approach to collecting and sharing vulnerability information, so that all relevant vulnerabilities are detected and can be responded to in time.
+
+- Regular vulnerability information monitoring: The company intends to implement a regular process for monitoring vulnerability information sources, so that information can be collected continuously and systematically. This helps improve the company's ability to identify new vulnerabilities and prepare for them proactively.
+- Improving information utilization: Additionally, the company aims to improve vulnerability information analysis and use as part of risk management. This means that vulnerability information will be better integrated into the company's security practices and operational processes.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+The organization should regularly survey information sources (such as the Cyber Security Centre, CISA, appropriate ISACs, vendors, services) and determine their relevance and value as providers of vulnerability information.
+
+Initially, some analysis may be needed to determine which information is most relevant for implementing the organization's vulnerability management activities. Additionally, vulnerabilities affecting similar industries may be relevant to the function and should be considered accordingly.
+
+**Related practices:**
+
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. The practices of this development path are: THREAT-1a, THREAT-1e.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1b">Information about vulnerabilities is collected and interpreted at least on an ad hoc basis. The activity does not need to be systematic and regular.</PracticeTitle>
+
+### Question
+
+Does the organization collect information about potential security vulnerabilities, such as software security gaps or network vulnerabilities, and examine it whenever a vulnerability or problem arises? This may mean that information is sought, for example, when suspicious activity is detected in systems or an external vulnerability is identified. Information is collected and analyzed on a case-by-case basis, not continuously or regularly.
+
+### Significance
+
+Collecting and interpreting vulnerability information are central to supporting the organization's cybersecurity. Information about vulnerabilities helps the company respond more quickly to possible security vulnerabilities and ensure that necessary actions can be implemented in a timely manner. Although the process is not fully systematic, it supports the organization in identifying and responding to vulnerabilities, especially in critical moments.
+
+<AnswerOptions>
+Evaluate how the organization collects and interprets vulnerability information:
+
+- **Not implemented or no information**: Vulnerability information is not collected, and there is no practice for its interpretation.
+- **Partially implemented**: Vulnerability information is collected, but the process is random and not analyzed regularly.
+- **Mostly implemented**: Vulnerability information is collected from multiple sources, but analysis is not fully systematic and does not cover all necessary information sources.
+- **Fully implemented**: Vulnerability information collection and interpretation are systematic and cover all key sources, and are actively utilized to support functions.
+</AnswerOptions>
+
+### Example
+
+The company collects vulnerability information from various sources as needed, but the process is not yet systematic. Information is collected especially when vulnerabilities arise, such as in system updates or in connection with security vulnerabilities. Sources include among others the Finnish National Cyber Security Centre's alerts, software vendors' security bulletins, and international security portal reports. Information is interpreted on a case-by-case basis and used to support risk management.
+
+Although the process is still reactive, the company intends to develop it to be more systematic and implement continuous vulnerability information monitoring, so that vulnerabilities can be identified proactively and responded to more quickly.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd collects and interprets vulnerability information to support its functions, but this occurs on an ad hoc basis and case-by-case. Vulnerability information collection and interpretation are not yet systematic or regular at level 1. Information is sought and analyzed especially when a specific vulnerability, problem, or deviation occurs in the company's IT or OT systems.
+
+### Collecting vulnerability information on a case-by-case basis
+
+The company collects vulnerability information from multiple sources always as needed. This information collection focuses especially on critical moments, such as in conjunction with system updates or when security vulnerabilities arise that may affect the company's operations.
+
+- Cyber Security Centre alerts: The company monitors alerts and bulletins from the Finnish National Cyber Security Centre, from which it receives information about current cyber threats and known vulnerabilities. These sources are utilized on a case-by-case basis when a new vulnerability is detected, but they are not checked regularly.
+- Software vendor security notifications: Software vendors', such as ERP and SCADA system providers', security bulletins are important information sources. These are monitored especially when software updates are made or when a specific vulnerability is detected in systems.
+- Security experts and security portals: International security portals and security experts' blogs provide information more broadly about known vulnerabilities. These information sources are used when there is a need to check whether a detected vulnerability is related to a broader cyber attack or security issue.
+
+### Interpreting vulnerability information for the function
+
+When vulnerability information is collected, the company interprets it on a case-by-case basis based on how vulnerabilities affect the organization's operations. This interpretation is not fully regular, but is done especially when a new vulnerability is detected or when system security needs to be assessed.
+
+- Case-by-case interpretation: Vulnerability information is analyzed based on what impact the vulnerability has on the company's key processes, such as production or security. Interpretation may include a risk assessment and a possible corrective plan to address the vulnerability.
+- Using vulnerability information in decision-making: Vulnerability information interpretation helps the company make decisions about necessary actions. This may mean, for example, expediting a software update, increasing monitoring, or changing access rights for certain systems.
+
+### Practical utilization of information sources and interpretation
+
+Collected and interpreted vulnerability information is used for functions always as needed. Based on the information, the company can make corrective actions, such as installing security updates, changing system settings, or enhancing security practices.
+
+- Installing updates: Interpreted vulnerability information often leads to software and system updates, especially when vulnerabilities have been detected or when software vendors recommend updates to be made for certain vulnerabilities.
+- Increasing monitoring: If collected vulnerability information indicates deviations, the company may increase monitoring of certain critical systems, such as real-time network monitoring or closer monitoring of certain devices and servers.
+- Modifying security practices: Based on vulnerability information, the company may also make changes to its security policy, such as restricting access rights or updating certain security practices.
+
+### Case-by-case approach at level 1
+
+Since vulnerability information collection and interpretation are not systematic or regular, they are relied upon mainly reactively. This means that the company acts according to how vulnerabilities appear from information sources, but does not anticipate vulnerabilities with regular checks or systematic analysis.
+
+- No regular process: Vulnerability information collection and analysis are done always as needed, but information sources are not monitored continuously. This may mean that certain vulnerabilities go undetected if they are not visible or current at that particular moment.
+- Reactive activity: Actions are taken when a new vulnerability or deviation is detected in the company. This may mean that vulnerability information is used only after a vulnerability or problem has already occurred.
+
+### Risks and challenges at level 1
+
+Since vulnerability information collection and interpretation occur on a case-by-case basis, there is a risk that some essential vulnerabilities go undetected or are not responded to quickly enough. This may weaken the company's preparedness to address new vulnerabilities or security attacks.
+
+- Information aging: Since vulnerability information is not collected regularly, some vulnerability information may become outdated before the company has time to react to it. This may cause vulnerabilities that are not corrected in time.
+- Reactive approach: Case-by-case activity means that the company reacts to vulnerabilities only after they are detected. The proactive approach, where vulnerabilities are sought to be identified in advance with regular information analysis, is weaker at level 1.
+
+### Development plan
+
+Food Company Ltd aims to develop vulnerability information collection and interpretation into a more systematic and regular process. The goal is to implement a proactive operating model where vulnerability information collection and analysis are a continuous part of risk management.
+
+- Regular vulnerability information analysis: The company intends to implement a regular vulnerability information collection process where different information sources are monitored continuously. This helps the company detect vulnerabilities before they affect critical functions.
+- Utilizing information proactively: The goal is also that collected vulnerability information is used proactively to address vulnerabilities, not just reactively. This means, for example, that security processes and systems are checked regularly based on vulnerability information.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+Vulnerabilities are identified and addressed starting with collecting actionable vulnerability information from reliable sources and determining whether the vulnerability information is relevant to the organization and the organization's functions.
+
+Vulnerability information collection and review can occur by internal staff, as a service provided by a vendor, or a combination of both. Vulnerability information sources should cover the various IT and OT devices and data repositories that are important for implementing the function.
+
+**Related practices:**
+
+- **Input**: Implementation of THREAT-1a provides input that can be useful in implementing this practice.
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. The practices of this development path are: THREAT-1b, THREAT-1h, THREAT-1k.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1c">Vulnerability assessments are performed at least on an ad hoc basis.</PracticeTitle>
+
+### Question
+
+Does the organization perform vulnerability assessments, at least when there is a specific need or when new vulnerabilities are detected? This may mean that vulnerability assessments are conducted in connection with system updates, software changes, or when security risks are identified. Vulnerability assessment helps identify potential vulnerabilities in systems and evaluate the need for corrective actions.
+
+### Significance
+
+Vulnerability assessments are a critical part of an organization's cybersecurity, as they help identify weaknesses in systems and processes that could be exploited by threat actors. Regular vulnerability assessment helps the organization understand where its systems are vulnerable and what measures are needed to reduce risks. Even if the activity is not yet fully systematic, conducting vulnerability assessments supports the organization in improving its security posture.
+
+<AnswerOptions>
+Evaluate how the organization performs vulnerability assessments:
+
+- **Not implemented or no information**: Vulnerability assessments are not performed, or information about them is not available.
+- **Partially implemented**: Vulnerability assessments are performed occasionally or on a case-by-case basis, but are not systematic or regular.
+- **Mostly implemented**: Vulnerability assessments are performed quite regularly, but they do not cover all systems or are not fully systematic.
+- **Fully implemented**: Vulnerability assessments are performed systematically and regularly for all critical systems, and their results are actively utilized to improve security.
+</AnswerOptions>
+
+### Example
+
+The company performs vulnerability assessments on a case-by-case basis, especially when new systems are taken into use or when significant updates are made to existing systems. For example, vulnerability scans may be performed for network equipment and critical systems, such as ERP and SCADA systems, when changes are made. Assessments help identify potential vulnerabilities and take corrective actions, such as installing security updates or changing configurations. However, assessments are not yet systematic or regular, and they do not cover all systems continuously. In the future, the company aims to develop the process so that vulnerability assessments are performed more regularly and cover all critical systems comprehensively.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd performs vulnerability assessments on an ad hoc basis and case-by-case, but not yet systematically or regularly at level 1. Vulnerability assessments are performed especially when changes occur in systems, such as updates, new equipment installations, or when deviations or security risks are detected.
+
+### Performing vulnerability assessments on a case-by-case basis
+
+The company performs vulnerability assessments always when there is a specific need or when vulnerabilities in systems need to be assessed. Assessments are performed especially for critical systems, such as production systems or information systems, when changes are made or when new vulnerabilities are detected.
+
+- Assessments in conjunction with system changes: When the company installs new systems or makes significant changes to existing systems, vulnerability assessments are performed to identify potential security risks. This may include, for example, vulnerability scanning for network equipment or security assessment for software.
+- Assessments when vulnerabilities are detected: If vulnerability information indicates that a specific system may be vulnerable, the company performs a vulnerability assessment to determine the extent and impact of the vulnerability. This helps the company make a decision on necessary corrective actions.
+
+### Methods and tools for vulnerability assessment
+
+The company uses various methods and tools to perform vulnerability assessments, but these are not yet fully standardized or systematically utilized. Assessments may include both automated tools and manual inspections.
+
+- Automated vulnerability scanning: The company uses automated vulnerability scanning tools that help identify known vulnerabilities in systems and software. These tools are used especially when network equipment or critical systems, such as ERP or SCADA systems, need to be checked.
+- Manual security assessment: In addition to automated tools, the company performs manual security assessments where security experts evaluate systems' security configurations and identify potential vulnerabilities. These assessments are performed especially when more detailed analysis is needed or when automated tools do not provide sufficient information.
+
+### Utilizing assessment results
+
+The results of vulnerability assessments are used to identify necessary corrective actions, such as security updates, configuration changes, or increased monitoring. However, assessments are not yet systematically documented or their results are not followed up on in the long term.
+
+- Installing corrective actions: Based on assessment results, the company installs security updates or makes configuration changes to address identified vulnerabilities. This helps reduce risks and improve system security.
+- Monitoring and tracking: If vulnerability assessments reveal that certain systems are more vulnerable than others, the company may increase monitoring of these systems. However, this is not yet systematic, and monitoring may be temporary.
+
+### Risks and challenges at level 1
+
+Since vulnerability assessments are not systematic or regular, there is a risk that all vulnerabilities in systems are not identified in time. This may expose the company to security risks, especially if vulnerabilities develop into more serious problems before they are detected.
+
+- Coverage limitations: Case-by-case assessments may not cover all systems, which means that some vulnerabilities may remain undetected. This may weaken the company's overall security posture.
+- Lack of systematicity: Since assessments are not performed regularly, there is a risk that vulnerability information becomes outdated or new vulnerabilities are not detected in time. This may lead to systems remaining vulnerable for longer than necessary.
+
+### Development plan
+
+Food Company Ltd recognizes the need to develop vulnerability assessments to be more systematic and regular. The goal is to implement a process where all critical systems are assessed regularly and assessment results are utilized proactively to improve security.
+
+- Regular vulnerability assessments: The company intends to implement regular vulnerability assessments that cover all critical systems. This helps ensure that vulnerabilities are identified in time and corrective actions can be made proactively.
+- Systematic documentation and tracking: The goal is also to ensure that all assessment results are documented and their impacts are tracked continuously. This improves the company's ability to analyze how effective the corrective actions have been and helps make necessary improvements.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+Vulnerability assessments aim to identify, document, and report exploitable vulnerabilities (such as missing or incorrectly installed patches, potential malware infections, weak passwords, etc.). Vulnerability assessments may be performed using automated tools or manual review and testing methods, and may include both IT and OT technologies.
+
+Vulnerability assessments may also be supplemented by penetration testing where necessary to further validate findings.
+
+**Related practices:**
+
+- **Input**: Implementation of THREAT-1b provides input that can be useful in implementing this practice.
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. The practices of this development path are: THREAT-1c, THREAT-1f, THREAT-1i, THREAT-1l.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1d">Relevant vulnerabilities are addressed.</PracticeTitle>
+
+### Question
+
+Does the organization address relevant vulnerabilities when they are identified? This may mean, for example, installing security updates, changing system configurations, or increasing monitoring when vulnerabilities are detected. Are corrective actions taken quickly enough and is it ensured that vulnerabilities are addressed before they can be exploited?
+
+### Significance
+
+Addressing vulnerabilities is a critical part of an organization's cybersecurity. It's not enough to just identify vulnerabilities - they must also be effectively addressed to reduce risks and protect critical systems and data. Quick and effective addressing of vulnerabilities helps prevent cyber attacks and minimize possible damage.
+
+<AnswerOptions>
+Evaluate how the organization addresses relevant vulnerabilities:
+
+- **Not implemented or no information**: Vulnerabilities are not addressed, or information about addressing them is not available.
+- **Partially implemented**: Vulnerabilities are addressed on a case-by-case basis, but the process is not systematic or regular.
+- **Mostly implemented**: Vulnerabilities are addressed quite systematically, but addressing may be delayed or may not cover all relevant vulnerabilities.
+- **Fully implemented**: All relevant vulnerabilities are addressed systematically and quickly, and the effectiveness of corrective actions is monitored continuously.
+</AnswerOptions>
+
+### Example
+
+The company addresses relevant vulnerabilities when they are identified, especially critical vulnerabilities that may affect production or information security. For example, if a software vendor publishes a critical security update, the company installs it as quickly as possible for affected systems. Less critical vulnerabilities may be addressed later, for example in conjunction with normal maintenance. However, the process is not yet fully systematic, and addressing may be delayed if resources are limited or if the vulnerability is assessed as low risk. In the future, the company aims to develop the process so that all relevant vulnerabilities are addressed more systematically and quickly, and the effectiveness of corrective actions is monitored better.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd addresses relevant vulnerabilities when they are identified, but this occurs on an ad hoc basis and is not yet systematic or regular at level 1. Relevant vulnerabilities are addressed especially when they are assessed as critical or when they may affect the company's key functions, such as production or information security.
+
+### Addressing relevant vulnerabilities on a case-by-case basis
+
+The company addresses vulnerabilities on a case-by-case basis, prioritizing especially critical vulnerabilities that may have significant impacts on business operations. Less critical vulnerabilities may be addressed later or in conjunction with normal system maintenance.
+
+- Addressing critical vulnerabilities: If a vulnerability is assessed as critical, such as a security gap that could allow unauthorized access to systems or disrupt production, the company addresses it immediately. This may include installing security updates, changing configurations, or temporarily isolating systems.
+- Addressing less critical vulnerabilities: Vulnerabilities that are assessed as lower risk may be addressed later, for example in conjunction with normal maintenance windows or system updates. This helps the company prioritize its resources and focus on the most important vulnerabilities first.
+
+### Methods for addressing vulnerabilities
+
+The company uses various methods to address vulnerabilities, depending on the nature and severity of the vulnerability. These methods include both technical solutions and organizational measures.
+
+- Installing security updates: The most common way to address vulnerabilities is to install security updates or patches that software vendors have released. The company installs these updates especially for critical systems, such as ERP and SCADA systems, when critical vulnerabilities are detected.
+- Configuration changes: If a vulnerability relates to system configuration, the company may change settings to reduce the risk. This may include, for example, restricting access rights, changing network settings, or strengthening authentication requirements.
+- Temporary measures: In some cases, the company may implement temporary measures to address a vulnerability while a permanent solution is being prepared. This may include, for example, temporarily isolating a system from the network or increasing monitoring.
+
+### Prioritizing vulnerabilities
+
+The company prioritizes addressing vulnerabilities based on their criticality and possible impacts. Critical vulnerabilities that may affect business continuity or information security are addressed immediately, while less critical vulnerabilities may be addressed later.
+
+- Criticality assessment: Each vulnerability is assessed based on its criticality and possible impacts. Factors taken into account in the assessment include the potential for exploitation, the impact on business operations, and the availability of corrective actions.
+- Case-by-case prioritization: The company prioritizes addressing vulnerabilities on a case-by-case basis, taking into account current threats and available resources. This means that vulnerability situations are handled as they arise, but systematic and regular proactive vulnerability management is not yet in use at level 1.
+
+### Documentation and tracking
+
+Although the company addresses vulnerabilities on a case-by-case basis, documentation and tracking of corrective actions are not fully systematic at level 1. This may lead to a situation where some vulnerability-related corrective actions are not documented, which weakens long-term traceability and analysis.
+
+- Lack of documentation: Since corrective actions are not always documented systematically, some actions taken to address vulnerabilities may not be recorded. This may make it difficult to evaluate the effectiveness of corrective actions retrospectively, especially if vulnerability tracking is not continuous.
+- Tracking challenges: The impacts of addressing vulnerabilities are not tracked regularly, which may lead to some corrective actions not being sufficient or monitoring not continuing long enough. This may weaken the company's ability to manage vulnerabilities in the long term.
+
+### Risks and challenges at level 1
+
+Since addressing vulnerabilities is not systematic or regular, there is a risk that all relevant vulnerabilities are not handled in time. This may increase the company's exposure to cyber threats, especially when vulnerabilities evolve rapidly or are not detected early enough.
+
+- Reactive activity: Addressing vulnerabilities is currently based on a reactive operating model, which means that corrective actions are made only after a vulnerability has already been detected. This may cause the company not to be fully prepared for new or rapidly evolving vulnerabilities.
+- Delays in corrective actions: If vulnerabilities are not addressed immediately or systematically, they may develop into more serious problems before they are responded to. This may cause vulnerabilities that expose the company to greater security risks.
+
+### Development plan
+
+Food Company Ltd recognizes the need to improve the systematicity and regularity of addressing vulnerabilities. The company plans to develop processes whereby addressing vulnerabilities can be done more proactively and effectively, and all corrective actions are documented accurately.
+
+- Systematic vulnerability management: The company intends to create a systematic approach where vulnerability information is monitored regularly and relevant vulnerabilities are addressed proactively. This helps prevent vulnerabilities from developing into more serious problems and improves the company's ability to respond quickly.
+- Documentation and tracking of corrective actions: The goal is to ensure that all vulnerability-related corrective actions are documented and their impacts are monitored continuously. This improves the company's ability to analyze how effective the corrective actions have been and helps make necessary improvements.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+Identified and prioritized vulnerabilities are addressed with appropriate actions based on risk. This may include applying patches, changing configurations, or implementing other mitigating controls. Some vulnerabilities may be accepted if the risk is assessed as acceptable and business justification supports it.
+
+**Related practices:**
+
+- **Input**: Implementation of THREAT-1c provides input that can be useful in implementing this practice.
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. The practices of this development path are: THREAT-1d, THREAT-1g, THREAT-1j.
+</C2M2Doc>
+
+---
+
+<ObjectiveTitle name="threat-2">Threat defense and information sharing</ObjectiveTitle>
+
+### Significance
+
+This objective focuses on identifying and responding to cyber threats that may target the organization's operations. **Threats** are potential malicious activities or events that can harm the organization's information systems, data, or operations. Effective threat defense requires the organization to actively monitor threat information, identify potential threat actors and their objectives, and implement measures to defend against or mitigate threats.
+
+Information sharing is also a key part of threat defense. The organization shares threat information both internally, between different departments and functions, and externally, such as with authorities, partners, or industry networks. This helps the organization stay aware of evolving threat landscapes and enables coordinated responses to threats.
+
+### Answer instructions
+
+This objective assesses how effectively the organization identifies, monitors, and responds to cyber threats, and how it shares threat information to support defense efforts.
+
+When evaluating this objective, consider:
+
+- How systematically does the organization identify and monitor cyber threats?
+- Are threat information sources, such as security authorities, vendors, or security communities, used regularly?
+- Has the organization identified potential threat actors and their objectives that may target its operations?
+- How quickly and effectively does the organization respond to identified threats?
+- Does the organization share threat information both internally and externally to support coordinated defense efforts?
+
+This objective helps the organization build a comprehensive understanding of the threat landscape and enables it to respond quickly and effectively to evolving cyber threats.
+
+---
+
+<PracticeTitle name="threat-2a">Appropriate sources of information for threat identification have been identified.</PracticeTitle>
+
+### Question
+
+Has the organization identified appropriate information sources to support threat identification? Such sources may include authority alerts, software vendor bulletins, or international security reports. It's also important to know whether these sources are actively utilized to identify threats, even if the activity is not yet fully systematic.
+
+### Significance
+
+Identifying appropriate threat information sources is an essential part of the organization's ability to respond to cybersecurity threats. Detecting threats in a timely manner depends on the organization having access to current and reliable information sources that provide information about, for example, cyber attacks, vulnerabilities, and new risks. Information sources help the organization assess the severity of risks and take actions to counter them.
+
+<AnswerOptions>
+Evaluate to what extent the organization utilizes appropriate threat information sources:
+
+- **Not implemented or no information**: The organization has not identified threat information sources or information on this matter is not available.
+- **Partially implemented**: The organization has identified threat information sources, but their use is limited or irregular.
+- **Mostly implemented**: Threat information sources are widely used, but usage is not fully systematic or regular.
+- **Fully implemented**: The organization comprehensively and regularly utilizes appropriate threat information sources for threat identification.
+</AnswerOptions>
+
+### Example
+
+The company uses multiple information sources for threat identification, such as the Finnish National Cyber Security Centre's alerts, software vendors' threat bulletins, and international security portal reports. These sources are utilized mainly when threats are detected or risk situations arise in the company. However, threat information sources are not monitored regularly, but are used as needed. The goal is to develop the process so that threat information is collected and utilized more systematically and regularly.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd has identified several appropriate information sources to support threat identification, but the utilization of these information sources occurs on an ad hoc basis and is not yet systematic or regular at level 1. Threat information is sought from sources as needed, especially when possible threats or new risks have been detected in system operations.
+
+### Appropriate information sources for threat identification
+
+The company has access to several different sources related to threat identification, but the utilization of this information is not fully established or regular. Information sources are used especially to identify threats to critical systems, such as ERP and SCADA systems, when deviations or security-related vulnerabilities are detected.
+
+- Cyber Security Centre notifications: The company monitors alerts and announcements from the Finnish National Cyber Security Centre, which provide timely information about new cyber threats and attacks. This information is used for threat identification especially when it directly relates to software or equipment used by the company.
+- Software vendor threat bulletins: Software vendors, such as ERP and SCADA system providers, publish information about known threats and risks related to their software. The company utilizes this information especially in conjunction with system updates.
+- Security communities and expert networks: The company follows security community channels, such as CERT networks (Computer Emergency Response Team), which regularly publish reports on known threats and security attacks. These sources are utilized when the company has detected a new threat that requires more detailed analysis.
+- International security portals: The company also receives threat information through international security portals, such as ThreatPost or KrebsOnSecurity. These sources provide timely information about security threats occurring on a global level.
+
+### Case-by-case use of information sources
+
+Information sources are used on an ad hoc basis, meaning information is sought and utilized when threats are detected or when there is a need to assess a particular system's security situation. Information collection and utilization are not systematic, nor are they checked at regular intervals.
+
+- Case-by-case use: The company monitors information sources especially when suspicious activities or possible threats are detected in information systems. This may occur, for example, when IT or OT systems exhibit abnormal behavior.
+- No regular checking: Since threat information sources are not monitored regularly, information is mainly sought when there is a specific need. This means that information is not checked proactively, but sources are relied upon when threats are already detected.
+
+### Diversity and utilization of information sources
+
+Food Company utilizes several different sources that provide comprehensive information about various threats, such as cyber attacks, malware, and security incidents. These sources are used especially for threat identification and risk assessment.
+
+- Local and national information sources: The Finnish National Cyber Security Centre's bulletins and alerts are important especially for identifying nationally significant cyber threats. This information is used in situations where threats may more broadly affect the entire industry or national infrastructure.
+- International sources: International threat information sources, such as software vendor and security organization reports, provide information especially about globally spreading threats that may also affect the food company's systems. This information is used when threats relate to international software or systems.
+- Interpretation of threat information: Collected threat information is analyzed and interpreted as needed to determine how threats affect the company's critical systems and processes. This helps the company make informed decisions to prevent possible threats or reduce their impacts.
+
+### Use of information in threat defense
+
+Collected threat information helps the company make decisions about necessary actions to counter threats or mitigate their impacts. These actions may be implemented, for example, by increasing monitoring or updating systems to improve security.
+
+- Increasing monitoring: If threat information indicates an increased risk to certain systems, the company may increase monitoring of those systems. This may especially mean enhancing network monitoring or continuous surveillance of certain devices and software.
+- Installing updates and patches: When information sources provide information about threat-related updates or patches, the company installs these on a case-by-case basis. This helps ensure that threats can be responded to quickly and their impacts can be minimized.
+- Adapting security practices: Threat information collected to support threat identification also helps the company adapt security practices as needed. This may mean, for example, checking access rights or updating security protocols.
+
+### Risks and challenges at level 1
+
+Since threat information collection and utilization are not systematic, there is a risk that certain threats may not be detected in time or that threat information becomes outdated before it is acted upon. This may lead to some threats being realized without the company being adequately prepared for them.
+
+- Information aging: Since information sources are not monitored regularly, it is possible that some threat information becomes outdated before there is time to react to it. This may weaken the company's ability to counter new or rapidly evolving threats.
+- Reactive approach: Threat identification is currently based on a reactive operating model, which means that threats are mainly reacted to when they have already been detected. The proactive approach is weaker because threat information is not checked regularly.
+
+### Development plan
+
+Food Company Ltd recognizes the need to develop threat information collection and utilization processes. The goal is to create a more systematic approach to collecting and sharing threat information, so that all relevant threats are detected and can be responded to in time.
+
+- Regular threat information monitoring: The company intends to implement a regular process for monitoring threat information sources, so that information can be collected continuously and systematically. This helps improve the company's ability to identify new threats and prepare for them proactively.
+- Improving information utilization: Additionally, the company aims to improve threat information analysis and use as part of risk management. This means that threat information will be better integrated into the company's security practices and operational processes.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+The organization should regularly survey information sources (such as the cyber security centre, CISA, appropriate ISACs, vendors, services) and determine their relevance and value as providers of threat information.
+
+Initially, some analysis may be needed to determine which information is most relevant for implementing the organization's threat management activities. Additionally, threats affecting similar industries may be relevant to the function and should be considered accordingly.
+
+**Related practices:**
+
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. The practices of this development path are: THREAT-2a, THREAT-2f.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2b">Cyber threat information is collected and interpreted for the function at least on an ad hoc basis. The activity does not need to be systematic and regular.</PracticeTitle>
+
+### Question
+
+Does the organization collect information about possible cyber threats, such as malware or network attacks, and examine it whenever a threat or problem arises? This may mean that information is sought, for example, when there is suspicious activity in systems or an external threat has been identified. Information is collected and analyzed on a case-by-case basis, not continuously or regularly.
+
+### Significance
+
+Cyber threat information collection and interpretation are central to supporting the organization's cybersecurity. Information about threats helps the company respond more quickly to possible security threats and ensure that necessary actions can be implemented in a timely manner. Although the process is not fully systematic, it supports the organization in identifying and responding to threats, especially in critical moments.
+
+<AnswerOptions>
+Evaluate how the organization collects and interprets cyber threat information:
+
+- **Not implemented or no information**: Cyber threat information is not collected, and there is no practice for its interpretation.
+- **Partially implemented**: Cyber threat information is collected, but the process is random and not analyzed regularly.
+- **Mostly implemented**: Cyber threat information is collected from multiple sources, but analysis is not fully systematic and does not cover all necessary information sources.
+- **Fully implemented**: Cyber threat information collection and interpretation are systematic and cover all key sources, and are actively utilized to support functions.
+</AnswerOptions>
+
+### Example
+
+The company collects cyber threat information from various sources as needed, but the process is not yet systematic. Information is collected especially when threats arise, such as in system updates or in connection with security vulnerabilities. Sources include among others the Finnish National Cyber Security Centre's alerts, software vendors' threat bulletins, and international security portal reports. Information is interpreted on a case-by-case basis and used to support risk management.
+
+Although the process is still reactive, the company intends to develop it to be more systematic and implement continuous cyber threat information monitoring, so that threats can be identified proactively and responded to more quickly.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd collects and interprets cyber threat information to support its functions, but this occurs on an ad hoc basis and case-by-case. Cyber threat information collection and interpretation are not yet systematic or regular at level 1. Information is sought and analyzed especially when a specific threat, problem, or deviation occurs in the company's IT or OT systems.
+
+### Collecting cyber threat information on a case-by-case basis
+
+The company collects cyber threat information from multiple sources always as needed. This information collection focuses especially on critical moments, such as in conjunction with system updates or when security threats arise that may affect the company's operations.
+
+- Cyber Security Centre alerts: The company monitors alerts and bulletins from the Finnish National Cyber Security Centre, from which it receives information about current cyber threats. These sources are utilized on a case-by-case basis when a new threat is detected, but they are not checked regularly.
+- Software vendor security notifications: Software vendors', such as ERP and SCADA system providers', threat bulletins are important information sources. These are monitored especially when software updates are made or when a specific vulnerability is detected in systems.
+- Security experts and security portals: International security portals and security experts' blogs provide information more broadly about known threats. These information sources are used when there is a need to check whether a detected threat is related to a broader cyber attack or security issue.
+
+### Interpreting cyber threat information for the function
+
+When cyber threat information is collected, the company interprets it on a case-by-case basis based on how threats affect the organization's operations. This interpretation is not fully regular, but is done especially when a new threat is detected or when system security needs to be assessed.
+
+- Case-by-case interpretation: Cyber threat information is analyzed based on what impact the threat has on the company's key processes, such as production or security. Interpretation may include a risk assessment and a possible corrective plan to counter the threat.
+- Using threat information in decision-making: Cyber threat information interpretation helps the company make decisions about necessary actions. This may mean, for example, expediting a software update, increasing monitoring, or changing access rights for certain systems.
+
+### Practical utilization of information sources and interpretation
+
+Collected and interpreted cyber threat information is used for functions always as needed. Based on the information, the company can make corrective actions, such as installing security updates, changing system settings, or enhancing security practices.
+
+- Installing updates: Interpreted cyber threat information often leads to software and system updates, especially when vulnerabilities have been detected or when software vendors recommend updates to be made for certain threats.
+- Increasing monitoring: If collected threat information indicates deviations, the company may increase monitoring of certain critical systems, such as real-time network monitoring or closer monitoring of certain devices and servers.
+- Modifying security practices: Based on threat information, the company may also make changes to its security policy, such as restricting access rights or updating certain security practices.
+
+### Case-by-case approach at level 1
+
+Since cyber threat information collection and interpretation are not systematic or regular, they are relied upon mainly reactively. This means that the company acts according to how threats appear from information sources, but does not anticipate threats with regular checks or systematic analysis.
+
+- No regular process: Cyber threat information collection and analysis are done always as needed, but information sources are not monitored continuously. This may mean that certain threats go undetected if they are not visible or current at that particular moment.
+- Reactive activity: Actions are taken when a new threat or deviation is detected in the company. This may mean that cyber threat information is used only after a vulnerability or problem has already occurred.
+
+### Risks and challenges at level 1
+
+Since cyber threat information collection and interpretation occur on a case-by-case basis, there is a risk that some essential threats go undetected or are not responded to quickly enough. This may weaken the company's preparedness to counter new threats or security attacks.
+
+- Information aging: Since threat information is not collected regularly, some threat information may become outdated before the company has time to react to it. This may cause vulnerabilities that are not corrected in time.
+- Reactive approach: Case-by-case activity means that the company reacts to threats only after they are detected. The proactive approach, where threats are sought to be identified in advance with regular information analysis, is weaker at level 1.
+
+### Development plan
+
+Food Company Ltd aims to develop cyber threat information collection and interpretation into a more systematic and regular process. The goal is to implement a proactive operating model where threat information collection and analysis are a continuous part of risk management.
+
+- Regular threat information analysis: The company intends to implement a regular threat information collection process where different information sources are monitored continuously. This helps the company detect threats before they affect critical functions.
+- Utilizing information proactively: The goal is also that collected threat information is used proactively to counter threats, not just reactively. This means, for example, that security processes and systems are checked regularly based on threat information.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+Threats are identified and responded to starting with collecting actionable threat information from reliable sources and determining whether the threat information is relevant to the organization and the organization's functions.
+
+Threat information collection and review can occur by internal staff, as a service provided by a vendor, or a combination of both. Threat information sources should cover the various IT and OT devices and data repositories that are important for implementing the function.
+
+Related practices:
+
+- **Input**: Implementation of THREAT-2a provides input that can be useful in implementing this practice.
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. The practices of this development path are: THREAT-2b, THREAT-2h, THREAT-2k.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2c">Threat actor objectives targeting the function have been identified at least on an ad hoc basis.</PracticeTitle>
+
+### Question
+
+Has the organization identified the objectives of potential threat actors that may target its operations, at least on an ad hoc basis? This may mean that threat actor objectives are assessed whenever a new threat or deviation arises, even if this is not yet systematic or regular.
+
+### Significance
+
+Identifying threat actor objectives is an essential part of cybersecurity management, as it helps the organization assess why and how threat actors may direct their threats to its operations. This enables implementation of targeted countermeasures and reduces risks related to, for example, information theft or operational disruption.
+
+<AnswerOptions>
+Evaluate how well the organization identifies threat actor objectives and threat situations:
+
+- **Not implemented or no information**: Threat actor objectives have not been identified or assessed.
+- **Partially implemented**: Threat actor objectives are identified on a case-by-case basis, but this is not systematic or continuous.
+- **Mostly implemented**: Threat actor objectives are identified in most cases and activity is partially proactive, but not fully systematic.
+- **Fully implemented**: Threat actor objectives are identified systematically and proactively and threat situations are assessed continuously.
+</AnswerOptions>
+
+### Example
+
+The company identifies threat actor objectives when new cyber threats or deviations in operations arise. Identification is not yet systematic, but for example in connection with production disruptions, it is assessed whether this could be an attack aimed at preventing production or stealing information. In such cases, the company takes necessary actions, such as increasing monitoring or restricting access rights. For example, when ransomware strikes, the company focuses on preventing information theft and restoring systems as quickly as possible. In the future, the company intends to develop the process so that threat actor objectives are identified more proactively and systematically by utilizing more threat information and analytics.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd has identified at least on an ad hoc basis the objectives of potential threat actors that may target its operations. This identification is not yet systematic or regular at level 1, but the company assesses threat actor objectives whenever threats or deviations are detected, and takes necessary actions to reduce risks.
+
+### Identifying threat actor objectives on a case-by-case basis
+
+The company identifies threat actor objectives especially when new cyber threats, abnormal activities, or intelligence information arise that indicate targeted attacks. This identification is not fully proactive, but is based on case-by-case analysis when threat activity is detected.
+
+- Case-by-case identification: Threat actor objectives are assessed whenever detected threats directly indicate the company's operations. This may mean, for example, disruption of the company's business, interruption of production processes, or information theft.
+- Targeted attacks: If it is detected that threat actors have directed an attack to a specific part of operations, such as production, distribution, or information systems, the company assesses the threat actors' objectives and takes immediate actions to counter them.
+
+### Typical threat actor objectives
+
+The company assesses potential threat actors' objectives on a case-by-case basis from different perspectives. Typically, threat actors' objectives may relate to, for example, information theft, business disruption, or financial gain, and these objectives directly affect how the company responds to the threat.
+
+- Information theft: Threat actors may seek to steal sensitive information, such as customer data, production process-related data, or trade secrets. This may relate to competitors, cyber criminals, or other parties who want to profit financially from the company's information.
+- Operational disruption: Threat actors may seek to interrupt or disrupt the company's operational activities, such as production or logistics, either for sabotage or extortion purposes. This may especially target critical systems, such as SCADA or ERP systems.
+- Criminal motives: Cyber criminals' objectives may be financial, such as using ransomware to force the company to pay ransoms for data recovery or system operation restoration.
+
+### Identification methods
+
+The company uses several methods to identify threat actor objectives, but these methods are not fully systematic or regular. Identification is based mainly on case-by-case analysis and existing threat information.
+
+- Threat actor intelligence: The company utilizes available threat information, such as cybersecurity reports and expert analyses, to assess potential threat actors' motives and objectives. This information helps the company understand which functions are more vulnerable to attacks and why.
+- Information collection in threat situations: When cyber threats or abnormal activity in systems are detected, the company collects information about what the threat actors' objectives are. This may occur, for example, by analyzing the type of attack, targets, and threat actors' previous activities.
+
+### Actions to address threat actor objectives
+
+When threat actor objectives have been identified, the company takes necessary actions to counter them. This may include increased monitoring, restricting access rights, installing security updates, or protecting information.
+
+- Increasing monitoring: If threat actors' objectives include information theft or operational disruption, the company may increase monitoring especially for critical systems. This ensures that abnormal activities are detected quickly.
+- Restricting access rights: If threat actors' objectives relate to abuse of access rights or internal system attacks, the company may restrict certain users' access to critical systems or information.
+- Security updates: If threat actors' objectives relate to exploiting vulnerabilities, the company ensures that all critical systems and software are updated to minimize possible security risks.
+
+### Risks and challenges at level 1
+
+Since identifying threat actor objectives occurs mainly on a case-by-case basis, there is a risk that some threat actors' motives go undetected or are identified too late. This may expose the company to insecurity if threat actors' objectives are complex or hidden.
+
+- Lack of proactivity: Since identification is not systematic, the company operates mainly reactively, which may lead to threat actors' objectives not being detected until an attack or threat is already underway. This may weaken the company's ability to respond quickly and effectively.
+- Information insufficiency: If threat actors' objectives are not assessed regularly or systematically, the company may lose critical information about threat development or threat actors' changing motives. This may make it difficult to address threats effectively.
+
+### Development plan
+
+Food Company Ltd recognizes the need to develop a more systematic approach to identifying and monitoring threat actor objectives. The goal is to create a process where threat actors' objectives are assessed regularly and proactively, so that the company can respond to threats more effectively and prevent possible attacks.
+
+- Systematic analysis: The company intends to implement a more systematic approach where threat actors' objectives are analyzed regularly. This helps ensure that the company better understands what threat actors aim for and how their motives may evolve.
+- Utilizing threat information: The goal is to increase the use of threat information and analyses to identify threat actors' objectives. This improves the company's ability to make informed decisions and respond to threats proactively.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+Threat objectives are outcomes of threat actor activity that have negative impacts on the organization. For example, an organization that does not handle confidential information may not be concerned about information theft, but may be very concerned about an event that causes service disruption.
+
+Threat actors may use multiple tactics or techniques, such as those defined in the MITRE ATT&CK framework (for enterprise or industrial control systems (ICS)), to achieve their objectives. Examples of threat objectives may include data manipulation, intellectual property theft, asset damage, denial of control, loss of safety, or service disruption.
+
+**Related practices:**
+
+- **Input**: Implementation of THREAT-2b provides input that can be useful in implementing this practice.
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. **The practices of this development path are: THREAT-2c, THREAT-2e, THREAT-2i**.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2d">Relevant threats are addressed (e.g., by increasing monitoring or tracking threat developments).</PracticeTitle>
+
+### Question
+
+Does the organization respond to important cyber threats, such as by increasing monitoring, tracking threat developments, or taking other actions when threats are detected? Are threats addressed quickly when they are identified and is it ensured that necessary actions are implemented, such as security patches or system changes?
+
+### Significance
+
+Addressing relevant threats is a key part of the organization's cybersecurity and risk management. It enables quick and effective response to threats that may threaten business continuity, such as malware or network attacks. Such response ensures that the company can address critical situations quickly and minimize possible damage, while protecting key business processes and information.
+
+<AnswerOptions>
+Evaluate to what extent the organization addresses relevant threats and tracks their development:
+
+- **Not implemented or no information**: There is no practice for addressing threats or threat information sharing is not organized.
+- **Partially implemented**: Threats are handled on an ad hoc basis, but there is no systematic approach or regular monitoring.
+- **Mostly implemented**: Relevant threats are addressed, but practices are not fully proactive, and addressing occurs mainly reactively.
+- **Fully implemented**: Relevant threats are addressed systematically and proactively. Threat information sharing and monitoring are regular and part of the organization's daily operations.
+</AnswerOptions>
+
+### Example
+
+The company responds to cyber threats depending on the situation. For example, if a threat is detected, it may increase monitoring or install necessary security updates. If the threat is serious, such as malware or a network attack, the company addresses it immediately and ensures that necessary actions, such as strengthening network protection, are implemented quickly. Less critical threats, such as minor vulnerabilities, are usually addressed later. Actions are not yet fully systematic, and they are not always carefully documented, which may make future analysis and ensuring continuity difficult.
+
+In the future, the company intends to develop its processes so that threats can be responded to more proactively and effectively. The goal is to create a clearer and more systematic approach to threat management, where all actions are documented accurately and impacts are monitored continuously. This improves the company's capabilities to respond more quickly and effectively to new threats and strengthens the ability to manage risks in the long term.
+
+<ExampleDocument title="Example document">
+### Introduction
+
+Food Company Ltd addresses relevant cyber threats to the function, but this occurs on an ad hoc basis and is not yet systematic or regular at level 1. Relevant threats are responded to depending on the situation, for example by increasing monitoring, tracking threat information, or installing security patches when a threat is detected or risk increases.
+
+### Addressing relevant threats on a case-by-case basis
+
+The company addresses relevant threats to the function when they are detected or when information about them is received from appropriate information sources. Reactive activity ensures that especially serious threats are responded to quickly, but less critical threats may be addressed only later.
+
+- Immediate response to critical threats: If a threat is detected that directly affects the company's critical functions, such as production or security, it is addressed immediately. This may include countering cyber threats, such as malware or network attacks, by increasing network monitoring or installing immediate security patches.
+- Monitoring threat information: In some cases, threats may not require immediate action, but they are monitored closely. For example, based on threat information, the company may increase monitoring for certain systems, such as ERP or SCADA systems, and observe deviations in system operations.
+
+### Practices for addressing threats
+
+When relevant threats are detected, the company utilizes several methods to address them. These methods are used on a case-by-case basis, depending on the severity of the threat and its possible impacts on the organization's operations.
+
+- Enhancing monitoring: If threat information indicates an increased risk, the company increases monitoring of the relevant systems. This may mean, for example, real-time network monitoring or special surveillance of certain devices or software until the threat is countered or neutralized.
+- Installing security patches: When software vendors publish security updates, the company installs these on a case-by-case basis, especially when the update relates to a detected threat. Updates often target critical systems, such as production control or security systems.
+- Restricting access rights: If a threat relates to system access rights or data processing, the company may restrict users' access to certain areas or applications. This action helps minimize information leak risks or abuse, especially in threat situations.
+
+### Prioritizing actions
+
+The company assesses the importance of addressing threats based on their severity. Critical threats that may directly affect business continuity or security are prioritized higher and handled immediately. Less critical threats may be managed over a longer period, such as as part of normal system updates.
+
+- Criticality analysis: Each threat is analyzed based on its criticality. If a threat significantly affects the company's critical processes, such as production, distribution, or security, actions are taken immediately. Smaller threats may be responded to with a delay if they do not directly threaten operational continuity.
+- Case-by-case prioritization: The company prioritizes addressing threats based on how immediately they have an impact. This means that threat situations are handled as they arise, but systematic and regular proactive threat management is not yet in use at level 1.
+
+### Documentation and monitoring
+
+Although the company addresses threats on a case-by-case basis, documentation and monitoring of actions are not fully systematic at level 1. This may lead to a situation where some threat-related actions are not documented, which weakens long-term traceability and analysis.
+
+- Lack of documentation: Since actions are not always documented systematically, some actions taken to address threats may not be recorded. This may make it difficult to evaluate the effectiveness of actions retrospectively, especially if threat monitoring is not continuous.
+- Monitoring challenges: The impacts of addressing threats are not tracked regularly, which may lead to some actions not being sufficient or monitoring not continuing long enough. This may weaken the company's ability to manage threats in the long term.
+
+### Risks and challenges at level 1
+
+Since addressing threats is not systematic or regular, there is a risk that all relevant threats are not handled in time. This may increase the company's exposure to cyber threats, especially when threats evolve rapidly or are not detected early enough.
+
+- Reactive activity: Addressing threats is currently based on a reactive operating model, which means that actions are made only after a threat has already been detected. This may cause the company not to be fully prepared for new or rapidly evolving threats.
+- Delays in actions: If threats are not addressed immediately or systematically, they may develop into more serious problems before they are responded to. This may cause vulnerabilities that expose the company to greater security risks.
+
+### Development plan
+
+Food Company Ltd recognizes the need to improve the systematicity and regularity of addressing threats. The company plans to develop processes whereby addressing threats can be done more proactively and effectively, and all actions are documented accurately.
+
+- Regular threat management: The company intends to create a systematic approach where threat information is monitored regularly and relevant threats are addressed proactively. This helps prevent threats from developing into more serious problems and improves the company's ability to respond quickly.
+- Documentation and monitoring of actions: The goal is to ensure that all threat-related actions are documented and their impacts are monitored continuously. This improves the company's ability to analyze how effective the actions have been and helps make necessary improvements.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersecurity Assessment text (version 2.1)">
+The organization responds to threats identified through collected and analyzed threat information when it is determined that threats may adversely affect operations. Relevant threats are threats/threat actors that have the means, motive, and opportunity to affect service delivery. Responding to threats may mean, for example, implementing mitigating controls or monitoring the threat situation.
+
+**Related practices:**
+
+- **Input**: Implementation of THREAT-2c provides input that can be useful in assessing and implementing this practice.
+- **Progression**: This practice is part of a development path. Practices related to the same function form a development path, which includes practices from the basic level towards more complete or advanced implementations. The practices of this development path are: THREAT-2d, THREAT-2g, THREAT-2j.
+</C2M2Doc>
+
+---
+
+_Guide updated: 6.2.2025_

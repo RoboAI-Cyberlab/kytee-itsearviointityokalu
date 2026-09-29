@@ -1,0 +1,204 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Critical service protection
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- Incident response specialist
+- Business continuity specialist
+- Enterprise risk management specialist
+</Roles>
+
+The organization should identify its role in providing critical services to society and manage the related risks accordingly.
+
+---
+
+<ObjectiveTitle name="critical-1">Identification of critical services and their dependencies</ObjectiveTitle>
+
+The organization should identify its role in providing critical services to society, understand what is required to provide these services, and comprehend the potential impacts if these services fail.
+
+---
+
+<PracticeTitle name="critical-1a">Organization provided services that are critical to the society (critical services), have been identified and documented.</PracticeTitle>
+
+### Significance
+
+This question focuses on the organization's ability to identify and document all services that are critical to societal functioning. Identifying critical services helps understand how their potential failures or interruptions could affect society's security and operational capability. Such documentation is the foundation for effective preparedness and risk management.
+
+### Answer instructions
+
+Assess how well your organization has identified and documented these services. If critical services are clearly defined and documentation is up to date, select "Fully implemented". If the identification process is ongoing, select "Partially implemented".
+
+> **Hospital** has identified vital services such as the emergency operating room and patient information system. Documentation describes in detail the significance of these services and dependencies, such as the criticality of the power grid and telecommunications.
+
+> **Telecommunications company** has identified that critical services, such as emergency call routing service and network infrastructure, are vital to society's security. Documentation describes how these services' operation is ensured during disruptions, such as power outages or cyberattacks.
+
+> **Logistics company** has mapped and documented the most important services, such as food transportation and warehouse operations, which are essential to society. This identification enables planning for supply disruptions to ensure the availability of important resources is not compromised.
+
+---
+
+<PracticeTitle name="critical-1b">Data required for the provision of critical services has been identified and documented.</PracticeTitle>
+
+### Significance
+
+The purpose of this point is to ensure that the organization understands and documents the data needed for critical services to function. Identifying information is essential as it helps protect and ensure data availability and integrity during disruptions. Without sufficient understanding of what data is critical, it can be difficult to prepare for threats such as data breaches or denial-of-service attacks.
+
+### Answer instructions
+
+Review whether your organization has identified and documented all necessary data. Select "Fully implemented" if this work has been done comprehensively and documentation is readily available.
+
+> **Bank** has identified that the integrity of account transactions and customer information is critical to service operation. They have documented how this data is protected and ensured its backup and protection protocols.
+
+> **Water utility** has identified that water distribution system management data is critical. They have documented information such as water reservoir levels and water distribution processes, and ensured that the integrity and availability of this information are guaranteed against potential cyberattacks.
+
+> **Pharmaceutical manufacturer** has documented production-critical data, such as formulas and quality control results. Without this information, medicine production could be interrupted or lead to serious quality issues. Documentation also covers information protection and backup.
+
+---
+
+<PracticeTitle name="critical-1c">Processes required for the provision of services have been identified and documented.</PracticeTitle>
+
+### Significance
+
+This point evaluates whether the organization has identified and documented all processes required to provide critical services. Understanding these processes is vital as it enables preparation for disruptions and maintenance of business continuity. If processes are not precisely defined, the organization may have difficulty managing or anticipating disruptions.
+
+### Answer instructions
+
+Assess whether all important processes have been identified and documented. If processes are described in detail and known to all stakeholders, select "Fully implemented".
+
+> **Data center** has documented in detail server maintenance processes, data backup, and emergency preparedness. This helps ensure that services operate smoothly even during disruptions.
+
+> **Municipal administration** has documented processes related to critical services, such as waste management operations and emergency management. This includes detailed action plans that ensure waste management continuity during crises and rapid response to exceptional situations.
+
+> **Farmers' association** has identified and documented the most important harvesting processes and contingency plans for situations where agricultural equipment operations are interrupted or raw material deliveries are delayed. This helps minimize the damages caused by production interruptions.
+
+---
+
+<PracticeTitle name="critical-1d">Critical systems (IT and OT assets) have been identified and documented.</PracticeTitle>
+
+### Significance
+
+This question examines whether the organization has identified and documented all critical systems related to both information technology (IT) and operational technology (OT). Identifying these systems is vital to ensure service continuity and effectively manage potential disruptions. Without comprehensive understanding of critical IT and OT assets, the organization may be vulnerable to unexpected disruptions and security risks.
+
+### Answer instructions
+
+Assess whether all critical systems have been identified and documented. If all IT and OT systems are recorded and their significance is understood for organizational operations, select "Fully implemented".
+
+> **Energy utility** has identified power grid management systems (OT) and information systems (IT) that monitor and control energy delivery, and has documented in detail their roles and preparedness measures.
+
+> **Airport** has identified all critical systems, such as air traffic control systems (OT) and passenger service IT systems. Documentation describes how systems are maintained, protected, and their operation ensured during emergencies, such as during a cyber attack.
+
+> **Retail central warehouse** has mapped automated warehousing systems (OT) and their connections to IT systems that manage goods deliveries. The warehouse has documented how systems are protected and operational capability ensured, for example, in case of cyberattacks or equipment failures.
+
+---
+
+<ObjectiveTitle name="critical-2">Management of critical services</ObjectiveTitle>
+
+The organization's senior management has responsibility for securing sufficient resources for providing critical services and delegating decision-making authority within the organization so that decision-making is effective and occurs in the right place.
+
+Risks related to networks and systems for delivering critical services should be assessed as part of the organization's overall risks.
+
+---
+
+<PracticeTitle name="critical-2a">All resources are under the organization's security management.</PracticeTitle>
+
+### Significance
+
+This point verifies whether all resources required for providing critical services (data, processes, systems, facilities, and supply chains) are within the organization's security management policies and processes. This is important as it ensures resource protection and continuity during disruptions.
+
+### Answer instructions
+
+Assess whether all necessary resources are under security management. Select "Fully implemented" if resource management covers all critical elements.
+
+> **Factory** has incorporated production line monitoring systems and backups into systematic security management. They have developed security measures that protect systems from cyber threats and ensure production continuity.
+
+> **Healthcare facility** has implemented security policies that cover all patient information systems, data backup, and supply chains in medicine delivery. These measures help protect critical resources and reduce the risk of operational interruptions.
+
+---
+
+<PracticeTitle name="critical-2b">All resources required for the provision of societally critical services are under the organization's risk management.</PracticeTitle>
+
+### Significance
+
+This point assesses whether resources required for providing critical services are included in the organization's risk management process. This helps the organization identify risks and manage them effectively, which minimizes the impacts of potential disruptions.
+
+### Answer instructions
+
+Review whether risk management policies have covered all critical resources. Select "Fully implemented" if risk management covers all important resources.
+
+> **Bank** has assessed risks related to its primary information systems and customer data. They have implemented backup strategies and developed plans to manage potential impacts of data breaches.
+
+> **Food industry company** has incorporated cold chain management and warehousing into their risk management processes. They have conducted risk analyses and planned emergency preparedness measures, such as backup generators and alternative transport routes.
+
+---
+
+<ObjectiveTitle name="critical-3">Minimizing the impact of cyber disruptions on critical services</ObjectiveTitle>
+
+The organization must have a defined and well-tested cyber incident and disruption management process. The process's purpose is to ensure critical service reliability during system or service failures.
+
+The organization must also ensure it has adequate preparedness measures to limit or reduce the impacts of failures and that these measures are scaled according to the magnitude of the risk and potential impacts.
+
+---
+
+<PracticeTitle name="critical-3a">Cyber incident and disruption management plan</PracticeTitle>
+
+### Significance
+
+It is important that the organization has a comprehensive plan that helps manage cyber disruptions and ensure critical service continuity. This plan ensures that the organization can respond quickly and effectively to various threats.
+
+### Answer instructions
+
+Assess whether a management plan exists and covers all critical services. Select "Fully implemented" if the plan is comprehensive and tested.
+
+> **Hospital district** has developed a cyber incident management plan that covers all patient information systems and prepares for data breaches. The plan has been tested regularly in simulation exercises.
+
+> **Data center** has prepared a plan that covers data center protection against denial-of-service attacks. The plan defines responsibilities and operating procedures that help minimize impacts.
+
+---
+
+<PracticeTitle name="critical-3b">The plan covers known attacks.</PracticeTitle>
+
+**Significance:** The management plan must cover all known attack types and assess the potential impacts of these attacks. This helps the organization prepare effectively and protect critical services.
+
+**Answer instructions:** Select "Mostly implemented" if the plan covers the most common threats. If all known threats have been analyzed and plans are comprehensive, select "Fully implemented".
+
+> **Insurance company** has analyzed the most common cyberattacks, such as denial-of-service attacks, and developed protective measures to minimize their impacts.
+
+> **Industrial company** has planned preparedness measures for production equipment data breaches and tested them in simulations to ensure rapid system recovery.
+
+---
+
+<PracticeTitle name="critical-3c">Staff understanding of the management plan</PracticeTitle>
+
+**Significance:** Staff must be well informed about the cyber incident management plan and know how to act during disruptions. This ensures that employees can respond correctly and minimize damages.
+
+**Answer instructions:** Select "Fully implemented" if staff has received training and understands the plan's content. "Partially implemented" may be appropriate if training still needs improvement.
+
+> **City administration** regularly organizes training sessions that review cybersecurity operating models and simulate crisis situations.
+
+> **Software company** has held workshops where staff practices responding to data breaches and receives guidance on how to protect against cyberattacks.
+
+---
+
+<PracticeTitle name="critical-3d">Sharing the management plan with stakeholders</PracticeTitle>
+
+**Significance:** It is important that the cyber incident management plan is documented and shared with all stakeholders who need it. This ensures smooth cooperation and service continuity in crisis situations.
+
+**Answer instructions:** Select "Fully implemented" if the plan has been shared with all necessary stakeholders. If sharing is still partially ongoing, select "Partially implemented".
+
+> **University** has shared its management plan with all departments and stakeholders to ensure everyone is aware of operating models for cyber disruptions.
+
+> **Energy company** regularly shares its updated disruption management plan with partners, such as power grid companies and rescue services, to ensure effective cooperation.
+
+---
+
+_Guide updated: 2/10/2025_

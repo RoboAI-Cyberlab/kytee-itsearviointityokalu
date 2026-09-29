@@ -1,0 +1,17 @@
+{
+  "progress": "Edistyminen",
+  "progress_aria": "Itsearvioinnin edistyminen",
+  "progress_aria_label": "{{answered}} käytäntöä vastattu {{total}} käytännöstä",
+  "practices_count": "käytäntöä",
+  "download_as_image": "Lataa kuvana",
+  "loading": "Ladataan...",
+  "identifier": "Tunniste",
+  "practice": "Käytäntö",
+  "answer": "Vastaus",
+  "answer_not_implemented": "Ei toteutettu tai ei tietoa",
+  "answer_partially_implemented": "Osittain toteutettu",
+  "answer_mostly_implemented": "Enimmäkseen toteutettu",
+  "answer_fully_implemented": "Täysin toteutettu",
+  "participant_roles": "Osallistujaroolit",
+  "answer_options": "Vastausohje"
+}

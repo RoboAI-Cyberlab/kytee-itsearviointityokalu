@@ -1,0 +1,204 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Skydda kritiska tjänster
+
+<Roles>
+- Ledning för cybersäkerhet
+- IT-ledning
+- OT-ledning
+- Specialist för incidenthantering
+- Specialist för verksamhetens kontinuitet
+- Specialist för företagets riskhantering
+</Roles>
+
+Organisationen ska identifiera sin roll i tillhandahållandet av tjänster för samhället och hantera risker baserat på sin roll.
+
+---
+
+<ObjectiveTitle name="critical-1">Identifiera kritiska tjänster och beroendeförhållanden till tjänsterna</ObjectiveTitle>
+
+Organisationen ska identifiera sin roll i tillhandahållandet av samhällskritiska tjänster, veta vad som krävs för att tillhandahålla dessa tjänster och förstå vilka konsekvenser ett fel i tjänsterna kan få.
+
+---
+
+<PracticeTitle name="critical-1a">Kritiska tjänster som organisationen tillhandahåller samhället har identifierats och dokumenterats.</PracticeTitle>
+
+### Betydelse
+
+Denna fråga fokuserar på organisationens förmåga att identifiera och dokumentera alla tjänster som är kritiska för samhällets funktion. Identifiering av kritiska tjänster hjälper till att förstå hur deras potentiella fel eller avbrott kan påverka samhällets säkerhet och funktionsförmåga. Sådan dokumentation är grunden för effektiv beredskap och riskhantering.
+
+### Svarsinstruktioner
+
+Bedöm hur väl din organisation har identifierat och dokumenterat dessa tjänster. Om kritiska tjänster är tydligt definierade och dokumentationen är uppdaterad, välj "Helt implementerad". Om identifieringsprocessen pågår, välj "Delvis implementerad".
+
+> **Sjukhus** har identifierat livsviktiga tjänster, såsom akutoperationssalen och patientinformationssystemet. Dokumentationen beskriver i detalj betydelsen av dessa tjänster och beroenden, såsom elnätets och telekommunikationens kritiskhet.
+
+> **Telekommunikationsföretag** har identifierat att kritiska tjänster, såsom nödsamtalstjänsten och nätverksinfrastrukturen, är livsviktiga för samhällets säkerhet. Dokumentationen beskriver hur dessa tjänsters drift säkerställs vid störningar, såsom strömavbrott eller cyberattacker.
+
+> **Logistikföretag** har kartlagt och dokumenterat de viktigaste tjänsterna, såsom livsmedelstransporter och lagerdrift, som är nödvändiga för samhället. Denna identifiering möjliggör planering för leveransavbrott så att tillgången till viktiga resurser inte äventyras.
+
+---
+
+<PracticeTitle name="critical-1b">Data som behövs för tillhandahållande av kritiska tjänster har identifierats och dokumenterats.</PracticeTitle>
+
+### Betydelse
+
+Syftet med denna punkt är att säkerställa att organisationen förstår och dokumenterar den data som behövs för att kritiska tjänster ska fungera. Att identifiera information är centralt eftersom det hjälper till att skydda och säkerställa datatillgänglighet och integritet vid störningar. Utan tillräcklig förståelse för vilken data som är kritisk kan det vara svårt att förbereda sig för hot, såsom dataintrång eller överbelastningsattacker.
+
+### Svarsinstruktioner
+
+Granska om din organisation har identifierat och dokumenterat all nödvändig data. Välj "Helt implementerad" om detta arbete har utförts omfattande och dokumentationen är lättillgänglig.
+
+> **Bank** har identifierat att integriteten hos kontotransaktioner och kundinformation är kritisk för tjänsternas drift. De har dokumenterat hur denna data skyddas och säkerställt dess säkerhetskopiering och skyddsprotokoll.
+
+> **Vattenförsörjningsbolag** har identifierat att vattenfördelningssystemets hanteringsdata är kritisk. De har dokumenterat information såsom vattenreservoarnivåer och vattenfördelningsprocesser, och säkerställt att denna informations integritet och tillgänglighet är garanterad mot potentiella cyberattacker.
+
+> **Läkemedelstillverkare** har dokumenterat produktionskritisk data, såsom recept och kvalitetskontrollresultat. Utan denna information skulle läkemedelsproduktionen kunna avbrytas eller leda till allvarliga kvalitetsproblem. Dokumentationen täcker också informationsskydd och säkerhetskopiering.
+
+---
+
+<PracticeTitle name="critical-1c">Processer som krävs för tillhandahållande av tjänster har identifierats och dokumenterats.</PracticeTitle>
+
+### Betydelse
+
+Denna punkt utvärderar om organisationen har identifierat och dokumenterat alla processer som krävs för att tillhandahålla kritiska tjänster. Att förstå dessa processer är livsviktigt eftersom det möjliggör beredskap för störningar och upprätthållande av verksamhetens kontinuitet. Om processer inte är exakt definierade kan organisationen ha svårigheter att hantera eller förutse störningar.
+
+### Svarsinstruktioner
+
+Bedöm om alla viktiga processer har identifierats och dokumenterats. Om processer är detaljerat beskrivna och kända för alla intressenter, välj "Helt implementerad".
+
+> **Datacenter** har dokumenterat i detalj serverunderhållsprocesser, datasäkerhetskopiering och beredskapstjänster för nödsituationer. Detta hjälper till att säkerställa att tjänsterna fungerar smidigt även vid störningar.
+
+> **Kommunal förvaltning** har dokumenterat processer relaterade till kritiska tjänster, såsom avfallshantering och nödsituationshantering. Detta inkluderar detaljerade handlingsplaner som säkerställer avfallshanteringens kontinuitet under kriser och snabb reaktion på exceptionella situationer.
+
+> **Jordbrukarförening** har identifierat och dokumenterat de viktigaste skördeprocesserna och beredskapsplanerna för situationer där jordbruksmaskiners drift avbryts eller råvaruleveranser försenas. Detta hjälper till att minimera skador från produktionsavbrott.
+
+---
+
+<PracticeTitle name="critical-1d">Kritiska system (IT- och OT-tillgångar) har identifierats och dokumenterats.</PracticeTitle>
+
+### Betydelse
+
+Denna fråga undersöker om organisationen har identifierat och dokumenterat alla kritiska system relaterade till både informationsteknik (IT) och operativ teknik (OT). Att identifiera dessa system är livsviktigt för att säkerställa tjänsternas kontinuitet och effektivt hantera potentiella störningar. Utan omfattande förståelse för kritiska IT- och OT-tillgångar kan organisationen vara sårbar för oväntade störningar och säkerhetsrisker.
+
+### Svarsinstruktioner
+
+Bedöm om alla kritiska system har identifierats och dokumenterats. Om alla IT- och OT-system är registrerade och deras betydelse förstås för organisationens drift, välj "Helt implementerad".
+
+> **Energibolag** har identifierat elnätets styrsystem (OT) och informationssystem (IT) som övervakar och kontrollerar energileverans, och har dokumenterat i detalj deras roller och beredskapsåtgärder.
+
+> **Flygplats** har identifierat alla kritiska system, såsom flygledningssystem (OT) och passagerartjänsternas IT-system. Dokumentationen beskriver hur system underhålls, skyddas och deras drift säkerställs under nödsituationer, såsom under en cyberattack.
+
+> **Handelscentrallager** har kartlagt automatiserade lagringssystem (OT) och deras kopplingar till IT-system som hanterar varuleveranser. Lagret har dokumenterat hur system skyddas och driftskapaciteten säkerställs, till exempel vid cyberattacker eller utrustningsfel.
+
+---
+
+<ObjectiveTitle name="critical-2">Hantering av kritiska tjänster</ObjectiveTitle>
+
+Organisationens högsta ledning har ansvar för att säkerställa tillräckliga resurser för tillhandahållande av kritiska tjänster och delegera beslutsfattande inom organisationen så att beslutsfattandet är effektivt och sker på rätt plats.
+
+Risker relaterade till nätverk och system för leverans av kritiska tjänster bör bedömas som en del av organisationens övergripande risker.
+
+---
+
+<PracticeTitle name="critical-2a">Alla resurser är under organisationens säkerhetshantering.</PracticeTitle>
+
+### Betydelse
+
+Denna punkt verifierar om alla resurser som krävs för att tillhandahålla kritiska tjänster (data, processer, system, anläggningar och leveranskedjor) är inom organisationens säkerhetshanteringspolicyer och processer. Detta är viktigt eftersom det säkerställer resursskydd och kontinuitet vid störningar.
+
+### Svarsinstruktioner
+
+Bedöm om alla nödvändiga resurser är under säkerhetshantering. Välj "Helt implementerad" om resurshanteringen täcker alla kritiska element.
+
+> **Fabrik** har införlivat produktionslinjernas övervakningssystem och säkerhetskopior i systematisk säkerhetshantering. De har utvecklat säkerhetsåtgärder som skyddar system från cyberhot och säkerställer produktionens kontinuitet.
+
+> **Hälsovårdsanläggning** har implementerat säkerhetspolicyer som täcker alla patientinformationssystem, datasäkerhetskopiering och leveranskedjor i läkemedelsleverans. Dessa åtgärder hjälper till att skydda kritiska resurser och minska risken för driftsavbrott.
+
+---
+
+<PracticeTitle name="critical-2b">Alla resurser som krävs för tillhandahållande av samhällskritiska tjänster är under organisationens riskhantering.</PracticeTitle>
+
+### Betydelse
+
+Denna punkt bedömer om resurser som krävs för att tillhandahålla kritiska tjänster är inkluderade i organisationens riskhanteringsprocess. Detta hjälper organisationen att identifiera risker och hantera dem effektivt, vilket minimerar effekterna av potentiella störningar.
+
+### Svarsinstruktioner
+
+Granska om riskhanteringspolicyer har täckt alla kritiska resurser. Välj "Helt implementerad" om riskhanteringen täcker alla viktiga resurser.
+
+> **Bank** har bedömt risker relaterade till sina primära informationssystem och kunddata. De har implementerat säkerhetskopieringsstrategier och utvecklat planer för att hantera potentiella effekter av dataintrång.
+
+> **Livsmedelsindustriföretag** har införlivat kallkedjehantering och lagring i sina riskhanteringsprocesser. De har genomfört riskanalyser och planerat beredskapstjänster för nödsituationer, såsom reservgeneratorer och alternativa transportvägar.
+
+---
+
+<ObjectiveTitle name="critical-3">Minimera effekterna av cyberstörningar på kritiska tjänster</ObjectiveTitle>
+
+Organisationen måste ha en definierad och vältestad process för hantering av cyberhändelser och störningar. Processens syfte är att säkerställa kritiska tjänsters tillförlitlighet vid system- eller tjänstfel.
+
+Organisationen måste också säkerställa att den har adekvata beredskapsåtgärder för att begränsa eller minska effekterna av fel och att dessa åtgärder är skalade enligt riskens storlek och potentiella effekter.
+
+---
+
+<PracticeTitle name="critical-3a">Plan för hantering av cyberhändelser och störningar</PracticeTitle>
+
+### Betydelse
+
+Det är viktigt att organisationen har en omfattande plan som hjälper till att hantera cyberstörningar och säkerställa kritiska tjänsters kontinuitet. Denna plan säkerställer att organisationen kan reagera snabbt och effektivt på olika hot.
+
+### Svarsinstruktioner
+
+Bedöm om en hanteringsplan finns och täcker alla kritiska tjänster. Välj "Helt implementerad" om planen är omfattande och testad.
+
+> **Sjukvårdsdistrikt** har utvecklat en plan för hantering av cyberhändelser som täcker alla patientinformationssystem och förbereder för dataintrång. Planen har testats regelbundet i simuleringsövningar.
+
+> **Datacenter** har utarbetat en plan som täcker datacentralskydd mot överbelastningsattacker. Planen definierar ansvar och arbetsmetoder som hjälper till att minimera effekter.
+
+---
+
+<PracticeTitle name="critical-3b">Planen täcker kända attacker.</PracticeTitle>
+
+**Betydelse:** Hanteringsplanen måste täcka alla kända attacktyper och bedöma de potentiella effekterna av dessa attacker. Detta hjälper organisationen att förbereda sig effektivt och skydda kritiska tjänster.
+
+**Svarsinstruktioner:** Välj "Mestadels implementerad" om planen täcker de vanligaste hoten. Om alla kända hot har analyserats och planerna är omfattande, välj "Helt implementerad".
+
+> **Försäkringsbolag** har analyserat de vanligaste cyberattackerna, såsom överbelastningsattacker, och utvecklat skyddsåtgärder för att minimera deras effekter.
+
+> **Industriföretag** har planerat beredskapsåtgärder för produktionsutrustningens dataintrång och testat dem i simuleringar för att säkerställa snabb systemåterställning.
+
+---
+
+<PracticeTitle name="critical-3c">Personalens förståelse av hanteringsplanen</PracticeTitle>
+
+**Betydelse:** Personal måste vara väl informerad om planen för hantering av cyberhändelser och veta hur man agerar vid störningar. Detta säkerställer att medarbetare kan reagera korrekt och minimera skador.
+
+**Svarsinstruktioner:** Välj "Helt implementerad" om personalen har fått utbildning och förstår planens innehåll. "Delvis implementerad" kan vara lämpligt om utbildningen fortfarande behöver förbättras.
+
+> **Stadsförvaltning** organiserar regelbundet utbildningar som går igenom cybersäkerhetens arbetsmodeller och simulerar krissituationer.
+
+> **Programvaruföretag** har hållit workshops där personal övar på att reagera på dataintrång och får vägledning om hur man skyddar sig mot cyberattacker.
+
+---
+
+<PracticeTitle name="critical-3d">Delning av hanteringsplanen med intressenter</PracticeTitle>
+
+**Betydelse:** Det är viktigt att planen för hantering av cyberhändelser är dokumenterad och delad med alla intressenter som behöver den. Detta säkerställer smidigt samarbete och tjänsternas kontinuitet i krissituationer.
+
+**Svarsinstruktioner:** Välj "Helt implementerad" om planen har delats med alla nödvändiga intressenter. Om delningen fortfarande pågår delvis, välj "Delvis implementerad".
+
+> **Universitet** har delat sin hanteringsplan med alla avdelningar och intressenter för att säkerställa att alla är medvetna om arbetsmodeller för cyberstörningar.
+
+> **Energibolag** delar regelbundet sin uppdaterade störningshanteringsplan med partners, såsom elnätsföretag och räddningstjänsten, för att säkerställa effektivt samarbete.
+
+---
+
+_Vägledningen uppdaterad: 10.2.2025_

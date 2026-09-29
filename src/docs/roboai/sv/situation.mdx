@@ -1,0 +1,155 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Lägesuppfattning
+
+<Roles>
+- Ledning för cybersäkerhet
+- IT-ledning
+- OT-ledning
+- Specialist för incidenthantering
+- Ledning för säkerhetsövervakningscenter (SOC)
+- Specialist för loggning och övervakning av IT- och OT-tillgångar
+</Roles>
+
+---
+<ObjectiveTitle name="situation-1">Logghantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="situation-1a">Logginformation samlas in från enheter, programvara och datalager som är viktiga för funktionen.</PracticeTitle>
+
+### Betydelse
+
+Logghantering är en nyckelkomponent i organisationens lägesuppfattning för cybersäkerhet. Det möjliggör händelseövervakning, avvikelsedetektering och reaktion på potentiella hot. Välimplementerad loggning hjälper till att förstå normal systemdrift och upptäcka och analysera potentiella säkerhetsincidenter.
+
+Detta bedömer om organisationen har implementerat systematisk logginsamling från funktionskritiska tillgångar. Tillgångar kan inkludera:
+- IT-enheter och system (t.ex. servrar, arbetsstationer, nätverksenheter)
+- OT-system (t.ex. industriella automationsenheter, IoT-enheter)
+- Datalager (t.ex. databaser, molntjänster)
+- Programvara (t.ex. operativsystem, kritiska applikationer)
+
+Händelser som ska loggas kan inkludera:
+- Åtkomsthanteringshändelser: Inloggningar och åtkomstförsök av individer, enheter eller programvara.
+- Avvikande händelser: Oväntade anslutningar, misstänkta processer eller systemstörningar.
+- Konfigurationsändringar: Ändringar av inställningar för viktiga enheter och programvara.
+- Nätverksanslutningshändelser: Nya enheter som ansluter till nätverket utan behörighet.
+- Resursanvändning: Överbelastning eller oväntad avstängning av servrar, applikationer eller databaser.
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Loggning används inte eller det finns ingen information om dess täckning.
+- **Delvis implementerad**: Loggning görs i vissa system eller endast för vissa typer av händelser, men täcker inte alla viktiga tillgångar.
+- **Mestadels implementerad**: Loggning är omfattande, men kan ha vissa brister (t.ex. saknade mål eller inkonsekventa metoder).
+- **Helt implementerad**: Loggning görs systematiskt för alla funktionskritiska enheter, programvara och datalager. Loggar är tillgängliga för analys och aktivt övervakade.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag** samlar in logginformation från produktionslinjens övervakningssystem som spårar automationsdrift och potentiella störningar.
+
+> **Transportföretag** registrerar fordons GPS-spårning och fordonshanteringssystems händelseloggar för att upptäcka misstänkta rörelser eller avvikelser.
+
+> **Vattenbolag** loggar automationssystemändringar och upptäcker om obehöriga ändringar görs i kritiska system.
+
+> **Energibolag** samlar in logginformation från elnätshändelser, såsom oväntade anslutningar eller misstänkta åtkomstförsök.
+
+### Utvecklingsförslag:
+- Logghanteringspolicy: Definiera tydliga metoder för vilken information som loggas och hur länge den behålls.
+- Automatiserad analys: Använd SIEM (Security Information and Event Management)-system eller liknande logganalysverktyg så att avvikelser upptäcks snabbt.
+- Regelbunden granskning: Säkerställ att logginformation granskas regelbundet för att upptäcka potentiella hot och missbruk.
+- Säkerhetskopior: Loggdatalagring och säkerhetskopiering är viktigt särskilt för att möjliggöra utredning vid cyberincidenter.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Implementera loggning/granskning av viktiga tillgångar. Exempel på funktioner som kan loggas/granskas inkluderar åtgärder av individer, enheter och entiteter när de använder tillgångar, händelser som stör funktionsutförande, tillgångsuppgiftsändringar som avviker från baslinjekonfigurationer, oväntade tillgångar som ansluter till nätverk och alla oväntade eller misstänkta operationer. Detta kan också inkludera oavsiktligt avstängda, raderade eller "resursutmattade" virtualiserade tillgångar.
+
+Relaterade metoder:
+
+- Input: Implementering av ASSET-1a tillhandahåller input som kan vara användbart vid bedömning och implementering av denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: SITUATION-1a, SITUATION-1b, SITUATION-1c, SITUATION-1d, SITUATION-1f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="situation-2">Miljöövervakning</ObjectiveTitle>
+---
+
+<PracticeTitle name="situation-2a">Granskning av logginformation och annan cybersäkerhetsövervakning utförs.</PracticeTitle>
+
+### Betydelse
+Regelbunden granskning och undersökning av händelseloggar (manuellt eller med automatiserade verktyg) är en kritisk övervakningsaktivitet som är väsentlig för att upprätthålla lägesmedvetenhet. Det möjliggör upptäckt av cybersäkerhetshändelser eller sårbarheter, till exempel.
+
+Loggar kan tillhandahålla information om fenomen såsom:
+- **Användaromgivningsändringar** som kan påverka åtkomsträttigheter eller utlösa varningar om kritisk systemtillgänglighet.
+- **Avvikelser i systemdrift**, såsom oavsiktligt avstängda eller resursutmattade virtualiserade tillgångar.
+- **Status för säkerhetsuppdateringar och patchningar**, såsom att upptäcka att systemuppdateringar inte applicerades eftersom enheter var offline under kontrollen.
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Loggning används inte eller det finns ingen information om dess täckning.
+- **Delvis implementerad**: Loggning görs i vissa system, men täcker inte alla viktiga tillgångar. Manuella eller automatiserade kontroller görs sällan.
+- **Mestadels implementerad**: Loggning är omfattande och analysprocesser är regelbundna, men det finns fortfarande vissa brister (t.ex. saknade mål eller inkonsekventa metoder).
+- **Helt implementerad**: Loggning görs systematiskt för alla funktionskritiska enheter, programvara och datalager. Automatiserade övervakningsverktyg varnar vid avvikelser och information integreras i cybersäkerhetsprocessen.
+</AnswerOptions>
+
+### **Exempel från olika branscher**
+
+> **Livsmedelsföretag:** Övervakar produktionslinjens övervakningssystems logginformation för att upptäcka avvikelser såsom obehöriga åtkomstförsök eller systemändringar som kan äventyra livsmedelssäkerheten.
+
+> **Transportföretag:** Använder GPS-spårningsenhets- och fordonstelemetridataloggar för att övervaka potentiella cyberattacker, såsom manipulering av ruttdata eller obehöriga anslutningar till fordonssystem.
+
+> **Energibolag:** Övervakar elnätshanteringssystems händelseloggar för att identifiera överbelastningsattacker eller obehöriga systemändringar.
+
+> **Vattenbolag:** Övervakar pumpstations- och SCADA-systemlogginformation för att säkerställa att automationssystem fungerar som planerat och att kritisk infrastruktur inte har varit föremål för cyberhot.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Regelbunden granskning och undersökning av händelseloggar (manuellt eller med automatiserade verktyg) är en kritisk övervakningsaktivitet som är väsentlig för att upprätthålla lägesmedvetenhet (t.ex. upptäcka cybersäkerhetshändelser eller sårbarheter). Till exempel kan loggar ge information om användaromgivningsändringar som kan leda till ändringar i åtkomsträttigheter när det behövs eller utlösa varningar när system kritiska för funktionsutförande inte är tillgängliga. Ett annat exempel är oavsiktligt avstängda, raderade eller "resursutmattade" virtualiserade tillgångar som kan utlösa varningar från vilka systemadministratörer kan sluta sig till att systemuppdateringar eller patchar kanske inte har tillämpats på dessa system medan de var offline eller oförmögna att svara.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: SITUATION-2a, SITUATION-2b, SITUATION-2c, SITUATION-2f, SITUATION-2g.
+</CollapsibleSection>
+
+<PracticeTitle name="situation-2b">IT- och OT-miljöövervakningsinformation granskas regelbundet för avvikande aktivitet och potentiella cyberhändelser.</PracticeTitle>
+
+### Betydelse
+
+Regelbunden analys av övervakningsinformation är en väsentlig del av organisationens lägesuppfattning för cybersäkerhet. Avvikande aktivitet avser allt som är inkonsekvent, överraskande eller oväntat i förhållande till organisationens normala driftmiljö. Att granska övervakningsinformation hjälper till att identifiera cybersäkerhetshändelser i ett tidigt skede och förhindra deras skadliga effekter.
+
+Övervakningsområden inkluderar:
+- **Nätverkslogginformation:** obehöriga anslutningar och ovanliga trafikmönster.
+- **Systembeteende:** oväntade servicekrascher eller ovanlig resursanvändning.
+- **Sensoravläsningar:** avvikelser från normal drift, såsom onormala hårdvaru- eller processvärden.
+- **Personalobservationer:** ovanliga observationer gjorda av driftcenterpersonal eller annan operativ personal.
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Övervakningsinformation granskas inte regelbundet, eller det finns ingen information om hur detta görs.
+- **Delvis implementerad**: Viss övervakningsinformation granskas, men det är slumpmässigt eller gäller endast vissa system.
+- **Mestadels implementerad**: Övervakningsinformation granskas regelbundet, men det finns fortfarande vissa brister i täckning eller metoder.
+- **Helt implementerad**: IT- och OT-miljöövervakningsinformation granskas systematiskt, och granskningar är en del av organisationens etablerade processer. Misstänkta fynd rapporteras och analyseras som en del av cybersäkerhetsverksamheten.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag:** Granskar produktionslinjens automationssystems sensoravläsningar för att upptäcka avvikelser och övervakar IT-nätverksloggen för att identifiera obehöriga åtkomstförsök.
+
+> **Transportföretag:** Övervakar fordonsspårningssystems logginformation för att upptäcka ovanliga GPS-signaländringar som kan indikera säkerhetsproblem.
+
+> **Energibolag:** Övervakar SCADA-systemlogginformation och personalobservationer för att säkerställa att inga obehöriga ändringar har gjorts i systemet.
+
+> **Vattenbolag:** Använder realtidsnätverksövervakning för att identifiera avvikande dataöverföring i vattenbehandlingsanläggningens hanteringssystem.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Avvikande aktivitet avser aktivitet som är inkonsekvent med eller avviker från vad som är sedvanligt, normalt eller förväntat. Övervakning bör producera information som organisationen behöver för att identifiera om den har upplevt en cybersäkerhetshändelse som kan kräva åtgärder för att förhindra påverkan på organisationen. Detta kan inkludera till exempel att granska nätverkslogginformation för att identifiera obehöriga anslutningar till tillgångar viktiga för funktionsutförande (enheter, datalager). Detta kan också inkludera driftcenterpersonals och annan operativ personals observationer av ovanliga systemsvar, sensoravläsningar eller annan oförklarlig aktivitet i operativa system. Syftet med denna metod är att inkludera människor som en del av organisationens tillvägagångssätt för att implementera systemövervakning.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: SITUATION-2a, SITUATION-2b, SITUATION-2c, SITUATION-2f, SITUATION-2g.
+</CollapsibleSection>
+
+---
+
+_Vägledningen uppdaterad: 28.1.2025_

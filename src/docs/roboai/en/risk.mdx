@@ -1,0 +1,263 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Risk management
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- Enterprise risk management specialist
+- Cybersecurity risk specialist
+- Internal audit representative
+- Legal department representative
+</Roles>
+
+---
+<ObjectiveTitle name="risk-1">Cyber risk management plan</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-1a">The organization's cyber risk management is guided by a plan (for example, a strategy or similar management-level policy). Development and maintenance need not be systematic and regular</PracticeTitle>
+
+### Question
+
+Does the organization have a clear plan or strategy that defines how cyber risks are identified, assessed, managed, and monitored? Does the plan include guidance on how it supports the organization's broader objectives and defines acceptable risk levels? Does the strategy present concrete methods for responding to risks, such as reducing, transferring, avoiding, or accepting them?
+
+### Significance
+
+A cyber risk management plan is a key part of the organization's cybersecurity program. It creates a common view of cyber risks and provides guidance for managing them. A well-defined plan helps the organization prioritize resources, identify the most important risks, and prepare for disruptions. It also supports achieving the organization's strategic objectives by ensuring cyber risks are managed as part of the broader risk management strategy.
+
+<Box>
+### Answer instructions
+
+Assess the extent to which the organization's cyber risk management plan exists and is functional:
+- **Not implemented or no information**: No plan exists or information is unavailable.
+- **Partially implemented**: A plan exists, but it is incomplete or not used consistently.
+- **Mostly implemented**: The plan is comprehensive, but its implementation or updating needs improvement.
+- **Fully implemented**: The plan is comprehensive, up to date, and used systematically.
+</Box>
+
+### Example
+
+The company has a cyber risk management strategy that includes objectives and a plan for risk identification, analysis, management, and monitoring. The strategy covers risk assessment criteria, prioritization processes, and response measures, such as transferring risk through insurance and reducing risk through technical means.
+
+Although strategy maintenance is not yet fully systematic, the most important risk areas, such as supply chain disruptions and data breach risks, have been identified. For example, ERP and OT system vulnerability analysis is part of strategy-aligned operations.
+
+The company plans to develop the strategy by implementing a regular assessment process that ensures its continued currency. The goal is also to increase staff cybersecurity training and develop risk management processes so the organization can respond more effectively to changing threats.
+
+<CollapsibleSection title="Example document">
+### Cybersecurity risk management strategy - Food Company Ltd
+
+### Introduction
+
+Food Company Ltd operates in international food markets and is committed to ensuring business continuity, customer information security, and compliance with legislation and standards. This cybersecurity risk management strategy describes the company's approach to identifying, analyzing, managing, and responding to cyber risks.
+
+### Strategy objectives
+
+- Identify, assess, and prioritize Food Company Ltd's cyber risks.
+- Develop and maintain processes that ensure effective response to cyber threats.
+- Protect business-critical information, processes, and systems.
+- Increase staff cybersecurity awareness and competence.
+- Prepare for continuity management in cyber threat situations.
+
+### Actions and activities
+
+1. Cyber risk identification
+
+- Create and continuously update a comprehensive risk assessment of food production, supply chain, and customer data protection.
+- Utilize industry threat models and current reports (e.g., CERT and ENISA).
+- Conduct regular vulnerability assessments.
+
+2. Cyber risk analysis and prioritization
+
+- Risks are grouped into three main categories:
+  a) Business processes (e.g., supply chain disruptions).
+  b) Information technology threats (e.g., ransomware attacks).
+  c) Regulatory compliance (e.g., GDPR).
+- Prioritization is performed using a risk matrix: impact (high/low) x likelihood (high/low).
+- Risk analysis tools such as ISO/IEC 27005 standard methods are used.
+
+3. Response measures
+
+- Develop reactive and proactive operating models.
+- Utilize the following response methods:
+  - Risk avoidance (e.g., removing unnecessary IT systems).
+  - Risk transfer (e.g., insurance).
+  - Risk management (e.g., implementing new protective mechanisms).
+  - Risk acceptance (if impact is small).
+
+4. Staff training
+
+- Conduct annual information security training.
+- Organize cyber exercises (e.g., simulated phishing attacks).
+
+5. Monitoring and evaluation
+
+- Monitor risk management measure effectiveness regularly.
+- Conduct semi-annual audits and management reporting.
+
+### Strategy implementation
+
+| Task                                        | Responsible person      | Timeline   |
+| ------------------------------------------- | ----------------------- | ---------- |
+| Risk assessment preparation                 | Information Security Officer | Month 1    |
+| Vulnerability assessment implementation     | IT department           | Continuous |
+| Staff training organization                 | HR department           | Month 3    |
+| Response process creation                   | Risk management team    | Months 2-4 |
+| Strategy audit                              | External auditor        | Month 6    |
+
+### Monitoring and continuous improvement
+
+The strategy is evaluated and updated annually, or whenever significant changes occur in the threat environment or business. All identified deficiencies are documented and addressed immediately.
+
+### Approval
+
+This strategy has been approved by Food Company Ltd's management team. The document guides all company actors in cybersecurity matters.
+Date: [xx.xx.xxxx]
+Signature: [Management team chair]
+</CollapsibleSection>
+
+<CollapsibleSection title="Cybermeter version 2.1">
+The organization develops, implements, and maintains a cybersecurity risk management strategy/action plan that, at its simplest, includes a list of cyber risk management objectives and related actions, activities, and tasks, as well as a plan for their implementation.
+
+In a C2M2-based program, action plan areas could align with C2M2 RISK domain objectives and related practices. For example, the strategy may include important information about the organization's processes for identifying, analyzing, and responding to cyber risks. More detailed specifics may include high-level categories for aggregating risks, criteria for determining cyber risk priority, and a summary of risk management methods applied to risks, and distribution of strategy implementation responsibility.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RISK-1a, RISK-1b, RISK-1c, RISK-1g, RISK-1h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-2">Cyber risk identification</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-2a">Cyber risks are identified. Activity need not be systematic and regular</PracticeTitle>
+
+### Question
+
+Does the organization have a process for identifying cyber risks, such as cyber threats, system vulnerabilities, and disruptions that could compromise asset and service operational capability?
+
+How does the organization identify cyber risks such as cyber threats, vulnerabilities, or disruption events that affect its assets and service operational capability? Is identification comprehensive and does it extend to all of the organization's key functions?
+
+### Significance
+
+Cyber risk identification is a key part of the organization's cybersecurity management and risk management process. It creates the foundation for effective risk assessment, prioritization, and handling. Without a clear identification process, the organization risks that significant threats go unnoticed, which can lead to business disruptions, security breaches, or non-compliance with regulations.
+
+### Answer instructions
+
+Assess the extent to which the organization identifies cyber risks:
+- **Not implemented or no information**: Cyber risks are not identified, and no process exists.
+- **Partially implemented**: Some cyber risks are identified, but the process is unclear, random, or focuses only on certain threats.
+- **Mostly implemented**: Cyber risk identification covers most critical threats, but methods need improvement, and the process is not fully regular.
+- **Fully implemented**: Cyber risk identification is comprehensive, regular, and systematic.
+
+### Example
+
+The company identifies cyber risks, such as cyber threats, vulnerabilities, and disruptions that can affect its critical assets and systems. The process is not yet fully systematic, but important threats, such as data breach attempts and software update vulnerabilities, are actively monitored. Identification is based on multiple sources, such as industry threat reports, software vendor bulletins, and internal system analytics findings. The most significant risks are documented and evaluated case by case, but a regular assessment practice is missing.
+
+The company plans to develop a more systematic approach where cyber risks are evaluated and monitored continuously. This supports the organization's goals to improve resilience and protect business continuity.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Cyber risk identification is an essential part of risk management. It requires the organization to identify threat types, vulnerabilities, and disruptions that can pose a risk to asset and service operational capability. Identified risks form the baseline from which a continuous risk management process can be created and managed.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RISK-2a, RISK-2b, RISK-2c, RISK-2g, RISK-2h, RISK-2i, RISK-2j, RISK-2k, RISK-2l, RISK-2m.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-3">Risk analysis</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-3a">Cyber risks are prioritized based on their assessed impact</PracticeTitle>
+
+### Question
+
+How does the organization analyze identified cyber risks and assess their potential impacts on operations? Are analysis results used in risk prioritization, and how are priorities determined based on, for example, security, operational, and financial impacts? (E.g., recovery costs, downtime costs, data loss costs.)
+
+### Significance
+
+Cyber risk analysis is a critical part of the organization's cybersecurity management. It helps understand risk severity and prioritize actions that can prevent or mitigate their impacts. Risk assessment and prioritization enable the organization to allocate resources effectively to the most critical issues, such as data breaches, system outages, or financial damages that threaten business continuity. Well-executed analysis and prioritization support cybersecurity strategic planning and improve the organization's ability to manage and prevent risks.
+
+### Answer instructions
+
+Assess how comprehensively the organization analyzes and prioritizes cyber risks:
+- **Not implemented or no information**: Risk analysis and prioritization is not in use, or there is no information about it.
+- **Partially implemented**: Risk analysis and prioritization has begun, but methods are not consistent or comprehensive.
+- **Mostly implemented**: Risk analysis and prioritization is widely used, but there may be some gaps in the process, such as analysis detail or prioritization consistency.
+- **Fully implemented**: Risk analysis and prioritization is systematic and comprehensive, and applied consistently organization-wide.
+
+### Example
+
+The company has implemented a cyber risk analysis process where risks are classified on a three-tier scale: high, medium, and low. For example, customer data protection is assessed as high risk because it can cause significant financial and security impacts. Production facility software errors are classified as medium because they can cause short production delays. Risk prioritization also considers financial impacts, such as downtime costs.
+
+Although the company has already incorporated risk analysis into its operations, the process needs development for smaller risks, and the goal is to expand analysis to cover all organizational parts.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+The potential impacts of identified risks on the organization should be assessed and used to prioritize cyber risks. Higher priority cyber risks should receive more attention when determining possible mitigation measures or countermeasures. Prioritization should focus on criteria considered important to the business, such as security impacts, operational impacts, and financial impacts (e.g., recovery costs, potential downtime or lost data costs). Prioritization may use qualitative methods to indicate relative impact level (e.g., high, medium, low).
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RISK-3a, RISK-3b.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-4">Risk response</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-4a">Risk response measures (such as risk reduction, acceptance, avoidance, or transfer) are in use for cyber risks.</PracticeTitle>
+
+### Question
+
+Does the organization have clear response measures for cyber risks, such as risk reduction, acceptance, avoidance, or transfer? How does the organization decide on the handling method for each identified risk, and is the effectiveness and adequacy of implemented measures regularly evaluated?
+
+Does the organization have clear procedures for how to respond to cyber risks? For example, are risk reduction, acceptance, avoidance, or transfer used, and is each risk individually decided on how to handle? Additionally, is there regular evaluation of whether implemented measures are adequate and effective?
+
+### Significance
+
+Cyber risk management response measures are a key part of the organization's comprehensive risk management. They enable risk management in a prioritized and systematic manner, which improves the organization's resilience and ability to adapt to changing threat landscapes. Adequate and effective risk management measures significantly reduce business harm and ensure organizational continuity in critical situations. Regular evaluation helps ensure measures are up to date and appropriate in a changing operating environment.
+
+### Answer instructions
+
+Assess the extent to which the organization has developed and implemented clear response measures for cyber risk management:
+- **Not implemented or no information**: Risk management response measures are not defined or information about their existence is missing.
+- **Partially implemented**: Risk response measures are defined, but their coverage is limited or their implementation is not systematic.
+- **Mostly implemented**: Risk management response measures cover most identified risks, but there is room for improvement in assessment practices or process details.
+- **Fully implemented**: The organization uses comprehensive and regularly evaluated response measures that are integrated into its risk management strategy.
+
+### Example
+
+The company has diverse and systematic response measures for cyber risk management. The company determines an appropriate handling method for each identified risk, which can be, for example, risk reduction (e.g., adding protective mechanisms to IT systems), risk transfer (e.g., insurance), or risk acceptance when risk impacts are minimal.
+
+The company's risk response selection process is based on risk analysis using a risk matrix to support prioritization. The effectiveness and adequacy of implemented measures are regularly evaluated through audits and disruption exercises. Additionally, the organization updates risk management measures as the operating environment changes to ensure they remain current.
+
+In the future, the company plans to implement automated monitoring and reporting tools that improve risk management real-time capability and efficiency.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Once risks to the function are identified, the organization must decide how to respond to these risks. Response begins by giving each risk or risk class notice/instruction of the organization's intention to handle the risk. For example, risk reduction means active measures to minimize risk; risk transfer is transferring risk by contract from one party to another, for example through insurance, waiving agreed responsibility with a customer, or indemnity agreement with a supplier.
+
+Risk responses should be developed as part of the risk management strategy. Risk management measures can vary greatly across organizations, but typically include:
+
+- risk avoidance - changing operations to avoid risk while still providing essential service.
+- risk acceptance - acknowledging risk but consciously taking no action (essentially accepting potential consequences of the risk).
+- risk transfer - transferring risk to a willing and capable party.
+- risk reduction - implementing active measures to minimize risk.
+- risk monitoring - conducting further investigation and postponing risk-related actions until the need to address the risk is evident.
+
+The organization's risk management action selection process should remember that not all identified risks need mitigation. In addition to risk reduction, risk avoidance, acceptance, or transfer should be considered.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RISK-4a, RISK-4b, RISK-4e.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 1/28/2025_

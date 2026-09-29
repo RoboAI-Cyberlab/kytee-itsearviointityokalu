@@ -1,0 +1,767 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Hot- och sårbarhetshantering
+
+<TableOfContents>
+- [THREAT-1. Minskning av sårbarheter](#threat-1)
+  - [THREAT-1a. Lämpliga informationskällor om sårbarheter har identifierats.](#threat-1a)
+  - [THREAT-1b. Information om sårbarheter samlas in och tolkas åtminstone på ad hoc-basis.](#threat-1b)
+  - [THREAT-1c. Sårbarhetsbedömningar utförs åtminstone på ad hoc-basis.](#threat-1c)
+  - [THREAT-1d. Relevanta sårbarheter åtgärdas.](#threat-1d)
+- [THREAT-2. Hotförsvar och informationsdelning](#threat-2)
+  - [THREAT-2a. Lämpliga informationskällor för hotidentifiering har identifierats.](#threat-2a)
+  - [THREAT-2b. Cyberhot-information samlas in och tolkas åtminstone på ad hoc-basis.](#threat-2b)
+  - [THREAT-2c. Hotaktörers mål som riktas mot funktionen har identifierats åtminstone på ad hoc-basis.](#threat-2c)
+  - [THREAT-2d. Relevanta hot åtgärdas (t.ex. genom att öka övervakningen eller följa hotutveckling).](#threat-2d)
+</TableOfContents>
+
+Cyberhot avser potentiella skadliga aktiviteter eller händelser som kan skada en organisations informationssystem eller data. Sårbarheter är däremot svagheter i system, programvara eller processer som kan utnyttjas av hotaktörer. Tillsammans bildar de grunden för cybersäkerhetsriskhantering, där en organisation försöker identifiera och minska potentiella hot och sårbarheter.
+
+**Mål:**
+
+1. **Minskning av sårbarheter**: Organisationen strävar efter att identifiera, bedöma och åtgärda sårbarheter i sina system och processer som kan äventyra driften eller säkerheten för kritiska funktioner. Sårbarhetshantering inkluderar kontinuerlig övervakning, bedömning av potentiella sårbarheter och systematiska åtgärder för att mildra dem.
+
+2. **Hotförsvar och informationsdelning**: Organisationen strävar efter att identifiera cyberhot som kan riktas mot dess verksamhet och utveckla försvarsmekanismer för att förebygga eller svara på dessa hot. Hotförsvar inkluderar också aktiv informationsdelning, både inom organisationen och med externa partners, såsom myndigheter eller branschnätverk, för att svara på utvecklande hot på ett samordnat sätt.
+
+Dessa mål hjälper organisationen att bygga en heltäckande bild av hot och sårbarheter som påverkar dess verksamhet, och gör det möjligt att svara snabbt och effektivt på föränderliga hotlandskap. Genom att förbättra hot- och sårbarhetshanteringen kan organisationen säkerställa bättre cybersäkerhet och skydd av kritiska funktioner.
+
+---
+
+<ObjectiveTitle name="threat-1">Minskning av sårbarheter</ObjectiveTitle>
+
+### Betydelse
+
+Detta mål fokuserar på systematisk identifiering och åtgärdande av sårbarheter i organisationens informationssystem. **Sårbarheter** är svagheter som kan utnyttjas av hotaktörer för att få obehörig åtkomst, störa verksamheten eller orsaka annan skada. Att identifiera och åtgärda sårbarheter hjälper till att minska sannolikheten för framgångsrika cyberattacker och minimera deras konsekvenser.
+
+Organisationen strävar efter att aktivt identifiera och bedöma sårbarheter, till exempel genom sårbarhetsskanning och säkerhetsbedömningar, och utveckla åtgärder för att hantera dem. Detta inkluderar både tekniska aspekter, såsom programvaruuppdateringar, och organisatoriska åtgärder, såsom att förbättra processer och utbildning.
+
+### Svarsinstruktioner
+
+Detta mål bedömer hur effektivt organisationen identifierar, utvärderar och åtgärdar sårbarheter i sina informationssystem och processer. Målet är att minska risker som uppstår från sårbarheter genom systematisk övervakning och korrigerande åtgärder.
+
+Vid utvärdering av detta mål, överväg:
+
+- Hur systematiskt identifierar organisationen sårbarheter i sina system och programvara?
+- Används sårbarhetsinformationskällor, såsom programvaruleverantörers bulletiner eller säkerhetsgemenskapens rapporter, regelbundet?
+- Utförs sårbarhetsbedömningar, och hur systematiskt och regelbundet genomförs de?
+- Hur snabbt och effektivt svarar organisationen på identifierade sårbarheter?
+- Finns det processer för att säkerställa att korrigerande åtgärder, såsom säkerhetsuppdateringar eller konfigurationsändringar, implementeras omgående?
+
+Detta mål hjälper till att minska attackytan och sårbarheten hos informationssystem, vilket förbättrar organisationens övergripande cybersäkerhet.
+
+---
+
+<PracticeTitle name="threat-1a">Lämpliga informationskällor om sårbarheter har identifierats.</PracticeTitle>
+
+### Fråga
+
+Har organisationen identifierat lämpliga källor för att erhålla information om sårbarheter som påverkar dess system? Sådana källor kan inkludera programvaruleverantörers säkerhetsbulletiner, säkerhetsgemenskaper (såsom CERT-nätverk) eller internationella säkerhetssårbarhetsdatabaser. Det är också viktigt att bedöma om dessa källor används aktivt, även om aktiviteten ännu inte är helt systematisk.
+
+### Betydelse
+
+Att identifiera lämpliga sårbarhetsinformationskällor är en väsentlig del av organisationens förmåga att svara på cybersäkerhetsrisker. Att hålla system säkra och uppdaterade kräver att organisationen har tillgång till aktuell och tillförlitlig information om kända sårbarheter, såsom säkerhetsluckor i programvara eller systemkonfigurationsproblem. Denna information hjälper organisationen att bedöma risker och vidta nödvändiga åtgärder för att åtgärda sårbarheter innan hotaktörer kan utnyttja dem.
+
+<AnswerOptions>
+Utvärdera i vilken utsträckning organisationen använder lämpliga sårbarhetsinformationskällor:
+
+- **Inte implementerat eller ingen information**: Organisationen har inte identifierat sårbarhetsinformationskällor eller information om denna fråga är inte tillgänglig.
+- **Delvis implementerat**: Organisationen har identifierat vissa sårbarhetsinformationskällor, men deras användning är begränsad eller oregelbunden.
+- **Mestadels implementerat**: Sårbarhetsinformationskällor används i stor utsträckning, men användningen är inte helt systematisk eller regelbunden.
+- **Helt implementerat**: Organisationen använder omfattande och regelbundet lämpliga sårbarhetsinformationskällor för att identifiera sårbarheter.
+</AnswerOptions>
+
+### Exempel
+
+Företaget använder flera informationskällor för att identifiera sårbarheter, såsom programvaruleverantörers säkerhetsbulletiner, Finlands nationella cybersäkerhetscenters meddelanden och internationella säkerhetsgemenskapens rapporter som CERT-nätverk. Dessa källor används främst när sårbarheter upptäcks eller när uppdateringar installeras. Sårbarhetsinformationskällor övervakas dock inte systematiskt, utan konsulteras vid behov. I framtiden strävar företaget efter att utveckla en mer systematisk metod där sårbarhetsinformation samlas in och används mer regelbundet och proaktivt.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB har identifierat flera lämpliga informationskällor för sårbarhetsidentifiering, men användningen av dessa källor sker på ad hoc-basis och är ännu inte systematisk eller regelbunden på nivå 1. Sårbarhetsinformation hämtas från källor vid behov, särskilt när sårbarheter upptäcks eller när system kräver uppdateringar.
+
+### Lämpliga källor för sårbarhetsidentifiering
+
+Företaget har tillgång till flera olika källor relaterade till sårbarhetsidentifiering, men användningen av denna information är ännu inte helt etablerad eller regelbunden. Informationskällor används särskilt för att identifiera sårbarheter i kritiska system, såsom ERP- och SCADA-system, när avvikelser eller sårbarheter upptäcks.
+
+- Programvaruleverantörers säkerhetsbulletiner: Programvaruleverantörer, såsom ERP- och SCADA-systemleverantörer, publicerar information om kända sårbarheter och risker relaterade till deras programvara. Företaget använder denna information särskilt i samband med systemuppdateringar.
+- Cybersäkerhetscenters meddelanden: Företaget övervakar meddelanden och varningar från Finlands nationella cybersäkerhetscenter, som ger aktuell information om nya cyberhot och kända sårbarheter. Denna information används för sårbarhetsidentifiering särskilt när den direkt relaterar till programvara eller utrustning som används av företaget.
+- Säkerhetsgemenskaper och expertnätverk: Företaget följer säkerhetsgemenskapens kanaler, såsom CERT-nätverk (Computer Emergency Response Team), som regelbundet publicerar rapporter om kända sårbarheter och säkerhetsincidenter. Dessa källor används när en ny sårbarhet upptäcks som kräver mer detaljerad analys.
+- Internationella säkerhetssårbarhetsdatabaser: Företaget erhåller även sårbarhetsinformation från internationella databaser, såsom CVE (Common Vulnerabilities and Exposures) eller NVD (National Vulnerability Database). Dessa källor ger information om globalt kända sårbarheter som kan påverka systemen som används av företaget.
+
+### Användning av informationskällor från fall till fall
+
+Informationskällor används på ad hoc-basis, vilket innebär att information söks och används när sårbarheter upptäcks eller när det finns behov av att bedöma ett visst systems säkerhetsstatus. Informationsinsamling och användning är inte systematisk och kontrolleras inte med regelbundna intervaller.
+
+- Användning från fall till fall: Företaget övervakar informationskällor särskilt när misstänkt aktivitet eller möjliga sårbarheter upptäcks i informationssystem. Detta kan inträffa, till exempel, när IT- eller OT-system uppvisar onormalt beteende.
+- Ingen regelbunden kontroll: Eftersom sårbarhetsinformationskällor inte övervakas regelbundet, söks information huvudsakligen när det finns ett specifikt behov. Detta innebär att information inte kontrolleras proaktivt, utan källor förlitas på när sårbarheter redan har upptäckts.
+
+### Mångfald och användning av informationskällor
+
+Livsmedelsföretaget använder flera olika källor som ger omfattande information om olika sårbarheter, såsom säkerhetsluckor i programvara, hårdvara eller nätverksutrustning. Dessa källor används särskilt för sårbarhetsidentifiering och riskbedömning.
+
+- Lokala och nationella informationskällor: Finlands nationella cybersäkerhetscenters bulletiner och varningar är viktiga särskilt för att identifiera nationellt betydelsefulla cybersäkerhetssårbarheter. Denna information används i situationer där sårbarheter kan påverka hela branschen eller nationell infrastruktur i större utsträckning.
+- Internationella källor: Internationella sårbarhetsinformationskällor, såsom programvaruleverantörers och säkerhetsorganisationers rapporter, ger information särskilt om globalt spridande sårbarheter som också kan påverka livsmedelsföretagets system. Denna information används när sårbarheter relaterar till internationell programvara eller system.
+- Tolkning av sårbarhetsinformation: Insamlad sårbarhetsinformation analyseras och tolkas vid behov för att bestämma hur sårbarheter påverkar företagets kritiska system och processer. Detta hjälper företaget att fatta välgrundade beslut för att förebygga möjliga sårbarheter eller minska deras konsekvenser.
+
+### Användning av information för att åtgärda sårbarheter
+
+Insamlad sårbarhetsinformation hjälper företaget att fatta beslut om nödvändiga åtgärder för att åtgärda sårbarheter eller mildra deras konsekvenser. Dessa åtgärder kan implementeras, till exempel, genom att installera uppdateringar eller ändra systemkonfigurationer för att förbättra säkerheten.
+
+- Installera uppdateringar: När informationskällor ger information om kritiska sårbarheter, installerar företaget nödvändiga uppdateringar eller patchar på fall-till-fall-basis. Detta hjälper till att säkerställa att sårbarheter åtgärdas snabbt och deras konsekvenser kan minimeras.
+- Konfigurationshantering: Om sårbarhetsinformation indikerar att vissa systemkonfigurationer kan vara sårbara för utnyttjande, ändrar företaget dessa konfigurationer. Detta kan innebära, till exempel, att begränsa åtkomsträttigheter eller ändra nätverksinställningar.
+- Förbättrad övervakning: Om sårbarhetsinformation indikerar en ökad risk för vissa system, kan företaget öka övervakningen av dessa system. Detta kan särskilt innebära att förbättra nätverksövervakning eller kontinuerlig övervakning av viss utrustning och programvara.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom sårbarhetsinformationsinsamling och användning inte är systematisk, finns det en risk att vissa sårbarheter inte upptäcks i tid eller att sårbarhetsinformation blir föråldrad innan det vidtas åtgärder. Detta kan leda till att vissa sårbarheter realiseras utan att företaget är tillräckligt förberett för dem.
+
+- Informationsåldrande: Eftersom informationskällor inte övervakas regelbundet, är det möjligt att viss sårbarhetsinformation blir föråldrad innan det finns tid att reagera på den. Detta kan försvaga företagets förmåga att hantera nya eller snabbt utvecklande sårbarheter.
+- Reaktiv strategi: Sårbarhetsidentifiering baseras för närvarande på en reaktiv driftsmodell, vilket innebär att sårbarheter huvudsakligen reageras på när de redan har upptäckts. Den proaktiva strategin är svagare eftersom sårbarhetsinformation inte kontrolleras regelbundet.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB erkänner behovet av att utveckla processer för sårbarhetsinformationsinsamling och användning. Målet är att skapa en mer systematisk metod för att samla in och dela sårbarhetsinformation, så att alla relevanta sårbarheter upptäcks och kan besvaras i tid.
+
+- Regelbunden sårbarhetsinformationsövervakning: Företaget avser att implementera en regelbunden process för övervakning av sårbarhetsinformationskällor, så att information kan samlas in kontinuerligt och systematiskt. Detta hjälper till att förbättra företagets förmåga att identifiera nya sårbarheter och förbereda sig för dem proaktivt.
+- Förbättra informationsanvändning: Dessutom strävar företaget efter att förbättra analys och användning av sårbarhetsinformation som en del av riskhanteringen. Detta innebär att sårbarhetsinformation kommer att integreras bättre i företagets säkerhetspraxis och operativa processer.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Organisationen bör regelbundet kartlägga informationskällor (såsom cybersäkerhetscenter, CISA, lämpliga ISACs, leverantörer, tjänster) och bestämma deras relevans och värde som leverantörer av sårbarhetsinformation.
+
+Inledningsvis kan viss analys behövas för att bestämma vilken information som är mest relevant för att genomföra organisationens sårbarhetshanteringsaktiviteter. Dessutom kan sårbarheter som påverkar liknande branscher vara relevanta för funktionen och bör beaktas i enlighet därmed.
+
+**Relaterade praxis:**
+
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. Praxis för denna utvecklingsväg är: THREAT-1a, THREAT-1e.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1b">Information om sårbarheter samlas in och tolkas åtminstone på ad hoc-basis. Aktiviteten behöver inte vara systematisk och regelbunden.</PracticeTitle>
+
+### Fråga
+
+Samlar organisationen information om potentiella säkerhetssårbarheter, såsom säkerhetsluckor i programvara eller nätverkssårbarheter, och undersöker den när en sårbarhet eller ett problem uppstår? Detta kan innebära att information söks, till exempel, när misstänkt aktivitet upptäcks i system eller en extern sårbarhet identifieras. Information samlas in och analyseras på fall-till-fall-basis, inte kontinuerligt eller regelbundet.
+
+### Betydelse
+
+Att samla in och tolka sårbarhetsinformation är centralt för att stödja organisationens cybersäkerhet. Information om sårbarheter hjälper företaget att svara snabbare på möjliga säkerhetssårbarheter och säkerställa att nödvändiga åtgärder kan implementeras i tid. Även om processen inte är helt systematisk, stöder den organisationen i att identifiera och svara på sårbarheter, särskilt i kritiska ögonblick.
+
+<AnswerOptions>
+Utvärdera hur organisationen samlar in och tolkar sårbarhetsinformation:
+
+- **Inte implementerat eller ingen information**: Sårbarhetsinformation samlas inte in, och det finns ingen praxis för dess tolkning.
+- **Delvis implementerat**: Sårbarhetsinformation samlas in, men processen är slumpmässig och analyseras inte regelbundet.
+- **Mestadels implementerat**: Sårbarhetsinformation samlas in från flera källor, men analysen är inte helt systematisk och täcker inte alla nödvändiga informationskällor.
+- **Helt implementerat**: Sårbarhetsinformationsinsamling och tolkning är systematiska och täcker alla nyckellkällor, och används aktivt för att stödja funktioner.
+</AnswerOptions>
+
+### Exempel
+
+Företaget samlar in sårbarhetsinformation från olika källor vid behov, men processen är ännu inte systematisk. Information samlas in särskilt när sårbarheter uppstår, såsom vid systemuppdateringar eller i samband med säkerhetssårbarheter. Källor inkluderar bland annat Finlands nationella cybersäkerhetscenters varningar, programvaruleverantörers säkerhetsbulletiner och internationella säkerhetsportals rapporter. Information tolkas på fall-till-fall-basis och används för att stödja riskhantering.
+
+Även om processen fortfarande är reaktiv, avser företaget att utveckla den för att bli mer systematisk och implementera kontinuerlig sårbarhetsinformationsövervakning, så att sårbarheter kan identifieras proaktivt och besvaras snabbare.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB samlar in och tolkar sårbarhetsinformation för att stödja sina funktioner, men detta sker på ad hoc-basis och från fall till fall. Sårbarhetsinformationsinsamling och tolkning är ännu inte systematiska eller regelbundna på nivå 1. Information söks och analyseras särskilt när en specifik sårbarhet, problem eller avvikelse inträffar i företagets IT- eller OT-system.
+
+### Insamling av sårbarhetsinformation från fall till fall
+
+Företaget samlar in sårbarhetsinformation från flera källor alltid vid behov. Denna informationsinsamling fokuserar särskilt på kritiska ögonblick, såsom i samband med systemuppdateringar eller när säkerhetssårbarheter uppstår som kan påverka företagets verksamhet.
+
+- Cybersäkerhetscenters varningar: Företaget övervakar varningar och bulletiner från Finlands nationella cybersäkerhetscenter, från vilka det får information om aktuella cyberhot och kända sårbarheter. Dessa källor används på fall-till-fall-basis när en ny sårbarhet upptäcks, men de kontrolleras inte regelbundet.
+- Programvaruleverantörers säkerhetsmeddelanden: Programvaruleverantörers, såsom ERP- och SCADA-systemleverantörers, säkerhetsbulletiner är viktiga informationskällor. Dessa övervakas särskilt när programvaruuppdateringar görs eller när en specifik sårbarhet upptäcks i system.
+- Säkerhetsexperter och säkerhetsportaler: Internationella säkerhetsportaler och säkerhetsexperters bloggar ger information mer brett om kända sårbarheter. Dessa informationskällor används när det finns behov av att kontrollera om en upptäckt sårbarhet är relaterad till en bredare cyberattack eller säkerhetsproblem.
+
+### Tolkning av sårbarhetsinformation för funktionen
+
+När sårbarhetsinformation samlas in, tolkar företaget den på fall-till-fall-basis baserat på hur sårbarheter påverkar organisationens verksamhet. Denna tolkning är inte helt regelbunden, utan görs särskilt när en ny sårbarhet upptäcks eller när systemsäkerhet behöver bedömas.
+
+- Tolkning från fall till fall: Sårbarhetsinformation analyseras baserat på vilken inverkan sårbarheten har på företagets nyckelprocesser, såsom produktion eller säkerhet. Tolkning kan inkludera en riskbedömning och en möjlig korrigerande plan för att åtgärda sårbarheten.
+- Användning av sårbarhetsinformation i beslutsfattande: Tolkning av sårbarhetsinformation hjälper företaget att fatta beslut om nödvändiga åtgärder. Detta kan innebära, till exempel, att påskynda en programvaruuppdatering, öka övervakningen eller ändra åtkomsträttigheter för vissa system.
+
+### Praktisk användning av informationskällor och tolkning
+
+Insamlad och tolkad sårbarhetsinformation används för funktioner alltid vid behov. Baserat på informationen kan företaget vidta korrigerande åtgärder, såsom att installera säkerhetsuppdateringar, ändra systeminställningar eller förbättra säkerhetspraxis.
+
+- Installera uppdateringar: Tolkad sårbarhetsinformation leder ofta till programvaru- och systemuppdateringar, särskilt när sårbarheter har upptäckts eller när programvaruleverantörer rekommenderar uppdateringar för vissa sårbarheter.
+- Öka övervakning: Om insamlad sårbarhetsinformation indikerar avvikelser, kan företaget öka övervakningen av vissa kritiska system, såsom realtidsnätverksövervakning eller närmare övervakning av vissa enheter och servrar.
+- Modifiera säkerhetspraxis: Baserat på sårbarhetsinformation kan företaget också göra ändringar i sin säkerhetspolicy, såsom att begränsa åtkomsträttigheter eller uppdatera vissa säkerhetspraxis.
+
+### Ad hoc-strategi på nivå 1
+
+Eftersom sårbarhetsinformationsinsamling och tolkning inte är systematiska eller regelbundna, förlitas de huvudsakligen på reaktivt. Detta innebär att företaget agerar enligt hur sårbarheter framträder från informationskällor, men förutser inte sårbarheter med regelbundna kontroller eller systematisk analys.
+
+- Ingen regelbunden process: Sårbarhetsinformationsinsamling och analys görs alltid vid behov, men informationskällor övervakas inte kontinuerligt. Detta kan innebära att vissa sårbarheter inte upptäcks om de inte är synliga eller aktuella vid just det ögonblicket.
+- Reaktiv aktivitet: Åtgärder vidtas när en ny sårbarhet eller avvikelse upptäcks i företaget. Detta kan innebära att sårbarhetsinformation används först efter att en sårbarhet eller problem redan har inträffat.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom sårbarhetsinformationsinsamling och tolkning sker på fall-till-fall-basis, finns det en risk att vissa väsentliga sårbarheter inte upptäcks eller inte besvaras tillräckligt snabbt. Detta kan försvaga företagets beredskap att hantera nya sårbarheter eller säkerhetsattacker.
+
+- Informationsåldrande: Eftersom sårbarhetsinformation inte samlas in regelbundet, kan viss sårbarhetsinformation bli föråldrad innan företaget hinner reagera på den. Detta kan orsaka sårbarheter som inte korrigeras i tid.
+- Reaktiv strategi: Ad hoc-aktivitet innebär att företaget reagerar på sårbarheter först efter att de har upptäckts. Den proaktiva strategin, där sårbarheter söks identifieras i förväg med regelbunden informationsanalys, är svagare på nivå 1.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB strävar efter att utveckla sårbarhetsinformationsinsamling och tolkning till en mer systematisk och regelbunden process. Målet är att implementera en proaktiv driftsmodell där sårbarhetsinformationsinsamling och analys är en kontinuerlig del av riskhanteringen.
+
+- Regelbunden sårbarhetsinformationsanalys: Företaget avser att implementera en regelbunden process för sårbarhetsinformationsinsamling där olika informationskällor övervakas kontinuerligt. Detta hjälper företaget att upptäcka sårbarheter innan de påverkar kritiska funktioner.
+- Använda information proaktivt: Målet är också att insamlad sårbarhetsinformation används proaktivt för att hantera sårbarheter, inte bara reaktivt. Detta innebär, till exempel, att säkerhetsprocesser och system kontrolleras regelbundet baserat på sårbarhetsinformation.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Sårbarheter identifieras och åtgärdas med början från att samla in användbar sårbarhetsinformation från tillförlitliga källor och bestämma om sårbarhetsinformationen är relevant för organisationen och organisationens funktioner.
+
+Sårbarhetsinformationsinsamling och granskning kan ske av intern personal, som en tjänst som tillhandahålls av en leverantör, eller en kombination av båda. Sårbarhetsinformationskällor bör täcka de olika IT- och OT-enheter och datalager som är viktiga för att genomföra funktionen.
+
+**Relaterade praxis:**
+
+- **Input**: Implementering av THREAT-1a ger input som kan vara användbar vid implementering av denna praxis.
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. Praxis för denna utvecklingsväg är: THREAT-1b, THREAT-1h, THREAT-1k.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1c">Sårbarhetsbedömningar utförs åtminstone på ad hoc-basis.</PracticeTitle>
+
+### Fråga
+
+Utför organisationen sårbarhetsbedömningar, åtminstone när det finns ett specifikt behov eller när nya sårbarheter upptäcks? Detta kan innebära att sårbarhetsbedömningar genomförs i samband med systemuppdateringar, programvaruändringar eller när säkerhetsrisker identifieras. Sårbarhetsbedömning hjälper till att identifiera potentiella sårbarheter i system och utvärdera behovet av korrigerande åtgärder.
+
+### Betydelse
+
+Sårbarhetsbedömningar är en kritisk del av en organisations cybersäkerhet, eftersom de hjälper till att identifiera svagheter i system och processer som kan utnyttjas av hotaktörer. Regelbunden sårbarhetsbedömning hjälper organisationen att förstå var dess system är sårbara och vilka åtgärder som behövs för att minska riskerna. Även om aktiviteten ännu inte är helt systematisk, stöder genomförandet av sårbarhetsbedömningar organisationen i att förbättra sin säkerhetsposition.
+
+<AnswerOptions>
+Utvärdera hur organisationen utför sårbarhetsbedömningar:
+
+- **Inte implementerat eller ingen information**: Sårbarhetsbedömningar utförs inte, eller information om dem är inte tillgänglig.
+- **Delvis implementerat**: Sårbarhetsbedömningar utförs ibland eller på fall-till-fall-basis, men är inte systematiska eller regelbundna.
+- **Mestadels implementerat**: Sårbarhetsbedömningar utförs ganska regelbundet, men de täcker inte alla system eller är inte helt systematiska.
+- **Helt implementerat**: Sårbarhetsbedömningar utförs systematiskt och regelbundet för alla kritiska system, och deras resultat används aktivt för att förbättra säkerheten.
+</AnswerOptions>
+
+### Exempel
+
+Företaget utför sårbarhetsbedömningar på fall-till-fall-basis, särskilt när nya system tas i bruk eller när betydande uppdateringar görs i befintliga system. Till exempel kan sårbarhetsskanningar utföras för nätverksutrustning och kritiska system, såsom ERP- och SCADA-system, när ändringar görs. Bedömningar hjälper till att identifiera potentiella sårbarheter och vidta korrigerande åtgärder, såsom att installera säkerhetsuppdateringar eller ändra konfigurationer. Bedömningar är dock ännu inte systematiska eller regelbundna, och de täcker inte alla system kontinuerligt. I framtiden strävar företaget efter att utveckla processen så att sårbarhetsbedömningar utförs mer regelbundet och täcker alla kritiska system omfattande.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB utför sårbarhetsbedömningar på ad hoc-basis och från fall till fall, men ännu inte systematiskt eller regelbundet på nivå 1. Sårbarhetsbedömningar utförs särskilt när förändringar sker i system, såsom uppdateringar, nya utrustningsinstallationer eller när avvikelser eller säkerhetsrisker upptäcks.
+
+### Utföra sårbarhetsbedömningar från fall till fall
+
+Företaget utför sårbarhetsbedömningar alltid när det finns ett specifikt behov eller när sårbarheter i system behöver bedömas. Bedömningar utförs särskilt för kritiska system, såsom produktionssystem eller informationssystem, när ändringar görs eller när nya sårbarheter upptäcks.
+
+- Bedömningar i samband med systemändringar: När företaget installerar nya system eller gör betydande ändringar i befintliga system, utförs sårbarhetsbedömningar för att identifiera potentiella säkerhetsrisker. Detta kan inkludera, till exempel, sårbarhetsskanning för nätverksutrustning eller säkerhetsbedömning för programvara.
+- Bedömningar när sårbarheter upptäcks: Om sårbarhetsinformation indikerar att ett specifikt system kan vara sårbart, utför företaget en sårbarhetsbedömning för att bestämma omfattningen och konsekvenserna av sårbarheten. Detta hjälper företaget att fatta beslut om nödvändiga korrigerande åtgärder.
+
+### Metoder och verktyg för sårbarhetsbedömning
+
+Företaget använder olika metoder och verktyg för att utföra sårbarhetsbedömningar, men dessa är ännu inte helt standardiserade eller systematiskt använda. Bedömningar kan inkludera både automatiserade verktyg och manuella inspektioner.
+
+- Automatiserad sårbarhetsskanning: Företaget använder automatiserade sårbarhetsskanningsverktyg som hjälper till att identifiera kända sårbarheter i system och programvara. Dessa verktyg används särskilt när nätverksutrustning eller kritiska system, såsom ERP- eller SCADA-system, behöver kontrolleras.
+- Manuell säkerhetsbedömning: Utöver automatiserade verktyg utför företaget manuella säkerhetsbedömningar där säkerhetsexperter utvärderar systems säkerhetskonfigurationer och identifierar potentiella sårbarheter. Dessa bedömningar utförs särskilt när mer detaljerad analys behövs eller när automatiserade verktyg inte ger tillräcklig information.
+
+### Användning av bedömningsresultat
+
+Resultaten av sårbarhetsbedömningar används för att identifiera nödvändiga korrigerande åtgärder, såsom säkerhetsuppdateringar, konfigurationsändringar eller ökad övervakning. Bedömningar dokumenteras dock ännu inte systematiskt eller deras resultat följs inte upp på lång sikt.
+
+- Installera korrigerande åtgärder: Baserat på bedömningsresultat installerar företaget säkerhetsuppdateringar eller gör konfigurationsändringar för att åtgärda identifierade sårbarheter. Detta hjälper till att minska risker och förbättra systemsäkerhet.
+- Övervakning och uppföljning: Om sårbarhetsbedömningar avslöjar att vissa system är mer sårbara än andra, kan företaget öka övervakningen av dessa system. Detta är dock ännu inte systematiskt, och övervakning kan vara tillfällig.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom sårbarhetsbedömningar inte är systematiska eller regelbundna, finns det en risk att alla sårbarheter i system inte identifieras i tid. Detta kan utsätta företaget för säkerhetsrisker, särskilt om sårbarheter utvecklas till allvarligare problem innan de upptäcks.
+
+- Täckningsbegränsningar: Ad hoc-bedömningar kanske inte täcker alla system, vilket innebär att vissa sårbarheter kan förbli oupptäckta. Detta kan försvaga företagets övergripande säkerhetsposition.
+- Brist på systematik: Eftersom bedömningar inte utförs regelbundet, finns det en risk att sårbarhetsinformation blir föråldrad eller nya sårbarheter inte upptäcks i tid. Detta kan leda till att system förblir sårbara längre än nödvändigt.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB erkänner behovet av att utveckla sårbarhetsbedömningar för att bli mer systematiska och regelbundna. Målet är att implementera en process där alla kritiska system bedöms regelbundet och bedömningsresultat används proaktivt för att förbättra säkerheten.
+
+- Regelbundna sårbarhetsbedömningar: Företaget avser att implementera regelbundna sårbarhetsbedömningar som täcker alla kritiska system. Detta hjälper till att säkerställa att sårbarheter identifieras i tid och korrigerande åtgärder kan göras proaktivt.
+- Systematisk dokumentation och uppföljning: Målet är också att säkerställa att alla bedömningsresultat dokumenteras och deras konsekvenser följs upp kontinuerligt. Detta förbättrar företagets förmåga att analysera hur effektiva korrigerande åtgärder har varit och hjälper till att göra nödvändiga förbättringar.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Sårbarhetsbedömningar syftar till att identifiera, dokumentera och rapportera exploaterbara sårbarheter (såsom saknade eller felaktigt installerade patchar, potentiella skadliga programvaruinfektioner, svaga lösenord, etc.). Sårbarhetsbedömningar kan utföras med hjälp av automatiserade verktyg eller manuella gransknings- och testmetoder, och kan inkludera både IT- och OT-teknologier.
+
+Sårbarhetsbedömningar kan också kompletteras med penetrationstestning där det är nödvändigt för att ytterligare validera fynd.
+
+**Relaterade praxis:**
+
+- **Input**: Implementering av THREAT-1b ger input som kan vara användbar vid implementering av denna praxis.
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. Praxis för denna utvecklingsväg är: THREAT-1c, THREAT-1f, THREAT-1i, THREAT-1l.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1d">Relevanta sårbarheter åtgärdas.</PracticeTitle>
+
+### Fråga
+
+Åtgärdar organisationen relevanta sårbarheter när de identifieras? Detta kan innebära, till exempel, att installera säkerhetsuppdateringar, ändra systemkonfigurationer eller öka övervakningen när sårbarheter upptäcks. Vidtas korrigerande åtgärder tillräckligt snabbt och säkerställs det att sårbarheter åtgärdas innan de kan utnyttjas?
+
+### Betydelse
+
+Att åtgärda sårbarheter är en kritisk del av en organisations cybersäkerhet. Det räcker inte att bara identifiera sårbarheter - de måste också effektivt åtgärdas för att minska risker och skydda kritiska system och data. Snabb och effektiv åtgärdande av sårbarheter hjälper till att förebygga cyberattacker och minimera möjliga skador.
+
+<AnswerOptions>
+Utvärdera hur organisationen åtgärdar relevanta sårbarheter:
+
+- **Inte implementerat eller ingen information**: Sårbarheter åtgärdas inte, eller information om att åtgärda dem är inte tillgänglig.
+- **Delvis implementerat**: Sårbarheter åtgärdas på fall-till-fall-basis, men processen är inte systematisk eller regelbunden.
+- **Mestadels implementerat**: Sårbarheter åtgärdas ganska systematiskt, men åtgärdande kan försenas eller kanske inte täcker alla relevanta sårbarheter.
+- **Helt implementerat**: Alla relevanta sårbarheter åtgärdas systematiskt och snabbt, och effektiviteten av korrigerande åtgärder övervakas kontinuerligt.
+</AnswerOptions>
+
+### Exempel
+
+Företaget åtgärdar relevanta sårbarheter när de identifieras, särskilt kritiska sårbarheter som kan påverka produktion eller informationssäkerhet. Till exempel, om en programvaruleverantör publicerar en kritisk säkerhetsuppdatering, installerar företaget den så snabbt som möjligt för berörda system. Mindre kritiska sårbarheter kan åtgärdas senare, till exempel i samband med normalt underhåll. Processen är dock ännu inte helt systematisk, och åtgärdande kan försenas om resurserna är begränsade eller om sårbarheten bedöms som låg risk. I framtiden strävar företaget efter att utveckla processen så att alla relevanta sårbarheter åtgärdas mer systematiskt och snabbt, och effektiviteten av korrigerande åtgärder övervakas bättre.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB åtgärdar relevanta sårbarheter när de identifieras, men detta sker på ad hoc-basis och är ännu inte systematiskt eller regelbundet på nivå 1. Relevanta sårbarheter åtgärdas särskilt när de bedöms som kritiska eller när de kan påverka företagets nyckelfunktioner, såsom produktion eller informationssäkerhet.
+
+### Åtgärda relevanta sårbarheter från fall till fall
+
+Företaget åtgärdar sårbarheter på fall-till-fall-basis, prioriterar särskilt kritiska sårbarheter som kan ha betydande konsekvenser för affärsverksamheten. Mindre kritiska sårbarheter kan åtgärdas senare eller i samband med normalt systemunderhåll.
+
+- Åtgärda kritiska sårbarheter: Om en sårbarhet bedöms som kritisk, såsom en säkerhetslucka som kan tillåta obehörig åtkomst till system eller störa produktionen, åtgärdar företaget den omedelbart. Detta kan inkludera att installera säkerhetsuppdateringar, ändra konfigurationer eller tillfälligt isolera system.
+- Åtgärda mindre kritiska sårbarheter: Sårbarheter som bedöms som lägre risk kan åtgärdas senare, till exempel i samband med normala underhållsfönster eller systemuppdateringar. Detta hjälper företaget att prioritera sina resurser och fokusera på de viktigaste sårbarheterna först.
+
+### Metoder för att åtgärda sårbarheter
+
+Företaget använder olika metoder för att åtgärda sårbarheter, beroende på sårbarhetens art och allvar. Dessa metoder inkluderar både tekniska lösningar och organisatoriska åtgärder.
+
+- Installera säkerhetsuppdateringar: Det vanligaste sättet att åtgärda sårbarheter är att installera säkerhetsuppdateringar eller patchar som programvaruleverantörer har släppt. Företaget installerar dessa uppdateringar särskilt för kritiska system, såsom ERP- och SCADA-system, när kritiska sårbarheter upptäcks.
+- Konfigurationsändringar: Om en sårbarhet relaterar till systemkonfiguration, kan företaget ändra inställningar för att minska risken. Detta kan inkludera, till exempel, att begränsa åtkomsträttigheter, ändra nätverksinställningar eller stärka autentiseringskrav.
+- Tillfälliga åtgärder: I vissa fall kan företaget implementera tillfälliga åtgärder för att åtgärda en sårbarhet medan en permanent lösning förbereds. Detta kan inkludera, till exempel, att tillfälligt isolera ett system från nätverket eller öka övervakningen.
+
+### Prioritering av sårbarheter
+
+Företaget prioriterar åtgärdande av sårbarheter baserat på deras kritikalitet och möjliga konsekvenser. Kritiska sårbarheter som kan påverka affärskontinuitet eller informationssäkerhet åtgärdas omedelbart, medan mindre kritiska sårbarheter kan åtgärdas senare.
+
+- Kritikalitetsbedömning: Varje sårbarhet bedöms baserat på dess kritikalitet och möjliga konsekvenser. Faktorer som beaktas i bedömningen inkluderar potentialen för utnyttjande, konsekvenserna för affärsverksamheten och tillgängligheten av korrigerande åtgärder.
+- Prioritering från fall till fall: Företaget prioriterar åtgärdande av sårbarheter på fall-till-fall-basis, med hänsyn till aktuella hot och tillgängliga resurser. Detta innebär att sårbarhetssituationer hanteras när de uppstår, men systematisk och regelbunden proaktiv sårbarhetshantering är ännu inte i bruk på nivå 1.
+
+### Dokumentation och uppföljning
+
+Även om företaget åtgärdar sårbarheter på fall-till-fall-basis, är dokumentation och uppföljning av korrigerande åtgärder inte helt systematiska på nivå 1. Detta kan leda till en situation där vissa sårbarhetsrelaterade korrigerande åtgärder inte dokumenteras, vilket försvagar långsiktig spårbarhet och analys.
+
+- Brist på dokumentation: Eftersom korrigerande åtgärder inte alltid dokumenteras systematiskt, kan vissa åtgärder som vidtas för att åtgärda sårbarheter inte registreras. Detta kan göra det svårt att utvärdera effektiviteten av korrigerande åtgärder i efterhand, särskilt om sårbarhetsuppföljning inte är kontinuerlig.
+- Uppföljningsutmaningar: Konsekvenserna av att åtgärda sårbarheter följs inte upp regelbundet, vilket kan leda till att vissa korrigerande åtgärder inte är tillräckliga eller att övervakning inte fortsätter tillräckligt länge. Detta kan försvaga företagets förmåga att hantera sårbarheter på lång sikt.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom åtgärdande av sårbarheter inte är systematiskt eller regelbundet, finns det en risk att alla relevanta sårbarheter inte hanteras i tid. Detta kan öka företagets exponering för cyberhot, särskilt när sårbarheter utvecklas snabbt eller inte upptäcks tillräckligt tidigt.
+
+- Reaktiv aktivitet: Åtgärdande av sårbarheter baseras för närvarande på en reaktiv driftsmodell, vilket innebär att korrigerande åtgärder görs först efter att en sårbarhet redan har upptäckts. Detta kan orsaka att företaget inte är helt förberett för nya eller snabbt utvecklande sårbarheter.
+- Förseningar i korrigerande åtgärder: Om sårbarheter inte åtgärdas omedelbart eller systematiskt, kan de utvecklas till allvarligare problem innan de besvaras. Detta kan orsaka sårbarheter som utsätter företaget för större säkerhetsrisker.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB erkänner behovet av att förbättra systematiken och regelbundenheten i åtgärdandet av sårbarheter. Företaget planerar att utveckla processer varigenom åtgärdande av sårbarheter kan göras mer proaktivt och effektivt, och alla korrigerande åtgärder dokumenteras noggrant.
+
+- Systematisk sårbarhetshantering: Företaget avser att skapa en systematisk strategi där sårbarhetsinformation övervakas regelbundet och relevanta sårbarheter åtgärdas proaktivt. Detta hjälper till att förhindra att sårbarheter utvecklas till allvarligare problem och förbättrar företagets förmåga att svara snabbt.
+- Dokumentation och uppföljning av korrigerande åtgärder: Målet är att säkerställa att alla sårbarhetsrelaterade korrigerande åtgärder dokumenteras och deras konsekvenser övervakas kontinuerligt. Detta förbättrar företagets förmåga att analysera hur effektiva korrigerande åtgärder har varit och hjälper till att göra nödvändiga förbättringar.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Identifierade och prioriterade sårbarheter åtgärdas med lämpliga åtgärder baserat på risk. Detta kan inkludera att tillämpa patchar, ändra konfigurationer eller implementera andra mildrande kontroller. Vissa sårbarheter kan accepteras om risken bedöms som acceptabel och affärsmotivering stöder det.
+
+**Relaterade praxis:**
+
+- **Input**: Implementering av THREAT-1c ger input som kan vara användbar vid implementering av denna praxis.
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. Praxis för denna utvecklingsväg är: THREAT-1d, THREAT-1g, THREAT-1j.
+</C2M2Doc>
+
+---
+
+<ObjectiveTitle name="threat-2">Hotförsvar och informationsdelning</ObjectiveTitle>
+
+### Betydelse
+
+Detta mål fokuserar på att identifiera och svara på cyberhot som kan riktas mot organisationens verksamhet. **Hot** är potentiella skadliga aktiviteter eller händelser som kan skada organisationens informationssystem, data eller verksamhet. Effektivt hotförsvar kräver att organisationen aktivt övervakar hotinformation, identifierar potentiella hotaktörer och deras mål, och implementerar åtgärder för att försvara sig mot eller mildra hot.
+
+Informationsdelning är också en nyckeldel av hotförsvaret. Organisationen delar hotinformation både internt, mellan olika avdelningar och funktioner, och externt, såsom med myndigheter, partners eller branschnätverk. Detta hjälper organisationen att hålla sig medveten om utvecklande hotlandskap och möjliggör samordnade svar på hot.
+
+### Svarsinstruktioner
+
+Detta mål bedömer hur effektivt organisationen identifierar, övervakar och svarar på cyberhot, och hur den delar hotinformation för att stödja försvarinsatser.
+
+Vid utvärdering av detta mål, överväg:
+
+- Hur systematiskt identifierar och övervakar organisationen cyberhot?
+- Används hotinformationskällor, såsom säkerhetsmyndigheter, leverantörer eller säkerhetsgemenskaper, regelbundet?
+- Har organisationen identifierat potentiella hotaktörer och deras mål som kan riktas mot dess verksamhet?
+- Hur snabbt och effektivt svarar organisationen på identifierade hot?
+- Delar organisationen hotinformation både internt och externt för att stödja samordnade försvarinsatser?
+
+Detta mål hjälper organisationen att bygga en omfattande förståelse för hotlandskapet och gör det möjligt att svara snabbt och effektivt på utvecklande cyberhot.
+
+---
+
+<PracticeTitle name="threat-2a">Lämpliga informationskällor för hotidentifiering har identifierats.</PracticeTitle>
+
+### Fråga
+
+Har organisationen identifierat lämpliga informationskällor för att stödja hotidentifiering? Sådana källor kan inkludera myndighetsvarnin­gar, programvaruleverantörers bulletiner eller internationella säkerhetsrapporter. Det är också viktigt att veta om dessa källor aktivt används för att identifiera hot, även om aktiviteten ännu inte är helt systematisk.
+
+### Betydelse
+
+Att identifiera lämpliga hotinformationskällor är en väsentlig del av organisationens förmåga att svara på cybersäkerhetshot. Att upptäcka hot i tid beror på att organisationen har tillgång till aktuella och tillförlitliga informationskällor som ger information om, till exempel, cyberattacker, sårbarheter och nya risker. Informationskällor hjälper organisationen att bedöma allvaret av risker och vidta åtgärder för att motverka dem.
+
+<AnswerOptions>
+Utvärdera i vilken utsträckning organisationen använder lämpliga hotinformationskällor:
+
+- **Inte implementerat eller ingen information**: Organisationen har inte identifierat hotinformationskällor eller information om denna fråga är inte tillgänglig.
+- **Delvis implementerat**: Organisationen har identifierat hotinformationskällor, men deras användning är begränsad eller oregelbunden.
+- **Mestadels implementerat**: Hotinformationskällor används i stor utsträckning, men användningen är inte helt systematisk eller regelbunden.
+- **Helt implementerat**: Organisationen använder omfattande och regelbundet lämpliga hotinformationskällor för hotidentifiering.
+</AnswerOptions>
+
+### Exempel
+
+Företaget använder flera informationskällor för hotidentifiering, såsom Finlands nationella cybersäkerhetscenters varningar, programvaruleverantörers hotbulletiner och internationella säkerhetsportals rapporter. Dessa källor används främst när hot upptäcks eller risksituationer uppstår i företaget. Hotinformationskällor övervakas dock inte regelbundet, utan används vid behov. Målet är att utveckla processen så att hotinformation samlas in och används mer systematiskt och regelbundet.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB har identifierat flera lämpliga informationskällor för att stödja hotidentifiering, men användningen av dessa informationskällor sker på ad hoc-basis och är ännu inte systematisk eller regelbunden på nivå 1. Hotinformation söks från källor vid behov, särskilt när möjliga hot eller nya risker har upptäckts i systemdrift.
+
+### Lämpliga informationskällor för hotidentifiering
+
+Företaget har tillgång till flera olika källor relaterade till hotidentifiering, men användningen av denna information är inte helt etablerad eller regelbunden. Informationskällor används särskilt för att identifiera hot mot kritiska system, såsom ERP- och SCADA-system, när avvikelser eller säkerhetsrelaterade sårbarheter upptäcks.
+
+- Cybersäkerhetscenters meddelanden: Företaget övervakar varningar och tillkännagivanden från Finlands nationella cybersäkerhetscenter, som ger aktuell information om nya cyberhot och attacker. Denna information används för hotidentifiering särskilt när den direkt relaterar till programvara eller utrustning som används av företaget.
+- Programvaruleverantörers hotbulletiner: Programvaruleverantörer, såsom ERP- och SCADA-systemleverantörer, publicerar information om kända hot och risker relaterade till deras programvara. Företaget använder denna information särskilt i samband med systemuppdateringar.
+- Säkerhetsgemenskaper och expertnätverk: Företaget följer säkerhetsgemenskapens kanaler, såsom CERT-nätverk (Computer Emergency Response Team), som regelbundet publicerar rapporter om kända hot och säkerhetsattacker. Dessa källor används när företaget har upptäckt ett nytt hot som kräver mer detaljerad analys.
+- Internationella säkerhetsportaler: Företaget tar också emot hotinformation genom internationella säkerhetsportaler, såsom ThreatPost eller KrebsOnSecurity. Dessa källor ger aktuell information om säkerhetshot som inträffar på global nivå.
+
+### Användning av informationskällor från fall till fall
+
+Informationskällor används på ad hoc-basis, vilket innebär att information söks och används när hot upptäcks eller när det finns behov av att bedöma ett visst systems säkerhetssituation. Informationsinsamling och användning är inte systematisk och kontrolleras inte med regelbundna intervaller.
+
+- Användning från fall till fall: Företaget övervakar informationskällor särskilt när misstänkta aktiviteter eller möjliga hot upptäcks i informationssystem. Detta kan inträffa, till exempel, när IT- eller OT-system uppvisar onormalt beteende.
+- Ingen regelbunden kontroll: Eftersom hotinformationskällor inte övervakas regelbundet, söks information huvudsakligen när det finns ett specifikt behov. Detta innebär att information inte kontrolleras proaktivt, utan källor förlitas på när hot redan har upptäckts.
+
+### Mångfald och användning av informationskällor
+
+Livsmedelsföretaget använder flera olika källor som ger omfattande information om olika hot, såsom cyberattacker, skadlig programvara och säkerhetsincidenter. Dessa källor används särskilt för hotidentifiering och riskbedömning.
+
+- Lokala och nationella informationskällor: Finlands nationella cybersäkerhetscenters bulletiner och varningar är viktiga särskilt för att identifiera nationellt betydelsefulla cyberhot. Denna information används i situationer där hot kan påverka hela branschen eller nationell infrastruktur i större utsträckning.
+- Internationella källor: Internationella hotinformationskällor, såsom programvaruleverantörers och säkerhetsorganisationers rapporter, ger information särskilt om globalt spridande hot som också kan påverka livsmedelsföretagets system. Denna information används när hot relaterar till internationell programvara eller system.
+- Tolkning av hotinformation: Insamlad hotinformation analyseras och tolkas vid behov för att bestämma hur hot påverkar företagets kritiska system och processer. Detta hjälper företaget att fatta välgrundade beslut för att förebygga möjliga hot eller minska deras konsekvenser.
+
+### Användning av information i hotförsvar
+
+Insamlad hotinformation hjälper företaget att fatta beslut om nödvändiga åtgärder för att motverka hot eller mildra deras konsekvenser. Dessa åtgärder kan implementeras, till exempel, genom att öka övervakningen eller uppdatera system för att förbättra säkerheten.
+
+- Öka övervakning: Om hotinformation indikerar en ökad risk för vissa system, kan företaget öka övervakningen av dessa system. Detta kan särskilt innebära att förbättra nätverksövervakning eller kontinuerlig övervakning av viss utrustning och programvara.
+- Installera uppdateringar och patchar: När informationskällor ger information om hotrelaterade uppdateringar eller patchar, installerar företaget dessa på fall-till-fall-basis. Detta hjälper till att säkerställa att hot kan besvaras snabbt och deras konsekvenser kan minimeras.
+- Anpassa säkerhetspraxis: Hotinformation som samlas in för att stödja hotidentifiering hjälper också företaget att anpassa säkerhetspraxis vid behov. Detta kan innebära, till exempel, att kontrollera åtkomsträttigheter eller uppdatera säkerhetsprotokoll.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom hotinformationsinsamling och användning inte är systematisk, finns det en risk att vissa hot inte upptäcks i tid eller att hotinformation blir föråldrad innan det vidtas åtgärder. Detta kan leda till att vissa hot realiseras utan att företaget är tillräckligt förberett för dem.
+
+- Informationsåldrande: Eftersom informationskällor inte övervakas regelbundet, är det möjligt att viss hotinformation blir föråldrad innan det finns tid att reagera på den. Detta kan försvaga företagets förmåga att motverka nya eller snabbt utvecklande hot.
+- Reaktiv strategi: Hotidentifiering baseras för närvarande på en reaktiv driftsmodell, vilket innebär att hot huvudsakligen reageras på när de redan har upptäckts. Den proaktiva strategin är svagare eftersom hotinformation inte kontrolleras regelbundet.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB erkänner behovet av att utveckla processer för hotinformationsinsamling och användning. Målet är att skapa en mer systematisk metod för att samla in och dela hotinformation, så att alla relevanta hot upptäcks och kan besvaras i tid.
+
+- Regelbunden hotinformationsövervakning: Företaget avser att implementera en regelbunden process för övervakning av hotinformationskällor, så att information kan samlas in kontinuerligt och systematiskt. Detta hjälper till att förbättra företagets förmåga att identifiera nya hot och förbereda sig för dem proaktivt.
+- Förbättra informationsanvändning: Dessutom strävar företaget efter att förbättra analys och användning av hotinformation som en del av riskhanteringen. Detta innebär att hotinformation kommer att integreras bättre i företagets säkerhetspraxis och operativa processer.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Organisationen bör regelbundet kartlägga informationskällor (såsom cybersäkerhetscenter, CISA, lämpliga ISACs, leverantörer, tjänster) och bestämma deras relevans och värde som leverantörer av hotinformation.
+
+Inledningsvis kan viss analys behövas för att bestämma vilken information som är mest relevant för att genomföra organisationens hothanteringsaktiviteter. Dessutom kan hot som påverkar liknande branscher vara relevanta för funktionen och bör beaktas i enlighet därmed.
+
+**Relaterade praxis:**
+
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. Praxis för denna utvecklingsväg är: THREAT-2a, THREAT-2f.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2b">Cyberhot-information samlas in och tolkas för funktionen åtminstone på ad hoc-basis. Aktiviteten behöver inte vara systematisk och regelbunden.</PracticeTitle>
+
+### Fråga
+
+Samlar organisationen information om möjliga cyberhot, såsom skadlig programvara eller nätverksattacker, och undersöker den när ett hot eller problem uppstår? Detta kan innebära att information söks, till exempel, när det finns misstänkt aktivitet i system eller ett externt hot har identifierats. Information samlas in och analyseras på fall-till-fall-basis, inte kontinuerligt eller regelbundet.
+
+### Betydelse
+
+Cyberhot-informationsinsamling och tolkning är centralt för att stödja organisationens cybersäkerhet. Information om hot hjälper företaget att svara snabbare på möjliga säkerhetshot och säkerställa att nödvändiga åtgärder kan implementeras i tid. Även om processen inte är helt systematisk, stöder den organisationen i att identifiera och svara på hot, särskilt i kritiska ögonblick.
+
+<AnswerOptions>
+Utvärdera hur organisationen samlar in och tolkar cyberhot-information:
+
+- **Inte implementerat eller ingen information**: Cyberhot-information samlas inte in, och det finns ingen praxis för dess tolkning.
+- **Delvis implementerat**: Cyberhot-information samlas in, men processen är slumpmässig och analyseras inte regelbundet.
+- **Mestadels implementerat**: Cyberhot-information samlas in från flera källor, men analysen är inte helt systematisk och täcker inte alla nödvändiga informationskällor.
+- **Helt implementerat**: Cyberhot-informationsinsamling och tolkning är systematiska och täcker alla nyckellkällor, och används aktivt för att stödja funktioner.
+</AnswerOptions>
+
+### Exempel
+
+Företaget samlar in cyberhot-information från olika källor vid behov, men processen är ännu inte systematisk. Information samlas in särskilt när hot uppstår, såsom vid systemuppdateringar eller i samband med säkerhetssårbarheter. Källor inkluderar bland annat Finlands nationella cybersäkerhetscenters varningar, programvaruleverantörers hotbulletiner och internationella säkerhetsportals rapporter. Information tolkas på fall-till-fall-basis och används för att stödja riskhantering.
+
+Även om processen fortfarande är reaktiv, avser företaget att utveckla den för att bli mer systematisk och implementera kontinuerlig cyberhot-informationsövervakning, så att hot kan identifieras proaktivt och besvaras snabbare.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB samlar in och tolkar cyberhot-information för att stödja sina funktioner, men detta sker på ad hoc-basis och från fall till fall. Cyberhot-informationsinsamling och tolkning är ännu inte systematiska eller regelbundna på nivå 1. Information söks och analyseras särskilt när ett specifikt hot, problem eller avvikelse inträffar i företagets IT- eller OT-system.
+
+### Insamling av cyberhot-information från fall till fall
+
+Företaget samlar in cyberhot-information från flera källor alltid vid behov. Denna informationsinsamling fokuserar särskilt på kritiska ögonblick, såsom i samband med systemuppdateringar eller när säkerhetshot uppstår som kan påverka företagets verksamhet.
+
+- Cybersäkerhetscenters varningar: Företaget övervakar varningar och bulletiner från Finlands nationella cybersäkerhetscenter, från vilka det får information om aktuella cyberhot. Dessa källor används på fall-till-fall-basis när ett nytt hot upptäcks, men de kontrolleras inte regelbundet.
+- Programvaruleverantörers säkerhetsmeddelanden: Programvaruleverantörers, såsom ERP- och SCADA-systemleverantörers, hotbulletiner är viktiga informationskällor. Dessa övervakas särskilt när programvaruuppdateringar görs eller när en specifik sårbarhet upptäcks i system.
+- Säkerhetsexperter och säkerhetsportaler: Internationella säkerhetsportaler och säkerhetsexperters bloggar ger information mer brett om kända hot. Dessa informationskällor används när det finns behov av att kontrollera om ett upptäckt hot är relaterat till en bredare cyberattack eller säkerhetsproblem.
+
+### Tolkning av cyberhot-information för funktionen
+
+När cyberhot-information samlas in, tolkar företaget den på fall-till-fall-basis baserat på hur hot påverkar organisationens verksamhet. Denna tolkning är inte helt regelbunden, utan görs särskilt när ett nytt hot upptäcks eller när systemsäkerhet behöver bedömas.
+
+- Tolkning från fall till fall: Cyberhot-information analyseras baserat på vilken inverkan hotet har på företagets nyckelprocesser, såsom produktion eller säkerhet. Tolkning kan inkludera en riskbedömning och en möjlig korrigerande plan för att motverka hotet.
+- Användning av hotinformation i beslutsfattande: Tolkning av cyberhot-information hjälper företaget att fatta beslut om nödvändiga åtgärder. Detta kan innebära, till exempel, att påskynda en programvaruuppdatering, öka övervakningen eller ändra åtkomsträttigheter för vissa system.
+
+### Praktisk användning av informationskällor och tolkning
+
+Insamlad och tolkad cyberhot-information används för funktioner alltid vid behov. Baserat på informationen kan företaget vidta korrigerande åtgärder, såsom att installera säkerhetsuppdateringar, ändra systeminställningar eller förbättra säkerhetspraxis.
+
+- Installera uppdateringar: Tolkad cyberhot-information leder ofta till programvaru- och systemuppdateringar, särskilt när sårbarheter har upptäckts eller när programvaruleverantörer rekommenderar uppdateringar för vissa hot.
+- Öka övervakning: Om insamlad hotinformation indikerar avvikelser, kan företaget öka övervakningen av vissa kritiska system, såsom realtidsnätverksövervakning eller närmare övervakning av vissa enheter och servrar.
+- Modifiera säkerhetspraxis: Baserat på hotinformation kan företaget också göra ändringar i sin säkerhetspolicy, såsom att begränsa åtkomsträttigheter eller uppdatera vissa säkerhetspraxis.
+
+### Ad hoc-strategi på nivå 1
+
+Eftersom cyberhot-informationsinsamling och tolkning inte är systematiska eller regelbundna, förlitas de huvudsakligen på reaktivt. Detta innebär att företaget agerar enligt hur hot framträder från informationskällor, men förutser inte hot med regelbundna kontroller eller systematisk analys.
+
+- Ingen regelbunden process: Cyberhot-informationsinsamling och analys görs alltid vid behov, men informationskällor övervakas inte kontinuerligt. Detta kan innebära att vissa hot inte upptäcks om de inte är synliga eller aktuella vid just det ögonblicket.
+- Reaktiv aktivitet: Åtgärder vidtas när ett nytt hot eller avvikelse upptäcks i företaget. Detta kan innebära att cyberhot-information används först efter att en sårbarhet eller problem redan har inträffat.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom cyberhot-informationsinsamling och tolkning sker på fall-till-fall-basis, finns det en risk att vissa väsentliga hot inte upptäcks eller inte besvaras tillräckligt snabbt. Detta kan försvaga företagets beredskap att motverka nya hot eller säkerhetsattacker.
+
+- Informationsåldrande: Eftersom hotinformation inte samlas in regelbundet, kan viss hotinformation bli föråldrad innan företaget hinner reagera på den. Detta kan orsaka sårbarheter som inte korrigeras i tid.
+- Reaktiv strategi: Ad hoc-aktivitet innebär att företaget reagerar på hot först efter att de har upptäckts. Den proaktiva strategin, där hot söks identifieras i förväg med regelbunden informationsanalys, är svagare på nivå 1.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB strävar efter att utveckla cyberhot-informationsinsamling och tolkning till en mer systematisk och regelbunden process. Målet är att implementera en proaktiv driftsmodell där hotinformationsinsamling och analys är en kontinuerlig del av riskhanteringen.
+
+- Regelbunden hotinformationsanalys: Företaget avser att implementera en regelbunden process för hotinformationsinsamling där olika informationskällor övervakas kontinuerligt. Detta hjälper företaget att upptäcka hot innan de påverkar kritiska funktioner.
+- Använda information proaktivt: Målet är också att insamlad hotinformation används proaktivt för att motverka hot, inte bara reaktivt. Detta innebär, till exempel, att säkerhetsprocesser och system kontrolleras regelbundet baserat på hotinformation.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Hot identifieras och besvaras med början från att samla in användbar hotinformation från tillförlitliga källor och bestämma om hotinformationen är relevant för organisationen och organisationens funktioner.
+
+Hotinformationsinsamling och granskning kan ske av intern personal, som en tjänst som tillhandahålls av en leverantör, eller en kombination av båda. Hotinformationskällor bör täcka de olika IT- och OT-enheter och datalager som är viktiga för att genomföra funktionen.
+
+Relaterade praxis:
+
+- **Input**: Implementering av THREAT-2a ger input som kan vara användbar vid implementering av denna praxis.
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. Praxis för denna utvecklingsväg är: THREAT-2b, THREAT-2h, THREAT-2k.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2c">Hotaktörers mål som riktas mot funktionen har identifierats åtminstone på ad hoc-basis.</PracticeTitle>
+
+### Fråga
+
+Har organisationen identifierat målen för potentiella hotaktörer som kan riktas mot dess verksamhet, åtminstone på ad hoc-basis? Detta kan innebära att hotaktörers mål bedöms när ett nytt hot eller avvikelse uppstår, även om detta ännu inte är systematiskt eller regelbundet.
+
+### Betydelse
+
+Att identifiera hotaktörers mål är en väsentlig del av cybersäkerhetshantering, eftersom det hjälper organisationen att bedöma varför och hur hotaktörer kan rikta sina hot mot dess verksamhet. Detta möjliggör implementering av riktade motåtgärder och minskar risker relaterade till, till exempel, informationsstöld eller driftstörningar.
+
+<AnswerOptions>
+Utvärdera hur väl organisationen identifierar hotaktörers mål och hotsituationer:
+
+- **Inte implementerat eller ingen information**: Hotaktörers mål har inte identifierats eller bedömts.
+- **Delvis implementerat**: Hotaktörers mål identifieras på fall-till-fall-basis, men detta är inte systematiskt eller kontinuerligt.
+- **Mestadels implementerat**: Hotaktörers mål identifieras i de flesta fall och aktivitet är delvis proaktiv, men inte helt systematisk.
+- **Helt implementerat**: Hotaktörers mål identifieras systematiskt och proaktivt och hotsituationer bedöms kontinuerligt.
+</AnswerOptions>
+
+### Exempel
+
+Företaget identifierar hotaktörers mål när nya cyberhot eller avvikelser i verksamheten uppstår. Identifiering är ännu inte systematisk, men till exempel i samband med produktionsstörningar bedöms det om detta kan vara en attack som syftar till att förhindra produktion eller stjäla information. I sådana fall vidtar företaget nödvändiga åtgärder, såsom att öka övervakningen eller begränsa åtkomsträttigheter. Till exempel, när ransomware slår till, fokuserar företaget på att förhindra informationsstöld och återställa system så snabbt som möjligt. I framtiden avser företaget att utveckla processen så att hotaktörers mål identifieras mer proaktivt och systematiskt genom att utnyttja mer hotinformation och analys.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB har identifierat åtminstone på ad hoc-basis målen för potentiella hotaktörer som kan riktas mot dess verksamhet. Denna identifiering är ännu inte systematisk eller regelbunden på nivå 1, men företaget bedömer hotaktörers mål när hot eller avvikelser upptäcks, och vidtar nödvändiga åtgärder för att minska risker.
+
+### Identifiering av hotaktörers mål från fall till fall
+
+Företaget identifierar hotaktörers mål särskilt när nya cyberhot, onormala aktiviteter eller underrättelseinformation uppstår som indikerar riktade attacker. Denna identifiering är inte helt proaktiv, utan baseras på fall-till-fall-analys när hotaktivitet upptäcks.
+
+- Identifiering från fall till fall: Hotaktörers mål bedöms när upptäckta hot direkt indikerar företagets verksamhet. Detta kan innebära, till exempel, störning av företagets affärsverksamhet, avbrott i produktionsprocesser eller informationsstöld.
+- Riktade attacker: Om det upptäcks att hotaktörer har riktat en attack mot en specifik del av verksamheten, såsom produktion, distribution eller informationssystem, bedömer företaget hotaktörernas mål och vidtar omedelbara åtgärder för att motverka dem.
+
+### Typiska hotaktörers mål
+
+Företaget bedömer potentiella hotaktörers mål på fall-till-fall-basis från olika perspektiv. Typiskt kan hotaktörers mål relatera till, till exempel, informationsstöld, affärsstörning eller ekonomisk vinning, och dessa mål påverkar direkt hur företaget svarar på hotet.
+
+- Informationsstöld: Hotaktörer kan försöka stjäla känslig information, såsom kunddata, produktionsprocessrelaterad data eller affärshemligheter. Detta kan relatera till konkurrenter, cyberkriminella eller andra parter som vill tjäna ekonomiskt på företagets information.
+- Driftstörning: Hotaktörer kan försöka avbryta eller störa företagets operativa aktiviteter, såsom produktion eller logistik, antingen för sabotage eller utpressningssyften. Detta kan särskilt riktas mot kritiska system, såsom SCADA- eller ERP-system.
+- Kriminella motiv: Cyberkriminellas mål kan vara ekonomiska, såsom att använda ransomware för att tvinga företaget att betala lösen för dataåterställning eller systemdriftsåterställning.
+
+### Identifieringsmetoder
+
+Företaget använder flera metoder för att identifiera hotaktörers mål, men dessa metoder är inte helt systematiska eller regelbundna. Identifiering baseras främst på fall-till-fall-analys och befintlig hotinformation.
+
+- Hotaktörsunderrättelse: Företaget använder tillgänglig hotinformation, såsom cybersäkerhetsrapporter och expertanalyser, för att bedöma potentiella hotaktörers motiv och mål. Denna information hjälper företaget att förstå vilka funktioner som är mer sårbara för attacker och varför.
+- Informationsinsamling i hotsituationer: När cyberhot eller onormal aktivitet i system upptäcks, samlar företaget information om vad hotaktörernas mål är. Detta kan ske, till exempel, genom att analysera attacktypen, mål och hotaktörers tidigare aktiviteter.
+
+### Åtgärder för att hantera hotaktörers mål
+
+När hotaktörers mål har identifierats, vidtar företaget nödvändiga åtgärder för att motverka dem. Detta kan inkludera ökad övervakning, begränsning av åtkomsträttigheter, installation av säkerhetsuppdateringar eller skydd av information.
+
+- Öka övervakning: Om hotaktörers mål inkluderar informationsstöld eller driftstörning, kan företaget öka övervakningen särskilt för kritiska system. Detta säkerställer att onormala aktiviteter upptäcks snabbt.
+- Begränsa åtkomsträttigheter: Om hotaktörers mål relaterar till missbruk av åtkomsträttigheter eller interna systemattacker, kan företaget begränsa vissa användares åtkomst till kritiska system eller information.
+- Säkerhetsuppdateringar: Om hotaktörers mål relaterar till utnyttjande av sårbarheter, säkerställer företaget att alla kritiska system och programvara uppdateras för att minimera möjliga säkerhetsrisker.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom identifiering av hotaktörers mål sker främst på fall-till-fall-basis, finns det en risk att vissa hotaktörers motiv inte upptäcks eller identifieras för sent. Detta kan utsätta företaget för osäkerhet om hotaktörers mål är komplexa eller dolda.
+
+- Brist på proaktivitet: Eftersom identifiering inte är systematisk, agerar företaget främst reaktivt, vilket kan leda till att hotaktörers mål inte upptäcks förrän en attack eller hot redan pågår. Detta kan försvaga företagets förmåga att svara snabbt och effektivt.
+- Informationsotillräcklighet: Om hotaktörers mål inte bedöms regelbundet eller systematiskt, kan företaget förlora kritisk information om hotutveckling eller hotaktörers föränderliga motiv. Detta kan göra det svårt att hantera hot effektivt.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB erkänner behovet av att utveckla en mer systematisk metod för att identifiera och övervaka hotaktörers mål. Målet är att skapa en process där hotaktörers mål bedöms regelbundet och proaktivt, så att företaget kan svara på hot mer effektivt och förhindra möjliga attacker.
+
+- Systematisk analys: Företaget avser att implementera en mer systematisk strategi där hotaktörers mål analyseras regelbundet. Detta hjälper till att säkerställa att företaget bättre förstår vad hotaktörer strävar efter och hur deras motiv kan utvecklas.
+- Utnyttja hotinformation: Målet är att öka användningen av hotinformation och analyser för att identifiera hotaktörers mål. Detta förbättrar företagets förmåga att fatta välgrundade beslut och svara på hot proaktivt.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Hotmål är resultat av hotaktörsaktivitet som har negativa konsekvenser för organisationen. Till exempel kan en organisation som inte hanterar konfidentiell information inte vara oroad för informationsstöld, men kan vara mycket oroad för en händelse som orsakar tjänststörning.
+
+Hotaktörer kan använda flera taktiker eller tekniker, såsom de som definieras i MITRE ATT&CK-ramverket (för företag eller industriella kontrollsystem (ICS)), för att uppnå sina mål. Exempel på hotmål kan inkludera datamanipulering, stöld av immateriell egendom, tillgångsskada, förnekande av kontroll, förlust av säkerhet eller tjänststörning.
+
+**Relaterade praxis:**
+
+- **Input**: Implementering av THREAT-2b ger input som kan vara användbar vid implementering av denna praxis.
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. **Praxis för denna utvecklingsväg är: THREAT-2c, THREAT-2e, THREAT-2i**.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2d">Relevanta hot åtgärdas (t.ex. genom att öka övervakningen eller följa hotutveckling).</PracticeTitle>
+
+### Fråga
+
+Svarar organisationen på viktiga cyberhot, såsom genom att öka övervakningen, följa hotutveckling eller vidta andra åtgärder när hot upptäcks? Åtgärdas hot snabbt när de identifieras och säkerställs det att nödvändiga åtgärder implementeras, såsom säkerhetspatchar eller systemändringar?
+
+### Betydelse
+
+Att åtgärda relevanta hot är en nyckeldel av organisationens cybersäkerhet och riskhantering. Det möjliggör snabbt och effektivt svar på hot som kan hota affärskontinuitet, såsom skadlig programvara eller nätverksattacker. Sådant svar säkerställer att företaget kan hantera kritiska situationer snabbt och minimera möjliga skador, samtidigt som viktiga affärsprocesser och information skyddas.
+
+<AnswerOptions>
+Utvärdera i vilken utsträckning organisationen åtgärdar relevanta hot och följer deras utveckling:
+
+- **Inte implementerat eller ingen information**: Det finns ingen praxis för att åtgärda hot eller hotinformationsdelning är inte organiserad.
+- **Delvis implementerat**: Hot hanteras på ad hoc-basis, men det finns ingen systematisk metod eller regelbunden övervakning.
+- **Mestadels implementerat**: Relevanta hot åtgärdas, men praxis är inte helt proaktiv, och åtgärdande sker främst reaktivt.
+- **Helt implementerat**: Relevanta hot åtgärdas systematiskt och proaktivt. Hotinformationsdelning och övervakning är regelbunden och en del av organisationens dagliga verksamhet.
+</AnswerOptions>
+
+### Exempel
+
+Företaget svarar på cyberhot beroende på situationen. Till exempel, om ett hot upptäcks, kan det öka övervakningen eller installera nödvändiga säkerhetsuppdateringar. Om hotet är allvarligt, såsom skadlig programvara eller en nätverksattack, åtgärdar företaget det omedelbart och säkerställer att nödvändiga åtgärder, såsom att stärka nätverksskydd, implementeras snabbt. Mindre kritiska hot, såsom små sårbarheter, åtgärdas vanligtvis senare. Åtgärder är ännu inte helt systematiska, och de dokumenteras inte alltid noggrant, vilket kan göra framtida analys och säkerställande av kontinuitet svårt.
+
+I framtiden avser företaget att utveckla sina processer så att hot kan besvaras mer proaktivt och effektivt. Målet är att skapa en tydligare och mer systematisk metod för hothantering, där alla åtgärder dokumenteras noggrant och konsekvenser övervakas kontinuerligt. Detta förbättrar företagets förmåga att svara snabbare och mer effektivt på nya hot och stärker förmågan att hantera risker på lång sikt.
+
+<ExampleDocument title="Exempeldokument">
+### Inledning
+
+Livsmedelsföretag AB åtgärdar relevanta cyberhot till funktionen, men detta sker på ad hoc-basis och är ännu inte systematiskt eller regelbundet på nivå 1. Relevanta hot besvaras beroende på situationen, till exempel genom att öka övervakningen, följa hotinformation eller installera säkerhetspatchar när ett hot upptäcks eller risk ökar.
+
+### Åtgärda relevanta hot från fall till fall
+
+Företaget åtgärdar relevanta hot till funktionen när de upptäcks eller när information om dem tas emot från lämpliga informationskällor. Reaktiv aktivitet säkerställer att särskilt allvarliga hot besvaras snabbt, men mindre kritiska hot kan åtgärdas först senare.
+
+- Omedelbart svar på kritiska hot: Om ett hot upptäcks som direkt påverkar företagets kritiska funktioner, såsom produktion eller säkerhet, åtgärdas det omedelbart. Detta kan inkludera att motverka cyberhot, såsom skadlig programvara eller nätverksattacker, genom att öka nätverksövervakning eller installera omedelbara säkerhetspatchar.
+- Övervakning av hotinformation: I vissa fall kanske hot inte kräver omedelbar åtgärd, men de övervakas noggrant. Till exempel, baserat på hotinformation, kan företaget öka övervakningen för vissa system, såsom ERP- eller SCADA-system, och observera avvikelser i systemdrift.
+
+### Praxis för att åtgärda hot
+
+När relevanta hot upptäcks, använder företaget flera metoder för att åtgärda dem. Dessa metoder används på fall-till-fall-basis, beroende på hotets allvar och dess möjliga konsekvenser för organisationens verksamhet.
+
+- Förbättra övervakning: Om hotinformation indikerar en ökad risk, ökar företaget övervakningen av relevanta system. Detta kan innebära, till exempel, realtidsnätverksövervakning eller särskild övervakning av viss utrustning eller programvara tills hotet motverkas eller neutraliseras.
+- Installera säkerhetspatchar: När programvaruleverantörer publicerar säkerhetsuppdateringar, installerar företaget dessa på fall-till-fall-basis, särskilt när uppdateringen relaterar till ett upptäckt hot. Uppdateringar riktar sig ofta mot kritiska system, såsom produktionskontroll- eller säkerhetssystem.
+- Begränsa åtkomsträttigheter: Om ett hot relaterar till systemåtkomsträttigheter eller datahantering, kan företaget begränsa användares åtkomst till vissa områden eller applikationer. Denna åtgärd hjälper till att minimera informationsläckagerisker eller missbruk, särskilt i hotsituationer.
+
+### Prioritering av åtgärder
+
+Företaget bedömer vikten av att åtgärda hot baserat på deras allvar. Kritiska hot som direkt kan påverka affärskontinuitet eller säkerhet prioriteras högre och hanteras omedelbart. Mindre kritiska hot kan hanteras över en längre period, såsom som en del av normala systemuppdateringar.
+
+- Kritikalitetsanalys: Varje hot analyseras baserat på dess kritikalitet. Om ett hot avsevärt påverkar företagets kritiska processer, såsom produktion, distribution eller säkerhet, vidtas åtgärder omedelbart. Mindre hot kan besvaras med en fördröjning om de inte direkt hotar driftkontinuitet.
+- Prioritering från fall till fall: Företaget prioriterar åtgärdande av hot baserat på hur omedelbart de har en inverkan. Detta innebär att hotsituationer hanteras när de uppstår, men systematisk och regelbunden proaktiv hothantering är ännu inte i bruk på nivå 1.
+
+### Dokumentation och övervakning
+
+Även om företaget åtgärdar hot på fall-till-fall-basis, är dokumentation och övervakning av åtgärder inte helt systematiska på nivå 1. Detta kan leda till en situation där vissa hotrelaterade åtgärder inte dokumenteras, vilket försvagar långsiktig spårbarhet och analys.
+
+- Brist på dokumentation: Eftersom åtgärder inte alltid dokumenteras systematiskt, kan vissa åtgärder som vidtas för att åtgärda hot inte registreras. Detta kan göra det svårt att utvärdera effektiviteten av åtgärder i efterhand, särskilt om hotövervakning inte är kontinuerlig.
+- Övervakningsutmaningar: Konsekvenserna av att åtgärda hot följs inte upp regelbundet, vilket kan leda till att vissa åtgärder inte är tillräckliga eller att övervakning inte fortsätter tillräckligt länge. Detta kan försvaga företagets förmåga att hantera hot på lång sikt.
+
+### Risker och utmaningar på nivå 1
+
+Eftersom åtgärdande av hot inte är systematiskt eller regelbundet, finns det en risk att alla relevanta hot inte hanteras i tid. Detta kan öka företagets exponering för cyberhot, särskilt när hot utvecklas snabbt eller inte upptäcks tillräckligt tidigt.
+
+- Reaktiv aktivitet: Åtgärdande av hot baseras för närvarande på en reaktiv driftsmodell, vilket innebär att åtgärder görs först efter att ett hot redan har upptäckts. Detta kan orsaka att företaget inte är helt förberett för nya eller snabbt utvecklande hot.
+- Förseningar i åtgärder: Om hot inte åtgärdas omedelbart eller systematiskt, kan de utvecklas till allvarligare problem innan de besvaras. Detta kan orsaka sårbarheter som utsätter företaget för större säkerhetsrisker.
+
+### Utvecklingsplan
+
+Livsmedelsföretag AB erkänner behovet av att förbättra systematiken och regelbundenheten i åtgärdandet av hot. Företaget planerar att utveckla processer varigenom åtgärdande av hot kan göras mer proaktivt och effektivt, och alla åtgärder dokumenteras noggrant.
+
+- Regelbunden hothantering: Företaget avser att skapa en systematisk strategi där hotinformation övervakas regelbundet och relevanta hot åtgärdas proaktivt. Detta hjälper till att förhindra att hot utvecklas till allvarligare problem och förbättrar företagets förmåga att svara snabbt.
+- Dokumentation och övervakning av åtgärder: Målet är att säkerställa att alla hotrelaterade åtgärder dokumenteras och deras konsekvenser övervakas kontinuerligt. Detta förbättrar företagets förmåga att analysera hur effektiva åtgärder har varit och hjälper till att göra nödvändiga förbättringar.
+</ExampleDocument>
+
+<C2M2Doc title="Cybersäkerhetsbedömningstext (version 2.1)">
+Organisationen svarar på hot som identifierats genom insamlad och analyserad hotinformation när det fastställs att hot kan påverka verksamheten negativt. Relevanta hot är hot/hotaktörer som har medel, motiv och möjlighet att påverka tjänsteleverans. Att svara på hot kan innebära, till exempel, att implementera mildrande kontroller eller övervaka hotsituationen.
+
+**Relaterade praxis:**
+
+- **Input**: Implementering av THREAT-2c ger input som kan vara användbar vid bedömning och implementering av denna praxis.
+- **Progression**: Denna praxis är en del av en utvecklingsväg. Praxis relaterade till samma funktion bildar en utvecklingsväg, som inkluderar praxis från grundnivån mot mer kompletta eller avancerade implementeringar. Praxis för denna utvecklingsväg är: THREAT-2d, THREAT-2g, THREAT-2j.
+</C2M2Doc>
+
+---
+
+_Guiden uppdaterad: 6.2.2025_

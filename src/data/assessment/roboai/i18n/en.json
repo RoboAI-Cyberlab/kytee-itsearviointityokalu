@@ -1,0 +1,592 @@
+[
+  {
+    "id": "critical",
+    "title": "Critical Service Protection",
+    "short": "Critical services",
+    "description": "The organisation should identify its role in providing critical services to the society and manage the related risks accordingly.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Identification of Critical Services and their dependencies",
+        "description": "The organisation should understand its role in providing critical services for the society, what is needed to keep the services operating, and what kind of impact a failure or degradation would have. ",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organization provided services that are critical to the society (critical services), have been identified and documented."
+          },
+          {
+            "id": "1b",
+            "title": "The data needed to provide the critical services, has been mapped and documented."
+          },
+          {
+            "id": "1c",
+            "title": "The processes needed to provide the critical services, have been mapped and documented."
+          },
+          {
+            "id": "1d",
+            "title": "The systems (IT and OT assets) needed to provide the critical services, have been mapped and documented."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Governance of Critical Services",
+        "description": "Senior-level accountability for the security of resources needed for delivering critical services, and delegate decision-making authority appropriately and effectively, should exist. Risks to network and information systems related to the delivery of critical services should be considered in the context of other organisational risks.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "All resources (data, processes, systems, facilities, supply chain) that are needed to provide the services critical to the society, are within the scope of the organization's security management policies and processes."
+          },
+          {
+            "id": "2b",
+            "title": "All resources (data, processes, systems, facilities, supply chain) that are needed to provide the services critical to the society, are within the scope of the organization's risk management policies and processes."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Minimisation of the impact of cyber security incidents on Critical Services",
+        "description": "There should be well-defined and tested incident management processes in place, that aim to ensure continuity of critical services in the event of system or service failure. Mitigation activities designed to contain or limit the impact of compromise are also in place, and are scaled based on the overall risk and impact.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Your response plan covers all of your critical services."
+          },
+          {
+            "id": "3b",
+            "title": "Your response plan comprehensively covers scenarios that are focused on likely impacts of known and well-understood attacks only."
+          },
+          {
+            "id": "3c",
+            "title": "Your response plan is understood by all staff who are involved with your organisation's response function"
+          },
+          {
+            "id": "3d",
+            "title": "Your response plan is documented and shared with all relevant stakeholders"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asset",
+    "title": "Asset, Change, and Configuration Management",
+    "short": "Assets and configuration",
+    "description": "Manage the organization’s IT and OT assets, including both hardware and software, and information assets commensurate with the risk to critical infrastructure and organizational objectives.\nAn asset is something of value to an organization. For the purposes of the model, assets to be considered are IT and OT hardware and software assets, as well as information essential to operating the function.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Manage IT and OT Asset Inventory",
+        "description": "An inventory of assets that are important to the delivery of the function is an important resource in managing cyber risk. Recording important information, such as software version, physical location, asset owner, and priority, enables many other cybersecurity management activities. For example, a robust asset inventory can identify the deployment location of software that requires patching.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "IT and OT assets that are important to the delivery of the function are inventoried, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Manage Information Asset Inventory",
+        "description": "An inventory of assets that are important to the delivery of the function is an important resource in managing cyber risk. Recording important information, such as software version, physical location, asset owner, and priority, enables many other cybersecurity management activities. For example, a robust asset inventory can identify the deployment location of software that requires patching.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Information assets that are important to the delivery of the function (for example, SCADA set points and customer information) are inventoried, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Manage Asset Configuration",
+        "description": "Managing asset configuration involves defining a configuration baseline and ensuring that assets are configured according to the baseline. Most commonly, this practice applies to ensuring that similar assets are configured in the same way. However, in cases where assets are either unique or must have individual configurations, managing asset configuration involves controlling the configuration baseline of the asset when it is deployed for operation and ensuring that the asset remains configured according to the baseline.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Configuration baselines are established, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Manage Changes to Assets",
+        "description": "Managing changes to assets includes analyzing requested changes to ensure they do not introduce unacceptable vulnerabilities into the operating environment, ensuring all changes follow the change management process, and identifying unauthorized changes. Change control applies to the entire asset lifecycle, including requirements definition, testing, deployment and maintenance, and retirement from operation.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Changes to assets are evaluated and approved before being implemented, at least in an ad hoc manner"
+          },
+          {
+            "id": "4b",
+            "title": "Changes to assets are documented, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "threat",
+    "title": "Threat and Vulnerability Management",
+    "short": "Threats and vulnerabilities",
+    "description": "Establish and maintain plans, procedures, and technologies to detect, identify, analyze, manage, and respond to cybersecurity threats and vulnerabilities, commensurate with the risk to the organization’s infrastructure (such as critical, IT, and operational) and organizational objectives.\nA cybersecurity threat is defined as any circumstance or event with the potential to adversely impact organizational operations (including mission, functions, image, or reputation), resources, or other organizations through IT, OT, or communications infrastructure via unauthorized access, destruction, disclosure, modification of information, or denial of service. Threats to information, IT, OT, and communication infrastructure assets vary and may include malicious actors, malware (such as viruses and worms) and distributed denial-of-service (DDoS) attacks.\nA cybersecurity vulnerability is a weakness or flaw in IT, OT, communications systems or devices, procedures, or internal controls that could be exploited by a threat.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Reduce Cybersecurity Vulnerabilities",
+        "description": "Reducing cybersecurity vulnerabilities begins with collecting and analyzing vulnerability information. Vulnerability discovery may be performed using automatic scanning tools, network penetration tests, cybersecurity exercises, and audits. Vulnerability analysis should consider the vulnerability’s local impact (the potential effect of the vulnerability on the exposed asset) as well as the importance of the asset to the delivery of the function. Vulnerabilities may be addressed by implementing mitigating controls, monitoring threat status, applying cybersecurity patches, replacing outdated equipment, or performing other activities.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Information sources to support cybersecurity vulnerability discovery are identified, at least in an ad hoc manner"
+          },
+          {
+            "id": "1b",
+            "title": "Cybersecurity vulnerability information is gathered and interpreted for the function, at least in an ad hoc manner"
+          },
+          {
+            "id": "1c",
+            "title": "Cybersecurity vulnerability assessments are performed, at least in an ad hoc manner"
+          },
+          {
+            "id": "1d",
+            "title": "Cybersecurity vulnerabilities that are relevant to the delivery of the function are mitigated, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Respond to Threats and Share Threat Information",
+        "description": "Threat identification and response begins with collecting useful threat information from reliable sources, interpreting that information in the context of the organization and function, and responding to threats that have the means, motive, and opportunity to affect the delivery of services. A threat profile includes characterization of likely intent, capability, and target of threats to the function. The threat profile can be used to guide the identification of specific threats, the risk analysis process described in the Risk Management domain, and the building of the operational and cyber status described in the Situational Awareness domain.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Internal and external information sources to support threat management activities are identified, at least in an ad hoc manner"
+          },
+          {
+            "id": "2b",
+            "title": "Information about cybersecurity threats is gathered and interpreted for the function, at least in an ad hoc manner"
+          },
+          {
+            "id": "2c",
+            "title": "Threat objectives for the function are identified, at least in an ad hoc manner"
+          },
+          {
+            "id": "2d",
+            "title": "Threats that are relevant to the delivery of the function are addressed, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "risk",
+    "title": "Risk Management",
+    "short": "Risk management",
+    "description": "Establish, operate, and maintain an enterprise cyber risk management program to identify, analyze, and respond to cyber risk the organization is subject to, including its business units, subsidiaries, related interconnected infrastructure, and stakeholders.\nCyber risk is defined as the possibility of harm or loss due to unauthorized access, use, disclosure, disruption, modification, or destruction of IT, OT, or information assets. Cyber risk is one component of the overall risk environment and feeds into an organization’s enterprise risk management strategy and program. Cyber risk cannot be completely eliminated, but it can be managed through informed decision-making processes.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Establish and Maintain Cyber Risk Management Strategy and Program",
+        "description": "Managing cyber risk involves framing, identifying and assessing, responding to (accepting, avoiding, mitigating, transferring), and monitoring risks in a manner that aligns with the needs of the organization. Key to performing these activities is a common understanding of the cyber risk management strategy. A cyber risk management strategy provides direction for analyzing and prioritizing cyber risk and defines risk tolerance. The cyber risk management strategy may include a risk analysis methodology, risk monitoring strategy, and a description of how the cyber risk program will be governed. The cyber risk management strategy should align with the enterprise risk management strategy to ensure that cyber risk is managed in a manner that is consistent with the organization’s mission and business objectives.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "The organization has a strategy for cyber risk management, which may be developed and managed in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Identify Cyber Risk",
+        "description": "Risks are identified, categorized, and prioritized in a way that helps the organization consistently respond to and monitor risks. A risk register—a list of identified risks and associated attributes—also facilitates this process. Consolidation of risks into categories enables the organization to develop a risk register that is reflective of the current risk environment and can be managed effectively with available resources. Other domains in the model (Situational Awareness, Event and Incident Response, Continuity of Operations, and  Cybersecurity Architecture) refer to risk practices and illustrate how the practices in the model are strengthened as they connect through a cyber risk management program. And information generated through activities in the Threat and Vulnerability Management and Third-Party Risk Management domains is used to update cyber risks and identify new risks.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Cyber risks are identified, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Analyze Cyber Risk",
+        "description": "The identified risks are analyzed to understand their potential impact to the organization, to categorize and prioritize them, and to select the appropriate risk treatment strategies and methods (such as mitigate, accept, avoid, or transfer). Risk analysis can be done in varying level of detail, depending on the type of risk and the quality and quantity of information available, but the used method should be consistent across the organization.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Cyber risks are prioritized based on estimated impact, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Respond to Cyber Risk",
+        "description": "The implementation of the selected risk responses should be done in a systematic manner, following the prioritization done in the risk analysis. After the implementation, the result should be assessed to ensure that the response has been sufficient and that the risk has been reduced to acceptable level. As the circumstances may change over time, the risk responses may not be adequate in a new situation. Therefore the risk responses should be reviewed periodically for continued relevance and adequacy.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Risk responses (such as mitigate, accept, avoid, or transfer) are implemented to address cyber risks, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "access",
+    "title": "Identity and Access Management",
+    "short": "Identity and access",
+    "description": "Create and manage identities for entities that may be granted logical or physical access to the organization’s assets. Control access to the organization’s assets, commensurate with the risk to critical infrastructure and organizational objectives.\nFor the purposes of this domain, access control applies to logical access to assets used in the delivery of the function, physical access to assets relevant to the function, and automated access control systems (logical or physical) relevant to the function. Improper access management practices can lead to unauthorized use, disclosure, destruction, or modification, as well as unnecessary exposure to cyber risks.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Establish and Maintain Identities",
+        "description": "Establishing and maintaining identities begins with the provisioning and deprovisioning (removing available identities when they are no longer required) of identities to entities. Entities may include individuals (internal or external to the organization) as well as devices, systems, or processes that require access to assets. In some cases, organizations may need to use shared identities. Management of shared identities may require compensatory measures to ensure an appropriate level of security. Maintenance of identities includes traceability (ensuring that all known identities are valid) as well as deprovisioning.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Identities are provisioned, at least in an ad hoc manner, for personnel and other entities such as services and devices that require access to assets (note that this does not preclude shared identities)"
+          },
+          {
+            "id": "1b",
+            "title": "Credentials (such as passwords, smartcards, certificates, and keys) are issued for personnel and other entities that require access to assets, at least in an ad hoc manner"
+          },
+          {
+            "id": "1c",
+            "title": "Identities are deprovisioned, at least in an ad hoc manner, when no longer required"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Control Logical Access",
+        "description": "Controlling logical and physical access includes determining access requirements, granting access to assets based on those requirements, and revoking access when it is no longer required. Logical and physical access requirements are associated with each asset or assets within a given area, and provide guidance for the types of entities or individuals allowed to access the asset, the limits of allowed access and, for logical access, authentication parameters. For example, the logical access requirements for a specific asset might allow remote access by a vendor only during specified and planned maintenance intervals and might also require multifactor authentication for such access. At higher maturity indicator levels, more scrutiny is applied to the access being granted. Logical and physical access is granted only after considering risk to the function, and regular reviews of access are conducted. ",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Logical access controls are implemented, at least in an ad hoc manner"
+          },
+          {
+            "id": "2b",
+            "title": "Logical access privileges are revoked when no longer needed, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Control Physical Access",
+        "description": "Controlling logical and physical access includes determining access requirements, granting access to assets based on those requirements, and revoking access when it is no longer required. Logical and physical access requirements are associated with each asset or assets within a given area, and provide guidance for the types of entities or individuals allowed to access the asset, the limits of allowed access and, for logical access, authentication parameters. For example, the logical access requirements for a specific asset might allow remote access by a vendor only during specified and planned maintenance intervals and might also require multifactor authentication for such access. At higher maturity indicator levels, more scrutiny is applied to the access being granted. Logical and physical access is granted only after considering risk to the function, and regular reviews of access are conducted. ",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Physical access controls (such as fences, locks, and signage) are implemented, at least in an ad hoc manner"
+          },
+          {
+            "id": "3b",
+            "title": "Physical access privileges are revoked when no longer needed, at least in an ad hoc manner"
+          },
+          {
+            "id": "3c",
+            "title": "Physical access logs are maintained, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "situation",
+    "title": "Situational Awareness",
+    "short": "Situational awareness",
+    "description": "Establish and maintain activities and technologies to collect, monitor, analyze, alarm, report, and use operational, security, and threat information, including status and summary information from the other model domains, to establish situational awareness for both the organization’s operational state and cybersecurity state.\nSituational awareness involves developing near-real-time knowledge of a dynamic operating environment. In part, this is accomplished through the logging and monitoring of IT, OT, and communication infrastructure assets essential for the delivery of the function. It is equally important to maintain knowledge of relevant, current cybersecurity events external to the enterprise. Once an organization develops situational awareness, it can align predefined states of operation to changes in the operating environment. The ability to shift from one predefined state to another can enable faster and more effective response to cybersecurity events or changes in the threat environment.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Perform Logging",
+        "description": "Logging should be enabled based on an asset’s potential impact to the function. For example, the greater the potential impact of a compromised asset, the more data an organization might collect about the asset.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Logging is occurring for assets that are important to the delivery of the function, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Perform Monitoring",
+        "description": "Monitoring and analyzing data collected in logs and through other means enables the organization to understand the function’s operational and cybersecurity status. Effectively communicating the operational, security, and threat status to relevant decision makers is the essence of situational awareness (sometimes referred to as a common operating picture). While many situational awareness implementations may include visualization tools, such as dashboards, maps, and other graphical displays, they are not necessarily required to achieve the goal.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Periodic reviews of log data or other cybersecurity monitoring activities are performed, at least in an ad hoc manner"
+          },
+          {
+            "id": "2b",
+            "title": "Data and alerts from network and host monitoring infrastructure assets are periodically reviewed, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "response",
+    "title": "Event and Incident Response, Continuity of Operations",
+    "short": "Incidents and continuity",
+    "description": "Establish and maintain plans, procedures, and technologies to detect, analyze, mitigate, respond to, and recover from cybersecurity events and incidents and to sustain operations during cybersecurity incidents, commensurate with the risk to critical infrastructure and organizational objectives.\nA cybersecurity event in a system or network is any observable occurrence that is related to a cybersecurity requirement (confidentiality, integrity, or availability of assets). A cybersecurity incident is an event or series of events that significantly affects or could significantly affect critical infrastructure or organizational assets and services and requires the organization (and possibly other stakeholders) to respond in some way to prevent or limit adverse impacts.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Detect Cybersecurity Events",
+        "description": "Detecting cybersecurity events includes designating a forum for reporting events and establishing criteria for event prioritization. These criteria should align with the cyber risk management strategy discussed in the Risk Management domain, ensure consistent valuation of events, and provide a means to\ndetermine what constitutes a cybersecurity event, when cybersecurity events are to be escalated, and the conditions that warrant the declaration of cybersecurity incidents. Cybersecurity events may originate with or impact third parties necessitating coordination in response planning, execution, and communications.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Detected cybersecurity events are reported to a specified person or role and documented, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Analyze Cybersecurity Events and Declare Incidents",
+        "description": "Escalating cybersecurity events involves applying the criteria discussed in the Detect Cybersecurity Events objective to determine when an event should be escalated and when an incident should be declared. Both cybersecurity events and cybersecurity incidents should be managed according to a response plan. Cybersecurity events and declared incidents may trigger external obligations, including reporting to regulatory bodies or notifying customers. Correlating multiple cybersecurity events and incidents and other records may uncover systemic problems within the environment.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Criteria for declaring cybersecurity incidents are established, at least in an ad hoc manner"
+          },
+          {
+            "id": "2b",
+            "title": "Cybersecurity events are analyzed to support the declaration of cybersecurity incidents, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Respond to Cybersecurity Events and Incidents",
+        "description": "Responding to cybersecurity incidents requires the organization to have a process to limit the impact of cybersecurity incidents to its functional and organizational units. The process should describe how the organization manages all phases of the incident lifecycle, such as triage, handling, communication, coordination, and closure. Conducting lessons-learned reviews as a part of cybersecurity event and incident response and continuity of operations helps the organization eliminate the exploited vulnerability that led to the incident.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Cybersecurity incident response personnel are identified, and roles are assigned, at least in an ad hoc manner"
+          },
+          {
+            "id": "3b",
+            "title": "Responses to cybersecurity incidents are executed, at least in an ad hoc manner, to limit impact to the function and restore normal operations"
+          },
+          {
+            "id": "3c",
+            "title": "Reporting of incidents is performed (for example, internal reporting, ICS-CERT, relevant ISACs), at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Address Cybersecurity in Continuity of Operations",
+        "description": "Planning for continuity involves the necessary activities to sustain the function in the event of an interruption, such as a severe cybersecurity incident or a disaster. Ensuring that continuity plans address potential cybersecurity incidents requires consideration of known cyber threats and identified categories of cyber risk. Continuity plan testing should include cybersecurity incident scenarios to ensure that plans will function as intended during such incidents.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Continuity plans are developed to sustain and restore operation of the function if a cybersecurity event or incident occurs, at least in an ad hoc manner"
+          },
+          {
+            "id": "4b",
+            "title": "Data backups are available and tested, at least in an ad hoc manner"
+          },
+          {
+            "id": "4c",
+            "title": "IT and OT assets requiring spares are identified, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "third-parties",
+    "title": "Third-Party Risk Management",
+    "short": "Third-party risk",
+    "description": "Establish and maintain controls to manage the cyber risks arising from suppliers and other third parties, commensurate with the risk to critical infrastructure and organizational objectives.\nAs the interdependencies among infrastructures, operating partners, suppliers, and service providers increase, establishing and maintaining a comprehensive understanding of key relationships and managing their associated cyber risks are essential for the secure, reliable, and resilient delivery of the function.\nThe model classifies third-party dependencies as external parties on which the delivery of the function depends, including operating partners. These relationships may vary in importance because the function may have a greater reliance on specific third parties, particularly if a third party has access to, control of, or custody of an asset. Third parties include entities such as suppliers, vendors, service providers, infrastructure dependencies (e.g., telecommunications, water), and governmental organizations (e.g., emergency response services, federal partners).\nSupply chain risk is a noteworthy example of a supplier dependency. The cybersecurity characteristics of products and services vary widely. Without proper risk management, they pose serious threats, including software of unknown provenance and counterfeit (possibly malicious) hardware. Organizations’ requests for proposal often give suppliers of high-technology systems, devices, and services only rough specifications, which may lack adequate requirements for security and quality assurance. The autonomy organizations often give to their individual business units further increases the risk, unless procurement activities are constrained by plan or policy to include cybersecurity requirements.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Identify and Prioritize Third Parties",
+        "description": "Identifying third parties involves establishing and maintaining a comprehensive understanding of the key external relationships required for the delivery of the function. After identification, third parties should be prioritized to determine which third-party dependencies are most critical to the delivery of the function. Prioritization criteria should consider the risk to the function that is introduced by third-party relationships.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Important IT and OT third-party dependencies are identified (that is, internal and external parties on which the delivery of the function depends, including operating partners), at least in an ad hoc manner"
+          },
+          {
+            "id": "1b",
+            "title": "Third parties that have access to, control of, or custody of any IT, OT, or information assets that are important to the delivery of the function are identified, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Manage Third-Party Risk",
+        "description": "Managing third-party risk includes approaches such as independent testing, code review, scanning for vulnerabilities, and reviewing demonstrable evidence from the vendor that a secure software development process has been followed. Contracts binding the organization to a relationship with a partner or vendor for products or services should be reviewed and approved for cyber risk mitigation, such as contract language that establishes vendor responsibilities for meeting or exceeding specified cybersecurity standards or guidelines. Service level agreements can specify monitoring and audit processes to verify that vendors and service providers meet cybersecurity and other performance measures.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "The selection of suppliers and other third parties includes consideration of their cybersecurity qualifications, at least in an ad hoc manner"
+          },
+          {
+            "id": "2b",
+            "title": "The selection of products and services includes consideration of their cybersecurity capabilities, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "workforce",
+    "title": "Workforce Management",
+    "short": "Workforce and skills",
+    "description": "Establish and maintain plans, procedures, technologies, and controls to create a culture of cybersecurity and to ensure the ongoing suitability and competence of personnel, commensurate with the risk to critical infrastructure and organizational objectives.\nAs organizations increasingly adopt advanced digital technology, it is a challenge to enhance the skill sets of their existing workforce and hire personnel with the appropriate level of cybersecurity experience, education, and training. Organizations’ reliance on advanced technology for digital communications and control continues to grow, and workforce issues are a crucial aspect of successfully addressing cybersecurity and risk management for these systems.\nCollective bargaining agreements may challenge some aspects of the practices in this domain as written, so organizations may need to implement alternative practices that meet the intent of the model practices and align with those agreements.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Assign Cybersecurity Responsibilities",
+        "description": "An important aspect of assigning cybersecurity responsibilities is ensuring adequacy and redundancy of coverage. For example, specific workforce roles with significant cybersecurity responsibilities are often easy to determine, but they can be challenging to maintain. It is vital to develop plans for key cybersecurity workforce roles such as system administrators to provide appropriate training, testing, redundancy, and evaluations of performance. Cybersecurity responsibilities are not restricted to traditional IT roles; for example, engineers, control room operators, and field technicians may have cybersecurity responsibilities.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Personnel vetting (for example, background checks, drug tests) is performed at hire, at least in an ad hoc manner"
+          },
+          {
+            "id": "1b",
+            "title": "Personnel separation procedures address cybersecurity, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Develop Cybersecurity Workforce",
+        "description": "Developing the cybersecurity workforce includes training and recruiting to address identified skill gaps. For example, hiring practices should ensure that recruiters and interviewers are aware of cybersecurity workforce needs. Also, personnel (and contractors) should receive periodic security awareness training to reduce their vulnerability to social engineering and other threats. The effectiveness of training and awareness activities should be evaluated, and improvements should be made as needed.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Cybersecurity awareness activities occur, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Implement Workforce Controls",
+        "description": "Implementing workforce controls includes personnel vetting, such as background checks, with extra vetting performed for positions that have access to assets needed to deliver an essential service. For example, system administrators typically have the ability to change configuration settings, modify or delete log files, create new accounts, and change passwords on critical systems, and specific measures are taken for protection of these systems from accidental or malicious behavior by this category of personnel.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Cybersecurity responsibilities for the function are identified, at least in an ad hoc manner"
+          },
+          {
+            "id": "3b",
+            "title": "Cybersecurity responsibilities are assigned to specific people, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Increase Cybersecurity Awareness",
+        "description": "Increasing the cybersecurity awareness of the workforce is as important as technological approaches for improving the cybersecurity of the organization. The threat of a cyber attack to an organization often starts with gaining some foothold into a company’s IT or OT systems, for example, by gaining the trust of an unwary employee or contractor who then introduces media or devices into the organization’s networks. The organization should share information with its workforce on methods and techniques to identify suspicious behavior, avoid spam and spear phishing, and recognize social engineering attacks to avoid providing information about the organization to potential adversaries. For example, an internal website could provide information about new threats and vulnerabilities in the industry. If no information on threats, vulnerabilities, and best practices is shared with the workforce, personnel may become lax about security processes and procedures.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Cybersecurity training is made available to personnel with assigned cybersecurity responsibilities, at least in an ad hoc manner"
+          },
+          {
+            "id": "4b",
+            "title": "Cybersecurity knowledge, skill, and ability requirements and gaps are identified for both current and future operational needs, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "architecture",
+    "title": "Cybersecurity Architecture",
+    "short": "Cybersecurity architecture",
+    "description": "Establish and maintain the structure and behavior of the organization’s cybersecurity architecture, including controls, processes, technologies and other elements, commensurate with the risk to critical infrastructure and organizational objectives.\nEstablishing a cybersecurity architecture involves identifying cybersecurity requirements for the organization’s assets and designing appropriate controls to protect them.\nThe cybersecurity architecture serves as a reference to guide how cybersecurity is to be implemented to meet the objectives of the cybersecurity program strategy.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Establish and Maintain Cybersecurity Architecture Strategy and Program",
+        "description": "The cybersecurity architecture helps an organization plan for how security is to be engineered in a way that transcends point solutions for individual assets such as identity management or access control. It enables reasoning about the security of critical applications and data in terms of known architectural controls to, for example, detect, resist, react to, and recover from attacks. Such tactics include segmentation, choice of hosting solutions, cryptographic controls, and audit trails, and they can be allied with availability controls such as monitoring, rollback, and redundancy.\nTo be effective, the cybersecurity architecture must be sufficiently documented so that it can be communicated to stakeholders. It must also be governed such that those responsible for the cybersecurity architecture are included in planning and decision-making processes when changes to the organization, IT systems, or OT systems are being considered. In this way, changes to the organization can be reviewed to address security concerns and align with the organization’s cyber risk tolerance.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "The organization has a strategy for cybersecurity architecture, which may be developed and managed in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Implement Network Protections as an Element of the Cybersecurity Architecture",
+        "description": "The purpose of network segmentation is to reduce the attack surface. Segmentation can be implemented on physical and/or logical layers. In an optimal situation, there is a well-defined reason for placing each device into the given segment.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Network protections are implemented, at least in an ad hoc manner"
+          },
+          {
+            "id": "2b",
+            "title": "The organization’s IT systems are separated from OT systems through segmentation, either through physical means or logical means, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Implement IT and OT Asset Security as an Element of the Cybersecurity Architecture",
+        "description": "Sufficient controls are implemented for IT and OT assets, taking into account their criticality. Access to assets is limited and only the necessary functions are activated. Standard configuration is applied to each given asset group. Monitoring or security applications are used to improve the security, when feasible. ",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Logical and physical access controls are implemented to protect assets that are important to the delivery of the function, where feasible, at least in an ad hoc manner"
+          },
+          {
+            "id": "3b",
+            "title": "Endpoint protections (such as secure configuration, security applications, and host monitoring) are implemented to protect assets that are important to the delivery of the function, where feasible, at least in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Implement Data Security as an Element of the Cybersecurity Architecture",
+        "description": "Cybersecurity architecture protects the information assets. To protect the information, it must first be identified and classified. The protection controls and methods, such as encryption and key management, must be implemented and used systematically.",
+        "practices": [
+          {
+            "id": "5a",
+            "title": "Sensitive data is protected at rest, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "program",
+    "title": "Cybersecurity Program Management",
+    "short": "Cybersecurity program",
+    "description": "Establish and maintain an enterprise cybersecurity program that provides governance, strategic planning, and sponsorship for the organization’s cybersecurity activities in a manner that aligns cybersecurity objectives with both the organization’s strategic objectives and the risk to critical infrastructure.\nA cybersecurity program is an integrated group of activities designed and managed to meet cybersecurity objectives for the organization or the function. A cybersecurity program may be implemented at either the organization or the function level, but a higher level implementation and enterprise viewpoint may benefit the organization by integrating activities and leveraging resource investments across the entire enterprise.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Establish Cybersecurity Program Strategy",
+        "description": "The cybersecurity program strategy is established as the foundation for the program. In its simplest form, the program strategy should include a list of cybersecurity objectives and a plan to meet them. At higher levels of maturity, the program strategy will be more complete and include priorities, a governance approach, structure and organization for the program, and more involvement by senior management in the design of the program.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "The organization has a cybersecurity program strategy, which may be developed and managed in an ad hoc manner"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Sponsor Cybersecurity Program",
+        "description": "Sponsorship is important for implementing the program in accordance with the strategy. The fundamental form of sponsorship is to provide resources (people, tools, and funding). More advanced forms of sponsorship include visible involvement by senior leaders and designation of responsibility and authority for the program. Further, sponsorship includes organizational support for establishing and implementing policies or other organizational directives to guide the program.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Senior management with proper authority provides support for the cybersecurity program, at least in an ad hoc manner"
+          }
+        ]
+      }
+    ]
+  }
+]

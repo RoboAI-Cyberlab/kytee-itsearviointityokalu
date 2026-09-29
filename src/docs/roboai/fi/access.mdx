@@ -1,0 +1,643 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Identiteetin- ja pääsynhallinta
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- toimitilahallinnon edustaja
+- IT- ja OT-tiimin asiantuntija, jotka vastaavat loogisen ja fyysisen pääsyn järjestämisestä
+- henkilöstöhallinnon edustaja
+</Roles>
+
+---
+<ObjectiveTitle name="access-1">Identiteettien luominen ja hallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-1a">Työntekijöille ja muille entiteeteille, kuten prosesseille tai laitteille, jotka tarvitsevat pääsyn toimintoon kuuluviin laitteisiin, ohjelmistoihin tai tietovarantoihin, osoitetaan erilliset identiteetit.</PracticeTitle>
+
+### Merkitys
+
+Identiteettien hallinta on kriittistä, koska:
+- **Selkeät ja yksilölliset identiteetit estävät luvattoman pääsyn.** Jokaisen käyttäjän, laitteen ja prosessin tunnistaminen vähentää tietoturvariskejä.
+- **Pääsynhallinnan perusta on yksilöllinen tunnistaminen.** Ilman erillisiä identiteettejä ei voida hallita, kuka pääsee käsiksi mihinkin järjestelmään tai tietoihin.
+- **Automaation ja valvonnan kehittäminen tukee tietoturvaa.** Manuaalinen identiteettien hallinta on altis virheille, ja siksi on tärkeää käyttää IAM-järjestelmiä.
+- **Identiteettien hallinta auttaa täyttämään lainsäädännön ja standardien vaatimukset.** Esimerkiksi **NIST 800-53, ISO 27001** ja **Zero Trust -malli** edellyttävät tiukkaa pääsynhallintaa.
+
+Arviointikysymykset:
+- Onko organisaatiossa määritelty yksilölliset identiteetit kaikille käyttäjille, laitteille ja prosesseille?
+- Dokumentoidaanko identiteettien luonti ja hallinta organisaation käytänteissä?
+- Käytetäänkö identiteettiprofiileja, jotka sisältävät entiteetin roolin, aseman ja käyttöoikeustason?
+- Onko identiteettien hallinta automatisoitu esimerkiksi identiteetinhallintajärjestelmän (IAM) avulla?
+- Käytetäänkö jaettuja identiteettejä vain perustelluissa tilanteissa ja turvallisuustoimin varmistettuna?
+
+Organisaation tulisi varmistaa, että seuraavat toimenpiteet ovat käytössä:
+
+1. **Identiteettien luominen ja dokumentointi**  
+   - Jokaiselle käyttäjälle, järjestelmälle, laitteelle ja prosessille osoitetaan **yksilöllinen identiteetti**.
+   - Identiteettiprofiilit sisältävät kaikki olennaiset tiedot, kuten **roolit, vastuut ja käyttöoikeustasot**.
+
+2. **Identiteettien rekisteröinti ja hyväksyntä**  
+   - Identiteettien hallintaa varten on käytössä selkeät prosessit ja vastuuhenkilöt.
+   - Identiteetit hyväksyy organisaatioyksikkö tai toimiala, jossa identiteetin omistaja toimii.
+
+3. **Pääsynhallinnan integrointi**  
+   - **IAM-ratkaisuilla (Identity and Access Management)** automatisoidaan identiteettien hallinta ja käyttöoikeuksien valvonta.
+   - Käyttäjätunnukset ja käyttöoikeudet perustuvat **tarpeenmukaisuuteen (least privilege)** ja **Zero Trust -periaatteeseen**.
+
+4. **Jaettujen identiteettien hallinta**  
+   - Ryhmätilejä ja jaettuja tunnuksia käytetään **vain perustelluissa tilanteissa** ja lisäsuojaustoimenpitein, kuten **kaksivaiheisella todennuksella (MFA)** ja **auditointilokeilla**.
+
+5. **Identiteettien elinkaaren hallinta**  
+   - Identiteetit tarkistetaan ja **poistetaan käytöstä**, kun niitä ei enää tarvita (esim. työntekijän poistuessa organisaatiosta).
+   - Järjestelmällinen pääsynhallinnan tarkistus vähintään kerran vuodessa.
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Identiteettien hallinta on epäselvää, eikä erillisiä identiteettejä ole osoitettu.
+- **Osittain toteutettu**: Joillekin käyttäjille, laitteille ja prosesseille on osoitettu yksilölliset identiteetit, mutta käytäntö ei kata koko organisaatiota.
+- **Enimmäkseen toteutettu**: Suurimmalle osalle työntekijöitä ja järjestelmiä on määritelty identiteetit, mutta hallintaa voidaan vielä kehittää esimerkiksi jaettujen identiteettien käytön vähentämisessä tai automaation lisäämisessä.
+- **Täysin toteutettu**: Organisaatiolla on kattava ja automatisoitu identiteettien hallintaprosessi, joka kattaa kaikki työntekijät, järjestelmät ja laitteet. Jaettujen identiteettien käyttö on minimoitu ja hyvin hallittu.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää identiteettiprofiileja järjestelmän käyttäjille. Jokainen insinööri ja teknikko saa yksilöllisen tunnuksen, ja heidän käyttöoikeutensa määräytyvät työtehtävien mukaan. Ulkopuolisille toimittajille luodaan erilliset väliaikaiset identiteetit, jotka poistuvat automaattisesti käytöstä.
+
+> **Sähköyhtiö**  
+Energiayhtiö on ottanut käyttöön Zero Trust -pohjaisen pääsynhallintamallin. Identiteettien hallinta kattaa kaikki järjestelmät, ja jokaisen käyttäjän oikeudet auditoidaan säännöllisesti. Laitteet ja järjestelmät tunnistetaan erillisillä sertifikaateilla, mikä estää luvattoman pääsyn kriittisiin järjestelmiin.
+
+### Lisätiedot
+
+- **Identiteetinhallinta sisältää käyttäjien, laitteiden, järjestelmien ja prosessien yksilöinnin ja hallinnan.**
+- **Paras käytäntö on identiteettiprofiili**, joka määrittelee käyttäjän tai järjestelmän roolit ja käyttöoikeudet.
+- **Jaettuja identiteettejä voidaan käyttää poikkeustapauksissa,** mutta niiden käyttö on minimoitava ja suojattava lisätoimenpitein.
+- **Identiteetin ja pääsynhallinta -ratkaisut (IAM) voivat automatisoida identiteettien hallinnan ja vähentää manuaalista työtä ja riskejä.**
+- **Identiteettien elinkaari hallitaan tarkasti,** ja tarpeettomat käyttöoikeudet poistetaan viipymättä.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Identiteetinhallinnalla tarkoitetaan identiteettien luomista tai rekisteröintiä. Tähän sisältyy  entiteetin tunnistaminen ja ominaisuuksien, kuten roolin ja aseman dokumentointi organisaatiossa.
+Identiteetinhallinta suoritetaan entiteeteille eli henkilöille, laitteille, järjestelmille ja prosesseille, olivatpa ne organisaation sisäisiä tai ulkoisia. Organisaatio voi siis rekisteröidä myyjän, viraston tai liikekumppanin identiteetiksi, samoin kuin ulkoisen organisaation järjestelmän tai prosessin. Joissakin tapauksissa organisaatioiden on ehkä käytettävä jaettuja identiteettejä, kuten ryhmätilejä.
+
+Paras käytäntö identiteetin hallinnassa on identiteettiprofiili. Profiili sisältää kaikki asiaankuuluvat tiedot, joita tarvitaan kuvaamaan liittyvän entiteetin (henkilö, laite, järjestelmä, prosessi) yksilölliset ominaisuudet, roolit ja vastuut. Identiteettiprofiilin luo ja hyväksyy yleensä se organisaatioyksikkö tai toimiala, johon entiteetti kuuluu ja jossa voidaan tehdä päätöksiä organisaation omaisuuserien käytöstä.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-1a, ACCESS-1c, ACCESS-1e, ACCESS-1f, ACCESS-1j.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-1b">Työntekijöille ja muille entiteeteille jaetaan pääsyvaltuustiedot, kuten salasanat, älykortit tai avaimet.</PracticeTitle>
+
+### Merkitys
+
+Pääsyvaltuustietojen jakaminen ja hallinta on kriittistä, koska:
+- **Asianmukainen pääsynhallinta estää luvattoman pääsyn kriittisiin resursseihin.** Jokaisen käyttäjän, laitteen ja järjestelmän tulee saada vain välttämättömät oikeudet.
+- **Huonosti hallitut pääsyvaltuudet voivat johtaa tietoturvaloukkauksiin.** Esimerkiksi heikot salasanakäytännöt tai jakamattomat käyttöoikeudet voivat altistaa organisaation hyökkäyksille.
+- **Monivaiheinen todennus (MFA) parantaa turvallisuutta.** Pelkät salasanat eivät ole riittävä suoja monia nykyisiä kyberuhkia vastaan.
+- **Pääsyvaltuustietojen jakamista ja käyttöä on valvottava.** Organisaation tulee varmistaa, että käyttöoikeuksia ei jää voimaan tarpeettomasti ja että niitä seurataan.
+
+Arviointikysymykset:
+- Onko organisaatiossa selkeä prosessi pääsyvaltuustietojen myöntämiseen ja hallintaan?
+- Varmistetaanko, että pääsyä pyytävällä käyttäjällä on oikeus saada kyseiset valtuustiedot?
+- Käytetäänkö monivaiheista todennusta (MFA) tai muita lisäsuojausmenetelmiä?
+- Onko eri pääsyoikeustasot määritelty tarpeenmukaisuuden periaatteen (least privilege) mukaisesti?
+- Onko pääsyvaltuustietojen hallinta dokumentoitu ja auditoitu säännöllisesti?
+
+Organisaation tulisi varmistaa, että seuraavat toimenpiteet ovat käytössä:
+
+1. **Pääsyvaltuustietojen myöntäminen ja hyväksyntä**  
+   - Jokainen käyttäjä, laite tai järjestelmä saa pääsyvaltuustiedot **vain virallisen hyväksynnän kautta**.  
+   - Käyttäjän **rooli, tehtävä ja tarve pääsyyn** määritellään ennen valtuuksien myöntämistä.  
+
+2. **Pääsyvaltuustietojen tyypit ja suojaus**  
+   - **Salasanat**: Vahvat, yksilölliset ja monimutkaiset salasanat (vähintään 12 merkkiä, sisältäen erikoismerkkejä ja numeroita).  
+   - **Älykortit ja avaimet**: Fyysiset ja sähköiset tunnisteet, joilla voidaan varmistaa henkilöllisyys ja pääsynhallinta.  
+   - **Biometrinen tunnistus**: Sormenjälki- tai kasvojentunnistusratkaisut korkean turvallisuustason kohteissa.  
+
+3. **Monivaiheinen todennus (MFA)**  
+   - **MFA vaaditaan kriittisiin järjestelmiin ja etäkäyttöön**. Tämä voi sisältää salasanan lisäksi esim. mobiilisovelluksella hyväksyttävän kirjautumisen.  
+   - **MFA:n käyttö vähentää tietojenkalasteluhyökkäysten riskiä**.  
+
+4. **Pääsyoikeuksien hallinta ja valvonta**  
+   - Käyttöoikeudet myönnetään **least privilege** -periaatteen mukaisesti (vain välttämättömät oikeudet myönnetään).  
+   - **Auditointi ja seuranta**: Pääsyvaltuuksia seurataan säännöllisesti ja tarpeettomat oikeudet poistetaan.  
+
+5. **Pääsyvaltuustietojen elinkaaren hallinta**  
+   - Kun työntekijä poistuu organisaatiosta tai vaihtaa tehtävää, **hänen pääsyoikeutensa poistetaan välittömästi**.  
+   - Käytössä on **keskitetty pääsynhallintajärjestelmä (IAM)**, joka varmistaa, että kaikki pääsyoikeudet ovat ajan tasalla.  
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Pääsyvaltuustietojen myöntämistä ei ole määritelty, eikä niihin liity kontrolloituja hyväksyntäprosesseja.
+- **Osittain toteutettu**: Joitakin pääsyvaltuustietoja hallitaan asianmukaisesti, mutta käytännöt eivät kata koko organisaatiota tai kaikkia resursseja.
+- **Enimmäkseen toteutettu**: Suurin osa pääsyvaltuustiedoista hallitaan hyvin, mutta esimerkiksi monivaiheinen todennus tai säännöllinen auditointi ei ole täysin kattava.
+- **Täysin toteutettu**: Organisaatiolla on kattava pääsynhallintaprosessi, jossa pääsyvaltuustiedot myönnetään, auditoidaan ja hallitaan automaattisesti.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuudessa tuotantolinjojen käyttöoikeuksia hallitaan keskitetysti identiteetin ja pääsynhallinta-järjestelmällä. Jokaiselle työntekijälle myönnetään henkilökohtaiset käyttäjätunnukset järjestelmiin, ja pääsyoikeuksia tarkastellaan säännöllisesti.
+
+> **Kuljetusliike**  
+Logistiikkayritys hyödyntää älykortteja ja ajoneuvojen hallintajärjestelmien RFID-tunnisteita kuljettajien tunnistamiseen. Etäkirjautumisessa vaaditaan monivaiheinen todennus, ja käyttöoikeuksien auditointi tehdään neljännesvuosittain.
+
+> **Sähköyhtiö**  
+Energiayhtiö käyttää **Zero Trust -periaatetta**, jossa pääsyvaltuustiedot tarkistetaan jatkuvasti. Etäkäytössä käytetään monivaiheista todennusta ja yksilöllisiä ohjelmistopohjaisia avaimia, jotka vanhenevat automaattisesti.
+
+### Lisätiedot
+
+- **Pääsyvaltuustietoja myönnettäessä varmistetaan, että käyttäjällä on oikeus pääsyyn.**  
+- **Pääsyvaltuudet voivat koskea sekä henkilöitä, laitteita, järjestelmiä että prosesseja.**  
+- **Monivaiheinen todennus (MFA) vähentää merkittävästi tietoturvauhkaa.**  
+- **Salasanakäytännöt on suunniteltava niin, että ne estävät yleisimmät hyökkäykset (esim. brute force -hyökkäykset).**  
+- **Pääsyvaltuustietojen elinkaari on hallittava siten, että käyttöoikeudet poistetaan, kun niitä ei enää tarvita.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Ennen kuin henkilöstölle ja muille tahoille annetaan pääsy organisaation omaisuuseriin, organisaation olisi annettava pääsyvaltuutus, joilla osoitetaan, että pääsyä pyytävällä henkilöllä on tarvittavat oikeudet päästä käsiksi omaisuuseriin kuten laitteisiin, tietovarantoihin ja fyysisiin tiloihin. Käyttäjät voivat olla henkilöitä (organisaation sisäisiä tai ulkoisia) sekä laitteita, järjestelmiä tai prosesseja, jotka vaativat pääsyä omaisuuseriin. Näihin valtuuksiin liittyvien oikeuksien olisi oltava toiminnallisten vaatimusten mukaisia.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-1b, ACCESS-1d, ACCESS-1g, ACCESS-1h, ACCESS-1i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-1c">Identiteetit poistetaan käytöstä, kun niitä ei enää tarvita.</PracticeTitle>
+
+### Merkitys
+
+Identiteettien hallittu poistaminen on kriittistä, koska:
+- **Käyttämättömät identiteetit voivat olla tietoturvariski.** Jos vanhoja käyttöoikeuksia ei poisteta, ne voivat joutua hyökkääjän haltuun.
+- **Entisten työntekijöiden tai alihankkijoiden pääsy organisaation resursseihin on estettävä.** Ilman asianmukaista hallintaa entisillä käyttäjillä voi olla pääsy arkaluontoisiin tietoihin.
+- **Automaattinen käyttöoikeuksien hallinta vähentää manuaalista työtä ja inhimillisiä virheitä.** IAM-järjestelmä voi huolehtia käyttöoikeuksien poistamisesta automaattisesti.
+- **Auditoitavat käyttöoikeudet takaavat, että pääsyoikeudet ovat aina ajan tasalla.** Tämä tukee organisaation tietoturvapolitiikkaa ja vähentää sisäisiä uhkia.
+
+Arviointikysymykset:
+- Onko organisaatiolla selkeä prosessi, jolla identiteetit ja käyttöoikeudet poistetaan, kun niitä ei enää tarvita?
+- Poistetaanko työntekijöiden käyttöoikeudet välittömästi työsuhteen päättyessä?
+- Hallitaanko laitteiden ja järjestelmien käyttöoikeuksia samalla tavalla kuin henkilöstön identiteettejä?
+- Onko prosessi automatisoitu IAM-järjestelmällä (Identity and Access Management)?
+- Auditoidaanko ja seurataanko vanhojen identiteettien käyttöoikeuksia säännöllisesti?
+
+Organisaation tulisi varmistaa, että seuraavat toimenpiteet ovat käytössä:
+
+1. **Identiteetin ja käyttöoikeuksien poistoprosessi**  
+   - **Kun työntekijä, laite tai järjestelmä poistuu organisaatiosta**, siihen liittyvä identiteetti ja kaikki siihen liitetyt käyttöoikeudet tulee poistaa välittömästi.  
+   - Käytetään **IAM-järjestelmää**, joka automatisoi käyttöoikeuksien hallinnan ja poiston.  
+
+2. **Käyttöoikeuksien hallinta työsuhteen tai kumppanisopimuksen päättyessä**  
+   - Työntekijän tai alihankkijan lähtiessä **kaikki käyttöoikeudet poistetaan samanaikaisesti hänen viimeisen työpäivänsä kanssa**.  
+   - IT-osasto varmistaa, että **poistuminen dokumentoidaan ja vahvistetaan HR:n kanssa**.  
+
+3. **Laitteiden ja järjestelmien identiteettien hallinta**  
+   - Vanhojen laitteiden ja järjestelmien **sertifikaatit ja pääsytunnisteet mitätöidään** organisaation omaisuudesta poiston yhteydessä.  
+   - Automaattiset prosessit, kuten **laitteiden pääsynhallinta (Device Identity Management)**, varmistavat, että käyttöoikeudet eivät jää voimaan.  
+
+4. **Auditointi ja seuranta**  
+   - Organisaatio suorittaa säännöllisiä **tarkastuksia, joissa selvitetään, onko vanhoja käyttöoikeuksia vielä voimassa**.  
+   - **Poikkeamat dokumentoidaan ja käsitellään**, jotta pääsynhallinta voidaan parantaa.  
+
+5. **Manuaalisen ja automaattisen prosessin yhdistäminen**  
+   - IAM-järjestelmät voivat **automatisoida käyttöoikeuksien poistamisen**, mutta **HR:n ja IT-osaston tulee varmistaa, että kaikki toimenpiteet on suoritettu oikein**.  
+   - Erityisesti **korkean tason käyttäjät**, kuten järjestelmänvalvojat, vaativat **lisäseurannan** poistoprosessin yhteydessä.  
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Identiteettien poistoprosessia ei ole määritelty, eikä käyttöoikeuksia poisteta säännöllisesti.
+- **Osittain toteutettu**: Jotkut identiteetit poistetaan, mutta prosessi ei kata kaikkia järjestelmiä tai on epäselvä.
+- **Enimmäkseen toteutettu**: Suurin osa identiteeteistä poistetaan järjestelmällisesti, mutta esimerkiksi manuaalisia tarkastuksia ei tehdä säännöllisesti.
+- **Täysin toteutettu**: Organisaatiolla on kattava ja automaattinen käyttöoikeuksien poistoprosessi, joka dokumentoidaan ja auditoidaan säännöllisesti.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarvikeyrityksessä käytetään identiteetin ja pääsynhallinta -järjestelmää, joka poistaa automaattisesti käyttöoikeudet, kun työntekijä poistuu organisaatiosta. Lisäksi manuaalinen tarkastus suoritetaan neljännesvuosittain varmistaakseen, että kaikki oikeudet on poistettu.
+
+> **Kuljetusliike**  
+Logistiikkayrityksessä kuljettajien ja huoltohenkilöstön käyttöoikeudet ajoneuvojen järjestelmiin poistetaan automaattisesti viimeisen työpäivän jälkeen. IT-osasto suorittaa viikoittaisen tarkastuksen varmistaakseen, ettei vanhoja tunnuksia ole jäänyt järjestelmiin.
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää identiteetin ja pääsynhallinta -järjestelmää ja manuaalisia prosesseja varmistaakseen, että järjestelmien käyttöoikeudet poistetaan heti, kun käyttäjä ei enää tarvitse niitä. Poistoprosessi sisältää myös sertifikaattien ja laitteiden pääsytunnisteiden mitätöinnin.
+
+> **Sähköyhtiö**  
+Energiayhtiö on ottanut käyttöön Zero Trust -pohjaisen pääsynhallinnan, jossa identiteetit poistetaan käytöstä automaattisesti, kun niitä ei enää tarvita. Järjestelmänvalvojien oikeuksia tarkastellaan erikseen ennen poistamista.
+
+### Lisätiedot
+
+- **Kun työntekijä, laite tai järjestelmä poistuu organisaatiosta, identiteetti on poistettava välittömästi.**  
+- **Identiteetin ja pääsynhallinta -järjestelmät voivat automatisoida käyttöoikeuksien hallinnan ja estää tietoturvauhat.**  
+- **Poistoprosessi tulee sisältää myös järjestelmätunnusten, avainten ja sertifikaattien mitätöinnin.**  
+- **Auditoinnit varmistavat, että vanhoja käyttöoikeuksia ei jää voimaan.**  
+- **Erityisesti korkean tason käyttöoikeudet (admin, kriittiset järjestelmät) vaativat lisäseurantaa.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kun henkilö, laite, järjestelmä tai prosessi lakkaa olemasta organisaatiossa, on siihen liittyvä identiteetti ja kaikki siihen liittyvät käyttöoikeudet ja rajoitukset poistettava. Identiteetin poistamisen laiminlyönti voi aiheuttaa organisaatiolle merkittävän operatiivisen riskin, koska se voi tarjota identiteetin, jota valtuuttamaton (ja ehkä tuntematon) henkilö, subjekti tai yhteisö voi käyttää. Jos näin tapahtuu, eikä sen käyttöoikeuksia ole poistettu, identiteetti voidaan varastaa kaikkine olemassa olevine etuoikeuksineen.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-1a, ACCESS-1c, ACCESS-1e, ACCESS-1f, ACCESS-1j.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="access-2">Loogisten käyttöoikeuksien hallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-2a">Loogisten käyttöoikeuksien hallinnan valvontakeinoja on käytössä.</PracticeTitle>
+
+### Merkitys
+
+Looginen käyttöoikeuksien hallinta on kriittistä, koska:
+- **Se varmistaa, että vain valtuutetut henkilöt voivat käyttää tietojärjestelmiä.** Tämä estää luvattoman pääsyn arkaluontoisiin tietoihin ja kriittisiin järjestelmiin.
+- **Käyttöoikeuksien hallinta suojaa organisaation omaisuutta.** Järjestelmien, tietovarantojen ja ohjelmistojen suojaaminen on olennaista tietoturvan kannalta.
+- **Väärinkäytökset ja tietoturvapoikkeamat voidaan havaita ajoissa.** Oikein toteutetut valvontakeinot, kuten lokitus ja analytiikka, auttavat tunnistamaan epäilyttävää toimintaa.
+- **Se auttaa täyttämään tietoturvastandardien ja lainsäädännön vaatimukset.** Esimerkiksi **ISO 27001** ja **NIST 800-53** edellyttävät käyttöoikeuksien hallinnan valvontaa.
+
+Arviointikysymykset:
+- Onko organisaatiolla käytössä järjestelmä käyttöoikeuksien myöntämiseen, tarkasteluun ja poistamiseen?
+- Onko käyttöoikeudet määritelty tarpeenmukaisesti eri roolien ja tehtävien mukaan (**least privilege -periaate**)?
+- Käytetäänkö monitasoista tunnistautumista (esim. **MFA**) kriittisiin järjestelmiin?
+- Onko käyttöoikeuksia auditoitu ja tarkistettu säännöllisesti?
+- Onko käyttöoikeuksien hallinta dokumentoitu ja valvottu, jotta mahdolliset väärinkäytökset havaitaan ajoissa?
+
+Organisaation tulisi varmistaa, että seuraavat valvontakeinot ovat käytössä:
+
+1. **Käyttöoikeuksien hallinnan periaatteet**  
+   - Jokaisella käyttäjällä on käyttöoikeudet vain niihin tietoihin ja järjestelmiin, jotka ovat välttämättömiä hänen tehtäviensä suorittamiseen (**least privilege -periaate**).  
+   - **Zero Trust -mallia** sovelletaan: käyttöoikeuksia ei myönnetä pysyvästi, vaan niiden käyttöä arvioidaan jatkuvasti.  
+
+2. **Monivaiheinen tunnistautuminen (MFA)**  
+   - Kaikissa kriittisissä järjestelmissä ja etäkäytössä käytetään monivaiheista tunnistautumista.  
+   - Käyttöoikeudet vahvistetaan useilla tunnistautumistasoilla, kuten salasanalla ja mobiilisovelluksen hyväksynnällä.  
+
+3. **Auditointi ja säännölliset tarkastukset**  
+   - Käyttöoikeudet tarkastetaan säännöllisesti vähintään **puolivuosittain** varmistaakseen, että ne ovat ajan tasalla.  
+   - Kaikki käyttöoikeuksien muutokset kirjataan lokiin, ja niiden perusteet dokumentoidaan.  
+
+4. **Automatisoidut valvontatyökalut ja käyttöoikeuksien analysointi**  
+   - Käyttöoikeuksien muutokset ja epäilyttävä toiminta voidaan tunnistaa **Security Information and Event Management (SIEM)** -järjestelmillä.  
+   - Poikkeuksellinen tai epäilyttävä toiminta aiheuttaa hälytyksen, joka tutkitaan tietoturvatiimin toimesta.  
+
+5. **Poikkeamahallinta ja reagointi**  
+   - Jos järjestelmän käyttöoikeuksissa havaitaan poikkeamia (esim. käyttäjä, jolla on enemmän oikeuksia kuin tarpeellista), ne tutkitaan ja tarvittaessa rajoitetaan.  
+   - Kaikki käyttöoikeuksiin liittyvät muutokset ja poikkeamat dokumentoidaan ja arvioidaan tietoturvatiimin toimesta.  
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Loogisten käyttöoikeuksien hallintaan ei ole käytössä valvontakeinoja, tai niistä ei ole tietoa.
+- **Osittain toteutettu**: Joitakin käyttöoikeuksien hallinnan valvontakeinoja on käytössä, mutta ne eivät kata koko organisaatiota.
+- **Enimmäkseen toteutettu**: Suurin osa käyttöoikeuksien hallintaan liittyvistä valvontakeinoista on käytössä, mutta esimerkiksi auditointikäytännöt eivät ole täysin kattavat.
+- **Täysin toteutettu**: Organisaatiolla on kattava käyttöoikeuksien hallinnan valvontajärjestelmä, joka sisältää säännölliset auditoinnit, automatisoidut valvontatyökalut ja käyttöoikeusmuutosten seurannan.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuudessa käytetään identiteetin ja pääsynhallinta -järjestelmää, joka hallitsee käyttöoikeuksia tuotantoprosessien valvontajärjestelmissä. SIEM-järjestelmä seuraa käyttöoikeuksien muutoksia ja laukaisee hälytyksiä, jos poikkeamia havaitaan.  
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää järjestelmissään tarkasti rajoitettuja käyttöoikeuksia. Jokainen operatiivinen järjestelmä on suojattu vähintään kaksivaiheisella tunnistautumisella, ja käyttöoikeuksien muutokset tallennetaan keskitettyyn lokijärjestelmään.  
+
+> **Sähköyhtiö**  
+Energiayhtiö on ottanut käyttöön Zero Trust -mallin, jossa käyttöoikeuksia ei myönnetä pysyvästi, vaan ne arvioidaan dynaamisesti käyttäjän ja järjestelmän toimintaympäristön mukaan. SIEM-järjestelmä analysoi käyttäjien kirjautumismalleja ja varoittaa epäilyttävästä toiminnasta.  
+
+### Lisätiedot
+
+- **Loogisten käyttöoikeuksien hallinta on keskeinen osa omaisuuserien suojaamista (laitteet, ohjelmistot, tietovarannot).**  
+- **Käyttöoikeuksien myöntäminen ja valvonta perustuu tarpeenmukaisuuden periaatteeseen (least privilege).**  
+- **Auditointi ja valvonta takaavat, että käyttöoikeudet pysyvät ajan tasalla ja estävät väärinkäytöksiä.**  
+- **Monivaiheinen tunnistautuminen (MFA) on olennainen osa kriittisten järjestelmien suojaamista.**  
+- **Automatisoidut järjestelmät, kuten IAM ja SIEM, helpottavat käyttöoikeuksien hallintaa ja valvontaa.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Looginen eli tietojärjestelmien pääsynhallinta on keskeinen osa omaisuuserien (laitteiden, ohjelmistojen ja tietovarantojen) suojaamista. Käyttöoikeudet ja -rajoitukset kuvaavat identiteettien käyttöoikeuksien tasoa ja laajuutta. Käyttöoikeuksien olisi oltava oikeassa suhteessa identiteetin edustamiin eri rooleihin.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ARCHITECTURE-3a:n toteuttaminen tarjoaa tietoa, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-2a, ACCESS-2c, ACCESS-2d, ACCESS-2e, ACCESS-2f
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-2b">Käyttöoikeudet poistetaan, kun niitä ei enää tarvita.</PracticeTitle>
+
+### Merkitys
+
+Käyttöoikeuksien hallittu poistaminen on kriittistä, koska:
+- **Käyttämättömät käyttöoikeudet voivat muodostaa merkittävän tietoturvariskin.** Jos vanhoja käyttöoikeuksia ei poisteta, ne voivat joutua hyökkääjän haltuun.
+- **Entisten työntekijöiden tai roolinsa vaihtaneiden henkilöiden pääsy organisaation resursseihin on estettävä.** Jos käyttöoikeuksia ei poisteta, organisaatio voi altistua tietomurroille ja sisäisille uhkille.
+- **Automaattinen käyttöoikeuksien hallinta vähentää manuaalista työtä ja inhimillisiä virheitä.** Identiteetin ja pääsynhallinta (IAM) -järjestelmät voivat poistaa oikeudet automaattisesti roolin tai työsuhteen muuttuessa.
+- **Käyttöoikeuksien kasautuminen voi vaarantaa tietoturvan.** Organisaation tulisi varmistaa, että työntekijät ja järjestelmät saavat vain tehtäviensä kannalta välttämättömät käyttöoikeudet (**least privilege -periaate**).
+
+Arviointikysymykset:
+- Onko organisaatiolla määritelty prosessi, jolla käyttöoikeudet poistetaan automaattisesti tai manuaalisesti?
+- Kuka organisaatiossa vastaa käyttöoikeuksien hallinnasta ja niiden poistamisesta?
+- Poistetaanko työntekijöiden käyttöoikeudet välittömästi heidän siirtyessä pois organisaatiosta tai tehtävästään?
+- Hallitaanko ohjelmistojen, laitteiden ja tietovarantojen käyttöoikeuksia samalla tavalla kuin henkilöstön käyttöoikeuksia?
+- Onko käytössä järjestelmä (esim. IAM), joka automatisoi käyttöoikeuksien tarkastamisen ja poistamisen?
+- Suorittaako organisaatio säännöllisiä käyttöoikeustarkastuksia varmistaakseen, ettei tarpeettomia oikeuksia jää voimaan?
+
+Organisaation tulisi varmistaa, että seuraavat toimenpiteet ovat käytössä:
+
+1. **Käyttöoikeuksien poistoprosessi**  
+   - Kun työntekijä, laite tai järjestelmä **ei enää tarvitse pääsyä organisaation resursseihin**, kaikki käyttöoikeudet tulee poistaa välittömästi.  
+   - Käytetään **IAM-järjestelmää**, joka automatisoi käyttöoikeuksien hallinnan ja poiston.  
+
+2. **Roolimuutokset ja tehtävien vaihdot**  
+   - Jos työntekijä **siirtyy uuteen tehtävään**, hänen vanhat käyttöoikeutensa tarkistetaan ja tarpeettomat oikeudet poistetaan.  
+   - Käyttöoikeuksien hallinta perustuu **tarpeenmukaisuuden periaatteeseen (least privilege)**.  
+
+3. **Laitteiden ja järjestelmien identiteettien hallinta**  
+   - Vanhojen laitteiden ja järjestelmien **sertifikaatit ja pääsytunnisteet mitätöidään** niiden käytöstä poiston yhteydessä.  
+   - Automaattiset prosessit, kuten **Device Identity Management**, varmistavat, että käyttöoikeudet eivät jää voimaan.  
+
+4. **Auditointi ja seuranta**  
+   - Organisaatio suorittaa **säännöllisiä käyttöoikeustarkastuksia**, joissa varmistetaan, ettei tarpeettomia oikeuksia ole jäänyt voimaan.  
+   - Poikkeamat dokumentoidaan ja käsitellään välittömästi.  
+
+5. **Manuaalinen ja automaattinen käyttöoikeuksien hallinta**  
+   - IAM-järjestelmät voivat **automatisoida käyttöoikeuksien poistamisen**, mutta **HR:n ja IT-osaston tulee varmistaa, että kaikki toimenpiteet on suoritettu oikein**.  
+   - Erityisesti **korkean tason käyttäjät**, kuten järjestelmänvalvojat, vaativat **lisäseurannan** käyttöoikeuksien poistoprosessin yhteydessä.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Käyttöoikeuksien poistoprosessia ei ole määritelty, eikä käyttöoikeuksia poisteta säännöllisesti.  
+- **Osittain toteutettu**: Joitakin käyttöoikeuksia poistetaan, mutta prosessi ei kata kaikkia järjestelmiä tai se perustuu manuaalisiin tarkastuksiin.  
+- **Enimmäkseen toteutettu**: Suurin osa käyttöoikeuksista poistetaan järjestelmällisesti, mutta esimerkiksi auditointikäytännöt eivät ole täysin kattavat.  
+- **Täysin toteutettu**: Organisaatiolla on kattava ja automaattinen käyttöoikeuksien poistoprosessi, joka dokumentoidaan ja auditoidaan säännöllisesti.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuudessa IAM-järjestelmä poistaa automaattisesti käyttöoikeudet, kun työntekijä siirtyy toiseen tehtävään tai jättää yrityksen. Auditointia suoritetaan puolivuosittain, jotta kaikki käyttöoikeudet ovat ajan tasalla.  
+
+> **Kuljetusliike**  
+Logistiikkayritys hyödyntää Zero Trust -mallia, jossa käyttöoikeudet tarkistetaan jokaisessa kirjautumisessa. Kun kuljettaja tai huoltohenkilöstö poistuu organisaatiosta, hänen käyttöoikeutensa ajoneuvojen hallintajärjestelmiin ja GPS-seurantalaitteisiin poistetaan automaattisesti.  
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää järjestelmille tarkasti hallittuja käyttöoikeuksia. Jokaisen käyttäjän oikeudet tarkistetaan kuukausittain, ja poistoprosessi on integroitu IAM-järjestelmään, joka poistaa automaattisesti vanhentuneet käyttöoikeudet.  
+
+> **Sähköyhtiö**  
+Energiayhtiö on ottanut käyttöön Zero Trust -pohjaisen pääsynhallinnan, jossa käyttäjäoikeudet tarkistetaan reaaliaikaisesti. Korkean tason käyttöoikeudet (esim. järjestelmänvalvojien oikeudet) poistetaan erillisellä kaksivaiheisella hyväksyntäprosessilla.  
+
+### Lisätiedot
+
+- **Käyttöoikeuksien poistaminen on keskeinen osa turvallista pääsynhallintaa.**  
+- **Identiteetin ja pääsynhallinta (IAM) -järjestelmät voivat automatisoida käyttöoikeuksien hallinnan ja estää tietoturvauhat.**  
+- **Käyttöoikeuksien hallintaa tulee auditoida säännöllisesti** varmistaakseen, ettei tarpeettomia käyttöoikeuksia jää voimaan.  
+- **Poistoprosessi tulee sisältää myös järjestelmätunnusten, avainten ja sertifikaattien mitätöinnin.**  
+- **Erityisesti korkean tason käyttöoikeudet (admin, kriittiset järjestelmät) vaativat lisäseurantaa ja manuaalisen vahvistuksen ennen poistoa.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Omaisuuserien (laitteiden, ohjelmistojen ja tietovarantojen) omistajat ja haltijat ovat vastuussa loogisten käyttöoikeuksien lakkauttamisesta, kun niitä ei enää tarvita, kuten työntekijän irtisanoessa työsuhteensa tai siirtyessä uuteen tehtävään. Yleisesti ottaen henkilöstön olisi säilytettävä vähimmäisoikeudet, jotka ovat tarpeen heille osoitettujen tehtävien hoitamiseksi. Tarpeettomien käyttöoikeuden lakkauttaminen estää käyttöoikeuksien kasautumisen.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ARCHITECTURE-3a:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-2b, ACCESS-2g, ACCESS-2h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="access-3">Fyysinen pääsynhallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-3a">Fyysisen pääsynhallinnan valvontakeinoja on käytössä, kuten aitoja, lukkoja tai kylttejä.</PracticeTitle>
+
+### Merkitys
+
+Fyysinen pääsynhallinta on kriittistä, koska:
+- **Se estää luvattoman pääsyn organisaation tiloihin, kriittisiin järjestelmiin ja tietoihin.** Fyysiset turvallisuustoimenpiteet muodostavat perustan tietoturvalle.
+- **Hyvin hallitut kulunvalvontajärjestelmät vähentävät sisäisiä ja ulkoisia uhkia.** Luvaton pääsy voi johtaa tietovarkauksiin, laitteistojen sabotointiin tai operatiivisiin häiriöihin.
+- **Kulunvalvonnan dokumentointi auttaa tutkimaan poikkeamatilanteita.** Esimerkiksi lokitietojen perusteella voidaan jäljittää, kuka on liikkunut missäkin ja milloin.
+- **Fyysinen pääsynhallinta tukee organisaation laajempaa kyberturvallisuusstrategiaa.** Käyttöoikeuksien rajaaminen ja niiden tehokas valvonta ovat osa **Zero Trust -mallia** ja **ISO 27001 -standardia**.
+
+Arviointikysymykset:
+- Onko organisaation tiloissa käytössä fyysisen pääsynhallinnan keinoja, kuten aitoja, lukkoja, valvontakameroita tai kulunvalvontajärjestelmiä?
+- Valvotaanko pääsyä erityisen kriittisiin tiloihin, kuten palvelinsaleihin tai valvomotiloihin, joissa on arkaluontoisia tietoja tai järjestelmiä?
+- Miten avaimia, kulkulupia ja muita fyysisen pääsynhallinnan tunnisteita hallitaan ja suojataan?
+- Onko fyysisen pääsynhallinnan järjestelmät integroitu organisaation muuhun tietoturvaan, kuten loogiseen pääsynhallintaan?
+- Suorittaako organisaatio säännöllisiä tarkastuksia fyysisen pääsynhallinnan tehokkuudesta?
+
+Organisaation tulisi varmistaa, että seuraavat valvontakeinot ovat käytössä:
+
+1. **Kulunvalvontajärjestelmät ja esteet**  
+   - **Lukitut ovet ja portit:** Pääsy kriittisiin tiloihin on rajoitettu valtuutetuille henkilöille.  
+   - **Kulkuluvat ja avainhallinta:** Avainten, kulkukorttien ja muiden fyysisten tunnisteiden hallintaa valvotaan tiukasti.  
+   - **Aitoja ja esteitä:** Rakennusten ympärillä ja sisätiloissa estetään luvaton pääsy rajoitetuille alueille.  
+
+2. **Valvonta ja tunnistusmenetelmät**  
+   - **Kameravalvonta (CCTV):** Valvontakamerat tallentavat ja analysoivat liikennettä kriittisillä alueilla.  
+   - **Biometrinen tunnistus:** Sormenjälki- tai kasvojentunnistus varmistaa, että vain valtuutetut henkilöt pääsevät tiettyihin tiloihin.  
+   - **Hälytysjärjestelmät:** Ilmoittavat epäilyttävästä toiminnasta, kuten luvattomasta oven avaamisesta.  
+
+3. **Fyysisten tunnisteiden ja pääsyoikeuksien hallinta**  
+   - Kulkuluvat myönnetään **tarpeenmukaisesti**, ja ne poistetaan käytöstä, kun henkilö ei enää tarvitse niitä.  
+   - Avainten ja kulkukorttien katoamiset tai väärinkäytökset raportoidaan ja käsitellään viipymättä.  
+   - Fyysiset pääsyoikeudet ovat **linjassa loogisten käyttöoikeuksien kanssa** (esim. palvelinsaliin pääsy edellyttää myös järjestelmäoikeuksia).  
+
+4. **Auditointi ja seuranta**  
+   - **Säännölliset tarkastukset ja testaukset:** Fyysisen pääsynhallinnan tehokkuutta arvioidaan säännöllisesti.  
+   - **Kulunvalvontalokit:** Kaikki tiloihin päässeet henkilöt ja ajankohdat dokumentoidaan ja tarvittaessa analysoidaan.  
+   - **Poikkeamien käsittely:** Havaittuihin turvallisuuspuutteisiin reagoidaan viipymättä, ja toimintamalleja kehitetään niiden perusteella.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Fyysisen pääsynhallinnan valvontakeinoja ei ole käytössä tai niistä ei ole tietoa.  
+- **Osittain toteutettu**: Jotkin fyysisen pääsynhallinnan valvontakeinot ovat käytössä, mutta ne eivät kata koko organisaatiota tai niiden hallinta ei ole systemaattista.  
+- **Enimmäkseen toteutettu**: Suurin osa fyysisen pääsynhallinnan valvontakeinoista on käytössä, mutta esimerkiksi pääsyoikeuksien hallinta ja auditointi eivät ole täysin kattavat.  
+- **Täysin toteutettu**: Organisaatiolla on kattava fyysisen pääsynhallinnan järjestelmä, joka sisältää esteet, valvontajärjestelmät, säännölliset auditoinnit ja poikkeamien hallinnan.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuudessa kriittiset tuotantotilat ja palvelinkeskukset on suojattu **lukituilla ovilla ja kulunvalvontajärjestelmillä**. Valvontakamerat kattavat kaikki tuotantolinjan alueet, ja työntekijöiden kulkutiedot kirjataan lokiin.  
+
+> **Kuljetusliike**  
+Logistiikkayrityksessä käytetään RFID-pohjaista kulunvalvontaa, joka hallitsee varastotilojen ja ajoneuvojen pääsyä. Kaikki työntekijät tarvitsevat kulkukortin päästäkseen varaston tiettyihin osiin, ja valvontakamerat tallentavat liikennettä lastausalueilla.  
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio suojaa kriittisen infrastruktuurinsa lukituilla tiloilla, joihin pääsee vain valtuutettu henkilöstö ja fyysistä pääsyä seurataan reaaliaikaisesti.  
+
+### Lisätiedot
+- **Fyysisen pääsynhallinnan valvontakeinot kattavat esteet, tunnistautumismenetelmät ja seurannan.**  
+- **Pääsykoodien, kulkukorttien ja avainten hallinta on kriittinen osa fyysistä tietoturvaa.**  
+- **Pääsyoikeuksien tulee olla linjassa loogisen pääsynhallinnan kanssa.**  
+- **Auditointi ja poikkeamahallinta varmistavat, että fyysisen pääsynhallinnan mekanismit pysyvät tehokkaina.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tässä mallissa fyysiset pääsynhallinan valvontakeinot on tarkoitettu tietotekniikan, organisoidun teknologian ja tietovarallisuuden suojaamiseen (esimerkiksi lukot, jotka valvovat pääsyä palvelinsaliin). Lisäksi on tärkeää ottaa huomioon, että joidenkin fyysisten kulunvalvonnan välineiden, kuten avainten ja kulkulupien, tehokkuuteen voi vaikuttaa merkittävästi tavat, jolla niitä hallinnoidaan ja suojataan.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ARCHITECTURE-3a:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-3a, ACCESS-3d, ACCESS-3e, ACCESS-3f, ACCESS-3g.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-3b">Pääsyoikeudet poistetaan, kun niitä ei enää tarvita.</PracticeTitle>
+
+### Merkitys
+
+Fyysisten pääsyoikeuksien hallittu poistaminen on kriittistä, koska:
+- **Käyttämättömät pääsyoikeudet voivat muodostaa merkittävän tietoturvariskin.** Jos vanhoja kulkulupia tai avaimia ei poisteta tai palauteta, ne voivat joutua hyökkääjän haltuun.
+- **Entisten työntekijöiden tai siirtyneiden henkilöiden pääsy organisaation tiloihin on estettävä.** Jos käyttöoikeuksia ei poisteta, organisaatio voi altistua fyysisille tietoturvaloukkauksille ja sisäisille uhille.
+- **Automaattinen pääsyoikeuksien hallinta vähentää manuaalista työtä ja inhimillisiä virheitä.** Kulunvalvontajärjestelmät voivat poistaa oikeudet automaattisesti roolin tai työsuhteen muuttuessa.
+- **Fyysisten pääsyoikeuksien kasautuminen voi vaarantaa organisaation turvallisuuden.** Organisaation tulisi varmistaa, että työntekijät ja ulkopuoliset saavat vain tehtäviensä kannalta välttämättömät pääsyoikeudet (**least privilege -periaate**).
+
+Arviointikysymykset:
+- Onko organisaatiolla määritelty prosessi fyysisten pääsyoikeuksien poistamiseen, kun henkilö vaihtaa tehtävää tai poistuu organisaatiosta?
+- Kuka vastaa fyysisten pääsyoikeuksien hallinnasta ja niiden poistamisesta?
+- Hallitaanko pääsyoikeuksia keskitetysti ja onko niiden käyttö auditoitu?
+- Onko käytössä järjestelmä (esim. kulunvalvontajärjestelmä), joka automatisoi pääsyoikeuksien hallinnan ja niiden poistamisen?
+- Suorittaako organisaatio säännöllisiä tarkastuksia varmistaakseen, että tarpeettomia fyysisiä pääsyoikeuksia ei jää voimaan?
+
+Organisaation tulisi varmistaa, että seuraavat toimenpiteet ovat käytössä:
+
+1. **Pääsyoikeuksien poistoprosessi**  
+   - Kun työntekijä, urakoitsija tai muu henkilö **ei enää tarvitse pääsyä organisaation tiloihin**, kaikki fyysiset pääsyoikeudet tulee poistaa välittömästi.  
+   - Käytetään **kulunvalvontajärjestelmää**, joka automatisoi pääsyoikeuksien hallinnan ja poiston.  
+
+2. **Roolimuutokset ja tehtävien vaihdot**  
+   - Jos työntekijä **siirtyy uuteen tehtävään**, hänen vanhat pääsyoikeutensa tarkistetaan ja tarpeettomat oikeudet poistetaan.  
+   - Pääsyoikeuksien hallinta perustuu **tarpeenmukaisuuden periaatteeseen (least privilege)**.  
+
+3. **Avainten, kulkukorttien ja tunnisteiden hallinta**  
+   - Vanhojen laitteiden ja järjestelmien **fyysiset tunnisteet, avaimet ja pääsykoodit mitätöidään** niiden käytöstä poiston yhteydessä.  
+   - Automaattiset prosessit, kuten **kulunvalvonta- ja tunnistautumisjärjestelmät**, varmistavat, että käyttöoikeudet eivät jää voimaan.  
+
+4. **Auditointi ja seuranta**  
+   - Organisaatio suorittaa **säännöllisiä pääsyoikeustarkastuksia**, joissa varmistetaan, ettei tarpeettomia oikeuksia ole jäänyt voimaan.  
+   - Poikkeamat dokumentoidaan ja käsitellään välittömästi.  
+
+5. **Manuaalinen ja automaattinen pääsyoikeuksien hallinta**  
+   - Kulunvalvontajärjestelmät voivat **automatisoida pääsyoikeuksien poistamisen**, mutta **HR:n ja turvallisuusosaston tulee varmistaa, että kaikki toimenpiteet on suoritettu oikein**.  
+   - Erityisesti **korkean tason käyttäjät**, kuten järjestelmänvalvojat ja kriittisten infrastruktuurien käyttäjät, vaativat **lisäseurannan** pääsyoikeuksien poistoprosessin yhteydessä.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Pääsyoikeuksien poistoprosessia ei ole määritelty, eikä käyttöoikeuksia poisteta säännöllisesti.  
+- **Osittain toteutettu**: Joitakin pääsyoikeuksia poistetaan, mutta prosessi ei kata kaikkia tiloja tai se perustuu manuaalisiin tarkastuksiin.  
+- **Enimmäkseen toteutettu**: Suurin osa pääsyoikeuksista poistetaan järjestelmällisesti, mutta esimerkiksi auditointikäytännöt eivät ole täysin kattavat.  
+- **Täysin toteutettu**: Organisaatiolla on kattava ja automaattinen pääsyoikeuksien poistoprosessi, joka dokumentoidaan ja auditoidaan säännöllisesti.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuudessa käytetään kulunvalvontajärjestelmää, joka poistaa automaattisesti pääsyoikeudet, kun työntekijä siirtyy toiseen tehtävään tai jättää yrityksen. Auditointia suoritetaan puolivuosittain, jotta kaikki pääsyoikeudet ovat ajan tasalla.  
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää tiukasti hallittuja kulkulupia ja avainhallintaa. Jokaisen käyttäjän pääsyoikeudet tarkistetaan kuukausittain, ja poistoprosessi on integroitu kulunvalvontajärjestelmään, joka poistaa automaattisesti vanhentuneet käyttöoikeudet.  
+
+> **Sähköyhtiö**  
+Energiayhtiö on ottanut käyttöön Zero Trust -pohjaisen pääsynhallinnan, jossa käyttäjäoikeudet tarkistetaan reaaliaikaisesti. Korkean tason pääsyoikeudet poistetaan erillisellä kaksivaiheisella hyväksyntäprosessilla.  
+
+### Lisätiedot
+
+- **Pääsyoikeuksien poistaminen on keskeinen osa turvallista fyysistä pääsynhallintaa.**  
+- **Kulunvalvontajärjestelmät voivat automatisoida pääsyoikeuksien hallinnan ja estää tietoturvauhat.**  
+- **Pääsyoikeuksien hallintaa tulee auditoida säännöllisesti** varmistaakseen, ettei tarpeettomia käyttöoikeuksia jää voimaan.  
+- **Poistoprosessi tulee sisältää myös avainten, kulkulupien ja tunnisteiden mitätöinnin.**  
+- **Erityisesti korkean tason käyttöoikeudet (admin, kriittiset järjestelmät) vaativat lisäseurantaa ja manuaalisen vahvistuksen ennen poistoa.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Omaisuuserien omistajat ja haltijat ovat vastuussa fyysisten pääsyoikeuksien lakkauttamisesta, kun henkilö tai muu taho, jolle oikeudet on annettu, ei enää tarvitse niitä, esimerkiksi työntekijän irtisanouduttua tai siirryttyä uuteen tehtävään. Yleisesti ottaen henkilöstön olisi säilytettävä vähimmäisoikeudet, jotka ovat tarpeen heille osoitettujen tehtävien hoitamiseksi. Kun fyysinen käyttöoikeus, jota ei enää tarvita, peruutetaan, voidaan estää tarpeettomien käyttöoikeuksien kasautuminen.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ARCHITECTURE-3a:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-3b, ACCESS-3h, ACCESS-3i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-3c">Pääsyoikeuksien käytöstä pidetään lokia.</PracticeTitle>
+
+### Merkitys
+
+Pääsyoikeuksien lokituksen ylläpito on kriittistä, koska:
+- **Se mahdollistaa luvattoman tai epäilyttävän toiminnan havaitsemisen.** Lokitietojen perusteella voidaan tunnistaa ja tutkia tietoturvaan liittyviä poikkeamia.  
+- **Lokitus tukee tietoturva- ja säädösvaatimuksia.** Monet standardit, kuten **ISO 27001 ja NIST 800-53**, edellyttävät lokituksen ylläpitoa pääsynhallinnan osana.  
+- **Organisaatio pystyy auditoimaan pääsyoikeuksien käyttöä.** Säännölliset tarkastukset auttavat varmistamaan, että vain valtuutetut henkilöt ovat käyttäneet pääsyoikeuksia.  
+- **Pääsyoikeuksien käyttöön liittyvä dokumentaatio parantaa organisaation reaktiokykyä tietoturvapoikkeamiin.** Lokitiedot ovat keskeisiä tutkittaessa tietoturvaloukkauksia tai fyysistä luvatonta pääsyä.  
+
+Arviointikysymykset:
+- Onko organisaatiolla järjestelmällinen tapa kirjata ylös fyysisten pääsyoikeuksien käyttö?  
+- Tallennetaanko pääsyoikeuksien käyttö automaattisesti kulunvalvontajärjestelmien kautta vai manuaalisesti esimerkiksi vierailijalokina?  
+- Miten lokitiedot säilytetään, analysoidaan ja hyödynnetään tietoturvatarkoituksiin?  
+- Kuka vastaa fyysisen pääsynhallinnan lokitietojen ylläpidosta ja käytön valvonnasta?  
+- Onko organisaatiolla määritelty politiikka lokitietojen säilytysajalle ja niiden tarkastelulle?  
+
+Organisaation tulisi varmistaa, että seuraavat lokituskäytännöt ovat käytössä:
+
+1. **Automaattinen ja manuaalinen lokitus**  
+   - **Kulunvalvontajärjestelmät:** Automaattinen pääsyoikeuksien käyttöön liittyvä lokitus perustuu sähköisiin järjestelmiin, kuten RFID-korttien tai biometrisen tunnistuksen keräämiin tietoihin.  
+   - **Manuaaliset lokit:** Paperilokit tai vierailijarekisterit voivat täydentää automaattista lokitusta tiloissa, joissa sähköistä valvontaa ei ole käytössä.  
+
+2. **Vastuut ja omistajuus**  
+   - **Omaisuuserien omistajat** vastaavat siitä, että pääsyoikeuksien käyttö kirjataan asianmukaisesti.  
+   - IT- ja turvallisuusosastot voivat hallinnoida lokitusjärjestelmiä ja analysoida niitä tietoturvan näkökulmasta.  
+
+3. **Lokitietojen säilytys ja analyysi**  
+   - Lokitiedot tulee säilyttää **organisaation tietoturvakäytäntöjen ja sääntelyvaatimusten mukaisesti**.  
+   - **Analysointi ja hälytysjärjestelmät** voivat auttaa tunnistamaan epäilyttävän toiminnan ja reagoimaan siihen ajoissa.  
+
+4. **Auditointi ja säännöllinen tarkastelu**  
+   - Organisaatio suorittaa **säännöllisiä tarkastuksia**, joissa arvioidaan lokitietojen kattavuus ja oikeellisuus.  
+   - Poikkeamat ja epäilyttävä toiminta dokumentoidaan ja käsitellään välittömästi.  
+
+5. **Tietoturvapoikkeamien hallinta**  
+   - Lokitietoja käytetään **tapahtumien analysointiin**, jos havaitaan epäilyttävää toimintaa.  
+   - Tietoturvatiimi vastaa **reaktiosta ja selvityksistä**, mikäli lokitietojen perusteella havaitaan poikkeamia.  
+
+<AnswerOptions>  
+- **Ei toteutettu tai ei tietoa**: Pääsyoikeuksien käytöstä ei pidetä lokia, tai siitä ei ole tietoa.  
+- **Osittain toteutettu**: Jotkut pääsyoikeuksien käyttöön liittyvät tapahtumat kirjataan lokiin, mutta järjestelmä ei kata kaikkia tiloja tai se perustuu pääosin manuaaliseen kirjaamiseen.  
+- **Enimmäkseen toteutettu**: Suurin osa pääsyoikeuksien käytöstä kirjataan automaattisesti, mutta analysointi- ja auditointikäytännöissä voi olla puutteita.  
+- **Täysin toteutettu**: Organisaatiolla on kattava ja automatisoitu pääsyoikeuksien lokitusjärjestelmä, joka dokumentoidaan ja auditoidaan säännöllisesti.  
+</AnswerOptions>  
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuuden tuotantotilat on suojattu kulunvalvontajärjestelmällä, joka tallentaa automaattisesti kaikki sisään- ja uloskirjautumiset. Vierailijat kirjaavat tietonsa manuaaliseen lokiin, ja pääsyoikeuksien käyttö auditoidaan neljännesvuosittain.  
+
+> **Kuljetusliike**  
+Logistiikkayrityksen varastoissa käytetään RFID-pohjaista kulunvalvontaa, joka kirjaa kaikkien työntekijöiden ja vierailijoiden liikkeet varastotiloissa. Kulkuoikeudet ja lokitiedot tarkistetaan säännöllisesti mahdollisten väärinkäytösten estämiseksi.  
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää valvomossa RFID-pohjaista kulunvalvontaa ja kaikki kulkutapahtumat tallennetaan automaattisesti keskitettyyn lokijärjestelmään. Lokitiedot säilytetään vuoden ajan ja niitä analysoidaan säännöllisesti epäilyttävän toiminnan varalta.
+
+> **Sähköyhtiö**  
+Energiayhtiön korkean turvatason tiloihin pääsy kirjataan sekä sähköisesti että manuaalisesti ja jokainen sisäänpääsy vaatii hyväksynnän valvomosta. Lokitiedot yhdistetään SIEM-järjestelmään, joka analysoi ja varoittaa epäilyttävistä tapahtumista reaaliaikaisesti.
+
+### Lisätiedot
+
+- **Pääsyoikeuksien käytön lokitus voi olla manuaalinen (esim. paperiloki) tai automatisoitu (esim. kulunvalvontajärjestelmä).**  
+- **Lokituksen avulla voidaan havaita luvaton toiminta ja tutkia tietoturvapoikkeamia.**  
+- **Omaisuuserien omistajat vastaavat siitä, että lokitus täyttää organisaation turvallisuusvaatimukset.**  
+- **Lokitietojen säilytysaika ja analysointikäytännöt on määriteltävä organisaation tietoturvapolitiikassa.**  
+- **Säännöllinen auditointi varmistaa, että lokitietoja käytetään tehokkaasti tietoturvan hallintaan.**  
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Omaisuuserän omistajan vastuulla on varmistaa, että fyysisen pääsyn lokitus täyttää omistajan hallinnassa olevan omaisuuden suojelua ja ylläpitoa koskevat vaatimukset. Lokitus voidaan suorittaa manuaalisesti, esimerkiksi paperilokin avulla, tai automatisoidusti, esimerkiksi fyysisten kulunvalvontajärjestelmien avulla kerätyistä tiedoista.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ARCHITECTURE-3a:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ACCESS-3c, ACCESS-3j.
+</CollapsibleSection>
+
+---
+
+_Ohjetta päivitetty: 18.3.2025_

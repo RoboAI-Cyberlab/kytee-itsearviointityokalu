@@ -1,0 +1,66 @@
+[
+  {
+    "term": "IT-laite",
+    "match": ["it-laite", "IT-"],
+    "definition": "Tietotekniikkaan liittyvä laite kuten tietokone, palvelin tai verkkolaite, jota käytetään tiedon käsittelyyn ja hallintaan."
+  },
+  {
+    "term": "IT-ympäristö",
+    "match": ["it-ympäristö"],
+    "definition": "Organisaation tietotekninen kokonaisuus sisältäen laitteet, ohjelmistot, verkot ja palvelut."
+  },
+  {
+    "term": "OT-ympäristö",
+    "match": ["ot-ympäristö", "OT-ympäristöjen"],
+    "definition": "Teollisten prosessien ohjaukseen käytettävä tekninen ympäristö sisältäen automaatiojärjestelmät ja -laitteet."
+  },
+  {
+    "term": "OT-laite",
+    "match": ["ot-laite", "OT-laitteista", "OT-omaisuus"],
+    "definition": "Teollisessa tuotannossa tai prosessiohjauksessa käytettävä automaatiolaite tai -järjestelmä. Kuten teollisuusrobotti ja teollisuusautomaatiojärjestelmä."
+  },
+  {
+    "term": "Tietovaranto",
+    "match": ["tietovaranto", "tietovarannot"],
+    "definition": "Organisaation hallussa oleva merkittävä tietoaineisto tai -kokoelma, joka voidaan säilyttää esim. tietokoneella, tietojärjestelmässä tai paperilla."
+  },
+  {
+    "term": "Skannaustyökalu",
+    "match": [
+      "skannaustyökalu",
+      "skanneri",
+      "tarkistustyökalu",
+      "haavoittuvuusskanneri"
+    ],
+    "definition": "Ohjelmisto, joka etsii automaattisesti tietojärjestelmistä haavoittuvuuksia ja tietoturvaongelmia, kuten virustorjuntaohjelmisto."
+  },
+  {
+    "term": "Haavoittuvuus",
+    "match": [
+      "haavoittuvuus",
+      "tietoturvahaavoittuvuus",
+      "heikkous",
+      "altistuma"
+    ],
+    "definition": "Järjestelmässä, laitteessa tai ohjelmistossa oleva heikkous, jota voidaan hyödyntää yrityksen tietoturvan vaarantamiseksi."
+  },
+  {
+    "term": "Data",
+    "match": ["data"],
+    "definition": "Datalla tarkoitetaan digitaalisesti tallennettua, merkeistä ja symboleista koostuvaa koneellisesti luettavissa olevaa informaatiota, joka voi muodostaa esimerkiksi dokumentteja, tietokantoja ja audiotallenteita."
+  },
+  {
+    "term": "Kyberriski",
+    "match": ["kyberriski", "Kyberriskejä", "Kyberriskit"],
+    "definition": "Riski, joka aiheutuu kyberhyökkäyksistä tai kyberhyökkäyksiin liittyvistä tapahtumista. Kyberriskinä voidaan pitää mitä myös tahansa informaatioteknologiasta aiheutuvaa vikaa tai häiriötä, joka aiheuttaa yritykselle vahinkoa."
+  },
+  {
+    "term": "Kyberarkkitehtuuri",
+    "match": [
+      "kyberarkkitehtuuri",
+      "kyberarkkitehtuurit",
+      "kyberarkkitehtuurin"
+    ],
+    "definition": "Kyberarkkitehtuurin voidaan ajatella tarkoittavan asioita mistä kyseisen organisaation kyberturvallisuus rakentuu. Näihin asioihin kuuluu esimerkiksi organistaation (kyber)turvallisuusstrategia, tietoturvapolitiikka, -prosessit ja -kontrollit, riskienhallintatyö, tiedon- ja järjestelmien suojaamisen toimet, tietosuojapolitiikka. Käytännössä kyberturvallisuusarkkitehtuuri luo perustan organisaation puolustukselle kyberhyökkäyksiä vastaan varmistamalla, että kaikki sen tietotekniikkainfrastruktuurin osat (mukaan lukien pilvi, verkot, IoT ja päätelaitteet) ovat asianmukaisesti suojattuja."
+  }
+]

@@ -1,0 +1,204 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Kriittisten palveluiden suojaaminen
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- poikkeamatilanteiden käsittelyn asiantuntija
+- liiketoiminnan jatkuvuuden asiantuntija
+- yrityksen riskienhallinnan asiantuntija
+</Roles>
+
+Organisaation tulee tunnistaa oma roolinsa yhteiskunnan kannalta kriittisten palveluiden tuottamisessa ja hallita riskejä sen mukaisesti.
+
+---
+
+<ObjectiveTitle name="critical-1">Kriittisten palveluiden ja niiden riippuvuuksien tunnistaminen</ObjectiveTitle>
+
+Organisaation tulee tunnistaa oma roolinsa yhteiskunnan kannalta kriittisten palveluiden tuottamisessa, tietää mitä näiden palveluiden tuottaminen vaatii ja ymmärtää millaiset vaikutukset palveluiden vikaantumisella saattaisi olla.
+
+---
+
+<PracticeTitle name="critical-1a">Kriittisten palveluiden tunnistaminen ja dokumentointi</PracticeTitle>
+
+### Merkitys
+
+Tämä kysymys keskittyy organisaation kykyyn tunnistaa ja dokumentoida kaikki palvelut, jotka ovat kriittisiä yhteiskunnan toiminnan kannalta. Kriittisten palveluiden tunnistaminen auttaa ymmärtämään, miten niiden mahdolliset vikaantumiset tai katkokset voivat vaikuttaa yhteiskunnan turvallisuuteen ja toimintakykyyn. Tällainen dokumentointi on perusta tehokkaalle varautumiselle ja riskienhallinnalle.
+
+### Vastausohjeet
+
+Arvioi, kuinka hyvin organisaatiosi on tunnistanut ja dokumentoinut nämä palvelut. Jos kriittiset palvelut on selkeästi määritelty ja dokumentaatio on ajan tasalla, valitse "Täysin toteutettu". Jos tunnistamisprosessi on kesken, valitse "Osittain toteutettu".
+
+> **Sairaala** on tunnistanut elintärkeät palvelut, kuten hätäleikkaussalin ja potilastietojärjestelmän. Dokumentaatiossa kuvataan yksityiskohtaisesti näiden palveluiden merkitys ja riippuvuudet, kuten sähköverkon ja tietoliikenteen kriittisyys.
+
+> **Telekommunikaatioyritys** on tunnistanut, että kriittiset palvelut, kuten hätäpuheluiden yhdistämispalvelu ja verkkoinfrastruktuuri, ovat elintärkeitä yhteiskunnan turvallisuudelle. Dokumentaatiossa kuvataan, miten näiden palveluiden toiminta varmistetaan häiriötilanteissa, kuten sähkökatkojen tai verkkohyökkäysten aikana.
+
+> **Logistiikkayritys** on kartoittanut ja dokumentoinut tärkeimmät palvelut, kuten elintarvikkeiden kuljetukset ja varastojen toiminnan, jotka ovat yhteiskunnalle välttämättömiä. Tämä tunnistaminen mahdollistaa suunnitelmien laatimisen toimituskatkosten varalle, jotta tärkeiden resurssien saatavuus ei vaarannu.
+
+---
+
+<PracticeTitle name="critical-1b">Kriittisten palveluiden tuottamiseen tarvittavan datan tunnistaminen ja dokumentointi</PracticeTitle>
+
+### Merkitys
+
+Tämän kohdan tarkoituksena on varmistaa, että organisaatio ymmärtää ja dokumentoi datan, jota tarvitaan kriittisten palveluiden toimintaan. Tietojen tunnistaminen on keskeistä, koska se auttaa suojaamaan ja varmistamaan datan saatavuuden ja eheyyden häiriötilanteissa. Ilman riittävää ymmärrystä siitä, mikä data on kriittistä, voi olla vaikea varautua uhkiin, kuten tietomurtoihin tai palvelunestohyökkäyksiin.
+
+### Vastausohjeet
+
+Tarkastele, onko organisaatiosi tunnistanut ja dokumentoinut kaiken tarvittavan datan. Valitse "Täysin toteutettu", jos tämä työ on tehty kattavasti ja dokumentaatio on helposti saatavilla.
+
+> **Pankki** on tunnistanut, että tilitapahtumien ja asiakastietojen eheys on kriittistä palveluiden toiminnan kannalta. He ovat dokumentoineet, kuinka tämä data suojataan ja varmistaneet sen varmuuskopioinnin ja suojausprotokollat.
+
+> **Vesihuoltolaitos** on tunnistanut, että vedenjakelujärjestelmän hallintadata on kriittistä. He ovat dokumentoineet tiedot, kuten vesivarastojen määrät ja vedenjakeluprosessit, ja varmistaneet, että näiden tietojen eheys ja saatavuus ovat taattuja mahdollisten kyberhyökkäysten varalta.
+
+> **Lääketehdas** on dokumentoinut tuotannon kannalta keskeiset datat, kuten reseptuurit ja laadunvalvontatulokset. Ilman näitä tietoja lääkkeiden valmistus voisi keskeytyä tai johtaa vakaviin laatuongelmiin. Dokumentaatio kattaa myös tiedon suojaamisen ja varmuuskopioinnin.
+
+---
+
+<PracticeTitle name="critical-1c">Palveluiden tuottamiseen tarvittavien prosessien tunnistaminen ja dokumentointi</PracticeTitle>
+
+### Merkitys
+
+Tässä kohdassa arvioidaan, onko organisaatio tunnistanut ja dokumentoinut kaikki prosessit, joita tarvitaan kriittisten palveluiden tuottamiseen. Näiden prosessien ymmärtäminen on elintärkeää, sillä se mahdollistaa häiriöihin varautumisen ja toiminnan jatkuvuuden ylläpidon. Jos prosesseja ei ole määritelty tarkasti, organisaatiolla voi olla vaikeuksia hallita tai ennakoida häiriöitä.
+
+### Vastausohjeet
+
+Arvioi, ovatko kaikki tärkeät prosessit tunnistettu ja dokumentoitu. Jos prosessit ovat yksityiskohtaisesti kuvattuja ja kaikkien asianosaisten tiedossa, valitse "Täysin toteutettu".
+
+> **Tietokeskus** on dokumentoinut yksityiskohtaisesti palvelimien ylläpitoprosessit, tietojen varmuuskopioinnin sekä hätätilanteisiin varautumisen. Tämä auttaa varmistamaan, että palvelut toimivat sujuvasti myös häiriötilanteissa.
+
+> **Kunnallishallinto** on dokumentoinut prosessit, jotka liittyvät kriittisiin palveluihin, kuten jätehuollon toimintaan ja hätätilanteiden hallintaan. Tämä sisältää yksityiskohtaiset toimintasuunnitelmat, joilla varmistetaan jätehuollon jatkuvuus kriisien aikana ja reagoidaan nopeasti poikkeustilanteisiin.
+
+> **Maanviljelijäyhdistys** on tunnistanut ja dokumentoinut tärkeimmät sadonkorjuuprosessit ja varautumissuunnitelmat tilanteisiin, joissa maatalouskoneiden toiminta keskeytyy tai raaka-aineiden toimitukset viivästyvät. Tämä auttaa minimoimaan tuotannon keskeytyksistä aiheutuvat haitat.
+
+---
+
+<PracticeTitle name="critical-1d">Kriittisten järjestelmien (IT- ja OT-omaisuuden) tunnistaminen ja dokumentointi</PracticeTitle>
+
+### Merkitys
+
+Tämä kysymys tarkastelee, onko organisaatio tunnistanut ja dokumentoinut kaikki kriittiset järjestelmät, jotka liittyvät sekä tietotekniikkaan (IT) että operatiiviseen teknologiaan (OT). Näiden järjestelmien tunnistaminen on elintärkeää, jotta voidaan varmistaa palveluiden jatkuvuus ja hallita tehokkaasti mahdollisia häiriöitä. Ilman kattavaa ymmärrystä kriittisestä IT- ja OT-omaisuudesta, organisaatio voi olla altis odottamattomille häiriöille ja turvallisuusriskeille.
+
+### Vastausohjeet
+
+Arvioi, ovatko kaikki kriittiset järjestelmät tunnistettu ja dokumentoitu. Jos kaikki IT- ja OT-järjestelmät on kirjattu ja niiden merkitys on ymmärretty organisaation toiminnan kannalta, valitse "Täysin toteutettu".
+
+> **Energialaitos** on tunnistanut sähköverkkojen hallintajärjestelmät (OT) ja tietojärjestelmät (IT), jotka valvovat ja ohjaavat energiantoimitusta, ja on dokumentoinut yksityiskohtaisesti niiden roolit sekä varautumistoimenpiteet.
+
+> **Lentoasema** on tunnistanut kaikki kriittiset järjestelmät, kuten lennonjohtojärjestelmät (OT) ja matkustajapalveluiden IT-järjestelmät. Dokumentaatiossa kuvataan, miten järjestelmiä ylläpidetään, suojataan ja varmistetaan niiden toiminta hätätilanteissa, kuten tietoturvahyökkäyksen aikana.
+
+> **Kaupan keskusvarasto** on kartoittanut automaattiset varastointijärjestelmät (OT) ja niiden yhteydet IT-järjestelmiin, jotka hallitsevat tavarantoimituksia. Varasto on dokumentoinut, kuinka järjestelmät suojataan ja varmistetaan toimintakyky esimerkiksi verkkohyökkäysten tai laitevikojen sattuessa.
+
+---
+
+<ObjectiveTitle name="critical-2">Kriittisten palveluiden hallinta</ObjectiveTitle>
+
+Organisaation ylimmällä johdolla on vastuu riittävien resurssien turvaamisesta kriittisten palveluiden tuottamiseen ja päätöksentekovaltuuksien delegoinnista organisaatiossa siten, että päätöksenteko on tehokasta ja se tehdään oikeassa paikassa.
+
+Kriittisten palveluiden toimittamiseen liittyvien tietoverkkojen ja -järjestelmien riskit tulee arvioida osana koko organisaation riskejä.
+
+---
+
+<PracticeTitle name="critical-2a">Kaikki resurssit ovat organisaation turvallisuuden hallinnan piirissä</PracticeTitle>
+
+### Merkitys
+
+Tämä kohta tarkistaa, ovatko kaikki kriittisten palveluiden tuottamiseen tarvittavat resurssit (data, prosessit, järjestelmät, tilat ja toimitusketjut) organisaation turvallisuushallinnan politiikkojen ja prosessien piirissä. Tämä on tärkeää, koska se varmistaa resurssien suojauksen ja jatkuvuuden häiriötilanteissa.
+
+### Vastausohjeet
+
+Arvioi, ovatko kaikki tarvittavat resurssit turvallisuuden hallinnan alaisia. Valitse "Täysin toteutettu", jos resurssien hallinta kattaa kaikki kriittiset elementit.
+
+> **Tehdas** on sisällyttänyt tuotantolinjojen valvontajärjestelmät ja varmuuskopiot järjestelmälliseen turvallisuushallintaansa. He ovat kehittäneet turvallisuustoimenpiteet, jotka suojaavat järjestelmät kyberuhkilta ja varmistavat tuotannon jatkumisen.
+
+> **Terveydenhuollon laitos** on ottanut käyttöön turvapolitiikat, jotka kattavat kaikki potilastietojärjestelmät, tiedon varmuuskopioinnin ja toimitusketjut lääkkeiden toimituksessa. Nämä toimenpiteet auttavat suojaamaan kriittisiä resursseja ja vähentämään toimintakatkosten riskiä.
+
+---
+
+<PracticeTitle name="critical-2b">Kaikki yhteiskunnallisesti kriittisten palveluiden tuottamiseen tarvittavat resurssit ovat organisaation riskienhallinnan piirissä</PracticeTitle>
+
+### Merkitys
+
+Tämä kohta arvioi, onko kriittisten palveluiden tuottamiseen tarvittavat resurssit sisällytetty organisaation riskienhallintaprosessiin. Tämä auttaa organisaatiota tunnistamaan riskit ja hallitsemaan niitä tehokkaasti, mikä minimoi mahdollisten häiriöiden vaikutukset.
+
+### Vastausohjeet
+
+Tarkastele, ovatko riskienhallintapolitiikat kattaneet kaikki kriittiset resurssit. Valitse "Täysin toteutettu", jos riskienhallinta kattaa kaikki tärkeät resurssit.
+
+> **Pankki** on arvioinut riskit, jotka liittyvät sen pääasiallisiin tietojärjestelmiin ja asiakastietoihin. He ovat ottaneet käyttöön varmuuskopiointistrategiat ja kehittäneet suunnitelmat, joilla hallitaan tietomurtojen mahdollisia vaikutuksia.
+
+> **Elintarvikealan yritys** on sisällyttänyt kylmäketjun hallinnan ja varastoinnin osaksi riskienhallintaprosessejaan. He ovat tehneet riskianalyysejä ja suunnitelleet hätätilanteisiin varautumistoimenpiteitä, kuten varageneraattorit ja vaihtoehtoiset kuljetusreitit.
+
+---
+
+<ObjectiveTitle name="critical-3">Kriittisten palveluiden kyberhäiriöiden vaikutusten minimointi</ObjectiveTitle>
+
+Organisaatiolla tulee olla määritelty ja hyvin testattu kybertapahtumien ja -häiriöiden hallintaprosessi. Prosessin tarkoituksena on varmistaa kriittisten palveluiden toimintavarmuus järjestelmien tai palveluiden vikatilanteissa.
+
+Organisaation tulee myös huolehtia, että sillä on riittävät varautumistoimet vikatilanteiden vaikutusten rajaamiseksi tai pienentämiseksi ja että nämä toimet on mitoitettu suhteessa riskin ja mahdollisten vaikutusten suuruuteen.
+
+---
+
+<PracticeTitle name="critical-3a">Kybertapahtumien ja -häiriöiden hallintasuunnitelma </PracticeTitle>
+
+### Merkitys
+
+On tärkeää, että organisaatiolla on kattava suunnitelma, joka auttaa hallitsemaan kyberhäiriöitä ja varmistamaan kriittisten palveluiden jatkuvuuden. Tämä suunnitelma varmistaa, että organisaatio voi reagoida nopeasti ja tehokkaasti erilaisiin uhkiin.
+
+### Vastausohjeet
+
+Arvioi, onko hallintasuunnitelma olemassa ja kattaa kaikki kriittiset palvelut. Valitse "Täysin toteutettu", jos suunnitelma on kattava ja testattu.
+
+> **Sairaanhoitopiiri** on kehittänyt kybertapahtumien hallintasuunnitelman, joka kattaa kaikki potilastietojärjestelmät ja varautuu tietomurtoihin. Suunnitelmaa on testattu säännöllisesti simulaatioharjoituksissa.
+
+> **Tietokeskus** on laatinut suunnitelman, joka kattaa datakeskusten suojauksen palvelunestohyökkäyksiltä. Suunnitelmassa on määritelty vastuut ja toimintatavat, jotka auttavat minimoimaan vaikutukset.
+
+---
+
+<PracticeTitle name="critical-3b">Suunnitelma kattaa tunnetut hyökkäykset</PracticeTitle>
+
+**Merkitys:** Hallintasuunnitelman on katettava kaikki tunnetut hyökkäystyypit ja arvioitava näiden hyökkäysten mahdolliset vaikutukset. Tämä auttaa organisaatiota varautumaan tehokkaasti ja suojaamaan kriittisiä palveluita.
+
+**Vastausohjeet:** Valitse "Enimmäkseen toteutettu", jos suunnitelma kattaa yleisimmät uhkat. Jos kaikki tunnetut uhkat on analysoitu ja suunnitelmat ovat kattavat, valitse "Täysin toteutettu".
+
+> **Vakuutusyhtiö** on analysoinut yleisimmät kyberhyökkäykset, kuten palvelunestohyökkäykset, ja kehittänyt suojautumiskeinoja niiden vaikutusten minimoimiseksi.
+
+> **Teollisuusyritys** on suunnitellut varautumistoimet tuotantolaitteiden tietomurtojen varalta ja testannut niitä simulaatioissa varmistaakseen järjestelmien nopean palautumisen.
+
+---
+
+<PracticeTitle name="critical-3c">Henkilöstön ymmärrys hallintasuunnitelmasta</PracticeTitle>
+
+**Merkitys:** Henkilöstön tulee olla hyvin perillä kybertapahtumien hallintasuunnitelmasta ja tietää, miten toimia häiriötilanteissa. Tämä varmistaa, että työntekijät voivat reagoida oikein ja minimoida vahingot.
+
+**Vastausohjeet:** Valitse "Täysin toteutettu", jos henkilöstö on saanut koulutusta ja ymmärtää suunnitelman sisällön. "Osittain toteutettu" voi olla sopiva, jos koulutusta on vielä parannettava.
+
+> **Kaupunkihallinto** järjestää säännöllisesti koulutuksia, joissa käydään läpi kyberturvallisuuden toimintamallit ja simuloidaan kriisitilanteita.
+
+> **Ohjelmistoyritys** on pitänyt työpajoja, joissa henkilöstö harjoittelee tietomurtoon reagoimista ja saa ohjeistusta siitä, miten suojautua verkkohyökkäyksiltä.
+
+---
+
+<PracticeTitle name="critical-3d">Hallintasuunnitelman jakaminen sidosryhmille</PracticeTitle>
+
+**Merkitys:** On tärkeää, että kybertapahtumien hallintasuunnitelma on dokumentoitu ja jaettu kaikille sidosryhmille, jotka tarvitsevat sen. Tämä varmistaa yhteistyön sujuvuuden ja palveluiden jatkuvuuden kriisitilanteessa.
+
+**Vastausohjeet:** Valitse "Täysin toteutettu", jos suunnitelma on jaettu kaikille tarpeellisille sidosryhmille. Jos jakaminen on vielä osittain kesken, valitse "Osittain toteutettu".
+
+> **Yliopisto** on jakanut hallintasuunnitelmansa kaikille laitoksille ja sidosryhmille varmistaakseen, että kaikki ovat tietoisia toimintamalleista kyberhäiriöiden varalta.
+
+> **Energiayhtiö** jakaa säännöllisesti päivitetyn häiriöhallintasuunnitelmansa yhteistyökumppaneilleen, kuten sähköverkkoyhtiöille ja pelastuslaitokselle, varmistaakseen tehokkaan yhteistoiminnan.
+
+---
+
+_Ohjetta päivitetty: 10.2.2025_

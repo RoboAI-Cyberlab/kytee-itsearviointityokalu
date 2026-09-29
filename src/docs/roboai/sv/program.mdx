@@ -1,0 +1,176 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Hantering av cybersäkerhetsprogram
+
+<Roles>
+- Ledning för cybersäkerhet
+- IT-ledning
+- OT-ledning
+- Företagsledning
+- Representant för juridiska avdelningen
+- Specialist för regelefterlevnad
+- Representant för intern revision
+</Roles>
+
+---
+<ObjectiveTitle name="program-1">Cybersäkerhetsstrategi</ObjectiveTitle>
+---
+
+<PracticeTitle name="program-1a">Organisationen har en cybersäkerhetsstrategi.</PracticeTitle>
+
+### Betydelse
+
+En cybersäkerhetsstrategi är ett nyckeldokument som definierar organisationens cybersäkerhetsriktning och hjälper till att:
+- **Skapa ett konsekvent och målinriktat förhållningssätt till cybersäkerhet.** Strategin säkerställer att cybersäkerhet är planerad, inte reaktiv.
+- **Skydda organisationens tillgångar och datalager från cyberhot.** Att förhindra attacker minskar affärsrisker och skyddar ryktet.
+- **Stödja efterlevnad av lagstiftning och regulatoriska krav.** Till exempel kräver **GDPR, NIS2 och ISO 27001** systematisk cybersäkerhetshantering.
+- **Definiera tydliga ansvar och resurser för implementering av cybersäkerhet.** Utan definierade roller och ansvar kan informationssäkerhet bli fragmenterad.
+- **Möjliggöra kontinuerlig förbättring av cybersäkerhet och utveckling av mognadsnivå.** Strategin hjälper organisationen att utvecklas och anpassa sig till föränderliga hot.
+
+Bedömningsfrågor:
+- Har organisationen en skriftlig cybersäkerhetsstrategi eller handlingsplan?
+- Innehåller strategin cybersäkerhetsmål och relaterade åtgärder?
+- Definierar strategin ansvar och roller för att implementera cybersäkerhetsåtgärder?
+- Följer strategin erkända ramverk såsom C2M2, NIST CSF, ISO 27001 eller IEC 62443?
+- Är strategin uppdaterad och i linje med organisationens övergripande affärsstrategi?
+
+Implementering av cybersäkerhetsstrategi i organisationen:
+
+1. **Strategidefinition och mål**
+   - Cybersäkerhetsstrategin inkluderar **tydliga mål och handlingsplaner**.
+   - Målen kan relatera till **cyberriskhantering, identitets- och åtkomsthantering, händelseövervakning och kontinuitetssäkring**.
+
+2. **Handlingsplan och ramverksanvändning**
+   - Strategin baseras på **erkända ramverk** såsom **C2M2, NIST CSF, ISO 27001, IEC 62443**.
+   - **En C2M2-baserad strategi kan inkludera olika domäner**, såsom riskidentifiering, cyberincidenthantering och partnernätverkssäkerhetshantering.
+
+3. **Ansvar och resurser**
+   - **Roller och ansvar definieras i strategin**, såsom Chief Information Security Officer (CISO), IT-säkerhetsspecialister och affärsenheter.
+   - **Resurser och budget** allokeras till cybersäkerhet så att åtgärder kan implementeras effektivt.
+
+4. **Övervakning och kontinuerlig förbättring**
+   - Strategiimplementering utvärderas **regelbundet genom revisioner, självbedömningar och mognadsnivåanalyser**.
+   - Strategin **uppdateras regelbundet** för att svara på föränderliga cyberhot och affärsbehov.
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Organisationen har inte en formell cybersäkerhetsstrategi eller dess status är okänd.
+- **Delvis implementerad**: En strategi har utvecklats, men den är inte omfattande eller har inte implementerats systematiskt.
+- **Mestadels implementerad**: En strategi finns och implementeras, men behöver utveckling, såsom uppdateringar eller bättre integrering med affärsstrategin.
+- **Helt implementerad**: Organisationen har en omfattande och uppdaterad cybersäkerhetsstrategi som inkluderar mål, åtgärder, ansvar och övervakning.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Livsmedelsföretagets cybersäkerhetsstrategi fokuserar på försörjningskedjans säkerhet och skydd av automationssystem. Den baseras på ISO 27001-standarden och C2M2-modellen.
+
+> **Vattenbolag**
+Vattenbolaget använder IEC 62443-standarder och NIST CSF-ramverket som grund för sin strategi. Nyckelområden är SCADA-systemskydd och incidenthantering.
+
+> **Energibolag**
+Energibolagets cybersäkerhetsstrategi fokuserar på elnätssäkerhet och säkerställande av cybersäkerhetskontinuitet. Riskanalyser och hotmodeller integreras regelbundet i strategin.
+
+### Ytterligare information
+
+- **Strategin bör inkludera konkreta åtgärder och mål som stödjer organisationens affärsstrategi.**
+- **En C2M2-modellbaserad strategi hjälper till att strukturera cybersäkerhetsdomäner och utvecklingsmål.**
+- **Strategiimplementering bör mätas och utvärderas regelbundet, till exempel genom mognadsnivåbedömningar.**
+- **Cybersäkerhetsstrategin bör vara i linje med organisationens andra strategiska mål.**
+- **Strategin får inte vara ett statiskt dokument utan bör kontinuerligt utvecklas enligt föränderliga hot och krav.**
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Organisationen utvecklar, implementerar och underhåller en cybersäkerhetsprogramstrategi/handlingsplan som, i sin enklaste form, inkluderar en lista över cybersäkerhetsmål och relaterade aktiviteter, åtgärder och uppgifter, samt en plan för deras implementering. I ett C2M2-baserat program kan strategins verksamhetsområden vara i linje med C2M2-domäner och mål. Ett verksamhetsområde kan till exempel vara att identifiera och svara på cyberrisker som påverkar funktionens tillgångar och tjänster. Mer detaljerad beskrivning skulle täcka hur denna aktivitet är avsedd att implementeras (återigen enligt C2M2-metoder, men mer i detalj om hur metoder är avsedda att implementeras i funktionen, till exempel genom att använda ett specifikt riskhanteringsramverk).
+
+Relaterade metoder:
+- Progression: Denna metod är en del av en metodprogression. En metodprogression är en grupp relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av aktiviteter. Denna progression inkluderar följande metoder: PROGRAM-1a, PROGRAM-1b, PROGRAM-1c, PROGRAM-1d, PROGRAM-1e, PROGRAM-1f, PROGRAM-1g, PROGRAM-1h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="program-2">Ledningsstöd för cybersäkerhetsprogrammet</ObjectiveTitle>
+---
+
+<PracticeTitle name="program-2a">Organisationens högsta ledning stödjer cybersäkerhetshantering.</PracticeTitle>
+
+### Betydelse
+
+Högsta ledningens stöd är väsentligt för framgång med cybersäkerhetshantering eftersom:
+- **Utan ledningsstöd blir cybersäkerhet lätt en isolerad IT-funktion och integreras inte med affärsstrategin.**
+- **Cybersäkerhet kräver resurser som ledningen kan tillhandahålla.** Om otillräckliga investeringar görs i cybersäkerhet, utsätts organisationen för större risker.
+- **Ledningen fungerar som exempel för hela organisationen.** När ledningen förbinder sig till cybersäkerhet, ser även annan personal dess betydelse.
+- **Lagstiftning och reglering kräver ledningsansvar för cybersäkerhet.** Till exempel betonar **NIS2, GDPR och ISO 27001** ledningsansvar för informationssäkerhetshantering.
+- **Ledningsstöd möjliggör effektivt beslutsfattande inom cybersäkerhet.** Utan tydligt beslutsfattande och auktoritet kan cybersäkerhetsåtgärder förbli ineffektiva.
+
+Bedömningsfrågor:
+- Har högsta ledningen en tydlig förståelse för cybersäkerhetens betydelse och risker?
+- Tillhandahåller högsta ledningen tillräckliga resurser (personal, verktyg och finansiering) för cybersäkerhetshantering?
+- Har högsta ledningen auktoritet och ansvar för att främja cybersäkerhetsåtgärder?
+- Deltar högsta ledningen i att definiera, godkänna och övervaka cybersäkerhetsstrategin?
+- Spåras och mäts cybersäkerhetsmål på ledningsnivå?
+
+Implementering av ledningsstöd i organisationen:
+
+1. **Ledningens deltagande i cybersäkerhet**
+   - Högsta ledningen deltar i **att definiera och godkänna cybersäkerhetsstrategin**.
+   - Ledningens roller och ansvar inom cybersäkerhet är tydligt definierade.
+
+2. **Tillhandahållande av resurser för cybersäkerhet**
+   - **Budget och personalresurser är tillräckliga för cybersäkerhetshantering.**
+   - **Nödvändiga teknologier och utbildning** allokeras för cybersäkerhetsimplementering.
+
+3. **Auktoritet och ansvar**
+   - Högsta ledningen har **auktoritet att fatta beslut om cybersäkerhetsinvesteringar och åtgärder**.
+   - Organisationen har definierat **tydliga ansvar och rapporteringslinjer** relaterade till cybersäkerhetshantering.
+
+4. **Övervakning och mätning**
+   - Ledningen övervakar **cybersäkerhetslägesuppfattning och rapportering regelbundet**.
+   - **Cybersäkerhetsbedömningar och riskvärderingar** stödjer ledningens beslutsfattande.
+
+5. **Kontinuerlig förbättring**
+   - Ledningen deltar i **regelbunden informationssäkerhetsutbildning och övningar**.
+   - Cybersäkerhetsmål utvärderas **som en del av organisationens strategiska planering**.
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Det finns inget högsta ledningsstöd för cybersäkerhet, eller dess status är okänd.
+- **Delvis implementerad**: Ledningen är delvis involverad i cybersäkerhet, men tillhandahåller inte tillräckliga resurser eller stöd för åtgärder.
+- **Mestadels implementerad**: Ledningen stödjer cybersäkerhet och tillhandahåller resurser, men det finns utrymme för förbättring i deltagande, övervakning eller beslutsfattande.
+- **Helt implementerad**: Ledningen stödjer aktivt cybersäkerhet, deltar i strategiskt beslutsfattande och säkerställer att organisationen har tillräckliga resurser och processer för cybersäkerhetshantering.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Livsmedelsföretagets ledning är engagerad i att utveckla försörjningskedjans informationssäkerhet och produktionsutrustningens cybersäkerhet. Budgeten har en separat allokering för informationssäkerhetsutbildning och tekniska lösningar.
+
+> **Vattenbolag**
+Vattenbolagets ledning har satt systeminformationssäkerhet som en av organisationens strategiska prioriteringar. Ledningen övervakar cybersäkerhetssituationen och organiserar övningar.
+
+> **Energibolag**
+På energibolaget deltar ledningen regelbundet i möten för cybersäkerhetsstyrgruppen och säkerställer tillräcklig resurstilldelning för att skydda IT- och OT-miljöer.
+
+### Ytterligare information
+
+- **Ledningsstöd är kritiskt viktigt för cybersäkerhetsframgång.**
+- **Resurser såsom budget, personal och utbildning är väsentliga för cybersäkerhetsimplementering.**
+- **Ledningen bör övervaka cybersäkerhetslägesuppfattning och risker regelbundet.**
+- **Informationssäkerhetsutbildning och övningar är en viktig del av att utveckla ledningens cybersäkerhetsmedvetenhet.**
+- **Att integrera cybersäkerhet i affärsstrategin säkerställer att informationssäkerhet inte är en isolerad del av organisationens verksamhet.**
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Implementering av ett cybersäkerhetsprogram kräver högsta ledningsstöd. Grundläggande former av stöd inkluderar att tillhandahålla resurser (personal, verktyg och finansiering) och auktoritet för att implementera cybersäkerhetsaktiviteter. Att tillhandahålla sådant stöd kräver att högsta chefer själva har tillräcklig och lämplig auktoritet.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. En metodprogression är en grupp relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av aktiviteter. Denna progression inkluderar följande metoder: PROGRAM-2a, PROGRAM-2c, PROGRAM-2d.
+</CollapsibleSection>
+
+---
+
+_Vägledningen uppdaterad: 19.3.2025_

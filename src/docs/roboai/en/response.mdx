@@ -1,0 +1,498 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Incident and disruption management, business continuity
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- Cybersecurity operations center (SOC) leadership
+- Incident response specialist
+- Business continuity specialist
+- Facilities management representative
+</Roles>
+
+---
+<ObjectiveTitle name="response-1">Event monitoring</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-1a">Detected cyber events are reported to predefined individuals or role holders and documented.</PracticeTitle>
+
+### Significance
+
+Cyber event reporting and documentation are critical to organizational cybersecurity. Systematic reporting ensures that:
+- Anomalies are detected and addressed in a timely manner.
+- Management and specialists receive information about security breaches.
+- The organization can analyze event backgrounds and prevent similar cases in the future.
+- Authorities and stakeholders can be properly informed if required by law or contracts.
+
+Assessment questions:
+- Does the organization have clear guidelines for cyber event reporting?
+- Has it been defined who receives reports and how information is stored?
+- How is consistency in event documentation ensured?
+- Does reporting occur automatically or does it require manual notification?
+
+<AnswerOptions>
+- **Not implemented or no information**: No process or responsible persons for cyber event reporting exist, or attention has not been paid to this matter.
+- **Partially implemented**: Some cyber events are reported, but the process does not cover all cases, responsible persons are not clearly defined, or documentation is inconsistent.
+- **Mostly implemented**: Cyber event reporting is established, but there may still be some gaps in practices (e.g., reporting is not fully comprehensive or documentation is not always done systematically).
+- **Fully implemented**: All cyber events are reported to predefined individuals or role holders and are systematically documented case by case.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company uses a centralized security information and event management system (SIEM) for automatic cyber event monitoring. All security alerts are directed to the IT security team, and events are documented for analysis.
+
+> **Logistics company**
+The logistics company has defined an operating model where suspicious login attempts or unauthorized changes to routing information trigger alerts to the security team, and the case is recorded for analysis.
+
+> **Water utility**
+The water utility organization leverages SCADA system logs to detect cyber disruptions. Critical anomalies are recorded and reported to the information security officer, and events are documented for audits.
+
+> **Power company**
+The energy company has implemented a cybersecurity operations center (SOC) that monitors and analyzes cyber anomalies in real-time. Events are automatically documented and reported to designated responsible persons.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Establish a contact point for reporting detected or suspected cybersecurity events, for example, a help desk. The contact information for this person, role, or group should be communicated to all function stakeholders. The contact person, role, or group must be familiar with cybersecurity practices and issues and be able to accurately document reported event information and potentially even perform basic troubleshooting. Alternatively or additionally, events can be reported through an internal system, such as a virtual help desk on the intranet.
+
+Related practices:
+
+- Progression: This practice is part of multiple practice progressions. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in the first progression include: RESPONSE-1a, RESPONSE-1b, RESPONSE-1c, RESPONSE-1f. The practices in the second progression include: RESPONSE-1a, RESPONSE-2f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-2">Event analysis and incident determination</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-2a">Criteria have been developed for determining cyber incidents.</PracticeTitle>
+
+### Significance
+
+Criteria developed for determining cyber incidents ensure that:
+- Anomalies are identified in a timely manner and their criticality is properly assessed.
+- The organization can respond in a timely manner and resources are allocated effectively.
+- Events are handled consistently, reducing human errors.
+- Reporting to authorities and stakeholders occurs in a controlled and compliant manner.
+
+Assessment questions:
+- Does the organization have predefined criteria for identifying cyber incidents?
+- Are the criteria based on the organization's risk assessments and operating environment?
+- Are the criteria applied consistently across different event assessments?
+- How are the criteria documented and are they updated regularly?
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no documented criteria for determining cyber incidents, or there is no information about it.
+- **Partially implemented**: Some criteria have been defined, but they do not cover all cyber incidents or are not applied consistently.
+- **Mostly implemented**: Comprehensive criteria exist for determining cyber incidents, but there are still development needs in implementation or maintenance.
+- **Fully implemented**: The criteria are documented, up to date, and applied systematically in all cyber event assessments.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company has defined criteria for security anomalies, such as suspicious system changes and data leakage. Anomalies are classified based on impact, and the most critical cases are immediately escalated.
+
+> **Logistics company**
+The logistics company has criteria by which cyber events, such as GPS signal interference or unauthorized access to transportation systems, are defined as anomalies and recorded for analysis.
+
+> **Water utility**
+The water utility organization uses SCADA system anomaly data and leverages predefined criteria to identify disruptions in electronic control systems.
+
+> **Power company**
+The energy company has clearly defined cyber incident criteria by which network infrastructure attacks or suspicious connection requests are classified and analyzed in real-time by the SOC team.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Cybersecurity incident declaration criteria are used to determine whether an event should be treated as an incident and to determine the severity of the event. A classification scale, such as high, medium, and low, can help communicate incident severity to stakeholders and assist in prioritizing response actions.
+
+Incident declaration criteria should be developed based on experience and can be partially derived from risk assessment criteria (such as impact thresholds) developed as part of risk management activities. Criteria may be based on event type (such as unauthorized access), impact level (e.g., local vs. organization-wide), impact type (internal systems vs. critical external services), compliance obligations (internal only vs. reportable event), or average recovery time. For some events, the time between event detection and incident declaration may be immediate, requiring little additional analysis. In other cases, the organization may want to leverage previously developed criteria to guide incident determination.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RESPONSE-2a, RESPONSE-2c, RESPONSE-2e, RESPONSE-2h.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-2b">Cyber events are analyzed to support the determination of possible cyber incidents.</PracticeTitle>
+
+### Significance
+
+Systematic cyber event analysis enables:
+- Early identification of anomalies and rapid response.
+- Improving system and process protection based on event analysis.
+- Consistent data collection and utilization in decision-making.
+- Identification of broader cyber threats, improving organizational resilience.
+
+Assessment questions:
+- Does the organization have methods and tools for event analysis?
+- Is analysis based on predefined incident criteria?
+- Does analysis identify recurring or hidden threats?
+- How are analysis results utilized in decision-making and risk management?
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no systematic analysis method for cyber events, or there is no information about it.
+- **Partially implemented**: Some events are analyzed, but analysis is not comprehensive or its results are not effectively utilized for incident determination.
+- **Mostly implemented**: Cyber events are analyzed systematically, but there is still room for improvement in analysis coverage or utilization.
+- **Fully implemented**: All cyber events are comprehensively analyzed according to predefined criteria, and analysis results support incident determination and risk management.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company uses an automatic log analysis system that searches for abnormal events in production equipment traffic and alerts the security team as needed.
+
+> **Power company**
+The energy company uses a cyber disruption analysis system that combines network monitoring data and security log data for automatic analysis, enabling critical anomalies to be identified and prevented.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Cybersecurity event analysis helps the organization gather additional information to resolve events and assist in incident declaration, handling, and response. Analysis may consist of event classification, correlation, and prioritization. Through analysis, the organization determines the event type and scope (e.g., physical vs. technical), whether the event correlates with other events (to determine if they are symptoms of a larger issue, problem, or hazard), and in what order events should be addressed or provided for incident determination, handling, and response. Analysis also helps the organization determine whether the event should be transferred to organizational or external personnel (outside incident management personnel) for further analysis and resolution.
+
+Related practices:
+
+- Input: Implementation of RESPONSE-1a provides input that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RESPONSE-2b, RESPONSE-2d, RESPONSE-2f, RESPONSE-2i.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-3">Response to events and incidents</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-3a">Appropriate personnel have been identified and assigned roles for responding to cyber incidents, at least on a case-by-case basis.</PracticeTitle>
+
+### Significance
+
+Identifying clearly named individuals and roles is critical because:
+- It ensures rapid and effective response to cyber incidents.
+- It reduces uncertainty and delays in critical situations.
+- It enables better collaboration between different teams and stakeholders.
+- It supports organizational resilience and continuity management.
+
+Assessment questions:
+- Has the organization appointed responsible persons for cyber incident management?
+- Has it been defined what tasks and responsibilities different individuals have when responding to cyber events?
+- Have appropriate personnel been trained and prepared for their role?
+- Does the organization have the capability to ensure that the right resources are available even in exceptional situations?
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no appointed responsible persons for cyber incident management, or there is no information about it.
+- **Partially implemented**: Some responsible persons have been appointed, but roles are not clear or documented.
+- **Mostly implemented**: Most necessary personnel have been identified and their roles defined, but there may still be room for practical improvement.
+- **Fully implemented**: All necessary personnel have been identified, roles are clearly defined and documented, and personnel are trained and prepared for their role.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company has appointed a security team responsible for responding to cyber events. Team members are trained and each has a clearly defined area of responsibility, such as IT infrastructure protection or collaboration with authorities.
+
+> **Water utility**
+The water utility's operational team has identified responsible persons who respond to system disruptions and security breaches. These individuals have been given clear operating models.
+
+> **Power company**
+The energy company has a cyber incident specialized SOC team consisting of security specialists and network supervisors. They have predefined roles and areas of responsibility that are regularly tested through exercises.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Define the roles and responsibilities needed to execute cybersecurity incident response actions and ensure that personnel are appointed to these roles and have the necessary skills. Personnel should be given sufficient autonomy and authority to perform their duties. The organization may develop job descriptions for cybersecurity incident response roles and responsibilities and track skill gaps and personnel availability shortfalls so that appropriate personnel can be hired as needed.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RESPONSE-3a, RESPONSE-3d, RESPONSE-3f, RESPONSE-3g, RESPONSE-3h, RESPONSE-3i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-3b">Response to cyber incidents limits impact on the function and restores operations to normal.</PracticeTitle>
+
+### Significance
+
+Well-organized response and recovery ensure that:
+- Cyber incident impacts remain as small as possible.
+- Operations can be quickly restored to normal without major disruptions.
+- Customers and stakeholders can trust organizational continuity.
+- Organizational reputation and financial losses are minimized.
+
+Assessment questions:
+- Does the organization have plans and operating models for responding to cyber incidents?
+- How does the organization limit cyber incident impacts and prevent their spread?
+- Are technical or operational methods in use, such as network segmentation, backup systems, or isolated environments?
+- Have recovery plans been tested and updated regularly?
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no plans or operating models for limiting cyber incident impacts and managing recovery.
+- **Partially implemented**: Some measures exist, but they do not cover all scenarios, are not documented, or their implementation is inconsistent.
+- **Mostly implemented**: A comprehensive plan exists for cyber incident management and operations recovery, but there are development needs in practical implementation or testing.
+- **Fully implemented**: The organization has comprehensive and regularly tested measures for cyber incident management, minimizing their impacts, and restoring operations.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company uses isolated backup systems and security exercises to ensure that in the event of a cyber incident, production processes can be quickly transferred to another environment and disruptions remain minimal.
+
+> **Power company**
+The energy company has critical system protection networks and contingency plans that allow an attacked network to be isolated and operations restored through backup connections.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Incident response describes actions the organization takes to prevent or limit incident impacts during or soon after it occurs. The scope, extent, and breadth of response vary greatly depending on the nature of the incident. This may include potential incidents that may result from new vulnerabilities or technological developments that could have significant potential impact on the organization, such as commonly used technology vulnerabilities (e.g., MS17-010) and new technologies that would reduce the effectiveness of current cybersecurity controls (e.g., quantum computing). Incident response can be as simple as communication to users to avoid opening certain types of email messages or as complex as implementing service continuity plans requiring transfer of services and functions to a remote service provider.
+
+Incident response activities may include, for example, damage containment (such as taking hardware or systems offline), communicating the disruption to asset owners, and developing and implementing corrective and monitoring actions.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RESPONSE-3b, RESPONSE-3e, RESPONSE-3h, RESPONSE-3i, RESPONSE-3l.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-3c">Reporting on cyber incidents is produced, for example, internally, to CERT-FI, or to applicable ISAC groups.</PracticeTitle>
+
+### Significance
+
+Systematic reporting ensures that:
+- Within the organization, the occurrence and impacts of cyber incidents are known.
+- Management and IT teams can make informed decisions in risk management.
+- The organization meets statutory and contractual reporting obligations.
+- CERT-FI and ISAC groups receive valuable information that helps other organizations protect against similar threats.
+
+Assessment questions:
+- Does the organization have a defined process for cyber incident reporting?
+- To which parties does the organization report cyber incidents (e.g., management, IT team, CERT-FI, ISAC groups)?
+- Have reporting timelines and responsibilities been defined?
+- Are standardized reporting formats and channels used?
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no clear reporting practice for cyber incidents, or there is no information about it.
+- **Partially implemented**: Some cyber incidents are reported internally or externally, but the reporting process is not systematic or comprehensive.
+- **Mostly implemented**: The reporting process is established and covers most cyber incidents, but there may still be development in its coverage or documentation.
+- **Fully implemented**: The organization has a clearly defined reporting practice that covers both internal and external reporting and is followed systematically.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company reports cyber incidents internally to the IT security team and senior management and externally to the food industry ISAC group and CERT-FI if the incident affects the broader supply chain.
+
+> **Water utility**
+The water utility sends reports of serious cyber incidents to the national CERT organization and local authorities so that the cybersecurity situation can be assessed and potential impacts on other facilities can be prevented.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Personnel responding to cybersecurity incidents must know what information about incidents should be reported to different internal and external stakeholders, on what timeline, and whether there are limitations (such as legal review of information to be shared). If possible, assign responsibility for incident reporting throughout its duration to one person to keep communication consistent as the event progresses. Keep stakeholder contact information up to date. Stakeholders may include personnel such as legal representatives who are not directly involved in incident response but need to be informed to maintain organizational operations.
+
+Related practices:
+
+- Information sharing: This practice is part of a group of cross-cutting practices that enable information sharing with organizational stakeholders. These include: THREAT-1i, THREAT-2h, THREAT-2k, RISK-1c1d, SITUATION-3a, SITUATION-3c, SITUATION-3d, SITUATION-3e, RESPONSE-2g, RESPONSE-3c, RESPONSE-3f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-4">Cybersecurity as part of business continuity</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-4a">The organization has developed business continuity plans that enable function operations to be maintained and restored in the event of a cyber event or incident.</PracticeTitle>
+
+### Significance
+
+A well-planned and tested business continuity plan ensures that:
+- **Cyber incidents do not paralyze the organization's core operations.** Systems and processes are designed to withstand and recover from disruptions.
+- **The organization can continue critical services even during an attack or technical disruption.** Manual measures and backup systems ensure continuity.
+- **Resources and measures are pre-planned and can be quickly and effectively deployed.** This reduces financial and operational losses.
+- **Plans focus on managing disruption consequences and are based on various possible events.** These may include, for example, data breaches, ransomware attacks, or system outages.
+- **Safe shutdown is part of continuity planning.** If operations cannot be safely continued, the organization has predefined processes for controlled system shutdown.
+
+Assessment questions:
+- Does the organization have a documented business continuity plan (BCP)?
+- Does the plan cover different cyber threats and their consequences?
+- Does the plan include concrete measures for managing disruption situations and restoring operations?
+- Has the organization defined critical roles and individuals responsible for continuity management?
+- Has the plan been tested and is it updated regularly?
+- Does the plan also include a safe shutdown process if operations cannot be safely continued?
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no business continuity plan or it does not consider cybersecurity risks.
+- **Partially implemented**: A continuity plan exists, but cyber event handling is not comprehensive or the plan does not include detailed measures for restoring operations.
+- **Mostly implemented**: The continuity plan includes cybersecurity-related risks and recovery actions, but there are still development needs in its practical implementation (e.g., testing deficiencies).
+- **Fully implemented**: The organization has a comprehensive, documented, and regularly tested business continuity plan that considers cyber incidents and includes concrete operating models for disruption management and safe shutdown.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company's continuity plan includes cybersecurity preparedness, such as backup systems in production management and network segmentation, so that cyberattacks do not affect the entire production process. Additionally, the plan defines how production can be transferred to another production facility or, if necessary, use manual backup systems.
+
+> **Water utility**
+The water utility organization has developed a continuity plan for its systems where backup systems and a separate crisis team ensure water distribution even in cyber disruption situations. The plan describes procedures for transitioning to manual control if automation systems are under attack.
+
+> **Power company**
+The energy company uses a segmented network structure and offline backups to ensure that cyber incidents do not disrupt electricity distribution. The continuity plan is tested annually through crisis exercises and includes scenarios where information systems are unavailable and power grid control is transferred to backup centers.
+
+### Additional information
+
+Continuity plans include:
+- **Descriptions of actions the organization takes to maintain and restore operations in disruption situations.** For example, transitioning to backup systems, additional facilities, or using manual processes.
+- **Key roles and responsibilities in disruption situations.** Who is responsible for which actions?
+- **Focus on consequence management.** Plans are based on various possible events that may cause disruptions.
+- **Safe shutdown process.** If operations cannot be safely continued, the plan provides means for controlled system shutdown and data protection.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Continuity plans include descriptions of actions the organization takes to maintain and restore function operations in disruption situations (for example, transitioning to additional facilities or initiating manual procedures), as well as key roles that must be involved/participate. Plans typically focus on managing the consequences of disruption in the organization and are based on various possible events that may cause disruptions.
+
+Continuity plans address the organization's most critical business functions to ensure they continue during different types of emergency situations. Organizations may also consider how safe shutdown is implemented as part of continuity planning.
+
+Related practices:
+
+- Input: Implementation of ARCHITECTURE-2j provides input that may be useful in assessing and implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RESPONSE-4a, RESPONSE-4d, RESPONSE-4e, RESPONSE-4f, RESPONSE-4g, RESPONSE-4m, RESPONSE-4p.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-4b">Backups of information are available and backup functionality is tested at least randomly.</PracticeTitle>
+
+### Significance
+
+Reliable backup practices and regular testing ensure that:
+- **The risk of data loss is minimized.** Backups can restore critical data and systems, for example, after a cyberattack or hardware failure.
+- **Ransomware attack impacts can be countered.** If data is encrypted in an attack, clean backups enable system restoration without paying ransoms.
+- **Business continuity is secured.** Backup covers the organization's operational data, configuration files, and disk images, enabling rapid recovery.
+- **Backup integrity and functionality are verified.** By testing recovery processes, the organization can ensure that backups actually work in crisis situations.
+
+Assessment questions:
+- Does the organization have a defined and documented backup policy?
+- Are all critical data repositories backed up regularly?
+- Do backups consider different IT and OT environments, such as cloud services, mobile repositories, and third-party managed data?
+- Are backups stored securely and is their integrity verified?
+- Is backup restoration tested regularly?
+- Is the backup plan based on the organization's risk assessment?
+
+Data repository backup may include:
+- **Operational data:** Customer records, order and production data.
+- **Setpoints:** Control system and automation system configurations.
+- **Configuration files:** Server, network device, and application settings.
+- **Storage locations:** Critical data in cloud services and local systems.
+- **Critical system images:** Golden images, disk images, virtual machine backups.
+
+Backup procedures should include:
+- **How often to back up?** Daily, weekly, or as otherwise needed.
+- **Retention periods:** How long backups are retained in different locations.
+- **Authorized storage locations and methods:** Where backups are stored and how they are protected.
+- **Encryption and protection requirements:** Protecting backups from unauthorized use.
+- **Testing standards:** How often backup restoration is tested.
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no backup policy, or data is not backed up regularly.
+- **Partially implemented**: Backups are made, but their coverage is incomplete or recovery testing is not performed.
+- **Mostly implemented**: Backups cover the most important data and recovery tests are conducted randomly, but there are still development needs in backup practices.
+- **Fully implemented**: The organization backs up data comprehensively, backups are stored securely, and recovery tests are conducted regularly to ensure their functionality.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company has a regular backup policy where production management systems and customer data are stored securely in different locations. Recovery tests are conducted quarterly, and backups are stored encrypted in a separate environment.
+
+> **Water utility**
+The water utility organization uses separate offline backups of system data that can be restored in critical situations. System restoration is tested at least semi-annually.
+
+> **Power company**
+The energy company has a multi-tiered backup system where production data and customer records are copied to separate backup systems. Testing is done automatically monthly, and recovery data is verified as part of risk management.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+This practice is essential for restoring functions after data loss or hardware failure. The organization makes and makes available backups of data repositories at least occasionally. When identifying data repositories to back up, organizations should consider data located in different types of IT and OT environments, such as virtualized repositories, regulated repositories, cloud repositories, BYOD (Bring Your Own Device) repositories, third-party managed repositories, field repositories, and mobile repositories. Backups are tested to ensure they are functional and available when needed. Action plans for implementing and managing backups should be based on risk to the function or organization. This practice initiates a practice progression that continues in MIL2 and focuses on data backup.
+
+Data repository backup may include:
+
+- operational data
+- setpoints
+- configuration files
+- storage locations
+- copies of important configuration baselines, golden images, disk images, and virtual machine images.
+Backup procedures typically include:
+- how often to back up
+- retention periods
+- authorized storage locations and methods
+- encryption and protection requirements; testing standards
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RESPONSE-4b, RESPONSE-4f, RESPONSE-4j, RESPONSE-4k.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-4c">IT equipment and potential OT equipment requiring spare parts have been identified.</PracticeTitle>
+
+### Significance
+
+IT and OT equipment spare parts management is critical because:
+- **Reduces operational interruptions.** Rapid equipment repair and spare parts availability ensure business continuity.
+- **Improves cyber resilience.** Hardware failures can result from cyberattacks, and rapid recovery minimizes risks.
+- **Maintains system reliability.** Spare parts for older or rare systems may be difficult to obtain without advance planning.
+- **Optimizes costs.** Advance spare parts planning reduces unexpected costs and prevents critical component market depletion.
+
+Assessment questions:
+- Has the organization identified critical IT and OT equipment requiring spare parts or replacement components?
+- Are spare parts stored on-site or procured as needed?
+- Have the spare parts supply chain and storage practices been considered?
+- Has the spare parts management plan been updated and reviewed regularly?
+- Has spare parts need been assessed based on risks and prioritized for the most important equipment?
+
+Organizations should identify the following IT and OT equipment requiring spare parts:
+**IT assets:**
+  - Switches
+  - Routers
+  - Servers
+  - Communication networks
+  - Virtualized resources
+**OT assets:**
+  - Controllers
+  - Sensors
+  - Monitoring and automation systems
+  - SCADA systems
+  - Networked IoT devices
+
+<AnswerOptions>
+- **Not implemented or no information**: IT and OT equipment requiring spare parts have not been identified or there is no plan for their management.
+- **Partially implemented**: Some spare parts and critical equipment have been identified, but a comprehensive spare parts plan has not been made.
+- **Mostly implemented**: Most critical IT and OT equipment have been identified and a spare parts plan exists, but there may still be development needs in its implementation.
+- **Fully implemented**: All critical IT and OT equipment have been identified, spare parts availability is planned and documented, and the plan is updated regularly.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+Food industry automation systems and production machines require special spare parts. The company maintains a stock of critical parts and agreements with suppliers to ensure rapid service.
+
+> **Water utility**
+The water utility organization uses system-connected valves and pumps that require special control components. Spare parts have been identified and stored in strategic locations.
+
+> **Power company**
+The energy company has a spare parts plan for critical OT systems that considers the availability of transformers, control units, and electrical distribution network components.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+This practice is essential for restoring organizational operations if assets are lost or fail. The organization identifies, at least on a case-by-case basis, those IT and OT assets whose spare parts may be needed. This practice initiates an operational progression that continues in MIL2 and focuses on spare or replacement assets.
+
+These are examples of spare or replacement IT and OT assets:
+
+- switches
+- routers
+- controllers
+- sensors
+- virtualized resources
+- systems on which assets rely, such as communication networks.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: RESPONSE-4c, RESPONSE-4f, RESPONSE-4l.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 3/17/2025_

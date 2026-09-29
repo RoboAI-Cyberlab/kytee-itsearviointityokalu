@@ -1,0 +1,293 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Hantering av partnernätverk risker
+
+<Roles>
+- Ledning för cybersäkerhet
+- IT-ledning
+- OT-ledning
+- Upphandlingsspecialist
+- Representant för partnernätverks leverantörshantering
+- Specialist för partnernätverks riskhantering
+- Representant för personalresurser
+- Representant för juridiska avdelningen
+- IT- och OT-teamspecialist ansvarig för att ordna logisk och fysisk åtkomst
+</Roles>
+
+---
+<ObjectiveTitle name="third-parties-1">Partnernätverks identifiering och prioritering</ObjectiveTitle>
+---
+
+<PracticeTitle name="third-parties-1a">Betydande partnernätverks IT-beroenden och potentiella OT-beroenden har identifierats</PracticeTitle>
+
+### Betydelse
+
+Att identifiera partnernätverks IT- och OT-beroenden är kritiskt eftersom:
+- **Verksamhetskontinuitet beror på nyckeltjänster.** Till exempel kan IT-tjänsteavbrott på grund av partnerproblem påverka verksamheten avsevärt.
+- **Tredjepartscybersäkerhet påverkar organisationen.** Dåliga säkerhetsmetoder hos underleverantörer eller tjänsteleverantörer kan leda till dataintrång och andra risker.
+- **Incidenthantering blir mer effektiv.** När beroenden identifieras och dokumenteras kan organisationen reagera snabbare och mer effektivt på partnerrelaterade problem.
+- **Riskhanteringstransparens förbättras.** När IT- och OT-beroendehantering är i ordning kan organisationen bedöma och hantera risker proaktivt.
+
+Bedömningsfrågor:
+- Har organisationen identifierat viktiga IT- och OT-tjänsteleverantörer som den är beroende av?
+- Inkluderar identifieringen både interna och externa partner som påverkar verksamhetskontinuitet?
+- Har information relaterad till IT- och OT-beroenden samlats in, dokumenterats och uppdateras regelbundet?
+- Är partnernätverksrisker en del av organisationens övergripande riskhanteringsplan?
+- Är beroendeuppgifter tillgängliga för de som är ansvariga för tredjepartsriskhantering?
+
+### Beroenden att identifiera:
+
+**IT-beroenden kan inkludera:**
+- Molntjänstleverantörer
+- IT-infrastrukturunderhållare
+- Applikations- och programvaruleverantörer
+- Datanätverk och telekommunikationsleverantörer
+- IT-konsult- och incidenthanteringstjänster
+
+**OT-beroenden kan inkludera:**
+- Automationssystemleverantörer
+- Övervaknings- och kontrollsystem (SCADA, DCS) underhållare
+- Nätverksanslutna enheter och IoT-lösningsleverantörer
+- Utrustningsleverantörer vars reservdelar och underhållstjänster organisationen är beroende av
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: IT- och OT-beroenden har inte identifierats eller dokumenterats.
+- **Delvis implementerad**: Vissa beroenden har identifierats, men en omfattande lista eller systematisk dokumentation saknas.
+- **Mestadels implementerad**: De flesta IT- och OT-beroenden har identifierats och dokumenterats, men uppdateringsmetoder eller riskhanteringsprocesser kan vara otillräckliga.
+- **Helt implementerad**: Alla viktiga IT- och OT-beroenden har identifierats, dokumenterats och uppdateras regelbundet. Beroendeuppgifter är tillgängliga för de som är ansvariga för tredjepartsriskhantering.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget har identifierat kritiska beroenden av IT-tjänsteleverantörer, såsom ERP-system och produktionskontrollsystemunderhållare. Dessutom är reservdelar och automationssystemunderhållstjänster viktiga OT-beroenden med en etablerad riskhanteringsprocess.
+
+> **Vattenbolag**
+Vattenbolaget har identifierat viktiga system- och telekommunikationstjänstleverantörer vars tillgänglighet är kritisk för vattendistributionskontinuitet. Organisationen hanterar också proaktivt beroenden av reservdelar och underhållstjänster.
+
+> **Energibolag**
+Energibolaget har identifierat och dokumenterat beroenden av IT-tjänsteleverantörer, kritiska OT-system och reservdelsleverantörer. Denna information används i riskhantering och som en del av verksamhetskontinuitetsplanering.
+
+### Ytterligare information
+
+- **Identifiera och underhåll grundläggande information om interna och externa parter** som behövs för kontinuerlig funktionsprestanda.
+- **Leverantörsberoenden kan inkludera:**
+  - Informationsteknik tjänsteleverantörer
+  - Incidenthanteringskonsulter
+  - Utrustningsleverantörer
+- **Tredje parter kan stödja organisationens IT- eller OT-utrustning och operativa aktiviteter.**
+- **Insamlad information bör underhållas i ett format tillgängligt för de som är ansvariga för tredjepartsriskhantering.**
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Identifiera och underhåll grundläggande information om interna och externa parter som kan behövas för kontinuerlig funktionsprestanda. Leverantörsberoenden kan inkludera till exempel informationsteknik tjänsteleverantörer, incidenthanteringskonsulter och utrustningsleverantörer. Tredje parter kan stödja organisationens IT- eller OT-utrustning och operativa aktiviteter. Insamlad information bör underhållas i ett format tillgängligt för de som är ansvariga för tredjepartsriskhantering.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: THIRD-PARTIES-1a, THIRD-PARTIES-1b, THIRD-PARTIES-1c, THIRD-PARTIES-1d, THIRD-PARTIES-1e, THIRD-PARTIES-1f.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="third-parties-1b">Partnernätverksaktörer/tjänsteleverantörer med åtkomst, administrativa rättigheter eller underhållsansvar, eller som på annat sätt får tillgång till funktionskritiska enheter, programvara eller datalager, har identifierats</PracticeTitle>
+
+### Betydelse
+
+Att identifiera och hantera tredjepartadministrativa rättigheter är kritiskt eftersom:
+- **Åtkomsträttigheter kan vara en säkerhetsrisk.** Partnernätverksaktörer kan få tillgång till känslig information, vilket kan öka säkerhetsrisker.
+- **Angripare kan använda partner som en väg till organisationssystem.** Till exempel kan underleverantördataintrång påverka organisationen om åtkomsträttigheter inte är tillräckligt begränsade.
+- **IT- och OT-systemhantering och underhåll är en del av organisatorisk cyberresiliens.** Om partnernätverksaktörer inte följer säkerhetskrav kan organisationen utsättas för risker.
+- **Datahantering stödjer verksamhetskontinuitet.** Att veta vem som hanterar viktiga enheter och programvara möjliggör bättre beredskap för störningar.
+
+Bedömningsfrågor:
+- Har organisationen en uppdaterad lista över interna och externa aktörer med tillgång till viktiga IT- och OT-system?
+- Har det identifierats vilken information, enheter eller programvara varje aktör kan använda, hantera eller underhålla?
+- Har organisationen bedömt hur omfattande partneråtkomsträttigheter är och hur de övervakas?
+- Finns det avtal eller procedurer för att hantera tredjepartsåtkomsträttigheter och relaterade risker?
+- Är det känt vilka tredje parter som hanterar IT- eller OT-enheter, datalager eller programvara?
+
+### Aktörer och tjänsteleverantörer att identifiera
+
+Organisationen bör underhålla en **lista** över följande aktörer:
+
+- **IT-tjänsteleverantörer och underleverantörer** med tillgång till företagets IT-infrastruktur.
+- **Molntjänstleverantörer** som bearbetar eller lagrar organisationsdata.
+- **Programvaruunderhållare och utvecklare** som kan få tillgång till organisationssystem.
+- **OT-systemleverantörer** som hanterar eller underhåller SCADA-, automations- och IoT-system.
+- **Datalagerhanterare**, såsom datacenter, arkivtjänster och outsourcade IT-lösningar.
+- **Interna parter**, såsom IT-avdelningen eller andra enheter med särskilda administrativa rättigheter.
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Organisationen har ingen lista över partnernätverksaktörer med administrativa rättigheter eller tillgång till kritiska system.
+- **Delvis implementerad**: Vissa aktörer och tjänsteleverantörer har identifierats, men omfattande dokumentation saknas eller är inte uppdaterad.
+- **Mestadels implementerad**: De flesta nyckelpartner har identifierats och dokumenterats, men administrativa rättigheter eller åtkomstmetoder har inte helt bedömts eller övervakats.
+- **Helt implementerad**: Alla relevanta partnernätverksaktörer har identifierats, dokumenterats och åtkomsträttigheter hanteras och övervakas regelbundet.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget har identifierat IT-tjänsteleverantörer som underhåller produktionshanteringssystem och OT-leverantörer ansvariga för automationssystemdrift. Åtkomsträttigheter är begränsade och dokumenterade.
+
+> **Vattenbolag**
+Vattenbolaget har kartlagt tjänsteleverantörer relaterade till systemhantering och datacenter där operativ vattendriftsdata lagras. Listan är en del av riskhanteringsprocessen.
+
+> **Energibolag**
+Energibolaget underhåller en uppdaterad lista över tjänsteleverantörer med tillgång till kritiska kontrollsystem, såsom kraftdistributionshantering. Underhållsavtal inkluderar säkerhetskrav och åtkomstbegränsningar.
+
+### Ytterligare information
+
+- **Skapa och underhåll en lista** som inkluderar grundläggande information om viktiga interna och externa parter med tillgång, hantering eller innehav av IT- eller OT-enheter eller datalager.
+- **För vissa tredje parter, såsom företagets IT-avdelning, kan dessa viktiga relationer vara helt interna.**
+- **Insamlad information bör underhållas i ett format tillgängligt för de som är ansvariga för tredjepartsriskhantering.**
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Skapa och underhåll en lista som inkluderar grundläggande information om viktiga interna och externa parter med tillgång, hantering eller innehav av IT-, OT-enheter eller datalager. För vissa tredje parter, såsom företagets IT-avdelning, kan dessa viktiga relationer vara helt interna.
+
+Relaterade metoder:
+
+- Input: Implementering av ASSET-1a och ASSET-2a tillhandahåller information som kan vara användbar vid implementering av denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: THIRD-PARTIES-1a, THIRD-PARTIES-1b, THIRD-PARTIES-1c, THIRD-PARTIES-1d, THIRD-PARTIES-1e, THIRD-PARTIES-1f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="third-parties-2">Partnernätverks riskhantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="third-parties-2a">Leverantörs- och andra partnernätverksaktörsval påverkas av bedömning av deras cybersäkerhetskapacitet.</PracticeTitle>
+
+### Betydelse
+
+Att bedöma leverantörscybersäkerhet är kritiskt eftersom:
+- **Tredjepartssårbarheter kan direkt påverka organisationen.** Många cyberattacker riktar sig mot underleverantörer och leverantörer genom vilka angripare får tillgång till större mål.
+- **Att definiera säkerhetskrav minskar risker.** När leverantörer krävs upprätthålla en viss cybersäkerhetsnivå säkerställer organisationen att samarbetspartner uppfyller minimikrav.
+- **Tidigare cyberincidenter kan indikera leverantörscybersäkerhetsmetoder.** Om en partner tidigare har upplevt betydande dataintrång kan detta vara ett varningstecken.
+- **Att skydda kritisk infrastruktur kräver åtkomsthantering.** När tredjepartspersonal har tillgång till organisationssystem bör deras bakgrund verifieras.
+- **Tydliga rapporteringskrav förbättrar responskapacitet.** Om en leverantör upplever en säkerhetsbrott kan organisationen reagera snabbt om anmälan definieras i avtalet.
+
+Bedömningsfrågor:
+- Är leverantörs- och partnercybersäkerhet en del av organisationens urvalskriterier?
+- Finns det säkerhetskrav som leverantörer måste uppfylla innan kontraktsundertecknande?
+- Bedöms leverantörs tidigare cybersäkerhetsincidenter och riskhanteringsmetoder?
+- Genomför organisationen bakgrundskontroller av tredjepartspersonal med tillgång till kritiska system?
+- Finns det krav på rapportering av säkerhetsbrott och cybersäkerhetsincidenter?
+
+Organisationen bör överväga följande vid bedömning av leverantörscybersäkerhetskapacitet:
+
+**Cybersäkerhetshanteringsnivå:**
+  - Leverantörer bör ha säkerhetscertifieringar, såsom ISO 27001, NIST CSF eller motsvarande hanteringssystem.
+**Cyberincidentbedömning:**
+  - Leverantörs tidigare cyberattacker och deras hantering beaktas i urvalsprocessen.
+**Personalbakgrundskontroller:**
+  - Säkerhetsprövningar kan genomföras för tredjepartspersonal med tillgång till kritiska system.
+**Säkerhetsbrottsanmälan:**
+  - Avtal kan inkludera skyldighet att anmäla säkerhetsbrott och andra incidenter till organisationen.
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Leverantörscybersäkerhetskapacitet bedöms inte som en del av urvalsprocessen.
+- **Delvis implementerad**: Vissa cybersäkerhetskrav är definierade, men bedömningen är inte systematisk eller omfattande.
+- **Mestadels implementerad**: Cybersäkerhetskrav ställs för de flesta leverantörer, och tidigare säkerhetsbrott beaktas, men praktisk implementering kan fortfarande behöva utveckling.
+- **Helt implementerad**: Tydliga cybersäkerhetskrav ställs för alla leverantörer, tidigare cyberincidenter bedöms, bakgrundskontroller genomförs vid behov och säkerhetsbrottsrapportering definieras i avtal.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Livsmedelsföretaget bedömer cybersäkerhet hos IT-system och logistikleverantörer som en del av urvalsprocessen. Leverantörer krävs ha ISO 27001-certifiering och rapportera potentiella säkerhetsbrott.
+
+> **Vattenbolag**
+Vattenbolaget kräver att systemleverantörer uppfyller cybersäkerhetskrav och genomför säkerhetsprövningar för personal med tillgång till kritiska system.
+
+> **Energibolag**
+Energibolaget bedömer cybersäkerhetskapacitet hos varje kritisk systemleverantör innan kontraktsundertecknande. Krav inkluderar att upprätthålla säkerhetscertifieringar, bakgrundskontroller och skyldighet att rapportera säkerhetsbrott inom 24 timmar.
+
+### Ytterligare information
+
+**Cybersäkerhetskrav för leverantörer och andra tredje parter kan inkludera:**
+  - Att upprätthålla en viss cybersäkerhetshanteringsimplementeringsnivå (t.ex. ISO 27001, NIST CSF).
+  - Bedömning av tredjepartsprevious cyberincidenter.
+  - Bakgrundskontroller för personal med tillgång till kritiska tillgångar.
+  - Krav på rapportering av säkerhetsbrott och andra cybersäkerhetsincidenter.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Cybersäkerhetskrav för leverantörer och andra tredje parter kan inkludera till exempel att upprätthålla en viss cybersäkerhetshanteringsimplementeringsnivå, bedömning av tredjepartsprevious cyberincidenter, bakgrundskontroller för personal med tillgång till kritiska tillgångar och krav på rapportering av säkerhetsbrott och andra cybersäkerhetsincidenter.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: THIRD-PARTIES-2a, THIRD-PARTIES-2d.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="third-parties-2b">Produkt- och tjänsteval påverkas av bedömning av deras cyberkapacitet.</PracticeTitle>
+
+### Betydelse
+
+Att bedöma produkt- och tjänstecyberkapacitet är kritiskt eftersom:
+- **Svag cybersäkerhet kan utsätta organisationen för attacker.** Många produkter och tjänster innehåller komponenter som angripare kan rikta sig mot för dataintrång.
+- **Organisationen kan bli mål för säkerhetsbrott genom underleverantörer.** Om tjänsteleverantörscybersäkerhet inte är på en adekvat nivå kan detta utgöra en betydande risk.
+- **Säkerhetsinställningar kan direkt påverka säkerheten.** Om onödiga eller riskfyllda funktioner inte kan tas bort från produkter kan de förbli outnyttjade eller skapa säkerhetsluckor.
+- **Tjänstanvändningsvillkor kan innehålla säkerhetsförsvagande punkter.** Om användningsvillkor tillåter till exempel datadelning med tredje parter kan detta utgöra en risk för organisationen.
+
+Bedömningsfrågor:
+- Har organisationen definierat cybersäkerhetskrav för upphandlade produkter och tjänster?
+- Har produkt- och tjänstesäkerhet bedömts innan driftsättning?
+- Inkluderar bedömningen information om vilka komponenter som används i produkten och hur de kan påverka säkerheten?
+- Kan säkerhetsförsvagande eller onödiga funktioner tas bort från produkter?
+- Har tjänstanvändningsvillkor verifierats och uppfyller de cybersäkerhetskrav?
+
+### Produkt- och tjänstecybersäkerhetskrav
+
+Organisationen bör överväga följande vid produkt- och tjänsteval:
+
+- **Borttagbara funktioner:**
+  - Kan onödiga eller säkerhetsförsvagande funktioner inaktiveras?
+- **Komponenttransparens:**
+  - Är det känt vilka programvaru- och hårdvarukomponenter som har använts i produkten?
+  - Inkluderar produkten tredjepartsprogramvara eller open source-komponenter vars säkerhet inte har bedömts?
+- **Tjänstanvändningsvillkor:**
+  - Innehåller användningsvillkor tydliga cybersäkerhetskrav, såsom dataskydd, åtkomsthantering och potentiell säkerhetsbrottsanmälan?
+  - Är det definierat hur tjänsteleverantören ansvarar för cybersäkerhet och hur säkerhetsincidenter hanteras?
+
+<AnswerOptions>
+- **Inte implementerad eller ingen information**: Produkt- och tjänstecyberkapacitet bedöms inte innan upphandling.
+- **Delvis implementerad**: Vissa cybersäkerhetskrav är definierade för produkter och tjänster, men deras bedömning är inte systematisk eller omfattande.
+- **Mestadels implementerad**: De flesta upphandlade produkter och tjänster bedöms ur ett cybersäkerhetsperspektiv, men praktisk implementering kan fortfarande behöva utveckling.
+- **Helt implementerad**: Alla upphandlade produkter och tjänster genomgår systematisk cybersäkerhetsbedömning som beaktar potentiella säkerhetsluckor, komponenttransparens och användningsvillkorskrav.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget upphandlar produktionskontrollsystem vars cybersäkerhet bedöms innan driftsättning. Produktsäkerhet säkerställs genom att analysera deras komponenter och ta bort onödiga nätverksanslutningar.
+
+> **Vattenbolag**
+Vattenbolaget säkerställer att komponenter upphandlade för kritiska övervakningssystem uppfyller cybersäkerhetsstandarder. Kontrollsystemkomponentsäkerhet analyseras innan installation.
+
+> **Energibolag**
+Energibolaget kräver att alla upphandlade SCADA- och automationssystem uppfyller internationella säkerhetsstandarder och att användningsvillkor inkluderar tydliga säkerhetskrav.
+
+### Ytterligare information
+
+**Cybersäkerhetskrav för produkter och tjänster kan inkludera:**
+  - Förmåga att inaktivera vissa produktfunktioner.
+  - Tydlig förståelse för komponenter som används i produkten.
+  - Tjänstanvändningsvillkor som uppfyller cybersäkerhetskrav.
+
+<CollapsibleSection title="Cybermätare version 2.1">
+Cybersäkerhetskrav för produkter och tjänster kan inkludera till exempel förmåga att inaktivera vissa produktfunktioner, tydlig förståelse för komponenter som används i produkten och tjänstanvändningsvillkor som uppfyller cybersäkerhetskrav.
+
+Relaterade metoder:
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer fullständiga eller avancerade implementeringar av en aktivitet. Metoderna i denna progression inkluderar: THIRD-PARTIES-2b, THIRD-PARTIES-2i, THIRD-PARTIES-2j, THIRD-PARTIES-2k, THIRD-PARTIES-2l, THIRD-PARTIES-2m.
+</CollapsibleSection>
+
+---
+
+_Vägledningen uppdaterad: 17.3.2025_

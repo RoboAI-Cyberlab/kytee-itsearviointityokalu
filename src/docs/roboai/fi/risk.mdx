@@ -1,0 +1,264 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Riskienhallinta
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- yrityksen riskienhallinnasta vastaava asiantuntija
+- kyberturvallisuusriskeistä vastaava asiantuntija
+- sisäisen tarkastuksen edustaja
+- lakiosaston edustaja
+</Roles>
+
+---
+<ObjectiveTitle name="risk-1">Kyberriskienhallinnan suunnitelma</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-1a">Organisaation kyberriskienhallintaa ohjaa suunnitelma (esimerkiksi strategia tai vastaava johtotason politiikka). Kehittämisen ja ylläpidon ei tarvitse olla systemaattista ja säännöllistä</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatiolla selkeä suunnitelma tai strategia, joka määrittää, miten kyberriskejä tunnistetaan, arvioidaan, hallitaan ja seurataan? Sisältääkö suunnitelma linjaukset siitä, miten se tukee organisaation laajempia tavoitteita ja määrittää hyväksyttävän riskitason? Onko strategiassa esitetty konkreettiset tavat, joilla riskeihin reagoidaan, kuten niiden pienentäminen, siirtäminen, välttäminen tai hyväksyminen?
+
+### Merkitys
+
+Kyberriskienhallintasuunnitelma on keskeinen osa organisaation kyberturvallisuusohjelmaa. Se luo yhteisen näkemyksen kyberriskeistä ja antaa suuntaviivat niiden hallintaan. Hyvin määritelty suunnitelma auttaa organisaatiota priorisoimaan resursseja, tunnistamaan tärkeimmät riskit ja varautumaan häiriötilanteisiin. Se myös tukee organisaation strategisten tavoitteiden saavuttamista varmistamalla, että kyberriskejä hallitaan osana laajempaa riskienhallintastrategiaa. 
+
+<Box>
+### Vastausohjeet
+
+Arvioi, missä määrin organisaation kyberriskienhallintasuunnitelma on olemassa ja toimiva:
+- **Ei toteutettu tai ei tietoa**: Suunnitelmaa ei ole olemassa tai tietoa ei ole saatavilla.
+- **Osittain toteutettu**: Suunnitelma on olemassa, mutta se on puutteellinen tai sitä ei käytetä johdonmukaisesti.
+- **Enimmäkseen toteutettu**: Suunnitelma on kattava, mutta sen toteutuksessa tai päivityksessä on parantamisen varaa.
+- **Täysin toteutettu**: Suunnitelma on kattava, ajan tasalla ja sitä käytetään systemaattisesti.
+</Box>
+
+### Esimerkki
+
+Yrityksellä on kyberriskienhallintastrategia, joka sisältää tavoitteet ja suunnitelman riskien tunnistamiseen, analysointiin, hallintaan ja seurantaan. Strategia kattaa riskien arviointikriteerit, priorisointiprosessit ja reagointitoimenpiteet, kuten riskin siirtämisen vakuutusten kautta ja riskin pienentämisen teknisin keinoin.
+
+Vaikka strategian ylläpito ei ole vielä täysin systemaattista, tärkeimmät riskikohteet, kuten toimitusketjun häiriöt ja tietovuotoriskit, on tunnistettu. Esimerkiksi ERP- ja OT-järjestelmien haavoittuvuuksien analyysi on osa strategian mukaista toimintaa.
+
+Yritys aikoo kehittää strategiaa ottamalla käyttöön säännöllisen arviointiprosessin, joka varmistaa sen jatkuvan ajantasaisuuden. Tavoitteena on myös lisätä henkilöstön kyberturvallisuuskoulutuksia ja kehittää riskienhallintaprosesseja, jotta organisaatio voi reagoida entistä tehokkaammin muuttuviin uhkiin. 
+
+<CollapsibleSection title="Esimerkkidokumentti">
+### Kyberturvallisuuden riskienhallintastrategia - Elintarvike Oy
+
+### Johdanto
+
+Elintarvikeyritys Oy toimii kansainvälisillä elintarvikemarkkinoilla ja on sitoutunut takaamaan liiketoiminnan jatkuvuuden, asiakkaidensa tietoturvan sekä lainsäädännön ja standardien noudattamisen. Tämä kyberturvallisuuden riskienhallintastrategia kuvaa yrityksen lähestymistavan kyberriskien tunnistamiseen, analysointiin, hallintaan ja niihin reagoimiseen.
+
+### Strategian tavoitteet
+
+- Tunnistaa, arvioida ja priorisoida Elintarvike Oy:n kyberriskit.
+- Kehittää ja ylläpitää prosesseja, jotka varmistavat tehokkaan reagoinnin kyberuhkiin.
+- Suojata liiketoiminnan kriittiset tiedot, prosessit ja järjestelmät.
+- Lisätä henkilöstön kyberturvallisuustietoisuutta ja -osaamista.
+- Varautua jatkuvuudenhallintaan kyberuhkatilanteissa.
+
+### Toimenpiteet ja aktiviteetit
+
+1. Kyberriskien tunnistaminen
+
+- Luodaan ja päivitetään jatkuvasti kattava riskikartoitus elintarviketuotannon, toimitusketjun ja asiakastiedon suojauksen osalta.
+- Hyödynnetään alan uhkamalleja ja ajantasaisia raportteja (esim. CERT ja ENISA).
+- Toteutetaan säännölliset haavoittuvuustarkastukset.
+
+2. Kyberriskien analysointi ja priorisointi
+
+- Riskit ryhmitellään kolmeen pääkategoriaan:
+  a) Liiketoimintaprosessit (esim. toimitusketjun häiriöt).
+  b) Tietotekniset uhkat (esim. ransomware-hyökkäykset).
+  c) Säädösten noudattaminen (esim. GDPR).
+- Priorisointi suoritetaan riskimatriisin avulla: vaikutus (korkea/matala) x todennäköisyys (korkea/matala).
+- Riskianalyysityökaluna käytetään esimerkiksi ISO/IEC 27005 -standardin mukaisia menetelmiä.
+
+3. Reagointikeinot
+
+- Kehitetään reaktiivinen ja proaktiivinen toimintamalli.
+- Hyödynnetään seuraavia reagointimenetelmiä:
+  - Riskin välttäminen (esim. poistamalla tarpeettomia IT-järjestelmiä).
+  - Riskin siirtäminen (esim. vakuutukset).
+  - Riskin hallinta (esim. uusien suojautumismekanismien käyttöönotto).
+  - Riskin hyväksyminen (jos vaikutus on pieni).
+
+4. Henkilöstön koulutus
+
+- Toteutetaan vuotuiset tietoturvakoulutukset.
+- Järjestetään kyberharjoituksia (esim. simuloidut phishing-hyökkäykset).
+
+5. Seuranta ja arviointi
+
+- Seurataan riskienhallintatoimenpiteiden tehokkuutta säännöllisesti.
+- Toteutetaan puolivuosittaiset auditoinnit ja raportoinnit johdolle.
+
+### Strategian toteuttaminen
+
+| Tehtävä                               | Vastuuhenkilö          | Aikataulu    |
+| ------------------------------------- | ---------------------- | ------------ |
+| Riskikartoituksen laatiminen          | Tietoturvapäällikkö    | Kuukausi 1   |
+| Haavoittuvuustarkastusten toteutus    | IT-osasto              | Jatkuva      |
+| Henkilöstön koulutusten järjestäminen | HR-osasto              | Kuukausi 3   |
+| Reagointiprosessin luominen           | Riskienhallintaryhmä   | Kuukausi 2-4 |
+| Strategian auditointi                 | Ulkopuolinen auditoija | Kuukausi 6   |
+
+### Seuranta ja jatkuva parantaminen
+
+Strategia arvioidaan ja päivitetään vuosittain, tai aina kun merkittäviä muutoksia ilmenee uhkaympäristössä tai liiketoiminnassa. Kaikki havaitut puutteet dokumentoidaan, ja niihin reagoidaan välittömästi.
+
+### Hyväksyntä
+
+Tämän strategian on hyväksynyt Elintarvike Oy:n johtoryhmä. Dokumentti ohjaa yrityksen kaikkia toimijoita kyberturvallisuuteen liittyvissä kysymyksissä.
+Päiväys: [xx.xx.xxxx]
+Allekirjoitus: [Johtoryhmän puheenjohtaja]
+</CollapsibleSection>
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Organisaatio kehittää, toteuttaa ja ylläpitää kyberturvallisuusriskien hallinnan strategiaa/toimintasuunnitelmaa, joka yksinkertaisimmillaan sisältää luettelon kyberriskien hallinnan tavoitteista ja niihin liittyvistä toimista, aktiviteeteista ja tehtävistä sekä suunnitelman niiden toteuttamiseksi.
+
+C2M2-pohjaisessa ohjelmassa toimintasuunnitelman osa-alueet voisivat olla linjassa C2M2 RISK-osion tavoitteiden ja niihin liittyvien käytäntöjen kanssa. Strategia voi esimerkiksi sisältää tärkeää tietoa organisaation prosesseista, joilla kyberriskit tunnistetaan, analysoidaan ja niihin reagoidaan. Yksityiskohtaisempiin yksityiskohtiin voivat kuulua korkean tason luokat, joihin riskit kootaan, perusteet kyberriskien ensisijaisuuden määrittämiseksi ja yhteenveto riskeihin sovellettavista riskinhallintamenetelmistä, ja strategian täytäntöönpanovastuun jakaminen.
+
+Aiheeseen liittyvät käytännöt:
+
+- Edistyminen: Tämä käytäntö on osa käytännön etenemistä. Käytännön progressiot ovat toisiinsa liittyvien käytäntöjen ryhmiä, jotka edustavat toiminnan yhä täydellisempiä tai kehittyneempiä toteutuksia. Tämän etenemisen käytäntöjä ovat: RISK-1a, RISK-1b, RISK-1c, RISK-1g, RISK-1h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-2">Kyberriskien tunnistaminen</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-2a">Kyberriskejä tunnistetaan. Toiminnan ei tarvitse olla systemaattista ja säännöllistä</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatiolla käytössä prosessi, jonka avulla tunnistetaan kyberriskejä, kuten kyberuhkia, järjestelmien haavoittuvuuksia ja häiriötilanteita, jotka voivat vaarantaa omaisuuserien ja palveluiden toimintakyvyn?
+
+Miten organisaatio tunnistaa kyberriskejä kuten kyberuhkia, haavoittuvuuksia tai häiriötapahtumia, jotka vaikuttavat sen omaisuuseriin ja palveluiden toimintakykyyn? Onko tunnistaminen kattavaa ja ulottuuko se organisaation kaikkiin keskeisiin toimintoihin? 
+
+### Merkitys
+
+Kyberriskien tunnistaminen on keskeinen osa organisaation kyberturvallisuuden hallintaa ja riskienhallintaprosessia. Se luo perustan tehokkaalle riskien arvioinnille, priorisoinnille ja käsittelylle. Ilman selkeää tunnistamisprosessia organisaatiolla on riski, että merkittävät uhkat jäävät huomaamatta, mikä voi johtaa liiketoiminnan häiriöihin, tietoturvaloukkauksiin tai säädösten noudattamatta jättämiseen. 
+
+### Vastausohjeet
+
+Arvioi, missä määrin organisaatio tunnistaa kyberriskejä:
+- **Ei toteutettu tai ei tietoa**: Kyberriskejä ei tunnisteta, eikä prosessia ole olemassa.
+- **Osittain toteutettu**: Joitakin kyberriskejä tunnistetaan, mutta prosessi on epäselvä, satunnainen tai keskittyy vain tiettyihin uhkiin.
+- **Enimmäkseen toteutettu**: Kyberriskien tunnistaminen kattaa suurimman osan kriittisistä uhista, mutta menetelmissä on parantamisen varaa, eikä prosessi ole täysin säännöllinen.
+- **Täysin toteutettu**: Kyberriskien tunnistaminen on kattavaa, säännöllistä ja systemaattista. 
+
+### Esimerkki
+
+Yritys tunnistaa kyberriskejä, kuten kyberuhkia, haavoittuvuuksia ja häiriötilanteita, jotka voivat vaikuttaa sen kriittisiin omaisuuseriin ja järjestelmiin. Prosessi ei ole vielä täysin järjestelmällinen, mutta tärkeitä uhkia, kuten tietomurtoyrityksiä ja ohjelmistopäivitysten haavoittuvuuksia, seurataan aktiivisesti. Tunnistaminen perustuu useisiin lähteisiin, kuten alan uhkaraportteihin, ohjelmistotoimittajien tiedotteisiin ja sisäisiin järjestelmäanalytiikkahavaintoihin. Merkittävimmät riskit dokumentoidaan ja arvioidaan tapauskohtaisesti, mutta säännöllinen arviointikäytäntö puuttuu.
+
+Yritys aikoo kehittää järjestelmällisemmän lähestymistavan, jossa kyberriskejä arvioidaan ja seurataan jatkuvasti. Tämä tukee organisaation tavoitteita parantaa häiriönsietokykyä ja suojata liiketoiminnan jatkuvuutta. 
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kyberriskien tunnistaminen on olennainen osa riskienhallintaa. Se edellyttää, että organisaatio tunnistaa uhkatyypit, haavoittuvuudet ja häiriötilanteet, jotka voivat aiheuttaa riskin omaisuuden ja palvelujen toimintakyvylle. Tunnistetut riskit muodostavat perustason, jonka pohjalta voidaan luoda ja hallita jatkuvaa riskienhallintaprosessia.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RISK-2a, RISK-2b, RISK-2c, RISK-2g, RISK-2h, RISK-2i, RISK-2j, RISK-2k, RISK-2l, RISK-2m.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-3">Riskien analysointi</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-3a">Kyberriskit priorisoidaan niiden arvioidun vaikutuksen perusteella</PracticeTitle>
+
+### Kysymys
+
+Miten organisaatio analysoi tunnistettuja kyberriskejä ja arvioi niiden mahdollisia vaikutuksia toimintaansa? Käytetäänkö analyysin tuloksia riskien priorisoinnissa, ja miten prioriteetit määritellään esimerkiksi turvallisuus-, toiminnallisten ja taloudellisten vaikutusten perusteella? (Esim. palautumiskustannukset, seisokkikustannukset, tietojen menetyksen kustannukset.) 
+
+### Merkitys
+
+Kyberriskien analysointi on kriittinen osa organisaation kyberturvallisuuden hallintaa. Se auttaa ymmärtämään riskien vakavuutta ja priorisoimaan toimenpiteitä, jotka voivat estää tai lieventää niiden vaikutuksia. Riskien arvioinnin ja priorisoinnin avulla organisaatio voi kohdistaa resurssinsa tehokkaasti kriittisimpiin ongelmiin, kuten tietomurtoihin, järjestelmäkatkoihin tai taloudellisiin vahinkoihin, jotka uhkaavat liiketoiminnan jatkuvuutta. Hyvin toteutettu analyysi ja priorisointi tukevat kyberturvallisuuden strategista suunnittelua ja parantavat organisaation kykyä hallita sekä ennaltaehkäistä riskejä. 
+
+### Vastausohjeet
+
+Arvioi, kuinka kattavasti organisaatio analysoi ja priorisoi kyberriskejä:
+- **Ei toteutettu tai ei tietoa**: Riskien analysointi ja priorisointi ei ole käytössä, tai siitä ei ole tietoa.
+- **Osittain toteutettu**: Riskien analysointi ja priorisointi on aloitettu, mutta menetelmät eivät ole yhtenäisiä tai kattavia.
+- **Enimmäkseen toteutettu**: Riskien analysointi ja priorisointi on laajasti käytössä, mutta prosessissa voi olla joitakin aukkoja, kuten analyysin yksityiskohtaisuuden tai priorisoinnin johdonmukaisuuden suhteen.
+- **Täysin toteutettu**: Riskien analysointi ja priorisointi on systemaattinen ja kattava, ja sitä sovelletaan organisaation laajuudessa johdonmukaisesti. 
+
+### Esimerkki
+
+Yritys on ottanut käyttöön kyberriskien analysointiprosessin, jossa riskit luokitellaan kolmiportaisesti: korkea, keskitaso ja matala. Esimerkiksi asiakasdatan suojaaminen arvioidaan korkeaksi riskiksi, koska se voi aiheuttaa merkittäviä taloudellisia ja turvallisuusvaikutuksia. Tuotantolaitosten ohjelmistovirheet taas luokitellaan keskitasoisiksi, koska ne voivat aiheuttaa lyhyitä viiveitä tuotannossa. Riskien priorisoinnissa otetaan huomioon myös taloudelliset vaikutukset, kuten seisokkikustannukset.
+
+Vaikka yritys on jo ottanut riskien analysoinnin osaksi toimintaansa, prosessissa on kehittämisen varaa pienempien riskien osalta ja tavoite on laajentaa analyysiä kattamaan kaikki organisaation osat. 
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tunnistettujen riskien mahdolliset vaikutukset organisaatioon olisi arvioitava ja niitä olisi käytettävä kyberriskien priorisoimiseksi. Korkeamman prioriteetin kyberriskiin olisi kiinnitettävä enemmän huomiota, kun määritetään mahdollisia lieventämistoimia tai vastatoimia. Priorisoinnissa olisi keskityttävä yritykselle tärkeiksi katsottuihin kriteereihin, kuten turvallisuusvaikutuksiin, toiminnallisiin vaikutuksiin ja taloudellisiin vaikutuksiin (esim. toipumiskustannukset, mahdolliset seisokin tai menetettyjen tietojen kustannukset). Priorisoinnissa voidaan käyttää laadullisia menetelmiä suhteellisen vaikutustason osoittamiseksi (esim. suuri, keskisuuri, pieni).
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RISK-3a, RISK-3b.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="risk-4">Riskeihin reagointi</ObjectiveTitle>
+---
+
+<PracticeTitle name="risk-4a">Riskeihin reagointikeinot (kuten riskin pienentäminen, hyväksyminen, välttäminen tai siirtäminen) ovat käytössä kyberriskeille.</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatiolla kyberriskejä varten käytössä selkeät reagointikeinot, kuten riskin pienentäminen, hyväksyminen, välttäminen tai siirtäminen? Miten organisaatio päättää jokaisen tunnistetun riskin käsittelytavasta, ja arvioidaanko tehtyjen toimenpiteiden tehokkuutta sekä riittävyyttä säännöllisesti?
+
+Onko organisaatiolla selkeät toimintatavat siihen, miten kyberriskeihin reagoidaan? Käytetäänkö esimerkiksi riskin pienentämistä, hyväksymistä, välttämistä tai siirtämistä, ja päätetäänkö jokaiselle riskille erikseen, miten sitä käsitellään? Arvioidaanko lisäksi säännöllisesti, ovatko tehdyt toimenpiteet riittäviä ja toimivia?
+
+### Merkitys
+
+Kyberriskien hallinnan reagointikeinot ovat keskeinen osa organisaation kokonaisvaltaista riskienhallintaa. Ne mahdollistavat riskien hallinnan priorisoidusti ja systemaattisesti, mikä parantaa organisaation resilienssiä ja kykyä sopeutua muuttuviin uhkakuviin. Riittävät ja tehokkaat riskienhallintatoimenpiteet vähentävät merkittävästi liiketoiminnalle aiheutuvia haittoja ja varmistavat organisaation jatkuvuuden kriittisissä tilanteissa. Säännöllinen arviointi auttaa varmistamaan, että toimenpiteet ovat ajan tasalla ja tarkoituksenmukaisia muuttuvassa toimintaympäristössä. 
+
+### Vastausohjeet
+
+Arvioi, missä määrin organisaatio on kehittänyt ja toteuttanut selkeät reagointikeinot kyberriskien hallintaan:
+- **Ei toteutettu tai ei tietoa**: Riskienhallinnan reagointikeinoja ei ole määritetty tai tieto niiden olemassaolosta puuttuu.
+- **Osittain toteutettu**: Riskien reagointikeinoja on määritetty, mutta niiden kattavuus on rajallinen tai niiden käyttöönotto ei ole systemaattista.
+- **Enimmäkseen toteutettu**: Riskienhallinnan reagointikeinot kattavat suurimman osan tunnistetuista riskeistä, mutta arviointikäytännöissä tai prosessien yksityiskohdissa on parantamisen varaa.
+- **Täysin toteutettu**: Organisaatio käyttää kattavia ja säännöllisesti arvioituja reagointikeinoja, jotka on integroitu osaksi sen riskienhallintastrategiaa.
+
+### Esimerkki
+
+Yrityksellä on käytössään monipuoliset ja systemaattiset reagointikeinot kyberriskien hallintaan. Yritys määrittää jokaiselle tunnistetulle riskille sopivan käsittelytavan, joka voi olla esimerkiksi riskin pienentäminen (esim. lisäämällä suojamekanismeja IT-järjestelmiin), riskin siirtäminen (esim. vakuutuksilla), tai riskin hyväksyminen silloin, kun riskin vaikutukset ovat vähäisiä.
+
+Yrityksen riskivastausten valintaprosessi pohjautuu riskianalyysiin, jossa käytetään riskimatriisia priorisoinnin tueksi. Toteutettujen toimenpiteiden tehokkuus ja riittävyys arvioidaan säännöllisesti esimerkiksi auditointien ja häiriöharjoitusten avulla. Lisäksi organisaatio päivittää riskienhallintakeinojaan toimintaympäristön muuttuessa varmistaakseen, että ne pysyvät ajan tasalla.
+
+Tulevaisuudessa yritys aikoo ottaa käyttöön automatisoidun seurannan ja raportointityökalut, jotka parantavat riskienhallinnan reaaliaikaisuutta ja tehokkuutta.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kun toimintoon kohdistuvat riskit on tunnistettu, organisaation on päätettävä, miten näihin riskeihin reagoidaan. Reagointi aloitetaan antamalla kullekin riskille tai riskiluokalle  ilmoitus/määräys organisaation aikomuksesta käsitellä riskiä. Esimerkiksi riskin vähentäminen tarkoittaa aktiivisia toimia riskin minimoimiseksi; riskin siirtäminen on riskin siirtämistä sopimuksella osapuolelta toiselle sopimuksella, esimerkiksi vakuutuksella, asiakkaan kanssa sovitusta vastuusta luopumisella tai toimittajan kanssa tehdyllä vahingonkorvaussopimuksella.
+
+Riskivasteet olisi kehitettävä osana riskinhallintastrategiaa. Riskinhallintakeinot voivat vaihdella suuresti eri organisaatioissa, mutta tyypillisesti niihin kuuluvat:
+
+- riskin välttäminen - toimintojen muuttaminen riskin välttämiseksi siten, että olennainen palvelu tarjotaan edelleen.
+- riskin hyväksyminen - riskin tiedostaminen, mutta tietoisesti ei ryhdytä mihinkään toimiin (periaatteessa riskin mahdollisten seurausten hyväksyminen).
+- riskin siirtäminen - riskin siirtäminen halukkaalle ja kykenevälle taholle.
+- riskin vähentäminen - aktiivisten toimien toteuttaminen riskin minimoimiseksi.
+- riskien seuranta - lisätutkimusten tekeminen ja riskiin liittyvien toimien lykkääminen, kunnes tarve puuttua riskiin on ilmeinen.
+Organisaation riskinhallintatoimien valintaprosessissa tulee muistaa, että kaikkia tunnistettuja riskejä ei tarvitse lieventää. Riskin vähentämisen lisäksi olisi harkittava riskin välttämistä, hyväksymistä tai siirtämistä.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RISK-4a, RISK-4b, RISK-4e.
+</CollapsibleSection>
+
+---
+
+_Ohjetta päivitetty: 28.1.2025_
+
+

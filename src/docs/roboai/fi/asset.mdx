@@ -1,0 +1,505 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Omaisuuden, muutosten ja konfiguraation hallinta
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- IT- ja OT-tiimin asiantuntija, jotka vastaavat omaisuusluettelon hallinnasta
+</Roles>
+
+---
+<ObjectiveTitle name="asset-1">Laitteiden ja ohjelmistojen hallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-1a">Toiminnon kannalta tärkeistä IT- ja OT-laitteista ja ohjelmistoista on olemassa rekisteri</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatiollanne käytössä rekisteri, johon on kirjattu toiminnan kannalta tärkeät IT- ja OT-laitteet sekä niihin liittyvät tietovarannot, kuten asiakastiedot, ohjelmistojen ja laitteiden perusasetukset tai tuotantoprosessien tiedot? (IT-laitteilla viitataan tietojenkäsittelyyn liittyviin järjestelmiin, kuten palvelimiin ja tietokantoihin ja OT-laitteilla fyysisten prosessien hallintaan tarkoitettuihin laitteisiin, kuten tuotantolinjojen ohjausjärjestelmiin ja automaatiojärjestelmiin.)
+
+### Merkitys
+
+Toiminnan kannalta tärkeiden IT- ja OT-laitteiden sekä ohjelmistojen rekisteri on keskeinen osa kyberturvallisuuden hallintaa. Rekisteri auttaa organisaatiota saamaan ajantasaisen kokonaiskuvan laitteistosta ja ohjelmistoista, mikä on välttämätöntä riskienhallinnan ja varautumistoimenpiteiden kannalta. Esimerkiksi, kun organisaation on tunnistettava laitteet, joissa on päivitystä kaipaavia ohjelmistoja, kattava rekisteri nopeuttaa toimintaa ja parantaa valmiutta vastata kyberuhkiin.
+
+<AnswerOptions>
+Arvioi, missä määrin organisaatiolla on kattava ja ajantasainen rekisteri toiminnan kannalta tärkeistä IT- ja OT-laitteista sekä ohjelmistoista:
+
+1. **Ei toteutettu tai ei tietoa**: Rekisteriä ei ole olemassa tai tietoa ei ole saatavilla.
+1. **Osittain toteutettu**: Rekisteri on olemassa, mutta sisältö on puutteellista tai sitä ei päivitetä säännöllisesti.
+1. **Enimmäkseen toteutettu**: Rekisteri kattaa suurimman osan keskeisistä laitteista ja ohjelmistoista, mutta päivityksissä tai tietojen yksityiskohtaisuudessa on parantamisen varaa.
+1. **Täysin toteutettu**: Rekisteri on kattava, sisältää kaikki keskeiset tiedot ja sitä ylläpidetään säännöllisesti.
+</AnswerOptions>
+
+### Esimerkki
+
+Yrityksellä on käytössä rekisteri, joka sisältää tiedot kaikista kriittisten palveluiden tuottamiseen tarvittavista IT- ja OT-laitteista sekä ohjelmistoista. Rekisteri kattaa IT-ympäristön osalta esimerkiksi palvelimet, reitittimet ja ERP-järjestelmät sekä OT-ympäristössä käytettävät SCADA-järjestelmät ja ohjelmoitavat logiikkaohjaimet (PLC). Vaikka rekisterin ylläpito ei ole vielä systemaattista, tärkeimmät tiedot, kuten laitteiden mallit, ohjelmistoversiot ja asennuspaikat, on tunnistettu ja kirjattu. Tulevaisuudessa yritys pyrkii kehittämään järjestelmällisemmän ylläpito- ja päivityskäytännön.
+
+<ExampleDocument title="Esimerkkidokumentti">
+  ### Johdanto Elintarvikeyritys Oy:llä on olemassa rekisteri toiminnon kannalta
+  tärkeistä IT- ja OT-laitteista sekä ohjelmistoista. Rekisteri sisältää kaikki
+  kriittisten palveluiden tuottamiseen tarvittavat laitteet ja ohjelmistot,
+  mukaan lukien OT-ympäristöihin liittyvät laitteet ja järjestelmät. Tasolla 1
+  rekisterin ylläpito ei ole systemaattista tai säännöllistä, mutta se on
+  olemassa, ja sitä päivitetään tarvittaessa.
+
+### IT- ja OT-laitteiden sekä ohjelmistojen rekisteri
+
+Rekisteri kattaa seuraavat IT- ja OT-ympäristön laitteet ja ohjelmistot, jotka ovat keskeisiä yrityksen toiminnalle:
+
+- IT-laitteet: Tietokoneet, palvelimet, verkon laitteet (esim. reitittimet ja
+  palomuurit) sekä niiden ohjelmistot, kuten toiminnanohjausjärjestelmät (ERP)
+  ja tietoturvaohjelmistot.
+- OT-laitteet: Teollisuusautomaation laitteet, kuten
+  SCADA-järjestelmät, ohjelmoitavat logiikkaohjaimet (PLC) sekä niiden valvonta-
+  ja ohjausohjelmistot, jotka hallitsevat tuotantoprosesseja ja
+  automaatiojärjestelmiä.
+- Ohjelmistot: Kriittisten palveluiden kannalta
+  olennaiset ohjelmistot, kuten tuotannonohjausjärjestelmät,
+  logistiikkajärjestelmät ja laadunvalvontajärjestelmät.
+
+### Rekisterin sisältö
+
+ja ylläpito Tasolla 1 rekisteriä ylläpidetään tarpeen mukaan, mutta sen
+ylläpito ei ole systemaattista tai säännöllistä. Tärkeimmät tiedot
+kriittisistä IT- ja OT-laitteista sekä ohjelmistoista on kuitenkin tunnistettu
+ja kirjattu rekisteriin: - Laitetyypit ja mallit: Rekisteriin on kirjattu
+laitteiden tyyppi (esim. palvelin, reititin, PLC-ohjain) ja niiden
+mallitiedot. - Ohjelmistot ja versiot: Kaikki toiminnan kannalta kriittiset
+ohjelmistot ja niiden versiotiedot on kirjattu rekisteriin. - Käyttöikä ja
+huolto: Kriittisten laitteiden käyttöikä ja viimeiset huoltopäivät kirjataan
+ylös, mutta tarkkaa seurantaa ei vielä toteuteta säännöllisesti.
+
+### OT-laitteiden ja -ohjelmistojen huomioiminen
+
+OT-ympäristön laitteet ja ohjelmistot on tunnistettu osana rekisteriä, sillä ne ovat keskeisiä yrityksen
+tuotantoprosessien ja automaation kannalta. OT-laitteet ja -ohjelmistot
+sisältävät:
+
+- SCADA-järjestelmät: Rekisterissä on tiedot kaikista
+  SCADA-järjestelmistä, jotka valvovat ja ohjaavat tuotantoprosesseja.
+- PLC-ohjaimet: Ohjelmoitavat logiikkaohjaimet (PLC), jotka ohjaavat
+  automaatiojärjestelmiä, on kirjattu rekisteriin niiden mallitietojen ja
+  asennuspaikkojen perusteella.
+- Valvontaohjelmistot: OT-ympäristön valvonta-
+  ja ohjausohjelmistot, jotka varmistavat tuotantoprosessien sujuvuuden, on
+  kirjattu rekisteriin.
+
+### Ylläpidon taso ja tulevaisuuden kehitystarpeet
+
+Vaikka rekisterin ylläpito ei ole vielä systemaattista tai säännöllistä,
+yritys pyrkii parantamaan prosesseja tulevaisuudessa. Tavoitteena on kehittää
+rekisteriä järjestelmällisemmäksi ja ottaa käyttöön säännöllinen
+päivityskäytäntö, joka mahdollistaa laitteiden ja ohjelmistojen ajantasaisen
+hallinnan. Tulevaisuuden kehitys: Yritys harkitsee siirtymistä Tasolle 2,
+jossa rekisterin ylläpito olisi systemaattisempaa ja siihen kuuluisi
+säännöllinen tarkistus ja päivitys.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Omaisuuserien eli laitteiden, ohjelmistojen ja tietovarantojen arvo ja merkitys määräytyvät sen kautta, miten ne liittyvät toimintojen osa-alueisiin, joihin niitä käytetään ja joita ne tukevat. Arvokkaiden IT- ja OT-omaisuuserien tunnistaminen ja inventointi auttaa valitsemaan ja soveltamaan asianmukaisia hallintatoimia. Alimmalla kypsyystasolla (MIL1) inventaario voidaan laatia tapauskohtaisesti. Organisaatioiden tulisi ottaa huomioon erilaiset IT- ja OT-omaisuuserät, jotka voivat kuulua itsearvioinnin piiriin, kuten esim:
+
+- virtualisoitu omaisuus
+- kolmannen osapuolen hallinnoimat omaisuuserät
+- ohjelmistot
+- työntekijän omat laitteet työkäytössä (bring your own device)
+- pilviomaisuuserät (julkinen, hybridi tai yksityinen pilvi, ohjelmisto palveluna (SaaS), alusta palveluna (PaaS), infrastruktuuri palveluna (IaaS) jne.
+- mobiililaiteomaisuus
+- kenttäomaisuus
+- eri verkkojen tai viestintätekniikoiden (esim. puhelinmodeemi, matkaviestin) kautta yhdistetty omaisuus.
+- verkko- ja viestintäomaisuus
+- vara-, vara- ja redundanttiomaisuus, mukaan lukien lepotilassa oleva virtualisoitu omaisuus.
+- käyttämättömät, korjattavat ja huollettavat omaisuuserät.
+- omaisuuserät, jotka ovat riippuvaisia erityisestä infrastruktuurista, kuten langattomista verkoista, paikannus-, navigointi- ja ajanmäärityspalveluista ja maailmanlaajuisesta paikannusjärjestelmästä.
+- omaisuuserät, joiden voidaan katsoa olevan osa esineiden internetiä tai teollista esineiden internetiä.
+- omaisuuserät, jotka voivat jäädä jäljittämättä, lunastamatta tai muutoin huomiotta, kuten vanhat omaisuuserät, viestintälaitteet ja useita ryhmiä tukevat omaisuuserät.
+
+Luetteloinnilla ei tarkoiteta sitä, että tarvitaan yksi ainoa luettelo; tämän käytännön toteuttamiseen voidaan käyttää useita lähteitä, tietokantoja, asiakirjoja tai järjestelmiä. Organisaatioiden olisi kuitenkin tarvittaessa harkittava, voidaanko inventaarioita konsolidoida, jotta vältetään useiden lähteiden hallinnointiin liittyvät mahdolliset riskit.
+
+Aiheeseen liittyvät käytännöt
+- Edistyminen: Tämä käytäntö on osa käytäntöjen etenemistä. Käytäntöjen eteneminen on joukko toisiinsa liittyviä käytäntöjä, jotka edustavat yhä täydellisempiä tai edistyneempiä toimintojen toteutuksia. Tähän kehityspolkuun kuuluvat seuraavat käytännöt: ASSET-1a, ASSET-1b, ASSET-1f, ASSET-1g.
+</C2M2Doc>
+
+---
+<ObjectiveTitle name="asset-2">Tietovarantojen hallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-2a">Toiminnon kannalta tärkeistä tietovarannoista on olemassa rekisteri</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatiollanne rekisteri toiminnan kannalta tärkeistä tiedoista (tietovarannoista)? Tällaisia tietoja voivat olla esimerkiksi asiakastiedot, laitteiden ja ohjelmistojen perusasetukset sekä tuotantoon tai toimintaympäristöön liittyvät tiedot, kuten teollisuuslaitteiden tiedot OT-ympäristöissä. (Tämän listan tarkoituksena on helpottaa tiedon hallintaa, löytämistä ja päivittämistä esimerkiksi häiriötilanteiden varalta)
+
+### Merkitys
+
+Toiminnan kannalta tärkeiden tietovarantojen rekisteri on keskeinen osa kyberturvallisuuden ja operatiivisen tehokkuuden hallintaa. Se auttaa organisaatiota tunnistamaan ja hallitsemaan kriittisiä tietoja, kuten asiakasdataa ja laitteiden perusasetuksia, jotka ovat välttämättömiä toimintojen jatkuvuuden ja riskienhallinnan kannalta. Rekisterin avulla varmistetaan esimerkiksi, että tarvittavat tiedot ovat nopeasti saatavilla häiriötilanteissa ja että tietoihin liittyvät päivitykset voidaan toteuttaa suunnitelmallisesti.
+
+<AnswerOptions>
+Arvioi, missä määrin organisaatiolla on kattava ja ajantasainen rekisteri toiminnan kannalta tärkeistä tietovarannoista:
+
+1. **Ei toteutettu tai ei tietoa**: Rekisteriä ei ole olemassa tai tietoa ei ole saatavilla.
+1. **Osittain toteutettu**: Rekisteri on olemassa, mutta sisältö on puutteellista tai sitä ei päivitetä säännöllisesti.
+1. **Enimmäkseen toteutettu**: Rekisteri kattaa suurimman osan keskeisistä tietovarannoista, mutta päivityksissä tai tietojen yksityiskohtaisuudessa on parantamisen varaa.
+1. **Täysin toteutettu**: Rekisteri on kattava, sisältää kaikki keskeiset tiedot ja sitä ylläpidetään säännöllisesti.
+</AnswerOptions>
+
+### Esimerkki
+
+Yrityksellä on käytössä rekisteri, joka sisältää tiedot kaikista kriittisistä tietovarannoista, kuten asiakastiedoista, laitteiden ja ohjelmistojen perusasetuksista sekä OT-ympäristön tiedoista. Rekisteri kattaa esimerkiksi asiakastietokannat, ERP- ja SCADA-järjestelmien konfiguraatiot sekä OT-ympäristön prosessidatan ja tuotantolaitteiden ohjelmointitiedot.
+
+Vaikka rekisterin ylläpito ei ole vielä systemaattista, tärkeimmät tiedot, kuten asiakaskontaktit, laiteasetukset ja ohjelmistokonfiguraatiot, on tunnistettu ja kirjattu. Rekisterin päivityksiä tehdään pääasiassa uusien järjestelmien käyttöönoton yhteydessä, mutta puuttuu säännöllinen tarkistuskäytäntö.
+
+Tulevaisuudessa yritys aikoo kehittää järjestelmällisemmän ylläpitokäytännön, joka varmistaa tietojen ajantasaisuuden ja tukee yrityksen riskienhallintaa.
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy:llä on olemassa rekisteri toiminnon kannalta tärkeistä tietovarannoista, mukaan lukien asiakastiedot, laitteiden ja ohjelmistojen perusasetukset sekä OT-ympäristöjen tietovarannot. Rekisterin ylläpito ei ole täysin systemaattista ja säännöllistä tasolla 1, mutta kaikki kriittiset tietovarannot on tunnistettu ja kirjattu. Rekisteri kattaa keskeiset tiedot, joita tarvitaan toiminnan ylläpitämiseen ja jatkuvuuden varmistamiseen, erityisesti kriittisten IT- ja OT-toimintojen osalta.
+
+### Tietovarantojen rekisteri
+
+Rekisteri sisältää tiedot tärkeimmistä tietovarannoista, joita tarvitaan elintarvikeyrityksen keskeisten toimintojen suorittamiseen, kuten asiakas- ja tuotantotiedot sekä ohjelmistojen ja laitteiden asetukset. Tämä rekisteri varmistaa, että tarvittavat tiedot ovat tunnistettuja ja tarvittaessa saatavilla.
+
+- Asiakastiedot: Rekisteri kattaa tiedot asiakkaista, kuten asiakaskontaktit, tilaukset ja toimitusketjutiedot. Nämä tiedot ovat olennaisia yrityksen kaupallisen toiminnan jatkuvuuden ja asiakastyytyväisyyden varmistamiseksi.
+- Laitteiden ja ohjelmistojen perusasetukset: IT- ja OT-järjestelmien perusasetukset on dokumentoitu rekisteriin. Tämä sisältää esimerkiksi SCADA-järjestelmien ja ERP-ohjelmistojen konfiguraatiot, jotka ovat kriittisiä tuotannon ja jakelun hallinnalle.
+- OT-ympäristön tietovarannot: OT-ympäristöissä käytettävät prosessidata, laitteiden asetus- ja valvontatiedot sekä tuotantolaitteiden ohjelmointitiedot on myös kartoitettu ja kirjattu. Tämä data on kriittistä tuotantolinjojen sujuvuuden ja automaation varmistamiseksi.
+
+### Rekisterin ylläpito tasolla 1
+
+Tällä hetkellä rekisterin ylläpito ei ole täysin systemaattista ja säännöllistä tasolla 1, mutta se kattaa toiminnan kannalta tärkeimmät tietovarannot. Rekisteriä päivitetään epäsäännöllisesti, esimerkiksi silloin, kun otetaan käyttöön uusia järjestelmiä tai päivityksiä.
+
+- Ei säännöllistä päivitystä: Rekisterin päivitykset tehdään tapauskohtaisesti, eikä siihen liity säännöllistä tarkistusta tai auditointia. Tämä tarkoittaa, että uudet tietovarannot saatetaan kirjata viiveellä, eikä vanhentuneita tietoja poisteta aktiivisesti.
+- Keskeiset tietovarannot mukana: Rekisterissä on kuitenkin dokumentoituna kaikki kriittiset tietovarannot, kuten asiakastiedot ja laitteiden asetukset. Näin ollen rekisteri tukee IT- ja OT-toimintojen jatkuvuuden varmistamista.
+
+### Rekisterin kehittäminen ja säännöllisyys
+
+Vaikka rekisterin ylläpito ei tällä hetkellä ole täysin järjestelmällistä, Elintarvikeyritys Oy tunnistaa tarpeen parantaa rekisterin hallintaa. Tavoitteena on siirtyä systemaattiseen ja säännölliseen rekisterin ylläpitoon, jossa tietovarannot tarkistetaan ja päivitetään aktiivisesti.
+
+- Järjestelmällinen ylläpito: Rekisterin päivittämisen systematisoiminen on keskeinen kehityskohde. Jatkossa tietojen tarkistukset ja päivitykset tullaan tekemään säännöllisesti, esimerkiksi vuosittain tai järjestelmien päivitysten yhteydessä.
+- Rekisterin keskittäminen: Yrityksen tavoitteena on ottaa käyttöön keskitetty tietojärjestelmä, joka mahdollistaa tietovarantojen hallinnan tehokkaammin. Tämä varmistaa, että rekisterin tiedot pysyvät ajan tasalla ja helposti saatavilla.
+
+### OT-ympäristöjen erityispiirteet
+
+OT-ympäristöjen tietovarantojen, kuten tuotannon automaatiodatan ja laitteiden konfiguraatioiden, ylläpito vaatii erityistä huomiota. Näitä tietoja tarvitaan tuotannon ja prosessien jatkuvuuden varmistamiseen, joten ne on dokumentoitu rekisteriin, mutta niiden päivittäminen ei ole aina yhtä nopeaa kuin IT-järjestelmien tietojen osalta.
+
+- OT-tiedot ja -asetukset: OT-ympäristön tietovarannot, kuten automaatiolaitteiden asetukset ja prosessidata, on tunnistettu ja kirjattu. OT-järjestelmät eivät yleensä muutu nopeasti, mutta on tärkeää, että asetustiedot ovat tallessa mahdollisten häiriöiden tai ongelmien varalta.
+- Kriittisyys tuotantoprosesseille: OT-tietojen hallinta on erityisen tärkeää, koska niiden virheetön toiminta takaa tuotantolaitoksen automaation ja prosessien sujuvuuden.
+
+### Riskit ja haasteet rekisterin ylläpidossa tasolla 1
+
+Koska rekisterin ylläpito ei ole täysin säännöllistä, siihen liittyy tiettyjä riskejä, kuten vanhentuneiden tietojen säilyminen rekisterissä tai kriittisten uusien tietojen viiveellinen lisääminen. Elintarvikeyritys Oy on tunnistanut nämä haasteet ja pyrkii kehittämään järjestelmiä niiden vähentämiseksi.
+
+- Tietojen vanhentuminen: Jos tietovarantojen rekisteriä ei päivitetä säännöllisesti, jotkut tiedot saattavat vanhentua. Tämä voi aiheuttaa epävarmuutta erityisesti kriittisten tietojen, kuten laitteiden asetusten, osalta.
+- Tietoturvariskit: Vanhentuneet tietovarannot voivat aiheuttaa tietoturvariskejä, erityisesti jos vanhoja laitteiden asetuksia tai asiakastietoja säilytetään ilman tarvittavaa tietoturvakäytäntöjen mukaista hallintaa.
+
+### Yhteenveto
+
+Elintarvikeyritys Oy:llä on rekisteri toiminnon kannalta tärkeistä tietovarannoista, mukaan lukien asiakastiedot, laitteiden ja ohjelmistojen asetukset sekä OT-ympäristöjen tiedot. Vaikka rekisterin ylläpito ei ole vielä systemaattista ja säännöllistä (tasolla 1), se kattaa kaikki kriittiset tietovarannot, joita tarvitaan yrityksen operatiivisten toimintojen tukemiseen. Yritys pyrkii parantamaan rekisterin hallintaa ja siirtymään säännölliseen ylläpitoon varmistaakseen tietovarantojen ajantasaisuuden ja tarkkuuden.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Omaisuuserien eli laitteiden, ohjelmistojen ja tietovarantojen arvo ja merkitys määräytyvät sen kautta, miten ne liittyvät toimintojen osa-alueisiin, joihin niitä käytetään ja joita ne tukevat. Tärkeisiiin/ arvokkaiden IT- ja OT-omaisuuserien tunnistaminen ja inventointi auttaa valitsemaan ja soveltamaan asianmukaisia hallintatoimia. Tärkeisiin / arvokkaisiin tietovarantoihin voi kuulua myös sellaisia tietovarantoja, jotka voivat aiheuttaa taloudellisia, lainsäädännöllisiä tai vastuullisuusriskejä, kuten henkilötiedot, arkaluonteiset operatiiviset tiedot ja luottamukselliset liiketoimintatiedot. Organisaatioiden tulisi ottaa huomioon erilaiset IT- ja OT-omaisuuserät, jotka voivat sisältää toiminnalle tärkeitä tietoja, kuten esimerkiksi
+
+- virtualisoidut omaisuuserät (mukaan lukien lepotilassa olevat ja varmuuskopioidut omaisuuserät).
+- pilviomaisuuserät
+- BYOD-omaisuuserät (bring your own device)
+- kenttäomaisuus
+- mobiililaiteet
+
+Organisaatioiden tulisi myös ottaa huomioon erilaisia potentiaalisia arvokkaiden tietojen lähteitä, kuten esim:
+
+- muualla kuin toimitiloissa sijaitsevat tiedot
+- tallennetut tai arkistoidut tiedot
+- varmuuskopiotiedot
+- kolmannen osapuolen hallinnoimat tiedot
+- eri luokitus- tai herkkyystasoilla olevat tiedot
+
+MIL1:ssä inventaario / rekisteri / luettelo voidaan tuottaa tapauskohtaisesti.
+Luettelo ei tarkoita sitä, että tarvitaan vain yksi luettelo; tämän käytännön toteuttamiseen voidaan käyttää useita arkistoja, asiakirjoja tai järjestelmiä. Organisaatioiden olisi kuitenkin tarvittaessa harkittava, voidaanko luettelot konsolidoida, jotta vältetään useiden arkistojen hallintaan liittyvät mahdolliset riskit.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ASSET-2a, ASSET-2b, ASSET-2f, ASSET-2g.
+</C2M2Doc>
+
+---
+<ObjectiveTitle name="asset-3">Konfiguraation hallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-3a">Laitteiden, ohjelmistojen ja tietovarantojen konfiguraatioista on luotu vakioidut perusasetukset</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatiollanne määritelty vakioasetukset, joita käytetään laitteiden, ohjelmistojen ja tietojen hallinnassa? Esimerkiksi onko teillä yhtenäisiä toimintatapoja tai ohjeita siitä, miten laitteet ja ohjelmistot asetetaan käyttöön tai miten tärkeät tiedot, kuten asiakas- ja tuotantotiedot, järjestetään ja suojataan?
+
+### Merkitys
+
+Vakioidut perusasetukset ovat olennainen osa konfiguraation hallintaa, sillä ne varmistavat laitteiden, ohjelmistojen ja tietovarantojen yhteensopivuuden, toiminnan ja tietoturvan. Dokumentoidut asetukset helpottavat ongelmatilanteiden hallintaa ja parantavat organisaation kykyä vastata muutoksiin, kuten laitepäivityksiin, ohjelmistojen muutoksiin ja tietoturvauhkien torjuntaan. Ilman vakioituja perusasetuksia organisaatio voi kohdata riskejä, kuten laitteiden ja ohjelmistojen yhteensopimattomuutta tai tietoturva-aukkoja.
+
+<AnswerOptions>
+Arvioi, missä määrin organisaatiolla on kattavat ja dokumentoidut perusasetukset laitteille, ohjelmistoille ja tietovarannoille:
+
+1. **Ei toteutettu tai ei tietoa**: Perusasetuksia ei ole määritelty tai tietoa ei ole saatavilla.
+1. **Osittain toteutettu**: Perusasetukset on määritelty, mutta ne ovat puutteellisia tai niitä ei päivitetä säännöllisesti.
+1. **Enimmäkseen toteutettu**: Perusasetukset kattavat suurimman osan keskeisistä laitteista, ohjelmistoista ja tietovarannoista, mutta niissä on kehittämisen varaa.
+1. **Täysin toteutettu**: Perusasetukset ovat kattavia, ajantasaisia ja niitä ylläpidetään säännöllisesti.
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys on määritellyt vakioidut perusasetukset organisaation keskeisille laitteille, ohjelmistoille ja tietovarannoille. Perusasetukset tukevat laitteiden ja järjestelmien yhteensopivuutta sekä varmistavat perustoimintojen jatkuvuuden.
+
+- Laitteet ja ohjelmistot: Perusasetukset on luotu esimerkiksi tuotannon kriittisille laitteille ja IT-järjestelmien palvelimille. Näihin kuuluvat ohjelmistojen konfiguraatiot, käyttöjärjestelmäversiot sekä tietoliikenneasetukset. Näitä asetuksia käytetään uusien laitteiden käyttöönotossa sekä vanhojen järjestelmien palautuksessa häiriötilanteissa.
+- Tietovarannot: Yritys on dokumentoinut keskeisten tietovarantojensa, kuten asiakastietojen ja tuotantoprosessidatan, suojaamiseen liittyvät perusasetukset. Näihin kuuluvat esimerkiksi varmuuskopioinnin konfiguraatiot ja käyttöoikeusasetukset.
+
+Vaikka perusasetusten hallinta ei ole täysin systemaattista tai säännöllistä, ne tarjoavat tärkeän lähtökohdan konfiguraatioiden yhtenäisyyden ja toimivuuden varmistamiseksi.
+
+Tulevaisuudessa yritys voi siirtyä kattavampaan ylläpitoon, jossa perusasetuksia tarkistetaan ja päivitetään säännöllisesti sekä dokumentaatiota laajennetaan kattamaan kaikki järjestelmän elinkaaren vaiheet. Tämä tukee yrityksen kykyä vastata järjestelmämuutoksiin ja parantaa kyberturvallisuutta.
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy:llä on luotu vakioidut perusasetukset laitteiden, ohjelmistojen ja tietovarantojen konfiguraatioista. Nämä perusasetukset on laadittu siten, että ne varmistavat toimintojen sujuvuuden, mutta niiden ylläpito ja tarkistaminen ei ole vielä täysin systemaattista tai säännöllistä (tasolla 1). Perusasetusten dokumentointi ja hallinta tukevat yrityksen toimintaa, mutta niitä päivitetään tapauskohtaisesti, eikä asetuksia välttämättä seurata tarkasti jatkuvasti.
+
+### Laitteiden perusasetukset
+
+Yrityksen IT- ja OT-laitteille on määritelty perusasetukset, joiden avulla varmistetaan, että laitteet toimivat yhtenäisesti ja luotettavasti organisaation toimintojen tukemiseksi. Nämä asetukset on luotu laitteiden käyttöönoton yhteydessä, mutta niitä ei vielä tarkisteta säännöllisesti.
+
+- IT-laitteet: Työasemille, palvelimille ja verkkolaitteille, kuten reitittimille ja kytkimille, on määritelty vakioasetukset. Näihin sisältyvät perusasetukset, kuten verkko- ja tietoturva-asetukset, jotka mahdollistavat laitteiden yhteensopivuuden organisaation IT-infrastruktuurin kanssa.
+- OT-laitteet: OT-laitteille, kuten tuotantolinjan valvonta- ja ohjausjärjestelmille, on luotu konfiguraatiot, jotka varmistavat laitteiden toimivuuden automaatiojärjestelmissä. SCADA-järjestelmän laitteille on määritelty ohjausparametrit ja toiminta-asetukset, mutta niiden ylläpito ei ole täysin säännöllistä.
+
+### Ohjelmistojen perusasetukset
+
+Ohjelmistojen konfiguraatioista on luotu perusasetukset, joilla varmistetaan, että ohjelmistot toimivat oikein ja yhteensopivasti yrityksen prosessien ja järjestelmien kanssa. Perusasetuksia ei kuitenkaan tarkasteta jatkuvasti, ja niitä päivitetään tarvittaessa.
+
+- ERP-järjestelmä (SAP): ERP-järjestelmään on määritelty vakioidut asetukset, jotka ohjaavat tuotannon ja varastonhallintaprosesseja. Nämä asetukset mahdollistavat esimerkiksi tilausprosessin automaation ja varastosaldojen päivittämisen. Asetuksia päivitetään ERP-järjestelmän päivitysten yhteydessä, mutta tarkastuksia ei tehdä säännöllisesti.
+- SCADA-järjestelmä: SCADA-järjestelmälle on määritetty perusasetukset, jotka määrittelevät tuotannon automaatio- ja valvontaprosessit. Asetukset sisältävät laitteen tiedonsiirtoparametrit ja hälytysten hallinnan. Näitä asetuksia muutetaan tarpeen mukaan, mutta ei systemaattisesti.
+
+### Tietovarantojen perusasetukset
+
+Yrityksen tärkeimmistä tietovarannoista, kuten asiakastiedoista, tuotantodatoista ja laitteiden asetustiedoista, on luotu vakioidut perusasetukset. Nämä asetukset määrittelevät, miten tietovarannot tallennetaan, suojataan ja käsitellään, mutta niitä ei vielä tarkisteta säännöllisesti.
+
+- Asiakastiedot: Asiakasrekisterin perusasetukset on määritetty siten, että tiedot tallennetaan suojatusti ja ovat helposti käytettävissä asiakaspalvelun ja myynnin tarpeisiin. Asiakastietojen tallennusjärjestelmän asetuksia, kuten käyttöoikeuksia ja tietojen varmuuskopiointia, ei kuitenkaan seurata säännöllisesti.
+- Tuotantodatan asetukset: Tuotannon automaatiodatan ja valvontalokitietojen perusasetukset on luotu tuotantolinjojen valvontaan ja toiminnan optimointiin. Asetukset määrittelevät, miten data tallennetaan ja analysoidaan, mutta asetuksia ei päivitetä jatkuvasti.
+
+### Rekisterin ylläpito tasolla 1
+
+Tasolla 1 perusasetusten hallinta ei ole systemaattista ja säännöllistä, mikä tarkoittaa, että asetuksia ei tarkisteta jatkuvasti eikä niiden ylläpito ole vielä täysin vakiintunut. Asetuksia kuitenkin dokumentoidaan ja päivitetään tarpeen mukaan, kuten uusien laitteiden tai ohjelmistojen käyttöönoton yhteydessä.
+
+- Ei säännöllistä päivitystä: Perusasetukset on luotu ja dokumentoitu, mutta niiden päivittämiselle ei ole vakiintunutta aikataulua tai systemaattista prosessia. Asetukset voivat vanhentua, jos niitä ei tarkasteta, mikä voi johtaa yhteensopivuus- tai turvallisuusongelmiin.
+- Tarve systematisoinnille: Yritys tunnistaa tarpeen siirtyä systemaattiseen ja säännölliseen asetusten hallintaan, jotta voidaan varmistaa, että laitteet, ohjelmistot ja tietovarannot toimivat optimaalisesti ja turvallisesti.
+
+### Riskit ja haasteet tasolla 1
+
+Vaikka vakioidut perusasetukset on luotu, niiden epäsäännöllinen hallinta tuo mukanaan riskejä. Jos asetuksia ei tarkasteta ja päivitetä säännöllisesti, se voi johtaa laitteiden tai ohjelmistojen toimintahäiriöihin tai tietoturvaongelmiin.
+
+- Vanhojen asetusten riskit: Jos laitteiden ja ohjelmistojen perusasetuksia ei päivitetä ajan tasalle, ne saattavat menettää yhteensopivuutensa uusien järjestelmien kanssa tai aiheuttaa turvallisuusriskejä.
+- Tietoturva: Vanhentuneet tietovarantojen perusasetukset voivat altistaa yrityksen tietoturvauhkille, kuten tietomurroille tai tietojen menetykselle.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy on tietoinen tarpeesta kehittää ja systematisoida perusasetusten hallintaa. Suunnitelmana on siirtyä systemaattiseen ja säännölliseen asetusten tarkistukseen ja päivittämiseen, jotta asetukset pysyvät ajan tasalla ja tukevat organisaation toimintaa.
+
+- Järjestelmällinen tarkistaminen: Asetusten säännöllinen tarkistaminen ja päivittäminen otetaan osaksi yrityksen prosesseja, jotta varmistetaan laitteiden, ohjelmistojen ja tietovarantojen optimaalinen toiminta ja tietoturva.
+- Asetusten dokumentointi: Perusasetusten hallintaa kehitetään ottamalla käyttöön keskitetty järjestelmä, jossa kaikki asetukset ovat helposti saatavilla ja päivitettävissä.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Perusasetusten / konfiguraatioiden luominen OT-, IT- ja tietovaroille luo perustan omaisuuserien eheyden hallinnalle, kun ne muuttuvat elinkaarensa aikana. Omaisuuserien (konfiguroitavien yksikköjen) asetusten sopivin väliajoin tapahtuvan tallentamisen avulla varmistetaan, että nämä omaisuuserät voidaan tarvittaessa palauttaa hyväksyttävään tilaan häiriön jälkeen, kun on tapahtunut luvaton muutos tai missä tahansa olosuhteissa, joissa eheys on epäilyttävä, ja tarjotaan kontrollointitapa muutoksille, jotka voivat mahdollisesti häiritä omaisuuserän käyttöä organisaation palveluijen tuottamiseen.
+
+Organisaatiot voivat harkita eheyden tarkastusmekanismeja (manuaalisia tai automaattisia), kun ne tekevät omaisuuserien ja omaisuuserien kokoonpanojen/asetusten säännöllisiä tallennuksia. Käyttämällä eheyden tarkistusmekanismeja säännöllisiä tallennuksien tarkistamiseen ennen palauttamista, voidaan varmistaa, että ne ovat toimivia ja käytettävissä/palautettavissa.
+
+Tämän käytännön toteuttaminen ei edellytä dokumentoituja käytäntöjä ja menettelytapoja perustietojen konfigurointia tai ylläpitoa varten.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ASSET-3a, ASSET-3c, ASSET-3d.
+</C2M2Doc>
+
+---
+<ObjectiveTitle name="asset-4">Muutoksenhallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-4a">Laitteisiin, ohjelmistoihin ja tietovarantoihin tehtävät muutokset arvioidaan ja hyväksytetään ennen niiden toteuttamista</PracticeTitle>
+
+### Kysymys
+
+Miten organisaatiossanne käsitellään muutoksia, joita tehdään laitteisiin, ohjelmistoihin ja tietovarantoihin ennen niiden toteuttamista? Arvioitteko ja hyväksyttekö muutokset ennen niiden toteutusta ja onko tämä prosessi osa päivittäistä toimintaa vai tehdäänkö se vain tarvittaessa tilanteen mukaan?
+
+### Merkitys
+
+Muutoksenhallinta on tärkeä osa organisaation kyberturvallisuutta ja operatiivista tehokkuutta. Se varmistaa, että kaikki laitteisiin, ohjelmistoihin ja tietovarantoihin tehtävät muutokset eivät aiheuta häiriöitä tai tietoturvariskejä. Arvioinnin ja hyväksynnän avulla voidaan vähentää odottamattomia ongelmia ja varmistaa, että muutosten vaikutukset on ymmärretty ennen toteutusta.
+
+<AnswerOptions>
+Arvioi, kuinka hyvin organisaation muutoksenhallintaprosessi kattaa muutokset laitteisiin, ohjelmistoihin ja tietovarantoihin:
+
+1. **Ei toteutettu tai ei tietoa**: Muutosten arviointia ja hyväksyntää ei ole olemassa, tai tietoa ei ole saatavilla.
+1. **Osittain toteutettu**: Muutokset arvioidaan tapauskohtaisesti, mutta prosessi ei ole systemaattinen eikä säännöllinen.
+1. **Enimmäkseen toteutettu**: Muutokset arvioidaan ja hyväksytetään useimmissa tapauksissa, mutta prosessi on osittain epäjohdonmukainen tai puutteellinen.
+1. **Täysin toteutettu**: Kaikki muutokset arvioidaan ja hyväksytetään ennen toteutusta ja prosessi on systemaattinen ja säännöllinen.
+</AnswerOptions>
+
+### Esimerkki
+
+Yrityksen laitteisiin, ohjelmistoihin ja tietovarantoihin tehtävät muutokset arvioidaan tapauskohtaisesti ennen niiden toteuttamista. Prosessi ei ole systemaattinen, vaan muutokset käsitellään ad hoc -perusteisesti silloin, kun ne vaikuttavat suoraan kriittisiin toimintoihin tai prosesseihin. Esimerkiksi tuotantolinjan laitteistomuutokset, ohjelmistopäivitykset ERP- tai SCADA-järjestelmissä sekä asiakastietokantojen päivitykset arvioidaan erikseen, mutta ilman systemaattista tarkistusprosessia.
+
+Muutosten arviointi ja hyväksyntä tehdään yleensä silloin, kun muutokset voivat vaikuttaa suoraan tuotannon, jakelun tai muiden kriittisten toimintojen sujuvuuteen. Arvioinnissa otetaan huomioon riskit, kuten mahdolliset häiriöt tuotantoprosesseissa tai tietoturvaongelmat. Muutokset hyväksytetään osastojen vastuuhenkilöillä, kuten IT- tai OT-osastolla, mutta dokumentointi ei ole aina säännöllistä tai kattavaa.
+
+Vaikka muutosten arviointi tapahtuu tapauskohtaisesti, tämä lähestymistapa ei takaa muutosten kokonaisvaltaista arviointia tai pitkäaikaisia vaikutuksia. Tulevaisuudessa yritys aikoo kehittää systemaattisemman muutoksenhallintaprosessin, joka varmistaa muutosten dokumentoinnin ja niiden vaikutusten arvioinnin.
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy:llä laitteisiin, ohjelmistoihin ja tietovarantoihin tehtävät muutokset arvioidaan ja hyväksytään ennen niiden toteuttamista, mutta tämä tapahtuu ad hoc -perusteisesti eikä ole systemaattista ja säännöllistä (tasolla 1). Muutoksia käsitellään tapauskohtaisesti, ja niihin liittyvä arviointi ja hyväksyntä toteutetaan yleensä silloin, kun ne vaikuttavat suoraan kriittisiin toimintoihin tai prosesseihin.
+
+### Muutosten arviointi ja hyväksyntä
+
+Yrityksessä tehtävät muutokset laitteisiin, ohjelmistoihin ja tietovarantoihin arvioidaan tapauskohtaisesti ennen kuin ne otetaan käyttöön. Arvioinnin tavoitteena on varmistaa, että muutokset eivät aiheuta häiriöitä kriittisiin prosesseihin ja että niiden vaikutukset ymmärretään ennen muutosten toteuttamista.
+
+- Laitemuutokset: Esimerkiksi tuotantolinjan laitteisiin tehtävät muutokset, kuten uusien laitteiden lisääminen tai olemassa olevien laitteiden päivitys, arvioidaan ennen toteutusta. Muutokset hyväksytetään tuotannon vastuuhenkilöillä ja IT- tai OT-osastolla.
+- Ohjelmistomuutokset: Ohjelmistopäivitykset tai uusien ominaisuuksien käyttöönotto ERP- tai SCADA-järjestelmiin arvioidaan niiden vaikutuksen perusteella. Muutokset hyväksytetään IT-osastolla, ja tarvittaessa myös kriittisten palveluiden omistajat ovat mukana arvioinnissa.
+- Tietovarantojen muutokset: Asiakastietokantoihin tai tuotannon tietovarantoihin tehtävät muutokset arvioidaan sen varmistamiseksi, että ne eivät vaaranna tietojen eheyttä tai saatavuutta. Muutokset hyväksytään tapauskohtaisesti tietohallinnon toimesta.
+
+### Muutosten arviointiprosessi
+
+Muutosten arviointi tehdään aina tarpeen mukaan, ja se sisältää riskiarvion sekä vaikutusten analyysin. Vaikka muutostenhallinta ei ole systemaattista ja säännöllistä, yrityksessä on käytössä perusmenettelyt, joiden avulla varmistetaan, että muutokset käsitellään asianmukaisesti.
+
+- Riskiarviointi: Jokainen muutos arvioidaan mahdollisten riskien osalta, kuten vaikutukset tuotantoprosesseihin, tietoturvaan ja järjestelmien yhteensopivuuteen. Tämä arviointi tehdään tapauskohtaisesti, kun laitteisiin, ohjelmistoihin tai tietovarantoihin suunnitellaan muutoksia.
+- Vaikutusanalyysi: Muutosten vaikutuksia arvioidaan suhteessa yrityksen liiketoimintaan, erityisesti kriittisiin palveluihin kuten tuotantoon, jakeluun ja laadunvalvontaan. Tavoitteena on tunnistaa mahdolliset häiriöt ja suunnitella tarvittavat toimenpiteet niiden minimoimiseksi.
+
+### Muutosten hyväksyntä ja dokumentointi
+
+Kun muutos on arvioitu, se hyväksytetään relevantilla vastuuhenkilöllä tai osastolla. Muutoksen hyväksynnän jälkeen se dokumentoidaan, mutta tätä ei tehdä systemaattisesti jokaisen muutoksen yhteydessä tasolla 1.
+
+- Hyväksyntäprosessi: Muutokset hyväksytetään yleensä henkilöillä, jotka vastaavat kyseisestä laitteesta, ohjelmistosta tai tietovarannosta. Esimerkiksi IT-osasto hyväksyy muutokset IT-järjestelmiin, kun taas OT-osasto vastaa tuotannon laitteiden muutosten hyväksymisestä.
+- Dokumentointi: Muutokset kirjataan ylös ja dokumentoidaan, mutta tämä ei ole täysin systemaattista. Muutosten dokumentointi voi jäädä tekemättä joissain tilanteissa, mikä voi aiheuttaa haasteita tulevaisuudessa, jos muutosten vaikutuksia täytyy jälkikäteen tarkastella.
+
+### Ad hoc -muutostenhallinta tasolla 1
+
+Tällä hetkellä muutosten hallinta on tasolla 1 eli ad hoc -perusteista, mikä tarkoittaa, että arviointi ja hyväksyntä tehdään tapauskohtaisesti. Muutostenhallinta ei ole vielä täysin järjestelmällistä, ja muutokset käsitellään silloin, kun ne ilmenevät, ilman ennakoivaa suunnittelua tai säännöllistä tarkistusta.
+
+- Tapauskohtainen lähestymistapa: Muutoksia käsitellään tarpeen mukaan, esimerkiksi kun uutta laitteistoa tai ohjelmistoa otetaan käyttöön tai tietovarantoja päivitetään. Järjestelmällinen muutosten arviointi ja hyväksyntä puuttuu, mutta kriittisistä muutoksista pyritään aina keskustelemaan relevanttien osastojen kanssa.
+- Ei säännöllistä seurantaa: Koska muutostenhallinta ei ole täysin säännöllistä, muutokset voivat jäädä osittain dokumentoimatta tai niiden vaikutuksia ei välttämättä tarkastella pitkäaikaisesti.
+
+### Riskit ja haasteet tasolla 1
+
+Vaikka muutosten arviointi ja hyväksyntä tapahtuu tapauskohtaisesti, systemaattisen muutostenhallinnan puuttuminen tasolla 1 tuo mukanaan riskejä. Suurin riski liittyy siihen, että muutosten vaikutuksia ei aina huomioida kokonaisvaltaisesti, mikä voi johtaa odottamattomiin häiriöihin tai turvallisuusongelmiin.
+
+- Dokumentoinnin puute: Jos muutoksia ei dokumentoida järjestelmällisesti, voi olla vaikeaa seurata, miten muutokset ovat vaikuttaneet laitteisiin, ohjelmistoihin tai tietovarantoihin. Tämä voi vaikeuttaa ongelmien ratkaisemista myöhemmin.
+- Tietoturvaongelmat: Epäjohdonmukainen muutostenhallinta voi aiheuttaa tietoturvariskejä, jos muutoksia ei arvioida tietoturvan näkökulmasta riittävän tarkasti. Tämä on erityisen tärkeää ohjelmistojen ja tietovarantojen osalta, joihin liittyy arkaluonteista tietoa.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy tunnistaa tarpeen kehittää muutostenhallintaprosessia ja siirtyä kohti järjestelmällisempää ja säännöllisempää muutosten arviointia ja hyväksyntää. Tavoitteena on ottaa käyttöön prosessit, jotka varmistavat, että kaikki muutokset dokumentoidaan ja niiden vaikutukset arvioidaan kattavasti.
+
+- Systemaattisempi prosessi: Yritys pyrkii kehittämään muutostenhallintaprosesseja ottamalla käyttöön systemaattiset menetelmät, kuten säännölliset tarkistukset ja muutosten arviointityökalut.
+- Muutosten seuranta: Muutosten seurantaan luodaan järjestelmä, jossa dokumentointi on keskeinen osa, jotta kaikki muutokset voidaan jälkikäteen tarkastella ja analysoida.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Kaikki luetteloituun omaisuuteen ehdotetut muutokset arvioidaan, jotta ymmärretään niiden tärkeysjärjestys, hyödyt, riskit ja vaikutukset niillä tuotettujen toimintojen toimivuuteen ja turvallisuuteen. On otettava huomioon, että nämä voivat vaihdella erityyppisten IT-, OT- ja tietovarantojen välillä, kuten virtualisoidut omaisuuserät, säännellyt omaisuuserät, kolmannen osapuolen hallinnoimat omaisuuserät, BYOD-omaisuuserät, pilviomaisuuserät, liikkuvat omaisuuserät, kenttäolosuhteissa olevat omaisuuserät, omaisuuserät, jotka ovat riippuvaisia erityisestä infrastruktuurista, kuten langattomista verkoista tai maailmanlaajuisesta paikannusjärjestelmästä, sekä omaisuuserät, joiden voidaan katsoa olevan osa esineiden internetiä tai esineiden teollista internetiä.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ASSET-4a, ASSET-4d, ASSET-4e, ASSET-4f, ASSET-4h.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="asset-4b">Laitteisiin, ohjelmistoihin ja tietovarantoihin tehtävistä muutoksista pidetään lokia</PracticeTitle>
+
+### Kysymys
+
+Pidetäänkö organisaatiossasi lokia laitteisiin, ohjelmistoihin ja tietovarantoihin tehdyistä muutoksista? Tämä tarkoittaa sitä, että jokaisesta muutoksesta, kuten ohjelmistopäivityksistä, laitteiden kokoonpanon muutoksista tai tietovarantojen päivityksistä, pitäisi olla tieto jossain paikassa. Tärkeää on kuitenkin se, että organisaatio tietää, mitä muutoksia on tehty ja milloin, jotta mahdolliset ongelmat voidaan jäljittää ja ymmärtää paremmin.
+
+### Merkitys
+
+Muutosten lokitus on tärkeää, koska se parantaa muutosten jäljitettävyyttä ja tukee häiriöiden hallintaa. Muutosten dokumentointi auttaa tunnistamaan ja analysoimaan mahdollisia vaikutuksia organisaation toimintaan, tietoturvaan ja riskienhallintaan. Ilman muutosten kirjaamista organisaatiolla voi olla vaikeuksia ratkaista ongelmia tai täyttää sääntelyyn liittyviä vaatimuksia.
+Lokien avulla organisaatio voi:
+
+- Parantaa operatiivista tehokkuutta tunnistamalla ongelmien syyt.
+- Ylläpitää tietoturvaa seuraamalla muutosten vaikutuksia kriittisiin järjestelmiin.
+- Tuottaa dokumentaatiota esimerkiksi auditointeihin tai sääntelyviranomaisille.
+
+<AnswerOptions>
+Arvioi organisaation muutosten lokituskäytäntöjen kattavuutta ja säännöllisyyttä:
+
+1. **Ei toteutettu tai ei tietoa**: Muutoksista ei pidetä lokia tai tietoa ei ole saatavilla.
+1. **Osittain toteutettu**: Lokia pidetään tapauskohtaisesti, mutta käytännöt ovat epäjohdonmukaisia.
+1. **Enimmäkseen toteutettu**: Muutoksista pidetään lokia suurimmalta osin, mutta lokitus ei ole täysin kattavaa tai säännöllistä.
+1. **Täysin toteutettu**: Kaikki muutokset dokumentoidaan systemaattisesti ja kattavasti.
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys pitää lokia laitteisiin, ohjelmistoihin ja tietovarantoihin tehdyistä muutoksista tapauskohtaisesti. IT-laitteisiin, kuten palvelimiin ja verkkolaitteisiin tehdyt suuret muutokset kirjataan lokiin, mutta pienemmät korjaukset jäävät usein kirjaamatta. OT-laitteissa, kuten SCADA-järjestelmissä, merkittävät päivitykset dokumentoidaan, mutta huoltotoimet eivät yleensä päädy lokiin. ERP- ja SCADAohjelmistojen merkittävät päivitykset ja uudet ominaisuudet kirjataan tapauskohtaisesti, kun taas pienemmät konfiguraatiomuutokset voivat jäädä huomiotta.
+Asiakastietoihin ja tuotantodataan liittyvät merkittävät muutokset, kuten tietokantojen päivitykset kirjataan, mutta arkiset muutokset jäävät usein kirjaamatta. Lokituskäytäntö ei ole systemaattinen, mikä vaikeuttaa muutosten jäljittämistä, mutta yritys pyrkii kehittämään järjestelmällisemmän lokituskäytännön parantaakseen jäljitettävyyttä ja tietoturvaa.
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy pitää lokia laitteisiin, ohjelmistoihin ja tietovarantoihin tehdyistä muutoksista, mutta tämä tapahtuu ad hoc -perusteisesti eli tapauskohtaisesti, eikä ole täysin systemaattista ja säännöllistä (tasolla 1). Muutosten lokitus toteutetaan yleensä silloin, kun kyseessä on merkittävä muutos, joka vaikuttaa suoraan kriittisiin toimintoihin, mutta se ei ole osa vakiintunutta käytäntöä.
+
+### Muutosten lokitus laitteissa
+
+Laitteisiin, erityisesti IT- ja OT-laitteisiin, tehtävistä muutoksista pidetään tapauskohtaista lokia, kun kyseessä on tärkeä muutos, kuten päivitykset tai uuden laitteen käyttöönotto. Kuitenkaan kaikkiin pienempiin muutoksiin, kuten huoltoihin tai konfiguraatioiden säätöihin, ei välttämättä kirjata lokia tasolla 1.
+
+- IT-laitteet: Palvelimiin, työasemiin ja verkkolaitteisiin, kuten reitittimiin ja kytkimiin, tehtävät suuret muutokset, kuten ohjelmistopäivitykset, laitteiden vaihdot tai konfiguraation muutokset, kirjataan lokiin. Pienemmät muutokset, kuten tilapäiset korjaukset tai asetusten säädöt, eivät välttämättä tule kirjatuksi.
+- OT-laitteet: OT-laitteisiin, kuten SCADA- ja automaatiojärjestelmiin tehtävistä muutoksista pidetään lokia tapauskohtaisesti. Merkittävien päivitysten tai laitteiston muutosten yhteydessä muutokset kirjataan, mutta arkiset säädöt tai huoltotoimenpiteet eivät välttämättä kirjaudu lokiin.
+
+### Ohjelmistojen muutosten lokitus
+
+Ohjelmistoihin tehtävät muutokset, kuten päivitykset, konfiguraatiomuutokset tai uusien ominaisuuksien käyttöönotto, kirjataan lokiin tapauskohtaisesti, mutta muutosten kirjaus ei ole säännöllistä eikä systemaattista.
+
+- ERP- ja SCADA-ohjelmistot: Ohjelmistojen merkittävistä päivityksistä tai uusien toiminnallisuuksien käyttöönotosta pidetään lokia, koska ne vaikuttavat suoraan kriittisiin toimintoihin, kuten tuotantoprosesseihin ja varastonhallintaan. Lokitiedot sisältävät yleensä päivityspäivämäärän ja lyhyen kuvauksen muutoksista. Pienemmät konfiguraatiomuutokset voivat kuitenkin jäädä kirjaamatta.
+- Tietoturvaohjelmistot: Tietoturvaohjelmistoihin tehdyt muutokset, kuten asetusten muutokset tai tietoturvapäivitykset, kirjataan pääsääntöisesti lokiin. Tässäkin tapauksessa lokien kirjaaminen keskittyy yleensä kriittisiin muutoksiin, jotka vaikuttavat organisaation tietoturvaan.
+
+### Tietovarantojen muutosten lokitus
+
+Tietovarantoihin tehtävistä muutoksista pidetään lokia, erityisesti silloin, kun ne vaikuttavat tietojen käsittelyyn, tallennukseen tai tietoturvaan. Kuitenkin tasolla 1 kaikki muutokset eivät välttämättä kirjaudu lokiin.
+
+- Asiakastiedot: Asiakasrekisteriin tehtävistä merkittävistä muutoksista, kuten tietokannan päivityksistä tai tietojen siirroista, kirjataan tapauskohtainen loki. Tämä auttaa varmistamaan, että muutokset voidaan jäljittää tarvittaessa, erityisesti jos ne liittyvät tietoturvaan tai tietosuoja-asetuksiin (kuten GDPR). Pienemmät muutokset, kuten yksittäisten tietueiden päivitykset, eivät välttämättä kirjaudu lokiin.
+- Tuotantodata: Tuotantodatan ja lokitietojen muutoksista pidetään lokia silloin, kun muutokset ovat merkittäviä, esimerkiksi tiedon tallennusjärjestelmien konfiguraatioihin liittyvissä muutoksissa. Päivittäiset muutokset tuotantodataan eivät kuitenkaan aina kirjaudu lokiin.
+
+### Ad hoc -muutostenhallinta tasolla 1
+
+Tällä hetkellä muutosten lokitus tapahtuu ad hoc -perusteisesti tasolla 1, mikä tarkoittaa, että merkittävistä muutoksista kirjataan lokia, mutta muutosten lokittaminen ei ole säännöllistä eikä systemaattista. Lokikirjaus tehdään yleensä silloin, kun muutoksilla on suuri vaikutus organisaation toimintaan tai tietoturvaan.
+
+- Tapauskohtainen lähestymistapa: Lokitiedot tallennetaan muutoksista silloin, kun kyseessä on suuri tai kriittinen muutos, kuten järjestelmän päivitys, uuden ohjelmiston asennus tai laitteen vaihto. Jokainen tapaus arvioidaan erikseen, ja lokitus tehdään tilanteen mukaan.
+- Ei säännöllistä seurantaa: Koska lokitiedot eivät aina ole osa vakiintunutta käytäntöä, niitä ei systemaattisesti seurata. Tämä voi johtaa siihen, että osa muutoksista jää kirjaamatta, mikä voi vaikeuttaa muutosten jäljittämistä tulevaisuudessa.
+
+### Riskit ja haasteet tasolla 1
+
+Koska muutosten lokitus ei ole säännöllistä eikä systemaattista, on olemassa riski, että tärkeät muutokset jäävät dokumentoimatta. Tämä voi vaikeuttaa ongelmien selvittämistä myöhemmin ja heikentää muutosten jäljitettävyyttä.
+
+- Dokumentoinnin puutteet: Jos muutoksista ei pidetä systemaattista lokia, se voi vaikeuttaa mahdollisten virheiden tai häiriöiden syiden selvittämistä myöhemmin. Tämä voi myös aiheuttaa tietoturvaongelmia, jos tietovarantoihin tehtyjä muutoksia ei dokumentoida riittävän hyvin.
+- Muutosten jäljitettävyys: Muutosten jäljittäminen voi olla hankalaa, jos ei ole olemassa kattavaa lokia siitä, milloin ja miten muutokset on tehty. Tämä voi johtaa epäselvyyksiin esimerkiksi ohjelmistojen yhteensopivuudessa tai laitteiden toiminnassa.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy tunnistaa tarpeen parantaa muutostenhallintaa ja lokitietojen kirjaamista. Tavoitteena on siirtyä kohti systemaattisempaa muutosten lokitusta, joka mahdollistaa muutosten paremman seurannan ja jäljitettävyyden.
+
+- Systemaattisempi lokituskäytäntö: Yritys suunnittelee ottavansa käyttöön systemaattisemman lokituskäytännön, jossa kaikista merkittävistä muutoksista pidetään lokia ja tiedot kirjataan keskitettyyn järjestelmään.
+- Jäljitettävyyden parantaminen: Lokitiedot kerätään ja säilytetään siten, että kaikki muutokset voidaan helposti jäljittää, mikä parantaa mahdollisten ongelmien ratkaisemista ja tietoturvan hallintaa.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Kaikki inventoituun / rekisteröityyn omaisuuserään tehdyt muutokset tallennetaan muotoon, johon voidaan helposti viitata vianmäärityksen tai häiriötilanteiden selvittämisen aikana. Muutoksia voivat olla esimerkiksi verkkolaitteiden asetusten, kuten reititys- ja porttimääritysten, muuttaminen, komponenttien lisääminen tai poistaminen ja käyttöoikeuksien muuttaminen. Tallennettaviin ominaisuuksiin kuuluvat muun muassa muutoksen päivämäärä ja kellonaika, muutoksen tekijä, muutoksen vaikutus muihin omaisuuseriin ja kuvaus muutokseen liittyvistä riskeistä.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: ASSET-4b, ASSET-4c, ASSET-4i.
+</C2M2Doc>
+
+---
+
+_Ohjetta päivitetty: 19.3.2025_

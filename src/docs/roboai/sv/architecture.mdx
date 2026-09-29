@@ -1,0 +1,451 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Cyberarkitektur
+
+<Roles>
+- Cybersäkerhetsledning
+- IT-ledning
+- OT-ledning
+- Specialist på företagssäkerhetsarkitektur
+- Specialist på nätverkssäkerhet
+- IT-systemadministratör
+- OT-systemadministratör
+- Internrevision representant
+</Roles>
+
+---
+<ObjectiveTitle name="architecture-1">Utveckling av cyberarkitektur</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-1a">Organisationens cyberarkitektur styrs av en strategi eller annan ledningsnivådokumentation. Utveckling och underhåll behöver inte vara systematiskt och regelbundet</PracticeTitle>
+
+### Fråga
+
+Har organisationen en cyberarkitekturstrategi eller ledningsnivådokumentation som definierar hur IT- och OT-systemsäkerhet, nätverksskydd och dataskydd utvecklas och underhålls?
+
+### Betydelse
+
+En cyberarkitekturstrategi är en viktig del av organisationens cybersäkerhetshantering. Den ger riktning för IT- och OT-systemsäkerhetsutveckling och hjälper organisationen att svara på föränderliga cyberhot. En tydlig strategi stöder affärskontinuitet och möjliggör proaktiv riskhantering.
+
+### Svarsinstruktioner
+
+Bedöm i vilken utsträckning organisationen har en cyberarkitekturstrategi och relaterad dokumentation:
+- **Ej implementerat eller ingen information**: Ingen strategi eller information är otillgänglig.
+- **Delvis implementerat**: Strategin finns men är ofullständig eller följs inte systematiskt.
+- **Mestadels implementerat**: Strategin är omfattande, men dess uppdaterings- eller implementeringsmetoder behöver förbättras.
+- **Fullt implementerat**: Strategin är omfattande, uppdaterad och systematiskt implementerad.
+
+### Exempel
+
+Företaget har utvecklat en cyberarkitekturstrategi som definierar säkerhetsmål för både IT- och OT-system. Strategin inkluderar riktlinjer för nätverkssegmentering, åtkomsthantering, dataskydd och utvecklingsprocesser för säkerhetsarkitektur. Även om strategin ännu inte är helt systematisk, används redan viktiga säkerhetsåtgärder som nätverkssegmentering och IT/OT-separation. Företaget planerar att utveckla strategin genom att implementera regelbundna granskningar och uppdatera säkerhetsmål när hot utvecklas.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Organisationen utvecklar, implementerar och underhåller en cybersäkerhetsarkitekturstrategi som beskriver på hög nivå hur organisationen strukturerar och använder sina teknologier och teknisk arkitektur för att uppnå IT- och OT-systemens cybersäkerhetsmål och minimera cyberrisker.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: ARCHITECTURE-1a, ARCHITECTURE-1b.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-2">Nätverksskydd</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-2a">Nätverksförsvarsarkitekturförmågor finns på plats för att skydda mot obehörig åtkomst. Förmågor kan inkludera till exempel brandväggar, demilitariserade zoner (DMZ), system för intrångsdetektering (IDS) eller system för intrångsförebyggande (IPS).</PracticeTitle>
+
+### Betydelse
+
+Nätverksförsvarsförmågor är kritiska för cybersäkerhet eftersom:
+- **De förhindrar obehörig åtkomst till kritiska system.** Till exempel upptäcker och blockerar brandväggar och IDS/IPS-system attacker innan de når organisationens interna nätverk.
+- **Nätverkssegmentering begränsar spridning av attacker.** Om en angripare får tillgång till ett segment kan de inte enkelt flytta till andra delar av nätverket.
+- **IT- och OT-systemseparation skyddar industriella kontrollsystem.** Produktions- och driftteknologisystem är särskilt sårbara för cyberattacker, vilket gör separation kritisk.
+- **DMZ-zoner skyddar kritiska tjänster.** Till exempel minskar e-postservrar och webbtjänster i DMZ-zoner risken för att sprida attacker till det interna nätverket.
+
+Bedömningsfrågor:
+- Har organisationen brandväggar och IDS/IPS-system på plats?
+- Är nätverket segmenterat så att IT- och OT-system är åtskilda?
+- Används DMZ-zoner och hur är de konfigurerade?
+- Hur övervakas och uppdateras nätverksförsvarsförmågor?
+- Tillämpas Zero Trust-principer i nätverksarkitekturen?
+
+Nätverksförsvarsförmågor i organisationen:
+
+**1. Brandväggar och IDS/IPS-system**
+- **Perimeterförsvar:** Brandväggar begränsar trafik mellan organisationens nätverk och externa nätverk.
+- **Intrångsdetekteringssystem (IDS):** Övervakar nätverkstrafik och upptäcker onormal aktivitet.
+- **Intrångsförebyggande system (IPS):** Blockerar aktivt upptäckta hot och förhindrar attacker.
+
+**2. Nätverkssegmentering och IT/OT-separation**
+- **Nätverkssegmentering delar upp nätverket i isolerade zoner**, såsom administrativa, produktions- och externa servicezoner.
+- **IT- och OT-system är åtskilda**, vilket innebär att produktions- och driftteknologisystem fungerar i sitt eget nätverkssegment och inte har direkta anslutningar till IT-nätverkssegment.
+- **DMZ (demilitariserad zon) skyddar kritiska tjänster** såsom e-postservrar och webbtjänster från externa attacker.
+
+**3. Zero Trust-arkitektur**
+- **Zero Trust-princip:** All åtkomst, både extern och intern, verifieras och auktoriseras.
+- **Mikrosegmentering:** Nätverket delas upp i mycket små zoner, var och en med sina egna åtkomstpolicyer och kontroller.
+- **Kontinuerlig autentisering:** Varje anslutning verifieras, oavsett om den kommer från det interna eller externa nätverket.
+
+**4. Övervakning och hantering**
+- **SIEM (Security Information and Event Management) system samlar in och analyserar nätverksaktivitet.**
+- **Loggar och händelser** lagras och analyseras för potentiella säkerhetsbrott.
+- **Nätverksförsvarsförmågor uppdateras och förbättras** baserat på föränderliga hotlandskap.
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Nätverksförsvarsförmågor används inte eller information är otillgänglig.
+- **Delvis implementerat**: Vissa förmågor som brandväggar finns, men nätverkssegmentering, IDS/IPS eller DMZ-zoner saknas eller är ofullständiga.
+- **Mestadels implementerat**: De flesta nätverksförsvarsförmågor finns på plats, men deras hantering, övervakning eller uppdatering kan behöva förbättring.
+- **Fullt implementerat**: Organisationen har omfattande nätverksförsvarsförmågor inklusive brandväggar, IDS/IPS, nätverkssegmentering, IT/OT-separation och DMZ-zoner. Förmågor övervakas och uppdateras regelbundet.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Livsmedelsindustriföretaget har segmenterat sitt produktionsnätverk separat från det administrativa nätverket. Produktionssystem har sin egen brandvägg och IDS/IPS-system som övervakar obehöriga åtkomstförsök.
+
+> **Logistikföretag**
+Logistikföretaget har separerat sina driftteknologisystem (t.ex. lagerautomation) från IT-system med en DMZ-zon som tillåter kontrollerat datautbyte utan direkta anslutningar.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationen har en tydlig nätverkssegmentering där kontrollsystem (SCADA) fungerar i ett isolerat nätverk. Åtkomst till kontrollnätverket kräver en säker fjärråtkomstlösning (VPN) och stark autentisering.
+
+> **Elbolag**
+Energibolaget har implementerat en Zero Trust-arkitektur där all åtkomst till kontrollsystem verifieras och auktorisering kontrolleras vid varje anslutning. Mikrosegmentering säkerställer att även interna användare inte har obegränsad åtkomst till alla nätverksområden.
+
+### Ytterligare information
+
+- **Nätverkssegmentering och DMZ-zoner är nyckelkomponenter i försvars-i-djup-strategin.**
+- **IDS/IPS-system möjliggör realtids hotdetektering och svar.**
+- **Zero Trust-arkitektur förbättrar säkerheten genom att kräva verifiering för all åtkomst.**
+- **IT- och OT-separation är kritisk i industriella och kritiska infrastrukturmiljöer.**
+- **Regelbundna uppdateringar och säkerhetskonfigurationsgranskningar säkerställer att nätverksförsvarsförmågor förblir effektiva.**
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Nätverksförsvarsförmågor kan inkludera till exempel brandväggar, demilitariserade zoner (DMZ), system för intrångsdetektering (IDS) eller system för intrångsförebyggande (IPS).
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: ARCHITECTURE-2a, ARCHITECTURE-2b, ARCHITECTURE-2c, ARCHITECTURE-2d, ARCHITECTURE-2e, ARCHITECTURE-2f, ARCHITECTURE-2g, ARCHITECTURE-2h.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="architecture-2b">System, applikationer eller nätverkstillgångar i IT-miljö är logiskt åtskilda från de i OT-miljö. Segmentering möjliggör åtkomstkontroll mellan IT- och OT-miljöer, till exempel med brandvägg, router åtkomstkontrolllistor eller åtkomstkontrollpolicyer.</PracticeTitle>
+
+### Betydelse
+
+Att separera IT- och OT-miljöer är kritiskt eftersom:
+- **OT-system är ofta sårbara och svåra att uppdatera.** Produktionssystem kan köras på äldre plattformar som inte stöder moderna säkerhetsuppdateringar.
+- **IT-systemattacker kan sprida sig till OT-miljöer om nätverk inte är åtskilda.** Till exempel kan ransomware störa produktionssystem om IT- och OT-nätverk är sammankopplade.
+- **Åtkomstkontroll mellan miljöer möjliggör skydd av kritiska tjänster.** När IT- och OT-miljöer är åtskilda är det lättare att kontrollera vem som kan komma åt produktionssystem.
+- **IT/OT-separation stöder efterlevnad.** Många regler, såsom IEC 62443 och NIST 800-82, kräver IT- och OT-systemseparation.
+
+Bedömningsfrågor:
+- Är IT- och OT-system åtskilda i sina egna nätverkssegment?
+- Är åtkomst mellan IT- och OT-miljöer kontrollerad och begränsad?
+- Används brandväggar, routrar eller åtkomstkontrollpolicyer för segmentering?
+- Övervakas och loggas datautbyte mellan IT- och OT-miljöer?
+- Används DMZ-zoner för att möjliggöra kontrollerat datautbyte?
+
+IT- och OT-segmenteringsimplementering:
+
+**1. Logisk separation**
+- **IT- och OT-nätverk är separata**, vilket innebär att produktions- och driftteknologisystem fungerar i sitt eget nätverkssegment och inte har direkta anslutningar till IT-nätverkssegment.
+- **Brandväggar, routrar och åtkomstkontrolllistor (ACL) begränsar åtkomst** mellan IT- och OT-miljöer.
+
+**2. DMZ-zoner och kontrollerat datautbyte**
+- **DMZ (demilitariserad zon) möjliggör kontrollerat datautbyte** mellan IT- och OT-miljöer utan direkta anslutningar.
+- **Enkelriktade dataflöden (data diodes)** tillåter data att flöda från OT till IT men förhindrar omvända anslutningar, vilket minskar attackrisken.
+
+**3. Åtkomstkontroll och autentisering**
+- **Åtkomst till OT-miljö är begränsad till endast auktoriserad personal.**
+- **Stark autentisering och multifaktorautentisering (MFA)** krävs vid åtkomst till OT-system från IT-miljö.
+
+**4. Övervakning och loggning**
+- **All åtkomst mellan IT- och OT-miljöer loggas och övervakas.**
+- **SIEM-system analyserar nätverkstrafik** mellan IT- och OT-miljöer och larmar om onormal aktivitet.
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: IT- och OT-miljöer är inte åtskilda eller information är otillgänglig.
+- **Delvis implementerat**: Viss segmentering finns, men åtkomstkontroll mellan miljöer är ofullständig eller saknas.
+- **Mestadels implementerat**: IT- och OT-miljöer är åtskilda och åtkomstkontroll finns på plats, men övervakning eller DMZ-konfiguration kan behöva förbättring.
+- **Fullt implementerat**: IT- och OT-miljöer är helt åtskilda och åtkomst mellan dem kontrolleras med brandväggar, routrar eller åtkomstpolicyer. Övervakning är omfattande och DMZ-zoner används där det är nödvändigt.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget har separerat sina produktionskontrollsystem (OT) från administrativa system (IT). Åtkomst mellan miljöer är begränsad med brandväggar och all åtkomst loggas.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationen har en tydlig IT/OT-separation där kontrollsystem fungerar i ett isolerat nätverk. Åtkomst till kontrollnätverket kräver en säker fjärråtkomstlösning (VPN) och stark autentisering.
+
+> **Elbolag**
+Energibolaget använder DMZ-zoner för att möjliggöra kontrollerat datautbyte mellan IT- och OT-system. Enkelriktade dataflöden förhindrar attacker från att sprida sig från IT till OT-miljö.
+
+### Ytterligare information
+
+- **IT- och OT-separation är en grundläggande del av kritisk infrastrukturskydd.**
+- **Brandväggar, routrar och åtkomstkontrolllistor (ACL) är nyckelteknologier för segmentering.**
+- **DMZ-zoner möjliggör kontrollerat datautbyte utan direkta anslutningar mellan IT- och OT-miljöer.**
+- **IEC 62443 och NIST 800-82 standarder ger vägledning för IT/OT-separationsimplementering.**
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Logisk segmentering av IT- och OT-miljöer är avgörande för att skydda OT-system och minska cyberrisk. Segmentering möjliggör åtkomstkontroll mellan IT- och OT-miljöer, till exempel med brandvägg, router åtkomstkontrolllistor eller åtkomstkontrollpolicyer. Segmentering och filtrering av IT/OT-nätverkstrafik underlättar hotdetektering och kan göra organisationens IT-miljö återställningsprocesser enklare.
+
+Beroende på organisationens IT- och OT-miljöstorlek och komplexitet kan organisationer dra nytta av att etablera en demilitariserad zon (DMZ) för att separera IT- och OT-miljöer. IT-system kan komma åt data från OT-system via DMZ på ett kontrollerat sätt som undviker direkt IT-till-OT-systemanslutning, vilket kan exponera sårbarheter i produktions- och driftsystem. I högriskscenarier kan organisationer överväga enkelriktad gateway-teknologi (data diode) som fysiskt förhindrar omvänt dataflöde från IT till OT.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: ARCHITECTURE-2a, ARCHITECTURE-2b, ARCHITECTURE-2c, ARCHITECTURE-2d, ARCHITECTURE-2e, ARCHITECTURE-2f, ARCHITECTURE-2g, ARCHITECTURE-2h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-3">Enhets- och programvarusäkerhet som en del av cyberarkitekturen</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-3a">Åtkomstkontroll och åtkomsthanteringskontroller/skyddsmekanismer finns på plats för enheter, programvara och datarepositorier som är kritiska för funktionen.</PracticeTitle>
+
+### Betydelse
+
+Åtkomsthanteringskontroller och skyddsmekanismer är centrala för cybersäkerhet eftersom:
+- **De förhindrar obehörig åtkomst till kritiska system och data.** Utan åtkomsthanteringsmekanismer kan angripare få kontroll över känslig information och system.
+- **Åtkomsthantering stöder informationssäkerhetsstandarder och lagkrav.** Till exempel kräver **ISO 27001, NIST CSF och IEC 62443** implementering och övervakning av åtkomsthantering.
+- **Loggar möjliggör avvikelsedetektering och utredning.** Utan övervakning är det svårt att identifiera obehöriga åtkomstförsök.
+- **Fysiska och logiska åtkomsthanteringskontroller skyddar både IT- och OT-miljöer.** Att begränsa åtkomst minskar insiderhot och cyberattackrisker.
+
+Bedömningsfrågor:
+- Har organisationen tekniska och administrativa kontroller relaterade till åtkomsthantering?
+- Är IT- och OT-system skyddade med autentiserings- och åtkomsthanteringsmekanismer?
+- Är fysisk åtkomstkontroll implementerad för fysiska tillgångar (t.ex. servrar, arbetsstationer) (t.ex. lås, åtkomstkortssystem)?
+- Används loggnings- och övervakningssystem för att identifiera misstänkt aktivitet?
+- Ingår åtkomsthanteringsrelaterade risker i cyberarkitekturstrategin?
+
+Åtkomsthanteringskontrollimplementering i organisationen:
+
+1. **Logiska kontroller**
+   - **administrativa kontroller:** Åtkomstpolicyer, procedurer och godkännandeprocesser för åtkomsträttigheter.
+   - **Operativa kontroller:** Regelbunden granskning av åtkomsträttigheter, systemkapacitetshantering.
+   - **Tekniska kontroller:** Multifaktorautentisering (MFA), rollbaserad åtkomstkontroll (RBAC), loggningssystem.
+
+2. **Fysiska kontroller**
+   - **administrativa kontroller:** Policyer och riktlinjer för åtkomsträttigheter.
+   - **Operativa kontroller:** Staket, lås, kameraövervakning, säkerhetsvakter.
+   - **Tekniska kontroller:** Elektroniska åtkomstkort, rörelsesensorer, automatisk loggning av ingångspunkter.
+
+3. **IT- och OT-miljöskydd**
+   - IT- och OT-systemåtkomsthantering är **åtskild och begränsad till endast auktoriserade användare**.
+   - **Separata hanteringsnätverk och säkra fjärråtkomstlösningar (VPN, jump host-lösningar)** används.
+
+4. **Loggning och övervakning**
+   - **SIEM (Security Information and Event Management) system** analyserar och larmar om misstänkt aktivitet.
+   - **Åtkomst- och åtkomsthanteringsrevisioner** genomförs regelbundet.
+
+5. **Dokumentation och kontinuerlig förbättring**
+   - **Åtkomsthanteringsmetoder och kontroller dokumenteras i cyberarkitekturstrategin.**
+   - Kontrolleffektivitet **bedöms regelbundet och förbättras baserat på nya hot**.
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Åtkomsthanteringskontrollmekanismer används inte eller information om deras status är otillgänglig.
+- **Delvis implementerat**: Vissa åtkomsthanteringskontroller används, men de täcker inte alla enheter, programvara eller datarepositorier som är kritiska för funktionen.
+- **Mestadels implementerat**: Åtkomsthanteringskontroller används i stor utsträckning, men deras dokumentation eller övervakning kan ha luckor.
+- **Fullt implementerat**: Organisationen har omfattande åtkomsthanteringskontroller som täcker alla kritiska enheter, programvara och datarepositorier, och deras effektivitet övervakas och bedöms regelbundet.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+I livsmedelsföretaget är åtkomst till produktionsanläggningssystem begränsad till endast auktoriserade anställda, och multifaktorautentisering (MFA) och rollbaserad åtkomstkontroll (RBAC) används. Fysiska utrymmen skyddas med åtkomstkortssystem.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationens system finns på ett separat hanteringsnätverk, och åtkomst kräver en godkänd fjärråtkomstlösning (VPN) och stark autentisering. Alla åtkomsträttigheter loggas och analyseras för säkerhetsavvikelser.
+
+> **Elbolag**
+Energibolaget använder en Zero Trust-åtkomsthanteringsmodell där alla användares och enheters åtkomsträttigheter verifieras vid varje inloggning. Åtkomsthantering baseras på roller, och övervakning är kontinuerlig med SIEM-system.
+
+### Ytterligare information
+
+- **Logiska och fysiska kontroller är centrala för åtkomsthantering.**
+- **Multifaktorautentisering (MFA) och rollbaserad åtkomstkontroll (RBAC) bör användas för användarautentisering.**
+- **Åtkomsthanteringsdokumentation är viktig för att säkerställa system- och datasäkerhet.**
+- **Fysiska övervakningsåtgärder som kameraövervakning och åtkomstkort hjälper till att förhindra obehörig åtkomst till kritiska utrymmen.**
+- **Loggar och analys hjälper till att identifiera misstänkt aktivitet och möjliggör snabb upptäckt av säkerhetsavvikelser.**
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Cybersäkerhetskontroller implementeras för att hantera risker relaterade till obehörig och/eller olämplig åtkomst till IT, OT-tillgångar och datarepositorier, inklusive fysiska tillgångar. Logiska kontroller kan vara administrativa (t.ex. policyer, procedurer), operativa (t.ex. systemunderhåll, kapacitetshantering) och tekniska (t.ex. autentiseringssystem, systemloggning). Fysisk övervakning kan också vara administrativ (t.ex. policyer, procedurer), operativ (t.ex. staket, lås, skyltar) och teknisk (t.ex. elektroniska åtkomstkortsläsare, rörelsesensorer, ingångspunktsloggning).
+
+Relaterade metoder:
+
+- Input: Implementering av ASSET-1a och ASSET-2a ger information som kan vara användbar vid implementering av denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: ARCHITECTURE-3a, ARCHITECTURE-3b, ARCHITECTURE-3c, ARCHITECTURE-3d, ARCHITECTURE-3h, ARCHITECTURE-3k.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="architecture-3b">Slutpunktsskyddsmekanismer, såsom säkra konfigurationer, säkerhetsprogram och slutpunktsövervakning, finns på plats för enheter, programvara och datarepositorier som är kritiska för funktionen.</PracticeTitle>
+
+### Betydelse
+
+Slutpunktsskyddsmekanismer är kritiska för cybersäkerhet eftersom:
+- **Slutpunkter är primära mål för cyberattacker.** Dåligt skyddade enheter kan fungera som attackvektorer för hela organisationen.
+- **Säkra konfigurationer och härdade inställningar minskar attackytan.** Standardinställningar kan innehålla säkerhetssårbarheter som angripare kan utnyttja.
+- **Skadlig programvaraförebyggande och slutpunktsövervakning upptäcker och förhindrar intrångsförsök.** EDR- och HID-system analyserar beteendemönster och blockerar automatiskt avvikelser.
+- **Dataförlustförebyggande (DLP) förhindrar läckage av känslig information.** Mänskliga fel kan leda till oavsiktliga dataläckor utan skyddsåtgärder.
+- **Slutpunktsskydd stöder efterlevnad av regelverk och standarder.** Till exempel kräver **ISO 27001, NIST 800-171 och IEC 62443** slutpunktssäkerhetskontroller.
+
+Bedömningsfrågor:
+- Har organisationen **säkra konfigurationer och härdade inställningar** för slutpunkter?
+- Används **EDR- och HID-system** på slutpunkter för att förhindra skadlig programvara och intrång?
+- Är säkerhetsprogram såsom **skadlig programvaraförebyggande programvara och brandväggar** installerade och uppdaterade?
+- Övervakas och analyseras slutpunktsanvändning och trafik för att upptäcka misstänkt aktivitet?
+- Används dataförlustförebyggande (DLP) policyer och programvara?
+
+Slutpunktsskyddsmekanismimplementering i organisationen:
+
+1. **Säkra konfigurationer och härdning**
+   - Standardinställningar tas bort och **säkra konfigurationer implementeras** för IT- och OT-enheter.
+   - **Konfigurationspolicyer och regler** används som definierar slutpunktssäkerhetsinställningar.
+
+2. **Säkerhetsprogram och slutpunktsövervakning**
+   - **Skadlig programvaraförebyggande programvara** (t.ex. antivirusprogram, slutpunktsskydd).
+   - **EDR (Endpoint Detection and Response)** system för att upptäcka och förhindra skadlig aktivitet.
+   - **Värdbaserad intrångsdetektering (HID)** och brandväggar för att skydda slutpunkter.
+
+3. **Dataskydd och förlustförebyggande (DLP)**
+   - **DLP-verktyg** används som förhindrar känslig information från att lämna organisationen.
+   - Dataklassificeringspolicyer och åtkomsthantering förhindrar olämplig åtkomst till information.
+
+4. **Loggning och slutpunktsövervakning**
+   - **Övervakningsprogram analyserar slutpunktsaktivitet** och larmar om avvikelser.
+   - **Användarloggar lagras och analyseras regelbundet** för säkerhetsavvikelser.
+
+5. **Dokumentation och kontinuerlig förbättring**
+   - **Slutpunktsskyddsmekanismer definieras och dokumenteras i cyberarkitekturstrategin.**
+   - Säkerhetsinställningar och metoder **granskas regelbundet och uppdateras enligt nya hot**.
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Slutpunktsskyddsmekanismer används inte eller information om deras status är otillgänglig.
+- **Delvis implementerat**: Vissa slutpunktsskydd används, men de täcker inte alla kritiska enheter, programvara eller datarepositorier.
+- **Mestadels implementerat**: Skyddsmekanismer används i stor utsträckning, men deras dokumentation, övervakning eller spårning kan ha luckor.
+- **Fullt implementerat**: Organisationen har omfattande slutpunktsskyddsmekanismer som täcker alla kritiska enheter, programvara och datarepositorier, och deras effektivitet övervakas och bedöms regelbundet.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+I livsmedelsindustrins produktionsanläggningar skyddas alla slutpunkter med EDR-system och rollbaserad åtkomstkontroll (RBAC). Arbetsstationer har skadlig programvaraförebyggande installerat och slutpunktssäkerhetsinställningar är standardiserade.
+
+> **Vattenanläggning**
+I vattenförsörjning är systemets slutpunkter härdade och isolerade till separata hanteringsnätverk, och deras användning kräver stark autentisering. HID-system analyserar slutpunktstrafik för avvikelser.
+
+> **Elbolag**
+Energibolaget använder Zero Trust-principen där slutpunkter verifieras vid varje inloggning. SIEM-system analyserar slutpunktsloggar, och säkerhetsavvikelser rapporteras automatiskt.
+
+### Ytterligare information
+
+- **Slutpunktsskydd förhindrar skadlig programvara och förhindrar dataläckor.**
+- **Konfigurationshärdning och standardiserade inställningar minskar sårbarheter.**
+- **EDR- och HID-system möjliggör snabb avvikelsedetektering och svar.**
+- **DLP-verktyg förhindrar oavsiktligt eller obehörigt läckage av känslig information.**
+- **Regelbundna säkerhetsgranskningar och revisioner säkerställer att skyddsmekanismer fungerar korrekt.**
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Slutpunktsskydd avser cybersäkerhetskontroller som tillämpas direkt på IT- och OT-tillgångar. Dessa kontroller bör fokusera på att förhindra slutpunktssäkerhetsrisker såsom utnyttjande av sårbarheter, attacker och oavsiktliga dataläckor på grund av mänskliga fel. Slutpunktsskydd kan inkludera konfigurationshärdning, konfigurationspolicyer och regler, slutpunktsdetekterings- och responsprogramvara (EDR), skadlig programvaraförebyggande programvara, övervakningsprogram, dataförlustförebyggande (DLP) verktyg, värdbaserad intrångsdetektering (HID) och brandväggar och andra skydd.
+
+Relaterade metoder:
+
+- Input: Implementering av ASSET-1a ger input som kan vara användbar vid bedömning och implementering av denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: ARCHITECTURE-3a, ARCHITECTURE-3b, ARCHITECTURE-3c, ARCHITECTURE-3d, ARCHITECTURE-3h, ARCHITECTURE-3k.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-5">Dataskydd som en del av cyberarkitekturen</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-5a">Lagrad känslig information ("data at rest") skyddas.</PracticeTitle>
+
+### Betydelse
+
+Att skydda lagrad känslig information är viktigt eftersom:
+- **Dataläckor kan orsaka betydande ekonomiska och anseendeskador.** Säkerhetsbrott kan leda till böter och förlust av kundförtroende.
+- **Lagar och förordningar kräver skydd av känslig information.** Till exempel definierar **GDPR, NIST 800-53 och ISO 27001** krav för dataskydd.
+- **Okrypterad och oövervakad data är sårbar för obehörig användning och manipulation.**
+- **Dataskydd minskar effekten av säkerhetsbrott och cyberattacker.** Om en angripare får tag i krypterad data är det svårare att utnyttja den utan nyckeln.
+
+Bedömningsfrågor:
+- Har organisationen krypteringsmetoder i bruk för att skydda lagrad data?
+- Är åtkomst till känslig information begränsad och kontrollerad med åtkomsträttigheter?
+- Är lagrad information skyddad med auktoriserings- och autentiseringstekniker?
+- Används datamaskering eller tokenisering för att skydda känslig information?
+- Är säkerhetskopior skyddade och hanterade på samma nivå som produktionsdata?
+
+Lagrad informationsskydd i organisationen:
+
+1. **Autentiseringstekniker och åtkomsthantering**
+   - **Multifaktorautentisering (MFA)** för åtkomst till känslig information.
+   - **Rollbaserad åtkomstkontroll (RBAC)** begränsar åtkomst endast till användare som behöver det för sina arbetsuppgifter.
+   - **Digitala certifikat** och stark autentisering skyddar åtkomst till filer och databaser.
+
+2. **Auktoriseringstekniker och åtkomstkontroll**
+   - **Åtkomstkontrollmekanismer** används som förhindrar obehörig åtkomst till känslig information.
+   - **Revisionsloggar registrerar alla dataförfrågningar och åtkomstförsök**, och misstänkt aktivitet larmar övervakningssystem.
+
+3. **Kryptering och datamaskering (masking, tokenisering)**
+   - **Datakryptering (AES-256, RSA)** i lagringsfas och i vila (data at rest).
+   - **Datamaskering och tokenisering** förhindrar känslig informationsavslöjande till onödiga användare.
+
+4. **Säkerhetskopior och dataintegritet**
+   - **Säkerhetskopior krypteras och lagras på säkra platser**, separat från produktionsmiljön.
+   - **Dataintegritetscheck (hashing) säkerställer att information inte har modifierats utan auktorisering.**
+
+5. **Dokumentation och kontinuerlig förbättring**
+   - **Dataskyddspolicyer dokumenteras och deras efterlevnad övervakas regelbundet.**
+   - **Krypteringsnyckel- och åtkomsthanteringspolicyer uppdateras** när säkerhetshot utvecklas.
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Mekanismer för att skydda lagrad känslig information används inte eller information om deras status är otillgänglig.
+- **Delvis implementerat**: Vissa skyddsåtgärder används, men de täcker inte all känslig information eller har betydande luckor.
+- **Mestadels implementerat**: Skyddsmetoder används i stor utsträckning, men deras dokumentation, hantering eller övervakning kan behöva förbättring.
+- **Fullt implementerat**: Organisationen har omfattande dataskyddsmekanismer som täcker all kritisk information, och deras effektivitet övervakas och bedöms regelbundet.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Produktionsdata och recept skyddas med AES-256-kryptering och rollbaserad åtkomstkontroll. Åtkomst till känslig information kräver multifaktorautentisering.
+
+> **Logistikföretag**
+Logistikföretagets kundinformation och ruttplaner lagras i krypterade databaser, och åtkomst kräver stark autentisering.
+
+> **Vattenanläggning**
+Vattenförsörjningssystemets loggar lagras på en separat krypterad server som endast är tillgänglig för auktoriserade användare. Dataintegritet verifieras med hash-funktioner.
+
+> **Elbolag**
+Energibolagets kund- och faktureringsinformation skyddas med tokenisering, vilket gör att endast auktoriserade system kan återställa data till sin ursprungliga form.
+
+### Ytterligare information
+
+- **Lagrad känslig information måste skyddas med kryptering, åtkomsthantering och övervakningssystem.**
+- **Datamaskering och tokenisering hjälper till att förhindra onödig informationsavslöjande.**
+- **Revisionsloggar och dataintegritetscheck säkerställer att datamanipulation kan upptäckas.**
+- **Informationssäkerhetsstandarder som GDPR, NIST och ISO 27001 sätter krav för att skydda känslig information.**
+- **Säkerhetskopior måste skyddas på samma sätt som produktionsdata så att de inte är sårbara för attacker.**
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Autentiseringstekniker (t.ex. åtkomsthantering, digitala certifikat, biometrisk autentisering, multifaktorautentisering), auktoriseringstekniker (t.ex. åtkomstkontrollmekanismer) och skyddstekniker (t.ex. kryptering och datamaskering) är typiska arkitekturtaktiker för att skydda känslig information som kan orsaka skada för funktionen vid till exempel dataläckage. Detta inkluderar till exempel personuppgifter, ekonomiska data, affärshemligheter, konfidentiell juridisk och kontraktsinformation. Implementering av denna metod kräver inte tillämpning av flera tekniker. Data at rest kan inkludera information lagrad i virtualiserade resurser i vila.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: ARCHITECTURE-5a, ARCHITECTURE-5b, ARCHITECTURE-5c, ARCHITECTURE-5d, ARCHITECTURE-5e, ARCHITECTURE-5g, ARCHITECTURE-5h.
+</CollapsibleSection>
+
+---
+
+_Vägledningen uppdaterad: 19.3.2025_

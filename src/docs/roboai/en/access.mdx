@@ -1,0 +1,643 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Identity and access management
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- Facilities management representative
+- IT and OT team specialists responsible for logical and physical access management
+- Human resources representative
+</Roles>
+
+---
+<ObjectiveTitle name="access-1">Identity creation and management</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-1a">Separate identities are assigned to employees and other entities, such as processes or devices, that require access to devices, software, or data repositories belonging to the function.</PracticeTitle>
+
+### Significance
+
+Identity management is critical because:
+- **Clear and unique identities prevent unauthorized access.** Identifying each user, device, and process reduces security risks.
+- **The foundation of access management is unique identification.** Without separate identities, it is not possible to control who accesses which systems or data.
+- **Developing automation and monitoring supports security.** Manual identity management is prone to errors, so it is important to use IAM systems.
+- **Identity management helps meet legislative and standards requirements.** For example, **NIST 800-53, ISO 27001**, and the **Zero Trust model** require strict access management.
+
+Assessment questions:
+- Has the organization defined unique identities for all users, devices, and processes?
+- Is identity creation and management documented in organizational practices?
+- Are identity profiles used that include the entity's role, position, and access level?
+- Is identity management automated, for example, through an identity management system (IAM)?
+- Are shared identities only used in justified situations and with security measures ensured?
+
+The organization should ensure that the following actions are in place:
+
+1. **Identity creation and documentation**
+   - Each user, system, device, and process is assigned a **unique identity**.
+   - Identity profiles include all essential information, such as **roles, responsibilities, and access levels**.
+
+2. **Identity registration and approval**
+   - There are clear processes and responsible persons for identity management.
+   - Identities are approved by the organizational unit or function where the identity owner operates.
+
+3. **Access management integration**
+   - **IAM solutions (Identity and Access Management)** automate identity management and access control.
+   - User accounts and access rights are based on **need-to-know (least privilege)** and the **Zero Trust principle**.
+
+4. **Shared identity management**
+   - Group accounts and shared credentials are used **only in justified situations** and with additional security measures, such as **multi-factor authentication (MFA)** and **audit logs**.
+
+5. **Identity lifecycle management**
+   - Identities are reviewed and **deprovisioned** when no longer needed (e.g., when an employee leaves the organization).
+   - Systematic access management review at least once a year.
+
+<AnswerOptions>
+- **Not implemented or no information**: Identity management is unclear, and separate identities have not been assigned.
+- **Partially implemented**: Unique identities have been assigned to some users, devices, and processes, but the practice does not cover the entire organization.
+- **Mostly implemented**: Identities have been defined for most employees and systems, but management can still be developed, for example, by reducing the use of shared identities or increasing automation.
+- **Fully implemented**: The organization has a comprehensive and automated identity management process that covers all employees, systems, and devices. The use of shared identities is minimized and well managed.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Water utility**
+The water utility organization uses identity profiles for system users. Each engineer and technician receives a unique account, and their access rights are determined by job duties. Separate temporary identities are created for external suppliers, which are automatically deprovisioned.
+
+> **Power company**
+The energy company has implemented a Zero Trust-based access management model. Identity management covers all systems, and each user's rights are audited regularly. Devices and systems are identified with separate certificates, preventing unauthorized access to critical systems.
+
+### Additional information
+
+- **Identity management includes the identification and management of users, devices, systems, and processes.**
+- **Best practice is an identity profile** that defines a user's or system's roles and access rights.
+- **Shared identities can be used in exceptional cases,** but their use should be minimized and protected with additional measures.
+- **Identity and access management solutions (IAM) can automate identity management and reduce manual work and risks.**
+- **Identity lifecycle is managed carefully,** and unnecessary access rights are removed promptly.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Identity management refers to the creation or registration of identities. This includes identifying the entity and documenting attributes such as role and position in the organization.
+Identity management is performed for entities, i.e., people, devices, systems, and processes, whether internal or external to the organization. The organization can thus register a vendor, agency, or business partner as an identity, as well as an external organization's system or process. In some cases, organizations may need to use shared identities, such as group accounts.
+
+The best practice in identity management is an identity profile. The profile includes all relevant information needed to describe the unique attributes, roles, and responsibilities of the associated entity (person, device, system, process). The identity profile is usually created and approved by the organizational unit or function to which the entity belongs and where decisions about the use of organizational assets can be made.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-1a, ACCESS-1c, ACCESS-1e, ACCESS-1f, ACCESS-1j.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-1b">Access credentials, such as passwords, smartcards, or keys, are issued to employees and other entities.</PracticeTitle>
+
+### Significance
+
+Distributing and managing access credentials is critical because:
+- **Proper access management prevents unauthorized access to critical resources.** Each user, device, and system should receive only necessary rights.
+- **Poorly managed access credentials can lead to security breaches.** For example, weak password practices or unshared access rights can expose the organization to attacks.
+- **Multi-factor authentication (MFA) improves security.** Passwords alone are not sufficient protection against many current cyber threats.
+- **The distribution and use of access credentials must be monitored.** The organization must ensure that access rights do not remain in effect unnecessarily and are monitored.
+
+Assessment questions:
+- Does the organization have a clear process for granting and managing access credentials?
+- Is it ensured that the user requesting access has the right to receive those credentials?
+- Is multi-factor authentication (MFA) or other additional security methods used?
+- Are different access levels defined according to the least privilege principle?
+- Is access credential management documented and audited regularly?
+
+The organization should ensure that the following actions are in place:
+
+1. **Granting and approving access credentials**
+   - Each user, device, or system receives access credentials **only through official approval**.
+   - The user's **role, task, and need for access** are defined before granting credentials.
+
+2. **Types and protection of access credentials**
+   - **Passwords**: Strong, unique, and complex passwords (at least 12 characters, including special characters and numbers).
+   - **Smartcards and keys**: Physical and electronic identifiers for identity verification and access management.
+   - **Biometric authentication**: Fingerprint or facial recognition solutions for high-security targets.
+
+3. **Multi-factor authentication (MFA)**
+   - **MFA is required for critical systems and remote access**. This may include, in addition to a password, e.g., login approval via mobile application.
+   - **Using MFA reduces the risk of phishing attacks**.
+
+4. **Access rights management and monitoring**
+   - Access rights are granted according to the **least privilege** principle (only necessary rights are granted).
+   - **Auditing and monitoring**: Access credentials are monitored regularly and unnecessary rights are removed.
+
+5. **Access credential lifecycle management**
+   - When an employee leaves the organization or changes tasks, **their access rights are removed immediately**.
+   - A **centralized access management system (IAM)** is in use, ensuring that all access rights are up to date.
+
+<AnswerOptions>
+- **Not implemented or no information**: Granting access credentials is not defined, and they do not involve controlled approval processes.
+- **Partially implemented**: Some access credentials are managed appropriately, but practices do not cover the entire organization or all resources.
+- **Mostly implemented**: Most access credentials are well managed, but for example, multi-factor authentication or regular auditing is not fully comprehensive.
+- **Fully implemented**: The organization has a comprehensive access management process where access credentials are granted, audited, and managed automatically.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+In the food industry, production line access rights are managed centrally with an identity and access management system. Each employee is granted personal user accounts to systems, and access rights are reviewed regularly.
+
+> **Transport company**
+The logistics company uses smartcards and RFID identifiers for vehicle management systems to identify drivers. Remote login requires multi-factor authentication, and access rights auditing is done quarterly.
+
+> **Power company**
+The energy company uses the **Zero Trust principle**, where access credentials are continuously verified. Remote access uses multi-factor authentication and unique software-based keys that expire automatically.
+
+### Additional information
+
+- **When granting access credentials, it is ensured that the user has the right to access.**
+- **Access credentials can apply to both people, devices, systems, and processes.**
+- **Multi-factor authentication (MFA) significantly reduces security threats.**
+- **Password policies should be designed to prevent the most common attacks (e.g., brute force attacks).**
+- **The access credential lifecycle must be managed so that access rights are removed when no longer needed.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Before personnel and other parties are given access to organizational assets, the organization should issue access credentials that demonstrate that the person requesting access has the necessary rights to access assets such as devices, data repositories, and physical spaces. Users can be people (internal or external to the organization) as well as devices, systems, or processes that require access to assets. The rights associated with these credentials should be consistent with functional requirements.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-1b, ACCESS-1d, ACCESS-1g, ACCESS-1h, ACCESS-1i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-1c">Identities are deprovisioned when no longer needed.</PracticeTitle>
+
+### Significance
+
+Controlled removal of identities is critical because:
+- **Unused identities can be a security risk.** If old access rights are not removed, they can fall into the hands of an attacker.
+- **Access to organizational resources by former employees or contractors must be prevented.** Without proper management, former users may have access to sensitive information.
+- **Automated access management reduces manual work and human errors.** An IAM system can handle automatic removal of access rights.
+- **Auditable access rights ensure that access rights are always up to date.** This supports the organization's security policy and reduces insider threats.
+
+Assessment questions:
+- Does the organization have a clear process for removing identities and access rights when no longer needed?
+- Are employee access rights removed immediately when employment ends?
+- Are device and system access rights managed the same way as personnel identities?
+- Is the process automated with an IAM system (Identity and Access Management)?
+- Are old identities' access rights audited and monitored regularly?
+
+The organization should ensure that the following actions are in place:
+
+1. **Identity and access removal process**
+   - **When an employee, device, or system leaves the organization**, the associated identity and all related access rights must be removed immediately.
+   - An **IAM system** is used that automates access management and removal.
+
+2. **Access management when employment or partnership agreement ends**
+   - When an employee or contractor leaves, **all access rights are removed simultaneously with their last working day**.
+   - The IT department ensures that **departure is documented and confirmed with HR**.
+
+3. **Device and system identity management**
+   - Old devices and systems **certificates and access identifiers are revoked** when removed from organizational assets.
+   - Automated processes, such as **Device Identity Management**, ensure that access rights do not remain in effect.
+
+4. **Auditing and monitoring**
+   - The organization performs regular **checks to determine whether old access rights are still in effect**.
+   - **Deviations are documented and handled** to improve access management.
+
+5. **Combining manual and automated processes**
+   - IAM systems can **automate access removal**, but **HR and the IT department must ensure that all actions are performed correctly**.
+   - Especially **high-level users**, such as system administrators, require **additional monitoring** during the removal process.
+
+<AnswerOptions>
+- **Not implemented or no information**: The identity removal process is not defined, and access rights are not removed regularly.
+- **Partially implemented**: Some identities are removed, but the process does not cover all systems or is unclear.
+- **Mostly implemented**: Most identities are removed systematically, but for example, manual checks are not performed regularly.
+- **Fully implemented**: The organization has a comprehensive and automatic access removal process that is documented and audited regularly.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The food company uses an identity and access management system that automatically removes access rights when an employee leaves the organization. Additionally, a manual check is performed quarterly to ensure all rights have been removed.
+
+> **Transport company**
+In the logistics company, drivers' and maintenance personnel's access rights to vehicle systems are automatically removed after their last working day. The IT department performs a weekly check to ensure old credentials have not remained in systems.
+
+> **Water utility**
+The water utility organization uses an identity and access management system and manual processes to ensure that system access rights are removed immediately when a user no longer needs them. The removal process also includes revoking certificates and device access identifiers.
+
+> **Power company**
+The energy company has implemented Zero Trust-based access management, where identities are automatically deprovisioned when no longer needed. Administrator rights are reviewed separately before removal.
+
+### Additional information
+
+- **When an employee, device, or system leaves the organization, the identity must be removed immediately.**
+- **Identity and access management systems can automate access management and prevent security threats.**
+- **The removal process should include revoking system credentials, keys, and certificates.**
+- **Audits ensure that old access rights do not remain in effect.**
+- **Especially high-level access rights (admin, critical systems) require additional monitoring.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+When a person, device, system, or process ceases to exist in the organization, the associated identity and all associated access rights and restrictions must be removed. Failure to remove the identity can pose a significant operational risk to the organization, as it can provide an identity that an unauthorized (and possibly unknown) person, subject, or entity can use. If this happens and its access rights have not been removed, the identity can be stolen with all existing privileges.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-1a, ACCESS-1c, ACCESS-1e, ACCESS-1f, ACCESS-1j.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="access-2">Logical access management</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-2a">Logical access control measures are in place.</PracticeTitle>
+
+### Significance
+
+Logical access control is critical because:
+- **It ensures that only authorized persons can use information systems.** This prevents unauthorized access to sensitive information and critical systems.
+- **Access control protects organizational assets.** Protecting systems, data repositories, and software is essential for security.
+- **Misuse and security breaches can be detected early.** Properly implemented controls, such as logging and analytics, help identify suspicious activity.
+- **It helps meet security standards and legislation requirements.** For example, **ISO 27001** and **NIST 800-53** require access control monitoring.
+
+Assessment questions:
+- Does the organization have a system for granting, reviewing, and removing access rights?
+- Are access rights defined as needed according to different roles and tasks (**least privilege principle**)?
+- Is multi-level authentication (e.g., **MFA**) used for critical systems?
+- Have access rights been audited and reviewed regularly?
+- Is access management documented and monitored so that potential misuse is detected early?
+
+The organization should ensure that the following controls are in place:
+
+1. **Access management principles**
+   - Each user has access rights only to the information and systems necessary to perform their tasks (**least privilege principle**).
+   - The **Zero Trust model** is applied: access rights are not permanently granted but are continuously evaluated.
+
+2. **Multi-factor authentication (MFA)**
+   - Multi-factor authentication is used in all critical systems and remote access.
+   - Access rights are verified through multiple authentication levels, such as a password and mobile application approval.
+
+3. **Auditing and regular reviews**
+   - Access rights are reviewed regularly at least **semi-annually** to ensure they are up to date.
+   - All access right changes are logged, and their rationale is documented.
+
+4. **Automated monitoring tools and access analysis**
+   - Access right changes and suspicious activity can be identified with **Security Information and Event Management (SIEM)** systems.
+   - Exceptional or suspicious activity triggers an alert that is investigated by the security team.
+
+5. **Deviation management and response**
+   - If deviations are found in system access rights (e.g., a user with more rights than necessary), they are investigated and restricted as needed.
+   - All access-related changes and deviations are documented and evaluated by the security team.
+
+<AnswerOptions>
+- **Not implemented or no information**: Logical access control measures are not in place, or there is no information about them.
+- **Partially implemented**: Some access control measures are in place, but they do not cover the entire organization.
+- **Mostly implemented**: Most access control measures are in place, but for example, audit practices are not fully comprehensive.
+- **Fully implemented**: The organization has a comprehensive access control system that includes regular audits, automated monitoring tools, and tracking of access changes.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The food industry uses an identity and access management system that manages access rights in production process control systems. A SIEM system monitors access changes and triggers alerts if deviations are detected.
+
+> **Water utility**
+The water utility organization uses strictly limited access rights in its systems. Each operational system is protected with at least two-factor authentication, and access changes are recorded in a centralized logging system.
+
+> **Power company**
+The energy company has implemented the Zero Trust model, where access rights are not permanently granted but are dynamically evaluated based on the user's and system's operating environment. A SIEM system analyzes user login patterns and warns of suspicious activity.
+
+### Additional information
+
+- **Logical access control is a key part of protecting assets (devices, software, data repositories).**
+- **Granting and monitoring access rights is based on the least privilege principle.**
+- **Auditing and monitoring ensure that access rights remain up to date and prevent misuse.**
+- **Multi-factor authentication (MFA) is an essential part of protecting critical systems.**
+- **Automated systems such as IAM and SIEM facilitate access management and monitoring.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Logical or information systems access management is a key part of protecting assets (devices, software, and data repositories). Access rights and restrictions describe the level and extent of identity access rights. Access rights should be proportionate to the different roles represented by the identity.
+
+Related practices:
+
+- Input: Implementation of ARCHITECTURE-3a provides information that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-2a, ACCESS-2c, ACCESS-2d, ACCESS-2e, ACCESS-2f
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-2b">Access rights are revoked when no longer needed.</PracticeTitle>
+
+### Significance
+
+Controlled removal of access rights is critical because:
+- **Unused access rights can pose a significant security risk.** If old access rights are not removed, they can fall into the hands of an attacker.
+- **Access to organizational resources by former employees or those who have changed roles must be prevented.** If access rights are not removed, the organization may be exposed to data breaches and insider threats.
+- **Automated access management reduces manual work and human errors.** Identity and access management (IAM) systems can automatically remove rights when a role or employment changes.
+- **Accumulation of access rights can compromise security.** The organization should ensure that employees and systems receive only access rights necessary for their tasks (**least privilege principle**).
+
+Assessment questions:
+- Does the organization have a defined process for removing access rights automatically or manually?
+- Who in the organization is responsible for managing and removing access rights?
+- Are employee access rights removed immediately when they move away from the organization or their task?
+- Are software, device, and data repository access rights managed the same way as personnel access rights?
+- Is there a system (e.g., IAM) that automates access review and removal?
+- Does the organization perform regular access reviews to ensure unnecessary rights do not remain in effect?
+
+The organization should ensure that the following actions are in place:
+
+1. **Access removal process**
+   - When an employee, device, or system **no longer needs access to organizational resources**, all access rights must be removed immediately.
+   - An **IAM system** is used that automates access management and removal.
+
+2. **Role changes and task transfers**
+   - If an employee **moves to a new task**, their old access rights are reviewed and unnecessary rights are removed.
+   - Access management is based on the **least privilege principle**.
+
+3. **Device and system identity management**
+   - Old devices and systems **certificates and access identifiers are revoked** when removed from use.
+   - Automated processes such as **Device Identity Management** ensure that access rights do not remain in effect.
+
+4. **Auditing and monitoring**
+   - The organization performs **regular access reviews** to ensure no unnecessary rights have remained in effect.
+   - Deviations are documented and handled immediately.
+
+5. **Manual and automated access management**
+   - IAM systems can **automate access removal**, but **HR and the IT department must ensure that all actions are performed correctly**.
+   - Especially **high-level users**, such as system administrators, require **additional monitoring** during the access removal process.
+
+<AnswerOptions>
+- **Not implemented or no information**: The access removal process is not defined, and access rights are not removed regularly.
+- **Partially implemented**: Some access rights are removed, but the process does not cover all systems or is based on manual checks.
+- **Mostly implemented**: Most access rights are removed systematically, but for example, audit practices are not fully comprehensive.
+- **Fully implemented**: The organization has a comprehensive and automatic access removal process that is documented and audited regularly.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+In the food industry, the IAM system automatically removes access rights when an employee moves to another task or leaves the company. Auditing is performed semi-annually to ensure all access rights are up to date.
+
+> **Transport company**
+The logistics company uses the Zero Trust model, where access rights are verified at each login. When a driver or maintenance personnel leaves the organization, their access rights to vehicle management systems and GPS tracking devices are automatically removed.
+
+> **Water utility**
+The water utility organization uses strictly managed access rights for systems. Each user's rights are reviewed monthly, and the removal process is integrated into the IAM system, which automatically removes expired access rights.
+
+> **Power company**
+The energy company has implemented Zero Trust-based access management, where user rights are verified in real-time. High-level access rights (e.g., administrator rights) are removed through a separate two-step approval process.
+
+### Additional information
+
+- **Removing access rights is a key part of secure access management.**
+- **Identity and access management (IAM) systems can automate access management and prevent security threats.**
+- **Access management should be audited regularly** to ensure no unnecessary access rights remain in effect.
+- **The removal process should include revoking system credentials, keys, and certificates.**
+- **Especially high-level access rights (admin, critical systems) require additional monitoring and manual confirmation before removal.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Asset owners and holders are responsible for terminating logical access rights when they are no longer needed, such as when an employee resigns or moves to a new position. Generally, personnel should maintain the minimum privileges necessary to perform their assigned tasks. Terminating unnecessary access rights prevents access rights accumulation.
+
+Related practices:
+
+- Input: Implementation of ARCHITECTURE-3a provides input that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-2b, ACCESS-2g, ACCESS-2h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="access-3">Physical access management</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-3a">Physical access control measures are in place, such as fences, locks, or signage.</PracticeTitle>
+
+### Significance
+
+Physical access control is critical because:
+- **It prevents unauthorized access to organizational premises, critical systems, and information.** Physical security measures form the foundation for cybersecurity.
+- **Well-managed access control systems reduce internal and external threats.** Unauthorized access can lead to data theft, equipment sabotage, or operational disruptions.
+- **Access control documentation helps investigate deviations.** For example, based on log data, it is possible to trace who moved where and when.
+- **Physical access control supports the organization's broader cybersecurity strategy.** Limiting access rights and effective monitoring are part of the **Zero Trust model** and **ISO 27001 standard**.
+
+Assessment questions:
+- Does the organization have physical access control measures in place, such as fences, locks, surveillance cameras, or access control systems?
+- Is access to particularly critical spaces monitored, such as server rooms or control rooms where there is sensitive information or systems?
+- How are keys, access cards, and other physical access identifiers managed and protected?
+- Are physical access systems integrated with the organization's other security, such as logical access control?
+- Does the organization perform regular reviews of physical access control effectiveness?
+
+The organization should ensure that the following controls are in place:
+
+1. **Access control systems and barriers**
+   - **Locked doors and gates:** Access to critical spaces is restricted to authorized persons.
+   - **Access cards and key management:** Management of keys, access cards, and other physical identifiers is strictly monitored.
+   - **Fences and barriers:** Around buildings and in interior spaces, unauthorized access to restricted areas is prevented.
+
+2. **Monitoring and identification methods**
+   - **Camera surveillance (CCTV):** Surveillance cameras record and analyze traffic in critical areas.
+   - **Biometric authentication:** Fingerprint or facial recognition ensures that only authorized persons access certain spaces.
+   - **Alarm systems:** Notify of suspicious activity, such as unauthorized door opening.
+
+3. **Physical identifier and access management**
+   - Access cards are granted **as needed**, and they are deprovisioned when a person no longer needs them.
+   - Lost or misused keys and access cards are reported and handled immediately.
+   - Physical access rights are **aligned with logical access rights** (e.g., server room access also requires system rights).
+
+4. **Auditing and monitoring**
+   - **Regular reviews and testing:** Physical access control effectiveness is evaluated regularly.
+   - **Access control logs:** All persons who have accessed premises and times are documented and analyzed as needed.
+   - **Deviation handling:** Identified security deficiencies are responded to immediately, and operating models are developed based on them.
+
+<AnswerOptions>
+- **Not implemented or no information**: Physical access control measures are not in place or there is no information about them.
+- **Partially implemented**: Some physical access control measures are in place, but they do not cover the entire organization or their management is not systematic.
+- **Mostly implemented**: Most physical access control measures are in place, but for example, access management and auditing are not fully comprehensive.
+- **Fully implemented**: The organization has a comprehensive physical access control system that includes barriers, monitoring systems, regular audits, and deviation management.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+In the food industry, critical production facilities and server centers are protected with **locked doors and access control systems**. Surveillance cameras cover all production line areas, and employee access data is logged.
+
+> **Transport company**
+The logistics company uses RFID-based access control to manage warehouse and vehicle access. All employees need an access card to access certain parts of the warehouse, and surveillance cameras record traffic in loading areas.
+
+> **Water utility**
+The water utility organization protects its critical infrastructure with locked facilities accessible only to authorized personnel, and physical access is monitored in real-time.
+
+### Additional information
+- **Physical access control measures include barriers, identification methods, and monitoring.**
+- **Management of access codes, access cards, and keys is a critical part of physical security.**
+- **Access rights must be aligned with logical access control.**
+- **Auditing and deviation management ensure that physical access control mechanisms remain effective.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+In this model, physical access control measures are intended to protect information technology, organized technology, and information assets (for example, locks that control access to server rooms). Additionally, it is important to note that the effectiveness of some physical access control means, such as keys and access cards, can be significantly affected by the ways in which they are managed and protected.
+
+Related practices:
+
+- Input: Implementation of ARCHITECTURE-3a provides input that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-3a, ACCESS-3d, ACCESS-3e, ACCESS-3f, ACCESS-3g.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-3b">Access rights are revoked when no longer needed.</PracticeTitle>
+
+### Significance
+
+Controlled removal of physical access rights is critical because:
+- **Unused access rights can pose a significant security risk.** If old access cards or keys are not removed or returned, they can fall into the hands of an attacker.
+- **Access to organizational premises by former employees or transferred persons must be prevented.** If access rights are not removed, the organization may be exposed to physical security breaches and insider threats.
+- **Automated access management reduces manual work and human errors.** Access control systems can automatically remove rights when a role or employment changes.
+- **Accumulation of physical access rights can compromise organizational security.** The organization should ensure that employees and outsiders receive only access rights necessary for their tasks (**least privilege principle**).
+
+Assessment questions:
+- Does the organization have a defined process for removing physical access rights when a person changes tasks or leaves the organization?
+- Who is responsible for managing and removing physical access rights?
+- Are access rights managed centrally and is their use audited?
+- Is there a system (e.g., access control system) that automates access management and removal?
+- Does the organization perform regular checks to ensure unnecessary physical access rights do not remain in effect?
+
+The organization should ensure that the following actions are in place:
+
+1. **Access removal process**
+   - When an employee, contractor, or other person **no longer needs access to organizational premises**, all physical access rights must be removed immediately.
+   - An **access control system** is used that automates access management and removal.
+
+2. **Role changes and task transfers**
+   - If an employee **moves to a new task**, their old access rights are reviewed and unnecessary rights are removed.
+   - Access management is based on the **least privilege principle**.
+
+3. **Key, access card, and identifier management**
+   - Old devices and systems **physical identifiers, keys, and access codes are revoked** when removed from use.
+   - Automated processes such as **access control and authentication systems** ensure that access rights do not remain in effect.
+
+4. **Auditing and monitoring**
+   - The organization performs **regular access reviews** to ensure no unnecessary rights have remained in effect.
+   - Deviations are documented and handled immediately.
+
+5. **Manual and automated access management**
+   - Access control systems can **automate access removal**, but **HR and the security department must ensure that all actions are performed correctly**.
+   - Especially **high-level users**, such as system administrators and critical infrastructure users, require **additional monitoring** during the access removal process.
+
+<AnswerOptions>
+- **Not implemented or no information**: The access removal process is not defined, and access rights are not removed regularly.
+- **Partially implemented**: Some access rights are removed, but the process does not cover all spaces or is based on manual checks.
+- **Mostly implemented**: Most access rights are removed systematically, but for example, audit practices are not fully comprehensive.
+- **Fully implemented**: The organization has a comprehensive and automatic access removal process that is documented and audited regularly.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The food industry uses an access control system that automatically removes access rights when an employee moves to another task or leaves the company. Auditing is performed semi-annually to ensure all access rights are up to date.
+
+> **Water utility**
+The water utility organization uses strictly managed access cards and key management. Each user's access rights are reviewed monthly, and the removal process is integrated into the access control system, which automatically removes expired access rights.
+
+> **Power company**
+The energy company has implemented Zero Trust-based access management, where user rights are verified in real-time. High-level access rights are removed through a separate two-step approval process.
+
+### Additional information
+
+- **Removing access rights is a key part of secure physical access management.**
+- **Access control systems can automate access management and prevent security threats.**
+- **Access management should be audited regularly** to ensure no unnecessary access rights remain in effect.
+- **The removal process should include revoking keys, access cards, and identifiers.**
+- **Especially high-level access rights (admin, critical systems) require additional monitoring and manual confirmation before removal.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Asset owners and holders are responsible for terminating physical access rights when the person or other party to whom the rights were granted no longer needs them, such as when an employee resigns or moves to a new position. Generally, personnel should maintain the minimum privileges necessary to perform their assigned tasks. When physical access rights that are no longer needed are revoked, unnecessary access rights accumulation can be prevented.
+
+Related practices:
+
+- Input: Implementation of ARCHITECTURE-3a provides input that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-3b, ACCESS-3h, ACCESS-3i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-3c">Logs are maintained of access usage.</PracticeTitle>
+
+### Significance
+
+Maintaining logs of access usage is critical because:
+- **It enables detection of unauthorized or suspicious activity.** Based on log data, security-related deviations can be identified and investigated.
+- **Logging supports security and regulatory requirements.** Many standards, such as **ISO 27001 and NIST 800-53**, require maintaining logs as part of access management.
+- **The organization can audit access usage.** Regular reviews help ensure that only authorized persons have used access rights.
+- **Documentation related to access usage improves the organization's responsiveness to security breaches.** Log data is central to investigating security breaches or unauthorized physical access.
+
+Assessment questions:
+- Does the organization have a systematic way to record physical access usage?
+- Is access usage recorded automatically through access control systems or manually, for example, as visitor logs?
+- How are log data stored, analyzed, and used for security purposes?
+- Who is responsible for maintaining physical access log data and monitoring usage?
+- Does the organization have a defined policy for log data retention periods and their review?
+
+The organization should ensure that the following logging practices are in place:
+
+1. **Automatic and manual logging**
+   - **Access control systems:** Automatic logging related to access usage is based on electronic systems, such as data collected by RFID cards or biometric authentication.
+   - **Manual logs:** Paper logs or visitor registers can supplement automatic logging in spaces where electronic monitoring is not in use.
+
+2. **Responsibilities and ownership**
+   - **Asset owners** are responsible for ensuring that access usage is recorded appropriately.
+   - IT and security departments can administer logging systems and analyze them from a security perspective.
+
+3. **Log data storage and analysis**
+   - Log data must be stored **according to the organization's security policies and regulatory requirements**.
+   - **Analysis and alarm systems** can help identify suspicious activity and respond to it in time.
+
+4. **Auditing and regular review**
+   - The organization performs **regular checks** evaluating log data coverage and accuracy.
+   - Deviations and suspicious activity are documented and handled immediately.
+
+5. **Security deviation management**
+   - Log data is used for **event analysis** if suspicious activity is detected.
+   - The security team is responsible for **response and investigations** if deviations are found based on log data.
+
+<AnswerOptions>
+- **Not implemented or no information**: Logs are not maintained of access usage, or there is no information about it.
+- **Partially implemented**: Some access usage events are logged, but the system does not cover all spaces or is mainly based on manual recording.
+- **Mostly implemented**: Most access usage is recorded automatically, but there may be deficiencies in analysis and audit practices.
+- **Fully implemented**: The organization has a comprehensive and automated access logging system that is documented and audited regularly.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+Food industry production facilities are protected with an access control system that automatically records all check-ins and check-outs. Visitors record their information in a manual log, and access usage is audited quarterly.
+
+> **Transport company**
+The logistics company's warehouses use RFID-based access control that records all employee and visitor movements in warehouse spaces. Access rights and log data are reviewed regularly to prevent potential misuse.
+
+> **Water utility**
+The water utility organization uses RFID-based access control in the control room and all access events are automatically recorded in a centralized logging system. Log data is stored for one year and analyzed regularly for suspicious activity.
+
+> **Power company**
+Access to the energy company's high-security spaces is recorded both electronically and manually, and each entry requires approval from the control room. Log data is integrated into a SIEM system that analyzes and warns of suspicious events in real-time.
+
+### Additional information
+
+- **Access usage logging can be manual (e.g., paper log) or automated (e.g., access control system).**
+- **Logging enables detection of unauthorized activity and investigation of security breaches.**
+- **Asset owners are responsible for ensuring that logging meets the organization's security requirements.**
+- **Log data retention periods and analysis practices must be defined in the organization's security policy.**
+- **Regular auditing ensures that log data is effectively used for security management.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+The asset owner is responsible for ensuring that physical access logging meets the protection and maintenance requirements of the assets under the owner's control. Logging can be performed manually, for example, with a paper log, or automatically, for example, from data collected through physical access control systems.
+
+Related practices:
+
+- Input: Implementation of ARCHITECTURE-3a provides input that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ACCESS-3c, ACCESS-3j.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 3/18/2025_

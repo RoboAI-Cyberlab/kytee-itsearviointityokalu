@@ -1,0 +1,750 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Uhkien ja haavoittuvuuksien hallinta
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- IT- ja OT-päivitystiimin asiantuntija
+- kyberturvallisuusvalvomon (SOC) johto
+- ulkoisten kyberturvallisuusuhkien ja -tapahtumien seurannasta vastaava asiantuntija
+</Roles>
+
+Uhkien ja haavoittuvuuksien hallinnan osiossa arvioidaan organisaation kykyä määritellä ja ylläpitää suunnitelmia, prosesseja ja tekniikoita kyberuhkien ja -haavoittuvuuksien havainnointiin, tunnistamiseen, analysointiin, hallintaan ja niihin puuttumiseen - suhteessa organisaatioon kohdistuviin riskeihin ja organisaation tavoitteisiin.
+
+**Kyberuhalla** tarkoitetaan mitä tahansa tilannetta tai tapausta, joka voi vaikuttaa negatiivisesti organisaation omiin resursseihin ja toimintaan (mukaan lukien esimerkiksi organisaation tavoitteet, toiminnot, julkisuuskuvan tai maineen) tai välillisesti muihin organisaatioihin (esimerkiksi organisaation IT-, OT- tai viestintäjärjestelmien luvattoman käytön, tuhoamisen, tiedon julkistamisen, peukaloinnin tai palvelunestohyökkäyksen seurauksena).
+
+IT-, OT- ja viestintäjärjestelmiin kohdistuu laaja joukko erilaisia uhkia, joihin voi lisäksi liittyä erilaisia uhkatekijöitä, haittaohjelmia (kuten viruksia ja matoja) tai laajamittaisia hajautettuja palvelunestohyökkäyksiä.
+
+**Kyberhaavoittuvuus** on IT-, OT- tai viestintäjärjestelmässä, laitteessa, toimintatavassa tai sisäisessä suojausmekanismissa oleva puute tai aukko, jota mahdollinen uhka voi käyttää hyväksi.
+
+---
+
+<ObjectiveTitle name="threat-1">Haavoittuvuuksien vähentäminen</ObjectiveTitle>
+
+**Haavoittuvuuksien vähentäminen** alkaa haavoittuvuustiedon keräämisellä ja analysoinnilla. Haavoittuvuksia voidaan kartoittaa esimerkiksi automaattisten skannaustyökalujen avulla, verkkojen tunkeutumistestauksilla, kyberharjoituksilla tai auditoinneilla.
+
+**Haavoittuvuuksien analysoinnissa** tulisi ottaa huomioon sekä paikallinen vaikutus (eli haavoittuvuuden mahdollinen vaikutus suojattavaan kohteeseen itseensä), että suojattavan kohteen laajempi merkitys koko toiminnolle.
+
+**Haavoittuvuuksia torjuntaa** voidaan tehdä suorittamalla suojaavia toimenpiteitä, seuraamalla uhkatilannetta, asentamalla tietoturvapäivityksiä tai muilla keinoin.
+
+---
+
+<PracticeTitle name="threat-1a">Haavoittuvuuksien tunnistamisen
+tueksi on tunnistettu soveltuvia tietolähteitä. Toiminnan ei tarvitse olla systemaattista ja säännöllistä.</PracticeTitle>
+
+### Kysymys
+
+Hyödyntääkö organisaatiosi tehokkaasti erilaisia tietolähteitä haavoittuvuuksien tunnistamiseksi? Tällaisia tietolähteitä voivat olla esimerkiksi ohjelmistotoimittajien julkaisemaat haavoittuvuusilmoitukset, kyberturvallisuuskeskusten antamat varoitukset tai alan asiantuntijoiden julkaisut. 
+
+### Merkitys
+
+Haavoittuvuuksien tunnistaminen ajoissa on keskeinen osa organisaation kyberturvallisuuden hallintaa. Soveltuvat tietolähteet voivat antaa arvokasta tietoa uusista uhkista, kuten ohjelmisto- tai laitteistohaavoittuvuuksista, jotka voivat altistaa organisaation tietoturvauhille. Hyödyntämällä tällaisia lähteitä organisaatio voi reagoida nopeasti ja toteuttaa tarvittavat suojaustoimet, kuten ohjelmistopäivitykset tai konfiguraatiomuutokset. Tämä auttaa estämään mahdollisia hyökkäyksiä, tietovuotoja ja toimintakatkoksia ennen kuin ne vaikuttavat organisaation toimintaan. 
+
+<AnswerOptions>
+Arvioi, miten kattavasti organisaatio hyödyntää tietolähteitä haavoittuvuuksien tunnistamiseen:
+
+1. **Ei toteutettu tai ei tietoa**: Tietolähteitä ei käytetä, tai niiden käyttöä ei tunnisteta.
+1. **Osittain toteutettu**: Tietolähteitä käytetään satunnaisesti, mutta käyttö ei ole systemaattista tai säännöllistä.
+1. **Enimmäkseen toteutettu**: Tietolähteiden käyttö kattaa suurimman osan kriittisistä tarpeista, mutta prosessi ei ole täysin kattava tai ajantasainen.
+1. **Täysin toteutettu**: Tietolähteitä seurataan aktiivisesti ja säännöllisesti, ja niitä käytetään systemaattisesti haavoittuvuuksien tunnistamiseen ja hallintaan.
+</AnswerOptions>
+
+### Esimerkki
+
+Elintarvikeyritys Oy hyödyntää useita tietolähteitä haavoittuvuuksien tunnistamiseen, kuten ohjelmistotoimittajien haavoittuvuusilmoituksia sekä tietoturvayhteisöjen raportteja. Näitä lähteitä käytetään erityisesti IT- ja OT-järjestelmien turvallisuuden arviointiin ja suojaustoimien toteuttamiseen.
+
+Tietolähteiden käyttö ei kuitenkaan ole täysin säännöllistä tai järjestelmällistä. Esimerkiksi ERP- ja SCADA-järjestelmien päivitysten yhteydessä tarkistetaan ohjelmistotoimittajien ilmoituksia tunnetuista haavoittuvuuksista, mutta näiden järjestelmien turvallisuutta ei seurata jatkuvasti.
+
+Yritys aikoo kehittää toimintatapojaan sisällyttämällä tietolähteiden säännöllisen seurannan osaksi riskienhallintaprosessiaan. Tulevaisuudessa tietolähteitä hyödynnetään aktiivisemmin myös ennakoivassa haavoittuvuuksien tunnistamisessa. Tämä auttaa parantamaan yrityksen kykyä reagoida nopeasti uusiin uhkiin ja vähentämään järjestelmien haavoittuvuutta. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy on tunnistanut soveltuvia tietolähteitä haavoittuvuuksien tunnistamisen tueksi, mutta tiedonhankinta ei ole vielä täysin systemaattista eikä säännöllistä (tasolla 1). Tietolähteitä käytetään tapauskohtaisesti, kun haavoittuvuuksia halutaan arvioida tai selvittää, mutta näiden tietojen tarkistamiselle ei ole vakiintunutta käytäntöä.
+
+### Soveltuvat tietolähteet haavoittuvuuksien tunnistamiseen
+
+Yritys on tunnistanut useita tietolähteitä, joista se saa tietoa uusista haavoittuvuuksista ja uhista. Näitä lähteitä hyödynnetään erityisesti silloin, kun on tarvetta arvioida IT- ja OT-järjestelmien turvallisuutta tai päivittää suojaustoimia vastaamaan havaittuja uhkia.
+
+- **Kyberturvallisuuskeskuksen varoituspalvelut:** Yritys seuraa Suomen Kyberturvallisuuskeskuksen julkaisuja ja hälytyksiä, joista se saa tietoa ajankohtaisista tietoturvahaavoittuvuuksista. Näitä tietoja käytetään erityisesti silloin, kun on havaittu mahdollisia haavoittuvuuksia ohjelmistoissa tai laitteissa, joita yritys käyttää.
+- **Ohjelmistotoimittajien haavoittuvuusilmoitukset:** ERP- ja SCADA-järjestelmien toimittajilta tulevat päivitysilmoitukset ja varoitukset mahdollisista haavoittuvuuksista ovat tärkeä tietolähde. Näitä lähteitä seurataan ohjelmistopäivitysten yhteydessä, mutta se ei ole täysin systemaattista.
+- **Tietoturvayhteisöjen ja -verkostojen julkiset raportit:** Yritys seuraa tietoturvayhteisöjen, kuten OWASP (Open Web Application Security Project), julkaisuja ja raportteja, joissa kerrotaan yleisesti tunnetuista haavoittuvuuksista. Näitä raportteja käytetään erityisesti silloin, kun kehitetään yrityksen tietoturvakäytäntöjä.
+- **Tietoturvablogit ja uutisportaalit:** Tietoturva-alan blogit ja uutisportaalit ovat myös tietolähteitä, joista yritys saa ajoittain tietoa uusista uhista ja haavoittuvuuksista. Tällaisia lähteitä käytetään tapauskohtaisesti, kun tietoa etsitään erityisistä haavoittuvuuksista.
+
+### Tietolähteiden käyttö tapauskohtaisesti
+
+Tietolähteitä käytetään ad hoc -perusteisesti, eli haavoittuvuustietoa haetaan ja analysoidaan tarpeen mukaan. Yrityksessä ei ole vielä käytössä järjestelmällistä prosessia, jossa tietoja tarkistetaan säännöllisesti, vaan tietolähteiden seuraaminen ja niistä tiedon hakeminen tapahtuu tilanteen mukaan.
+
+- **Tapauskohtainen käyttö:** Tietolähteitä käytetään erityisesti silloin, kun järjestelmissä havaitaan haavoittuvuuteen viittaavia merkkejä, kuten toimintahäiriöitä tai tietoturvahälytyksiä. Esimerkiksi ohjelmistopäivitysten yhteydessä saadaan tietoa tunnetuista haavoittuvuuksista.
+- **Ei säännöllistä seurantaa:** Yritys ei seuraa tietolähteitä järjestelmällisesti, eikä tietolähteiden tietoja tarkisteta säännöllisin väliajoin. Tämä voi johtaa siihen, että osa haavoittuvuustiedoista jää huomaamatta, jos niitä ei erikseen haeta.
+
+### Tietolähteiden monipuolisuus
+
+Yritys käyttää useita erilaisia lähteitä, jotka tarjoavat tietoa eri näkökulmista haavoittuvuuksiin liittyen. Tämä monipuolisuus auttaa yritystä kattamaan eri osa-alueet, kuten ohjelmistot, laitteistot, tietoturva-aukot ja toimintaympäristön uhat.
+
+- **Paikalliset ja kansalliset tietolähteet:** Yritys seuraa Suomen Kyberturvallisuuskeskuksen varoituksia, jotka koskevat kansallisia uhkakuvia ja haavoittuvuuksia. Nämä lähteet ovat erityisen tärkeitä, kun kyseessä on kansallisesti laajalle levinneet uhat.
+- **Kansainväliset tietolähteet:** Yritys hyödyntää kansainvälisiä tietolähteitä, kuten ohjelmistotoimittajien globaalisti julkaistuja varoituksia ja päivityksiä. Tämä on erityisen tärkeää, kun käytetään kansainvälisiä ohjelmistoja ja järjestelmiä, kuten ERP- ja SCADA-järjestelmiä.
+- **Alan yhteisöt:** Yritys on tietoinen alan yhteisöjen, kuten CERT- (Computer Emergency Response Team) ja OWASP-projektien, raporteista, jotka tarjoavat yleiskuvan maailmanlaajuisista tietoturvahaavoittuvuuksista ja parannusehdotuksista.
+
+### Haavoittuvuustietojen integrointi käytäntöihin
+
+Vaikka tietolähteitä käytetään tapauskohtaisesti, haavoittuvuustietojen integrointi yrityksen käytäntöihin ei ole vielä täysin systemaattista. Tietoja hyödynnetään erityisesti silloin, kun havaitaan välitön tarve toimia tai kun uusi ohjelmisto tai laitteisto otetaan käyttöön.
+
+- Ad hoc -toiminta: Kun tietolähteistä saadaan tietoa kriittisistä haavoittuvuuksista, yritys ryhtyy toimenpiteisiin tarvittavien korjausten tekemiseksi. Tämä voi tarkoittaa esimerkiksi ohjelmistopäivitysten tai tietoturvakorjausten asentamista välittömästi, mutta prosessi ei ole täysin ennakoiva.
+- Tietojen käyttö riskienhallinnassa: Yritys hyödyntää tietolähteistä saatua tietoa riskienhallinnassa, mutta tietojen käyttö tapahtuu tilanteen mukaan. Tämä voi tarkoittaa esimerkiksi tietoturvapäivitysten toteuttamista ohjelmistopäivitysten yhteydessä tai tiettyjen haavoittuvuuksien poistamista OT-järjestelmistä, kun uusia uhkia ilmenee.
+
+### Riskit ja haasteet tasolla 1
+
+Koska haavoittuvuuksien tunnistamiseen käytettävien tietolähteiden hyödyntäminen ei ole systemaattista, on olemassa riski, että osa tärkeistä haavoittuvuustiedoista jää huomiotta. Tämän vuoksi yrityksen täytyy luottaa siihen, että tietolähteitä käytetään aina, kun muutoksia tai päivityksiä tehdään, mikä voi olla haavoittuvuustietojen hallinnan kannalta haasteellista.
+
+- Tietojen ajoittainen vanheneminen: Koska tietolähteitä ei seurata säännöllisesti, osa tiedoista voi vanheta ennen kuin niihin reagoidaan. Tämä voi johtaa siihen, että jotkin haavoittuvuudet jäävät korjaamatta riittävän nopeasti.
+- Systemaattisen prosessin puute: Tietolähteiden käyttö on tilanteen mukaista eikä systemaattista, mikä voi tarkoittaa, että vain osa haavoittuvuuksista tunnistetaan ja korjataan. Tämä voi heikentää yrityksen kykyä reagoida uusiin uhkiin tehokkaasti.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy tunnistaa tarpeen kehittää systemaattisempaa lähestymistapaa haavoittuvuuksien tunnistamisessa ja tietolähteiden hyödyntämisessä. Tavoitteena on luoda prosessi, jossa soveltuvia tietolähteitä seurataan säännöllisesti ja tietoja hyödynnetään aktiivisesti haavoittuvuuksien vähentämisessä.
+
+- Tietolähteiden säännöllinen seuranta: Yritys pyrkii ottamaan käyttöön prosessin, jossa tietolähteitä seurataan säännöllisesti ja niistä saatavat tiedot integroidaan riskienhallintaprosessiin.
+- Tietolähteiden laajempi käyttö: Yritys aikoo laajentaa käytettävien tietolähteiden kirjoa ja varmistaa, että tietoja haetaan sekä kansallisista että kansainvälisistä lähteistä kattavasti.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Tietoa mahdollisista haavoittuvuuksista on saatavilla monista erilaisista sisäisistä ja ulkoisista lähteistä, kuten CISA:sta, asianmukaisista ISAC:eista, kyberturvallisuuskeskuksesta, toimittajilta, eri sivustoista/palveluista, tiedotustilaisuuksista ja sisäisistä arvioinneista. Sisäisistä lähteistä saadaan yleensä tietoa organisaation haavoittuvuuksista, jotka ovat ainutlaatuisia ja koskevat kaikkia omaisuuserätyyppejä. Nämä lähteet voivat antaa tietoa haavoittuvuuksista, joita organisaatio on havainnut tai joita on käytetty hyväksi ja jotka ovat aiheuttaneet organisaatiolle häiriöitä. Ulkoiset tai julkiset lähteet tarjoavat yleensä tietoa, joka keskittyy yleisesti käytettyihin teknologioihin, joita monet organisaatiot käyttävät.
+
+Haavoittuvuuksia perinteisessä merkityksessä ovat ohjelmistovirheet, laiminlyöntivirheet, huono koodi, huono konfigurointi tai käsittelyvirheet. Muut riskeille altistumiset voivat kuitenkin luoda haavoittuvuuksia, jotka olisi tunnistettava, käsiteltävä ja joihin olisi reagoitava samalla tavalla kuin haavoittuvuudet, joista esimerkiksi ohjelmistotoimittajat raportoivat tai jotka sisältyvät haavoittuvuusluetteloihin. Tällaisia haavoittuvuuksia voivat olla esimerkiksi prosessien heikko suorituskyky, sisäpiirin uhat ja sisäisen tarkastuksen havainnot. Tämäntyyppiset haavoittuvuudet olisi otettava huomioon, kun tunnistetaan haavoittuvuustietolähteitä.
+
+Tunnistettujen haavoittuvuustietolähteiden olisi vastattava organisaation haavoittuvuuksien tunnistamis- ja analysointitarpeita.
+
+**Aiheeseen liittyvät käytännöt:**
+
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THREAT-1a, THREAT-1e, THREAT-1j.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1b">Haavoittuvuustietoa kerätään ja sitä tulkitaan toimintoa varten. Toiminnan ei tarvitse olla systemaattista ja säännöllistä.</PracticeTitle>
+
+### Kysymys
+
+Kerääkö ja hyödyntääkö organisaationne tietoa, joka auttaa tunnistamaan järjestelmien ja toimintojen tietoturvaheikkouksia? Tällainen tieto voi olla esimerkiksi ohjelmistotoimittajilta, tietoturva-asiantuntijoilta tai kyberturvallisuuskeskuksilta saatua tietoa uusista uhkista tai päivitystarpeista. Hyödynnättekö tätä tietoa päätöksenteossa, kuten riskien arvioinnissa tai tietoturvatoimien suunnittelussa? 
+
+### Merkitys
+
+Haavoittuvuustiedon kerääminen ja tulkinta ovat keskeisiä asioita organisaation tietoturvan varmistamisessa. Esimerkiksi, jos tietoa ohjelmistossa olevasta turvallisuusongelmasta tulee saataville, sen hyödyntäminen auttaa arvioimaan, miten vakava ongelma on ja mitä toimenpiteitä tarvitaan. Tämä voi tarkoittaa ohjelmistopäivityksen tekemistä, lisäsuojauksen lisäämistä tai muita korjaavia toimenpiteitä. Ilman tätä tietoa organisaatio saattaa jäädä alttiiksi hyökkäyksille tai häiriöille. 
+
+<AnswerOptions>
+Arvioi, missä määrin organisaatio kerää ja tulkitsee haavoittuvuustietoa:
+
+1. **Ei toteutettu tai ei tietoa**: Haavoittuvuustietoa ei kerätä eikä tulkita, tai prosessista ei ole tietoa.
+1. **Osittain toteutettu**: Haavoittuvuustietoa kerätään ja tulkitaan, mutta prosessi on hyvin rajoittunut eikä kattava.
+1. **Enimmäkseen toteutettu**: Haavoittuvuustiedonkeruu ja tulkinta kattavat merkittävän osan organisaation tarpeista, mutta niitä ei tehdä täysin systemaattisesti tai säännöllisesti.
+1. **Täysin toteutettu**: Haavoittuvuustietoa kerätään laajasti ja tulkitaan johdonmukaisesti osana organisaation toimintaa.
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys kerää haavoittuvuustietoa tukemaan IT- ja OT-järjestelmiensä turvallisuutta, mutta tiedonkeruu ja tulkinta tapahtuvat tapauskohtaisesti ilman säännöllistä prosessia. Lisäksi ohjelmistotoimittajilta saadaan tietoa uusista haavoittuvuuksista ja päivitystarpeista, erityisesti silloin, kun ne koskevat yrityksen keskeisiä järjestelmiä. Yritys hyödyntää myös tietoturva-alan raportteja ja uutisia, jotka auttavat tunnistamaan laajalle levinneitä uhkia.
+
+Kun haavoittuvuustietoa on kerätty, se tulkitaan tapauskohtaisesti. Tulkinta kohdistuu erityisesti kriittisiin järjestelmiin, kuten tuotannonohjausjärjestelmiin, joissa mahdolliset haavoittuvuudet voisivat vaikuttaa toiminnan jatkuvuuteen tai tietoturvaan. Riskit arvioidaan sen perusteella, kuinka vakava haavoittuvuus on ja miten se voisi vaikuttaa yrityksen prosesseihin. Haavoittuvuustiedon tulkinta tukee päätöksentekoa, esimerkiksi ohjelmistopäivitysten aikataulutuksessa tai riskienhallintatoimien suunnittelussa.
+
+Tällä hetkellä yritys tunnistaa tarpeen kehittää systemaattisempi lähestymistapa haavoittuvuustiedon keräämisessä ja tulkinnassa. Tulevaisuudessa tavoitteena on luoda prosessi, jossa tietoa kerätään ja analysoidaan jatkuvasti ja ennakoivasti, mikä parantaa yrityksen kykyä reagoida nopeasti uusiin uhkiin ja vähentää altistumista tietoturvariskeille. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy kerää ja tulkitsee haavoittuvuustietoa toimintonsa tueksi, mutta tiedonkeruu ja tulkinta tapahtuvat tapauskohtaisesti, eikä niitä tehdä systemaattisesti tai säännöllisesti tasolla 1. Haavoittuvuustietoa kerätään tarpeen mukaan, erityisesti silloin, kun havaitaan mahdollinen haavoittuvuus tai kun uusia järjestelmiä tai ohjelmistoja otetaan käyttöön.
+
+### Haavoittuvuustiedon kerääminen
+
+Haavoittuvuustietoa kerätään useista lähteistä silloin, kun on tarvetta arvioida IT- ja OT-järjestelmien turvallisuutta tai selvittää tiettyjen ohjelmistojen ja laitteiden turvallisuustilannetta. Tiedonkeruu on pääosin tapauskohtaista, ja sitä tehdään erityisesti kriittisten tilanteiden yhteydessä.
+
+- Kyberturvallisuuskeskuksen ilmoitukset: Yritys seuraa Suomen Kyberturvallisuuskeskuksen julkaisuja, joista saadaan tietoa ajankohtaisista haavoittuvuuksista. Näitä tietoja kerätään erityisesti silloin, kun haavoittuvuudet liittyvät yrityksen käyttämiin järjestelmiin, kuten ERP- tai SCADA-järjestelmiin.
+- Ohjelmistotoimittajien haavoittuvuustiedotteet: Yritys saa tietoa ohjelmistotoimittajilta, kuten ERP- ja SCADA-järjestelmien tarjoajilta, kun he ilmoittavat päivitystarpeista tai haavoittuvuuksista ohjelmistojen uusimmissa versioissa. Tämä tieto auttaa yritystä arvioimaan, milloin päivityksiä on tehtävä turvallisuuden varmistamiseksi.
+- Tietoturva-alan uutiset ja raportit: Tietoturvablogit, uutisportaalit ja alan raportit toimivat tiedonkeruun lähteinä. Näitä seurataan erityisesti silloin, kun on havaittu laajalle levinneitä haavoittuvuuksia, jotka saattavat koskettaa myös elintarvikeyrityksen kriittisiä järjestelmiä.
+
+### Haavoittuvuustiedon tulkinta
+
+Kerättyä haavoittuvuustietoa tulkitaan toimintaa varten tapauskohtaisesti. Tulkintaa tehdään tilanteen mukaan, ja tavoitteena on selvittää, miten mahdolliset haavoittuvuudet vaikuttavat yrityksen järjestelmiin ja prosesseihin. Tiedon tulkinta ei kuitenkaan ole vielä täysin järjestelmällistä tai säännöllistä.
+
+- Tulkinnan painopisteet: Haavoittuvuustietoa tulkitaan erityisesti silloin, kun kyseessä ovat kriittiset järjestelmät, kuten tuotannonohjausjärjestelmät tai tietoturvaan liittyvät ohjelmistot. Tietoja tulkitaan sen perusteella, miten haavoittuvuudet voivat vaikuttaa laitteiden toimintaan tai tietoturvaan.
+- Tapauskohtainen arviointi: Haavoittuvuustiedon tulkinta tehdään tapauskohtaisesti, esimerkiksi silloin, kun uusi haavoittuvuus raportoidaan laitteessa tai ohjelmistossa, jota yritys käyttää. Tulkintaa ei tehdä säännöllisesti, vaan se riippuu tilanteen kiireellisyydestä ja tiedon ajankohtaisuudesta.
+- Riskiarviointi: Kun haavoittuvuustietoa on kerätty, yritys arvioi, onko haavoittuvuus merkittävä riski sen toiminnalle. Tulkinta tehdään sen perusteella, kuinka vakava haavoittuvuus on ja miten se voi vaikuttaa yrityksen kriittisiin järjestelmiin, kuten tuotantoprosesseihin tai tietoturvajärjestelmiin.
+
+### Tapauskohtainen tiedonkeruu ja tulkinta
+
+Yrityksessä haavoittuvuustiedon kerääminen ja tulkinta tapahtuvat ad hoc -perusteisesti, eli niitä tehdään tarpeen mukaan. Tiedonkeruuta ja tulkintaa ei ole systematisoitu säännölliseksi prosessiksi, vaan niitä tehdään silloin, kun uusia uhkia tai haavoittuvuuksia havaitaan tai kun päivitystarpeet nousevat esiin.
+
+- Ei säännöllistä prosessia: Yrityksessä ei ole käytössä systemaattista prosessia haavoittuvuustiedon keräämiseksi ja tulkinnan tekemiseksi. Tämä voi tarkoittaa, että haavoittuvuustietoja haetaan ja tulkitaan vain silloin, kun se on välttämätöntä, esimerkiksi ohjelmistopäivitysten tai tietoturvahälytyksien yhteydessä.
+- Tapauskohtainen tiedon analysointi: Kun haavoittuvuustietoa kerätään, sitä analysoidaan ja tulkitaan tapauskohtaisesti. Tämä tarkoittaa, että tiedon tulkintaa ei tehdä jatkuvasti tai ennakoivasti, vaan se perustuu havaittuihin uhkiin ja tilanteisiin, jotka vaativat välitöntä huomiota.
+
+### Haavoittuvuustiedon hyödyntäminen käytännössä
+
+Kerätty haavoittuvuustieto käytetään päätöksenteon tukena silloin, kun tarvitaan välittömiä toimenpiteitä, kuten tietoturvapäivityksiä tai laitteistomuutoksia. Vaikka tietoa kerätään tapauskohtaisesti, sen tulkinta auttaa yritystä tekemään perusteltuja ratkaisuja haavoittuvuuksien vähentämiseksi.
+
+- Päätöksenteon tukena: Tulkinnan avulla yritys pystyy päättämään, mitä toimenpiteitä haavoittuvuuden suhteen on tehtävä, esimerkiksi onko tarpeen päivittää ohjelmistoja, vaihtaa laitteistoja tai muuttaa tietoturvakäytäntöjä.
+- Kriittisten haavoittuvuuksien hallinta: Jos kerätty tieto osoittaa, että haavoittuvuus on merkittävä, yritys ryhtyy välittömiin toimiin sen poistamiseksi tai lieventämiseksi. Tämä voi tarkoittaa esimerkiksi tietoturvakorjausten asentamista, laitteiden asetusten muuttamista tai käyttöoikeuksien rajoittamista.
+
+### Riskit ja haasteet tasolla 1
+
+Koska haavoittuvuustiedon kerääminen ja tulkinta eivät ole systemaattisia, on olemassa riski, että osa kriittisestä tiedosta jää huomaamatta tai tulkitsematta ajoissa. Tämä voi johtaa siihen, että jotkin haavoittuvuudet jäävät korjaamatta, mikä voi altistaa yrityksen riskeille.
+
+- Tietojen vanheneminen: Koska tietoa ei kerätä säännöllisesti, osa haavoittuvuuksista voi jäädä havaitsematta, tai tieto voi vanheta ennen kuin siihen reagoidaan. Tämä voi aiheuttaa haavoittuvuuksien jatkumisen ilman tarvittavia korjaustoimenpiteitä.
+- Systemaattisen prosessin puute: Tulkintaprosessi ei ole täysin vakiintunut, mikä voi johtaa siihen, että haavoittuvuustietoja ei aina analysoida riittävän perusteellisesti tai ajallaan. Tämä voi heikentää yrityksen kykyä reagoida uusiin uhkiin tehokkaasti.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy tunnistaa tarpeen kehittää systemaattisempaa lähestymistapaa haavoittuvuustiedon keräämisessä ja tulkinnassa. Yrityksen tavoitteena on ottaa käyttöön järjestelmällisempi prosessi, jossa haavoittuvuustietoa kerätään säännöllisesti ja analysoidaan ennakoivasti.
+
+- Tietojen keräämisen systematisointi: Tiedonkeruuprosessin kehittämisen avulla yritys aikoo varmistaa, että haavoittuvuustietoja kerätään jatkuvasti ja että ne saadaan analysoitua ennen mahdollisten ongelmien ilmaantumista.
+- Tulkinnan vakiinnuttaminen: Yritys aikoo luoda vakiintuneen prosessin, jossa kerättyä haavoittuvuustietoa analysoidaan ja tulkitaan systemaattisesti, mikä mahdollistaa paremman haavoittuvuuksien hallinnan.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Organisaatiolla tulisi olla prosessi, jolla kerätään, luetteloidaan ja suodatetaan haavoittuvuustietoja tunnistetuista lähteistä, jotta toiminnon kannalta olennaiset tiedot voidaan tunnistaa.
+
+**Aiheeseen liittyvät käytännöt:**
+
+- **Syöte**: THREAT-1a:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THREAT-1b, THREAT-1i, THREAT-1m.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1c">Haavoittuvuusarviointeja suoritetaan. Toiminnan ei tarvitse olla systemaattista ja säännöllistä tasolla 1.</PracticeTitle>
+
+### Kysymys
+
+Tekeekö organisaationne haavoittuvuusarviointeja varmistaakseen järjestelmien ja laitteiden tietoturvan? Tämä tarkoittaa esimerkiksi arviointia uusien järjestelmien käyttöönoton yhteydessä, ohjelmistopäivityksiä tehtäessä tai kun on havaittu mahdollisia riskejä. Jos arviointeja tehdään, ovatko ne satunnaisia ja tapauskohtaisia vai noudattavatko ne säännöllistä käytäntöä? 
+
+### Merkitys
+
+Haavoittuvuusarvioinnit ovat keskeinen osa organisaation kykyä tunnistaa ja hallita tietoturvariskejä. Arviointien avulla voidaan havaita järjestelmien tai laitteiden tietoturvaan liittyviä puutteita, kuten ohjelmistojen tai asetusten haavoittuvuuksia ennen kuin ne aiheuttavat vahinkoa.
+
+Vaikka toimintaa ei tehtäisi systemaattisesti, jo tapauskohtaiset arvioinnit voivat auttaa estämään tietoturvaloukkauksia, suojaamaan organisaation toimintaa ja turvaamaan liiketoiminnan jatkuvuuden. Näin saatu tieto toimii myös pohjana tietoturvan kehittämiselle ja riskienhallinnan parantamiselle. 
+
+<AnswerOptions>
+Arvioi, missä määrin organisaatiossa suoritetaan haavoittuvuusarviointeja:
+
+1. **Ei toteutettu tai ei tietoa**: Haavoittuvuusarviointeja ei ole tehty tai tiedot arviointien suorittamisesta puuttuvat.
+1. **Osittain toteutettu**: Haavoittuvuusarviointeja tehdään ajoittain tai satunnaisesti, mutta ilman selkeää prosessia tai kattavuutta.
+1. **Enimmäkseen toteutettu**: Haavoittuvuusarviointeja tehdään säännöllisesti ja ne kattavat suurimman osan keskeisistä järjestelmistä, mutta prosessi voi vielä kehittyä systemaattisemmaksi.
+1. **Täysin toteutettu**: Haavoittuvuusarvioinnit suoritetaan järjestelmällisesti ja kattavasti, ja ne sisältyvät osaksi organisaation tietoturvakäytäntöjä.
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys suorittaa haavoittuvuusarviointeja tarpeen mukaan, erityisesti uusien järjestelmien käyttöönoton, ohjelmistopäivitysten ja mahdollisten tietoturvariskien yhteydessä. Esimerkiksi ERP- ja SCADA-järjestelmät ovat olleet arviointien kohteina. Arvioinneissa hyödynnetään teknisiä työkaluja ja manuaalisia tarkistuksia, joiden avulla varmistetaan järjestelmien turvallisuus. Vaikka arvioinnit eivät ole säännöllisiä, ne ovat auttaneet tunnistamaan haavoittuvuuksia ja toteuttamaan tarvittavia korjauksia. Tulevaisuudessa yritys aikoo ottaa käyttöön säännölliset, esimerkiksi vuosittain suoritettavat arvioinnit, jotka kattavat kaikki keskeiset järjestelmät. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy suorittaa haavoittuvuusarviointeja, mutta nämä arvioinnit toteutetaan ad hoc -perusteisesti ja tapauskohtaisesti, eivätkä ne ole vielä täysin systemaattisia tai säännöllisiä tasolla 1. Haavoittuvuusarvioinnit tehdään silloin, kun siihen ilmenee tarvetta, esimerkiksi uusien järjestelmien käyttöönoton tai tietoturvapäivitysten yhteydessä.
+
+### Haavoittuvuusarviointien suorittaminen tapauskohtaisesti
+
+Elintarvikeyritys suorittaa haavoittuvuusarviointeja tapauskohtaisesti, erityisesti silloin, kun on havaittu mahdollisia riskejä tai haavoittuvuuksia järjestelmissä tai laitteistoissa. Nämä arvioinnit keskittyvät usein kriittisiin IT- ja OT-järjestelmiin, joiden turvallisuus on välttämätöntä yrityksen toiminnan kannalta.
+
+- IT-järjestelmät: Haavoittuvuusarviointeja tehdään IT-järjestelmissä, kuten ERP-järjestelmässä ja tietoturvaohjelmistoissa, kun havaitaan mahdollisia haavoittuvuuksia tai järjestelmäpäivitykset vaativat arviointia. Arviointi voi sisältää ohjelmistojen päivittämiseen liittyviä tietoturvariskejä tai mahdollisia tietovuotoriskejä.
+- OT-järjestelmät: OT-järjestelmissä, kuten SCADA- ja automaatiojärjestelmissä, suoritetaan haavoittuvuusarviointeja, kun havaitaan toimintahäiriöitä tai kun laitteistopäivityksiä tehdään. Arviointi auttaa tunnistamaan mahdolliset uhat tuotantoprosesseille tai automaatiojärjestelmille.
+
+### Haavoittuvuusarviointien toteutus
+
+Arviointeja toteutetaan tapauskohtaisesti, ja niiden painopiste on kriittisten haavoittuvuuksien tunnistamisessa ja niiden vaikutusten arvioinnissa. Arviointien avulla yritys pyrkii estämään potentiaaliset riskit, jotka voivat vaarantaa toiminnan jatkuvuuden tai tietoturvan.
+
+- Tapauskohtainen arviointi: Arvioinnit tehdään silloin, kun ilmenee uusia haavoittuvuuksia tai ohjelmistopäivityksiä, jotka voivat vaikuttaa järjestelmien turvallisuuteen. Jokainen arviointi tehdään sen hetkisen tarpeen ja riskitason mukaan.
+- Ei säännöllistä prosessia: Haavoittuvuusarviointeja ei tehdä säännöllisin väliajoin, vaan niitä toteutetaan silloin, kun yrityksessä havaitaan tarvetta. Tämä voi tarkoittaa, että jotkin haavoittuvuudet jäävät arvioimatta, jos niitä ei havaita nopeasti.
+
+### Arviointien sisältö ja menetelmät
+
+Haavoittuvuusarvioinneissa yritys käyttää erilaisia menetelmiä sen mukaan, mikä on arvioinnin kohteena. Arvioinnit voivat olla teknisiä tarkistuksia, joissa järjestelmiä testataan tunnettujen haavoittuvuuksien varalta, tai ne voivat olla manuaalisia tarkastuksia, joissa asiantuntijat arvioivat järjestelmien turvallisuustilannetta.
+
+- Tekniset tarkastukset: Arvioinneissa voidaan hyödyntää teknisiä haavoittuvuustyökaluja, jotka skannaavat järjestelmät ja ohjelmistot tunnettuja haavoittuvuuksia vastaan. Näitä työkaluja käytetään erityisesti silloin, kun uusia ohjelmistoja otetaan käyttöön tai kun järjestelmiä päivitetään.
+- Manuaaliset arvioinnit: Lisäksi yrityksen IT- ja tietoturva-asiantuntijat suorittavat manuaalisia tarkastuksia kriittisille järjestelmille. Näissä arvioinneissa keskitytään tietoturvakäytäntöihin ja asetusten oikeellisuuteen.
+
+### Haavoittuvuusarviointien hyödyntäminen käytännössä
+
+Kun haavoittuvuusarviointeja tehdään, tuloksia käytetään päätöksenteon tukena mahdollisten korjaustoimenpiteiden toteuttamiseksi. Arviointien perusteella tehdään toimenpiteitä, jotka voivat sisältää ohjelmistopäivityksiä, tietoturvakorjauksia tai järjestelmäkonfiguraation muutoksia.
+
+- Korjaavat toimenpiteet: Jos arvioinnissa havaitaan kriittisiä haavoittuvuuksia, yritys ryhtyy tarvittaviin toimenpiteisiin riskien minimoimiseksi. Tämä voi tarkoittaa esimerkiksi ohjelmistopäivitysten nopeuttamista tai haavoittuvien palveluiden eristämistä.
+- Käytännön toimenpiteet: Arviointien jälkeen yritys voi toteuttaa konkreettisia toimenpiteitä, kuten ohjelmistojen asetusten muuttamista, verkkoturvallisuuden parantamista tai käyttöoikeuksien uudelleenarviointia.
+
+### Riskit ja haasteet tasolla 1
+
+Koska haavoittuvuusarviointeja ei tehdä systemaattisesti eikä säännöllisesti, on olemassa riski, että jotkin haavoittuvuudet jäävät havaitsematta tai arvioimatta. Tämä voi johtaa siihen, että tietoturvariskit kasvavat ennen kuin niihin reagoidaan.
+
+- Ei säännöllistä arviointia: Koska haavoittuvuusarviointeja ei tehdä säännöllisesti, on mahdollista, että järjestelmissä piileviä haavoittuvuuksia ei havaita ennen kuin ne muuttuvat kriittisiksi ongelmiksi.
+- Reaktiivinen lähestymistapa: Arvioinnit ovat pääasiassa reaktiivisia, eli ne tehdään, kun tietty haavoittuvuus tai uhka on jo havaittu. Tämä voi johtaa siihen, että yritys ei pysty reagoimaan ennakoivasti mahdollisiin uhkiin.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy on tunnistanut tarpeen kehittää haavoittuvuusarviointien järjestelmällisyyttä ja säännöllisyyttä. Yrityksen tavoitteena on siirtyä järjestelmällisempään haavoittuvuusarviointien prosessiin, jossa järjestelmät arvioidaan säännöllisin väliajoin ja riskit ennakoidaan paremmin.
+
+- Säännöllisten arviointien käyttöönotto: Yritys aikoo ottaa käyttöön säännölliset haavoittuvuusarvioinnit, jotka suoritetaan esimerkiksi vuosittain tai järjestelmäpäivitysten yhteydessä. Tämä parantaa yrityksen kykyä reagoida ajoissa mahdollisiin haavoittuvuuksiin.
+- Järjestelmällinen arviointiprosessi: Yritys suunnittelee luovansa vakiintuneen prosessin, jossa haavoittuvuuksia arvioidaan järjestelmällisesti kaikissa kriittisissä järjestelmissä. Tavoitteena on varmistaa, että kaikki potentiaaliset uhat havaitaan ja käsitellään ennen kuin ne aiheuttavat riskejä.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Organisaatio voi käyttää monenlaisia arviointitekniikoita haavoittuvuuksien löytämiseksi, kuten sisäisiä haavoittuvuustarkastuksia ja -arviointeja, ulkoisten tahojen arviointeja, tunkeutumistestejä, ohjelmistopohjaisia skannauksia sekä sisäisten ja ulkoisten tarkastusten tulosten tarkastelua.
+
+Haavoittuvuuksia voidaan löytää myös arvoimalla ja keräämällä tietoja organisaation tunnistamista, yleisistä haavoittuvuustietolähteistä.
+
+**Aiheeseen liittyvät käytännöt:**
+
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THREAT-1c, THREAT-1f, THREAT-1k.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-1d">Toiminnon kannalta olennaisiin haavoittuvuuksiin puututaan (esimerkiksi lisäämällä valvontaa tai asentamalla korjauspäivityksiä).</PracticeTitle>
+
+### Kysymys
+
+Reagoiko organisaatio tärkeisiin haavoittuvuuksiin, jotka voivat vaikuttaa toiminnan turvallisuuteen tai jatkuvuuteen? Tämä voi tarkoittaa esimerkiksi sitä, että haavoittuvuuksiin puututaan asentamalla korjauspäivityksiä, lisäämällä valvontaa tai muuttamalla käyttöoikeuksia. Tavoitteena on varmistaa, että kriittiset uhkat käsitellään tehokkaasti niiden vakavuuden perusteella. 
+
+### Merkitys
+
+Haavoittuvuuksiin puuttuminen on keskeinen osa organisaation kyberturvallisuuden hallintaa. Kun organisaatio reagoi ajoissa olennaisiin haavoittuvuuksiin, kuten ohjelmistojen tietoturvapuutteisiin tai järjestelmien konfiguraatio-ongelmiin, se voi estää mahdollisia tietomurtoja ja toimintakatkoksia. Haavoittuvuuksiin puuttuminen voi tarkoittaa esimerkiksi ohjelmistopäivityksiä, valvonnan lisäämistä tai pääsyrajoituksia. Vaikka toiminta ei olisi säännöllistä tai systemaattista, se on silti tärkeää organisaation suojaamiseksi. 
+
+<AnswerOptions>
+Arvioi, kuinka organisaatio puuttuu olennaisiin haavoittuvuuksiin ja toteuttaa toimenpiteitä, kuten valvonnan lisäämistä, korjauspäivitysten asentamista tai käyttöoikeuksien muuttamista:
+
+- **Ei toteutettu tai ei tietoa**: Organisaatio ei ole puuttunut olennaisiin haavoittuvuuksiin tai asiaa koskevaa tietoa ei ole saatavilla.
+- **Osittain toteutettu**: Organisaatio reagoi joihinkin olennaisiin haavoittuvuuksiin, mutta toimenpiteet ovat puutteellisia tai epäjohdonmukaisia.
+- **Enimmäkseen toteutettu**: Organisaatio puuttuu useimpiin olennaisiin haavoittuvuuksiin, mutta toimenpiteet eivät aina ole riittäviä tai kattavia.
+- **Täysin toteutettu**: Organisaatio puuttuu kaikkiin olennaisiin haavoittuvuuksiin nopeasti ja säännöllisesti ja toimenpiteet ovat systemaattisia. 
+</AnswerOptions>
+
+### Esimerkki
+
+Yrityksessä puututaan olennaisiin haavoittuvuuksiin, kuten ohjelmistojen tietoturvahaavoittuvuuksiin, ad hoc -perusteisesti. Haavoittuvuuksiin reagoidaan tilanteen mukaan ja kiireellisyysasteen mukaan. Esimerkiksi, jos SCADA-järjestelmässä havaitaan vakava tietoturvahaavoittuvuus, siihen puututaan välittömästi asentamalla korjauspäivitys tai lisäämällä valvontaa.
+
+Päivitykset ja korjaustoimenpiteet tehdään yleensä tapauskohtaisesti. Jos ohjelmistotoimittaja julkaisee tietoturvapäivityksen, se asennetaan heti, mutta jos haavoittuvuus ei ole kriittinen, se käsitellään seuraavan säännöllisen päivityskierroksen yhteydessä. Vaikka haavoittuvuuksiin puututaan, prosessi ei ole täysin systemaattinen, eikä kaikkia haavoittuvuuksia korjata heti niiden ilmestyessä. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy puuttuu toiminnon kannalta olennaisiin haavoittuvuuksiin, mutta tämä tapahtuu ad hoc -perusteisesti eikä systemaattisesti tai säännöllisesti (tasolla 1). Kun olennaisia haavoittuvuuksia havaitaan, niihin reagoidaan tilanteen vaatimalla tavalla, esimerkiksi lisäämällä valvontaa, asentamalla tietoturvapäivityksiä tai muuttamalla käyttöoikeuksia. Toimenpiteet tehdään tarpeen mukaan, erityisesti silloin, kun haavoittuvuudet uhkaavat yrityksen kriittisiä järjestelmiä tai palveluita.
+
+### Haavoittuvuuksiin puuttuminen tapauskohtaisesti
+
+Elintarvikeyritys puuttuu havaittuihin haavoittuvuuksiin tapauskohtaisesti sen mukaan, miten vakavia ja kiireellisiä haavoittuvuudet ovat. Tämä tarkoittaa, että kaikkiin haavoittuvuuksiin ei puututa välittömästi, mutta kriittisiin uhkiin reagoidaan nopeasti.
+
+- Kriittisten haavoittuvuuksien käsittely: Jos haavoittuvuus vaikuttaa yrityksen keskeisiin toimintoihin, kuten tuotantoprosesseihin tai tietoturvaan, siihen puututaan välittömästi. Esimerkiksi SCADA- ja ERP-järjestelmien haavoittuvuudet käsitellään nopeasti, jos ne voivat vaarantaa tuotannon tai liiketoiminnan jatkuvuuden.
+- Päivitysten asentaminen: Kun ohjelmistotoimittajat julkaisevat korjauspäivityksiä, yritys asentaa ne tapauskohtaisesti. Tämä tapahtuu erityisesti silloin, kun päivityksissä on korjattu tietoturvaan liittyviä haavoittuvuuksia, jotka voivat altistaa yrityksen tietovuodoille tai hyökkäyksille.
+
+### Haavoittuvuuksiin reagoimisen menetelmät
+
+Yritys käyttää useita menetelmiä puuttuakseen olennaisiin haavoittuvuuksiin, riippuen haavoittuvuuden vakavuudesta ja sen vaikutuksesta yrityksen toimintoihin. Nämä toimenpiteet toteutetaan tarpeen mukaan, mutta niiden säännöllisyys ja systemaattisuus vaihtelevat.
+
+- Valvonnan lisääminen: Jos haavoittuvuus vaatii jatkuvaa seurantaa, yritys lisää tietyn järjestelmän tai laitteen valvontaa. Tämä voi tarkoittaa esimerkiksi reaaliaikaisen valvonnan aktivoimista tiettyjen verkko- tai laitekomponenttien osalta, kunnes haavoittuvuus voidaan korjata pysyvästi.
+- Ohjelmistojen korjauspäivitykset: Haavoittuvuuksiin puututaan myös asentamalla korjauspäivityksiä ohjelmistoihin, erityisesti silloin, kun haavoittuvuudet ovat tunnettuja ja niihin on saatavilla virallisia päivityksiä ohjelmistotoimittajilta. Tämä koskee esimerkiksi ERP- ja SCADA-järjestelmiä, joihin liittyvät haavoittuvuudet voivat vaikuttaa suoraan tuotantoon tai tietoturvaan.
+- Käyttöoikeuksien rajoittaminen: Jos haavoittuvuus liittyy järjestelmän käyttöoikeuksiin tai käyttäjätileihin, yritys voi rajoittaa käyttöoikeuksia välittömästi riskin minimoimiseksi. Tämä voi sisältää tilapäisten pääsyrajoitusten asettamisen tiettyihin järjestelmiin tai tiedostoihin.
+
+### Toimenpiteiden priorisointi
+
+Haavoittuvuuksiin puuttuminen perustuu niiden vakavuuden ja mahdollisten vaikutusten arviointiin. Kriittisiin haavoittuvuuksiin reagoidaan nopeasti, kun taas vähemmän vakaviin haavoittuvuuksiin puututaan tapauskohtaisesti tai osana laajempia järjestelmäpäivityksiä.
+
+- Kriittisyysanalyysi: Ennen toimenpiteitä haavoittuvuus arvioidaan sen vaikutusten perusteella. Kriittiset haavoittuvuudet, jotka voivat vaikuttaa suoraan liiketoiminnan jatkuvuuteen tai tietoturvaan, priorisoidaan ja käsitellään välittömästi.
+- Ei-systeeminen lähestymistapa: Vähemmän kriittisiin haavoittuvuuksiin ei välttämättä puututa heti, vaan ne käsitellään tilanteen mukaan, esimerkiksi seuraavan järjestelmäpäivityksen yhteydessä. Tämä voi tarkoittaa, että kaikki haavoittuvuudet eivät tule korjatuiksi heti niiden havaitsemisen jälkeen.
+
+### Toimenpiteiden dokumentointi ja seuranta
+
+Vaikka toimenpiteitä tehdään tarpeen mukaan, niitä ei aina dokumentoida järjestelmällisesti tasolla 1. Tämä voi johtaa siihen, että osa tehdyistä toimenpiteistä jää kirjaamatta, mikä voi vaikeuttaa jäljitettävyyttä tai toimenpiteiden seurantaa pitkällä aikavälillä.
+
+- Dokumentoinnin puutteellisuus: Koska haavoittuvuuksiin puuttuminen tapahtuu tapauskohtaisesti, toimenpiteiden dokumentointi voi jäädä puutteelliseksi. Tämä voi johtaa tilanteeseen, jossa tehtyjä korjauksia tai valvonnan lisäämistä ei ole kirjattu asianmukaisesti.
+- Seurannan haasteet: Toimenpiteiden seuranta ei ole säännöllistä, mikä voi tarkoittaa, että joidenkin haavoittuvuuksien vaikutuksia ei seurata riittävästi, erityisesti jos valvonnan lisäämisen tai päivitysten vaikutuksia ei tarkasteta jälkikäteen.
+
+### Riskit ja haasteet tasolla 1
+
+Koska haavoittuvuuksiin puuttuminen ei ole systemaattista eikä säännöllistä, on olemassa riski, että kaikki olennaiset haavoittuvuudet eivät tule käsitellyiksi ajoissa. Tämä voi altistaa yrityksen turvattomuustilanteille, jos haavoittuvuuksia jää huomioimatta tai niiden korjaaminen viivästyy.
+
+- Reaktiivinen lähestymistapa: Koska haavoittuvuuksiin puututaan pääasiassa reaktiivisesti, vain kriittisiin tapauksiin reagoidaan välittömästi. Tämä voi tarkoittaa, että vähemmän kriittisiä haavoittuvuuksia ei huomioida tai ne jäävät käsittelemättä pidemmäksi aikaa.
+- Toimenpiteiden viiveet: Jos toimenpiteitä ei tehdä heti, on olemassa riski, että haavoittuvuus aiheuttaa tietoturvariskin ennen kuin siihen ehditään puuttua. Tämä korostuu erityisesti silloin, kun päivitykset viivästyvät tai käyttöoikeuksien rajoittaminen ei ole riittävää.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy suunnittelee parantavansa haavoittuvuuksien hallintaa ja toimenpiteiden systemaattisuutta. Yrityksen tavoitteena on luoda järjestelmällinen prosessi, jossa haavoittuvuuksiin puututaan nopeasti ja säännöllisesti, ja kaikki tehdyt toimenpiteet dokumentoidaan ja seurataan tarkasti.
+
+- Säännölliset päivityskäytännöt: Yritys aikoo ottaa käyttöön säännölliset päivityskäytännöt, joiden avulla haavoittuvuuksiin voidaan puuttua ennakoivasti eikä vain reaktiivisesti. Tämä tarkoittaa myös säännöllisiä arviointeja ja päivityksiä kriittisille ohjelmistoille ja laitteille.
+- Toimenpiteiden seurannan parantaminen: Tavoitteena on luoda järjestelmä, jossa kaikki tehdyt toimenpiteet kirjataan ja niiden vaikutuksia seurataan. Tämä parantaa jäljitettävyyttä ja auttaa yritystä varmistamaan, että kaikki haavoittuvuudet on käsitelty asianmukaisesti.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Organisaatio reagoi uskottavien tietolähteiden (esim. valtion virastot, ohjelmistotoimittaja) havaitsemiin haavoittuvuuksiin ja ryhtyy toimiin haavoittuvuuksien lieventämiseksi, jos ne voivat vaikuttaa palvelujen tarjoamiseen. Haavoittuvuusilmoituksiin voi sisältyä kriittisyysluokituksia (kuten korkea, keskisuuri, matala). Näitä olisi tarkasteltava koko organisaation toimintaympäristön kannalta. Jopa matalan luokituksen saaneet haavoittuvuudet voivat olla merkityksellisiä ja niillä voi olla merkittävä potentiaalinen vaikutus IT- tai OT-ympäristössä.
+
+Vastatoimiin voi kuulua esimerkiksi lieventävien hallintatoimien toteuttaminen, kyberturvallisuuskorjausten asennus tai ohjelmaversioiden ja käyttöjärjestelmäversioiden seuranta. Kehittyneillä kyberturvallisuustekniikoilla, kuten uhkien metsästyksellä ja aktiivisella puolustuksella, voidaan saada IT- ja OT-ympäristöstä syvällisempää tietoa, joka tukee haavoittuvuuden merkityksellisyyden määrittämistä organisaation kannalta. On tärkeää huomata, että uusien kompensoivien hallintatoimien toteuttaminen voi edellyttää lisäresurssien, kuten henkilöstön, rahoituksen ja työkalujen, lisäämistä kyberturvallisuusohjelman budjettiin.
+
+**Aiheeseen liittyvät käytännöt:**
+
+- **Syöte**: THREAT-1c:n toteuttaminen tarjoaa syötteen, joista voi olla hyötyä tämän käytännön toteutumisen arvionnissa ja toteuttamisessa.
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THREAT-1d, THREAT-1g, THREAT-1l.
+</C2M2Doc>
+
+---
+
+<ObjectiveTitle name="threat-2">Uhkien torjunta ja uhkatiedon jakaminen</ObjectiveTitle>
+
+**Uhkien tunnistaminen ja hallinta** alkavat relevantin uhkatiedon keräämisellä luotettavista lähteistä, soveltamalla kerättyä tietoa suhteessa organisaation toimintaympäristöön ja reagoimalla niihin uhkiin, jotka voivat uhata palveluiden toimintavarmuutta.
+
+**Organisaation uhkaprofiili** sisältää kuvaukset mahdollisista uhkatekijöistä, mukaan lukien uhkatekijöiden kyvykkyyksistä, tavoitteista ja kohteista. Uhkaprofiilia voidaan käyttää uhkien tarkempaan tunnistamiseen ja sitä voidaan hyödyntää osana riskien analysointia, arviointia ja kyberturvallisuuden tilannekuvan muodostamiseen.
+
+---
+
+<PracticeTitle name="threat-2a">Uhkien tunnistamisen tueksi on tunnistettu soveltuvia tietolähteitä.</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatio tunnistanut soveltuvia tietolähteitä uhkien tunnistamisen tueksi? Tällaisia lähteitä voivat olla esimerkiksi viranomaisvaroitukset, ohjelmistotoimittajien tiedotteet tai kansainväliset tietoturvaraportit. Tärkeää on myös tietää, hyödynnetäänkö näitä lähteitä aktiivisesti uhkien tunnistamaan, vaikka toiminta ei olisi vielä täysin järjestelmällistä. 
+
+### Merkitys
+
+Soveltuvien uhkatietolähteiden tunnistaminen on olennainen osa organisaation kykyä reagoida tietoturvauhkiin. Uhkien havaitseminen oikea-aikaisesti riippuu siitä, että organisaatiolla on käytössään ajantasaisia ja luotettavia tietolähteitä, jotka tarjoavat tietoa esimerkiksi kyberhyökkäyksistä, haavoittuvuuksista ja uusista riskeistä. Tietolähteet auttavat organisaatiota arvioimaan riskien vakavuutta ja tekemään toimenpiteitä niiden torjumiseksi. 
+
+<AnswerOptions>
+Arvioi, missä määrin organisaatio hyödyntää soveltuvia uhkatietolähteitä:
+
+- **Ei toteutettu tai ei tietoa**: Organisaatio ei ole tunnistanut uhkatietolähteitä tai tietoa asiasta ei ole saatavilla.
+- **Osittain toteutettu**: Organisaatio on tunnistanut uhkatietolähteitä, mutta niiden käyttö on rajoitettua tai epäsäännöllistä.
+- **Enimmäkseen toteutettu**: Uhkatietolähteitä käytetään laajasti, mutta käyttö ei ole täysin systemaattista tai säännöllistä.
+- **Täysin toteutettu**: Organisaatio hyödyntää kattavasti ja säännöllisesti soveltuvia uhkatietolähteitä uhkien tunnistamisessa. 
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys käyttää useita tietolähteitä uhkien tunnistamiseen, kuten Suomen Kyberturvallisuuskeskuksen varoituksia, ohjelmistotoimittajien uhkatiedotteita ja kansainvälisiä tietoturvaportaalien raportteja. Näitä lähteitä hyödynnetään pääasiassa silloin, kun yrityksessä havaitaan mahdollisia uhkia tai riskitilanteita. Tietolähteitä ei kuitenkaan seurata säännöllisesti, vaan niitä käytetään tarpeen mukaan. Tavoitteena on kehittää prosessia niin, että uhkatiedot kerätään ja hyödynnetään järjestelmällisemmin ja säännöllisemmin. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy on tunnistanut useita soveltuvia tietolähteitä uhkien tunnistamisen tueksi, mutta näiden tietolähteiden hyödyntäminen tapahtuu ad hoc -perusteisesti eikä systemaattisesti tai säännöllisesti tasolla 1. Tietolähteistä haetaan uhkatietoja tarpeen mukaan, erityisesti silloin, kun on havaittu mahdollisia uhkia tai uusia riskejä järjestelmien toiminnassa.
+
+### Soveltuvat tietolähteet uhkien tunnistamiseen
+
+Yrityksellä on käytössä useita eri lähteitä uhkien tunnistamiseen liittyen, mutta näiden tietojen hyödyntäminen ei ole täysin vakiintunutta tai säännöllistä. Tietolähteitä käytetään erityisesti kriittisten järjestelmien, kuten ERP- ja SCADA-järjestelmien uhkien tunnistamiseen, kun havaitaan poikkeamia tai tietoturvaan liittyviä haavoittuvuuksia.
+
+- Kyberturvallisuuskeskuksen ilmoitukset: Yritys seuraa Suomen Kyberturvallisuuskeskuksen varoituksia ja hälytyksiä, jotka tarjoavat ajankohtaista tietoa uusista kyberuhista ja hyökkäyksistä. Näitä tietoja käytetään uhkien tunnistamiseen erityisesti silloin, kun ne liittyvät suoraan yrityksen käyttämiin ohjelmistoihin tai laitteisiin.
+- Ohjelmistotoimittajien uhkatiedotteet: Ohjelmistotoimittajat, kuten ERP- ja SCADA-järjestelmien tarjoajat, julkaisevat tietoa tunnetuista uhista ja riskeistä, joita liittyy heidän ohjelmistoihinsa. Yritys hyödyntää näitä tietoja erityisesti järjestelmäpäivitysten yhteydessä.
+- Tietoturvayhteisöt ja asiantuntijaverkostot: Yritys seuraa tietoturva-alan yhteisöjä, kuten CERT-verkostoja (Computer Emergency Response Team), jotka julkaisevat säännöllisiä raportteja tunnetuista uhista ja tietoturvahyökkäyksistä. Näitä lähteitä hyödynnetään silloin, kun yrityksessä on havaittu uusi uhka, joka vaatii tarkempaa analyysia.
+- Kansainväliset tietoturvaportaalit: Yritys saa tietoa uhista myös kansainvälisistä tietoturvaportaalien, kuten ThreatPost tai KrebsOnSecurity, kautta. Nämä lähteet tarjoavat ajankohtaista tietoa globaalilla tasolla tapahtuvista tietoturvauhkista.
+
+### Tietolähteiden käyttö tapauskohtaisesti
+
+Tietolähteitä käytetään ad hoc -perusteisesti, eli tietoa haetaan ja hyödynnetään silloin, kun uhkia havaitaan tai on tarpeen arvioida tietyn järjestelmän turvallisuustilanne. Tietojen kerääminen ja hyödyntäminen ei kuitenkaan ole systemaattista, eikä niitä tarkisteta säännöllisin väliajoin.
+
+- Tapauskohtainen käyttö: Yritys seuraa tietolähteitä erityisesti silloin, kun havaitaan epäilyttäviä toimintoja tai mahdollisia uhkia tietojärjestelmissä. Tämä voi tapahtua esimerkiksi silloin, kun IT- tai OT-järjestelmissä esiintyy poikkeavaa käyttäytymistä.
+- Ei säännöllistä tarkistusta: Koska uhkatietolähteitä ei seurata säännöllisesti, tietoa haetaan pääosin silloin, kun siihen on erityinen tarve. Tämä tarkoittaa, että tietoja ei tarkisteta proaktiivisesti, vaan lähteisiin tukeudutaan silloin, kun uhkia jo havaitaan.
+
+### Tietolähteiden monipuolisuus ja hyödyntäminen
+
+Elintarvikeyritys hyödyntää useita erilaisia lähteitä, jotka tarjoavat kattavaa tietoa eri uhkista, kuten kyberhyökkäyksistä, haittaohjelmista ja tietoturvapoikkeamista. Näitä lähteitä käytetään erityisesti uhkien tunnistamiseen ja riskien arviointiin.
+
+- Paikalliset ja kansalliset tietolähteet: Suomen Kyberturvallisuuskeskuksen tarjoamat tiedotteet ja varoitukset ovat tärkeitä erityisesti kansallisesti merkittävien kyberuhkien tunnistamisessa. Näitä tietoja käytetään tilanteissa, joissa uhkat voivat vaikuttaa laajemmin koko toimialaan tai kansalliseen infrastruktuuriin.
+- Kansainväliset lähteet: Kansainvälisistä uhkatietolähteistä, kuten ohjelmistotoimittajien ja tietoturvaorganisaatioiden raporteista, saadaan tietoa erityisesti globaalisti leviävistä uhista, jotka voivat koskea myös elintarvikeyrityksen käyttämiä järjestelmiä. Näitä tietoja käytetään silloin, kun uhkat liittyvät kansainvälisiin ohjelmistoihin tai järjestelmiin.
+- Uhkatietojen tulkinta: Kerättyä uhkatietoa analysoidaan ja tulkitaan tarpeen mukaan sen selvittämiseksi, miten uhkat vaikuttavat yrityksen kriittisiin järjestelmiin ja prosesseihin. Tämä auttaa yritystä tekemään tietoisia päätöksiä mahdollisten uhkien ehkäisemiseksi tai niiden vaikutusten vähentämiseksi.
+
+### Tietojen käyttö uhkien torjunnassa
+
+Kerätyt uhkatiedot auttavat yritystä tekemään päätöksiä tarvittavista toimenpiteistä, joilla uhkia voidaan torjua tai niiden vaikutuksia lieventää. Näitä toimenpiteitä voidaan toteuttaa esimerkiksi lisäämällä valvontaa tai päivittämällä järjestelmiä tietoturvan parantamiseksi.
+
+- Valvonnan lisääminen: Jos uhkatiedot viittaavat kasvaneeseen riskiin tiettyjä järjestelmiä kohtaan, yritys voi lisätä kyseisten järjestelmien valvontaa. Tämä voi tarkoittaa erityisesti verkonvalvonnan tehostamista tai tiettyjen laitteiden ja ohjelmistojen jatkuvaa tarkkailua.
+- Päivitysten ja korjausten asentaminen: Kun tietolähteistä saadaan tietoa uhkiin liittyvistä päivityksistä tai korjauksista, yritys asentaa nämä tapauskohtaisesti. Tämä auttaa varmistamaan, että uhkiin voidaan reagoida nopeasti ja niiden vaikutuksia voidaan minimoida.
+- Tietoturvakäytäntöjen mukauttaminen: Uhkien tunnistamisen tueksi kerätty tieto auttaa yritystä myös mukauttamaan tietoturvakäytäntöjä tarpeen mukaan. Tämä voi tarkoittaa esimerkiksi käyttöoikeuksien tarkistamista tai tietoturvaprotokollien päivittämistä.
+
+### Riskit ja haasteet tasolla 1
+
+Koska uhkatietojen kerääminen ja hyödyntäminen ei ole systemaattista, on olemassa riski, että tiettyjä uhkia ei havaita ajoissa tai että uhkatiedot jäävät vanhentuneiksi ennen kuin niihin reagoidaan. Tämä voi johtaa siihen, että jotkin uhkat pääsevät toteutumaan ilman, että yritys on varautunut niihin riittävästi.
+
+- Tietojen vanheneminen: Koska tietolähteitä ei seurata säännöllisesti, on mahdollista, että osa uhkatiedoista vanhenee ennen kuin siihen ehditään reagoida. Tämä voi heikentää yrityksen kykyä torjua uusia tai nopeasti kehittyviä uhkia.
+- Reaktiivinen lähestymistapa: Uhkien tunnistaminen perustuu tällä hetkellä reaktiiviseen toimintatapaan, mikä tarkoittaa, että uhkiin reagoidaan pääasiassa silloin, kun niitä on jo havaittu. Ennakoiva lähestymistapa on heikompi, koska uhkatietojen tarkistamista ei tehdä säännöllisesti.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy tunnistaa tarpeen kehittää uhkatietojen keräämisen ja hyödyntämisen prosesseja. Tavoitteena on luoda järjestelmällisempi lähestymistapa uhkatiedon keräämiseen ja jakamiseen, jotta kaikki olennaiset uhkat havaitaan ja niihin voidaan reagoida ajoissa.
+
+- Säännöllinen uhkatietojen seuranta: Yritys aikoo ottaa käyttöön säännöllisen prosessin uhkatietolähteiden seuraamiseksi, jotta tietoa voidaan kerätä jatkuvasti ja systemaattisesti. Tämä auttaa parantamaan yrityksen kykyä tunnistaa uusia uhkia ja varautua niihin ennakoivasti.
+- Tietojen hyödyntämisen parantaminen: Lisäksi yritys aikoo parantaa uhkatietojen analysointia ja käyttöä osana riskienhallintaa. Tämä tarkoittaa, että uhkatiedot integroidaan paremmin yrityksen tietoturvakäytäntöihin ja operatiivisiin prosesseihin.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Organisaation tulisi säännöllisesti kartoittaa tietolähteitä (kuten kyberturvallisuuskeskus, CISA, asianmukaiset ISAC:t, toimittajat, palvelut) ja määrittää niiden merkityksen ja arvon uhkatietojen tarjoajana.
+
+Aluksi saattaa olla tarpeen tehdä jonkin verran analyysiä, jolla määritetään, mitkä tiedot ovat merkityksellisimpiä organisaation uhkienhallintatoimien toteutukselle. Lisäksi samankaltaisiin toimialoihin vaikuttavat uhat voivat olla merkityksellisiä toiminnon kannalta, ja ne olisi otettava huomioon vastaavasti.
+
+**Aiheeseen liittyvät käytännöt:**
+
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THREAT-2a, THREAT-2f.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2b">Kyberuhkatietoa kerätään ja sitä tulkitaan toimintoa varten vähintäänkin tapauskohtaisesti (ad hoc). Toiminnan ei tarvitse olla systemaattista ja säännöllistä.</PracticeTitle>
+
+### Kysymys
+
+Kerääkö organisaatio tietoa mahdollisista kyberuhkista, kuten haittaohjelmista tai verkkohyökkäyksistä, ja tutkiiko se sitä aina, kun ilmenee uhka tai ongelma? Tämä voi tarkoittaa, että tietoa haetaan esimerkiksi silloin, kun järjestelmissä on epäilyttävää toimintaa tai ulkopuolinen uhka on tunnistettu. Tieto kerätään ja analysoidaan tapauskohtaisesti, ei jatkuvasti tai säännöllisesti. 
+
+### Merkitys
+
+Kyberuhkatiedon kerääminen ja tulkinta ovat keskeisiä organisaation kyberturvallisuuden tukemisessa. Tieto uhkista auttaa yritystä reagoimaan nopeammin mahdollisiin turvallisuusuhkiin ja varmistamaan, että tarvittavat toimenpiteet voidaan toteuttaa oikea-aikaisesti. Vaikka prosessi ei ole täysin systemaattinen, se tukee organisaatiota uhkien tunnistamisessa ja reagoinnissa erityisesti kriittisissä hetkissä. 
+
+<AnswerOptions>
+Arvioi, kuinka organisaatio kerää ja tulkitsee kyberuhkatietoa:
+
+- **Ei toteutettu tai ei tietoa**: Kyberuhkatietoa ei kerätä, eikä sen tulkintaan ole olemassa käytäntöä.
+- **Osittain toteutettu**: Kyberuhkatietoa kerätään, mutta prosessi on satunnaista, eikä sitä analysoida säännöllisesti.
+- **Enimmäkseen toteutettu**: Kyberuhkatietoa kerätään useista lähteistä, mutta analyysi ei ole täysin systemaattista eikä se kattaa kaikkia tarpeellisia tietolähteitä.
+- **Täysin toteutettu**: Kyberuhkatiedon kerääminen ja tulkinta ovat systemaattisia ja kattavat kaikki keskeiset lähteet, ja niitä hyödynnetään aktiivisesti toimintojen tukemisessa. 
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys kerää kyberuhkatietoa eri lähteistä tarpeen mukaan, mutta prosessi ei ole vielä systemaattinen. Tietoa kerätään erityisesti silloin, kun ilmenee uhkia, kuten järjestelmäpäivityksissä tai tietoturvahaavoittuvuuksien yhteydessä. Lähteet sisältävät muun muassa Suomen Kyberturvallisuuskeskuksen varoituksia, ohjelmistotoimittajien uhkatiedotteita ja kansainvälisiä tietoturvaportaalien raporteja. Tieto tulkitaan tapauskohtaisesti ja sitä käytetään riskienhallinnan tueksi.
+
+Vaikka prosessi on vielä reaktiivinen, yritys aikoo kehittää sen systemaattisemmaksi ja ottaa käyttöön jatkuvan kyberuhkatiedon seurannan, jotta uhkia voidaan tunnistaa ennakoivasti ja niihin reagoida nopeammin. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy kerää ja tulkitsee kyberuhkatietoa toimintonsa tueksi, mutta tämä tapahtuu ad hoc -perusteisesti ja tapauskohtaisesti. Kyberuhkatiedon kerääminen ja tulkinta eivät ole vielä systemaattisia tai säännöllisiä tasolla 1. Tietoa haetaan ja analysoidaan erityisesti silloin, kun ilmenee tietty uhka, ongelma tai poikkeama yrityksen IT- tai OT-järjestelmissä.
+
+### Kyberuhkatiedon kerääminen tapauskohtaisesti
+
+Yritys kerää kyberuhkatietoa useista lähteistä aina tarpeen mukaan. Tämä tiedonkeruu keskittyy erityisesti kriittisiin hetkiin, kuten järjestelmäpäivitysten yhteydessä tai silloin, kun ilmenee tietoturvauhkia, jotka voivat vaikuttaa yrityksen toimintaan.
+
+- Kyberturvallisuuskeskuksen varoitukset: Yritys seuraa Suomen Kyberturvallisuuskeskuksen varoituksia ja tiedotteita, joista se saa tietoa ajankohtaisista kyberuhista. Näitä lähteitä hyödynnetään tapauskohtaisesti, kun uusi uhka on havaittu, mutta niitä ei tarkisteta säännöllisesti.
+- Ohjelmistotoimittajien tietoturvailmoitukset: Ohjelmistotoimittajien, kuten ERP- ja SCADA-järjestelmien toimittajien, uhkatiedotteet ovat tärkeitä tietolähteitä. Näitä seurataan erityisesti silloin, kun ohjelmistopäivityksiä tehdään tai kun on havaittu tietty haavoittuvuus järjestelmissä.
+- Tietoturva-asiantuntijat ja tietoturvaportaalit: Kansainväliset tietoturvaportaalit ja tietoturva-asiantuntijoiden blogit tarjoavat tietoa laajemmin tunnetuista uhkista. Näitä tietolähteitä käytetään silloin, kun on tarvetta tarkistaa, liittyykö jokin havaittu uhka laajempaan kyberhyökkäykseen tai tietoturvaongelmaan.
+
+### Kyberuhkatiedon tulkinta toimintoa varten
+
+Kun kyberuhkatietoa kerätään, yritys tulkitsee sitä tapauskohtaisesti sen perusteella, miten uhkat vaikuttavat organisaation toimintaan. Tämä tulkinta ei ole täysin säännöllistä, vaan se tehdään erityisesti silloin, kun uusi uhka havaitaan tai kun järjestelmien turvallisuutta täytyy arvioida.
+
+- Tapauskohtainen tulkinta: Kyberuhkatietoa analysoidaan sen perusteella, mikä vaikutus uhalla on yrityksen keskeisiin prosesseihin, kuten tuotantoon tai tietoturvaan. Tulkinta voi sisältää riskiarvion ja mahdollisen korjaussuunnitelman uhkan torjumiseksi.
+- Uhkatietojen käyttö päätöksenteossa: Kyberuhkatiedon tulkinta auttaa yritystä tekemään päätöksiä tarvittavista toimenpiteistä. Tämä voi tarkoittaa esimerkiksi ohjelmistopäivityksen kiirehtimistä, valvonnan lisäämistä tai käyttöoikeuksien muuttamista tiettyjen järjestelmien osalta.
+
+### Tietolähteiden ja tulkinnan käytännön hyödyntäminen
+
+Kerättyä ja tulkittua kyberuhkatietoa käytetään toimintaa varten aina tarpeen mukaan. Tietojen perusteella yritys voi tehdä korjaavia toimenpiteitä, kuten asentaa tietoturvapäivityksiä, muuttaa järjestelmän asetuksia tai tehostaa tietoturvakäytäntöjä.
+
+- Päivitysten asentaminen: Tulkittu kyberuhkatieto johtaa usein ohjelmistojen ja järjestelmien päivityksiin, erityisesti silloin, kun haavoittuvuuksia on havaittu tai kun ohjelmistotoimittajat suosittelevat tiettyjen uhkien varalta tehtäviä päivityksiä.
+- Valvonnan lisääminen: Jos kerätyn uhkatiedon perusteella havaitaan poikkeavuuksia, yritys voi lisätä tiettyjen kriittisten järjestelmien valvontaa, kuten reaaliaikaista verkonvalvontaa tai tiettyjen laitteiden ja palvelimien tarkempaa seurantaa.
+- Tietoturvakäytäntöjen muokkaaminen: Uhkatietojen perusteella yritys voi tehdä myös muutoksia tietoturvapolitiikkaansa, kuten käyttöoikeuksien rajoittamiseen tai tiettyjen tietoturvakäytäntöjen päivittämiseen.
+
+### Tapauskohtainen lähestymistapa tasolla 1
+
+Koska kyberuhkatiedon kerääminen ja tulkinta eivät ole systemaattisia tai säännöllisiä, niihin tukeudutaan pääasiassa reaktiivisesti. Tämä tarkoittaa, että yritys toimii sen mukaan, miten uhkat tietolähteistä ilmenevät, mutta se ei ennakoi uhkia säännöllisillä tarkistuksilla tai järjestelmällisellä analyysillä.
+
+- Ei säännöllistä prosessia: Kyberuhkatiedon kerääminen ja analysointi tehdään aina tarpeen mukaan, mutta tietolähteitä ei seurata jatkuvasti. Tämä voi tarkoittaa, että tietyt uhat jäävät havaitsematta, jos ne eivät ole näkyvissä tai ajankohtaisia juuri sillä hetkellä.
+- Reaktiivinen toiminta: Toimenpiteet tehdään silloin, kun yrityksessä havaitaan uusi uhka tai poikkeama. Tämä voi tarkoittaa, että kyberuhkatietoa käytetään vasta, kun haavoittuvuus tai ongelma on jo ilmennyt.
+
+### Riskit ja haasteet tasolla 1
+
+Koska kyberuhkatiedon kerääminen ja tulkinta tapahtuvat tapauskohtaisesti, on olemassa riski, että osa olennaisista uhkista jää havaitsematta tai että niihin ei reagoida riittävän nopeasti. Tämä voi heikentää yrityksen valmiutta torjua uusia uhkia tai tietoturvahyökkäyksiä.
+
+- Tietojen vanheneminen: Koska uhkatietoa ei kerätä säännöllisesti, osa uhkatiedoista voi jäädä vanhentuneeksi ennen kuin yritys ehtii reagoida niihin. Tämä voi aiheuttaa haavoittuvuuksia, joita ei ole korjattu ajoissa.
+- Reaktiivinen lähestymistapa: Tapauskohtainen toiminta tarkoittaa, että yritys reagoi uhkiin vasta, kun ne havaitaan. Ennakoiva lähestymistapa, jossa uhkia pyritään tunnistamaan etukäteen säännöllisellä tietojen analysoinnilla, on tasolla 1 heikompi.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy pyrkii kehittämään kyberuhkatiedon keräämistä ja tulkintaa systemaattisemmaksi ja säännöllisemmäksi prosessiksi. Tavoitteena on ottaa käyttöön ennakoiva toimintatapa, jossa uhkatiedon kerääminen ja analysointi ovat jatkuva osa riskienhallintaa.
+
+- Säännöllinen uhkatietojen analysointi: Yritys aikoo ottaa käyttöön säännöllisen uhkatiedonkeruuprosessin, jossa eri tietolähteitä seurataan jatkuvasti. Tämä auttaa yritystä havaitsemaan uhat ennen kuin ne vaikuttavat kriittisiin toimintoihin.
+- Tietojen hyödyntäminen ennakoivasti: Tavoitteena on myös, että kerättyä uhkatietoa käytetään ennakoivasti uhkien torjumiseksi, ei vain reaktiivisesti. Tämä tarkoittaa esimerkiksi sitä, että tietoturvaprosessit ja järjestelmät tarkistetaan säännöllisesti uhkatietojen pohjalta.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Uhkien tunnistaminen ja niihin reagoiminen aloitetaan keräämällä käyttökelpoisia uhkatietoja luotettavista lähteistä ja määrittämällä, ovatko uhkatiedot merkityksellisiä organisaation ja organisaation toimintojen kannalta.
+
+Uhkatietojen kerääminen ja tarkastelu voi tapahtua sisäisen henkilöstön toimesta, toimittajan tarjoamana palveluna tai molempien yhdistelmänä. Uhkatietojen lähteiden olisi katettava erilaiset IT-, OT-laitteet ja tietovarannot, jotka ovat tärkeitä toiminnon toteuttamisen kannalta.
+
+Aiheeseen liittyvät käytännöt:
+
+- **Syöte**: THREAT-2a:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THREAT-2b, THREAT-2h, THREAT-2k.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2c">Toimintoon kohdistuvat uhkatoimijoiden tavoitteet on tunnistettu ainakin tapauskohtaisesti.</PracticeTitle>
+
+### Kysymys
+
+Onko organisaatio tunnistanut mahdollisten uhkatoimijoiden tavoitteet, jotka voivat kohdistua sen toimintaan, ainakin tapauskohtaisesti? Tämä voi tarkoittaa, että uhkatoimijoiden tavoitteita arvioidaan aina, kun ilmenee uusi uhka tai poikkeama, vaikka tämä ei vielä ole systemaattista tai säännöllistä. 
+
+### Merkitys
+
+Uhkatoimijoiden tavoitteiden tunnistaminen on olennainen osa kyberturvallisuuden hallintaa, koska se auttaa organisaatiota arvioimaan, miksi ja miten uhkatoimijat voivat kohdistaa uhkansa sen toimintaan. Tämä mahdollistaa kohdennettujen torjuntatoimenpiteiden toteuttamisen ja vähentää riskejä, jotka liittyvät esimerkiksi tiedon varastamiseen tai operatiivisen toiminnan häirintään. 
+
+<AnswerOptions>
+Arvioi, kuinka hyvin organisaatio tunnistaa uhkatoimijoiden tavoitteet ja uhkatilanteet:
+
+- **Ei toteutettu tai ei tietoa**: Uhkatoimijoiden tavoitteita ei ole tunnistettu tai arvioitu.
+- **Osittain toteutettu**: Uhkatoimijoiden tavoitteet tunnistetaan tapauskohtaisesti, mutta tämä ei ole systemaattista eikä jatkuvaa.
+- **Enimmäkseen toteutettu**: Uhkatoimijoiden tavoitteet tunnistetaan useimmissa tapauksissa ja toiminta on osittain ennakoivaa, mutta ei täysin systemaattista.
+- **Täysin toteutettu**: Uhkatoimijoiden tavoitteet tunnistetaan systemaattisesti ja ennakoivasti ja uhkatilanteet arvioidaan jatkuvasti.
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys tunnistaa uhkatoimijoiden tavoitteet, kun ilmenee uusia kyberuhkia tai poikkeamia toiminnassa. Tunnistaminen ei ole vielä systemaattista, mutta esimerkiksi tuotannon häiriöiden yhteydessä arvioidaan, voisiko kyseessä olla hyökkäys, jonka tarkoituksena on estää tuotantoa tai varastaa tietoja. Tällöin yritys ryhtyy tarvittaviin toimenpiteisiin, kuten lisäämällä valvontaa tai rajoittamalla käyttöoikeuksia. Esimerkiksi kiristyshaittaohjelman (ransomware) iskiessä yritys keskittyy estämään tietojen varastamisen ja palauttamaan järjestelmät mahdollisimman nopeasti. Tulevaisuudessa yritys aikoo kehittää prosessia niin, että uhkatoimijoiden tavoitteet tunnistetaan ennakoivammin ja systemaattisemmin hyödyntäen entistä enemmän uhkatietoa ja analytiikkaa. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy on tunnistanut ainakin tapauskohtaisesti mahdollisten uhkatoimijoiden tavoitteet, jotka voivat kohdistua sen toimintaan. Tämä tunnistaminen ei ole vielä systemaattista tai säännöllistä tasolla 1, mutta yritys arvioi uhkatoimijoiden tavoitteita aina, kun uhkia tai poikkeamia havaitaan, ja tekee tarvittavat toimenpiteet riskien vähentämiseksi.
+
+### Uhkatoimijoiden tavoitteiden tunnistaminen tapauskohtaisesti
+
+Yritys tunnistaa uhkatoimijoiden tavoitteet erityisesti silloin, kun ilmenee uusia kyberuhkia, poikkeavia toimintoja tai tiedustelutietoja, jotka viittaavat kohdistettuihin hyökkäyksiin. Tämä tunnistaminen ei ole täysin ennakoivaa, vaan perustuu tapauskohtaiseen analyysiin, kun uhkatoiminta havaitaan.
+
+- Tapauskohtainen tunnistaminen: Uhkatoimijoiden tavoitteita arvioidaan aina, kun havaitut uhat viittaavat suoraan yrityksen toimintaan. Tämä voi tarkoittaa esimerkiksi yrityksen liiketoiminnan häirintää, tuotantoprosessien keskeyttämistä tai tiedon varastamista.
+- Kohdennetut hyökkäykset: Jos havaitaan, että uhkatoimijat ovat kohdistaneet hyökkäyksen tiettyyn toiminnan osaan, kuten tuotantoon, jakeluun tai tietojärjestelmiin, yritys arvioi uhkatoimijoiden tavoitteet ja ryhtyy välittömiin toimenpiteisiin niiden torjumiseksi.
+
+### Tyypilliset uhkatoimijoiden tavoitteet
+
+Yritys arvioi mahdollisten uhkatoimijoiden tavoitteet tapauskohtaisesti eri näkökulmista. Tyypillisesti uhkatoimijoiden tavoitteet voivat liittyä esimerkiksi tiedon varastamiseen, liiketoiminnan häirintään tai taloudelliseen hyötyyn, ja nämä tavoitteet vaikuttavat suoraan siihen, miten yritys reagoi uhkaan.
+
+- Tiedon varastaminen: Uhkatoimijat voivat pyrkiä varastamaan arkaluonteisia tietoja, kuten asiakastietoja, tuotantoprosesseihin liittyvää dataa tai liikesalaisuuksia. Tämä voi liittyä kilpailijoihin, kyberrikollisiin tai muuhun tahoon, joka haluaa hyötyä taloudellisesti yrityksen tiedoista.
+- Toiminnan häirintä: Uhkatoimijat voivat pyrkiä keskeyttämään tai häiritsemään yrityksen operatiivisia toimintoja, kuten tuotantoa tai logistiikkaa, joko vahingonteon tai kiristyksen tavoitteella. Tämä voi kohdistua erityisesti kriittisiin järjestelmiin, kuten SCADA- tai ERP-järjestelmiin.
+- Rikolliset motiivit: Kyberrikollisten tavoitteet voivat olla taloudellisia, kuten kiristyshaittaohjelmien (ransomware) käyttö, jolla pyritään pakottamaan yritys maksamaan lunnaita tietojen palauttamisesta tai järjestelmän toiminnan palauttamisesta.
+
+### Tunnistamisen menetelmät
+
+Yritys käyttää useita menetelmiä uhkatoimijoiden tavoitteiden tunnistamiseen, mutta nämä menetelmät eivät ole täysin systemaattisia tai säännöllisiä. Tunnistaminen perustuu pääosin tapauskohtaiseen analyysiin ja olemassa oleviin uhkatietoihin.
+
+- Uhkatoimijoiden tiedustelu: Yritys hyödyntää saatavilla olevaa uhkatietoa, kuten kyberturvallisuusraportteja ja asiantuntija-analyysejä, arvioidakseen mahdollisten uhkatoimijoiden motiiveja ja tavoitteita. Tämä tieto auttaa yritystä ymmärtämään, mitkä toiminnot ovat alttiimpia hyökkäyksille ja miksi.
+- Tiedonkeruu uhkatilanteissa: Kun havaitaan kyberuhkia tai poikkeavaa toimintaa järjestelmissä, yritys kerää tietoa siitä, mitkä ovat uhkatoimijoiden tavoitteet. Tämä voi tapahtua esimerkiksi analysoimalla hyökkäyksen tyyppiä, kohteita ja uhkatoimijoiden aikaisempia aktiviteetteja.
+
+### Toimenpiteet uhkatoimijoiden tavoitteisiin puuttumiseksi
+
+Kun uhkatoimijoiden tavoitteet on tunnistettu, yritys ryhtyy tarvittaviin toimenpiteisiin niiden torjumiseksi. Tämä voi sisältää lisääntyneen valvonnan, käyttöoikeuksien rajoittamisen, tietoturvapäivitysten asentamisen tai tiedon suojaamisen.
+
+- Valvonnan lisääminen: Jos uhkatoimijoiden tavoitteisiin kuuluu tiedon varastaminen tai operatiivisen toiminnan häirintä, yritys voi lisätä valvontaa erityisesti kriittisten järjestelmien osalta. Tämä varmistaa, että poikkeavat toiminnot havaitaan nopeasti.
+- Käyttöoikeuksien rajoittaminen: Jos uhkatoimijoiden tavoitteet liittyvät käyttöoikeuksien väärinkäyttöön tai järjestelmän sisäisiin hyökkäyksiin, yritys voi rajoittaa tiettyjen käyttäjien pääsyä kriittisiin järjestelmiin tai tietoihin.
+- Tietoturvapäivitykset: Jos uhkatoimijoiden tavoitteet liittyvät haavoittuvuuksien hyödyntämiseen, yritys varmistaa, että kaikki kriittiset järjestelmät ja ohjelmistot päivitetään ajantasaisiksi mahdollisten tietoturvariskien minimoimiseksi.
+
+### Riskit ja haasteet tasolla 1
+
+Koska uhkatoimijoiden tavoitteiden tunnistaminen tapahtuu pääasiassa tapauskohtaisesti, on olemassa riski, että osa uhkatoimijoiden motiiveista jää havaitsematta tai tunnistetaan liian myöhään. Tämä voi altistaa yrityksen turvattomuudelle, jos uhkatoimijoiden tavoitteet ovat monimutkaisia tai piileviä.
+
+- Ennakoivuuden puute: Koska tunnistaminen ei ole systemaattista, yritys toimii pääasiassa reaktiivisesti, mikä voi johtaa siihen, että uhkatoimijoiden tavoitteita ei havaita ennen kuin hyökkäys tai uhka on jo käynnissä. Tämä voi heikentää yrityksen kykyä reagoida nopeasti ja tehokkaasti.
+- Tiedon puutteellisuus: Jos uhkatoimijoiden tavoitteita ei arvioida säännöllisesti tai systemaattisesti, yritys voi menettää kriittistä tietoa uhkien kehittymisestä tai uhkatoimijoiden muuttuvista motiiveista. Tämä voi vaikeuttaa uhkiin puuttumista tehokkaasti.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy tunnistaa tarpeen kehittää systemaattisempaa lähestymistapaa uhkatoimijoiden tavoitteiden tunnistamiseen ja seurantaan. Tavoitteena on luoda prosessi, jossa uhkatoimijoiden tavoitteita arvioidaan säännöllisesti ja ennakoivasti, jotta yritys voi reagoida uhkiin tehokkaammin ja estää mahdolliset hyökkäykset.
+
+- Systemaattinen analyysi: Yritys aikoo ottaa käyttöön systemaattisemman lähestymistavan, jossa uhkatoimijoiden tavoitteita analysoidaan säännöllisesti. Tämä auttaa varmistamaan, että yritys ymmärtää paremmin, mihin uhkatoimijat pyrkivät ja miten heidän motiivinsa voivat kehittyä.
+- Uhkatietojen hyödyntäminen: Tavoitteena on lisätä uhkatietojen ja -analyysien käyttöä uhkatoimijoiden tavoitteiden tunnistamiseksi. Tämä parantaa yrityksen kykyä tehdä tietoon perustuvia päätöksiä ja reagoida uhkiin ennakoivasti.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Uhkatavoitteet ovat uhkatoimijoiden toiminnan tuloksia, joilla on kielteisiä vaikutuksia organisaatioon. Esimerkiksi organisaatio, joka ei käsittele luottamuksellisia tietoja, ei ehkä ole huolissaan tietovarkaudesta, mutta voi olla hyvin huolissaan tapahtumasta, joka aiheuttaa käyttökatkoksen.
+
+Uhkatoimijat voivat käyttää useita taktiikoita tai tekniikoita, kuten MITRE ATTACK -viitekehyksessä määriteltyjä (yritys- tai teollisuuden hallintajärjestelmiä (ICS) varten), saavuttaakseen tavoitteensa. Esimerkkejä uhkatavoitteista voivat olla tietojen manipulointi, immateriaalioikeuksien varkaus, omaisuuden vahingoittaminen, hallinnan estäminen, turvallisuuden (safety) menettäminen tai käyttökatkos.
+
+**Aiheeseen liittyvät käytännöt:**
+
+- **Syöte**: THREAT-2b:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. **Tämän kehityspolun käytäntöjä ovat: THREAT-2c, THREAT-2e, THREAT-2i**.
+</C2M2Doc>
+
+---
+
+<PracticeTitle name="threat-2d">Toiminnon kannalta olennaisiin uhkiin puututaan (esimerkiksi lisäämällä valvontaa tai seuraamalla uhkien kehitystä).</PracticeTitle>
+
+### Kysymys
+
+Reagoiko organisaatio tärkeisiin kyberuhkiin, kuten lisäämällä valvontaa, seuraamalla uhkien kehitystä tai tekemällä muita toimenpiteitä, kun uhkia havaitaan? Puututaanko uhkiin nopeasti, kun ne tunnistetaan ja varmistetaanko, että tarvittavat toimenpiteet toteutetaan, kuten korjauspäivitykset tai järjestelmämuutokset? 
+
+### Merkitys
+
+Olennaisiin uhkiin puuttuminen on keskeinen osa organisaation kyberturvallisuutta ja riskienhallintaa. Se mahdollistaa nopean ja tehokkaan reagoinnin uhkiin, jotka voivat uhata yrityksen toiminnan jatkuvuutta, kuten haittaohjelmiin tai verkkohyökkäyksiin. Tällainen reagointi varmistaa, että yritys pystyy puuttumaan kriittisiin tilanteisiin nopeasti ja minimoimaan mahdolliset vahingot, suojelemalla samalla liiketoiminnan keskeisiä prosesseja ja tietoja. 
+
+<AnswerOptions>
+Arvioi, missä määrin organisaatio puuttuu olennaisiin uhkiin ja seuraa niiden kehitystä:
+
+- **Ei toteutettu tai ei tietoa**: Ei ole olemassa käytäntöä, jolla uhkiin puututaan tai uhkatiedon jakaminen ei ole järjestetty.
+- **Osittain toteutettu**: Uhkia käsitellään ad hoc -perusteisesti, mutta ei ole systemaattista lähestymistapaa tai säännöllistä seuraamista.
+- **Enimmäkseen toteutettu**: Olennaisiin uhkiin puututaan, mutta käytännöt eivät ole täysin ennakoivia, ja puuttuminen tapahtuu pääasiassa reaktiivisesti.
+- **Täysin toteutettu**: Olennaisiin uhkiin puututaan systemaattisesti ja ennakoivasti. Uhkatiedon jakaminen ja seuraaminen ovat säännöllistä ja osa organisaation arkea. 
+</AnswerOptions>
+
+### Esimerkki
+
+Yritys reagoi kyberuhkiin tilanteen mukaan. Esimerkiksi, jos uhka havaitaan, se voi lisätä valvontaa tai asentaa tarvittavia tietoturvapäivityksiä. Jos uhka on vakava, kuten haittaohjelma tai verkkohyökkäys, yritys puuttuu siihen välittömästi ja varmistaa, että tarvittavat toimenpiteet, kuten verkkosuojauksen vahvistaminen, toteutetaan nopeasti. Vähemmän kriittisiin uhkiin, kuten pieniin haavoittuvuuksiin, puututaan yleensä myöhemmin. Toimenpiteet eivät ole vielä täysin systemaattisia, ja niitä ei aina dokumentoida huolellisesti, mikä voi vaikeuttaa tulevaa analyysiä ja jatkuvuuden varmistamista.
+
+Tulevaisuudessa yritys aikoo kehittää prosessejaan, jotta uhkiin voidaan reagoida ennakoivammin ja tehokkaammin. Tavoitteena on luoda selkeämpi ja järjestelmällisempi lähestymistapa uhkien hallintaan, jossa kaikki toimenpiteet dokumentoidaan tarkasti ja vaikutuksia seurataan jatkuvasti. Tämä parantaa yrityksen valmiuksia reagoida nopeammin ja tehokkaammin uusiin uhkiin sekä vahvistaa kykyä hallita riskejä pitkällä aikavälillä. 
+
+<ExampleDocument title="Esimerkkidokumentti">
+### Johdanto
+
+Elintarvikeyritys Oy puuttuu toiminnon kannalta olennaisiin kyberuhkiin, mutta tämä tapahtuu ad hoc -perusteisesti, eikä ole vielä systemaattista tai säännöllistä tasolla 1. Olennaisiin uhkiin reagoidaan tilanteen mukaan, esimerkiksi lisäämällä valvontaa, seuraamalla uhkatietoja tai asentamalla korjauspäivityksiä, kun uhka havaitaan tai riski kasvaa.
+
+### Olennaisiin uhkiin puuttuminen tapauskohtaisesti
+
+Yritys puuttuu toiminnon kannalta olennaisiin uhkiin, kun ne havaitaan tai niistä saadaan tietoa soveltuvista tietolähteistä. Reaktiivinen toiminta varmistaa, että erityisen vakaviin uhkiin reagoidaan nopeasti, mutta vähemmän kriittisiin uhkiin saatetaan puuttua vasta myöhemmin.
+
+- Kriittisiin uhkiin välitön reagointi: Jos havaitaan uhka, joka vaikuttaa suoraan yrityksen kriittisiin toimintoihin, kuten tuotantoon tai tietoturvaan, siihen puututaan välittömästi. Tämä voi sisältää kyberuhkien, kuten haittaohjelmien tai verkkohyökkäysten, torjunnan lisäämällä verkonvalvontaa tai asentamalla välittömiä tietoturvakorjauksia.
+- Uhkatietojen seuraaminen: Joissain tapauksissa uhkat eivät välttämättä vaadi välitöntä toimenpidettä, mutta niitä seurataan tarkasti. Esimerkiksi uhkatietojen perusteella yritys saattaa lisätä valvontaa tiettyjen järjestelmien osalta, kuten ERP- tai SCADA-järjestelmien, ja tarkkailla poikkeamia järjestelmän toiminnassa.
+
+### Uhkiin puuttumisen käytännöt
+
+Kun olennaisia uhkia havaitaan, yritys hyödyntää useita menetelmiä puuttuakseen niihin. Näitä menetelmiä käytetään tapauskohtaisesti, riippuen uhkan vakavuudesta ja sen mahdollisista vaikutuksista organisaation toimintaan.
+
+- Valvonnan tehostaminen: Jos uhkatieto viittaa kasvaneseen riskiin, yritys lisää kyseisten järjestelmien valvontaa. Tämä voi tarkoittaa esimerkiksi reaaliaikaista verkonvalvontaa tai tiettyjen laitteiden tai ohjelmistojen erityisseurantaa, kunnes uhka on torjuttu tai neutralisoitu.
+- Korjauspäivitysten asentaminen: Kun ohjelmistotoimittajat julkaisevat tietoturvapäivityksiä, yritys asentaa nämä tapauskohtaisesti, erityisesti silloin, kun päivitys liittyy havaittuun uhkaan. Päivitykset kohdistuvat usein kriittisiin järjestelmiin, kuten tuotannonohjaus- tai tietoturvajärjestelmiin.
+- Käyttöoikeuksien rajoittaminen: Jos uhka liittyy järjestelmän käyttöoikeuksiin tai tietojen käsittelyyn, yritys voi rajoittaa käyttäjien pääsyä tietyille alueille tai sovelluksiin. Tämä toimenpide auttaa minimoimaan tietovuotoriskejä tai väärinkäyttöä, erityisesti uhkatilanteessa.
+
+### Toimenpiteiden priorisointi
+
+Yritys arvioi uhkiin puuttumisen tärkeyden niiden vakavuuden perusteella. Kriittiset uhat, jotka voivat vaikuttaa suoraan liiketoiminnan jatkuvuuteen tai tietoturvaan, priorisoidaan korkeammalle ja käsitellään välittömästi. Vähemmän kriittisiä uhkia voidaan hallita pidemmällä aikavälillä, kuten osana järjestelmän normaalipäivityksiä.
+
+- Kriittisyysanalyysi: Jokainen uhka analysoidaan sen kriittisyyden perusteella. Jos uhka vaikuttaa merkittävästi yrityksen kriittisiin prosesseihin, kuten tuotantoon, jakeluun tai tietoturvaan, toimenpiteet tehdään välittömästi. Pienempiin uhkiin voidaan reagoida viiveellä, jos ne eivät suoraan uhkaa toiminnan jatkuvuutta.
+- Tapauskohtainen priorisointi: Yritys priorisoi uhkiin puuttumisen sen mukaan, kuinka välittömästi ne vaikuttavat. Tämä tarkoittaa, että uhkatilanteet käsitellään sitä mukaa kuin ne ilmenevät, mutta systemaattinen ja säännöllinen ennakoiva uhkienhallinta ei vielä ole käytössä tasolla 1.
+
+### Dokumentointi ja seuranta
+
+Vaikka yritys puuttuu uhkiin tapauskohtaisesti, toimenpiteiden dokumentointi ja seuranta eivät ole täysin systemaattisia tasolla 1. Tämä voi johtaa tilanteeseen, jossa jotkin uhkiin liittyvät toimenpiteet jäävät dokumentoimatta, mikä heikentää pitkäaikaista jäljitettävyyttä ja analyysiä.
+
+- Dokumentoinnin puute: Koska toimenpiteitä ei aina dokumentoida systemaattisesti, osa uhkien torjumiseksi tehdyistä toimista voi jäädä kirjaamatta. Tämä voi vaikeuttaa toimenpiteiden vaikutusten arviointia jälkikäteen, erityisesti jos uhkien seuranta ei ole jatkuvaa.
+- Seurannan haasteet: Uhkiin puuttumisen vaikutuksia ei seurata säännöllisesti, mikä voi johtaa siihen, että osa toimenpiteistä ei ole riittävä tai että valvontaa ei jatketa tarpeeksi pitkään. Tämä voi heikentää yrityksen kykyä hallita uhkia pitkällä aikavälillä.
+
+### Riskit ja haasteet tasolla 1
+
+Koska uhkiin puuttuminen ei ole systemaattista tai säännöllistä, on olemassa riski, että kaikki olennaiset uhkat eivät tule käsitellyiksi ajoissa. Tämä voi lisätä yrityksen altistumista kyberuhille, erityisesti silloin, kun uhkat kehittyvät nopeasti tai niitä ei havaita riittävän aikaisin.
+
+- Reaktiivinen toiminta: Uhkiin puuttuminen perustuu tällä hetkellä reaktiiviseen toimintatapaan, mikä tarkoittaa, että toimenpiteet tehdään vasta, kun uhka on jo havaittu. Tämä voi aiheuttaa sen, että yritys ei ole täysin valmistautunut uusiin tai nopeasti kehittyviin uhkiin.
+- Toimenpiteiden viiveet: Jos uhkiin ei puututa välittömästi tai järjestelmällisesti, ne voivat kehittyä vakavammiksi ennen kuin niihin reagoidaan. Tämä voi aiheuttaa haavoittuvuuksia, jotka altistavat yrityksen suuremmille tietoturvariskeille.
+
+### Kehityssuunnitelma
+
+Elintarvikeyritys Oy tunnistaa tarpeen parantaa uhkiin puuttumisen systemaattisuutta ja säännöllisyyttä. Yritys suunnittelee kehittävänsä prosesseja, joilla uhkiin puuttumista voidaan tehdä ennakoivammin ja tehokkaammin, ja kaikki toimenpiteet dokumentoidaan tarkasti.
+
+- Säännöllinen uhkienhallinta: Yritys aikoo luoda järjestelmällisen lähestymistavan, jossa uhkatietoja seurataan säännöllisesti ja olennaisiin uhkiin puututaan ennakoivasti. Tämä auttaa estämään uhkien kehittymistä vakavammiksi ja parantaa yrityksen kykyä reagoida nopeasti.
+- Toimenpiteiden dokumentointi ja seuranta: Tavoitteena on varmistaa, että kaikki uhkiin liittyvät toimenpiteet dokumentoidaan ja niiden vaikutuksia seurataan jatkuvasti. Tämä parantaa yrityksen kykyä analysoida, miten tehokkaita toimenpiteet ovat olleet, ja auttaa tekemään tarvittavia parannuksia.
+</ExampleDocument>
+
+<C2M2Doc title="Kybermittarin ohjeteksti (versio 2.1)">
+Organisaatio reagoi kerättyjen ja analysoitujen uhkatietojen avulla tunnistettuihin uhkiin, kun todetaan, että uhat voivat vaikuttaa haitallisesti toimintaan. Merkityksellisiä uhkia ovat uhat/uhkatoimijat, joilla on keinot, motiivi ja mahdollisuus vaikuttaa palvelujen tuottamiseen. Uhkiin reagoiminen voi tarkoittaa esimerkiksi lieventävien hallintatoimien toteuttamista tai uhkatilanteen seuraamista.
+
+**Aiheeseen liittyvät käytännöt:**
+
+- **Syöte**: THREAT-2c:n toteuttaminen tarjoaa syötteen, joista voi olla hyötyä tämän käytännön toteutumisen arvionnissa ja toteuttamisessa.
+- **Eteneminen**: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THREAT-2d, THREAT-2g, THREAT-2j.
+</C2M2Doc>
+
+---
+
+_Ohjetta päivitetty: 6.2.2025_
+

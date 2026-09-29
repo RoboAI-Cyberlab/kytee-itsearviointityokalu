@@ -1,0 +1,19 @@
+{
+  "codes": [
+    { "key": "01", "value": "Elintarvikehuolto", "score": 2.83 },
+    { "key": "02", "value": "Energiahuolto", "score": 3.12 },
+    { "key": "03", "value": "Finanssiala", "score": 3.34 },
+    { "key": "04", "value": "Hallinto- ja tukipalvelut", "score": null },
+    { "key": "05", "value": "ICT - Informaatio ja viestintä", "score": 3.67 },
+    { "key": "06", "value": "Julkinen hallinto", "score": null },
+    { "key": "07", "value": "Kaivostoiminta ja louhinta", "score": null },
+    { "key": "08", "value": "Koulutus ja tutkimus", "score": null },
+    { "key": "09", "value": "Logistiikka", "score": 2.95 },
+    { "key": "10", "value": "Majoitus- ja ravitsemistoiminta", "score": null },
+    { "key": "11", "value": "Media-ala", "score": 2.88 },
+    { "key": "12", "value": "Muu", "score": null },
+    { "key": "13", "value": "Teollisuustuotanto", "score": 2.8 },
+    { "key": "14", "value": "Terveydenhuolto", "score": 3.04 },
+    { "key": "15", "value": "Tukku- ja vähittäiskauppa", "score": 2.73 }
+  ]
+}

@@ -1,0 +1,37 @@
+# pnpm settings (pnpm 10.16+ reads these here, not from the package.json "pnpm" field).
+
+# Replaces the former package.json "overrides" field.
+overrides:
+  react-is: ^19.1.0
+
+# Before running any script (build/test/etc.), verify node_modules matches the
+# lockfile; if out of sync, install first. Stops scripts from executing against a
+# tampered or stale dependency tree.
+verifyDepsBeforeRun: install
+
+# Supply-chain hardening: dependency build/postinstall scripts are blocked by
+# default. Explicitly allow only the native-binary build tools; deny the rest.
+# core-js / core-js-pure postinstalls are funding-message ads; msw's is a browser
+# service-worker copy not needed for Node tests.
+allowBuilds:
+  '@swc/core': true
+  esbuild: true
+  core-js: false
+  core-js-pure: false
+  msw: false
+
+# Refuse to install any package version published less than 48h ago (2880 min).
+# Defends against freshly-published malicious releases ("npm worm" pattern).
+# Only affects new resolutions; versions already pinned in pnpm-lock.yaml are unaffected.
+minimumReleaseAge: 2880
+
+# Advisories triaged for `pnpm audit --prod --audit-level high`. The ones below are
+# ignored so the audit still fails on any NEW high/critical in production deps.
+# Review on dependency upgrades.
+auditConfig:
+  ignoreGhsas:
+    # tmp <0.2.6 path traversal via exceljs>tmp. No patched exceljs published yet; tmp is
+    # used internally by exceljs for streaming with non-attacker-controlled paths. Re-check
+    # when exceljs ships a release pulling tmp >=0.2.6.
+    - GHSA-ph9p-34f9-6g65
+

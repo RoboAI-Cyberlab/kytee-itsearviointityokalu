@@ -1,0 +1,592 @@
+[
+  {
+    "id": "critical",
+    "title": "Skydda kritiska tjänster",
+    "short": "Kritiska tjänster",
+    "description": "Organisationen ska identifiera sin roll i tillhandahållandet av tjänster för samhället och hantera risker baserat på sin roll.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Identifiera kritiska tjänster och beroendeförhållanden till tjänsterna",
+        "description": "Organisationen ska förstå sin roll i tillhandahållandet av kritiska tjänster för samhället, vilka krav tillhandahållandet av kritiska tjänster ställer och vilka konsekvenser ett misslyckat tillhandahållande kan ha.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Kritiska tjänster som organisationen tillhandahåller samhället har identifierats och dokumenterats."
+          },
+          {
+            "id": "1b",
+            "title": "Information som behövs för att tillhandahålla kritiska tjänster för samhället har identifierats och dokumenterats."
+          },
+          {
+            "id": "1c",
+            "title": "Processer som behövs för att tillhandahålla kritiska tjänster för samhället har identifierats och dokumenterats."
+          },
+          {
+            "id": "1d",
+            "title": "System (IT och OT) som behövs för att tillhandahålla kritiska tjänster för samhället har identifierats och dokumenterats."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Hantera kritiska tjänster",
+        "description": "Högsta ledningen ska säkerställa tillräckliga resurser för tillhandahållande av kritiska tjänster, och ansvar för beslut ska ha fastställts på behörigt och effektivt sätt. Riskerna mot nät och informationssystem som behövs för att tillhandahålla kritiska tjänster ska utvärderas som en del av bedömningen av riskerna mot hela organisationen.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Alla resurser (information, processer, system, rum, leveranskedjor) som behövs för att tillhandahålla samhälleligt kritiska tjänster omfattas av organisationens policyer och processer för säkerhetshantering."
+          },
+          {
+            "id": "2b",
+            "title": "Alla resurser (information, processer, system, rum, leveranskedjor) som behövs för att tillhandahålla samhälleligt kritiska tjänster omfattas av organisationens policyer och processer för riskhantering."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Minimera cybersäkerhetsincidenters verkningar på kritiska tjänster",
+        "description": "Organisationen ska ha en väl uppgjord och testad process för hantering av cybersäkerhetshändelser och cybersäkerhetsincidenter, och huvudsyftet med processen ska vara att säkra kontinuiteten i de kritiska tjänsterna, om det uppstår fel i ett system eller en tjänst. Åtgärder för att begränsa eller minska verkningar ska ha införts och är skalbara enligt totalrisken och totalverkningen.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Planen för hantering av cybersäkerhetshändelser och cybersäkerhetsincidenter omfattar alla kritiska system."
+          },
+          {
+            "id": "3b",
+            "title": "Planen för hantering av cybersäkerhetshändelser och cybersäkerhetsincidenter omfattar scenarier som endast gäller kända och välförstådda angrepp."
+          },
+          {
+            "id": "3c",
+            "title": "Personer som deltar i genomförandet av planen för hantering av cybersäkerhetshändelser och cybersäkerhetsincidenter förstår det bra."
+          },
+          {
+            "id": "3d",
+            "title": "Planen har dokumenterats och delats ut till alla relevanta berörda parter."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asset",
+    "title": "Hantering av egendom, förändringar och konfiguration",
+    "short": "Tillgångar och konfiguration",
+    "description": "I ämnesområdena för hantering av egendom, förändringar och konfigurationer bedömer man organisationens förmåga att hantera sin apparat-, programvaru- och informationsegendom i förhållande till de risker som berör organisationen och organisationens mål. Med egendom avses i detta sammanhang apparater, programvaror och information som är väsentliga för funktionen. Utöver IT-egendom ska man beakta organisationens eventuella OT-egendom.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Hantering av apparater och programvara",
+        "description": "Ett register över de apparater och programvaror som är viktiga för funktionen är en viktig del av hanteringen av cybersäkerhetsrisker. Registrering av viktiga uppgifter såsom versionsnummer, plats, ägare eller kritiskhet är en förutsättning för många åtgärder för hantering av cybersäkerheten. Ett bra register kan vara till hjälp exempelvis när man behöver identifiera i vilka apparater programvara som behöver uppdateras finns installerad.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Det finns ett register över apparater och programvaror som är viktiga för funktionen. (Beakta också apparater och programvaror i eventuella OT-miljöer.) På nivå 1 behöver upprätthållandet av registret inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Hantering av informationsresurser",
+        "description": "Ett register över den information som är viktig för funktionen är en del av hanteringen av cybersäkerhetsrisker. Sådana här informationsresurser kan anknyta till exempelvis kunder, produkter eller tjänster. Ett bra register kan exempelvis göra det lättare att identifiera de system där känsliga personuppgifter hanteras.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Det finns ett register över de informationsresurser som är viktiga för funktionen (såsom kunduppgifter eller standardinställningarna för apparater och programvaror). (Observera också informationsresurser för eventuella OT-miljöer.) På nivå 1 behöver upprätthållandet av registret inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Hantering av konfiguration",
+        "description": "Till hantering av konfiguration hör definition av grundläggande standardinställningar och användning av dem vid konfiguration av apparater och programvaror. Oftast strävar man efter att likadana apparater och programvaror ska konfigureras för att fungera på samma sätt. Å andra sidan omfattar hanteringen av konfigurationen av enskilda eller individualiserade apparater användning av grundläggande standardinställningar i inledningsskedet och identifiering av senare avvikelser.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Grundläggande standardinställningar har skapats för apparaters, programvarors och informationsresursers konfigurationer. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Hantering av förändringar",
+        "description": "Till hantering av förändringar i apparater, programvaror och information hör att bedöma begäranden av ändringar, följa processen för hantering av förändringar och identifiera olovliga förändringar. Genom en förhandsbedömning av förändringar kan man säkerställa att inga skadliga sårbarheter skapas i verksamhetsmiljön. Hanteringen av förändringar omfattar egendomens hela livscykel: definition av krav, testning, ibruktagande, underhåll och tagande ur bruk.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Ändringar som genomförs i apparater, programvaror och informationsresurser bedöms och godkänns innan de genomförs. På nivå 1 behöver detta inte vara systematiskt och regelbundet. (ad hoc, från fall till fall)"
+          },
+          {
+            "id": "4b",
+            "title": "Man för loggar över förändringar i  apparater, programvaror och informationsresurser. På nivå 1 behöver detta inte vara systematiskt och regelbundet. (ad hov, från fall till fall)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "threat",
+    "title": "Hantering av hot och sårbarheter",
+    "short": "Hot och sårbarheter",
+    "description": "I ämnesområdet hantering av hot och sårbarheter bedöms organisationens förmåga att fastställa och upprätthålla planer, processer och tekniker för att upptäcka, identifiera, analysera, hantera och ingripa i cyberhot och -sårbarheter – i förhållande till de risker som berör organisationen och organisationens mål. Med cyberhot avses vilken situation eller händelse som helst som kan ha negativa effekter på organisationens resurser och verksamhet (inklusive exempelvis organisationens mål, funktioner, anseende eller rykte) eller indirekt på andra organisationer (som en följd av exempelvis olovlig användning eller förstöring av organisationens IT-, OT- eller kommunikationssystem, offentliggörande eller manipulering av information eller ett överlastningsangrepp). IT-, OT- och kommunikationssystem är föremål för en mängd olika hot, som dessutom kan vara förknippade med olika hotfaktorer, skadliga program (såsom virus och maskar) eller omfattande spridda överlastningsangrepp. En cybersäkerhetssårbarhet är en brist eller lucka i ett IT-, OT- eller kommunikationssystem, en apparat, en verksamhetsmodell eller en intern skyddsmekanism, som ett eventuellt hot kan utnyttja.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Minskning av sårbarheter",
+        "description": "Minskning av sårbarheter inleds med insamling och analys av information om sårbarheter. Sårbarheter kan kartläggas exempelvis med hjälp av automatiska skanningsverktyg, nätverksintrångstester, cyberövningar eller auditeringar. I en analys av sårbarheter ska man beakta både den lokala effekten (det vill säga sårbarhetens möjliga effekt på det skyddade objektet i sig självt) och det skyddade objektets betydelse för hela funktionen i ett större perspektiv. Sårbarheter kan bekämpas genom att vidta skyddade åtgärder, följa hotsituationen och installera datasäkerhetsuppdateringar samt på andra sätt.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Lämpliga informationskällor som stöd för identifieringen av sårbarheter har identifierats. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "1b",
+            "title": "Uppgifter om sårbarheter samlas in och tolkas för funktionen. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "1c",
+            "title": "Man gör sårbarhetsbedömningar. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "1d",
+            "title": "Man ingriper i sårbarheter som är av betydelse för funktionen (exempelvis genom att öka övervakningen eller installera korrigerande uppdateringar). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Bekämpning av hot och spridning av information om hot",
+        "description": "Identifieringen och hanteringen av hot börjar med insamling av information om hot från tillförlitliga källor, tillämpning av den insamlade informationen i förhållande till organisationens verksamhetsmiljö och reaktion på de hot som kan hota tjänsternas driftssäkerhet. Organisationens hotprofil innehåller beskrivningar av möjliga hotfaktorer, inklusive hotfaktorernas förmågor, mål och objekt. Hotprofilen kan användas för att närmare identifiera hot och som en del av riskanalysen, riskbedömningen [se RISK] och bildandet av en lägesbild över cybersäkerheten [se SITUATION].",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Lämpliga informationskällor som stöd för identifieringen av hot har identifierats. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "2b",
+            "title": "Information om cyberhot samlas in och tolkas för funktionen minst från fall till fall (ad hoc). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "2c",
+            "title": "Hotaktörers mål som riktas mot funktionen har identifierats åtminstone från fall till fall. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "2d",
+            "title": "Man ingriper i hot som är av betydelse för funktionen (exempelvis genom att öka övervakningen eller följa hotens utveckling). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "risk",
+    "title": "Riskhantering",
+    "short": "Riskhantering",
+    "description": "Ta fram, använd och underhåll ett system för organisationsövergripande riskhantering så att det är möjligt att identifiera, analysera och minska cybersäkerhetsriskerna i organisationen (inbegripet affärsenheter, dotterföretag, integrerade infrastrukturer och andra berörda parter).",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Plan för hantering av cybersäkerhetsrisker",
+        "description": "Till hanteringen av cybersäkerhetsrisker hör identifiering och bedömning av riskerna, behandling (exempelvis genom att godkänna, undvika, minska eller överföra risken) och uppföljning så att den är i linje med organisationens behov. Det centrala för dessa åtgärder är en gemensam förståelse för cybersäkerhetsrisker och en plan för att hantera dem. I vissa organisationer beskrivs detta genom en separat strategi för hantering av cybersäkerhetsrisker. Strategin för hantering av cybersäkerhetsrisker är en strategi på organisationens högsta nivå, som definierar organisationens villighet att ta risker och ställer upp en riktning för bedömningen av cybersäkerhetsrisker och prioriteringen av hanteringsåtgärder. Strategin för hantering av cybersäkerhetsrisker omfattar bland annat metoder för bedömning av cybersäkerhetsrisker, övervakning av riskerna enligt strategin och definition av organisationens modell för hantering av cybersäkerheten (”cybersecurity governance”). En viktig del av strategin är att definiera bedömningskriterier för riskerna på organisationsnivå (exempelvis riskgränser, tillgängliga riskhanteringsåtgärder), som styr hela organisationens cybersäkerhetsprogram [se PROGRAM]. Strategin för hantering av cybersäkerhetsrisker ska vara i linje med organisationens allmänna riskhanteringsstrategi, så att man kan säkerställa att cybersäkerhetsrisker hanteras som en del av organisationens målsättningar i ett större perspektiv.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organisationens hantering av cybersäkerhetsrisker styrs av en plan (exempelvis en strategi eller motsvarande policy på ledningsnivån). På nivå 1 behöver utvecklingen eller upprätthållandet av den inte vara systematisk och regelbunden."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Identifiering av cybersäkerhetsrisker",
+        "description": "Hanteringen av cybersäkerhetsrisker omfattar identifiering, bedömning, behandling (godkännande, undvikande, minskning eller överföring) och uppföljning. Hanteringen tar hänsyn till behoven i affärsverksamheten och organisationen. En organisationsövergripande förståelse av riskhanteringsstrategin står i centrum för att aktiviteterna ovan ska kunna genomföras. Genom en fastställd riskklassificering kan organisationen behandla och kontrollera risker på ett konsekvent sätt. Ett riskregister, dvs. en förteckning över identifierade risker och information om risker, stöder denna process. \n\nAndra ämnesområden i självutvärderningen, som SITUATION och RESPONSE, hänvisar till riskregistret och visar hur praxis enligt denna modell fungerar kraftfullare när de är kopplade till hantering av cybersäkerhetsrisker.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Cybersäkerhetsrisker identifieras. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Riskanalys",
+        "description": "De identifierade riskerna analyseras så att deras effekter på organisationens verksamhet kan bedömas, så att de kan klassificeras och prioriteras och så att rätt strategi och tillräckliga åtgärder kan fastställas (exempelvis: minska sannolikheten/effekterna, godkänna risken, undvika risken eller dela risken). Hur detaljerad analysen är kan variera beroende på riskens art och den tillgängliga informationens mängd och kvalitet, men metoden som används bör vara enhetlig i hela organisationen.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Cybersäkerhetsriskerna prioriteras utifrån vilken effekt de bedöms ha. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Reaktion på risker",
+        "description": "De åtgärder som man beslutat om utifrån analysen ska genomföras systematiskt och enligt prioriteringen. Slutresultatets effektivitet och tillräcklighet måste bedömas för att se om den återstående risken är på en godtagbar nivå. Eftersom verksamhetsmiljön kan förändras med tiden måste de utförda åtgärderna även framöver bedömas regelbundet för att säkerställa att de fortfarande är tillräckliga och ändamålsenliga.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Sätt att reagera på risker (såsom att minska, godkänna, undvika eller överföra risken) används för cybersäkerhetsrisker. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "access",
+    "title": "Identitetshantering och åtkomstkontroll",
+    "short": "Identitet och åtkomst",
+    "description": "I avsnittet för identitets- och åtkomstkontroll bedöms organisationens förmåga att kontrollera och begränsa den logiska och fysiska åtkomsten till organisationens egendom. Åtkomstkontrollen ska hanteras i relation till de risker som berör organisationen och organisationens mål. I detta sammanhang tillämpas skyddsmekanismerna för logisk åtkomstkontroll på den utrustning, programvara och information som är viktig för verksamheten och skyddsmekanismerna för fysisk åtkomstkontroll på den utrustning och de lokaler som är viktiga för verksamheten. Automatiska skyddsmekanismer tillämpas i samband med både logisk och fysisk åtkomstkontroll. Svag åtkomstkontroll kan leda till olovlig användning, publicering, förstöring eller manipulering av utrustning, programvara eller information, och höjer dessutom organisationens risknivå i onödan.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Skapande och hantering av identitet",
+        "description": "Identitetshanteringen utgår från att man skapar identiteter för aktörerna, som tas ur bruk när de inte längre behövs. Aktörerna kan vara personer (organisationens arbetstagare eller personer utanför organisationen) men även apparater, system och processer som har ett behov av åtkomst till skyddade objekt. Till upprätthållandet av identiteter hör spårbarhet (alltså säkerställande av identiteternas korrekthet och aktualitet) samt att de tas ur bruk. Användning av delade identiteter kan kräva tilläggsåtgärder för att garantera en tillräcklig säkerhetsnivå.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "För arbetstagare och andra entiteter (såsom processer eller apparater som behöver åtkomst till apparater, programvara eller informationsresurser som hör till verksamheten) anvisas separata identiteter. (Obs! Detta krav begränsar dock inte användningen av delade identiteter.) På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "1b",
+            "title": "Uppgifter för åtkomstbehörigheter (såsom lösenord, smartkort eller nycklar) delas ut till arbetstagare och andra entiteter. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "1c",
+            "title": "Identiteter tas ur bruk när de inte längre behövs. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Hantering av logiska användningsrättigheter",
+        "description": "Logisk åtkomstkontroll (för datasystem) omfattar definition av krav på användningsrättigheter samt beviljande och urbruktagande av rättigheter enligt de uppställda målen. Kraven på användningsrättigheter kopplas till egendom såsom apparater, programvara eller information, och kraven avgör bland annat hurdana aktörer som kan få åtkomst till objektet, inom vilka gränser åtkomst tillåts eller om det finns specifika krav på identifieringsuppgifter såsom lösenord. För externa leverantörer kan man exempelvis tillåta åtkomst endast under på förhand fastställa underhållsfönster och med säker identifiering. På högre mognadsnivåer krävs närmare övervakning av användningsrättigheter: användningsrättigheter beviljas först när man har beaktat de risker som berör verksamhetens delområde, och användningsrättigheterna ses också över regelbundet.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Metoder för tillsyn av hanteringen av logiska användningsrättigheter används. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "2b",
+            "title": "Användningsrättigheter tas bort när de inte längre behövs. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Fysisk åtkomstkontroll",
+        "description": "Fysisk åtkomstkontroll omfattar fastställande av krav för åtkomsträttigheter samt beviljande och urbruktagande av rättigheter enligt de uppställda kraven. Kraven på användningsrättigheter kopplas till fysiskt tillträde till ett utrymme där det finns egendom såsom informationsmaterial, apparater eller datanätverkskablar. Kraven avgör bland annat hurdana aktörer som kan få åtkomst till objektet, inom vilka gränser åtkomst tillåts eller om det finns specifika krav på identifieringsmetoder (nyckel, nyckelkort, biometrik, PIN etc.). Externa leverantörer kan exempelvis tillåtas åtkomst endast under på förhand fastställda underhållsfönster eller enligt någon annan tidsbegränsning. På högre mognadsnivåer krävs närmare övervakning av användningsrättigheterna: åtkomsträttigheter beviljas först när man har beaktat de risker som berör verksamhetens delområde, och åtkomsträttigheterna ses också över regelbundet.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Metoder för övervakning av den fysiska åtkomstkontrollen används (såsom stängsel, lås eller skyltar). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "3b",
+            "title": "Åtkomsträttigheter tas bort när de inte längre behövs. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "3c",
+            "title": "Man för loggar över användningen av åtkomsträttigheter. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "situation",
+    "title": "Lägesbild",
+    "short": "Lägesbild",
+    "description": "Ta fram och underhåll funktioner och tekniker för insamling, analys, larmning, presentation och utnyttjande av operativ information och information om cybersäkerhet genom att använda de lägesbilder och den information som nämns i andra avsnitt, så att du kan skapa en lägesbild över organisationens funktion och över cybersäkerhetsnivån.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Hantering av loggar",
+        "description": "Loggning bör vara införd utifrån skyddade objekts verkningar på verksamheten. Ju större potentiell inverkan exempelvis ett riskutsatt skyddat objekt har, desto mer information ska organisationen samla in om objektet. ",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Logginformation samlas in för apparater, programvaror och informationsresurser som är viktiga för funktionen. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Övervakning av miljöer",
+        "description": "Med hjälp av uppföljning och analys av information som har samlats in via loggdata och andra källor kan organisationen förstå vilken operativ status och cybersäkerhetsstatus verksamheten har.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Man granskar logguppgifterna och övervakar cybersäkerheten på andra sätt. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "2b",
+            "title": "IT- och OT-miljöer övervakas med tanke på avvikande verksamhet och eventuella cybersäkerhetshändelser (åtminstone från fall till fall). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "response",
+    "title": "Hantering av händelser och störningar, verksamhetens kontinuitet",
+    "short": "Incidenter och kontinuitet",
+    "description": "Inför och uppdatera planer, processer och tekniker så att händelser och incidenter i cybersäkerheten kan upptäckas, analyseras och avvärjas och verksamheten återställas i förhållande till den kritiska infrastrukturen och riskerna mot organisationens mål.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Observation av händelser",
+        "description": "Observation av cybersäkerhetshändelser omfattar en central kanal för rapportering av händelser samt fastställande av bedömningskriterier. Bedömningskriterierna ska ligga i linje med strategin för hantering av cybersäkerhetsrisker så att de säkrar en konsekvent bedömning och erbjuder en struktur för identifiering av cybersäkerhetshändelser, när en cybersäkerhetshändelse ska eskaleras och när händelsen deklareras som en cybersäkerhetsincident.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Upptäckta cybersäkerhetshändelser rapporteras till personer eller rollinnehavare som fastställts på förhand och dokumenteras (åtminstone från fall till fall). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Analys av händelser och definition av störningssituationer",
+        "description": "Eskalering av en cybersäkerhetshändelse inkluderar tillämpning av de bedömningsgrunder som nämns under ”Observation av händelser” och identifiering av situationer där en cybersäkerhetshändelse ska hanteras enligt på förhand fastställda planer. Eskalerade cybersäkerhetshändelser och -störningar kan leda till externa skyldigheter såsom exempelvis myndighetsrapportering eller att informera kunder. Korrelationer mellan flera cybersäkerhetshändelser och störningar kan avslöja systematiska problem i miljön.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Kriterier har utarbetats för definition av cybersäkerhetsstörningar. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "2b",
+            "title": "Cybersäkerhetshändelser analyseras så att analysen stöder definitionen av eventuella cybersäkerhetsstörningar. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Reaktion på händelser och störningar",
+        "description": "För att cybersäkerhetsincidenter ska kunna åtgärdas ska organisationen ha en process för begränsning av cybersäkerhetsincidenternas verkningar på andra funktioner. Processen bör beskriva på vilket sätt organisationen hanterar alla faser i en incidents livscykel (t.ex. triage, behandling, kommunikation, samordning och avslutande). En granskning av erhållna erfarenheter hjälper, som en del av åtgärdandet av cybersäkerhetshändelser och cybersäkerhetsincidenter, organisationen att eliminera sårbarheter som ledde till incidenten. ",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Man har identifierat lämpliga arbetstagare för att reagera på cybersäkerhetsstörningar samt tilldelat dem roller (åtminstone från fall till fall). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "3b",
+            "title": "Man reagerar på cybersäkerhetshändelser och -störningar så att man (från fall till fall) begränsar effekten på funktionen och återställer verksamheten till det normala. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "3c",
+            "title": "Cybersäkerhetsstörningar rapporteras (exempelvis internt, till CERT-FI eller till lämpliga ISAC-grupper). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Cybersäkerhet som en del av verksamhetens kontinuitet",
+        "description": "Syftet med kontinuitetshantering är att säkerställa att den viktiga verksamheten kan fortsätta i händelse av en störning, t.ex. en allvarlig cybersäkerhetsincident eller olycka.  För att kontinuitetsplanerna ska täcka sannolika cyberstörningar måste man ta hänsyn till identifierade risker och cyberhot mot organisationen. Testningen av kontinuitetsplanerna bör omfatta scenarier för cyberincidenter för att säkerställa att planerna fungerar på ett lämpligt sätt i en verklig situation.\n",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Organisationen har utvecklat planer för verksamhetens kontinuitet, med vars hjälp verksamheten inom funktionen kan bevaras och återställas om verksamheten blir föremål för en cybersäkerhetshändelse eller -störning. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "4b",
+            "title": "Det finns säkerhetskopior av informationen, som testas. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "4c",
+            "title": "IT-apparater (och eventuella OT-apparater) som behöver reservdelar har identifierats. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "third-parties",
+    "title": "Hantering av risker i partnernätverket",
+    "short": "Leverantörsrisker",
+    "description": "Fastställ och underhåll kontroller för att hantera sådana cybersäkerhetsrisker mot tjänster och skyddade objekt som är beroende av externa entiteter, i förhållande till den kritiska infrastrukturen och riskerna mot organisationens mål.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Identifiering och prioritering av partnernätverket",
+        "description": "Identifiering av beroendeförhållanden omfattar att skapa och upprätthålla en övergripande förståelse av viktiga externa relationer som är delaktiga i tillhandahållandet av tjänster.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Betydande IT-beroenden (och eventuella OT-beroenden) har identifierats (här avses sådana interna eller externa funktioner som funktionen är beroende av – inklusive partner som ansvarar för att operera funktionerna). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "1b",
+            "title": "Aktörer i partnernätverket/serviceproducenter som har tillgång till, administrationsrättighet eller underhållsansvar för apparater, programvaror eller informationsresurser som är viktiga för funktionen har identifierats (minst från fall till fall). På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Hantering av risker i anknytning till partnernätverket",
+        "description": "Hantering av beroenderisker omfattar oberoende testning, kodgranskning, sårbarhetsskanning och granskning av bevis från tjänsteleverantören för att en säker välfungerande modell för programvaruutveckling har följts. De avtal som har ingåtts om produkter och tjänster med samarbetspartner och leverantörer ska granskas och godkännas med tanke på hantering av cybersäkerhetsrisker så att avtalstexterna kräver att leverantörerna ska uppfylla eller överskrida de cybersäkerhetsstandarder och cybersäkerhetsriktlinjer som fastställs i avtalen. Övervaknings- och revisionsprocesser kan fastställas i avtal om servicenivå i syfte att säkra att leverantörerna och deras tjänster uppfyller kraven på informationssäkerhet och verksamhetskapacitet.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Valet av leverantörer och andra aktörer i partnernätverket påverkas av en bedömning av deras cybersäkerhetskompetens. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "2b",
+            "title": "Val av produkter och tjänster påverkas av en bedömning av deras cyberförmågor. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "workforce",
+    "title": "Personalledning och -utveckling",
+    "short": "Personal och kompetens",
+    "description": "Inför och uppdatera planer, processer, tekniker och kontroller för att kunna upprätthålla en cybersäkerhetskultur och säkerställa en lämplig och kompetent personal med hänsyn till riskerna mot den kritiska infrastrukturen och organisationens mål.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Ansvar för cybersäkerhet",
+        "description": "En viktig del av fastställandet av ansvarsområden inom cybersäkerhet är att säkra att enskilda ansvarsområden är tillräckligt omfattande och att ersättare har fastställts. Det är till exempel ofta enkelt att fastställa specifika personalroller som har ett betydande cybersäkerhetsansvar, men det är svårt att upprätthålla rollerna. Det är högst viktigt att göra upp planer för utbildning, testning, säkring av ersättare och bedömning av prestationer för nyckelroller inom cybersäkerhet (t.ex. systemadministratörer). Ansvarsområden inom cybersäkerhet är naturligtvis inte endast begränsade till konventionella IT-roller, utan till exempel vissa utvecklare kan ha vissa ansvarsområden.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Olika kontroller (exempelvis bakgrundskontroller, drogtester) görs när nya arbetstagare anställs. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "1b",
+            "title": "I förfarandena för avslutande av en anställning beaktas cybersäkerheten. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Personalutveckling med fokus på cybersäkerhet",
+        "description": "Till utvecklingen av organisationens cybersäkerhetspersonal (det vill säga de arbetstagare vars uppgifter omfattar ansvar för cybersäkerheten) hör utbildning av befintliga arbetstagare och vid behov rekrytering av nya arbetstagare för att åtgärda identifierade kompetensbrister. I rekryteringsprocesser ska man beakta exempelvis att både rekryterarna och de som intervjuas ska vara medvetna om de behov som gäller organisationens cybersäkerhetspersonal. Därtill ska arbetstagarna (och externa leverantörer) regelbundet delta i utbildningar som förbättrar personalens medvetenhet om cybersäkerhet (exempelvis för att minska nätfiske och andra hot). Utbildningarnas och medvetenhetskampanjernas effektivitet ska bedömas enligt behov.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Personalens medvetenhet om cybersäkerheten förbättras på olika sätt. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Personalförvaltningsprocesser",
+        "description": "Personaladministrationskontrollerna omfattar bakgrundskontroller av anställda (t.ex. säkerhetsutredningar) och en riskbaserad utnämning av anställda till arbetsuppgifter med åtkomst till skyddade objekt som är integrerade i tillhandahållandet av kritiska tjänster. En högre risknivå fastställs till exempel för systemadministratörer (som vanligen har rättigheter att göra ändringar i inställningarna, redigera eller radera loggdata, skapa nya konton och byta lösenord). Nödvändiga åtgärder vidtas för att skydda system till följd av sådana användares avsiktliga och oavsiktliga aktiviteter.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Ansvarsfördelningen för cybersäkerheten inom organisationen har identifierats. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "3b",
+            "title": "Ansvaret för cybersäkerheten har tilldelats namngivna personer. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Utbildning och ökning av medvetenheten om cybersäkerhet",
+        "description": "Det är lika viktigt att öka medvetenheten om cybersäkerhet som att implementera tekniska kontroller i syfte att förbättra cybersäkerheten i organisationen. Ofta inleds ett cyberangrepp så att angriparen får fotfäste i organisationens IT- och OT-system. Angriparen kan till exempel skapa ett förtroendeförhållande till en oförsiktig anställd eller en oförsiktig underleverantör som i sin tur inför skadliga filer eller enheter i organisationen. Organisationen ska dela information för att kunna identifiera tvivelaktig verksamhet, skräppost, nätfiske och social manipulering, och om hur anställda ska kunna undvika att dela organisationens konfidentiella information till potentiella angripare. Det är till exempel möjligt att via en intern webbplats dela information om nya hot och sårbarheter inom sektorn. Om information om hot, sårbarheter och bästa praxis inte delas inom organisationen, kan det hända att anställda låter bli att följa delar av processer och anvisningar.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Cybersäkerhetsutbildning är tillgänglig för sådana arbetstagare som har tilldelats ansvar för cybersäkerheten. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "4b",
+            "title": "Kraven på kunskaper, färdigheter och förmågor i anknytning till cybersäkerhet samt eventuella brister i dessa har identifierats med tanke på både nuvarande och framtida behov. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "architecture",
+    "title": "Cybersäkerhetsarkitektur",
+    "short": "Cyberarkitektur",
+    "description": "I avsnittet om cybersäkerhetsarkitekturen (dvs. cyberarkitekturen) bedöms organisationens förmåga att hantera och upprätthålla sin cybersäkerhetsverksamhet. Organisationen ska skapa och upprätthålla strukturer genom vilka den hanterar och styr organisationens cybersäkerhetskontroller och -processer samt annan cybersäkerhetsverksamhet i förhållande till både de risker som riktar sig mot organisationens egendom och de mål som organisationen ställt upp.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Utveckling av cyberarkitekturen",
+        "description": "En cyberarkitektur ger förutsättningar att planera och utveckla organisationens cybersäkerhet som en helhet i stället för genom punktartade lösningar, som enskilda lösningar för identitetshantering och åtkomstkontroll. Med hjälp av en cyberarkitektur kan man närma sig skyddet av kritiska system och uppgifter genom kända arkitekturmetoder (t.ex. identifiering-skydd-reaktion-återställning). Till dessa metoder hör bland annat segmentering av nät, underhållslösningar, krypteringsmetoder och spårningsloggar, och de kan användas tillsammans med metoder som anknyter till tillgänglighet såsom övervakning eller med återställningsmetoder eller certifikat. När cyberarkitekturen planeras för att fungera tillsammans med organisationens företagsarkitekturstrategi (även ”helhetsarkitektur) ger den input för bland annat riskanalyser och konfigurering av skyddade objekt.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organisationen har en plan eller strategi för utveckling av cyberarkitekturen (som inkluderar exempelvis cyberarkitekturens mål, prioriteringar, ansvar och uppföljning). På nivå 1 behöver utvecklingen och upprätthållandet inte vara systematiska och regelbundna."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Skydd av datanäten som en del av cybersäkerhetsarkitekturen",
+        "description": "Nätsegmentering genomförs på fysisk eller logisk nivå och syftet är att minska angreppsytan. I en optimal situation har varje enhet i ett visst nätsegment ett giltigt existensberättigande i det aktuella segmentet.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Skydd av nätverket har genomförts, åtminstone från fall till fall. På nivå 1 behöver det inte vara systematiskt eller regelbundet."
+          },
+          {
+            "id": "2b",
+            "title": "Organisationens IT-system har skiljts från eventuella OT-system genom fysisk eller logisk segmentering. På nivå 1 behöver detta inte vara systematiskt och regelbundet. [Tolkningsanvisning: om det inte finns OT-system eller motsvarande, ange praxisen som ”helt genomförd”]"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Apparaternas och programvarans säkerhet som en del av cybersäkerhetsarkitekturen",
+        "description": "Tillräckliga och ändamålsenliga skyddsmekanismer har förverkligats för apparater, programvaror och informationsresurser som är viktiga för verksamheten, med beaktande av hur kritiska de är. Åtkomsträttigheterna är begränsade och endast de funktioner som behövs är aktiverade. Etablerade och säkra konfigurationer används. Datasäkerhetsprogramvara och -komponenter används till tillämpliga delar.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Kontroll och skyddsmekanismer för användningsrättigheter och åtkomsthantering används för apparater, programvaror och informationsresurser som är viktiga för funktionen. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          },
+          {
+            "id": "3b",
+            "title": "Slutpunktsskydd (säkra konfigurationer, datasäkerhetsprogramvara och -komponenter, värd övervakning) änvänds till tilllämpliga delar att skydda apparater, programvaror och informationsresurser som är viktiga för funktionen. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Dataskydd som en del av cybersäkerhetsarkitekturen",
+        "description": "Cyberarkitekturen byggs upp kring den information som ska skyddas. För att känslig information ska kunna skyddas måste den först identifieras och klassificeras. De kontroller och metoder som används för skyddet, exempelvis processerna för kryptering och nyckelhantering, ska vara genomförda och användas systematiskt.",
+        "practices": [
+          {
+            "id": "5a",
+            "title": "Sparade känsliga uppgifter (”data at rest”) skyddas. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "program",
+    "title": "Hantering av cybersäkerhet",
+    "short": "Cybersäkerhetsprogram",
+    "description": "Ta fram och underhåll ett sådant program för organisationsövergripande hantering av cybersäkerhet som möjliggör en hanteringsmodell och en strategisk planering och som ger stöd för cybersäkerhetsarbetet i organisationen på ett sätt som fastställer cybersäkerhetsmål i överensstämmelse med organisationens strategiska mål och risker mot den kritiska infrastrukturen.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Cybersäkerhetsstrategi",
+        "description": "Cybersäkerhetsstrategin används som underlag för ett cybersäkerhetsprogram. Cybersäkerhetsstrategin innefattar i sin enklaste form en förteckning över cybersäkerhetsmål och en plan för uppnående av målen. På en högre mognadsnivå är strategin fullständigare och innefattar prioriteringar, en beskrivning av hanteringsmodellen och en organisationsstruktur för cybersäkerhetsprogrammet samt starkare deltagande av högsta ledningen i planeringen av programmet.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organisationen har en cybersäkerhetsstrategi. På nivå 1 behöver utvecklingen eller upprätthållandet av den inte vara systematisk och regelbunden."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Ledningens stöd till programmet för hantering av cybersäkerhet",
+        "description": "Ledningens stöd är viktigt för att programmet för hantering av cybersäkerhet ska kunna implementeras enligt cybersäkerhetsstrategin. På basnivå utgörs stödet av att tillhandahålla tillräckliga resurser (personal, verktyg, finansiering). Ett mer utvecklat stöd omfattar högsta ledningens synliga deltagande, fastställande av ansvarsområden och befogenheter för programmet. Dessutom omfattar stödet ett organisationsövergripande stöd för fastställandet och uppdateringen av policyer eller andra bindande anvisningar för organisationen.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Organisationens högsta ledning stöder hanteringen av cybersäkerheten. På nivå 1 behöver detta inte vara systematiskt och regelbundet."
+          }
+        ]
+      }
+    ]
+  }
+]
