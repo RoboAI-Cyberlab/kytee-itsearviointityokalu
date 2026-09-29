@@ -1,0 +1,592 @@
+[
+  {
+    "id": "critical",
+    "title": "Kriittisten palveluiden suojaaminen",
+    "short": "Kriittiset palvelut",
+    "description": "Organisaation tulee tunnistaa oma roolinsa yhteiskunnan kannalta kriittisten palveluiden tuottamisessa ja hallita riskejä sen mukaisesti.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Kriittisten palveluiden ja niiden riippuvuuksien tunnistaminen",
+        "description": "Organisaation tulee tunnistaa oma roolinsa yhteiskunnan kannalta kriittisten palveluiden tuottamisessa, tietää mitä näiden palveluiden tuottaminen vaatii ja ymmärtää millaiset vaikutukset palveluiden vikaantumisella saattaisi olla.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organisaation tuottamat yhteiskunnalle kriittiset palvelut on tunnistettu ja dokumentoitu."
+          },
+          {
+            "id": "1b",
+            "title": "(Yhteiskunnalle kriittisten) palveluiden tuottamiseen tarvittava data on tunnistettu ja dokumentoitu."
+          },
+          {
+            "id": "1c",
+            "title": "Palveluiden tuottamiseen tarvittavat prosessit on tunnistettu ja dokumentoitu."
+          },
+          {
+            "id": "1d",
+            "title": "Palveluiden tuottamiseen tarvittavat järjestelmät (IT- ja OT-omaisuus) on tunnistettu ja dokumentoitu."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Kriittisten palveluiden hallinta",
+        "description": "Organisaation ylimmällä johdolla on vastuu riittävien resurssien turvaamisesta kriittisten palveluiden tuottamiseen ja päätöksentekovaltuuksien delegoinnista organisaatiossa siten, että päätöksenteko on tehokasta ja se tehdään oikeassa paikassa.\n\nKriittisten palveluiden toimittamiseen liittyvien tietoverkkojen ja -järjestelmien riskit tulee arvioida osana koko organisaation riskejä.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Kaikki resurssit (data, prosessit, järjestelmät, tilat ja toimitusketjut), joita tarvitaan (yhteiskunnalle kriittisten) palveluiden tuottamiseen, ovat organisaation turvallisuuden hallinnan politiikkojen ja prosessien piirissä."
+          },
+          {
+            "id": "2b",
+            "title": "Kaikki resurssit (data, prosessit, järjestelmät, tilat ja toimitusketjut), joita tarvitaan yhteiskunnallisesti kriittisten palvelujen tuottamiseen, ovat organisaation riskienhallinnan politiikkojen ja prosessien piirissä."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Kriittisten palveluiden kyberhäiriöiden vaikutusten minimointi",
+        "description": "Organisaatiolla tulee olla määritelty ja hyvin testattu kybertapahtumien ja -häiriöiden hallintaprosessi. Prosessin tarkoituksena on varmistaa kriittisten palveluiden toimintavarmuus järjestelmien tai palveluiden vikatilanteissa.\n\nOrganisaation tulee myös huolehtia, että sillä on riittävät varautumistoimet vikatilanteiden vaikutusten rajaamiseksi tai pienentämiseksi ja että nämä toimet on mitoitettu suhteessa riskin ja mahdollisten vaikutusten suuruuteen.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Organisaatiolla on kybertapahtumien ja -poikkeamien hallintasuunnitelma, joka kattaa kaikki organisaation tuottamat yhteiskunnalle kriittiset palvelut."
+          },
+          {
+            "id": "3b",
+            "title": "Hallintasuunnitelma rajoittuu tunnettuihin hyökkäyksiin, mutta kattaa perusteellisesti näiden hyökkäysten todennäköiset vaikutukset."
+          },
+          {
+            "id": "3c",
+            "title": "Kybertapahtumien ja -poikkeamien hallintaan osallistuva henkilöstö on sisäistänyt ja ymmärtää hallintasuunnitelman hyvin."
+          },
+          {
+            "id": "3d",
+            "title": "Hallintasuunnitelma on dokumentoitu ja se jaetaan kaikille relevanteille sidosryhmille."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asset",
+    "title": "Omaisuuden, muutosten ja konfiguraation hallinta",
+    "short": "Omaisuuden hallinta",
+    "description": "Omaisuuden, muutosten ja konfiguraation hallinnan osiossa arvioidaan organisaation kykyä hallita laite-, ohjelmisto- ja tieto-omaisuuttaan suhteessa organisaatioon kohdistuviin riskeihin ja organisaation tavoitteisiin.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Laitteiden ja ohjelmistojen hallinta",
+        "description": "Rekisteri toiminnon kannalta tärkeistä laitteista ja ohjelmistoista on tärkeä osa kyberriskienhallintaa.\n\nTärkeiden tietojen kuten versionumeroiden, sijainnin, omistajan tai kriittisyyden rekisteröinti on edellytys monille muille kyberturvallisuuden hallintatoimille. Hyvä rekisteri voi auttaa esimerkiksi tunnistamaan missä laitteissa päivitystä tarvitsevia ohjelmistoja on asennettuna.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Toiminnon kannalta tärkeistä IT- ja OT-laitteista ja ohjelmistoista on olemassa rekisteri. Huomioi myös mahdollisten OT-ympäristöjen laitteet ja ohjelmistot."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Tietovarantojen hallinta",
+        "description": "Rekisteri toiminnon kannalta tärkeistä tiedoista on tärkeä osa kyberriskienhallintaa.\n\nTällaiset tietovarannot voivat liittyä esimerkiksi asiakkaisiin, tuotteisiin tai palveluihin. Hyvä rekisteri voi auttaa esimerkiksi tunnistamaan missä järjestelmissä käsitellään arkaluonteisia henkilötietoja.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Toiminnon kannalta tärkeistä tietovarannoista, kuten asiakastiedosta tai laitteiden ja ohjelmistojen perusasetuksista, on olemassa rekisteri. Huomioi myös mahdollisten OT-ympäristöjen tietovarannot."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Konfiguraation hallinta",
+        "description": "Konfiguraation hallintaan kuuluu vakioitujen perusasetusten määritys ja niiden käyttö laitteita ja ohjelmistoja konfiguroitaessa.\n\nUseimmiten tällä pyritään siihen, että samanlaiset laitteet ja ohjelmistot konfiguroidaan toimimaan samalla tavalla. Toisaalta yksittäisten tai yksilöityjen laitteiden konfiguraation hallintaan kuuluu vakioitujen perusasetusten käyttö alustusvaiheessa ja myöhempien poikkeamien tunnistaminen.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Laitteiden, ohjelmistojen ja tietovarantojen konfiguraatioista on luotu vakioidut perusasetukset."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Muutoksenhallinta",
+        "description": "Laitteiden, ohjelmistojen ja tiedon muutoksenhallintaan kuuluu muutospyyntöjen arviointi, muutoksenhallintaprosessin noudattaminen ja luvattomien muutosten tunnistaminen.\n\nMuutosten ennakkoarvioinnilla pyritään varmistamaan, ettei toimintaympäristöön luoda haitallisia haavoittuvuuksia.\n\nMuutoksenhallinta kattaa omaisuuden koko elinkaaren: vaatimusmäärittelyn, testaamisen, käyttöönoton, ylläpidon ja käytöstä poistamisen.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Laitteisiin, ohjelmistoihin ja tietovarantoihin tehtävät muutokset arvioidaan ja hyväksytetään ennen niiden toteuttamista ainakin tapauskohtaisesti."
+          },
+          {
+            "id": "4b",
+            "title": "Laitteisiin, ohjelmistoihin ja tietovarantoihin tehtävistä muutoksista pidetään lokia ainakin tapauskohtaisesti."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "threat",
+    "title": "Uhkien ja haavoittuvuuksien hallinta",
+    "short": "Uhat ja haavoittuvuudet",
+    "description": "Uhkien ja haavoittuvuuksien hallinnan osiossa arvioidaan organisaation kykyä määritellä ja ylläpitää suunnitelmia, prosesseja ja tekniikoita kyberuhkien ja -haavoittuvuuksien havainnointiin, tunnistamiseen, analysointiin, hallintaan ja niihin puuttumiseen - suhteessa organisaatioon kohdistuviin riskeihin ja organisaation tavoitteisiin.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Haavoittuvuuksien vähentäminen",
+        "description": "Haavoittuvuuksien vähentäminen alkaa haavoittuvuustiedon keräämisellä ja analysoinnilla.\n\nHaavoittuvuksia voidaan kartoittaa esimerkiksi automaattisten skannaustyökalujen avulla, verkkojen tunkeutumistestauksilla, kyberharjoituksilla tai auditoinneilla.\n\nHaavoittuvuuksien analysoinnissa tulisi ottaa huomioon haavoittuvuuden mahdollinen vaikutus suojattavaan kohteeseen itseensä sekä suojattavan kohteen laajempi merkitys koko toiminnolle.\n\nHaavoittuvuuksia voidaan torjua suorittamalla suojaavia toimenpiteitä, seuraamalla uhkatilannetta, asentamalla tietoturvapäivityksiä tai muilla keinoin.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Haavoittuvuuksien tunnistamisen tueksi on tunnistettu soveltuvia tietolähteitä."
+          },
+          {
+            "id": "1b",
+            "title": "Haavoittuvuustietoa kerätään ja sitä tulkitaan toimintoa varten."
+          },
+          {
+            "id": "1c",
+            "title": "Haavoittuvuusarviointeja suoritetaan."
+          },
+          {
+            "id": "1d",
+            "title": "Toiminnon kannalta olennaisiin haavoittuvuuksiin puututaan esimerkiksi lisäämällä valvontaa tai asentamalla korjauspäivityksiä."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Uhkien torjunta ja uhkatiedon jakaminen",
+        "description": "Uhkien tunnistaminen ja hallinta alkavat relevantin uhkatiedon keräämisellä luotettavista lähteistä, soveltamalla kerättyä tietoa suhteessa organisaation toimintaympäristöön ja reagoimalla niihin uhkiin, jotka voivat uhata palveluiden toimintavarmuutta.\n\nOrganisaation uhkaprofiili sisältää kuvaukset mahdollisista uhkatekijöistä, mukaan lukien uhkatekijöiden kyvykkyyksistä, tavoitteista ja kohteista.\n\nUhkaprofiilia voidaan käyttää uhkien tarkempaan tunnistamiseen ja sitä voidaan hyödyntää osana riskien analysointia, arviointia ja kyberturvallisuuden tilannekuvan muodostamiseen.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Uhkien tunnistamisen tueksi on tunnistettu soveltuvia tietolähteitä."
+          },
+          {
+            "id": "2b",
+            "title": "Kyberuhkatietoa kerätään ja sitä tulkitaan toimintoa varten vähintäänkin tapauskohtaisesti (ad hoc)."
+          },
+          {
+            "id": "2c",
+            "title": "Toimintoon kohdistuvat uhkatoimijoiden tavoitteet on tunnistettu ainakin tapauskohtaisesti."
+          },
+          {
+            "id": "2d",
+            "title": "Toiminnon kannalta olennaisiin uhkiin puututaan esimerkiksi lisäämällä valvontaa tai seuraamalla uhkien kehitystä."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "risk",
+    "title": "Riskienhallinta",
+    "short": "Riskienhallinta",
+    "description": "Riskienhallinnan osiossa arvioidaan organisaation kykyä tunnistaa ja hallita toimintaansa kohdistuvia kyberturvallisuusriskejä (eli kyberriskejä).\n\nOrganisaation tulee luoda ja ylläpitää koko organisaation kattavaa riskienhallintaohjelmaa tunnistaakseen, arvioidakseen ja hallitakseen kyberriskejä. Riskienhallintaohjelman tulee kattaa kaikki organisaation liiketoimintayksiköt, tytäryhtiöt, toiminnan kannalta kriittisen infrastruktuurin ja tärkeimmät sidosryhmät).",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Kyberriskienhallinnan suunnitelma",
+        "description": "Kyberriskienhallintaan kuuluu riskien tunnistaminen ja arviointi, käsittely (esimerkiksi hyväksymällä, välttämällä, pienentämällä tai siirtämällä) ja seuranta siten, että se on linjassa organisaatioiden tarpeiden kanssa. Keskeistä näille toimille on yhtenäinen ymmärrys kyberriskeistä ja suunnitelma niiden hallintaan. Joissakin organisaatioissa tätä kuvataan erillisen kyberriskienhallinnan strategian kautta.\n\nKyberriskienhallintastrategia on organisaation ylätason strategia, joka määrittää organisaation riskinottohalukkuuden ja asettaa suunnan kyberriskien arvioinnille ja hallintatoimien priorisoinnille. Kyberriskienhallintastrategia kattaa mm. menetelmät kyberriskien arviointiin, strategian riskien monitorointiin sekä organisaation kyberturvallisuuden hallintamallin (cybersecurity governance) määrittelyn.\n\nStrategiaan kuuluu olennaisena osana määrittää organisaatiotasoiset riskien arviointikriteerit (esim. riskirajat, käytettävissä olevat riskienhallintatoimenpiteet), jotka puolestaan ohjaavat koko organisaation kyberturvallisuusohjelmaa. Kyberriskienhallintastrategian tulee olla linjassa organisaation yleisen riskienhallintastrategian kanssa, jotta voidaan varmistua että kyberriskejä hallitaan osana organisaation laajempia päämääriä ja tavoitteita.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organisaation kyberriskienhallintaa ohjaa suunnitelma esimerkiksi strategia tai vastaava johtotason politiikka."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Kyberriskien tunnistaminen",
+        "description": "Kyberriskien hallinta tarkoittaa toimia kyberriskien tunnistamiseksi, arvioimiseksi, seuraamiseksi ja hallitsemiseksi riskienhallintatoimenpitein. \n\nRiskienhallintatoimenpiteitä ovat esimerkiksi riskin hyväksyminen, välttäminen, pienentäminen tai siirtäminen. Kyberriskien hallintaa tulee toteuttaa osana organisaation yleistä riskienhallintaa huomioiden organisaation laajemmat tavoitteet ja liiketoiminnan tarpeet. Avainasemassa on koko organisaation kattava kyberriskienhallinnan strategia, joka huomioi edellä luetellut asiat.\n\nRiskien luokittelu auttaa organisaatiota käsittelemään ja seuraamaan riskejä johdonmukaisesti. Riskien luokittelua tukee riskirekisteri (joka on listaus organisaation tunnistamista riskeistä ja riskeihin liittyvistä tiedoista). Riskirekisteri on keskeinen osa laajempaa kyberturvallisuuden hallintaa.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Kyberriskejä tunnistetaan."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Riskien analysointi",
+        "description": "Tunnistetut riskit analysoidaan, jotta niiden vaikutus organisaation toimintaan voidaan arvioida, ne voidaan luokitella ja priorisoida, ja oikea strategia sekä riittävät toimenpiteet voidaan päättää (esimerkiksi: todennäköisyyden/vaikutuksen pienentäminen, riskin hyväksyminen, riskin välttäminen tai riskin jakaminen).\n\nAnalysoinnin yksityiskohtaisuus voi vaihdella, riippuen riskin laadusta ja saatavilla olevan tiedon määrästä ja laadusta, mutta käytettävän menetelmän tulisi olla yhtenevä koko organisaatiossa.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Kyberriskit priorisoidaan niiden arvioidun vaikutuksen perusteella."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Riskeihin reagointi",
+        "description": "Analysoinnin perusteella päätetyt toimenpiteet pitää toteuttaa systemaattisesti ja priorisoinnin mukaisesti. Lopputuloksen tehokkuus ja riittävyys pitää arvioida, jotta nähdään onko jäännösriski hyväksyttävällä tasolla.\n\nKoska toimintaympäristö saattaa muuttua ajan kuluessa, tehdyt toimenpiteet pitää jatkossakin arvioida säännöllisesti, jotta varmistutaan että ne edelleen ovat riittävät ja tarkoituksenmukaiset.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Riskeihin reagointikeinot, kuten riskin pienentäminen, hyväksyminen, välttäminen tai siirtäminen, ovat käytössä kyberriskeille."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "access",
+    "title": "Identiteetin- ja pääsynhallinta",
+    "short": "Identiteetin- ja pääsynhallinta",
+    "description": "Identiteetin ja pääsynhallinnan osiossa arvioidaan organisaation kykyä hallita ja rajoittaa loogista ja fyysistä pääsyä organisaation omaisuuteen. Pääsyä tulee hallita suhteessa organisaation kohdistuviin riskeihin ja organisaation tavoitteisiin.\n\nTässä yhteydessä loogisen pääsynhallinnan suojausmekanismeja sovelletaan toiminnon kannalta tärkeisiin laitteisiin, ohjelmistoihin ja tietoon ja fyysisen pääsynhallinnan suojausmekanismeja sovelletaan toiminnon kannalta tärkeisiin laitteisiin ja tiloihin.\n\nAutomatisoituja suojausmekanismeja sovelletaan sekä loogisen että fyysisen pääsynhallinnan yhteydessä. Heikko pääsynhallinta voi johtaa laitteiden, ohjelmistojen tai tiedon luvattomaan käyttöön, julkistamiseen, tuhoamiseen tai peukalointiin. Lisäksi se nostaa tarpeettomasti organisaation riskitasoa.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Identiteettien luominen ja hallinta",
+        "description": "Identiteetinhallinta lähtee siitä, että toimijoille luodaan identiteetit, jotka poistetaan käytöstä, kun niitä ei enää tarvita. Toimijoita voivat olla henkilöt (organisaation omat työntekijät tai organisaation ulkopuoliset henkilöt) yhtä hyvin kuin laitteet, järjestelmät tai prosessit, joilla on tarve saada pääsy suojattaviin kohteisiin.\n\nIdentiteettien ylläpitoon kuuluu identiteettien jäljitettävyys (ts. identiteettien oikeellisuuden ja ajantasaisuuden varmistaminen) sekä niiden poistaminen käytöstä. Jaettujen identiteettien käyttö voi vaatia lisätoimia riittävän turvallisuustason takaamiseksi.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Työntekijöille ja muille entiteeteille, kuten prosesseille tai laitteille, jotka tarvitsevat pääsyn toimintoon kuuluviin laitteisiin, ohjelmistoihin tai tietovarantoihin, osoitetaan erilliset identiteetit. (Huom. tällä vaatimuksella ei kuitenkaan rajoiteta jaettujen identiteettien käyttöä)."
+          },
+          {
+            "id": "1b",
+            "title": "Työntekijöille ja muille entiteeteille jaetaan pääsyvaltuustiedot, kuten salasanat, älykortit tai avaimet."
+          },
+          {
+            "id": "1c",
+            "title": "Identiteetit poistetaan käytöstä, kun niitä ei enää tarvita."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Loogisten käyttöoikeuksien hallinta",
+        "description": "Looginen (tietojärjestelmien) pääsynhallinta kattaa käyttöoikeusvaatimusten määrittelyn sekä oikeuksien myöntämisen ja käytöstä poiston asetettujen vaatimusten mukaisesti. Käyttöoikeusvaatimukset yhdistetään omaisuuteen kuten laitteeseen, ohjelmistoon tai tietoon ja vaatimukset määräävät mm. minkä tyyppiset toimijat voivat saada pääsyn kohteeseen, missä rajoissa pääsy sallitaan tai onko tunnistetiedoille kuten salasanoille asetettu tiettyjä vaatimuksia. \n\nUlkopuoliselle toimittajalle voidaan sallia pääsy esimerkiksi vain ennalta määrättyjen huoltoikkunoiden aikaan ja käyttäen vahvaa tunnistautumista.\n\nKorkeammilla kypsyyden tasoilla vaaditaan tarkempaa käyttöoikeuksien valvontaa: käyttöoikeudet myönnetään vasta kun on huomioitu toiminnan osa-alueeseen kohdistuvat riskit, minkä lisäksi käyttöoikeudet katselmoidaan säännöllisesti.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Loogisten käyttöoikeuksien hallinnan valvontakeinoja on käytössä."
+          },
+          {
+            "id": "2b",
+            "title": "Käyttöoikeudet poistetaan, kun niitä ei enää tarvita."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Fyysinen pääsynhallinta",
+        "description": "Fyysinen pääsynhallinta kattaa pääsyoikeusvaatimusten määrittelyn sekä oikeuksien myöntämisen ja käytöstä poiston asetettujen vaatimusten mukaisesti. Pääsyoikeusvaatimukset yhdistetään fyysiseen pääsyyn tilaan, jossa on omaisuutta kuten tietomateriaalia, laitteita tai tietoverkkokaapelointeja. Vaatimukset määräävät mm. minkä tyyppiset toimijat voivat saada pääsyn kohteeseen, missä rajoissa pääsy sallitaan tai onko tunnistautumiskeinolle (avain, avainkortti, biometriikka, PIN, jne.) asetettu tiettyjä vaatimuksia.\n\nUlkopuoliselle toimittajalle voidaan sallia pääsy esimerkiksi vain ennalta määrättyjen huoltoikkunoiden aikaan tai muun aikarajoituksen perusteella.\n\nKorkeammilla kypsyyden tasoilla vaaditaan tarkempaa käyttöoikeuksien valvontaa: pääsyoikeudet myönnetään vasta kun on huomioitu toiminnan osa-alueeseen kohdistuvat riskit, minkä lisäksi pääsyoikeudet katselmoidaan säännöllisesti.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Fyysisen pääsynhallinnan valvontakeinoja on käytössä, kuten aitoja, lukkoja tai kylttejä."
+          },
+          {
+            "id": "3b",
+            "title": "Pääsyoikeudet poistetaan, kun niitä ei enää tarvita."
+          },
+          {
+            "id": "3c",
+            "title": "Pääsyoikeuksien käytöstä pidetään lokia."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "situation",
+    "title": "Tilannekuva",
+    "short": "Tilannekuva",
+    "description": "Tilannekuvan osiossa arvioidaan organisaation kykyä määritellä ja ylläpitää organisaation kyberturvallisuuden tilannekuvaa.\n\nOrganisaation tulee määritellä ja ylläpitää prosesseja ja teknisiä ratkaisuja operatiivisen ja kyberturvallisuustiedon keräämiseen, analysointiin, hälytysten nostamiseen, esittämiseen ja käyttämiseen, hyödyntäen muissa Kybermittarin osioissa mainittua informaatiota. Tilannekuva muodostetaan sekä organisaation toiminnan, että kyberturvallisuuden tasosta.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Lokienhallinta",
+        "description": "Lokitus tulee ottaa käyttöön suojattavien kohteiden kriittisyyden perusteella. Esimerkiksi siten, että mitä suurempi potentiaalinen vaikutus vaarantuneella suojattavalla kohteella on, sitä enemmän tietoja organisaation tulisi kerätä tästä suojattavasta kohteesta.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Lokitietoa kerätään toiminnon kannalta tärkeistä laitteista, ohjelmistoista ja tietovarannoista ainakin tapauskohtaisesti."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Ympäristöjen valvonta",
+        "description": "Organisaation tulee käyttää lokien ja muiden lähteiden kautta kerättyä tietoa saadakseen selkeän yleiskuvan operatiivisen toiminnan ja kyberturvallisuuden tilasta.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Lokitietojen tarkastelua ja muuta kyberturvallisuusvalvontaa tehdään."
+          },
+          {
+            "id": "2b",
+            "title": "IT- ja OT-ympäristöjen valvontatietoja katselmoidaan säännöllisesti poikkeavan toiminnan ja mahdollisten kybertapahtumien varalta ainakin tapauskohtaisesti."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "response",
+    "title": "Tapahtumien ja häiriöiden hallinta, toiminnan jatkuvuus",
+    "short": "Tapahtumat, häiriöt ja jatkuvuus",
+    "description": "Tapahtumien ja häiriötilanteiden hallinnan osiossa arvioidaan organisaation kykyä hallita, reagoida ja palautua kybertapahtumista ja -häiriöistä.\n\nOrganisaation tulee määritellä ja ylläpitää suunnitelmia, prosesseja ja teknologiaa kyberturvallisuuteen liittyvien tapahtumien ja häiriöiden havaitsemiseksi, analysoimiseksi, niihin vastaamiseksi ja niistä palautumiseksi suhteessa sekä suojattaviin kohteisiin kohdistuviin riskeihin, että organisaation asettamiin tavoitteisiin.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Tapahtumien havainnointi",
+        "description": "Kybertapahtumien havainnointi sisältää keskitetyn raportointikanavan tapahtumia varten sekä arviointiperusteiden määrittelyn.\n\nArviointiperusteiden tulee noudattaa kyberriskienhallintastrategiaa, varmistaa tapahtumien johdonmukainen arviointi sekä tarjota rakenteen kybertapahtumien tunnistamiseksi, kybertapahtuman eskaloimiseksi ja tapahtuman korottaminen kyberhäiriöksi.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Havaitut kybertapahtumat raportoidaan ennalta määritellyille henkilöille tai roolien haltijoille ja ne dokumentoidaan ainakin tapauskohtaisesti."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Tapahtumien analysointi ja häiriötilanteiden määrittäminen",
+        "description": "Kybertapahtumien eskalointi sisältää kohdassa Kybertapahtumien havainnointi mainittujen arviointiperusteiden soveltamista ja sellaisten tilanteiden tunnistamista, joissa kybertapahtumaa tulee käsitellä ennalta määritettyjen suunnitelmien mukaisesti.\n\nEskaloidut kybertapahtumat ja -häiriöt voivat johtaa ulkoisiin velvoitteisiin kuten esimerkiksi viranomaisraportointiin tai asiakkaiden tiedottamiseen. Useampien kybertapahtumien ja häiriöiden korrelointi keskenään saattaa paljastaa systemaattisia ongelmia ympäristössä.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Kyberpoikkeamien määrittämisestä on laadittu kriteeristö."
+          },
+          {
+            "id": "2b",
+            "title": "Kybertapahtumat analysoidaan siten, että se tukee mahdollisten kyberpoikkeamien määrittämistä."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Tapahtumiin ja häiriöihin reagoiminen",
+        "description": "Kyberhäiriöihin reagoiminen edellyttää organisaatiolta prosessia, jolla voidaan rajata kyberhäiriöiden vaikutusta muihin toimintoihin. Prosessin tulee kuvata miten organisaatio hallitsee häiriön koko elinkaarta (esim. triage, käsittely, kommunikointi, koordinointi ja sulkeminen).\n\nSaatujen kokemusten arviointi osana kybertapahtumien ja -häiriöiden hoitamista auttaa organisaatiota poistamaan haavoittuvuudet, jotka johtivat poikkeamaan.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Kyberpoikkeamiin reagoimista varten on tunnistettu soveltuvat työntekijät ja heille on annettu roolit ainakin tapauskohtaisesti."
+          },
+          {
+            "id": "3b",
+            "title": "Kyberpoikkeamiin reagoidaan siten, että toiminnalla (voidaan toteuttaa tapauskohtaisesti) rajoitetaan toimintoon kohdistuvaa vaikutusta ja palautetaan toiminta normaaliksi."
+          },
+          {
+            "id": "3c",
+            "title": "Kyberpoikkeamista tuotetaan raportointia esimerkiksi sisäisesti, CERT-FI tai soveltuville ISAC-ryhmille."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Kyberturvallisuus osana toiminnan jatkuvuutta",
+        "description": "Jatkuvuudenhallintan tavoitteena on varmistaa, että oleellista toimintaa pystytään jatkamaan myös häiriötilanteessa, kuten vakavat kyberturvallisuushäiriön tai onnettomuuden tapahduttua.\n\nJotta jatkuvuussuunnitelmat kattavat todennäköiset kyberhäiriötilanteet, tulee huomioida tunnistetut riskit ja organisaatioon kohdistuvat kyberuhat. \n\nJatkuvuussuunnitelmien testauksen tulisi sisältää kyberhäiriöskenaarioita, jotta varmistutaan, että suunnitelmat toimivat tarkoituksenmukaisesti myös tositilanteessa.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Organisaatio on kehittänyt toiminnan jatkuvuutta koskevat suunnitelmat, joiden avulla toiminnon toiminta voidaan säilyttää ja palauttaa, mikäli toimintaan kohdistuu kybertapahtuma tai -poikkeama."
+          },
+          {
+            "id": "4b",
+            "title": "Tiedoista on saatavilla varmuuskopiot ja varmuuskopioiden toimivuutta testataan vähintään satunnaisesti."
+          },
+          {
+            "id": "4c",
+            "title": "Varaosia tarvitsevat IT-laitteet ja mahdolliset OT-laitteet on tunnistettu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "third-parties",
+    "title": "Kumppaniverkoston riskien hallinta",
+    "short": "Kumppaniverkosto",
+    "description": "Toimitusketjun ja ulkoisten riippuvuuksien hallinnan osiossa arvioidaan organisaation kykyä tunnistaa ja hallita toimitusketjuihin ja kolmansiin osapuoliin liittyviä riskejä.\n\nOrganisaation tulee määritellä ja ylläpitää kontrolleja, joiden avulla se hallitsee organisaation ulkopuolisista toimijoista riippuvaisten yhteiskunnalle kriittisten palveluiden kyberriskejä.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Kumppaniverkoston tunnistaminen ja priorisointi",
+        "description": "Riippuvuuksien tunnistamiseen kuuluu, että organisaatio tunnistaa ja ymmärtää perusteellisesti (toiminnan osa-alueen toimintavarmuuden kannalta) tärkeimmät ulkoiset suhteet toimittajiin, alihankkijoihin ja muihin kolmansiin osapuoliin.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Merkittävät kumppaniverkoston IT-riippuvuudet ja mahdolliset OT-riippuvuudet on tunnistettu. Tällä tarkoitetaan sellaisia sisäisiä tai ulkoisia toimijoita, joista toiminto on riippuvainen, mukaan lukien toimintojen operoinnista vastaavat kumppanit."
+          },
+          {
+            "id": "1b",
+            "title": "Kumppaniverkoston toimijat / palveluntarjoajat, joilla on pääsy, hallinnointioikeus, tai ylläpitovastuu tai pääsevät muutoin käyttämään toiminnon kannalta tärkeitä laitteita, ohjelmistoja tai tietovarantoja, on tunnistettu vähintään tapauskohtaisesti."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Kumppaniverkostoon liittyvien riskien hallinta",
+        "description": "Riippuvuusriskien hallinta sisältää hallintatoimenpiteitä kuten riippumatonta testausta, koodikatselmointeja, haavoittuvuusskannauksia tai turvallisen ohjelmistokehityksen vaatimuksia.\n\nToimittajien, alihankkijoiden ja muiden kolmansien osapuolten kanssa solmitut sopimukset tuotteista ja palveluista tulee tarkastaa ja hyväksyttää kyberriskien hallinnan näkökulmasta. Sopimuksissa voidaan esimerkiksi velvoittaa toimittajia noudattamaan tiettyjä kyberturvallisuusstandardeja, -ohjeistuksia tai -vaatimuksia ja edellyttää, että toimittaja täyttää (tai ylittää) nuo vaatimukset. Palvelutasosopimuksissa (service level agreement, SLA) voidaan asettaa valvonta- ja auditointivaatimukset varmistamaan, että toimittajat ja palvelut täyttävät niille asetetut kyberturvallisuus- ja toimintakykyvaatimukset.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Toimittajien ja muiden kumppaniverkoston toimijoiden valintaan vaikuttaa arvio niiden kyberturvallisuuskelpoisuuksista."
+          },
+          {
+            "id": "2b",
+            "title": "Tuotteiden ja palveluiden valintaan vaikuttaa arvio niiden kyberkyvykkyyksistä."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "workforce",
+    "title": "Henkilöstön johtaminen ja kehittäminen",
+    "short": "Henkilöstö",
+    "description": "Henkilöstön hallinnan osiossa arvioidaan organisaation kykyä kehittää ja ylläpitää henkilöstön kyberturvallisuusosaamista ja -valmiutta.\n\nOrganisaation tulee määritellä ja ylläpitää suunnitelmia, prosesseja, teknologiaa ja kontrolleja organisaation kyberturvallisuuskulttuurin luomiseksi ja sopivan ja osaavan henkilöstön takaamiseksi, suhteessa sekä suojattaviin kohteisiin kohdistuviin riskeihin, että organisaation asettamiin tavoitteisiin.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Kyberturvallisuuden vastuiden jakaminen",
+        "description": "Tärkeä osa kyberturvallisuuden vastuiden jakamista on varmistua siitä, että vastuut on katettu riittävästi ja riittävällä korvaavuudella (redundancy). Roolit, joihin kuuluu merkittäviä kyberturvallisuuden vastuita, on usein helppo tunnistaa, mutta roolien jatkuvuuden takaaminen voi olla haastavampaa.\n\nOn äärimmäisen tärkeää määrittää konkreettiset suunnitelmat kyberturvallisuuden avainroolien (esim. pääkäyttäjien) kouluttamiseen, sijaisuuksien varmistamiseen, testauttamiseen ja arviointiin. On myös tärkeä huomioida, että kyberturvallisuuden vastuut eivät rajoitu vain perinteisiin IT-rooleihin.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Erilaisia tarkastuksia, kuten taustojen tarkistuksia ja huumetestejä, suoritetaan uusia työntekijöitä palkatessa."
+          },
+          {
+            "id": "1b",
+            "title": "Työsuhteen päättymiseen liittyvissä menettelyissä huomioidaan kyberturvallisuus."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Kyberturvallisuuteen keskittyvän henkilöstön kehittäminen",
+        "description": "Organisaation kyberhenkilöstön (eli työntekijöiden, joilla tehtävänkuvaan kuuluu kyberturvallisuuteen liittyviä vastuita) kehittämiseen kuuluu olemassa olevien työntekijöiden kouluttaminen ja tarvittaessa uusien työntekijöiden rekrytointi tunnistettujen osaamispuutteiden täyttämiseksi.\n\nRekrytointiprosesseissa tulee huomioida esimerkiksi se, että sekä rekrytoijat että haastateltavat ovat tietoisia organisaation kyberhenkilöstöön kohdistuvista tarpeista. Lisäksi työntekijöiden (ja ulkoisten toimittajien) tulisi osallistua säännöllisesti koulutuksiin, joilla lisätään henkilöstön kyberturvallisuustietoisuutta (esimerkiksi tietojenkalastelun tai muiden uhkien pienentämiseksi).\n\nKoulutusten ja tietoisuuskampanjoiden tehokkuutta tulisi arvioida tarpeen mukaan.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Henkilöstön kyberturvallisuustietoisuutta kohotetaan erilaisin toimin."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Henkilöstöhallinnon prosessit",
+        "description": "Henkilöstön hallintatoimiin kuuluvat esimerkiksi työntekijöiden taustatarkastukset (esim. turvallisuusselvitys) siten, että tarkempia selvityksiä teetetään työtehtäviin, joihin kuuluu pääsy toiminnan osa-alueen toimintavarmuuden kannalta tärkeisiin suojattaviin kohteisiin.\n\nEsimerkiksi pääkäyttäjille (joilla on tyypillisesti oikeudet tehdä muutoksia asetuksiin, muokata tai poistaa lokitietoja, luoda uusia tunnuksia tai muokata salasanoja) määritellään korkeampi riskitaso ja tehdään tarvittavat toimenpiteet järjestelmien suojaamiseksi näiden käyttäjien tahallisilta tai tahattomilta toimilta.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Toiminnon kyberturvallisuuteen liittyvät vastuut on tunnistettu."
+          },
+          {
+            "id": "3b",
+            "title": "Kyberturvallisuuteen liittyvät vastuut on osoitettu nimetyille henkilöille."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Koulutus ja kybertietoisuuden lisääminen",
+        "description": "Kybertietoisuuden lisääminen on yhtä tärkeää organisaation kyberturvallisuuden parantamiseksi kuin teknisten kontrollien toteuttaminen.\n\nOrganisaatioon kohdistuva kyberhyökkäys alkaa usein hankkimalla jalansija organisaation IT- tai OT-järjestelmiin. Hyökkääjä voi esimerkiksi ujuttaa organisaation verkkoon haitallisia tiedostoja tai laitteita varomattoman työntekijän tai alihankkijan avulla.\n\nOrganisaation tulee jakaa tietoa organisaation sisällä, jotta henkilöstö osaisi paremmin tunnistaa epäilyttävän toiminnan, roskapostin tai tietojenkalastelun tunnistamiseksi ja tunnistaisi miten välttää jakamasta organisaation luottamuksellisia tietoja mahdolliselle hyökkääjälle. Tietoa toimialan uusimmista uhkista ja haavoittuvuuksista voidaan jakaa esimerkiksi organisaation sisäisten verkkosivujen kautta.\n\nMikäli mitään tietoa uhkista, haavoittuvuuksista tai parhaista käytännöistä ei jaeta organisaatiossa saattaa turvallisuuskäytäntöjen ja turvallisten toimintatapojen noudattaminen alkaa lipsua organisaatiossa.",
+        "practices": [
+          {
+            "id": "4a",
+            "title": "Kyberturvallisuuskoulutusta on saatavana sellaisille työntekijöille, joille on osoitettu kyberturvallisuuteen liittyviä vastuita."
+          },
+          {
+            "id": "4b",
+            "title": "Kyberturvallisuuteen liittyvien tietojen, taitojen ja kykyjen vaatimukset ja niissä mahdollisesti ilmenevät puutteet on tunnistettu sekä nykyiset että tulevat tarpeet huomioiden."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "architecture",
+    "title": "Kyberturvallisuusarkkitehtuuri",
+    "short": "Kyberarkkitehtuuri",
+    "description": "Kyberturvallisuusarkkitehtuurin (eli kyberarkkitehtuurin) osiossa arvioidaan organisaation kykyä hallita ja ylläpitää kyberturvallisuustoimintaansa.\n\nOrganisaation tulee luoda ja ylläpitää rakenteita, joilla se hallinnoi ja ohjaa organisaation kyberturvallisuuskontrolleja, -prosesseja ja muuta kyberturvallisuuden toimintaa suhteessa sekä organisaation omaisuuteen kohdistuviin riskeihin, että organisaation asettamiin tavoitteisiin.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Kyberarkkitehtuurin kehittäminen",
+        "description": "Kyberarkkitehtuuri luo edellytykset suunnitella ja kehittää organisaation kyberturvallisuutta kokonaisuutena pistemäisten ratkaisuiden, kuten yksittäisten identiteetin- tai pääsynhallintaratkaisujen, sijasta.\n\nKyberarkkitehtuurin avulla voidaan lähestyä kriittisten järjestelmien ja tiedon suojaamista tunnettujen arkkitehtuurimenetelmien kautta (esim. tunnistaminen - suojautuminen - reagointi - palautuminen). Tällaisiin menetelmiin kuuluvat mm. verkkojen segmentointi, ylläpitoratkaisut, salausmenetelmät ja jäljityslokit ja niitä voidaan käyttää yhdessä saatavuuteen liittyvien menetelmien kuten monitoroinnin, palautusmenetelmien tai varmennuksen kanssa.\n\nKun kyberarkkitehtuuri suunnitellaan toimimaan yhdessä organisaation yritysarkkitehtuuristrategian kanssa (myös kokonaisarkkitehtuuri), toimii se syötteenä mm. riskianalyyseille ja suojattavien kohteiden konfiguroinnille.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organisaatiolla on suunnitelma tai strategia kyberarkkitehtuurin kehittämiselle, joka sisältää esimerkiksi kyberarkkitehtuurin tavoitteet, prioriteetit, vastuut ja seurannan."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Tietoverkkojen suojaus osana kyberarkkitehtuuria",
+        "description": "Verkkojen segmentointi voidaan toteuttaa fyysisellä ja/tai loogisella tasolla ja sen tarkoitus on pienentää hyökkäyspinta-alaa. Optimitilanteessa jokaiselle laitteelle on perusteltu syy sen sijoittamiseen tiettyyn verkkosegmenttiin.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Verkon suojauksia on toteutettu ainakin tapauskohtaisesti."
+          },
+          {
+            "id": "2b",
+            "title": "Organisaation IT-järjestelmät on eriytetty mahdollisista OT-järjestelmistä segmentoimalla ne joko fyysisesti tai loogisesti. Tasolla 1 tämän ei tarvitse olla systemaattista ja säännöllistä. [Tulkintaohje: mikäli OT-järjestelmiä tai vastaavia ei ole, aseteta käytäntö \"täysin toteutetuksi\"]"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Laitteiden ja ohjelmistojen turvallisuus osana kyberarkkitehtuuria",
+        "description": "Riittävät ja tarkoituksenmukaiset suojausmekanismit on toteutettu toiminnan kannalta tärkeille laitteille, ohjelmistoille ja tietovarannoille, ottaen huomioon niiden kriittisyyden.\n\nPääsyoikeudet on rajattu ja vain tarvittavat toiminnot on aktivoitu. Vakioituja ja turvallisia konfiguraatioita käytetään. Tietoturvaohjelmistoja ja -komponentteja käytetään soveltuvin osin.",
+        "practices": [
+          {
+            "id": "3a",
+            "title": "Käyttöoikeuksien ja pääsynhallinan kontrolleja/suojausmekanismeja on käytössä toiminnon kannalta tärkeille laitteille, ohjelmistoille ja tietovarannoille."
+          },
+          {
+            "id": "3b",
+            "title": "Päätelaitteiden suojausmekanismeja, kuten turvalliset konfiguraatiot, tietoturvaohjelmistot ja päätelaitteiden valvonta, on käytössä toiminnon kannalta tärkeille laitteille, ohjelmistoille ja tietovarannoille."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Tietojen suojaus osana kyberarkkitehtuuria",
+        "description": "Kyberarkkitehtuuri rakentuu suojattavan tiedon ympärille.\n\nJotta sensitiivistä tietoa voidaan suojata, tulee se ensin tunnistaa ja luokitella. Suojaamiseen käytettävien kontrollien ja keinojen, kuten salauksen ja avaintenhallinnan prosessien, tulee olla toteutettu ja systemaattisessa käytössä.",
+        "practices": [
+          {
+            "id": "5a",
+            "title": "Tallennettua arkaluontoista tietoa (\"data at rest\") suojataan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "program",
+    "title": "Kyberturvallisuuden hallinta",
+    "short": "Kyberturvallisuuden hallinta",
+    "description": "Kyberturvallisuusohjelman osiossa arvioidaan organisaation kykyä hallita ja ylläpitää organisaationlaajuista kyberturvallisuusohjelmaa.\n\nKyberturvallisuusohjelman tarkoitus on määritellä kyberturvallisuuden hallintamalli (governance), kyberturvallisuuden strateginen kehittäminen ja liiketoimintajohdon tuki kyberturvallisuudelle tavalla, joka on suhteessa sekä suojattaviin kohteisiin kohdistuviin riskeihin, että organisaation asettamiin tavoitteisiin nähden.",
+    "objectives": [
+      {
+        "id": "1",
+        "title": "Kyberturvallisuusstrategia",
+        "description": "Kyberturvallisuusstrategia toimii kyberturvallisuusohjelman perustana.\n\nYksinkertaisimmassa muodossa, kyberturvallisuusstrategia pitää sisällään listan kyberturvallisuustavoitteista ja suunnitelman niiden saavuttamiseksi. Korkeammalla kypsyystasolla kyberturvallisuusstrategia on täydellisempi ja sisältää prioriteetit, hallintamallin kuvauksen (governance), kyberturvallisuusohjelman organisaatiorakenteen ja ylemmän johdon vahvemman osallistumisen ohjelmaan suunnitteluun. Kyberturvallisuusstrategia voi olla oma dokumenttinsa, mutta usein se on kirjattu osaksi organisaation kyberturvallisuuspolitiikkaa.",
+        "practices": [
+          {
+            "id": "1a",
+            "title": "Organisaatiolla on kyberturvallisuusstrategia."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Johdon tuki kyberturvallisuusohjelmalle",
+        "description": "Johdon tuki on tärkeää kyberturvallisuusohjelman jalkauttamiselle kyberturvallisuusstrategian mukaisesti.\n\nPerustasolla tuki sisältää riittävien resurssien turvaamisen (henkilöt, työkalut ja rahoitus). Kehittyneemmässä organisaatiossa tuki pitää sisällään ylimmän johdon näkyvän osallistumisen sekä vastuiden määrittelyn ja valtuutukset kyberturvallisuusohjelmalle. Lisäksi tuki kattaa organisatorisen tuen, jota vaaditaan poliitikkojen tai vastaavien ohjeistusten määrittämiseksi ja ylläpitämiseksi.",
+        "practices": [
+          {
+            "id": "2a",
+            "title": "Organisaation ylin johto tukee kyberturvallisuuden hallintaa."
+          }
+        ]
+      }
+    ]
+  }
+]

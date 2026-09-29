@@ -1,0 +1,2580 @@
+{
+  "access-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.AC-6"]
+      }
+    ]
+  },
+  "access-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.AC-6"]
+      }
+    ]
+  },
+  "access-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.IP-11"]
+      }
+    ]
+  },
+  "access-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1"]
+      }
+    ]
+  },
+  "access-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.IP-11"]
+      }
+    ]
+  },
+  "access-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.IP-11"]
+      }
+    ]
+  },
+  "access-1g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-4"]
+      }
+    ]
+  },
+  "access-1h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.AC-3", "PR.AC-7"]
+      }
+    ]
+  },
+  "access-1i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-7"]
+      }
+    ]
+  },
+  "access-1j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.IP-11"]
+      }
+    ]
+  },
+  "access-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-3", "PR.AC-4", "PR.AC-6", "PR.AC-7", "PR.DS-5"]
+      }
+    ]
+  },
+  "access-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.AC-3", "PR.AC-4", "PR.IP-11"]
+      }
+    ]
+  },
+  "access-2c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-3", "PR.AC-4", "PR.AC-6", "PR.AC-7", "PR.MA-2"]
+      }
+    ]
+  },
+  "access-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-4"]
+      }
+    ]
+  },
+  "access-2e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-4"]
+      }
+    ]
+  },
+  "access-2f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-4"]
+      }
+    ]
+  },
+  "access-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "PR.AC-3",
+          "PR.AC-4",
+          "PR.MA-2",
+          "DE.CM-3",
+          "DE.CM-6",
+          "DE.CM-7"
+        ]
+      }
+    ]
+  },
+  "access-2h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-4"]
+      }
+    ]
+  },
+  "access-2i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.CM-1", "DE.CM-3", "DE.CM-6", "DE.CM-7"]
+      }
+    ]
+  },
+  "access-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.DS-5", "PR.IP-5"]
+      }
+    ]
+  },
+  "access-3b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-1", "PR.AC-2", "PR.IP-11"]
+      }
+    ]
+  },
+  "access-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.PT-1"]
+      }
+    ]
+  },
+  "access-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.IP-5"]
+      }
+    ]
+  },
+  "access-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.AC-4"]
+      }
+    ]
+  },
+  "access-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.AC-4", "PR.IP-5"]
+      }
+    ]
+  },
+  "access-3g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.AC-4"]
+      }
+    ]
+  },
+  "access-3h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "PR.AC-2",
+          "PR.AC-4",
+          "DE.CM-2",
+          "DE.CM-3",
+          "DE.CM-6",
+          "DE.CM-7"
+        ]
+      }
+    ]
+  },
+  "access-3i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.AC-4"]
+      }
+    ]
+  },
+  "access-3j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "DE.CM-2", "DE.CM-3", "DE.CM-7"]
+      }
+    ]
+  },
+  "access-4c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "PR.IP-5"]
+      }
+    ]
+  },
+  "access-4d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "access-4e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "access-4f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "architecture-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-3", "DE.AE-1"]
+      }
+    ]
+  },
+  "architecture-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4"]
+      }
+    ]
+  },
+  "architecture-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-5", "ID.GV-3"]
+      }
+    ]
+  },
+  "architecture-1j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-5"]
+      }
+    ]
+  },
+  "architecture-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.AC-5", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-5", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-3", "PR.AC-5", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-5", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-4", "PR.AC-5", "PR.PT-3", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-5", "PR.PT-4", "DE.CM-1", "DE.CM-7"]
+      }
+    ]
+  },
+  "architecture-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-4", "DE.CM-1", "DE.CM-3"]
+      }
+    ]
+  },
+  "architecture-2h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-5", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-5", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-5", "PR.PT-4"]
+      }
+    ]
+  },
+  "architecture-2k": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-5", "PR.AC-7", "PR.PT-4", "DE.CM-7"]
+      }
+    ]
+  },
+  "architecture-2l": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-4", "RS.MI-1"]
+      }
+    ]
+  },
+  "architecture-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.AC-3", "PR.AC-7"]
+      }
+    ]
+  },
+  "architecture-3b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-1", "DE.CM-4", "DE.CM-5", "DE.CM-7"]
+      }
+    ]
+  },
+  "architecture-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-4", "PR.IP-1"]
+      }
+    ]
+  },
+  "architecture-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-1", "PR.PT-3"]
+      }
+    ]
+  },
+  "architecture-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-1", "PR.PT-3"]
+      }
+    ]
+  },
+  "architecture-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.CM-4"]
+      }
+    ]
+  },
+  "architecture-3g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-2", "DE.CM-7"]
+      }
+    ]
+  },
+  "architecture-3h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2"]
+      }
+    ]
+  },
+  "architecture-3i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-3", "PR.DS-4", "PR.MA-1", "PR.MA-2"]
+      }
+    ]
+  },
+  "architecture-3j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AC-2", "PR.IP-5", "PR.PT-1", "DE.CM-2", "DE.CM-7"]
+      }
+    ]
+  },
+  "architecture-3l": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-6", "PR.IP-2", "PR.IP-3"]
+      }
+    ]
+  },
+  "architecture-3m": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-3", "DE.CM-4", "DE.CM-5", "DE.CM-7"]
+      }
+    ]
+  },
+  "architecture-4a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-7"]
+      }
+    ]
+  },
+  "architecture-4b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-7"]
+      }
+    ]
+  },
+  "architecture-4c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-1"]
+      }
+    ]
+  },
+  "architecture-4d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-7", "PR.IP-2"]
+      }
+    ]
+  },
+  "architecture-4e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-7"]
+      }
+    ]
+  },
+  "architecture-4g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-6"]
+      }
+    ]
+  },
+  "architecture-5a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1", "PR.DS-5"]
+      }
+    ]
+  },
+  "architecture-5b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1", "PR.DS-5"]
+      }
+    ]
+  },
+  "architecture-5c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-2", "PR.DS-5"]
+      }
+    ]
+  },
+  "architecture-5d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1", "PR.DS-2", "PR.DS-5"]
+      }
+    ]
+  },
+  "architecture-5e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-3", "PR.DS-1", "PR.DS-2"]
+      }
+    ]
+  },
+  "architecture-5f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1", "PR.DS-2", "PR.DS-5"]
+      }
+    ]
+  },
+  "architecture-5g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1", "PR.DS-2", "PR.DS-5", "PR.PT-2"]
+      }
+    ]
+  },
+  "architecture-5h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1", "PR.DS-2", "PR.DS-6"]
+      }
+    ]
+  },
+  "architecture-6c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "PR.IP-5", "PR.PT-2"]
+      }
+    ]
+  },
+  "architecture-6d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "architecture-6e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "architecture-6f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "asset-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-1", "ID.AM-2", "ID.AM-4", "PR.DS-3"]
+      }
+    ]
+  },
+  "asset-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-1", "ID.AM-2", "ID.AM-4"]
+      }
+    ]
+  },
+  "asset-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-5"]
+      }
+    ]
+  },
+  "asset-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-5"]
+      }
+    ]
+  },
+  "asset-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-1", "ID.AM-2", "ID.AM-4", "PR.DS-3"]
+      }
+    ]
+  },
+  "asset-1g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-1", "ID.AM-2", "ID.AM-4", "PR.DS-3"]
+      }
+    ]
+  },
+  "asset-1h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1", "PR.DS-3", "PR.DS-5", "PR.IP-2", "PR.IP-6"]
+      }
+    ]
+  },
+  "asset-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-4", "PR.DS-3"]
+      }
+    ]
+  },
+  "asset-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-4"]
+      }
+    ]
+  },
+  "asset-2c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-5"]
+      }
+    ]
+  },
+  "asset-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-5"]
+      }
+    ]
+  },
+  "asset-2f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-4", "PR.DS-3"]
+      }
+    ]
+  },
+  "asset-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-3"]
+      }
+    ]
+  },
+  "asset-2h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-3", "PR.DS-5", "PR.IP-2", "PR.IP-6"]
+      }
+    ]
+  },
+  "asset-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-1", "PR.IP-3"]
+      }
+    ]
+  },
+  "asset-3b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-3"]
+      }
+    ]
+  },
+  "asset-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-1", "PR.IP-3", "PR.PT-3"]
+      }
+    ]
+  },
+  "asset-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-1", "PR.IP-3"]
+      }
+    ]
+  },
+  "asset-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-2", "PR.IP-3"]
+      }
+    ]
+  },
+  "asset-4a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-3", "PR.IP-3", "PR.MA-1"]
+      }
+    ]
+  },
+  "asset-4b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-3", "PR.IP-3", "PR.MA-1"]
+      }
+    ]
+  },
+  "asset-4c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-3", "PR.IP-3", "PR.MA-1"]
+      }
+    ]
+  },
+  "asset-4d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-2", "PR.IP-3", "PR.MA-1"]
+      }
+    ]
+  },
+  "asset-4e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-3", "PR.IP-3"]
+      }
+    ]
+  },
+  "asset-4f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-3"]
+      }
+    ]
+  },
+  "asset-4g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "PR.DS-3",
+          "PR.DS-6",
+          "PR.IP-2",
+          "PR.IP-3",
+          "PR.IP-6",
+          "PR.MA-1"
+        ]
+      }
+    ]
+  },
+  "asset-4h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-3", "PR.MA-1"]
+      }
+    ]
+  },
+  "asset-4i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-3", "PR.MA-1"]
+      }
+    ]
+  },
+  "asset-5c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3"]
+      }
+    ]
+  },
+  "asset-5d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "asset-5e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "asset-5f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "program-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-3"]
+      }
+    ]
+  },
+  "program-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-3"]
+      }
+    ]
+  },
+  "program-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-1", "ID.BE-2", "ID.BE-3"]
+      }
+    ]
+  },
+  "program-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-4"]
+      }
+    ]
+  },
+  "program-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-6", "ID.GV-1", "ID.GV-2"]
+      }
+    ]
+  },
+  "program-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "PR.IP-5"]
+      }
+    ]
+  },
+  "program-1g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-3", "PR.IP-5", "DE.DP-2"]
+      }
+    ]
+  },
+  "program-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1"]
+      }
+    ]
+  },
+  "program-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1"]
+      }
+    ]
+  },
+  "program-2e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-6", "ID.GV-2", "PR.AT-4"]
+      }
+    ]
+  },
+  "program-2f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-2", "PR.AT-3", "PR.AT-4", "PR.AT-5"]
+      }
+    ]
+  },
+  "program-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "program-2h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7", "PR.IP-8"]
+      }
+    ]
+  },
+  "program-2i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "PR.IP-5", "DE.DP-2"]
+      }
+    ]
+  },
+  "program-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3"]
+      }
+    ]
+  },
+  "program-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "program-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "program-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "response-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.DP-4", "RS.CO-2"]
+      }
+    ]
+  },
+  "response-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.DP-2"]
+      }
+    ]
+  },
+  "response-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.DP-2", "RS.CO-2"]
+      }
+    ]
+  },
+  "response-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-2", "DE.AE-3", "RS.AN-1", "RS.AN-4"]
+      }
+    ]
+  },
+  "response-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.DP-5"]
+      }
+    ]
+  },
+  "response-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.CM-1", "DE.CM-2", "DE.CM-3", "DE.CM-6", "DE.CM-7"]
+      }
+    ]
+  },
+  "response-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-9", "DE.AE-5", "RS.AN-4"]
+      }
+    ]
+  },
+  "response-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-4", "RS.AN-1"]
+      }
+    ]
+  },
+  "response-2c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-9", "DE.AE-4", "DE.AE-5"]
+      }
+    ]
+  },
+  "response-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-4"]
+      }
+    ]
+  },
+  "response-2e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7", "PR.IP-9", "RS.IM-1"]
+      }
+    ]
+  },
+  "response-2f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RS.CO-2"]
+      }
+    ]
+  },
+  "response-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "DE.AE-5",
+          "DE.DP-4",
+          "RS.CO-2",
+          "RS.CO-3",
+          "RS.CO-4",
+          "RS.CO-5",
+          "RC.CO-3"
+        ]
+      }
+    ]
+  },
+  "response-2i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-2", "DE.AE-3"]
+      }
+    ]
+  },
+  "response-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-2", "PR.AT-3", "DE.DP-1", "RS.CO-1"]
+      }
+    ]
+  },
+  "response-3b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RS.RP-1", "RS.MI-1", "RS.MI-2", "RC.RP-1"]
+      }
+    ]
+  },
+  "response-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-3", "RS.CO-2", "RS.CO-3", "RS.CO-4", "RS.CO-5"]
+      }
+    ]
+  },
+  "response-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-9", "PR.IP-10", "RS.AN-3", "RS.IM-2", "RC.IM-1"]
+      }
+    ]
+  },
+  "response-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "RS.RP-1",
+          "RS.CO-1",
+          "RS.CO-2",
+          "RS.CO-3",
+          "RS.CO-4",
+          "RS.AN-4",
+          "RS.MI-1",
+          "RS.MI-2",
+          "RC.RP-1"
+        ]
+      }
+    ]
+  },
+  "response-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RC.CO-1", "RC.CO-2", "RC.CO-3"]
+      }
+    ]
+  },
+  "response-3g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-5", "PR.IP-7", "PR.IP-10", "DE.DP-3"]
+      }
+    ]
+  },
+  "response-3h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "PR.IP-7",
+          "PR.IP-9",
+          "DE.DP-5",
+          "RS.IM-1",
+          "RS.IM-2",
+          "RC.IM-1",
+          "RC.IM-2"
+        ]
+      }
+    ]
+  },
+  "response-3i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "PR.IP-7",
+          "PR.IP-9",
+          "DE.AE-2",
+          "DE.DP-5",
+          "RS.RP-1",
+          "RS.AN-1",
+          "RS.AN-2",
+          "RS.AN-3",
+          "RS.IM-1",
+          "RS.IM-2",
+          "RC.IM-1",
+          "RC.IM-2"
+        ]
+      }
+    ]
+  },
+  "response-3j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.SC-5",
+          "DE.DP-4",
+          "RS.RP-1",
+          "RS.CO-3",
+          "RS.CO-4",
+          "RS.CO-5",
+          "RS.AN-3",
+          "RC.RP-1",
+          "RC.CO-3"
+        ]
+      }
+    ]
+  },
+  "response-3k": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-5", "PR.IP-10"]
+      }
+    ]
+  },
+  "response-3l": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-5"]
+      }
+    ]
+  },
+  "response-4a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-5", "PR.IP-9", "PR.PT-5", "RS.RP-1", "RC.RP-1"]
+      }
+    ]
+  },
+  "response-4b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-4", "PR.IP-4", "PR.PT-5"]
+      }
+    ]
+  },
+  "response-4c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-4", "PR.PT-5"]
+      }
+    ]
+  },
+  "response-4d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-4", "PR.IP-9", "RS.AN-2", "RS.IM-2", "RC.IM-2"]
+      }
+    ]
+  },
+  "response-4e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-4", "ID.BE-5", "PR.DS-4", "PR.IP-9", "PR.PT-5"]
+      }
+    ]
+  },
+  "response-4f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-4", "ID.BE-5", "PR.DS-4", "PR.IP-9", "PR.PT-5"]
+      }
+    ]
+  },
+  "response-4g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-5", "ID.SC-5"]
+      }
+    ]
+  },
+  "response-4h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-9", "DE.AE-5", "RS.AN-2", "RS.AN-4"]
+      }
+    ]
+  },
+  "response-4i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-5", "PR.IP-9", "PR.IP-10", "PR.PT-5", "RC.IM-1"]
+      }
+    ]
+  },
+  "response-4j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1"]
+      }
+    ]
+  },
+  "response-4k": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-1"]
+      }
+    ]
+  },
+  "response-4l": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-4", "PR.PT-5"]
+      }
+    ]
+  },
+  "response-4n": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-10"]
+      }
+    ]
+  },
+  "response-4o": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-9", "RS.IM-1", "RS.IM-2", "RC.IM-1", "RC.IM-2"]
+      }
+    ]
+  },
+  "response-4p": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-9", "RS.IM-1", "RS.IM-2", "RC.IM-1", "RC.IM-2"]
+      }
+    ]
+  },
+  "response-5a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-9", "RS.RP-1", "RS.IM-1", "RC.RP-1", "RC.IM-1"]
+      }
+    ]
+  },
+  "response-5c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "DE.DP-2", "RS.IM-2", "RC.IM-2"]
+      }
+    ]
+  },
+  "response-5d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5",
+          "DE.DP-1",
+          "RS.CO-1"
+        ]
+      }
+    ]
+  },
+  "response-5e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1", "RS.CO-1"]
+      }
+    ]
+  },
+  "response-5f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7", "DE.DP-5"]
+      }
+    ]
+  },
+  "risk-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4", "ID.RM-1", "ID.RM-2", "ID.RM-3"]
+      }
+    ]
+  },
+  "risk-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RM-1", "ID.RM-2", "ID.RM-3"]
+      }
+    ]
+  },
+  "risk-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4"]
+      }
+    ]
+  },
+  "risk-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4", "PR.IP-8"]
+      }
+    ]
+  },
+  "risk-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-4", "ID.RM-1"]
+      }
+    ]
+  },
+  "risk-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RM-2", "ID.RM-3", "ID.SC-1"]
+      }
+    ]
+  },
+  "risk-1g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4", "ID.RM-1"]
+      }
+    ]
+  },
+  "risk-1h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4"]
+      }
+    ]
+  },
+  "risk-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4"]
+      }
+    ]
+  },
+  "risk-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-4", "ID.RA-5", "ID.RM-1"]
+      }
+    ]
+  },
+  "risk-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RM-1"]
+      }
+    ]
+  },
+  "risk-2i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-5", "RS.MI-3"]
+      }
+    ]
+  },
+  "risk-2j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-5"]
+      }
+    ]
+  },
+  "risk-2k": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-1"]
+      }
+    ]
+  },
+  "risk-2m": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-1", "ID.BE-2", "ID.BE-4", "ID.RA-5", "ID.RM-3"]
+      }
+    ]
+  },
+  "risk-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-4", "ID.RA-5"]
+      }
+    ]
+  },
+  "risk-3b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-4", "ID.RA-5", "ID.RM-1", "ID.RM-2", "ID.RM-3"]
+      }
+    ]
+  },
+  "risk-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-4", "ID.RA-5", "ID.RM-1"]
+      }
+    ]
+  },
+  "risk-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-4", "ID.RA-5", "ID.RM-1"]
+      }
+    ]
+  },
+  "risk-4a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-4", "ID.RA-6"]
+      }
+    ]
+  },
+  "risk-4b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-6", "ID.RM-1"]
+      }
+    ]
+  },
+  "risk-4c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7", "DE.DP-3"]
+      }
+    ]
+  },
+  "risk-4d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7", "PR.IP-8", "RS.AN-2"]
+      }
+    ]
+  },
+  "risk-4e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "risk-5a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RM-1", "ID.SC-1"]
+      }
+    ]
+  },
+  "risk-5c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "ID.GV-4", "ID.RM-1"]
+      }
+    ]
+  },
+  "risk-5d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "risk-5e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "risk-5f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "situation-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-1", "DE.CM-1"]
+      }
+    ]
+  },
+  "situation-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-1"]
+      }
+    ]
+  },
+  "situation-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-1"]
+      }
+    ]
+  },
+  "situation-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-1"]
+      }
+    ]
+  },
+  "situation-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-3"]
+      }
+    ]
+  },
+  "situation-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-1"]
+      }
+    ]
+  },
+  "situation-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.PT-1", "DE.CM-1"]
+      }
+    ]
+  },
+  "situation-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "PR.PT-1",
+          "DE.AE-3",
+          "DE.CM-1",
+          "DE.CM-2",
+          "DE.CM-3",
+          "DE.CM-4",
+          "DE.CM-5",
+          "DE.CM-6",
+          "DE.CM-7",
+          "RS.AN-1"
+        ]
+      }
+    ]
+  },
+  "situation-2c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.DP-1", "DE.DP-2", "DE.DP-3", "DE.DP-5"]
+      }
+    ]
+  },
+  "situation-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.CM-1", "DE.CM-2", "DE.CM-6", "DE.CM-7"]
+      }
+    ]
+  },
+  "situation-2i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-1", "DE.DP-3"]
+      }
+    ]
+  },
+  "situation-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RS.CO-3"]
+      }
+    ]
+  },
+  "situation-3b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-3"]
+      }
+    ]
+  },
+  "situation-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["DE.AE-3", "RS.CO-3", "RS.CO-5"]
+      }
+    ]
+  },
+  "situation-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "DE.AE-5",
+          "DE.DP-4",
+          "RS.CO-2",
+          "RS.CO-3",
+          "RS.CO-4",
+          "RS.CO-5",
+          "RC.CO-3"
+        ]
+      }
+    ]
+  },
+  "situation-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-2", "ID.RA-3", "RS.CO-5", "RS.AN-5"]
+      }
+    ]
+  },
+  "situation-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.RA-2",
+          "ID.RA-3",
+          "DE.AE-3",
+          "DE.CM-1",
+          "DE.CM-2",
+          "DE.CM-3",
+          "DE.CM-4",
+          "DE.CM-5",
+          "DE.CM-6",
+          "DE.CM-7",
+          "RS.AN-5"
+        ]
+      }
+    ]
+  },
+  "situation-3g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-5", "PR.IP-1", "PR.PT-5"]
+      }
+    ]
+  },
+  "situation-4c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3"]
+      }
+    ]
+  },
+  "situation-4d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5",
+          "DE.DP-1",
+          "RS.CO-1"
+        ]
+      }
+    ]
+  },
+  "situation-4e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "situation-4f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7", "DE.DP-5"]
+      }
+    ]
+  },
+  "third-parties-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.BE-1", "ID.BE-2", "ID.BE-4", "ID.SC-2", "PR.DS-4"]
+      }
+    ]
+  },
+  "third-parties-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-2"]
+      }
+    ]
+  },
+  "third-parties-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RM-1"]
+      }
+    ]
+  },
+  "third-parties-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-5", "ID.SC-2"]
+      }
+    ]
+  },
+  "third-parties-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-4"]
+      }
+    ]
+  },
+  "third-parties-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-2"]
+      }
+    ]
+  },
+  "third-parties-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-2"]
+      }
+    ]
+  },
+  "third-parties-2f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-3"]
+      }
+    ]
+  },
+  "third-parties-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-2", "ID.SC-4"]
+      }
+    ]
+  },
+  "third-parties-2h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-3"]
+      }
+    ]
+  },
+  "third-parties-2l": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-4"]
+      }
+    ]
+  },
+  "third-parties-2m": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.DS-6", "PR.DS-8"]
+      }
+    ]
+  },
+  "third-parties-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-1"]
+      }
+    ]
+  },
+  "third-parties-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "ID.SC-1"]
+      }
+    ]
+  },
+  "third-parties-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "third-parties-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "third-parties-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.SC-1", "PR.IP-7"]
+      }
+    ]
+  },
+  "threat-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-1", "ID.RA-2", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-1", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-1", "DE.CM-8", "DE.DP-3"]
+      }
+    ]
+  },
+  "threat-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RS.MI-3"]
+      }
+    ]
+  },
+  "threat-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-1", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-1", "DE.CM-8"]
+      }
+    ]
+  },
+  "threat-1g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RS.AN-5", "RS.MI-3"]
+      }
+    ]
+  },
+  "threat-1i": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RS.CO-3", "RS.CO-5"]
+      }
+    ]
+  },
+  "threat-1j": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-1", "ID.RA-2", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-1l": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["RS.AN-5"]
+      }
+    ]
+  },
+  "threat-1m": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-2", "RS.CO-5", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-2", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-2", "ID.RA-3", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-2c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-3"]
+      }
+    ]
+  },
+  "threat-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-3", "ID.RA-5"]
+      }
+    ]
+  },
+  "threat-2e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-3"]
+      }
+    ]
+  },
+  "threat-2g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-5"]
+      }
+    ]
+  },
+  "threat-2h": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-2", "DE.DP-4", "RS.CO-5"]
+      }
+    ]
+  },
+  "threat-2k": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.RA-2"]
+      }
+    ]
+  },
+  "threat-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-12", "RS.AN-5"]
+      }
+    ]
+  },
+  "threat-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3", "PR.IP-12"]
+      }
+    ]
+  },
+  "threat-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "threat-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "threat-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  },
+  "workforce-1a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-1b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-1c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-1d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-1e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "PR.AT-1",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5",
+          "PR.DS-5",
+          "PR.IP-11"
+        ]
+      }
+    ]
+  },
+  "workforce-1f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-1g": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-2a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "workforce-2b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1"]
+      }
+    ]
+  },
+  "workforce-2d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "workforce-3a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.AM-6", "PR.IP-11", "DE.DP-1", "RS.CO-1"]
+      }
+    ]
+  },
+  "workforce-3b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5",
+          "PR.IP-11",
+          "DE.DP-1",
+          "RS.CO-1"
+        ]
+      }
+    ]
+  },
+  "workforce-3c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5",
+          "PR.IP-11",
+          "DE.DP-1",
+          "RS.CO-1"
+        ]
+      }
+    ]
+  },
+  "workforce-3d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5",
+          "PR.IP-11",
+          "DE.DP-1",
+          "RS.CO-1"
+        ]
+      }
+    ]
+  },
+  "workforce-3e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-2", "PR.IP-11", "DE.DP-1"]
+      }
+    ]
+  },
+  "workforce-3f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-4a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1", "PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-4b": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-4c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-4d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1", "PR.AT-2", "PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-4f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1", "PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-5a": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-11"]
+      }
+    ]
+  },
+  "workforce-5c": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["ID.GV-1", "ID.GV-3"]
+      }
+    ]
+  },
+  "workforce-5d": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": [
+          "ID.AM-6",
+          "ID.GV-1",
+          "ID.GV-2",
+          "ID.GV-3",
+          "PR.AT-2",
+          "PR.AT-3",
+          "PR.AT-4",
+          "PR.AT-5"
+        ]
+      }
+    ]
+  },
+  "workforce-5e": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.AT-1"]
+      }
+    ]
+  },
+  "workforce-5f": {
+    "mappings": [
+      {
+        "framework": "NIST CSF 1.1",
+        "controls": ["PR.IP-7"]
+      }
+    ]
+  }
+}

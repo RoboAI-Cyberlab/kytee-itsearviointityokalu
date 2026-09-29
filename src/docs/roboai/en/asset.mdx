@@ -1,0 +1,253 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Asset, change, and configuration management
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- IT and OT team specialists responsible for asset inventory management
+</Roles>
+
+---
+<ObjectiveTitle name="asset-1">Device and software management</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-1a">An inventory exists of IT and OT devices and software critical to the function</PracticeTitle>
+
+### Question
+
+Does your organization have an inventory that includes IT and OT devices critical to operations, as well as related data repositories such as customer data, software and device configurations, or production process data? (IT devices refer to information processing systems such as servers and databases, and OT devices refer to devices for controlling physical processes, such as production line control systems and automation systems.)
+
+### Significance
+
+An inventory of IT and OT devices and software critical to operations is a key part of cybersecurity management. The inventory helps the organization gain an up-to-date overall picture of equipment and software, which is essential for risk management and preparedness measures. For example, when the organization needs to identify devices with software requiring updates, a comprehensive inventory accelerates actions and improves readiness to respond to cyber threats.
+
+<AnswerOptions>
+Assess the extent to which the organization has a comprehensive and up-to-date inventory of IT and OT devices and software critical to operations:
+
+1. **Not implemented or no information**: No inventory exists or information is unavailable.
+1. **Partially implemented**: An inventory exists, but content is incomplete or not updated regularly.
+1. **Mostly implemented**: The inventory covers most key devices and software, but there is room for improvement in updates or data detail.
+1. **Fully implemented**: The inventory is comprehensive, contains all key information, and is maintained regularly.
+</AnswerOptions>
+
+### Example
+
+The company has an inventory containing information about all IT and OT devices and software needed to deliver critical services. The inventory covers IT environment aspects such as servers, routers, and ERP systems, as well as SCADA systems and programmable logic controllers (PLCs) used in the OT environment. Although inventory maintenance is not yet systematic, the most important information, such as device models, software versions, and installation locations, has been identified and recorded. In the future, the company aims to develop more systematic maintenance and update practices.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+The value and significance of assets—devices, software, and data repositories—is determined by how they relate to the function areas in which they are used and supported. Identifying and inventorying valuable IT and OT assets helps select and apply appropriate controls. At the lowest maturity level (MIL1), the inventory can be compiled on a case-by-case basis. Organizations should consider different types of IT and OT assets that may be within the scope of self-assessment, such as:
+
+- virtualized assets
+- third-party managed assets
+- software
+- employee own devices for work use (bring your own device)
+- cloud assets (public, hybrid, or private cloud, software as a service (SaaS), platform as a service (PaaS), infrastructure as a service (IaaS), etc.
+- mobile device assets
+- field assets
+- assets connected through different networks or communication technologies (e.g., telephone modem, mobile)
+- network and communication assets
+- spare, backup, and redundant assets, including idle virtualized assets
+- unused, repairable, and maintenance assets
+- assets dependent on special infrastructure, such as wireless networks, positioning, navigation and timing services, and global positioning system
+- assets that can be considered part of the Internet of Things or Industrial Internet of Things
+- assets that may be untracked, unclaimed, or otherwise overlooked, such as legacy assets, communication devices, and assets supporting multiple groups.
+
+Inventorying does not mean a single inventory is needed; multiple sources, databases, documents, or systems can be used to implement this practice. However, organizations should consider whether inventories can be consolidated as needed to avoid potential risks associated with managing multiple sources.
+
+Related practices:
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ASSET-1a, ASSET-1b, ASSET-1f, ASSET-1g.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="asset-2">Data repository management</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-2a">An inventory exists of data repositories critical to the function</PracticeTitle>
+
+### Question
+
+Does your organization have an inventory of data critical to operations (data repositories)? Such data may include, for example, customer data, device and software configurations, and production or operating environment data, such as industrial equipment data in OT environments. (The purpose of this list is to facilitate information management, discovery, and updating, for example, in case of disruptions)
+
+### Significance
+
+An inventory of data repositories critical to operations is a key part of cybersecurity and operational efficiency management. It helps the organization identify and manage critical data, such as customer data and device configurations, which are essential for business continuity and risk management. The inventory ensures, for example, that necessary data is quickly available in disruption situations and that data-related updates can be implemented in a planned manner.
+
+<AnswerOptions>
+Assess the extent to which the organization has a comprehensive and up-to-date inventory of data repositories critical to operations:
+
+1. **Not implemented or no information**: No inventory exists or information is unavailable.
+1. **Partially implemented**: An inventory exists, but content is incomplete or not updated regularly.
+1. **Mostly implemented**: The inventory covers most key data repositories, but there is room for improvement in updates or data detail.
+1. **Fully implemented**: The inventory is comprehensive, contains all key information, and is maintained regularly.
+</AnswerOptions>
+
+### Example
+
+The company has an inventory containing information about all critical data repositories, such as customer data, device and software configurations, and OT environment data. The inventory covers, for example, customer databases, ERP and SCADA system configurations, and OT environment process data and production equipment programming data.
+
+Although inventory maintenance is not yet systematic, the most important data, such as customer contacts, device settings, and software configurations, has been identified and recorded. Inventory updates are mainly made when new systems are deployed, but regular review practices are missing.
+
+In the future, the company intends to develop more systematic maintenance practices that ensure data currency and support company risk management.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+The value and significance of assets—devices, software, and data repositories—is determined by how they relate to the function areas in which they are used and supported. Identifying and inventorying important/valuable IT and OT assets helps select and apply appropriate controls. Important/valuable data repositories may also include data repositories that may pose financial, legislative, or liability risks, such as personal data, sensitive operational data, and confidential business information. Organizations should consider different types of IT and OT assets that may contain operationally important data, such as:
+
+- virtualized assets (including idle and backed up assets)
+- cloud assets
+- BYOD assets (bring your own device)
+- field assets
+- mobile devices
+
+Organizations should also consider different potential sources of valuable data, such as:
+
+- data located off-premises
+- stored or archived data
+- backup data
+- third-party managed data
+- data at different classification or sensitivity levels
+
+At MIL1, the inventory/register/list can be produced on a case-by-case basis.
+The list does not mean only one list is needed; multiple archives, documents, or systems can be used to implement this practice. However, organizations should consider whether lists can be consolidated as needed to avoid potential risks associated with managing multiple archives.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ASSET-2a, ASSET-2b, ASSET-2f, ASSET-2g.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="asset-3">Configuration management</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-3a">Standardized baseline configurations have been created for device, software, and data repository configurations</PracticeTitle>
+
+### Question
+
+Has your organization defined standard settings used in device, software, and data management? For example, do you have consistent practices or guidelines for how devices and software are deployed or how important data, such as customer and production data, is organized and protected?
+
+### Significance
+
+Standardized baseline configurations are an essential part of configuration management, as they ensure device, software, and data repository compatibility, operation, and security. Documented settings facilitate problem management and improve the organization's ability to respond to changes, such as device updates, software changes, and cybersecurity threat mitigation. Without standardized baseline configurations, the organization may face risks such as device and software incompatibility or security gaps.
+
+<AnswerOptions>
+Assess the extent to which the organization has comprehensive and documented baseline configurations for devices, software, and data repositories:
+
+1. **Not implemented or no information**: Baseline configurations have not been defined or information is unavailable.
+1. **Partially implemented**: Baseline configurations have been defined, but they are incomplete or not updated regularly.
+1. **Mostly implemented**: Baseline configurations cover most key devices, software, and data repositories, but there is room for improvement.
+1. **Fully implemented**: Baseline configurations are comprehensive, up to date, and maintained regularly.
+</AnswerOptions>
+
+### Example
+
+The company has defined standardized baseline configurations for the organization's key devices, software, and data repositories. Baseline configurations support device and system compatibility and ensure continuity of basic functions.
+
+- Devices and software: Baseline configurations have been created, for example, for production-critical devices and IT system servers. These include software configurations, operating system versions, and communication settings. These settings are used when deploying new devices and restoring old systems in disruption situations.
+- Data repositories: The company has documented baseline settings related to protecting key data repositories, such as customer data and production process data. These include, for example, backup configurations and access rights settings.
+
+Although baseline configuration management is not fully systematic or regular, they provide an important starting point for ensuring configuration consistency and functionality.
+
+In the future, the company may transition to more comprehensive maintenance where baseline configurations are reviewed and updated regularly and documentation is expanded to cover all system lifecycle stages. This supports the company's ability to respond to system changes and improves cybersecurity.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Creating baseline configurations/settings for OT, IT, and data assets creates the foundation for managing asset integrity as they change throughout their lifecycle. Periodically saving asset (configurable unit) settings ensures these assets can be restored to an acceptable state after disruption when unauthorized changes occur or in any circumstances where integrity is questionable, and provides a control method for changes that may potentially disrupt asset use in delivering organizational services.
+
+Organizations may consider integrity checking mechanisms (manual or automatic) when making regular saves of asset and asset configuration/settings. Using integrity checking mechanisms to verify regular saves before restoration can ensure they are functional and available/restorable.
+
+Implementation of this practice does not require documented policies and procedures for baseline data configuration or maintenance.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ASSET-3a, ASSET-3c, ASSET-3d.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="asset-4">Change management</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-4a">Changes to devices, software, and data repositories are assessed and approved before implementation</PracticeTitle>
+
+### Question
+
+How does your organization handle changes made to devices, software, and data repositories before implementation? Do you assess and approve changes before implementation, and is this process part of daily operations or done only as needed on a case-by-case basis?
+
+### Significance
+
+Change management is an important part of organizational cybersecurity and operational efficiency. It ensures that all changes to devices, software, and data repositories do not cause disruptions or security risks. Assessment and approval help reduce unexpected problems and ensure change impacts are understood before implementation.
+
+<AnswerOptions>
+Assess how well the organization's change management process covers changes to devices, software, and data repositories:
+
+1. **Not implemented or no information**: Change assessment and approval do not exist, or information is unavailable.
+1. **Partially implemented**: Changes are assessed on a case-by-case basis, but the process is not systematic or regular.
+1. **Mostly implemented**: Changes are assessed and approved in most cases, but the process is partially inconsistent or incomplete.
+1. **Fully implemented**: All changes are assessed and approved before implementation and the process is systematic and regular.
+</AnswerOptions>
+
+### Example
+
+Changes to the company's devices, software, and data repositories are assessed on a case-by-case basis before implementation. The process is not systematic but changes are handled ad hoc when they directly affect critical functions or processes. For example, production line equipment changes, ERP or SCADA system software updates, and customer database updates are assessed separately but without a systematic review process.
+
+Change assessment and approval are generally done when changes may directly affect production, distribution, or other critical function smoothness. Assessment considers risks such as potential disruptions to production processes or security issues. Changes are approved by department heads, such as IT or OT departments, but documentation is not always regular or comprehensive.
+
+Although change assessment occurs on a case-by-case basis, this approach does not guarantee comprehensive change evaluation or long-term impacts. In the future, the company intends to develop a more systematic change management process that ensures change documentation and impact assessment.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+All proposed changes to inventoried assets are assessed to understand their priority, benefits, risks, and impacts on the functionality and security of the functions they produce. It should be noted that these may vary between different types of IT, OT, and data assets, such as virtualized assets, regulated assets, third-party managed assets, BYOD assets, cloud assets, mobile assets, field assets, assets dependent on special infrastructure such as wireless networks or global positioning system, and assets that can be considered part of the Internet of Things or Industrial Internet of Things.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ASSET-4a, ASSET-4d, ASSET-4e, ASSET-4f, ASSET-4h.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="asset-4b">A log is maintained of changes made to devices, software, and data repositories</PracticeTitle>
+
+### Question
+
+Does your organization maintain a log of changes made to devices, software, and data repositories? This means that for each change, such as software updates, device configuration changes, or data repository updates, there should be information somewhere. What is important, however, is that the organization knows what changes have been made and when, so that potential problems can be traced and better understood.
+
+### Significance
+
+Change logging is important because it improves change traceability and supports disruption management. Change documentation helps identify and analyze potential impacts on organizational operations, security, and risk management. Without change recording, the organization may have difficulty solving problems or meeting regulatory requirements.
+Through logs, the organization can:
+
+- Improve operational efficiency by identifying problem causes.
+- Maintain security by monitoring change impacts on critical systems.
+- Produce documentation, for example, for audits or regulatory authorities.
+
+<AnswerOptions>
+Assess the comprehensiveness and regularity of the organization's change logging practices:
+
+1. **Not implemented or no information**: No log is maintained of changes or information is unavailable.
+1. **Partially implemented**: A log is maintained on a case-by-case basis, but practices are inconsistent.
+1. **Mostly implemented**: Changes are mostly logged, but logging is not fully comprehensive or regular.
+1. **Fully implemented**: All changes are documented systematically and comprehensively.
+</AnswerOptions>
+
+### Example
+
+The company maintains a log of changes made to devices, software, and data repositories on a case-by-case basis. Major changes to IT devices, such as servers and network devices, are logged, but smaller fixes often go unrecorded. In OT devices, such as SCADA systems, significant updates are documented, but maintenance activities generally do not end up in the log. Significant updates and new features to ERP and SCADA software are recorded on a case-by-case basis, while smaller configuration changes may be overlooked.
+Significant changes to customer data and production data, such as database updates, are recorded, but routine changes often go unrecorded. The logging practice is not systematic, which makes change tracing difficult, but the company aims to develop a more systematic logging practice to improve traceability and security.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+All changes made to inventoried/registered assets are saved in a format that can be easily referenced during troubleshooting or disruption investigation. Changes may include, for example, changing network device settings such as routing and port definitions, adding or removing components, and changing access rights. Recorded attributes include, among others, the date and time of the change, who made the change, the change's impact on other assets, and a description of risks associated with the change.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: ASSET-4b, ASSET-4c, ASSET-4i.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 3/19/2025_

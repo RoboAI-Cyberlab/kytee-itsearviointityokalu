@@ -1,0 +1,122 @@
+@import "tw-animate-css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: white;
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 173 58% 39%;
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 173 58% 39%;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --turkoosi: 174.91 67.09% 30.98%;
+    --vaalea-turkoosi: 174.8 67.2% 37.06%;
+    --oranssi: 20.96 89.8% 50%;
+    --punainen: 0 84.24% 60.2%;
+    --tab-background: 220 13% 91%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* Accordion */
+.domain .objective:last-of-type .practice:last-of-type .separator-line {
+  display: none; /* Hide the separator line for the last practice in the last objective */
+}
+
+/* Tabs */
+.tabs .text-muted-foreground {
+  color: #707070; /* Override the default text color for the tab for accessibility */
+}
+
+/* Prose */
+
+.prose {
+  max-width: 100%;
+}
+
+.prose li p {
+  margin-bottom: 0;
+}
+.prose li p ~ ul {
+  margin-top: 0;
+}
+
+/* Scrollbar */
+.customScroll {
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.customScroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--border));
+  border-radius: 9999px;
+}

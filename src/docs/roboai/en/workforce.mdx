@@ -1,0 +1,543 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Workforce management and development
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- IT and OT team specialists responsible for logical and physical access management
+- Human resources representative
+- Cybersecurity training specialist
+- Job competency assessment and training program specialist
+</Roles>
+
+---
+<ObjectiveTitle name="workforce-1">Assigning cybersecurity responsibilities</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-1a">Various checks, such as background checks and drug tests, are performed when hiring new employees.</PracticeTitle>
+
+### Significance
+
+Background checks for new employees are a key part of organizational cybersecurity because:
+- **Insider threat risk is reduced.** Financial instability, criminal history, or other suspicious behavior may indicate a potential security risk.
+- **Reliability and security improve.** Background checks ensure that only trustworthy personnel have access to the organization's information systems and critical resources.
+- **HR can make better recruitment decisions.** Checks help identify potential red flags in candidates' histories.
+- **Contractor and service provider personnel can pose security risks.** It is important that outsourced workers also undergo equivalent checks.
+
+Assessment questions:
+- Does the organization perform background checks on new employees, especially those with access to sensitive information or systems?
+- Are background checks used, for example, criminal record checks, security clearances, or drug tests?
+- Is there a process for analyzing the candidate's previous employment relationships, references, and recommendations?
+- Does HR have clear guidelines on when and how checks are performed?
+- Does the organization have requirements that contractors also perform equivalent checks on their employees?
+
+The organization should ensure that the following checks are performed on applicable new employees and contractors:
+- **Security clearance:** Criminal record check, possible security clearance from authorities.
+- **Drug tests:** According to applicable laws and organizational practices.
+- **Verification of references and previous employment:** Ensure that the information provided by the candidate is correct.
+- **Evaluation of information provided by references:** Identify potential warning signs in the candidate's history.
+- **Internally or externally performed checks:** HR must ensure that checks are performed in accordance with laws and regulations.
+
+<AnswerOptions>
+- **Not implemented or no information**: Background checks are not performed or there is no information about them.
+- **Partially implemented**: Some checks are performed, but the process is not comprehensive or systematic.
+- **Mostly implemented**: Most employees undergo checks, but there is room for improvement in practical implementation.
+- **Fully implemented**: All critical employees and contractors undergo systematic background checks, and the process is followed consistently.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The food company performs background checks and ensures that employees accessing production facilities do not pose a security threat. IT personnel undergo a criminal record check before starting employment.
+
+> **Power company**
+The energy company performs thorough background checks on all employees with access to critical systems and requires that service providers follow the same practices.
+
+### Additional information
+
+- **Coordinate with HR to ensure appropriate checks are performed on personnel.**
+- **Checks may include:**
+  - Security clearances
+  - Drug tests
+  - Verification of references and previous employment
+  - Evaluation of information provided by references
+- **The goal is to find all evidence or signs that a candidate could become an insider threat.**
+- **For contractors, ensure they perform equivalent checks on their employees.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Coordinate with HR to ensure appropriate checks are performed on personnel, such as security clearances, drug tests, references and previous employment, and any other checks. In certain cases, you may be able to accept a reciprocal background check from a previous employer. Also evaluate any information provided by the candidate's reference that raises concerns about the candidate's trustworthiness. The goal is to find all evidence or signs that a candidate could become an insider threat (e.g., financial instability, criminal history, suspicious or disruptive behavior at previous workplaces, lies).
+HR personnel can perform the check internally or assign it to a vendor, but in either case, the check must be performed by individuals familiar with all applicable laws and regulations. For outsourced activities, require that service providers perform a similar check on all contractors with access to organizational assets.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: WORKFORCE-1a, WORKFORCE-1c, WORKFORCE-1f.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="workforce-1b">Employment termination procedures address cybersecurity.</PracticeTitle>
+
+### Significance
+
+Cybersecurity measures related to employment termination are critical because:
+- **Insider threat risk is reduced.** Former employees should not have access to systems or sensitive information after employment ends.
+- **Data breach risk decreases.** Pre-planned practices prevent information from reaching external parties such as competitors or criminal actors.
+- **The organization maintains control of its IT environment.** Access management ensures that former employees cannot make changes to systems.
+- **Devices and other company assets are returned on time.** A controlled process can ensure that devices and documents containing company information are not left with the employee.
+
+Assessment questions:
+- Does the organization have clear procedures for removing employee access when employment ends?
+- Must devices, credentials, and documents used by the employee be returned before employment ends?
+- Is the activity of particularly high-risk employees monitored during the notice period, for example, if they have had access to sensitive information?
+- Does the organization coordinate with HR, IT, and security officers to ensure that all access rights are removed on time?
+- Are there separate precautions during termination, for example, in employment relationships ending as a result of negotiations or disputes?
+
+The organization should ensure that the following actions are performed systematically:
+1. **Removing access rights**
+   - Remove the employee's access rights to all systems (internal and cloud services).
+   - Also remove access rights from third-party services, such as financial institutions and customer management systems.
+   - Revoke admin or other high-level rights.
+   - Remove remote access rights (VPN, RDP, MFA credentials).
+2. **Return of devices and other assets**
+   - Return all work tools (laptops, phones, keys, ID cards, company credit cards).
+   - Ensure the employee does not possess company paper documents or physical media.
+3. **Risk profile-based additional measures**
+   - If the employee has had **access to sensitive information** (IP, financial data, PII), network activity monitoring during the last working days may be considered.
+   - In negotiations or other risk situations, access rights can be **removed immediately** upon notification.
+4. **Coordination with HR and IT**
+   - Ensure that HR, IT, and the cyber team work together and schedule access removal correctly.
+   - Define responsibilities: who is responsible for removing access rights, returning devices, and documentation?
+
+<AnswerOptions>
+- **Not implemented or no information**: Employment termination does not include cybersecurity practices, or there is no information about them.
+- **Partially implemented**: There are some practices, but removing access rights or returning devices is not systematic.
+- **Mostly implemented**: In most cases, access rights are removed and devices are returned, but the process may not be applied consistently to all employees.
+- **Fully implemented**: The organization has a clear and consistent process where all access rights are removed, devices are returned, and a risk assessment is performed before employment ends.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The company's IT department removes access rights from all systems and ensures that departing employees return all company devices and credentials. The security team monitors the network activity of the highest-risk employees during their last working days.
+
+> **Water utility**
+System access rights are removed immediately when an employee resigns or their employment ends. The organization ensures that contractors also return all work tools and credentials before work ends.
+
+> **Power company**
+The energy company requires that the rights of all employees with access to systems and critical infrastructure be removed immediately. During negotiations, employees in the risk group lose their access rights before the actual termination date.
+
+### Additional information
+
+- **Ensure that departing personnel no longer have access to organizational assets.**
+- **Remove and revoke access rights to systems, devices, and data immediately when employment ends.**
+- **Collect back devices, ID cards, and company assets held by the employee.**
+- **Coordinate with HR and IT so that all actions are performed on time and responsible persons are identified.**
+- **Monitor the use of critical systems before the employee's departure if necessary.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Ensure that departing personnel no longer have access to assets, especially those with privileged access or access to financial information, PII, or IP assets. Create procedures to remove, revoke, or disable access to all organizational assets starting from the employee's termination date. Start by identifying all employee accounts (including all accounts the employee has with third-party service providers, such as company accounts at financial institutions), all types of elevated access rights, such as admin rights, all devices held by the employee, and all systems, data, and other assets to which the employee has access. Disable all accounts, remove access to all relevant assets, remove remote access, and collect the employee's devices, ID cards, credentials, paper copies of documents, company credit cards, etc. Coordinate with HR on the timing of events and who is responsible for what. If employees have privileged access or access to sensitive information, you may want to monitor their network activity to detect signs of data transfer.
+
+If an employee's employment ends, for example, as a result of negotiations, consider removing, revoking, or disabling access rights to all assets immediately upon notification of termination. Escort the employee out of the premises immediately after notification.
+
+Related practices:
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: WORKFORCE-1b, WORKFORCE-1d.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="workforce-2">Developing cybersecurity-focused workforce</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-2a">Personnel cybersecurity awareness is raised through various activities.</PracticeTitle>
+
+### Significance
+
+Promoting cybersecurity awareness is critical because:
+- **People are often the organization's biggest security risk.** Many data breaches and cyber attacks succeed due to human error or ignorance.
+- **Security training helps prevent attacks.** When personnel can identify, for example, email scams and other attack methods, the risk of cyber attacks decreases significantly.
+- **Increasing awareness supports compliance with legislation and standards.** For example, GDPR and the NIS2 Directive require organizations to understand and apply cybersecurity practices.
+- **People in special roles need tailored training.** Finance, IT, and HR personnel face different cyber risks than the rest of the organization, so training must be targeted.
+
+Assessment questions:
+- Does the organization have regular cybersecurity training for all personnel?
+- Does the organization offer special training for different roles (e.g., IT personnel, finance, customer service)?
+- Do awareness activities also target business partners and contractors?
+- Are diverse learning methods used, such as emails, online courses, briefings, simulations, and tests?
+- Is cybersecurity awareness developed continuously and training materials kept up to date?
+
+The organization should use diverse methods to develop awareness, such as:
+
+1. **General awareness activities for all personnel**
+   - Regular emails and newsletters on cybersecurity topics.
+   - Quarterly briefings and training sessions.
+   - Cybersecurity-focused online courses and tests.
+   - Security posters in the workplace and on the intranet.
+
+2. **Role-specific training and briefings**
+   - **For finance and customer service personnel**: Risks related to social engineering and fraud.
+   - **For IT personnel**: Cloud security, identity management, and remote connections.
+   - **For management**: Cybersecurity policies, regulatory requirements, and risk management.
+
+3. **Awareness activities for business partners and contractors**
+   - Guidance on handling personal data (PII).
+   - Presentation of standards and organizational security requirements.
+
+4. **Special measures and practical exercises**
+   - Simulated phishing exercises that test personnel's ability to identify scam messages.
+   - Exercises on event reporting and anomaly detection.
+
+<AnswerOptions>
+- **Not implemented or no information**: Personnel cybersecurity training does not exist or there is no information about it.
+- **Partially implemented**: There are some awareness activities, but they are sporadic or cover only part of the personnel.
+- **Mostly implemented**: Most employees participate in regular training, but there may be room for improvement, for example, in role-specific training or consideration of business partners.
+- **Fully implemented**: The organization has comprehensive and systematic cybersecurity training that includes general and role-specific training, tests and exercises, and regular updates.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The company organizes quarterly briefings for personnel covering email scams and security best practices. IT personnel receive additional training on industrial automation cybersecurity.
+
+> **Water utility**
+The water utility organization organizes regular cybersecurity training for system administrators and ensures that contractors also receive information about security practices.
+
+> **Power company**
+The energy company implements a comprehensive cybersecurity program that includes an intranet portal where security bulletins are shared, and mandatory training for personnel working in critical infrastructure.
+
+### Additional information
+
+- **Implement cybersecurity awareness activities** to improve personnel knowledge of cyber risks and organizational security requirements.
+- **Topics can be general or role-specific**, for example:
+  - Social engineering and phishing.
+  - Insider threat identification.
+  - Event and anomaly reporting.
+  - Secure use of cloud services and remote connections.
+- **Awareness activities can be organized for business partners**, especially on handling personal data and compliance with standards.
+- **Use diverse means**, such as email bulletins, online courses, exercises, and an intranet portal.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Implement cybersecurity awareness activities to improve personnel knowledge of cyber risks, cybersecurity-related laws and regulations that apply to the organization, and cybersecurity policies, procedures, and requirements. Topics can be general, covering all personnel (such as event reporting) or specifically for certain roles (such as social engineering risks affecting financial services personnel). All cybersecurity workers should be aware of the cybersecurity program strategy (PROGRAM-1a), so briefings on it should be included in awareness activities. It may be necessary to communicate awareness with business partners, for example, on how PII is handled and how compliance with standards is achieved.
+Cybersecurity awareness activities may include cybersecurity-focused emails from recognized experts, quarterly refresher sessions, lunch and learn sessions, posters, and a dedicated intranet site publishing news on current cybersecurity events and relevant articles, memos, alerts, etc.
+
+Examples of awareness topics include: email scams and other social engineering tactics, identifying insider threat indicators, identifying events and anomalies, data classification and handling, acceptable use practices, identity management, including cloud accounts, remote connections, and mobile device security.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: WORKFORCE-2a, WORKFORCE-2b, WORKFORCE-2c, WORKFORCE-2d, WORKFORCE-2e, WORKFORCE-2f, WORKFORCE-2g.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="workforce-3">Human resources processes</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-3a">Cybersecurity responsibilities related to the function have been identified.</PracticeTitle>
+
+### Significance
+
+Identifying cybersecurity responsibilities is critical because:
+- **Clear roles reduce ambiguity.** When responsibilities are divided, cybersecurity activities can be implemented more efficiently.
+- **Cybersecurity is not just the IT department's task.** HR, procurement, and operational personnel are also key to maintaining security.
+- **Risk management improves.** Security-related tasks can be distributed across different levels of the organization, ensuring that risks are identified and managed in a timely manner.
+- **Third-party management becomes easier.** When responsibilities are defined, it can be ensured that outsourced service providers also follow the organization's security practices.
+
+Assessment questions:
+- Has the organization defined individuals or teams responsible for cybersecurity?
+- Are cybersecurity responsibilities defined for people other than IT department employees, such as HR, procurement, and operational personnel?
+- Is it clearly defined how third parties and contractors participate in cybersecurity-related tasks?
+- Are frameworks such as **NICE Cybersecurity Workforce Framework** (NIST SP 800-181) used to describe and define responsibilities?
+- Are responsibility definitions documented and communicated within the organization?
+
+The organization should identify and define cybersecurity responsibilities for different roles:
+
+1. **Traditional cybersecurity roles**
+   - **Chief Information Security Officer (CISO, or equivalent)**: Responsible for cybersecurity strategy and risk management.
+   - **Network administrator**: Ensures network security and monitors traffic.
+   - **Security administrator**: Manages security policies and technical protection solutions.
+
+2. **Operational and support roles**
+   - **Operating engineers and production personnel**: Follow security practices and report deviations.
+   - **Human resources**: Responsible for security training and background checks.
+   - **Procurement department**: Evaluates supplier cybersecurity practices before contracts.
+
+3. **Third-party and contractor roles**
+   - Service providers and contractors may have access to organizational systems, so their cybersecurity practices must be defined and monitored.
+
+4. **Utilizing frameworks**
+   - **NICE Cybersecurity Workforce Framework (NIST SP 800-181)** can help define roles and responsibilities.
+
+<AnswerOptions>
+- **Not implemented or no information**: Cybersecurity responsibilities have not been defined, or there is no information about them.
+- **Partially implemented**: Some responsibilities have been identified, but they do not cover all organizational functions.
+- **Mostly implemented**: Most key roles and responsibilities are defined, but they are not comprehensively documented or do not cover the entire organization.
+- **Fully implemented**: Cybersecurity responsibilities are comprehensively identified, documented, and communicated within the organization. Responsibilities cover all organizational functions, including third parties.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The food company has defined clear cybersecurity roles to secure production processes and the supply chain. The IT department is responsible for technical security, while the procurement department evaluates supplier security practices.
+
+> **Water utility**
+The water utility organization has identified security responsibilities related to system monitoring and maintenance. Operating engineers and technical personnel receive special training on system protection.
+
+> **Power company**
+At the energy company, cybersecurity responsibilities are distributed across different levels. The management team is responsible for strategic decision-making, the IT team for technical implementation, and field personnel for operational security measures. External service providers also follow the organization's security practices.
+
+### Additional information
+
+- **Define roles and activities needed to meet the function's cybersecurity program needs.**
+- **Note that cybersecurity responsibilities are not limited to the IT department.** HR, procurement, and operational personnel are also involved in security.
+- **Consider using frameworks such as NICE Cybersecurity Workforce Framework (NIST SP 800-181) to identify and describe responsibilities.**
+- **Ensure that third-party roles and responsibilities are defined and monitored.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Define roles and activities needed to meet the function's cybersecurity program needs. This includes typical cybersecurity roles, such as security administrator, network administrator, and chief information security officer (or equivalent role), and the activities assigned to them. Cybersecurity responsibilities are not limited to traditional cybersecurity or IT roles. For example, operating engineers, HR specialists, and procurement specialists typically have cybersecurity-related tasks, and these tasks may also be performed by third parties. It may be useful to consider using best practices or frameworks, such as NICE Cybersecurity Workforce Framework (NIST Special Publication 800-181), to help identify and describe fundamental cybersecurity responsibilities.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: WORKFORCE-3a, WORKFORCE-3d, WORKFORCE-3e.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="workforce-3b">Cybersecurity responsibilities have been assigned to named individuals.</PracticeTitle>
+
+### Significance
+
+Assigning cybersecurity responsibilities to named individuals is critical because:
+- **Responsible persons ensure that security measures are implemented.** Without clear responsibilities, cybersecurity practices may remain unimplemented or vague.
+- **Organizational security remains under control.** When responsible persons are known, cybersecurity measures can be developed and maintained consistently.
+- **Distributing responsibilities ensures efficiency.** All security responsibility does not need to be concentrated in the IT department but can be distributed to different business units.
+- **Personnel awareness of cybersecurity increases.** When employees are assigned responsibilities, they better understand the importance of cybersecurity in their own work.
+
+Assessment questions:
+- Has the organization defined and documented who is responsible for cybersecurity-related tasks?
+- Are responsibilities assigned to full-time cybersecurity personnel or as part of other employees' tasks?
+- Is a responsible person defined for each cybersecurity program activity?
+- Have responsible persons been provided with the necessary training and resources to perform their tasks?
+- Has the responsibility distribution been clearly communicated within the organization?
+
+The organization should define and assign the following cybersecurity responsibilities:
+
+1. **Full-time cybersecurity tasks**
+   - **Chief Information Security Officer (CISO or equivalent)**: Responsible for the organization's cybersecurity strategy and policy.
+   - **Network and system administrators**: Responsible for traffic and IT system security.
+   - **Security analysts**: Monitor security deviations and analyze threats.
+
+2. **Partial cybersecurity responsibilities for other employees**
+   - **Human resources (HR)**: Responsible for new employee security training and background checks.
+   - **Procurement department**: Ensures that suppliers and contractors meet cybersecurity requirements.
+   - **Operating engineers and operational personnel**: Follow security practices and report suspicious events.
+
+3. **Training and resourcing responsible persons**
+   - Each responsible person must be provided with training and tools to perform cybersecurity tasks.
+   - The organization must ensure that responsible persons have sufficient time and resources to perform their tasks.
+
+4. **Documentation and communication**
+   - All cybersecurity responsibilities must be documented and clearly communicated within the organization.
+   - Personnel must know whom to report cybersecurity-related issues and threats to.
+
+<AnswerOptions>
+- **Not implemented or no information**: Cybersecurity responsibilities have not been assigned to specific individuals, or there is no information about them.
+- **Partially implemented**: Some responsible persons have been named, but responsibilities do not cover all cybersecurity areas or are not clearly defined.
+- **Mostly implemented**: Most cybersecurity responsibilities are assigned, but roles are not fully documented or the organization has not ensured that all responsible persons have sufficient resources.
+- **Fully implemented**: All cybersecurity tasks are assigned to specific individuals, documented and communicated within the organization. Responsible persons have sufficient training and resources to perform their tasks.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The company has a chief information security officer responsible for overall security, and security officers on production lines who ensure that employees follow security practices.
+
+> **Water utility**
+The water utility organization has assigned operating engineers responsibility for system security, and the chief information security officer coordinates their work to ensure systems are protected.
+
+> **Power company**
+At the energy company, the IT department manages technical security, but unit managers also have their own security responsibilities. Each critical unit has a designated security officer who reports risks and serves as the primary contact.
+
+### Additional information
+
+- **Assign individualized cybersecurity responsibilities to personnel.**
+- **Cybersecurity responsibilities can be full-time tasks or only part of an employee's broader role.**
+- **Ensure that a responsible person is named for each cybersecurity-related activity.**
+- **Provide responsible persons with training and resources to perform their tasks.**
+- **Document and communicate responsibilities clearly within the organization.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Assign to personnel the cybersecurity responsibilities identified in WORKFORCE-3a. These can be full-time tasks or just a small set of responsibilities given to a person whose primary role is in a different area. The main goal is to ensure that a specific person (or persons) is responsible for all activities needed to implement the function's cybersecurity program.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: WORKFORCE-3b, WORKFORCE-3c, WORKFORCE-3f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="workforce-4">Training and cybersecurity awareness enhancement</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-4a">Cybersecurity training is available to employees who have been assigned cybersecurity responsibilities.</PracticeTitle>
+
+### Significance
+
+Cybersecurity training is critical because:
+- **Well-trained employees reduce cyber risks.** Without training, security responsibilities can remain unclear and risks may not be detected in time.
+- **Cybersecurity is not just the IT department's task.** Operating engineers, HR, and procurement face their own cybersecurity challenges for which they must receive training.
+- **Organizational security practices remain up to date.** Cybersecurity is constantly evolving, and regular training helps the organization stay current with the latest threats and protection methods.
+- **Certified employees can strengthen organizational credibility.** Certifications such as CISSP, CISM, or CEH can improve the organization's cybersecurity expertise and competitiveness.
+
+Assessment questions:
+- Does the organization have a systematic training program for employees responsible for cybersecurity?
+- Is cybersecurity training funded from the organization's budget?
+- Is training available only to IT personnel or also to others, such as operating engineers, HR, and procurement?
+- Is training available both internally and externally (e.g., conferences, vendor-specific training, certification programs)?
+- Is completion of training required before accepting responsible tasks?
+
+The organization should ensure that the following training practices are in place:
+
+1. **Comprehensive training for all those responsible for cybersecurity tasks**
+   - Each employee with cybersecurity responsibility receives training appropriate to their role.
+   - Training covers basics (e.g., security policies, risk management) and specialized topics (e.g., OT security, cloud security).
+
+2. **Training funding and organization**
+   - Cybersecurity training is budgeted and can be funded either in advance or on a performance basis.
+   - The organization organizes internal training and utilizes external training services.
+
+3. **Diverse learning opportunities**
+   - **Internal training**: Tool use training, security exercises, and simulations.
+   - **External training**: Conferences, certification programs, and vendor-specific training.
+   - **Self-study and online courses**: Opportunity to complete courses online on one's own schedule.
+
+4. **Targeting training to different roles**
+   - **IT personnel**: Network security, security architecture, attack defense.
+   - **Operating engineers and production personnel**: OT system security, SCADA security.
+   - **Procurement department**: Supplier security practices and risk assessment.
+   - **HR and personnel management**: Employee security responsibilities and data protection legislation.
+
+5. **Monitoring and evaluation**
+   - The organization monitors training completion and evaluates training effectiveness.
+   - Responsible persons should report how training has improved their ability to perform their tasks.
+
+<AnswerOptions>
+- **Not implemented or no information**: Cybersecurity training has not been organized for responsible persons, or there is no information about it.
+- **Partially implemented**: Some training is available, but it does not cover all people working in cybersecurity tasks.
+- **Mostly implemented**: Most responsible persons receive training, but training coverage and timeliness can be improved.
+- **Fully implemented**: The organization has a comprehensive and regular training program that includes role-targeted training, external and internal learning opportunities, and training monitoring.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The company organizes security certifications for IT personnel and production process security training for operating engineers. The procurement department receives training on supplier security requirements.
+
+> **Transport company**
+The logistics company organizes security simulations for customer service personnel, focusing especially on identifying fraud attempts and phishing.
+
+> **Water utility**
+The water utility organization provides specialized cybersecurity training for system administrators and ensures that contractors also receive necessary security training.
+
+> **Power company**
+The energy company ensures that all personnel with responsibilities related to critical infrastructure have up-to-date security training and offers personnel opportunities to participate in international cybersecurity conferences.
+
+### Additional information
+
+- **Ensure that personnel in responsible areas have the necessary knowledge and skills to perform their tasks.**
+- **Training can be organized internally or through external training.**
+- **Cybersecurity responsibilities are not limited to IT personnel but also apply to, for example, operating engineers, HR, and procurement.**
+- **Training may include conferences, vendor-specific training, and certification programs.**
+- **In some cases, paying for external training and certifications may be contingent on successful completion of the training.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Ensure that personnel in the responsibility areas of WORKFORCE-3b have the necessary knowledge and skills to perform those responsibilities. Organize cybersecurity training internally or include funding in the cybersecurity program budget for personnel training services. If training is provided internally, it should relate to the activities defined in WORKFORCE-3a. Additionally, as noted in the WORKFORCE-3a guidance text, cybersecurity responsibilities are not limited to traditional cybersecurity or IT roles. For example, operating engineers, HR specialists, and procurement specialists typically have cybersecurity-related tasks. Cybersecurity-related tasks may also be performed by third parties.
+Training may include participation in conferences with deep-dive sessions, vendor-specific training on tools used, and certification programs. Payment for external training and certifications may only occur on a reimbursement basis after successful completion of the training.
+
+Related practices:
+
+- Input: Implementation of WORKFORCE-3b provides information that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of activities. The practices in this progression include: WORKFORCE-4a, WORKFORCE-4d, WORKFORCE-4f.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="workforce-4b">Cybersecurity knowledge, skills, and abilities requirements and any gaps have been identified for both current and future needs.</PracticeTitle>
+
+### Significance
+
+Identifying and developing cybersecurity competence is critical because:
+- **Without up-to-date knowledge, the organization may be exposed to risks.** Inadequate competence can lead to security breaches and poor risk management.
+- **Lack of proper cybersecurity skills can slow response to threats.** Skill gaps can prevent the organization from protecting IT and OT systems sufficiently.
+- **Understanding future needs helps prepare for changing threats.** Technologies and cyber threats are constantly evolving, so competence needs also change.
+- **Developing security competence can reduce dependence on external service providers.** Increasing internal competence can improve the organization's cybersecurity management in the long term.
+
+Assessment questions:
+- Does the organization have a systematic process for mapping cybersecurity competence?
+- Have current employees' knowledge and skills been assessed and documented?
+- Has the organization defined what security skills will be needed in the future?
+- Have competence gaps been identified, and how do they affect cybersecurity management?
+- Does the organization have a plan to fill competence gaps, for example, through training or recruitment?
+
+The organization should ensure that the following actions are in place:
+
+1. **Inventory of current skills**
+   - Prepare a **competence list** that maps and documents personnel's current cybersecurity skills.
+   - Identify what cybersecurity-related skills the organization already has available.
+
+2. **Identifying competence gaps**
+   - Compare personnel's current competence with the organization's cybersecurity responsibilities.
+   - Identify critical competence gaps and assess their impact on cybersecurity management.
+
+3. **Defining future competence needs**
+   - Examine the organization's evolving needs and technological changes (e.g., cloud services, OT system security, AI-based cyber threats).
+   - Anticipate what skills will be needed in the future and how they differ from current skills.
+
+4. **Plan to fill competence gaps**
+   - Determine how competence gaps can be addressed:
+     - **Through training and certifications** (e.g., CISSP, CISM, CEH, OT security training).
+     - **Through recruitment** to hire new cybersecurity specialists.
+     - **Through consulting and outsourcing solutions** if necessary competence cannot be developed internally.
+
+5. **Continuous monitoring and evaluation**
+   - The organization monitors and updates the competence map regularly to ensure that personnel skills develop and respond to changing cyber threats.
+
+<AnswerOptions>
+- **Not implemented or no information**: Cybersecurity competence has not been mapped, or there is no information about it.
+- **Partially implemented**: Some skill gaps have been identified, but competence mapping is not comprehensive or systematic.
+- **Mostly implemented**: Most cybersecurity-related competence needs have been identified, but a plan to fill gaps is not fully implemented.
+- **Fully implemented**: The organization has a comprehensive and continuously updated competence map that includes current and future competence needs and a plan to address gaps.
+</AnswerOptions>
+
+### Examples from different sectors
+
+> **Food company**
+The company prepares an annual cybersecurity competence map and ensures that production process IT personnel have sufficient OT security competence.
+
+> **Water utility**
+The water utility organization identifies system security competence gaps and organizes special training for operating engineers. Additionally, new cybersecurity specialists are recruited for critical tasks.
+
+> **Power company**
+The energy company regularly analyzes its cybersecurity competence and identifies a growing need for system security competence. The annual budget includes an allocation for cybersecurity certificates and external expert training.
+
+### Additional information
+
+- **To identify gaps, you can prepare a competence list** that maps and documents the organization's personnel's current skills.
+- **The skill list is compared with the organization's cybersecurity responsibilities** to identify what skills are missing.
+- **A competence gap can prevent the organization from acting appropriately in cyber risk management**, which can cause additional risks.
+- **After identifying competence needs, targeted training, recruitment, or outsourcing can be planned** to develop competence.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+To identify gaps, you can first prepare a competence list that maps and documents the organization's personnel's current skills. This inventory provides a snapshot of current capabilities and can be used to assess resource shortages and gaps against both current and future workforce needs.
+
+The skill list is compared with the function's identified cybersecurity responsibilities (WORKFORCE-3a) to identify skills the organization does not have. The resulting competence gap provides information about the organization's current and future competence needs. These skill gaps can prevent the organization from acting appropriately in cyber risk management and cause additional risk.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 3/17/2025_

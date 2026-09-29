@@ -1,0 +1,293 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Partner network risk management
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- Procurement specialist
+- Partner network supplier management representative
+- Partner network risk management specialist
+- Human resources representative
+- Legal department representative
+- IT and OT team specialist responsible for arranging logical and physical access
+</Roles>
+
+---
+<ObjectiveTitle name="third-parties-1">Partner network identification and prioritization</ObjectiveTitle>
+---
+
+<PracticeTitle name="third-parties-1a">Significant partner network IT dependencies and potential OT dependencies have been identified</PracticeTitle>
+
+### Significance
+
+Identifying partner network IT and OT dependencies is critical because:
+- **Business continuity depends on key services.** For example, IT service disruption due to partner issues can significantly impact business.
+- **Third-party cybersecurity affects the organization.** Poor security practices by subcontractors or service providers can lead to data breaches and other risks.
+- **Incident management becomes more effective.** When dependencies are identified and documented, the organization can respond more quickly and effectively to partner-related issues.
+- **Risk management transparency improves.** When IT and OT dependency management is in order, the organization can assess and manage risks proactively.
+
+Assessment questions:
+- Has the organization identified key IT and OT service providers it depends on?
+- Does identification include both internal and external partners that affect business continuity?
+- Has information related to IT and OT dependencies been collected, documented, and regularly updated?
+- Are partner network risks part of the organization's overall risk management plan?
+- Is dependency information available to those responsible for third-party risk management?
+
+### Dependencies to identify:
+
+**IT dependencies may include:**
+- Cloud service providers
+- IT infrastructure maintainers
+- Application and software suppliers
+- Data network and telecommunications providers
+- IT consulting and incident management services
+
+**OT dependencies may include:**
+- Automation system suppliers
+- Supervisory and control system (SCADA, DCS) maintainers
+- Networked device and IoT solution providers
+- Equipment suppliers whose spare parts and maintenance services the organization depends on
+
+<AnswerOptions>
+- **Not implemented or no information**: IT and OT dependencies have not been identified or documented.
+- **Partially implemented**: Some dependencies have been identified, but a comprehensive list or systematic documentation is missing.
+- **Mostly implemented**: Most IT and OT dependencies have been identified and documented, but update practices or risk management processes may be inadequate.
+- **Fully implemented**: All key IT and OT dependencies have been identified, documented, and regularly updated. Dependency information is available to those responsible for third-party risk management.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company has identified critical dependencies on IT service providers, such as ERP system and production control system maintainers. Additionally, spare parts and automation system maintenance services are key OT dependencies with an established risk management process.
+
+> **Water utility**
+The water utility organization has identified key system and telecommunications service suppliers whose availability is critical for water distribution continuity. The organization also proactively manages dependencies on spare parts and maintenance services.
+
+> **Power company**
+The energy company has identified and documented dependencies on IT service providers, critical OT systems, and spare parts suppliers. This information is used in risk management and as part of business continuity planning.
+
+### Additional information
+
+- **Identify and maintain basic information about internal and external parties** needed for continuous function performance.
+- **Supplier dependencies may include:**
+  - Information technology service providers
+  - Incident management consultants
+  - Equipment suppliers
+- **Third parties may support the organization's IT or OT equipment and operational activities.**
+- **Collected information should be maintained in a format available to those responsible for third-party risk management.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Identify and maintain basic information about internal and external parties that may be needed for continuous function performance. Supplier dependencies may include, for example, information technology service providers, incident management consultants, and equipment suppliers. Third parties may support the organization's IT or OT equipment and operational activities. Collected information should be maintained in a format available to those responsible for third-party risk management.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: THIRD-PARTIES-1a, THIRD-PARTIES-1b, THIRD-PARTIES-1c, THIRD-PARTIES-1d, THIRD-PARTIES-1e, THIRD-PARTIES-1f.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="third-parties-1b">Partner network actors/service providers with access, administrative rights, or maintenance responsibility, or who otherwise access function-critical devices, software, or data repositories, have been identified</PracticeTitle>
+
+### Significance
+
+Identifying and managing third-party administrative rights is critical because:
+- **Access rights can be a security risk.** Partner network actors may access sensitive information, which can increase security risks.
+- **Attackers can use partners as a pathway to organizational systems.** For example, subcontractor data breaches can affect the organization if access rights are not sufficiently restricted.
+- **IT and OT system management and maintenance are part of organizational cyber resilience.** If partner network actors do not comply with security requirements, the organization may be exposed to risks.
+- **Data repository management supports business continuity.** Knowing who manages key devices and software enables better preparedness for disruptions.
+
+Assessment questions:
+- Does the organization have an up-to-date list of internal and external actors with access to important IT and OT systems?
+- Has it been identified what information, devices, or software each actor can use, manage, or maintain?
+- Has the organization assessed how extensive partner access rights are and how they are monitored?
+- Are there agreements or procedures to manage third-party access rights and related risks?
+- Is it known which third parties manage IT or OT devices, data repositories, or software?
+
+### Actors and service providers to identify
+
+The organization should maintain a **list** of the following actors:
+
+- **IT service providers and subcontractors** with access to company IT infrastructure.
+- **Cloud service providers** that process or store organizational data.
+- **Software maintainers and developers** who can access organizational systems.
+- **OT system suppliers** that manage or maintain SCADA, automation, and IoT systems.
+- **Data repository managers**, such as data centers, archival services, and outsourced IT solutions.
+- **Internal parties**, such as IT department or other units with special administrative rights.
+
+<AnswerOptions>
+- **Not implemented or no information**: The organization has no list of partner network actors with administrative rights or access to critical systems.
+- **Partially implemented**: Some actors and service providers have been identified, but comprehensive documentation is missing or not up to date.
+- **Mostly implemented**: Most key partners have been identified and documented, but administrative rights or access practices have not been fully assessed or monitored.
+- **Fully implemented**: All relevant partner network actors have been identified, documented, and access rights are managed and monitored regularly.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company has identified IT service providers that maintain production management systems and OT suppliers responsible for automation system operation. Access rights are restricted and documented.
+
+> **Water utility**
+The water utility organization has mapped service providers related to system management and data centers where operational water utility data is stored. The list is part of the risk management process.
+
+> **Power company**
+The energy company maintains an up-to-date list of service providers with access to critical control systems, such as power distribution management. Maintenance agreements include security requirements and access restrictions.
+
+### Additional information
+
+- **Create and maintain a list** that includes basic information about important internal and external parties with access, management, or possession of IT or OT devices or data repositories.
+- **For some third parties, such as the company IT department, these important relationships may be entirely internal.**
+- **Collected information should be maintained in a format available to those responsible for third-party risk management.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Create and maintain a list that includes basic information about important internal and external parties with access, management, or possession of IT, OT devices, or data repositories. For some third parties, such as the company IT department, these important relationships may be entirely internal.
+
+Related practices:
+
+- Input: Implementation of ASSET-1a and ASSET-2a provides information that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: THIRD-PARTIES-1a, THIRD-PARTIES-1b, THIRD-PARTIES-1c, THIRD-PARTIES-1d, THIRD-PARTIES-1e, THIRD-PARTIES-1f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="third-parties-2">Partner network risk management</ObjectiveTitle>
+---
+
+<PracticeTitle name="third-parties-2a">Supplier and other partner network actor selection is influenced by assessment of their cybersecurity capabilities.</PracticeTitle>
+
+### Significance
+
+Assessing supplier cybersecurity is critical because:
+- **Third-party vulnerabilities can directly affect the organization.** Many cyberattacks target subcontractors and suppliers through whom attackers gain access to larger targets.
+- **Defining security requirements reduces risks.** When suppliers are required to maintain a certain cybersecurity level, the organization ensures cooperation partners meet minimum requirements.
+- **Previous cyber incidents can indicate supplier cybersecurity practices.** If a partner has previously experienced significant data breaches, this may be a warning sign.
+- **Protecting critical infrastructure requires access management.** When third-party personnel have access to organizational systems, their background should be verified.
+- **Clear reporting requirements improve response capability.** If a supplier experiences a security breach, the organization can respond quickly if notification is defined in the contract.
+
+Assessment questions:
+- Is supplier and partner cybersecurity part of the organization's selection criteria?
+- Are there security requirements that suppliers must meet before contract signing?
+- Are supplier previous cybersecurity incidents and risk management practices assessed?
+- Does the organization conduct background checks on third-party personnel accessing critical systems?
+- Are there requirements for reporting security breaches and cybersecurity incidents?
+
+The organization should consider the following when assessing supplier cybersecurity capabilities:
+
+**Cybersecurity management level:**
+  - Suppliers should have security certifications, such as ISO 27001, NIST CSF, or equivalent management system.
+**Cyber incident assessment:**
+  - Supplier previous cyberattacks and their management are considered in the selection process.
+**Personnel background checks:**
+  - Security clearances may be conducted for third-party personnel accessing critical systems.
+**Security breach notification:**
+  - Contracts may include obligation to notify the organization of security breaches and other incidents.
+
+<AnswerOptions>
+- **Not implemented or no information**: Supplier cybersecurity capabilities are not assessed as part of the selection process.
+- **Partially implemented**: Some cybersecurity requirements are defined, but assessment is not systematic or comprehensive.
+- **Mostly implemented**: Cybersecurity requirements are set for most suppliers, and previous security breaches are considered, but practical implementation may still need development.
+- **Fully implemented**: Clear cybersecurity requirements are set for all suppliers, previous cyber incidents are assessed, background checks are conducted when necessary, and security breach reporting is contractually defined.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The food industry company assesses cybersecurity of IT system and logistics suppliers as part of the selection process. Suppliers are required to have ISO 27001 certification and report potential security breaches.
+
+> **Water utility**
+The water utility organization requires system suppliers to meet cybersecurity requirements and conduct security clearances for personnel accessing critical systems.
+
+> **Power company**
+The energy company assesses cybersecurity capability of every critical system supplier before contract signing. Requirements include maintaining security certifications, background checks, and obligation to report security breaches within 24 hours.
+
+### Additional information
+
+**Cybersecurity requirements for suppliers and other third parties may include:**
+  - Maintaining a certain cybersecurity management implementation level (e.g., ISO 27001, NIST CSF).
+  - Assessment of third-party previous cyber incidents.
+  - Background checks for personnel accessing critical assets.
+  - Requirements for reporting security breaches and other cybersecurity incidents.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Cybersecurity requirements for suppliers and other third parties may include, for example, maintaining a certain cybersecurity management implementation level, assessment of third-party previous cyber incidents, background checks for personnel accessing critical assets, and requirements for reporting security breaches and other cybersecurity incidents.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: THIRD-PARTIES-2a, THIRD-PARTIES-2d.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="third-parties-2b">Product and service selection is influenced by assessment of their cyber capabilities.</PracticeTitle>
+
+### Significance
+
+Assessing product and service cyber capabilities is critical because:
+- **Weak cybersecurity can expose the organization to attacks.** Many products and services contain components that attackers can target for data breaches.
+- **The organization may become a security breach target through subcontractors.** If service provider cybersecurity is not at an adequate level, this can pose a significant risk.
+- **Security settings can directly affect security.** If unnecessary or risky functions cannot be removed from products, they may remain unexploited or create security gaps.
+- **Service terms of use may contain security-weakening points.** If terms of use allow, for example, data sharing with third parties, this may pose a risk to the organization.
+
+Assessment questions:
+- Has the organization defined cybersecurity requirements for procured products and services?
+- Has product and service security been assessed before deployment?
+- Does assessment include information about what components are used in the product and how they may affect security?
+- Can security-weakening or unnecessary functions be removed from products?
+- Have service terms of use been verified and do they meet cybersecurity requirements?
+
+### Product and service cybersecurity requirements
+
+The organization should consider the following in product and service selection:
+
+- **Removable functions:**
+  - Can unnecessary or security-weakening features be disabled?
+- **Component transparency:**
+  - Is it known what software and hardware components have been used in the product?
+  - Does the product include third-party software or open-source components whose security has not been assessed?
+- **Service terms of use:**
+  - Do terms of use contain clear cybersecurity requirements, such as data protection, access management, and potential security breach notification?
+  - Is it defined how the service provider is responsible for cybersecurity and how security incidents are responded to?
+
+<AnswerOptions>
+- **Not implemented or no information**: Product and service cyber capabilities are not assessed before procurement.
+- **Partially implemented**: Some cybersecurity requirements are defined for products and services, but their assessment is not systematic or comprehensive.
+- **Mostly implemented**: Most procured products and services are assessed from a cybersecurity perspective, but practical implementation may still need development.
+- **Fully implemented**: All procured products and services undergo systematic cybersecurity assessment that considers potential security gaps, component transparency, and terms of use requirements.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company procures production control systems whose cybersecurity is assessed before deployment. Product security is ensured by analyzing their components and removing unnecessary network connections.
+
+> **Water utility**
+The water utility organization ensures that components procured for critical monitoring systems meet cybersecurity standards. Control system component security is analyzed before installation.
+
+> **Power company**
+The energy company requires all procured SCADA and automation systems to meet international security standards and that terms of use include clear security requirements.
+
+### Additional information
+
+**Cybersecurity requirements for products and services may include:**
+  - Ability to disable certain product functions.
+  - Clear understanding of components used in the product.
+  - Service terms of use that meet cybersecurity requirements.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Cybersecurity requirements for products and services may include, for example, ability to disable certain product functions, clear understanding of components used in the product, and service terms of use that meet cybersecurity requirements.
+
+Related practices:
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: THIRD-PARTIES-2b, THIRD-PARTIES-2i, THIRD-PARTIES-2j, THIRD-PARTIES-2k, THIRD-PARTIES-2l, THIRD-PARTIES-2m.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 3/17/2025_

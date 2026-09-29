@@ -1,0 +1,6 @@
+{
+  "email_invalid": "Please enter a valid email address.",
+  "phone_invalid": "Phone number may only contain numbers and spaces.",
+  "business_id_invalid": "Business ID must be in the format 1234567-8.",
+  "economic_area_required": "Economic area is required."
+}

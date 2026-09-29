@@ -1,0 +1,20 @@
+[
+  {
+    "id": "roboai",
+    "name": "Kyberturvallisuuden arviointimalli",
+    "version": "2.1.0",
+    "author": "Kyberturvallisuuskeskus & RoboAI Cyberlab",
+    "practices": 66,
+    "capabilities": {
+      "objectiveMappingBadge": true,
+      "traficomBadge": false,
+      "compactAnswerLayout": false,
+      "practiceMeta": true
+    },
+    "description": {
+      "fi": "Kyberturvallisuuden arviointimalli perustuu Kybermittarin 1. tason käytäntöihin. RoboAI Cyberlab on laajentanut mallin ohjeita. Arviointimalli sisältää perustason käytäntöjä ja luonteeltaan tilannekohtaisesti suunniteltu ja toteutettu toiminta riittää käytäntöjen täyttämiseen.",
+      "en": "The Cybersecurity Assessment Model is based on the Level 1 practices of Kybermittari (Cybersecurity Assessment Tool). RoboAI Cyberlab has expanded the model's guidance. The assessment model includes basic-level practices, and situational planning and implementation is sufficient to meet the practices.",
+      "sv": "Cybersäkerhetsbedömningsmodellen baseras på nivå 1-praxis i Kybermittari (Cybersäkerhetsbedömningsverktyg). RoboAI Cyberlab har utökat modellens vägledning. Bedömningsmodellen inkluderar grundnivåpraxis, och situationsbaserad planering och implementering är tillräcklig för att uppfylla praxisen."
+    }
+  }
+]

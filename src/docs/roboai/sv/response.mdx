@@ -1,0 +1,498 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Incident- och störningshantering, affärskontinuitet
+
+<Roles>
+- Cybersäkerhetsledning
+- IT-ledning
+- OT-ledning
+- Cybersäkerhetsoperationscenter (SOC) ledning
+- Incidenthanteringsspecialist
+- Affärskontinuitetsspecialist
+- Fastighetsförvaltningsrepresentant
+</Roles>
+
+---
+<ObjectiveTitle name="response-1">Händelseövervakning</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-1a">Upptäckta cyberhändelser rapporteras till fördefinierade personer eller rollinnehavare och dokumenteras.</PracticeTitle>
+
+### Betydelse
+
+Cyberhändelserapportering och dokumentation är kritiska för organisationens cybersäkerhet. Systematisk rapportering säkerställer att:
+- Avvikelser upptäcks och hanteras i tid.
+- Ledning och specialister får information om säkerhetsbrott.
+- Organisationen kan analysera händelsebakgrunder och förhindra liknande fall i framtiden.
+- Myndigheter och intressenter kan informeras korrekt om det krävs enligt lag eller kontrakt.
+
+Bedömningsfrågor:
+- Har organisationen tydliga riktlinjer för cyberhändelserapportering?
+- Har det definierats vem som tar emot rapporter och hur information lagras?
+- Hur säkerställs konsekvens i händelsedokumentation?
+- Sker rapportering automatiskt eller kräver det manuell anmälan?
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Ingen process eller ansvariga personer för cyberhändelserapportering finns, eller uppmärksamhet har inte ägnats åt detta.
+- **Delvis implementerat**: Vissa cyberhändelser rapporteras, men processen täcker inte alla fall, ansvariga personer är inte tydligt definierade, eller dokumentation är inkonsekvent.
+- **Mestadels implementerat**: Cyberhändelserapportering är etablerad, men det kan fortfarande finnas några luckor i metoderna (t.ex. rapportering är inte helt omfattande eller dokumentation görs inte alltid systematiskt).
+- **Fullt implementerat**: Alla cyberhändelser rapporteras till fördefinierade personer eller rollinnehavare och dokumenteras systematiskt fall för fall.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget använder ett centraliserat säkerhetsinformations- och händelsehanteringssystem (SIEM) för automatisk cyberhändelseövervakning. Alla säkerhetslarm dirigeras till IT-säkerhetsteamet och händelser dokumenteras för analys.
+
+> **Logistikföretag**
+Logistikföretaget har definierat en operativ modell där misstänkta inloggningsförsök eller obehöriga ändringar av ruttinformation utlöser larm till säkerhetsteamet och fallet registreras för analys.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationen använder SCADA-systemloggar för att upptäcka cyberstörningar. Kritiska avvikelser registreras och rapporteras till informationssäkerhetschefen och händelser dokumenteras för revisioner.
+
+> **Elbolag**
+Energibolaget har implementerat ett cybersäkerhetsoperationscenter (SOC) som övervakar och analyserar cyberavvikelser i realtid. Händelser dokumenteras automatiskt och rapporteras till utsedda ansvariga personer.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Etablera en kontaktpunkt för rapportering av upptäckta eller misstänkta cybersäkerhetshändelser, till exempel en helpdesk. Kontaktinformationen för denna person, roll eller grupp bör kommuniceras till alla funktionsintressenter. Kontaktpersonen, rollen eller gruppen måste vara bekant med cybersäkerhetsmetoder och frågor och kunna noggrant dokumentera rapporterad händelseinformation och potentiellt även utföra grundläggande felsökning. Alternativt eller dessutom kan händelser rapporteras genom ett internt system, såsom en virtuell helpdesk på intranätet.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av flera metodprogressioner. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av aktiviteter. Metoderna i den första progressionen inkluderar: RESPONSE-1a, RESPONSE-1b, RESPONSE-1c, RESPONSE-1f. Metoderna i den andra progressionen inkluderar: RESPONSE-1a, RESPONSE-2f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-2">Händelseanalys och incidentbestämning</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-2a">Kriterier har utvecklats för att bestämma cyberincidenter.</PracticeTitle>
+
+### Betydelse
+
+Kriterier utvecklade för att bestämma cyberincidenter säkerställer att:
+- Avvikelser identifieras i tid och deras kritikalitet bedöms korrekt.
+- Organisationen kan reagera i tid och resurser allokeras effektivt.
+- Händelser hanteras konsekvent, vilket minskar mänskliga fel.
+- Rapportering till myndigheter och intressenter sker kontrollerat och i enlighet med krav.
+
+Bedömningsfrågor:
+- Har organisationen fördefinierade kriterier för att identifiera cyberincidenter?
+- Baseras kriterierna på organisationens riskbedömningar och verksamhetsmiljö?
+- Tillämpas kriterierna konsekvent över olika händelsebedömningar?
+- Hur dokumenteras kriterierna och uppdateras de regelbundet?
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Organisationen har inga dokumenterade kriterier för att bestämma cyberincidenter, eller det finns ingen information om det.
+- **Delvis implementerat**: Vissa kriterier har definierats, men de täcker inte alla cyberincidenter eller tillämpas inte konsekvent.
+- **Mestadels implementerat**: Omfattande kriterier finns för att bestämma cyberincidenter, men det finns fortfarande utvecklingsbehov i implementering eller underhåll.
+- **Fullt implementerat**: Kriterierna är dokumenterade, uppdaterade och tillämpas systematiskt i alla cyberhändelsebedömningar.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget har definierat kriterier för säkerhetsavvikelser, såsom misstänkta systemändringar och dataläckage. Avvikelser klassificeras baserat på påverkan och de mest kritiska fallen eskaleras omedelbart.
+
+> **Logistikföretag**
+Logistikföretaget har kriterier enligt vilka cyberhändelser, såsom GPS-signalstörning eller obehörig åtkomst till transportsystem, definieras som avvikelser och registreras för analys.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationen använder SCADA-systemavvikelsedata och utnyttjar fördefinierade kriterier för att identifiera störningar i elektroniska kontrollsystem.
+
+> **Elbolag**
+Energibolaget har tydligt definierade cyberincidentkriterier enligt vilka nätverksinfrastrukturattacker eller misstänkta anslutningsförfrågningar klassificeras och analyseras i realtid av SOC-teamet.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Cybersäkerhetsincidentdeklarationskriterier används för att bestämma om en händelse ska behandlas som en incident och för att bestämma händelsens allvarlighetsgrad. En klassificeringsskala, såsom hög, medel och låg, kan hjälpa till att kommunicera incidentens allvarlighetsgrad till intressenter och hjälpa till att prioritera responsåtgärder.
+
+Incidentdeklarationskriterier bör utvecklas baserat på erfarenhet och kan delvis härledas från riskbedömningskriterier (såsom påverkanströsklar) utvecklade som en del av riskhanteringsaktiviteter. Kriterier kan baseras på händelsetyp (såsom obehörig åtkomst), påverkansnivå (t.ex. lokal vs. organisationsomfattande), påverkanstyp (interna system vs. kritiska externa tjänster), efterlevnadsförpliktelser (endast intern vs. rapporterbar händelse), eller genomsnittlig återställningstid. För vissa händelser kan tiden mellan händelsedetektering och incidentdeklaration vara omedelbar och kräva lite ytterligare analys. I andra fall kan organisationen vilja utnyttja tidigare utvecklade kriterier för att vägleda incidentbestämning.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: RESPONSE-2a, RESPONSE-2c, RESPONSE-2e, RESPONSE-2h.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-2b">Cyberhändelser analyseras för att stödja bestämning av möjliga cyberincidenter.</PracticeTitle>
+
+### Betydelse
+
+Systematisk cyberhändelseanalys möjliggör:
+- Tidig identifiering av avvikelser och snabb respons.
+- Förbättring av system- och processskydd baserat på händelseanalys.
+- Konsekvent datainsamling och utnyttjande i beslutsfattande.
+- Identifiering av bredare cyberhot, vilket förbättrar organisationens resiliens.
+
+Bedömningsfrågor:
+- Har organisationen metoder och verktyg för händelseanalys?
+- Baseras analysen på fördefinierade incidentkriterier?
+- Identifierar analysen återkommande eller dolda hot?
+- Hur utnyttjas analysresultat i beslutsfattande och riskhantering?
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Organisationen har ingen systematisk analysmetod för cyberhändelser, eller det finns ingen information om det.
+- **Delvis implementerat**: Vissa händelser analyseras, men analysen är inte omfattande eller dess resultat utnyttjas inte effektivt för incidentbestämning.
+- **Mestadels implementerat**: Cyberhändelser analyseras systematiskt, men det finns fortfarande utrymme för förbättring i analysens omfattning eller utnyttjande.
+- **Fullt implementerat**: Alla cyberhändelser analyseras omfattande enligt fördefinierade kriterier och analysresultat stöder incidentbestämning och riskhantering.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget använder ett automatiskt logganalyssystem som söker efter onormala händelser i produktionsutrustningens trafik och larmar säkerhetsteamet vid behov.
+
+> **Elbolag**
+Energibolaget använder ett cyberstörningsanalyssystem som kombinerar nätverksövervakningsdata och säkerhetsloggdata för automatisk analys, vilket möjliggör identifiering och förebyggande av kritiska avvikelser.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Cybersäkerhetshändelseanalys hjälper organisationen att samla ytterligare information för att lösa händelser och hjälpa till med incidentdeklaration, hantering och respons. Analys kan bestå av händelseklassificering, korrelation och prioritering. Genom analys bestämmer organisationen händelsetyp och omfattning (t.ex. fysisk vs. teknisk), om händelsen korrelerar med andra händelser (för att bestämma om de är symtom på ett större problem eller fara), och i vilken ordning händelser bör hanteras eller tillhandahållas för incidentbestämning, hantering och respons. Analys hjälper också organisationen att bestämma om händelsen ska överföras till organisationspersonal eller extern personal (utanför incidenthanteringspersonal) för vidare analys och lösning.
+
+Relaterade metoder:
+
+- Input: Implementering av RESPONSE-1a ger input som kan vara användbar för att implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: RESPONSE-2b, RESPONSE-2d, RESPONSE-2f, RESPONSE-2i.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-3">Respons på händelser och incidenter</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-3a">Lämplig personal har identifierats och tilldelats roller för att svara på cyberincidenter, åtminstone fall för fall.</PracticeTitle>
+
+### Betydelse
+
+Att identifiera tydligt namngivna personer och roller är kritiskt eftersom:
+- Det säkerställer snabb och effektiv respons på cyberincidenter.
+- Det minskar osäkerhet och förseningar i kritiska situationer.
+- Det möjliggör bättre samarbete mellan olika team och intressenter.
+- Det stöder organisationens resiliens och kontinuitetshantering.
+
+Bedömningsfrågor:
+- Har organisationen utsett ansvariga personer för cyberincidenthantering?
+- Har det definierats vilka uppgifter och ansvar olika personer har vid respons på cyberhändelser?
+- Har lämplig personal utbildats och förberetts för sin roll?
+- Har organisationen förmågan att säkerställa att rätt resurser är tillgängliga även i exceptionella situationer?
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Organisationen har inga utsedda ansvariga personer för cyberincidenthantering, eller det finns ingen information om det.
+- **Delvis implementerat**: Vissa ansvariga personer har utsetts, men roller är inte tydliga eller dokumenterade.
+- **Mestadels implementerat**: Mest nödvändig personal har identifierats och deras roller definierats, men det kan fortfarande finnas utrymme för praktisk förbättring.
+- **Fullt implementerat**: All nödvändig personal har identifierats, roller är tydligt definierade och dokumenterade, och personal är utbildad och förberedd för sin roll.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget har utsett ett säkerhetsteam ansvarigt för att svara på cyberhändelser. Teammedlemmar är utbildade och var och en har ett tydligt definierat ansvarsområde, såsom IT-infrastrukturskydd eller samarbete med myndigheter.
+
+> **Vattenanläggning**
+Vattenanläggningens operativa team har identifierat ansvariga personer som svarar på systemstörningar och säkerhetsbrott. Dessa personer har fått tydliga operativa modeller.
+
+> **Elbolag**
+Energibolaget har ett cyberincidentspecialiserat SOC-team bestående av säkerhetsspecialister och nätverksövervakare. De har fördefinierade roller och ansvarsområden som regelbundet testas genom övningar.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Definiera roller och ansvar som behövs för att utföra cybersäkerhetsincidentresponsåtgärder och säkerställ att personal utsetts till dessa roller och har nödvändiga färdigheter. Personal bör ges tillräcklig autonomi och auktoritet för att utföra sina uppgifter. Organisationen kan utveckla arbetsbeskrivningar för cybersäkerhetsincidentresponsroller och ansvar och spåra kompetensluckor och brister i personaltillgänglighet så att lämplig personal kan anställas vid behov.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: RESPONSE-3a, RESPONSE-3d, RESPONSE-3f, RESPONSE-3g, RESPONSE-3h, RESPONSE-3i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-3b">Respons på cyberincidenter begränsar påverkan på funktionen och återställer verksamheten till normal.</PracticeTitle>
+
+### Betydelse
+
+Välorganiserad respons och återställning säkerställer att:
+- Cyberincidentpåverkan förblir så liten som möjligt.
+- Verksamheten kan snabbt återställas till normal utan stora störningar.
+- Kunder och intressenter kan lita på organisationens kontinuitet.
+- Organisationens rykte och ekonomiska förluster minimeras.
+
+Bedömningsfrågor:
+- Har organisationen planer och operativa modeller för att svara på cyberincidenter?
+- Hur begränsar organisationen cyberincidentpåverkan och förhindrar deras spridning?
+- Används tekniska eller operativa metoder, såsom nätverkssegmentering, reservsystem eller isolerade miljöer?
+- Har återställningsplaner testats och uppdaterats regelbundet?
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Organisationen har inga planer eller operativa modeller för att begränsa cyberincidentpåverkan och hantera återställning.
+- **Delvis implementerat**: Vissa åtgärder finns, men de täcker inte alla scenarier, är inte dokumenterade eller deras implementering är inkonsekvent.
+- **Mestadels implementerat**: En omfattande plan finns för cyberincidenthantering och verksamhetsåterställning, men det finns utvecklingsbehov i praktisk implementering eller testning.
+- **Fullt implementerat**: Organisationen har omfattande och regelbundet testade åtgärder för cyberincidenthantering, minimering av deras påverkan och återställning av verksamheten.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget använder isolerade reservsystem och säkerhetsövningar för att säkerställa att vid en cyberincident kan produktionsprocesser snabbt överföras till en annan miljö och störningar förblir minimala.
+
+> **Elbolag**
+Energibolaget har kritiska systemskyddsnätverk och beredskapsplaner som tillåter att ett attackerat nätverk isoleras och verksamheten återställs genom reservanslutningar.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Incidentrespons beskriver åtgärder som organisationen vidtar för att förhindra eller begränsa incidentpåverkan under eller strax efter att den inträffat. Responsens omfattning, räckvidd och bredd varierar kraftigt beroende på incidentens natur. Detta kan inkludera potentiella incidenter som kan resultera från nya sårbarheter eller teknologisk utveckling som kan ha betydande potentiell påverkan på organisationen, såsom vanligt förekommande teknologisårbarheter (t.ex. MS17-010) och nya teknologier som skulle minska effektiviteten hos nuvarande cybersäkerhetskontroller (t.ex. kvantdatorer). Incidentrespons kan vara så enkelt som kommunikation till användare för att undvika att öppna vissa typer av e-postmeddelanden eller så komplext som att implementera servicekontinuitetsplaner som kräver överföring av tjänster och funktioner till en fjärrleverantör.
+
+Incidentresponsaktiviteter kan inkludera till exempel skadebegränsning (såsom att ta hårdvara eller system offline), kommunicera störningen till tillgångsägare och utveckla och implementera korrigerande och övervakningsåtgärder.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: RESPONSE-3b, RESPONSE-3e, RESPONSE-3h, RESPONSE-3i, RESPONSE-3l.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-3c">Rapportering om cyberincidenter produceras, till exempel internt, till CERT-FI eller till tillämpliga ISAC-grupper.</PracticeTitle>
+
+### Betydelse
+
+Systematisk rapportering säkerställer att:
+- Inom organisationen är förekomsten och påverkan av cyberincidenter kända.
+- Ledning och IT-team kan fatta informerade beslut i riskhantering.
+- Organisationen uppfyller lagstadgade och kontraktuella rapporteringsförpliktelser.
+- CERT-FI och ISAC-grupper får värdefull information som hjälper andra organisationer att skydda sig mot liknande hot.
+
+Bedömningsfrågor:
+- Har organisationen en definierad process för cyberincidentrapportering?
+- Till vilka parter rapporterar organisationen cyberincidenter (t.ex. ledning, IT-team, CERT-FI, ISAC-grupper)?
+- Har rapporteringstidlinjer och ansvar definierats?
+- Används standardiserade rapporteringsformat och kanaler?
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Organisationen har ingen tydlig rapporteringsmetod för cyberincidenter, eller det finns ingen information om det.
+- **Delvis implementerat**: Vissa cyberincidenter rapporteras internt eller externt, men rapporteringsprocessen är inte systematisk eller omfattande.
+- **Mestadels implementerat**: Rapporteringsprocessen är etablerad och täcker de flesta cyberincidenter, men det kan fortfarande finnas utveckling i dess omfattning eller dokumentation.
+- **Fullt implementerat**: Organisationen har en tydligt definierad rapporteringsmetod som täcker både intern och extern rapportering och följs systematiskt.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget rapporterar cyberincidenter internt till IT-säkerhetsteamet och högsta ledningen och externt till livsmedelsindustrins ISAC-grupp och CERT-FI om incidenten påverkar den bredare försörjningskedjan.
+
+> **Vattenanläggning**
+Vattenanläggningen skickar rapporter om allvarliga cyberincidenter till den nationella CERT-organisationen och lokala myndigheter så att cybersäkerhetssituationen kan bedömas och potentiella påverkningar på andra anläggningar kan förebyggas.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Personal som svarar på cybersäkerhetsincidenter måste veta vilken information om incidenter som ska rapporteras till olika interna och externa intressenter, på vilken tidslinje och om det finns begränsningar (såsom juridisk granskning av information som ska delas). Om möjligt, tilldela ansvar för incidentrapportering under hela dess varaktighet till en person för att hålla kommunikationen konsekvent när händelsen fortskrider. Håll intressentkontaktinformation uppdaterad. Intressenter kan inkludera personal såsom juridiska representanter som inte är direkt involverade i incidentrespons men behöver informeras för att upprätthålla organisationens verksamhet.
+
+Relaterade metoder:
+
+- Informationsdelning: Denna metod är en del av en grupp övergripande metoder som möjliggör informationsdelning med organisationens intressenter. Dessa inkluderar: THREAT-1i, THREAT-2h, THREAT-2k, RISK-1c1d, SITUATION-3a, SITUATION-3c, SITUATION-3d, SITUATION-3e, RESPONSE-2g, RESPONSE-3c, RESPONSE-3f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-4">Cybersäkerhet som en del av affärskontinuitet</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-4a">Organisationen har utvecklat affärskontinuitetsplaner som möjliggör att funktionens verksamhet upprätthålls och återställs vid en cyberhändelse eller incident.</PracticeTitle>
+
+### Betydelse
+
+En välplanerad och testad affärskontinuitetsplan säkerställer att:
+- **Cyberincidenter lamslar inte organisationens kärnverksamhet.** System och processer är designade för att motstå och återhämta sig från störningar.
+- **Organisationen kan fortsätta kritiska tjänster även under en attack eller teknisk störning.** Manuella åtgärder och reservsystem säkerställer kontinuitet.
+- **Resurser och åtgärder är förplanerade och kan snabbt och effektivt implementeras.** Detta minskar ekonomiska och operativa förluster.
+- **Planer fokuserar på att hantera störningskonsekvenser och baseras på olika möjliga händelser.** Dessa kan inkludera till exempel dataintrång, ransomware-attacker eller systemavbrott.
+- **Säker avstängning är en del av kontinuitetsplanering.** Om verksamheten inte kan fortsätta säkert har organisationen fördefinierade processer för kontrollerad systemavstängning.
+
+Bedömningsfrågor:
+- Har organisationen en dokumenterad affärskontinuitetsplan (BCP)?
+- Täcker planen olika cyberhot och deras konsekvenser?
+- Innehåller planen konkreta åtgärder för att hantera störningssituationer och återställa verksamheten?
+- Har organisationen definierat kritiska roller och personer ansvariga för kontinuitetshantering?
+- Har planen testats och uppdateras den regelbundet?
+- Inkluderar planen också en säker avstängningsprocess om verksamheten inte kan fortsätta säkert?
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Organisationen har ingen affärskontinuitetsplan eller den beaktar inte cybersäkerhetsrisker.
+- **Delvis implementerat**: En kontinuitetsplan finns, men cyberhändelsehantering är inte omfattande eller planen innehåller inte detaljerade åtgärder för att återställa verksamheten.
+- **Mestadels implementerat**: Kontinuitetsplanen inkluderar cybersäkerhetsrelaterade risker och återställningsåtgärder, men det finns fortfarande utvecklingsbehov i dess praktiska implementering (t.ex. testningsbrister).
+- **Fullt implementerat**: Organisationen har en omfattande, dokumenterad och regelbundet testad affärskontinuitetsplan som beaktar cyberincidenter och innehåller konkreta operativa modeller för störningshantering och säker avstängning.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företagets kontinuitetsplan inkluderar cybersäkerhetsberedskap, såsom reservsystem i produktionsstyrning och nätverkssegmentering, så att cyberattacker inte påverkar hela produktionsprocessen. Dessutom definierar planen hur produktionen kan överföras till en annan produktionsanläggning eller vid behov använda manuella reservsystem.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationen har utvecklat en kontinuitetsplan för sina system där reservsystem och ett separat kristeam säkerställer vattendistribution även i cyberstörningssituationer. Planen beskriver procedurer för övergång till manuell kontroll om automationssystem är under attack.
+
+> **Elbolag**
+Energibolaget använder en segmenterad nätverksstruktur och offline-säkerhetskopior för att säkerställa att cyberincidenter inte stör eldistribution. Kontinuitetsplanen testas årligen genom krisövningar och inkluderar scenarier där informationssystem är otillgängliga och elnätskontroll överförs till reservcenter.
+
+### Ytterligare information
+
+Kontinuitetsplaner inkluderar:
+- **Beskrivningar av åtgärder som organisationen vidtar för att upprätthålla och återställa verksamheten i störningssituationer.** Till exempel övergång till reservsystem, ytterligare faciliteter eller användning av manuella processer.
+- **Nyckelroller och ansvar i störningssituationer.** Vem är ansvarig för vilka åtgärder?
+- **Fokus på konsekvenshantering.** Planer baseras på olika möjliga händelser som kan orsaka störningar.
+- **Säker avstängningsprocess.** Om verksamheten inte kan fortsätta säkert ger planen medel för kontrollerad systemavstängning och dataskydd.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Kontinuitetsplaner inkluderar beskrivningar av åtgärder som organisationen vidtar för att upprätthålla och återställa funktionens verksamhet i störningssituationer (till exempel övergång till ytterligare faciliteter eller initiera manuella procedurer), samt nyckelroller som måste vara involverade/delta. Planer fokuserar vanligtvis på att hantera störningskonsekvenser i organisationen och baseras på olika möjliga händelser som kan orsaka störningar.
+
+Kontinuitetsplaner adresserar organisationens mest kritiska affärsfunktioner för att säkerställa att de fortsätter under olika typer av nödsituationer. Organisationer kan också överväga hur säker avstängning implementeras som en del av kontinuitetsplanering.
+
+Relaterade metoder:
+
+- Input: Implementering av ARCHITECTURE-2j ger input som kan vara användbar för att bedöma och implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: RESPONSE-4a, RESPONSE-4d, RESPONSE-4e, RESPONSE-4f, RESPONSE-4g, RESPONSE-4m, RESPONSE-4p.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-4b">Säkerhetskopior av information är tillgängliga och säkerhetskopiornas funktionalitet testas åtminstone slumpmässigt.</PracticeTitle>
+
+### Betydelse
+
+Pålitliga säkerhetskopieringsmetoder och regelbunden testning säkerställer att:
+- **Risken för dataförlust minimeras.** Säkerhetskopior kan återställa kritiska data och system, till exempel efter en cyberattack eller hårdvarufel.
+- **Ransomware-attackpåverkan kan motverkas.** Om data krypteras i en attack möjliggör rena säkerhetskopior systemåterställning utan att betala lösensummor.
+- **Affärskontinuitet är säkrad.** Säkerhetskopiering täcker organisationens operativa data, konfigurationsfiler och diskbilder, vilket möjliggör snabb återställning.
+- **Säkerhetskopiornas integritet och funktionalitet verifieras.** Genom att testa återställningsprocesser kan organisationen säkerställa att säkerhetskopior faktiskt fungerar i krissituationer.
+
+Bedömningsfrågor:
+- Har organisationen en definierad och dokumenterad säkerhetskopieringspolicy?
+- Säkerhetskopieras alla kritiska datarepositorier regelbundet?
+- Beaktar säkerhetskopior olika IT- och OT-miljöer, såsom molntjänster, mobilrepositorier och tredjepartsförvaltade data?
+- Lagras säkerhetskopior säkert och verifieras deras integritet?
+- Testas säkerhetskopieringsåterställning regelbundet?
+- Baseras säkerhetskopieringsplanen på organisationens riskbedömning?
+
+Datarepositoriessäkerhetskopiering kan inkludera:
+- **Operativa data:** Kundregister, order- och produktionsdata.
+- **Inställningspunkter:** Kontrollsystem- och automationssystemkonfigurationer.
+- **Konfigurationsfiler:** Server-, nätverksenhet- och applikationsinställningar.
+- **Lagringsplatser:** Kritisk data i molntjänster och lokala system.
+- **Kritiska systembilder:** Gyllene bilder, diskbilder, säkerhetskopior av virtuella maskiner.
+
+Säkerhetskopieringsprocedurer bör inkludera:
+- **Hur ofta ska man säkerhetskopiera?** Dagligen, veckovis eller som annars behövs.
+- **Retentionsperioder:** Hur länge säkerhetskopior lagras på olika platser.
+- **Auktoriserade lagringsplatser och metoder:** Var säkerhetskopior lagras och hur de skyddas.
+- **Krypterings- och skyddskrav:** Skydda säkerhetskopior från obehörig användning.
+- **Testningsstandarder:** Hur ofta säkerhetskopieringsåterställning testas.
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: Organisationen har ingen säkerhetskopieringspolicy, eller data säkerhetskopieras inte regelbundet.
+- **Delvis implementerat**: Säkerhetskopior görs, men deras omfattning är ofullständig eller återställningstestning utförs inte.
+- **Mestadels implementerat**: Säkerhetskopior täcker den viktigaste datan och återställningstester utförs slumpmässigt, men det finns fortfarande utvecklingsbehov i säkerhetskopieringsmetoder.
+- **Fullt implementerat**: Organisationen säkerhetskopierar data omfattande, säkerhetskopior lagras säkert och återställningstester utförs regelbundet för att säkerställa deras funktionalitet.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Företaget har en regelbunden säkerhetskopieringspolicy där produktionsstyrningssystem och kunddata lagras säkert på olika platser. Återställningstester utförs kvartalsvis och säkerhetskopior lagras krypterade i en separat miljö.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationen använder separata offline-säkerhetskopior av systemdata som kan återställas i kritiska situationer. Systemåterställning testas åtminstone halvårsvis.
+
+> **Elbolag**
+Energibolaget har ett flerskiktat säkerhetskopieringssystem där produktionsdata och kundregister kopieras till separata säkerhetskopieringssystem. Testning görs automatiskt månadsvis och återställningsdata verifieras som en del av riskhantering.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Denna metod är väsentlig för att återställa funktioner efter dataförlust eller hårdvarufel. Organisationen gör och gör tillgängliga säkerhetskopior av datarepositorier åtminstone ibland. När man identifierar datarepositorier att säkerhetskopiera bör organisationer överväga data som finns i olika typer av IT- och OT-miljöer, såsom virtualiserade repositorier, reglerade repositorier, molnrepositorier, BYOD-repositorier (Bring Your Own Device), tredjepartsförvaltade repositorier, fältrepositorier och mobilrepositorier. Säkerhetskopior testas för att säkerställa att de är funktionella och tillgängliga när de behövs. Handlingsplaner för implementering och hantering av säkerhetskopior bör baseras på risk för funktionen eller organisationen. Denna metod initierar en metodprogression som fortsätter i MIL2 och fokuserar på datasäkerhetskopiering.
+
+Datarepositoriessäkerhetskopiering kan inkludera:
+
+- operativa data
+- inställningspunkter
+- konfigurationsfiler
+- lagringsplatser
+- kopior av viktiga konfigurationsbaslinjer, gyllene bilder, diskbilder och virtuella maskinbilder.
+Säkerhetskopieringsprocedurer inkluderar vanligtvis:
+- hur ofta man ska säkerhetskopiera
+- retentionsperioder
+- auktoriserade lagringsplatser och metoder
+- krypterings- och skyddskrav; testningsstandarder
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: RESPONSE-4b, RESPONSE-4f, RESPONSE-4j, RESPONSE-4k.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-4c">IT-utrustning och potentiell OT-utrustning som kräver reservdelar har identifierats.</PracticeTitle>
+
+### Betydelse
+
+IT- och OT-utrustningsreservdelshantering är kritisk eftersom:
+- **Minskar operativa avbrott.** Snabb utrustningsreparation och reservdelstillgänglighet säkerställer affärskontinuitet.
+- **Förbättrar cyberresiliens.** Hårdvarufel kan resultera från cyberattacker och snabb återhämtning minimerar risker.
+- **Bibehåller systemtillförlitlighet.** Reservdelar för äldre eller sällsynta system kan vara svåra att få utan förhandsplanering.
+- **Optimerar kostnader.** Förhandsplanering av reservdelar minskar oväntade kostnader och förhindrar kritiska komponenters marknadstömning.
+
+Bedömningsfrågor:
+- Har organisationen identifierat kritisk IT- och OT-utrustning som kräver reservdelar eller ersättningskomponenter?
+- Lagras reservdelar på plats eller anskaffas de vid behov?
+- Har reservdelsförsörjningskedjan och lagringsmetoder beaktats?
+- Har reservdelshanteringsplanen uppdaterats och granskats regelbundet?
+- Har reservdelsbehovet bedömts baserat på risker och prioriterats för den viktigaste utrustningen?
+
+Organisationer bör identifiera följande IT- och OT-utrustning som kräver reservdelar:
+**IT-tillgångar:**
+  - Switchar
+  - Routrar
+  - Servrar
+  - Kommunikationsnätverk
+  - Virtualiserade resurser
+**OT-tillgångar:**
+  - Kontroller
+  - Sensorer
+  - Övervaknings- och automationssystem
+  - SCADA-system
+  - Nätverksanslutna IoT-enheter
+
+<AnswerOptions>
+- **Ej implementerat eller ingen information**: IT- och OT-utrustning som kräver reservdelar har inte identifierats eller det finns ingen plan för deras hantering.
+- **Delvis implementerat**: Vissa reservdelar och kritisk utrustning har identifierats, men en omfattande reservdelsplan har inte gjorts.
+- **Mestadels implementerat**: Den mesta kritiska IT- och OT-utrustningen har identifierats och en reservdelsplan finns, men det kan fortfarande finnas utvecklingsbehov i dess implementering.
+- **Fullt implementerat**: All kritisk IT- och OT-utrustning har identifierats, reservdelstillgänglighet är planerad och dokumenterad, och planen uppdateras regelbundet.
+</AnswerOptions>
+
+### Exempel från olika branscher
+
+> **Livsmedelsföretag**
+Livsmedelsindustrins automationssystem och produktionsmaskiner kräver speciella reservdelar. Företaget upprätthåller ett lager av kritiska delar och avtal med leverantörer för att säkerställa snabb service.
+
+> **Vattenanläggning**
+Vattenförsörjningsorganisationen använder systemanslutna ventiler och pumpar som kräver speciella kontrollkomponenter. Reservdelar har identifierats och lagrats på strategiska platser.
+
+> **Elbolag**
+Energibolaget har en reservdelsplan för kritiska OT-system som beaktar tillgängligheten av transformatorer, kontrollenheter och eldistributionsnätverkskomponenter.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Denna metod är väsentlig för att återställa organisationens verksamhet om tillgångar förloras eller går sönder. Organisationen identifierar, åtminstone fall för fall, de IT- och OT-tillgångar vars reservdelar kan behövas. Denna metod initierar en operativ progression som fortsätter i MIL2 och fokuserar på reserv- eller ersättningstillgångar.
+
+Dessa är exempel på reserv- eller ersättnings-IT- och OT-tillgångar:
+
+- switchar
+- routrar
+- kontroller
+- sensorer
+- virtualiserade resurser
+- system som tillgångar förlitar sig på, såsom kommunikationsnätverk.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av en aktivitet. Metoderna i denna progression inkluderar: RESPONSE-4c, RESPONSE-4f, RESPONSE-4l.
+</CollapsibleSection>
+
+---
+
+_Vägledningen uppdaterad: 17.3.2025_

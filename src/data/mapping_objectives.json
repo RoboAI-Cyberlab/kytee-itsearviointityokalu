@@ -1,0 +1,962 @@
+{
+  "access-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.g, 2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.5", "9.6", "9.7", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.5", "18.6", "18.7", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "5.3",
+          "6.2",
+          "7.1",
+          "7.2",
+          "7.3.1",
+          "7.4",
+          "7.5",
+          "7.6",
+          "11.6",
+          "11.7"
+        ]
+      }
+    ]
+  },
+  "access-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.e, 2.g, 2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.5", "9.6", "9.7", "9.9", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.5", "18.6", "18.7", "18.9", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "5.3",
+          "6.2",
+          "7.1",
+          "7.2",
+          "7.3",
+          "7.3.1",
+          "7.4",
+          "7.5",
+          "9.3",
+          "11.3",
+          "11.7",
+          "12.2"
+        ]
+      }
+    ]
+  },
+  "access-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.g, 2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.6", "9.7", "9.9", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.6", "18.7", "18.9", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "6.2",
+          "7.1",
+          "7.2",
+          "7.3",
+          "7.4",
+          "7.5",
+          "9.3",
+          "11.3",
+          "11.7",
+          "11.13",
+          "12.1"
+        ]
+      }
+    ]
+  },
+  "access-4": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.7"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.7"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["7.1", "7.2", "7.5"]
+      }
+    ]
+  },
+  "architecture-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.c, 2.f, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.2", "9.10"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.2", "18.10"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.3", "2.3", "10.3"]
+      }
+    ]
+  },
+  "architecture-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.e, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.3", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.3", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["3.8", "11.3", "11.4"]
+      }
+    ]
+  },
+  "architecture-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.e, 2.g, 2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.3", "9.5", "9.7", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.3", "18.5", "18.7", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "3.2",
+          "3.3",
+          "3.3.1",
+          "3.4",
+          "3.9",
+          "5.2",
+          "7.1",
+          "7.4",
+          "7.5",
+          "11.3",
+          "11.5",
+          "11.7",
+          "11.10",
+          "12.1"
+        ]
+      }
+    ]
+  },
+  "architecture-4": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.e, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.3", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.3", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["3.1.1", "3.2", "3.5", "3.7", "11.5"]
+      }
+    ]
+  },
+  "architecture-5": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.c, 2.g, 2.h, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.5", "9.8", "9.9", "9.10", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.5", "18.8", "18.9", "18.10", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["5.2", "8.1", "8.2", "8.3", "9.8", "10.3", "11.8", "11.11"]
+      }
+    ]
+  },
+  "architecture-5h": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.e)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.3"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.3"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["3.4"]
+      }
+    ]
+  },
+  "architecture-6": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["11.8"]
+      }
+    ]
+  },
+  "asset-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.e, 2.g, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.2", "9.3", "9.5", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.2", "18.3", "18.5", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.3", "2.3", "3.1", "3.3", "5.1", "5.2", "5.3", "11.2"]
+      }
+    ]
+  },
+  "asset-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.c, 2.e, 2.g, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.2", "9.3", "9.5", "9.10", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.2", "18.3", "18.5", "18.10", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "1.3",
+          "2.3",
+          "3.1",
+          "5.1",
+          "5.2",
+          "5.3",
+          "10.2",
+          "11.2",
+          "11.11"
+        ]
+      }
+    ]
+  },
+  "asset-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.e, 2.g, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.3", "9.5", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.3", "18.5", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["3.1", "3.3", "3.3.1", "3.4", "5.3", "11.5", "11.10"]
+      }
+    ]
+  },
+  "asset-4": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.e, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.3", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.3", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["3.1", "3.3", "3.3.1", "3.4", "3.4.1", "11.9", "11.13"]
+      }
+    ]
+  },
+  "asset-5": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.g, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.5", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.5", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["5.1", "11.2"]
+      }
+    ]
+  },
+  "critical-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.d, 2.g, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.4", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.4", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.3", "4.1", "11.2", "11.11", "12.1"]
+      }
+    ]
+  },
+  "critical-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.20(1)", "Art.21 (2.a, 2.c, 2.d, 2.e, 2.f, 2.g, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.2", "9.4", "9.6", "9.10", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.2", "18.4", "18.6", "18.10", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "1.1",
+          "1.1.1",
+          "1.2",
+          "1.3",
+          "1.5",
+          "1.6",
+          "1.6.1",
+          "2.1",
+          "2.1.1",
+          "2.2",
+          "4.2",
+          "6.6",
+          "10.2",
+          "11.11",
+          "12.2"
+        ]
+      }
+    ]
+  },
+  "critical-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.c, 2.d)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.4", "9.9", "9.10", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.4", "18.9", "18.10", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["4.2", "9.1", "9.5", "10.1", "12.3"]
+      }
+    ]
+  },
+  "program-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.f, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.2", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.2", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.6.1", "2.1", "2.1.1", "2.3", "11.1"]
+      }
+    ]
+  },
+  "program-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.20(1)", "Art.21 (2.a, 2.f, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.2", "9.6", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.2", "18.6", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.6", "1.6.1", "2.1", "2.3", "6.6", "11.1"]
+      }
+    ]
+  },
+  "response-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.9", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.9", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["9.1", "9.2", "11.12"]
+      }
+    ]
+  },
+  "response-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.c, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.9", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.9", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["9.1", "9.7", "11.12"]
+      }
+    ]
+  },
+  "response-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.c, 2.e, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.9", "9.10", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.9", "18.10", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "9.1",
+          "9.5",
+          "9.6",
+          "9.7",
+          "9.8",
+          "9.9",
+          "10.1",
+          "10.4",
+          "11.12",
+          "12.2",
+          "12.3"
+        ]
+      }
+    ]
+  },
+  "response-4": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.c, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.9", "9.10", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.9", "18.10", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "9.1",
+          "9.6",
+          "10.1",
+          "10.2",
+          "10.3",
+          "11.11",
+          "11.13",
+          "12.3"
+        ]
+      }
+    ]
+  },
+  "response-5": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.c, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.9", "9.10", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.9", "18.10", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "9.1",
+          "9.7",
+          "9.8",
+          "9.9",
+          "10.1",
+          "11.11",
+          "11.12",
+          "12.3"
+        ]
+      }
+    ]
+  },
+  "risk-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.20(1)", "Art.21 (2.a, 2.f)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.6"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.6"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.2", "6.6"]
+      }
+    ]
+  },
+  "risk-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.e, 2.f)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.2", "12.2"]
+      }
+    ]
+  },
+  "risk-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.e, 2.f)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.1.1", "1.5", "12.2"]
+      }
+    ]
+  },
+  "risk-4": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.e, 2.f)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.1.1", "1.5", "1.6", "1.6.1", "12.2"]
+      }
+    ]
+  },
+  "risk-5": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.f)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.1", "1.5", "1.6", "1.6.1"]
+      }
+    ]
+  },
+  "situation-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.g, 2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.7", "9.9", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.7", "18.9", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["7.3.1", "7.6", "9.3", "11.10", "11.13"]
+      }
+    ]
+  },
+  "situation-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.b, 2.e, 2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.3", "9.7", "9.9"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.3", "18.7", "18.9"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["3.9", "7.3", "7.3.1", "9.3", "9.4"]
+      }
+    ]
+  },
+  "situation-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.b)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.7", "9.9"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.7", "18.9"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.4.1", "7.3.1", "9.3", "9.4", "9.5"]
+      }
+    ]
+  },
+  "third-parties-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.c, 2.d, 2.e, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.3", "9.4", "9.5", "9.6", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.3", "18.4", "18.5", "18.6", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.3", "3.2", "4.1", "4.2", "5.2", "6.1", "6.2", "12.3"]
+      }
+    ]
+  },
+  "third-parties-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.c, 2.d, 2.e, 2.f, 2.g, 2.g/h/i, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.3", "9.4", "9.6", "9.11", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.3", "18.4", "18.6", "18.11", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": [
+          "1.1",
+          "3.1.1",
+          "3.2",
+          "3.5",
+          "3.6",
+          "3.7",
+          "4.2",
+          "6.1",
+          "6.2",
+          "6.3",
+          "11.8",
+          "12.3"
+        ]
+      }
+    ]
+  },
+  "threat-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.e, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.3", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.3", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.4", "1.4.1", "3.4.1", "3.5", "3.7", "11.9"]
+      }
+    ]
+  },
+  "threat-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.e)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.3", "9.12"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.3", "18.12"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.4", "1.4.1", "3.4.1", "3.6", "12.2"]
+      }
+    ]
+  },
+  "workforce-1": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.g, 2.g/h/i, 2.i, 2.j)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.2", "9.6", "9.7", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.2", "18.6", "18.7", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["2.2", "6.1", "6.2", "6.3", "6.4", "7.2", "11.1"]
+      }
+    ]
+  },
+  "workforce-2": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.b, 2.g, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.2", "9.6", "9.9", "9.11"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.2", "18.6", "18.9", "18.11"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["2.2", "6.1", "9.2", "11.1", "11.1.1"]
+      }
+    ]
+  },
+  "workforce-3": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.21 (2.a, 2.g/h/i, 2.i)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.2", "9.6"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.2", "18.6"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["2.2", "6.1", "6.3"]
+      }
+    ]
+  },
+  "workforce-4": {
+    "mappings": [
+      {
+        "framework": "EU",
+        "controls": ["Art.20(1)", "Art.21 (2.a, 2.f, 2.g)"]
+      },
+      {
+        "framework": "NIS2",
+        "controls": ["9.1", "9.2", "9.6"]
+      },
+      {
+        "framework": "TiHL",
+        "controls": ["18.1", "18.2", "18.6"]
+      },
+      {
+        "framework": "Traficom",
+        "controls": ["1.5", "2.2", "6.5", "6.5.1", "6.6"]
+      }
+    ]
+  }
+}

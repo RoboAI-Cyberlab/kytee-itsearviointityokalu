@@ -1,0 +1,498 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Tapahtumien ja häiriöiden hallinta, toiminnan jatkuvuus
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- kyberturvallisuusvalvomon (SOC) johto
+- poikkeamatilanteiden käsittelyn asiantuntija
+- liiketoiminnan jatkuvuuden asiantuntija
+- toimitilahallinnon edustaja
+</Roles>
+
+---
+<ObjectiveTitle name="response-1">Tapahtumien havainnointi</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-1a">Havaitut kybertapahtumat raportoidaan ennalta määritellyille henkilöille tai roolien haltijoille ja ne dokumentoidaan.</PracticeTitle>
+
+### Merkitys
+
+Kybertapahtumien raportointi ja dokumentointi ovat kriittisiä organisaation kyberturvallisuuden kannalta. Järjestelmällinen raportointi varmistaa, että:
+- Poikkeamat havaitaan ja käsitellään ajoissa.
+- Johto ja asiantuntijat saavat tiedon turvallisuusrikkomuksista.
+- Organisaatiolla on mahdollisuus analysoida tapahtumien taustat ja ehkäistä vastaavia tapauksia tulevaisuudessa.
+- Viranomaisille ja sidosryhmille voidaan raportoida asianmukaisesti, jos laki tai sopimukset sitä edellyttävät.
+
+Arviointikysymykset:
+- Onko organisaatiolla selkeät ohjeistukset kybertapahtumien raportointiin?
+- Onko määritelty, ketkä vastaanottavat raportit ja miten tiedot tallennetaan?
+- Miten varmistetaan, että tapahtumien dokumentointi on johdonmukaista?
+- Tapahtuuko raportointi automaattisesti vai edellyttääkö se manuaalista ilmoitusta?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Ei ole käytössä prosessia tai vastuuhenkilöitä kybertapahtumien raportointiin, tai asiaan ei ole kiinnitetty huomiota.
+- **Osittain toteutettu**: Joitakin kybertapahtumia raportoidaan, mutta prosessi ei kata kaikkia tapauksia, vastuuhenkilöitä ei ole määritelty selkeästi tai dokumentointi on epäyhtenäistä.
+- **Enimmäkseen toteutettu**: Kybertapahtumien raportointi on vakiintunut, mutta käytännöissä voi olla vielä joitakin aukkoja (esim. raportointi ei ole täysin kattavaa tai dokumentointia ei aina tehdä systemaattisesti).
+- **Täysin toteutettu**: Kaikki kybertapahtumat raportoidaan ennalta määritellyille henkilöille tai roolien haltijoille, ja ne dokumentoidaan järjestelmällisesti tapauskohtaisesti.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys käyttää keskitettyä turvallisuustieto- ja tapahtumanhallintajärjestelmää (SIEM) kybertapahtumien automaattiseen seurantaan. Kaikki tietoturvahälytykset ohjataan IT-turvatiimille, ja tapahtumat dokumentoidaan analysoitavaksi.
+
+> **Kuljetusliike**  
+Logistiikkayritys on määritellyt toimintamallin, jossa epäilyttävät kirjautumisyritykset tai reititystietojen luvattomat muutokset laukaisevat hälytyksen turvallisuustiimille, ja tapaus kirjataan analysointia varten.
+
+> **Vesilaitos**  
+Vesihuollosta vastaava organisaatio hyödyntää SCADA-järjestelmien lokeja havaitakseen kyberhäiriöt. Kriittiset poikkeamat kirjataan ja raportoidaan tietoturvapäällikölle, ja tapahtumat dokumentoidaan tarkastuksia varten.
+
+> **Sähköyhtiö**  
+Energiayhtiö on ottanut käyttöön kyberturvallisuusoperaatiokeskuksen (SOC), joka seuraa ja analysoi kyberpoikkeamia reaaliajassa. Tapahtumat dokumentoidaan automaattisesti ja raportoidaan sovituille vastuuhenkilöille.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Perustetaan yhteyspiste todettujen tai epäiltyjen kyberturvallisuustapahtumien ilmoittamista varten, esimerkiksi neuvontapalvelu (helpdesk). Kyseisen henkilön, roolin tai ryhmän yhteystiedot olisi saatettava kaikkien toiminnon sidosryhmien tietoon. Yhteyshenkilön, roolin, ryhmän tulee tuntea kyberturvallisuuskäytännöt ja -ongelmat ja pystyä dokumentoimaan raportoituja tapahtumatietoja tarkasti ja mahdollisesti jopa suorittamaan perusvianmääritystä. Vaihtoehtoisesti tai lisäksi tapahtumista voidaan ilmoittaa sisäisen järjestelmän, kuten intranetissä olevan virtuaalisen help deskin, kautta.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa useiden käytäntöjen etenemistä. Käytäntöjen eteneminen on joukko toisiinsa liittyviä käytäntöjä, jotka edustavat yhä täydellisempiä tai edistyneempiä toimintojen toteutuksia. Ensimmäisen etenemisen käytäntöjä ovat: RESPONSE-1a, RESPONSE-1b, RESPONSE-1c, RESPONSE-1f. Toisen etenemisen käytäntöjä ovat: RESPONSE-1a, RESPONSE-2f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-2">Tapahtumien analysointi ja häiriötilanteiden määrittäminen</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-2a">Kyberpoikkeamien määrittämisestä on laadittu kriteeristö.</PracticeTitle>
+
+### Merkitys
+
+Kyberpoikkeamien määrittämiseen laadittu kriteeristö varmistaa, että:
+- Poikkeamat tunnistetaan ajoissa ja niiden kriittisyys arvioidaan oikein.
+- Organisaatio voi reagoida oikea-aikaisesti ja resurssit kohdennetaan tehokkaasti.
+- Tapahtumia käsitellään yhdenmukaisesti, mikä vähentää inhimillisiä virheitä.
+- Viranomaisille ja sidosryhmille raportointi tapahtuu hallitusti ja vaatimusten mukaisesti.
+
+Arviointikysymykset:
+- Onko organisaatiolla ennalta määritellyt kriteerit kyberpoikkeamien tunnistamiseen?
+- Perustuuko kriteeristö organisaation riskiarvioihin ja toimintaympäristöön?
+- Käytetäänkö kriteereitä johdonmukaisesti eri tapahtumien arvioinnissa?
+- Miten kriteeristö on dokumentoitu ja päivitetäänkö sitä säännöllisesti?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole dokumentoitua kriteeristöä kyberpoikkeamien määrittämiseen, tai siitä ei ole tietoa.
+- **Osittain toteutettu**: Joitakin kriteereitä on määritelty, mutta ne eivät kata kaikkia kyberpoikkeamia tai niitä ei sovelleta johdonmukaisesti.
+- **Enimmäkseen toteutettu**: Kyberpoikkeamien määrittämiseen on olemassa kattava kriteeristö, mutta sen käyttöönotossa tai ylläpidossa on vielä kehittämistarpeita.
+- **Täysin toteutettu**: Kriteeristö on dokumentoitu, ajantasainen ja sitä sovelletaan systemaattisesti kaikissa kybertapahtumien arvioinneissa.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys on määritellyt kriteerit tietoturvapoikkeamille, kuten epäilyttäville järjestelmämuutoksille ja tiedon vuotamiselle. Poikkeamat luokitellaan vaikutuksen perusteella ja kriittisimmät tapaukset eskaloidaan välittömästi.
+
+> **Kuljetusliike**  
+Logistiikkayrityksellä on kriteeristö, jonka perusteella kybertapahtumat, kuten GPS-signaalin häirintä tai kuljetusjärjestelmien luvaton pääsy, määritellään poikkeamiksi ja ne kirjataan analysoitavaksi.
+
+> **Vesilaitos**  
+Vesihuollosta vastaava organisaatio käyttää SCADA-järjestelmän poikkeamadataa ja hyödyntää ennalta määriteltyä kriteeristöä sähköisten ohjausjärjestelmien häiriöiden tunnistamiseen.
+
+> **Sähköyhtiö**  
+Energiayhtiöllä on selkeästi määritellyt kyberpoikkeamien kriteerit, joiden perusteella verkkoinfrastruktuurin hyökkäykset tai epäilyttävät yhteyspyynnöt luokitellaan ja analysoidaan reaaliajassa SOC-tiimin toimesta.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kyberturvallisuuteen liittyvien poikkeamien ilmoittamiskriteerejä käytetään sen määrittämiseksi, pitäisikö tapahtumaa käsitellä poikkeamana ja tapahtuman vakavuuden määrittämiseksi. Luokitteluasteikko, kuten korkea, keskisuuri ja matala, voi auttaa viestimään poikkeaman vakavuudesta sidosryhmille ja auttamaan toteutettavien vastatoimien priorisoinnissa.
+
+Poikkeamaksi julistamisen kriteerit olisi kehitettävä kokemuksen perusteella ja ne voidaan osittain johtaa riskinarviointikriteereistä (kuten vaikutuskynnyksistä), jotka on laadittu osana riskinhallinnan toimintoja. Kriteerit voivat perustua tapahtuman tyyppiin (kuten luvaton pääsy), vaikutuksen tasoon (esim. paikallinen vs. koko organisaation laajuinen), vaikutuksen tyyppiin (sisäiset järjestelmät vs. kriittiset ulkoiset palvelut), vaatimustenmukaisuusvelvoitteisiin (vain sisäinen vs. raportoitava tapahtuma) tai keskimääräiseen toipumisaikaan. Joidenkin tapahtumien osalta tapahtuman havaitsemisen ja poikkemaksi määrittämisen välinen aika voi olla välitön, jolloin lisäanalyysejä ei tarvita juurikaan. Toisissa tapauksissa organisaatio voi haluta hyödyntää aiemmin kehitettyjä kriteerejä, joiden avulla se voi ohjata poikkeman määrittämistä.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RESPONSE-2a, RESPONSE-2c, RESPONSE-2e, RESPONSE-2h.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-2b">Kybertapahtumat analysoidaan siten, että se tukee mahdollisten kyberpoikkeamien määrittämistä.</PracticeTitle>
+
+### Merkitys
+
+Järjestelmällinen kybertapahtumien analyysi mahdollistaa:
+- Poikkeamien varhaisen tunnistamisen ja nopean reagoinnin.
+- Järjestelmien ja prosessien suojauksen parantamisen tapahtumien analyysiin perustuen.
+- Johdonmukaisen tiedon keräämisen ja hyödyntämisen päätöksenteossa.
+- Laajempien kyberuhkien tunnistamisen, mikä parantaa organisaation resilienssiä.
+
+Arviointikysymykset:
+- Onko organisaatiolla menetelmiä ja työkaluja tapahtumien analysointiin?
+- Perustuuko analysointi ennalta määriteltyihin poikkeamien kriteereihin?
+- Tunnistetaanko analyysin avulla toistuvia tai piileviä uhkia?
+- Miten analyysituloksia hyödynnetään päätöksenteossa ja riskienhallinnassa?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole käytössä systemaattista analyysimenetelmää kybertapahtumille, tai siitä ei ole tietoa.
+- **Osittain toteutettu**: Joitakin tapahtumia analysoidaan, mutta analyysia ei tehdä kattavasti tai sen tuloksia ei hyödynnetä tehokkaasti poikkeamien määrittämiseen.
+- **Enimmäkseen toteutettu**: Kybertapahtumia analysoidaan järjestelmällisesti, mutta analyysin kattavuudessa tai hyödyntämisessä on vielä kehittämisen varaa.
+- **Täysin toteutettu**: Kaikki kybertapahtumat analysoidaan kattavasti ennalta määriteltyjen kriteerien mukaisesti, ja analyysin tulokset tukevat poikkeamien määrittämistä ja riskienhallintaa.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys käyttää automaattista lokien analyysijärjestelmää, joka etsii poikkeavia tapahtumia tuotantolaitteiden tietoliikenteessä ja hälyttää tietoturvatiimiä tarvittaessa.
+
+> **Sähköyhtiö**  
+Energiayhtiö käyttää kyberhäiriöiden analysointijärjestelmää, joka yhdistää verkonvalvontatiedot ja tietoturvalokien tiedot automaattiseen analyysiin, jonka avulla kriittiset poikkeamat voidaan tunnistaa ja estää.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kyberturvallisuustapahtumien analysointi auttaa organisaatiota keräämään lisätietoa tapahtumien ratkaisemiseksi ja avuksi poikkeamien ilmoittamisessa, käsittelyssä ja niihin reagoimisessa. Analyysi voi koostua tapahtumien luokittelusta, korreloinnista ja priorisoinnista. Analyysin avulla organisaatio määrittää tapahtuman tyypin ja laajuuden (esim. fyysinen vs. tekninen), korreloiko tapahtuma muiden tapahtumien kanssa (määrittääkseen, ovatko ne oireet suuremmasta asiasta, ongelmasta tai vaaratilanteesta) ja missä järjestyksessä tapahtumia olisi käsiteltävä tai antaa ne poikkeaman määrittämistä, käsittelyä ja reagointia varten. Analyysi auttaa organisaatiota myös määrittämään, onko tapahtuma siirrettävä organisaation tai ulkopuolisen henkilöstön (poikkeamanhallintahenkilöstön ulkopuolella) käsiteltäväksi lisäanalyysiä ja -ratkaisua varten.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: RESPONSE-1a:n toteuttaminen tarjoaa panoksen, josta voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RESPONSE-2b, RESPONSE-2d, RESPONSE-2f, RESPONSE-2i.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-3">Tapahtumiin ja häiriöihin reagoiminen</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-3a">Kyberpoikkeamiin reagoimista varten on tunnistettu soveltuvat työntekijät ja heille on annettu roolit ainakin tapauskohtaisesti.</PracticeTitle>
+
+### Merkitys
+
+Selkeästi nimettyjen henkilöiden ja roolien tunnistaminen on kriittistä, koska:
+- Se varmistaa nopean ja tehokkaan reagoinnin kyberpoikkeamiin.
+- Se vähentää epävarmuutta ja viivästyksiä kriittisissä tilanteissa.
+- Se mahdollistaa paremman yhteistyön eri tiimien ja sidosryhmien välillä.
+- Se tukee organisaation resilienssiä ja jatkuvuudenhallintaa.
+
+Arviointikysymykset:
+- Onko organisaatio nimennyt vastuuhenkilöt kyberpoikkeamien hallintaan?
+- Onko määritelty, mitä tehtäviä ja vastuita eri henkilöillä on kybertapahtumiin reagoitaessa?
+- Onko soveltuvat henkilöt koulutettu ja valmennettu tehtäväänsä?
+- Onko organisaatiolla valmius varmistaa, että oikeat resurssit ovat käytettävissä myös poikkeustilanteissa?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole nimettyjä vastuuhenkilöitä kyberpoikkeamien hallintaan, tai siitä ei ole tietoa.
+- **Osittain toteutettu**: Joitakin vastuuhenkilöitä on nimetty, mutta roolit eivät ole selkeitä tai niitä ei ole dokumentoitu.
+- **Enimmäkseen toteutettu**: Useimmat tarvittavat henkilöt on tunnistettu ja heidän roolinsa on määritelty, mutta käytännössä saattaa olla vielä kehittämisen varaa.
+- **Täysin toteutettu**: Kaikki tarvittavat henkilöt on tunnistettu, roolit on selkeästi määritelty ja dokumentoitu, ja henkilöt on koulutettu ja valmennettu tehtäväänsä.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yrityksellä on nimetty tietoturvatiimi, joka vastaa kybertapahtumiin reagoimisesta. Tiimin jäsenet on koulutettu ja jokaiselle on määritelty selkeä vastuualue, kuten IT-infrastruktuurin suojaaminen tai viranomaisyhteistyö.
+
+> **Vesilaitos**  
+Vesilaitoksen operatiivinen tiimi on tunnistanut vastuuhenkilöt, jotka reagoivat järjestelmän häiriöihin ja tietoturvaloukkauksiin. Näille henkilöille on annettu selkeät toimintamallit.
+
+> **Sähköyhtiö**  
+Energiayhtiöllä on kyberhäiriöihin erikoistunut SOC-tiimi, joka koostuu tietoturva-asiantuntijoista ja verkonvalvojista. Heillä on ennalta määritellyt roolit ja vastuualueet, joita testataan säännöllisesti harjoitusten avulla.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Määrittele roolit ja vastuualueet, joita tarvitaan kyberturvallisuuden poikkeamien reagointitoimien suorittamiseen, ja varmista, että henkilöstö on nimetty näihin rooleihin ja että heillä on tarvittavat taidot. Henkilöstölle olisi annettava riittävä itsenäisyys ja valtuudet tehtäviensä suorittamiseen. Organisaatio voi laatia toimenkuvia kyberturvallisuuden poikkeamiin reagoinnin/vasteen rooleja ja vastuualueita varten ja seurata osaamisvajeita ja puutteita henkilöstön saatavuudessa, jotta sopivaa henkilöstöä voidaan palkata tarpeen mukaan.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RESPONSE-3a, RESPONSE-3d, RESPONSE-3f, RESPONSE-3g, RESPONSE-3h, RESPONSE-3i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-3b">Kyberpoikkeamiin reagoidaan siten, että toiminnalla rajoitetaan toimintoon kohdistuvaa vaikutusta ja palautetaan toiminta normaaliksi.</PracticeTitle>
+
+### Merkitys
+
+Hyvin organisoitu reagointi ja palauttaminen varmistavat, että:
+- Kyberpoikkeamien vaikutukset jäävät mahdollisimman pieniksi.
+- Toiminta voidaan palauttaa nopeasti normaaliksi ilman suuria häiriöitä.
+- Asiakkaat ja sidosryhmät voivat luottaa organisaation jatkuvuuteen.
+- Organisaation maine ja taloudelliset tappiot minimoidaan.
+
+Arviointikysymykset:
+- Onko organisaatiolla suunnitelmat ja toimintamallit kyberpoikkeamiin reagoimiseksi?
+- Miten organisaatio rajoittaa kyberpoikkeamien vaikutuksia ja estää niiden leviämisen?
+- Onko käytössä teknisiä tai operatiivisia menetelmiä, kuten verkon segmentointi, varajärjestelmät tai eristetyt ympäristöt?
+- Onko palautumissuunnitelmat testattu ja päivitetty säännöllisesti?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole suunnitelmia tai toimintamalleja kyberpoikkeamien vaikutusten rajoittamiseksi ja palautumisen hallitsemiseksi.
+- **Osittain toteutettu**: Joitakin toimenpiteitä on olemassa, mutta ne eivät kata kaikkia skenaarioita, eivät ole dokumentoituja tai niiden toteutus on epäjohdonmukaista.
+- **Enimmäkseen toteutettu**: Kyberpoikkeamien hallintaan ja toiminnan palauttamiseen on kattava suunnitelma, mutta käytännön toteutuksessa tai testauksessa on kehittämistarpeita.
+- **Täysin toteutettu**: Organisaatiolla on kattavat ja säännöllisesti testatut toimenpiteet kyberpoikkeamien hallintaan, niiden vaikutusten minimointiin ja toiminnan palauttamiseen.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys käyttää eristettyjä varajärjestelmiä ja tietoturvaharjoituksia varmistaakseen, että kyberpoikkeaman sattuessa tuotantoprosessit voidaan siirtää nopeasti toiseen ympäristöön ja häiriöt jäävät minimaalisiksi.
+
+> **Sähköyhtiö**  
+Energiayhtiöllä on käytössä kriittisten järjestelmien suojaverkot ja valmiussuunnitelmat, joiden avulla hyökkäyksen kohteeksi joutunut verkko voidaan eristää ja toiminta voidaan palauttaa varayhteyksien kautta.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Poikkeamiin reagoiminen kuvaa toimia, joita organisaatio toteuttaa estääkseen tai rajoittaakseen poikkeaman vaikutuksia sen aikana tai pian sen jälkeen, kun se on tapahtunut. Reagoinnin laajuus, laajuus ja laajuus vaihtelevat suuresti poikkeaman luonteesta riippuen. Tähän voivat sisältyä mahdolliset poikkeamat, jotka voivat johtua uusista haavoittuvuuksista tai teknologisesta kehityksestä, joilla voi olla merkittävä potentiaalinen vaikutus organisaatioon, kuten yleisesti käytettyjen teknologioiden haavoittuvuudet (esim. MS17-010) ja uudet teknologiat, jotka heikentäisivät nykyisten kyberturvallisuuden kontrollien/hallintatoimien tehokkuutta (esim. kvanttilaskenta). Poikkeamiin reagoiminen voi olla niinkin yksinkertaista kuin käyttäjille suunnattu viestintä, jotta he välttäisivät tietyn tyyppisten sähköpostiviestien avaamista tai niin monimutkaista kuin palvelujen jatkuvuussuunnitelmien toteuttaminen, joka edellyttää palvelujen ja toimintojen siirtämistä muualla sijaitsevalle palveluntarjoajalle.
+
+Poikkeamiin reagointiin liittyviä toimia voivat olla esimerkiksi vahinkojen rajoittaminen (esimerkiksi ottamalla laitteisto tai järjestelmät pois käytöstä), viestiminen häiriöstä omaisuuden omistajille sekä korjaavien toimien ja valvontatoimien kehittäminen ja toteuttaminen.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RESPONSE-3b, RESPONSE-3e, RESPONSE-3h, RESPONSE-3i, RESPONSE-3l.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-3c">Kyberpoikkeamista tuotetaan raportointia esimerkiksi sisäisesti, CERT-FI tai soveltuville ISAC-ryhmille.</PracticeTitle>
+
+### Merkitys
+
+Järjestelmällinen raportointi varmistaa, että:
+- Organisaation sisällä tiedetään kyberpoikkeamien esiintyvyys ja vaikutukset.
+- Johto ja IT-tiimit voivat tehdä tietoon perustuvia päätöksiä riskienhallinnassa.
+- Organisaatio täyttää lakisääteiset ja sopimusvelvoitteet raportoinnissa.
+- CERT-FI ja ISAC-ryhmät saavat arvokasta tietoa, joka auttaa muita organisaatioita suojautumaan vastaavilta uhkilta.
+
+Arviointikysymykset:
+- Onko organisaatiolla määritelty prosessi kyberpoikkeamien raportointiin?
+- Mihin tahoihin organisaatio raportoi kyberpoikkeamista (esim. johto, IT-tiimi, CERT-FI, ISAC-ryhmät)?
+- Onko raportoinnin aikataulu ja vastuut määritelty?
+- Käytetäänkö standardoituja raportointimuotoja ja -kanavia?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole selkeää raportointikäytäntöä kyberpoikkeamille, tai siitä ei ole tietoa.
+- **Osittain toteutettu**: Joitakin kyberpoikkeamia raportoidaan sisäisesti tai ulkoisesti, mutta raportointiprosessi ei ole systemaattinen tai kattava.
+- **Enimmäkseen toteutettu**: Raportointiprosessi on vakiintunut ja kattaa useimmat kyberpoikkeamat, mutta sen kattavuudessa tai dokumentoinnissa voi olla vielä kehittämistä.
+- **Täysin toteutettu**: Organisaatiolla on selkeästi määritelty raportointikäytäntö, joka kattaa sekä sisäisen että ulkoisen raportoinnin, ja sitä noudatetaan järjestelmällisesti.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys raportoi kyberpoikkeamista sisäisesti IT-turvatiimille ja ylimmälle johdolle sekä ulkoisesti elintarvikealan ISAC-ryhmälle ja CERT-FI:lle, mikäli poikkeama vaikuttaa laajemmin toimitusketjuun.
+
+> **Vesilaitos**  
+Vesilaitos lähettää vakavista kyberpoikkeamista raportit kansalliselle CERT-organisaatiolle sekä paikalliselle viranomaiselle, jotta kyberturvallisuustilanne voidaan arvioida ja mahdolliset vaikutukset muihin laitoksiin voidaan ennaltaehkäistä.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Kyberturvallisuuspoikkeamiin reagoivan henkilöstön on tiedettävä, mitä tietoja poikkeamista on raportoitava eri sisäisille ja ulkoisille sidosryhmille, missä aikataulussa ja onko olemassa rajoituksia (kuten jaettavien tietojen oikeudellinen tarkastelu). Jos mahdollista, annetaan yhdelle henkilölle vastuu poikkeaman raportoinnista koko sen keston ajan, jotta viestintä pysyy yhtenäisenä tapahtuman edetessä. Pidä sidosryhmien yhteystiedot ajan tasalla. Sidosryhmiin voi kuulua henkilöstöä kuten lakiasiain edustajia, jotka eivät osallistu suoraan poikkeamaan reagointiin, mutta joille on tiedotettava asiasta, jotta organisaation toimintaa voidaan ylläpitää.
+
+Aiheeseen liittyvät käytännöt:
+
+- Tietojen jakaminen: Tämä käytäntö on osa rajat ylittävien käytäntöjen ryhmää, joka mahdollistaa tiedon jakamisen organisaation sidosryhmien kanssa. Näitä ovat: THREAT-1i, THREAT-2h, THREAT-2k, RISK-1c1d, SITUATION-3a, SITUATION-3c, SITUATION-3d, SITUATION-3e, RESPONSE-2g, RESPONSE-3c, RESPONSE-3f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="response-4">Kyberturvallisuus osana toiminnan jatkuvuutta</ObjectiveTitle>
+---
+
+<PracticeTitle name="response-4a">Organisaatio on kehittänyt toiminnan jatkuvuutta koskevat suunnitelmat, joiden avulla toiminnon toiminta voidaan säilyttää ja palauttaa, mikäli toimintaan kohdistuu kybertapahtuma tai -poikkeama.</PracticeTitle>
+
+### Merkitys
+
+Hyvin suunniteltu ja testattu toiminnan jatkuvuussuunnitelma varmistaa, että:
+- **Kyberpoikkeamat eivät lamaannuta organisaation ydintoimintoja.** Järjestelmät ja prosessit on suunniteltu kestämään ja palautumaan häiriöistä.
+- **Organisaatio voi jatkaa kriittisiä palveluja myös hyökkäyksen tai teknisen häiriön aikana.** Manuaaliset toimenpiteet ja varajärjestelmät takaavat toiminnan jatkumisen.
+- **Resurssit ja toimenpiteet on ennakkoon suunniteltu ja niiden käyttöönotto on nopeaa ja tehokasta.** Tämä vähentää taloudellisia ja operatiivisia menetyksiä.
+- **Suunnitelmat keskittyvät häiriön seurausten hallintaan ja perustuvat erilaisiin mahdollisiin tapahtumiin.** Näitä voivat olla esimerkiksi tietomurrot, ransomware-hyökkäykset tai järjestelmäkatkokset.
+- **Turvallinen alasajo on osa jatkuvuussuunnittelua.** Jos toimintaa ei voida jatkaa turvallisesti, organisaatiolla on ennalta määritellyt prosessit, joiden avulla järjestelmät ajetaan alas hallitusti.
+
+Arviointikysymykset:
+- Onko organisaatiolla dokumentoitu toiminnan jatkuvuussuunnitelma (BCP, Business Continuity Plan)?
+- Katetaanko suunnitelmassa erilaiset kyberuhat ja niiden seuraukset?
+- Sisältääkö suunnitelma konkreettiset toimenpiteet häiriötilanteiden hallintaan ja toiminnan palauttamiseen?
+- Onko organisaatiolla määritelty kriittiset roolit ja henkilöt, jotka vastaavat jatkuvuuden hallinnasta?
+- Onko suunnitelma testattu ja päivitetäänkö sitä säännöllisesti?
+- Sisältyykö suunnitelmaan myös turvallisen alasajon prosessi, mikäli toimintaa ei voida jatkaa turvallisesti?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole toiminnan jatkuvuussuunnitelmaa tai siinä ei huomioida kyberturvallisuusriskejä.
+- **Osittain toteutettu**: Jatkuvuussuunnitelma on olemassa, mutta kybertapahtumien käsittely ei ole kattavaa tai suunnitelma ei sisällä yksityiskohtaisia toimenpiteitä toiminnan palauttamiseksi.
+- **Enimmäkseen toteutettu**: Jatkuvuussuunnitelma sisältää kyberturvallisuuteen liittyvät riskit ja palautumistoimet, mutta sen käytännön toteutuksessa on vielä kehittämistarpeita (esim. testauksen puutteet).
+- **Täysin toteutettu**: Organisaatiolla on kattava, dokumentoitu ja säännöllisesti testattu toiminnan jatkuvuussuunnitelma, jossa kyberpoikkeamat on huomioitu, ja joka sisältää konkreettiset toimintamallit häiriöiden hallintaan ja turvalliseen alasajoon.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yrityksen jatkuvuussuunnitelma sisältää kyberturvallisuusvarautumisen, kuten varajärjestelmät tuotannonohjauksessa ja tietoverkkojen segmentoinnin, jotta kyberhyökkäykset eivät vaikuta koko tuotantoprosessiin. Lisäksi suunnitelma määrittelee, miten tuotanto voidaan siirtää toiseen tuotantolaitokseen tai tarvittaessa käyttää manuaalisia varajärjestelmiä.
+
+> **Vesilaitos**  
+Vesihuollosta vastaava organisaatio on kehittänyt järjestelmilleen jatkuvuussuunnitelman, jossa varajärjestelmät ja erillinen kriisitiimi varmistavat vedenjakelun myös kyberhäiriötilanteessa. Suunnitelmassa on kuvattu menettelyt, joilla voidaan siirtyä manuaaliseen ohjaukseen, jos automaatiojärjestelmät ovat hyökkäyksen kohteena.
+
+> **Sähköyhtiö**  
+Energiayhtiö käyttää segmentoitua verkkorakennetta ja offline-varmistuksia varmistaakseen, että kyberpoikkeamat eivät häiritse sähkönjakelua. Jatkuvuussuunnitelma testataan vuosittain kriisiharjoituksilla, ja siihen sisältyy skenaariot, joissa tietojärjestelmät eivät ole käytettävissä ja sähköverkon ohjaus siirretään varakeskuksiin.
+
+### Lisätiedot
+
+Jatkuvuussuunnitelmat sisältävät:
+- **Kuvaukset toimista, joilla organisaatio ylläpitää ja palauttaa toimintansa häiriötilanteessa.** Esimerkiksi siirtyminen varajärjestelmiin, ylimääräisiin tiloihin tai manuaalisten prosessien käyttö.
+- **Keskeiset roolit ja vastuut häiriötilanteissa.** Kuka vastaa mistäkin toimenpiteestä?
+- **Seurausten hallintaan keskittyminen.** Suunnitelmat perustuvat erilaisiin mahdollisiin tapahtumiin, jotka voivat aiheuttaa häiriöitä.
+- **Turvallisen alasajon prosessi.** Jos toimintaa ei voida jatkaa turvallisesti, suunnitelmasta löytyy keinot hallittuun järjestelmien sulkemiseen ja tietojen turvaamiseen.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Jatkuvuussuunnitelmat sisältävät kuvaukset toimista, joihin organisaatio ryhtyy toiminnon toiminnan ylläpitämiseksi ja palauttamiseksi häiriötilanteessa (esimerkiksi siirtyminen ylimääräisiin tiloihin tai manuaalisten menettelyjen käynnistäminen), sekä keskeisistä rooleista, joiden on oltava mukana / osallistuttava. Suunnitelmissa keskitytään yleensä häiriön seurausten hallintaan organisaatiossa, ja ne perustuvat erilaisiin mahdollisiin tapahtumiin, jotka voivat aiheuttaa häiriöitä.
+
+Jatkuvuussuunnitelmissa käsitellään organisaation kriittisimpiä liiketoimintoja sen varmistamiseksi, että ne jatkuvat erityyppisten hätätilanteiden aikana. Organisaatiot voivat myös pohtia, miten turvallinen alasajo toteutetaan osana jatkuvuussuunnittelua.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ARCHITECTURE-2j:n toteuttaminen tarjoaa syötteen, joista voi olla hyötyä tämän käytännön toteutumisen arvionnissa ja toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RESPONSE-4a, RESPONSE-4d, RESPONSE-4e, RESPONSE-4f, RESPONSE-4g, RESPONSE-4m, RESPONSE-4p.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-4b">Tiedoista on saatavilla varmuuskopiot ja varmuuskopioiden toimivuutta testataan vähintään satunnaisesti.</PracticeTitle>
+
+### Merkitys
+
+Luotettava varmuuskopiointikäytäntö ja sen säännöllinen testaus takaavat, että:
+- **Tietojen menetyksen riski minimoidaan.** Varmuuskopioilla voidaan palauttaa kriittiset tiedot ja järjestelmät esimerkiksi kyberhyökkäyksen tai laitteistovian jälkeen.
+- **Ransomware-hyökkäysten vaikutukset voidaan torjua.** Jos tiedot salataan hyökkäyksessä, puhtaat varmuuskopiot mahdollistavat järjestelmien palauttamisen ilman lunnaiden maksamista.
+- **Toiminnan jatkuvuus on turvattu.** Varmuuskopiointi kattaa organisaation operatiiviset tiedot, konfiguraatiotiedostot ja kiintolevykuvat, mikä mahdollistaa nopean palautuksen.
+- **Varmuuskopioiden eheys ja toimivuus varmistetaan.** Testaamalla palautusprosesseja organisaatio voi varmistaa, että varmuuskopiot todella toimivat kriisitilanteessa.
+
+Arviointikysymykset:
+- Onko organisaatiolla määritelty ja dokumentoitu varmuuskopiointikäytäntö?
+- Ovatko kaikki kriittiset tietovarannot varmuuskopioitu säännöllisesti?
+- Otetaanko varmuuskopioissa huomioon erilaiset IT- ja OT-ympäristöt, kuten pilvipalvelut, mobiilivarannot ja kolmannen osapuolen hallinnoimat tiedot?
+- Säilytetäänkö varmuuskopiot turvallisesti ja onko niiden eheys varmistettu?
+- Testataanko varmuuskopioiden palauttamista säännöllisesti?
+- Perustuuko varmuuskopiointisuunnitelma organisaation riskiarvioon?
+
+Tietovarantojen varmuuskopiointiin voi kuulua:
+- **Operatiiviset tiedot:** Asiakasrekisterit, tilaus- ja tuotantotiedot.
+- **Asetuspisteet:** Ohjausjärjestelmien ja automaatiojärjestelmien konfiguraatiot.
+- **Konfiguraatiotiedostot:** Palvelinten, verkkolaitteiden ja sovellusten asetukset.
+- **Tallennuspaikat:** Pilvipalveluiden ja paikallisten järjestelmien tärkeät tiedot.
+- **Kriittiset järjestelmäkuvat:** Kultaiset kuvat, kiintolevykuvat, virtuaalikoneiden varmuuskopiot.
+
+Varmuuskopiointimenettelyihin tulisi sisältyä:
+- **Kuinka usein varmuuskopioidaan?** Päivittäin, viikoittain tai muun tarpeen mukaan.
+- **Säilytysajat:** Kuinka kauan varmuuskopiot säilytetään eri sijainneissa.
+- **Valtuutetut tallennuspaikat ja -menetelmät:** Missä varmuuskopiot säilytetään ja miten niitä suojataan.
+- **Salaus- ja suojausvaatimukset:** Varmuuskopioiden suojaaminen luvattomalta käytöltä.
+- **Testausstandardit:** Kuinka usein varmuuskopioiden palauttamista testataan.
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole varmuuskopiointikäytäntöä, tai tietoja ei varmuuskopioida säännöllisesti.
+- **Osittain toteutettu**: Varmuuskopioita tehdään, mutta niiden kattavuus on puutteellinen tai palautustestausta ei suoriteta.
+- **Enimmäkseen toteutettu**: Varmuuskopiot kattavat tärkeimmät tiedot, ja palautustestejä tehdään satunnaisesti, mutta varmuuskopiointikäytännössä on vielä kehittämistarpeita.
+- **Täysin toteutettu**: Organisaatio varmuuskopioi tiedot kattavasti, varmuuskopiot säilytetään turvallisesti, ja palautustestejä suoritetaan säännöllisesti varmistaakseen niiden toimivuuden.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yrityksellä on säännöllinen varmuuskopiointikäytäntö, jossa tuotannonhallintajärjestelmät ja asiakastiedot tallennetaan turvallisesti eri sijainteihin. Palautustestit suoritetaan neljännesvuosittain, ja varmuuskopiot säilytetään salattuna erillisessä ympäristössä.
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää erillisiä, offline-varmuuskopioita järjestelmien tiedoista, jotka voidaan palauttaa kriittisissä tilanteissa. Järjestelmien palauttamista testataan vähintään puolivuosittain.
+
+> **Sähköyhtiö**  
+Energiayhtiöllä on monitasoinen varmuuskopiointijärjestelmä, jossa tuotantotiedot ja asiakasrekisterit kopioidaan erillisiin varmistusjärjestelmiin. Testausta tehdään automaattisesti kuukausittain, ja palautustiedot tarkistetaan osana riskienhallintaa.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tämä käytäntö on olennainen toimintojen palauttamiseksi tietojen menetyksen tai laitteistovian sattuessa. Organisaatio tekee ja asettaa saataville tietovarantojen varmuuskopiot ainakin silloin tällöin. Varmuuskopioitavia tietovarantoja yksilöidessään organisaatioiden olisi otettava huomioon tiedot, jotka sijaitsevat erityyppisissä IT- ja OT-ympäristöissä, kuten virtualisoidut varannot, säännellyt varannot, pilvivarannot, BYOD-varannot (Bring Your Own Device), kolmannen osapuolen hallinnoimat varannot, kenttä olosuhteissa olevat varannot ja mobiilivarannot. Varmuuskopioita testataan, jotta voidaan varmistaa, että ne ovat toimivia ja käytettävissä, kun niitä tarvitaan. Varmuuskopioiden toteuttamista ja hallintaa koskevien toimintasuunnitelmien olisi perustuttava toimintoon tai organisaatioon kohdistuvaan riskiin. Tämä käytäntö aloittaa käytäntöjen etenemisen, joka jatkuu MIL2:ssa ja keskittyy tietojen varmuuskopiointiin.
+
+Tietovarantojen varmuuskopiointiin voi kuulua:
+
+- operatiiviset tiedot
+- asetuspisteet
+- konfiguraatiotiedostot
+- tallennuspaikat
+- kopiot tärkeistä konfiguraatioiden perustasoista, kultaisista kuvista, kiintolevykuvista ja virtuaalikoneiden kuvista.
+Varmuuskopiointimenettelyihin kuuluvat yleensä:
+- kuinka usein varmuuskopioidaan
+- säilytysajat
+- valtuutetut tallennuspaikat ja -menetelmät
+- salaus- ja suojausvaatimukset; testausstandardit
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RESPONSE-4b, RESPONSE-4f, RESPONSE-4j, RESPONSE-4k.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="response-4c">Varaosia tarvitsevat IT-laitteet ja mahdolliset OT-laitteet on tunnistettu.</PracticeTitle>
+
+### Merkitys
+
+IT- ja OT-laitteiden varaosien hallinta on kriittistä, koska:
+- **Vähennetään toimintakatkoksia.** Nopea laitteiden korjaaminen ja varaosien saatavuus varmistavat liiketoiminnan jatkuvuuden.
+- **Parannetaan kyberresilienssiä.** Laitteistoviat voivat olla seurausta kyberhyökkäyksistä, ja nopea palautuminen minimoi riskit.
+- **Säilytetään järjestelmien luotettavuus.** Vanhoille tai harvinaisille järjestelmille tarvittavat varaosat voivat olla vaikeasti saatavilla ilman ennakkosuunnittelua.
+- **Optimoidaan kustannukset.** Varaosien ennakkosuunnittelu vähentää yllättäviä kustannuksia ja estää kriittisten komponenttien loppumisen markkinoilta.
+
+Arviointikysymykset:
+- Onko organisaatio tunnistanut kriittiset IT- ja OT-laitteet, jotka vaativat varaosia tai korvaavia komponentteja?
+- Säilytetäänkö varaosia paikan päällä vai hankitaanko ne tarpeen mukaan?
+- Onko varaosien toimitusketju ja varastointikäytännöt huomioitu?
+- Onko varaosien hallintaa koskeva suunnitelma päivitetty ja tarkistettu säännöllisesti?
+- Onko varaosien tarve arvioitu riskeihin perustuen ja priorisoitu toiminnan kannalta tärkeimmät laitteet?
+
+Organisaatioiden tulisi tunnistaa seuraavat varaosaa vaativat IT- ja OT-laitteet:
+**IT-omaisuuserät:**
+  - Kytkimet
+  - Reitittimet
+  - Palvelimet
+  - Tietoliikenneverkot
+  - Virtualisoidut resurssit
+**OT-omaisuuserät:**
+  - Ohjaimet
+  - Anturit
+  - Valvonta- ja automaatiojärjestelmät
+  - SCADA-järjestelmät
+  - Verkkoihin kytketyt IoT-laitteet
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Varaosia tarvitsevia IT- ja OT-laitteita ei ole tunnistettu tai niiden hallintaan ei ole suunnitelmaa.
+- **Osittain toteutettu**: Joitakin varaosia ja kriittisiä laitteita on tunnistettu, mutta kattavaa varaosasuunnitelmaa ei ole tehty.
+- **Enimmäkseen toteutettu**: Suurin osa kriittisistä IT- ja OT-laitteista on tunnistettu, ja varaosasuunnitelma on olemassa, mutta sen toteutuksessa voi olla vielä kehittämistarpeita.
+- **Täysin toteutettu**: Kaikki kriittiset IT- ja OT-laitteet on tunnistettu, varaosien saatavuus on suunniteltu ja dokumentoitu, ja suunnitelmaa päivitetään säännöllisesti.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarviketeollisuuden automaatiojärjestelmät ja tuotantokoneet vaativat erityisiä varaosia. Yritys ylläpitää kriittisten osien varastoa ja sopimuksia toimittajien kanssa varmistaakseen nopean huollon.
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio käyttää järjestelmään kytkettyjä venttiilejä ja pumppuja, joille tarvitaan erityisiä ohjauskomponentteja. Varaosat on tunnistettu ja varastoitu strategisiin paikkoihin.
+
+> **Sähköyhtiö**  
+Energiayhtiöllä on kriittisten OT-järjestelmien varaosasuunnitelma, jossa huomioidaan muuntajien, ohjausyksiköiden ja sähkönjakeluverkkojen komponenttien saatavuus.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tämä käytäntö on olennaisen tärkeä, jotta organisaation toiminta voidaan palauttaa, jos omaisuuseriä menetetään tai vikaantuu. Organisaatio yksilöi ainakin tapauskohtaisesti ne IT- ja OT-omaisuuserät, joiden varaosia saatetaan tarvita. Tämä käytäntö aloittaa toiminnan kehityspolun, joka jatkuu MIL2:ssa ja joka keskittyy vara- tai korvaaviin omaisuuseriin.
+
+Nämä ovat esimerkkejä vara- tai korvaavat IT- ja OT-varoista:
+
+- kytkimet
+- reitittimet
+- ohjaimet
+- anturit
+- virtualisoidut resurssit
+- järjestelmät, joihin omaisuuserät tukeutuvat, kuten tietoliikenneverkot.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: RESPONSE-4c, RESPONSE-4f, RESPONSE-4l.
+</CollapsibleSection>
+
+---
+
+_Ohjetta päivitetty: 17.3.2025_

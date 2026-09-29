@@ -1,0 +1,293 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Kumppaniverkoston riskien hallinta
+
+<Roles>
+- kyberturvallisuudesta vastaava johto
+- IT-johto
+- OT-johto
+- hankinnoista vastaava asiantuntija
+- kumppaniverkoston toimittajahallinnon edustaja
+- kumppaniverkoston riskienhallinnasta vastaava asiantuntija
+- henkilöstöhallinnon edustaja
+- lakiosaston edustaja
+- IT- ja OT-tiimin asiantuntija, jotka vastaavat loogisen ja fyysisen pääsyn järjestämisestä
+</Roles>
+
+---
+<ObjectiveTitle name="third-parties-1">Kumppaniverkoston tunnistaminen ja priorisointi</ObjectiveTitle>
+---
+
+<PracticeTitle name="third-parties-1a">Merkittävät kumppaniverkoston IT-riippuvuudet ja mahdolliset OT-riippuvuudet on tunnistettu</PracticeTitle>
+
+### Merkitys
+
+Kumppaniverkoston IT- ja OT-riippuvuuksien tunnistaminen on kriittistä, koska:
+- **Toiminnan jatkuvuus riippuu keskeisistä palveluista.** Esimerkiksi IT-palveluiden katkeaminen kumppanin ongelmien vuoksi voi vaikuttaa liiketoimintaan merkittävästi.
+- **Kolmannen osapuolen kyberturvallisuus vaikuttaa organisaatioon.** Alihankkijan tai palveluntarjoajan heikko tietoturvakäytäntö voi johtaa tietovuotoihin ja muihin riskeihin.
+- **Poikkeamien hallinta tehostuu.** Kun riippuvuudet on tunnistettu ja dokumentoitu, organisaatio voi reagoida nopeammin ja tehokkaammin kumppaneihin liittyviin ongelmiin.
+- **Riskienhallinnan läpinäkyvyys paranee.** Kun IT- ja OT-riippuvuuksien hallinta on kunnossa, organisaatio pystyy arvioimaan ja hallitsemaan riskejä ennakoivasti.
+
+Arviointikysymykset:
+- Onko organisaatio tunnistanut keskeiset IT- ja OT-palveluntarjoajat, joista se on riippuvainen?
+- Sisältääkö tunnistus sekä sisäiset että ulkoiset kumppanit, jotka vaikuttavat toiminnan jatkuvuuteen?
+- Onko IT- ja OT-riippuvuuksiin liittyviä tietoja kerätty, dokumentoitu ja päivitetäänkö niitä säännöllisesti?
+- Ovatko kumppaniverkoston riskit osa organisaation yleistä riskienhallintasuunnitelmaa?
+- Onko tieto riippuvuuksista saatavilla niille henkilöille, jotka vastaavat kolmansien osapuolten riskienhallinnasta?
+
+### Tunnistettavat riippuvuudet:
+
+**IT-riippuvuudet voivat sisältää:**
+- Pilvipalveluntarjoajat
+- IT-infrastruktuurin ylläpitäjät
+- Sovellusten ja ohjelmistojen toimittajat
+- Tietoverkkojen ja tietoliikenteen tarjoajat
+- IT-konsultointi- ja poikkeamanhallintapalvelut
+
+**OT-riippuvuudet voivat sisältää:**
+- Automaatiojärjestelmien toimittajat
+- Valvonta- ja ohjausjärjestelmien (SCADA, DCS) ylläpitäjät
+- Verkkoon kytkettyjen laitteiden ja IoT-ratkaisujen tarjoajat
+- Laitetoimittajat, joiden varaosista ja huoltopalveluista organisaatio on riippuvainen
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: IT- ja OT-riippuvuuksia ei ole tunnistettu, tai niitä ei ole dokumentoitu.
+- **Osittain toteutettu**: Joitakin riippuvuuksia on tunnistettu, mutta kattava lista tai järjestelmällinen dokumentaatio puuttuu.
+- **Enimmäkseen toteutettu**: Useimmat IT- ja OT-riippuvuudet on tunnistettu ja dokumentoitu, mutta päivityskäytännöt tai riskienhallintaprosessit voivat olla puutteellisia.
+- **Täysin toteutettu**: Kaikki keskeiset IT- ja OT-riippuvuudet on tunnistettu, dokumentoitu ja niitä päivitetään säännöllisesti. Riippuvuustiedot ovat saatavilla niille, jotka vastaavat kolmansien osapuolten riskienhallinnasta.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys on tunnistanut kriittiset riippuvuudet IT-palveluntarjoajista, kuten ERP-järjestelmien ja tuotannonohjausjärjestelmien ylläpitäjistä. Lisäksi varaosien ja automaatiojärjestelmien huoltopalvelut ovat keskeisiä OT-riippuvuuksia, joiden riskienhallintaan on luotu prosessi.
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio on tunnistanut järjestelmien ja tietoliikennepalveluiden keskeiset toimittajat, joiden saatavuus on kriittinen vedenjakelun jatkuvuuden kannalta. Lisäksi organisaatio hallinnoi varaosien ja huoltopalveluiden riippuvuuksia ennakoivasti.
+
+> **Sähköyhtiö**  
+Energiayhtiöllä on tunnistettu ja dokumentoitu IT-palveluntarjoajien, kriittisten OT-järjestelmien ja varaosatoimittajien riippuvuudet. Näitä tietoja käytetään riskienhallinnassa ja osana toiminnan jatkuvuussuunnittelua.
+
+### Lisätiedot
+
+- **Tunnistetaan ja ylläpidetään perustiedot sisäisistä ja ulkoisista osapuolista**, joita tarvitaan tehtävän jatkuvan suorittamisen kannalta.
+- **Toimittajariippuvuuksia voivat olla:**
+  - Tietotekniikkapalvelujen tarjoajat
+  - Poikkeamanhallintakonsultit
+  - Laitetoimittajat
+- **Kolmannet osapuolet voivat tukea organisaation IT- tai OT-laitteita ja operatiivisia toimintoja.**
+- **Kerättyjä tietoja olisi ylläpidettävä sellaisessa muodossa, että ne ovat kolmansien osapuolten riskienhallinnasta vastaavien henkilöiden saatavilla.**
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tunnistetaan ja ylläpidetään perustiedot sisäisistä ja ulkoisista osapuolista, joita voidaan tarvita tehtävän jatkuvan suorittamisen kannalta. Toimittajariippuvuuksia voivat olla esimerkiksi tietotekniikkapalvelujen tarjoajat, poikkeamanhallintakonsultit ja laitetoimittajat. Kolmannet osapuolet voivat tukea organisaation IT- tai OT-laitteita ja operatiivisia toimintoja. Kerättyjä tietoja olisi ylläpidettävä sellaisessa muodossa, että ne ovat kolmansien osapuolten riskienhallinnasta vastaavien henkilöiden saatavilla.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THIRD-PARTIES-1a, THIRD-PARTIES-1b, THIRD-PARTIES-1c, THIRD-PARTIES-1d, THIRD-PARTIES-1e, THIRD-PARTIES-1f.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="third-parties-1b">Kumppaniverkoston toimijat / palveluntarjoajat, joilla on pääsy, hallinnointioikeus, tai ylläpitovastuu tai pääsevät muutoin käyttämään toiminnon kannalta tärkeitä laitteita, ohjelmistoja tai tietovarantoja, on tunnistettu</PracticeTitle>
+
+### Merkitys
+
+Kolmansien osapuolten hallintaoikeuksien tunnistaminen ja hallinta on kriittistä, koska:
+- **Pääsyoikeudet voivat olla tietoturvariski.** Kumppaniverkoston toimijat voivat päästä käsiksi arkaluonteisiin tietoihin, mikä voi lisätä tietoturvariskejä.
+- **Hyökkääjät voivat käyttää kumppaneita väylänä organisaation järjestelmiin.** Esimerkiksi alihankkijoiden tietomurrot voivat vaikuttaa organisaatioon, jos käyttöoikeuksia ei ole rajattu riittävästi.
+- **IT- ja OT-järjestelmien hallinta ja ylläpito ovat osa organisaation kyberresilienssiä.** Jos kumppaniverkoston toimijat eivät noudata tietoturvavaatimuksia, organisaatio voi altistua riskeille.
+- **Tietovarantojen hallinta tukee toiminnan jatkuvuutta.** Kun tiedetään, ketkä hallinnoivat keskeisiä laitteita ja ohjelmistoja, voidaan varautua häiriötilanteisiin paremmin.
+
+Arviointikysymykset:
+- Onko organisaatiolla ajan tasalla oleva luettelo sisäisistä ja ulkoisista toimijoista, joilla on pääsy tärkeisiin IT- ja OT-järjestelmiin?
+- Onko tunnistettu, mitä tietoja, laitteita tai ohjelmistoja kukin toimija voi käyttää, hallinnoida tai ylläpitää?
+- Onko organisaatio arvioinut, kuinka laajoja käyttöoikeuksia kumppaneilla on ja miten niitä valvotaan?
+- Onko käytössä sopimuksia tai menettelyjä, joilla hallitaan kolmansien osapuolten pääsyoikeuksia ja niihin liittyviä riskejä?
+- Tiedetäänkö, mitkä kolmannet osapuolet hallinnoivat IT- tai OT-laitteita, tietovarantoja tai ohjelmistoja?
+
+### Tunnistettavat toimijat ja palveluntarjoajat
+
+Organisaation tulee ylläpitää **luetteloa** seuraavista toimijoista:
+
+- **IT-palveluntarjoajat ja alihankkijat**, joilla on pääsy yrityksen IT-infrastruktuuriin.
+- **Pilvipalveluiden tarjoajat**, jotka käsittelevät tai tallentavat organisaation tietoja.
+- **Ohjelmistojen ylläpitäjät ja kehittäjät**, jotka voivat päästä käsiksi organisaation järjestelmiin.
+- **OT-järjestelmien toimittajat**, jotka hallinnoivat tai ylläpitävät SCADA-, automaatio- ja IoT-järjestelmiä.
+- **Tietovarantojen hallinnoijat**, kuten tietokeskukset, arkistopalvelut ja ulkoistetut IT-ratkaisut.
+- **Sisäiset osapuolet**, kuten IT-osasto tai muut yksiköt, joilla on erityiset hallinnointioikeudet.
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Organisaatiolla ei ole luetteloa kumppaniverkoston toimijoista, joilla on hallintaoikeuksia tai pääsy kriittisiin järjestelmiin.
+- **Osittain toteutettu**: Joitakin toimijoita ja palveluntarjoajia on tunnistettu, mutta kattavaa dokumentaatiota ei ole tai se ei ole ajan tasalla.
+- **Enimmäkseen toteutettu**: Suurin osa keskeisistä kumppaneista on tunnistettu ja dokumentoitu, mutta hallintaoikeuksia tai pääsykäytäntöjä ei ole täysin arvioitu tai valvottu.
+- **Täysin toteutettu**: Kaikki relevantit kumppaniverkoston toimijat on tunnistettu, dokumentoitu ja pääsyoikeuksia hallitaan ja valvotaan säännöllisesti.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys on tunnistanut IT-palveluntarjoajat, jotka ylläpitävät tuotannonhallintajärjestelmiä, ja OT-toimittajat, jotka vastaavat automaatiojärjestelmien toiminnasta. Pääsyoikeudet on rajoitettu ja dokumentoitu.
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio on kartoittanut järjestelmien hallintaan liittyvät palveluntarjoajat sekä tietokeskukset, joissa vesihuoltoon liittyviä operatiivisia tietoja säilytetään. Luettelo on osa riskienhallintaprosessia.
+
+> **Sähköyhtiö**  
+Energiayhtiö ylläpitää ajantasaista luetteloa palveluntarjoajista, joilla on pääsy kriittisiin ohjausjärjestelmiin, kuten sähkönjakelun hallintaan. Ylläpitosopimukset sisältävät tietoturvavaatimukset ja käyttöoikeuksien rajoitukset.
+
+### Lisätiedot
+
+- **Luo ja ylläpidä luetteloa**, joka sisältää perustiedot tärkeistä sisäisistä ja ulkoisista osapuolista, joilla on pääsy, hallinta tai joiden hallussa IT- tai OT-laitteita tai tietovarantoja on.
+- **Joidenkin kolmansien osapuolten, kuten yrityksen IT-osaston, osalta nämä tärkeät suhteet voivat olla täysin sisäisiä.**
+- **Kerättyjä tietoja tulisi ylläpitää sellaisessa muodossa, että ne ovat saatavilla kolmansien osapuolten riskienhallinnasta vastaaville henkilöille.**
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Luo ja ylläpidä luetteloa, joka sisältää perustiedot tärkeistä sisäisistä ja ulkoisista osapuolista, joilla on pääsy, hallinta tai jonka hallussa IT-, OT-laitteita tai tietovarantoja on. Joidenkin kolmansien osapuolten, kuten yrityksen IT-osaston, osalta nämä tärkeät suhteet voivat olla täysin sisäisiä.
+
+Aiheeseen liittyvät käytännöt:
+
+- Syöte: ASSET-1a:n ja ASSET-2a:n toteuttaminen tarjoaa tietoja, joista voi olla hyötyä tämän käytännön toteuttamisessa.
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THIRD-PARTIES-1a, THIRD-PARTIES-1b, THIRD-PARTIES-1c, THIRD-PARTIES-1d, THIRD-PARTIES-1e, THIRD-PARTIES-1f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="third-parties-2">Kumppaniverkostoon liittyvien riskien hallinta</ObjectiveTitle>
+---
+
+<PracticeTitle name="third-parties-2a">Toimittajien ja muiden kumppaniverkoston toimijoiden valintaan vaikuttaa arvio niiden kyberturvallisuuskelpoisuuksista.</PracticeTitle>
+
+### Merkitys
+
+Toimittajien kyberturvallisuuden arviointi on kriittistä, koska:
+- **Kolmansien osapuolten haavoittuvuudet voivat vaikuttaa suoraan organisaatioon.** Monet kyberhyökkäykset kohdistuvat alihankkijoihin ja toimittajiin, joiden kautta hyökkääjät pääsevät käsiksi suurempiin kohteisiin.
+- **Tietoturvavaatimusten määrittely vähentää riskejä.** Kun toimittajilta edellytetään tiettyä kyberturvallisuustasoa, organisaatio varmistaa, että yhteistyökumppanit täyttävät vähimmäisvaatimukset.
+- **Aiemmat kyberpoikkeamat voivat kertoa toimittajan kyberturvallisuuskäytännöistä.** Jos kumppani on aiemmin joutunut merkittäviin tietomurtoihin, tämä voi olla varoitusmerkki.
+- **Kriittisen infrastruktuurin suojaaminen edellyttää pääsynhallintaa.** Kun kolmansien osapuolten henkilöstöllä on pääsy organisaation järjestelmiin, heidän taustatietonsa on hyvä tarkistaa.
+- **Selkeät raportointivaatimukset parantavat reagointikykyä.** Jos toimittajalla tapahtuu tietoturvaloukkaus, organisaatio voi reagoida nopeasti, jos ilmoittaminen on määritelty sopimuksessa.
+
+Arviointikysymykset:
+- Onko toimittajien ja kumppaneiden kyberturvallisuus osa organisaation valintakriteerejä?
+- Onko käytössä tietoturvavaatimuksia, jotka toimittajien on täytettävä ennen sopimuksen solmimista?
+- Arvioidaanko toimittajien aiempia kyberturvallisuuspoikkeamia ja riskienhallintakäytäntöjä?
+- Suorittaako organisaatio taustatarkastuksia kriittisiin järjestelmiin pääsevälle kolmannen osapuolen henkilöstölle?
+- Onko olemassa vaatimuksia tietoturvaloukkauksista ja kyberturvallisuuteen liittyvistä välikohtauksista ilmoittamiseksi?
+
+Organisaation tulisi huomioida seuraavat asiat arvioidessaan toimittajien kyberturvallisuuskelpoisuuksia:
+
+**Kyberturvallisuuden hallinnan taso:**  
+  - Toimittajilla tulisi olla tietoturvasertifikaatteja, kuten ISO 27001, NIST CSF tai vastaava hallintajärjestelmä.
+**Kyberpoikkeamien arviointi:**  
+  - Toimittajien aiemmat kyberhyökkäykset ja niiden hallinta otetaan huomioon valintaprosessissa.
+**Henkilöstön taustatarkastukset:**  
+  - Kriittisiin järjestelmiin pääsevän kolmannen osapuolen henkilöstölle voidaan tehdä turvallisuusselvityksiä.
+**Tietoturvaloukkausten ilmoittaminen:**  
+  - Sopimuksiin voidaan sisällyttää velvoite ilmoittaa tietoturvaloukkauksista ja muista välikohtauksista organisaatiolle.
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Toimittajien kyberturvallisuuskelpoisuuksia ei arvioida osana valintaprosessia.
+- **Osittain toteutettu**: Joitakin kyberturvallisuusvaatimuksia on määritelty, mutta arviointi ei ole systemaattista tai kattavaa.
+- **Enimmäkseen toteutettu**: Useimmille toimittajille asetetaan kyberturvallisuusvaatimuksia, ja aiemmat tietoturvaloukkaukset huomioidaan, mutta käytännön toteutuksessa voi olla vielä kehittämistarpeita.
+- **Täysin toteutettu**: Kaikille toimittajille asetetaan selkeät kyberturvallisuusvaatimukset, aiemmat kyberpoikkeamat arvioidaan, taustatarkastukset suoritetaan tarvittaessa ja tietoturvaloukkausten raportointi on sopimuksellisesti määritelty.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Elintarvikealan yritys arvioi IT-järjestelmiä ja logistiikkaa tarjoavien toimittajien kyberturvallisuutta osana valintaprosessia. Toimittajilta edellytetään ISO 27001 -sertifiointia ja ilmoittamista mahdollisista tietoturvaloukkauksista.
+
+> **Vesilaitos**  
+Vesihuollosta vastaava organisaatio edellyttää, että järjestelmien toimittajat täyttävät kyberturvallisuusvaatimukset ja tekevät turvallisuusselvitykset kriittisiin järjestelmiin pääsevälle henkilöstölle.
+
+> **Sähköyhtiö**  
+Energiayhtiö arvioi jokaisen kriittisen järjestelmän toimittajan kyberturvallisuuskelpoisuuden ennen sopimusten solmimista. Vaatimuksiin kuuluu tietoturvasertifikaattien ylläpitäminen, taustatarkastukset ja velvollisuus ilmoittaa tietoturvaloukkauksista 24 tunnin sisällä.
+
+### Lisätiedot
+
+**Toimittajien ja muiden kolmansien osapuolten kyberturvallisuutta koskeviin vaatimuksiin voi sisältyä:**
+  - Tietyn kyberturvallisuuden hallinnan toteutustason ylläpitäminen (esim. ISO 27001, NIST CSF).
+  - Kolmannen osapuolen aiempien kyberpoikkeamien arviointi.
+  - Kriittiseen omaisuuteen pääsevän henkilöstön taustatarkastukset.
+  - Vaatimukset tietoturvaloukkauksista ja muista kyberturvallisuuteen liittyvistä välikohtauksista ilmoittamisesta.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Toimittajien ja muiden kolmansien osapuolten kyberturvallisuutta koskeviin vaatimuksiin voi sisältyä esimerkiksi tietyn kyberturvallisuuden hallinnan toteutustason ylläpitäminen, kolmannen osapuolen aiempien kyberpoikkeamien arviointi, kriittiseen omaisuuteen pääsevän henkilöstön taustatarkastukset sekä vaatimukset tietoturvaloukkauksista ja muista kyberturvallisuuteen liittyvistä välikohtauksista ilmoittamisesta.
+
+Aiheeseen liittyvät käytännöt:
+
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THIRD-PARTIES-2a, THIRD-PARTIES-2d.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="third-parties-2b">Tuotteiden ja palveluiden valintaan vaikuttaa arvio niiden kyberkyvykkyyksistä.</PracticeTitle>
+
+### Merkitys
+
+Tuotteiden ja palveluiden kyberkyvykkyyksien arviointi on kriittistä, koska:
+- **Heikko kyberturvallisuus voi altistaa organisaation hyökkäyksille.** Monet tuotteet ja palvelut sisältävät komponentteja, joihin hyökkääjät voivat kohdistaa tietomurtoja.
+- **Organisaatio voi joutua tietoturvaloukkauksen kohteeksi alihankkijan kautta.** Jos palveluntarjoajan kyberturvallisuus ei ole riittävällä tasolla, tämä voi muodostaa merkittävän riskin.
+- **Tietoturva-asetukset voivat vaikuttaa suoraan turvallisuuteen.** Jos tuotteista ei voida poistaa tarpeettomia tai riskialttiita toimintoja, ne voivat jäädä hyödyntämättömiksi tai muodostaa tietoturva-aukon.
+- **Palveluiden käyttöehdoissa voi olla tietoturvaa heikentäviä kohtia.** Jos käyttöehdoissa sallitaan esimerkiksi tietojen jakaminen kolmansille osapuolille, tämä voi aiheuttaa riskin organisaatiolle.
+
+Arviointikysymykset:
+- Onko organisaatiolla määritelty kyberturvallisuusvaatimukset hankittaville tuotteille ja palveluille?
+- Onko tuotteiden ja palveluiden turvallisuus arvioitu ennen käyttöönottoa?
+- Sisältyykö arviointiin tieto siitä, mitä komponentteja tuotteessa käytetään ja miten ne voivat vaikuttaa turvallisuuteen?
+- Voiko tuotteista poistaa tietoturvaa heikentäviä tai tarpeettomia toimintoja?
+- Onko palveluiden käyttöehdot tarkistettu ja täyttävätkö ne kyberturvallisuusvaatimukset?
+
+### Tuotteiden ja palveluiden kyberturvallisuusvaatimukset
+
+Organisaation tulisi huomioida seuraavat asiat tuotteiden ja palveluiden valinnassa:
+
+- **Poistettavissa olevat toiminnot:**  
+  - Voidaanko tarpeettomat tai tietoturvaa heikentävät ominaisuudet kytkeä pois päältä?
+- **Komponenttien läpinäkyvyys:**  
+  - Onko tiedossa, mitä ohjelmisto- ja laitteistokomponentteja tuotteessa on käytetty?
+  - Sisältyykö tuotteeseen kolmannen osapuolen ohjelmistoja tai avoimen lähdekoodin komponentteja, joiden turvallisuutta ei ole arvioitu?
+- **Palvelun käyttöehdot:**  
+  - Sisältävätkö käyttöehdot selkeät kyberturvallisuusvaatimukset, kuten tietojen suojaamisen, pääsynhallinnan ja mahdollisten tietoturvaloukkausten ilmoittamisen?
+  - Onko määritelty, miten palveluntarjoaja vastaa kyberturvallisuudesta ja miten tietoturvapoikkeamiin reagoidaan?
+
+<AnswerOptions>
+- **Ei toteutettu tai ei tietoa**: Tuotteiden ja palveluiden kyberkyvykkyyksiä ei arvioida ennen hankintaa.
+- **Osittain toteutettu**: Joitakin kyberturvallisuusvaatimuksia on määritelty tuotteille ja palveluille, mutta niiden arviointi ei ole järjestelmällistä tai kattavaa.
+- **Enimmäkseen toteutettu**: Useimmat hankittavat tuotteet ja palvelut arvioidaan kyberturvallisuuden näkökulmasta, mutta käytännön toteutuksessa voi olla vielä kehittämistarpeita.
+- **Täysin toteutettu**: Kaikille hankittaville tuotteille ja palveluille tehdään systemaattinen kyberturvallisuusarviointi, jossa huomioidaan mahdolliset tietoturva-aukot, komponenttien läpinäkyvyys ja käyttöehtojen vaatimukset.
+</AnswerOptions>
+
+### Esimerkkejä eri toimialoilta
+
+> **Elintarvikeyritys**  
+Yritys hankkii tuotannonohjausjärjestelmiä, joiden kyberturvallisuus arvioidaan ennen käyttöönottoa. Tuotteiden turvallisuus varmistetaan analysoimalla niiden komponentit ja poistamalla tarpeettomat verkkoyhteydet.
+
+> **Vesilaitos**  
+Vesihuolto-organisaatio varmistaa, että kriittisiin valvontajärjestelmiin hankittavat komponentit täyttävät kyberturvallisuusstandardit. Ohjausjärjestelmien komponenttien turvallisuus analysoidaan ennen asennusta.
+
+> **Sähköyhtiö**  
+Energiayhtiö edellyttää, että kaikki hankittavat SCADA- ja automaatiojärjestelmät täyttävät kansainväliset tietoturvastandardit ja että käyttöehdot sisältävät selkeät tietoturvavaatimukset.
+
+### Lisätiedot
+
+**Tuotteita ja palveluja koskeviin kyberturvallisuusvaatimuksiin voi kuulua:**
+  - Mahdollisuus poistaa tuotteen tietyt toiminnot käytöstä.
+  - Selkeä käsitys tuotteessa käytetyistä komponenteista.
+  - Kyberturvallisuusvaatimukset täyttävät palvelun käyttöehdot.
+
+<CollapsibleSection title="Kybermittari versio 2.1">
+Tuotteita ja palveluja koskeviin kyberturvallisuusvaatimuksiin voi kuulua esimerkiksi mahdollisuus poistaa tuotteen tietyt toiminnot käytöstä, selkeä käsitys tuotteessa käytetyistä komponenteista ja kyberturvallisuusvaatimukset täyttävät palvelun käyttöehdot.
+
+Aiheeseen liittyvät käytännöt:
+- Eteneminen: Tämä käytäntö on osa kehityspolkua. Samaan toimintaan liittyvät käytännöt muodostavat kehityspolun, johon kuuluu käytäntöjä alkaen perustasolta kohti täydellisempiä tai kehittyneempiä toteutuksia. Tämän kehityspolun käytäntöjä ovat: THIRD-PARTIES-2b, THIRD-PARTIES-2i, THIRD-PARTIES-2j, THIRD-PARTIES-2k, THIRD-PARTIES-2l, THIRD-PARTIES-2m.
+</CollapsibleSection>
+
+---
+
+_Ohjetta päivitetty: 17.3.2025_

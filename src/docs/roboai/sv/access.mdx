@@ -1,0 +1,643 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Identitets- och åtkomsthantering
+
+<Roles>
+- Cybersäkerhetsledning
+- IT-ledning
+- OT-ledning
+- Anläggningsledningsrepresentant
+- IT- och OT-teamspecialister ansvariga för logisk och fysisk åtkomsthantering
+- Personalavdelningsrepresentant
+</Roles>
+
+---
+<ObjectiveTitle name="access-1">Identitetsskapande och hantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-1a">Separata identiteter tilldelas anställda och andra entiteter, såsom processer eller enheter, som kräver tillgång till enheter, programvara eller datalager som tillhör funktionen.</PracticeTitle>
+
+### Betydelse
+
+Identitetshantering är kritisk eftersom:
+- **Tydliga och unika identiteter förhindrar obehörig åtkomst.** Att identifiera varje användare, enhet och process minskar säkerhetsrisker.
+- **Grunden för åtkomsthantering är unik identifiering.** Utan separata identiteter är det inte möjligt att kontrollera vem som har tillgång till vilka system eller data.
+- **Att utveckla automatisering och övervakning stöder säkerhet.** Manuell identitetshantering är benägen för fel, så det är viktigt att använda IAM-system.
+- **Identitetshantering hjälper till att uppfylla lagstiftnings- och standardkrav.** Till exempel kräver **NIST 800-53, ISO 27001** och **Zero Trust-modellen** strikt åtkomsthantering.
+
+Bedömningsfrågor:
+- Har organisationen definierat unika identiteter för alla användare, enheter och processer?
+- Är identitetsskapande och hantering dokumenterat i organisationspraxis?
+- Används identitetsprofiler som inkluderar entitetens roll, position och åtkomstnivå?
+- Är identitetshanteringen automatiserad, till exempel genom ett identitetshanteringssystem (IAM)?
+- Används delade identiteter endast i motiverade situationer och med säkerhetsåtgärder säkerställda?
+
+Organisationen bör säkerställa att följande åtgärder är på plats:
+
+1. **Identitetsskapande och dokumentation**
+   - Varje användare, system, enhet och process tilldelas en **unik identitet**.
+   - Identitetsprofiler inkluderar all väsentlig information, såsom **roller, ansvar och åtkomstnivåer**.
+
+2. **Identitetsregistrering och godkännande**
+   - Det finns tydliga processer och ansvariga personer för identitetshantering.
+   - Identiteter godkänns av den organisationsenhet eller funktion där identitetsägaren verkar.
+
+3. **Åtkomsthanteringsintegration**
+   - **IAM-lösningar (Identity and Access Management)** automatiserar identitetshantering och åtkomstkontroll.
+   - Användarkonton och åtkomsträttigheter baseras på **behov av att veta (minsta privilegium)** och **Zero Trust-principen**.
+
+4. **Delad identitetshantering**
+   - Gruppkonton och delade referenser används **endast i motiverade situationer** och med ytterligare säkerhetsåtgärder, såsom **tvåfaktorsautentisering (MFA)** och **granskningsloggar**.
+
+5. **Identitetslivscykelhantering**
+   - Identiteter granskas och **avaktiveras** när de inte längre behövs (t.ex. när en anställd lämnar organisationen).
+   - Systematisk åtkomsthanteringsgranskning minst en gång om året.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Identitetshantering är oklar och separata identiteter har inte tilldelats.
+- **Delvis implementerad**: Unika identiteter har tilldelats vissa användare, enheter och processer, men praxis täcker inte hela organisationen.
+- **Till största delen implementerad**: Identiteter har definierats för de flesta anställda och system, men hantering kan fortfarande utvecklas, till exempel genom att minska användningen av delade identiteter eller öka automatisering.
+- **Helt implementerad**: Organisationen har en omfattande och automatiserad identitetshanteringsprocess som täcker alla anställda, system och enheter. Användningen av delade identiteter är minimerad och välhanterad.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen använder identitetsprofiler för systemanvändare. Varje ingenjör och tekniker får ett unikt konto och deras åtkomsträttigheter bestäms av arbetsuppgifter. Separata tillfälliga identiteter skapas för externa leverantörer, som automatiskt avaktiveras.
+
+> **Kraftbolag**
+Energibolaget har implementerat en Zero Trust-baserad åtkomsthanteringsmodell. Identitetshantering täcker alla system och varje användares rättigheter granskas regelbundet. Enheter och system identifieras med separata certifikat, vilket förhindrar obehörig åtkomst till kritiska system.
+
+### Ytterligare information
+
+- **Identitetshantering inkluderar identifiering och hantering av användare, enheter, system och processer.**
+- **Bästa praxis är en identitetsprofil** som definierar en användares eller systems roller och åtkomsträttigheter.
+- **Delade identiteter kan användas i undantagsfall,** men deras användning bör minimeras och skyddas med ytterligare åtgärder.
+- **Identitets- och åtkomsthanteringslösningar (IAM) kan automatisera identitetshantering och minska manuellt arbete och risker.**
+- **Identitetslivscykeln hanteras noggrant,** och onödiga åtkomsträttigheter tas bort omedelbart.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Identitetshantering avser skapande eller registrering av identiteter. Detta inkluderar att identifiera entiteten och dokumentera attribut såsom roll och position i organisationen.
+Identitetshantering utförs för entiteter, dvs. personer, enheter, system och processer, oavsett om de är interna eller externa för organisationen. Organisationen kan således registrera en leverantör, byrå eller affärspartner som en identitet, liksom ett externt organisationssystem eller process. I vissa fall kan organisationer behöva använda delade identiteter, såsom gruppkonton.
+
+Bästa praxis inom identitetshantering är en identitetsprofil. Profilen inkluderar all relevant information som behövs för att beskriva den associerade entitetens (person, enhet, system, process) unika attribut, roller och ansvar. Identitetsprofilen skapas vanligtvis och godkänns av den organisationsenhet eller funktion som entiteten tillhör och där beslut om användning av organisationens tillgångar kan fattas.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-1a, ACCESS-1c, ACCESS-1e, ACCESS-1f, ACCESS-1j.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-1b">Åtkomstuppgifter, såsom lösenord, smartkort eller nycklar, utfärdas till anställda och andra entiteter.</PracticeTitle>
+
+### Betydelse
+
+Att distribuera och hantera åtkomstuppgifter är kritiskt eftersom:
+- **Korrekt åtkomsthantering förhindrar obehörig åtkomst till kritiska resurser.** Varje användare, enhet och system bör endast få nödvändiga rättigheter.
+- **Dåligt hanterade åtkomstuppgifter kan leda till säkerhetsintrång.** Till exempel kan svaga lösenordspraxis eller icke-delade åtkomsträttigheter exponera organisationen för attacker.
+- **Multifaktorautentisering (MFA) förbättrar säkerheten.** Lösenord ensamma är inte tillräckligt skydd mot många nuvarande cyberhot.
+- **Distribution och användning av åtkomstuppgifter måste övervakas.** Organisationen måste säkerställa att åtkomsträttigheter inte förblir i kraft i onödan och övervakas.
+
+Bedömningsfrågor:
+- Har organisationen en tydlig process för att bevilja och hantera åtkomstuppgifter?
+- Säkerställs det att användaren som begär åtkomst har rätt att få dessa referenser?
+- Används multifaktorautentisering (MFA) eller andra ytterligare säkerhetsmetoder?
+- Är olika åtkomstnivåer definierade enligt principen om minsta privilegium?
+- Är åtkomstuppgiftshantering dokumenterad och granskad regelbundet?
+
+Organisationen bör säkerställa att följande åtgärder är på plats:
+
+1. **Beviljande och godkännande av åtkomstuppgifter**
+   - Varje användare, enhet eller system får åtkomstuppgifter **endast genom officiellt godkännande**.
+   - Användarens **roll, uppgift och behov av åtkomst** definieras innan referenser beviljas.
+
+2. **Typer och skydd av åtkomstuppgifter**
+   - **Lösenord**: Starka, unika och komplexa lösenord (minst 12 tecken, inklusive specialtecken och siffror).
+   - **Smartkort och nycklar**: Fysiska och elektroniska identifierare för identitetsverifiering och åtkomsthantering.
+   - **Biometrisk autentisering**: Fingeravtrycks- eller ansiktsigenkänningslösningar för högsäkerhetsmål.
+
+3. **Multifaktorautentisering (MFA)**
+   - **MFA krävs för kritiska system och fjärråtkomst**. Detta kan inkludera, utöver ett lösenord, t.ex. inloggningsgodkännande via mobilapplikation.
+   - **Användning av MFA minskar risken för nätfiskeattacker**.
+
+4. **Åtkomsträttighetshantering och övervakning**
+   - Åtkomsträttigheter beviljas enligt principen om **minsta privilegium** (endast nödvändiga rättigheter beviljas).
+   - **Granskning och övervakning**: Åtkomstuppgifter övervakas regelbundet och onödiga rättigheter tas bort.
+
+5. **Åtkomstuppgiftslivscykelhantering**
+   - När en anställd lämnar organisationen eller byter uppgifter tas **deras åtkomsträttigheter bort omedelbart**.
+   - Ett **centraliserat åtkomsthanteringssystem (IAM)** används för att säkerställa att alla åtkomsträttigheter är uppdaterade.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Beviljande av åtkomstuppgifter är inte definierat och de involverar inte kontrollerade godkännandeprocesser.
+- **Delvis implementerad**: Vissa åtkomstuppgifter hanteras korrekt, men praxis täcker inte hela organisationen eller alla resurser.
+- **Till största delen implementerad**: De flesta åtkomstuppgifter är välhanterade, men till exempel är multifaktorautentisering eller regelbunden granskning inte helt omfattande.
+- **Helt implementerad**: Organisationen har en omfattande åtkomsthanteringsprocess där åtkomstuppgifter beviljas, granskas och hanteras automatiskt.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+I livsmedelsindustrin hanteras produktionslinjernas åtkomsträttigheter centralt med ett identitets- och åtkomsthanteringssystem. Varje anställd beviljas personliga användarkonton till system och åtkomsträttigheter granskas regelbundet.
+
+> **Transportföretag**
+Logistikföretaget använder smartkort och RFID-identifierare för fordonshanteringssystem för att identifiera förare. Fjärrinloggning kräver multifaktorautentisering och åtkomsträttighetsgranskning görs kvartalsvis.
+
+> **Kraftbolag**
+Energibolaget använder **Zero Trust-principen**, där åtkomstuppgifter kontinuerligt verifieras. Fjärråtkomst använder multifaktorautentisering och unika programvarubaserade nycklar som automatiskt upphör att gälla.
+
+### Ytterligare information
+
+- **När åtkomstuppgifter beviljas säkerställs det att användaren har rätt till åtkomst.**
+- **Åtkomstuppgifter kan gälla både personer, enheter, system och processer.**
+- **Multifaktorautentisering (MFA) minskar avsevärt säkerhetshot.**
+- **Lösenordspolicyer bör utformas för att förhindra de vanligaste attackerna (t.ex. brute force-attacker).**
+- **Åtkomstuppgifternas livscykel måste hanteras så att åtkomsträttigheter tas bort när de inte längre behövs.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Innan personal och andra parter ges åtkomst till organisationens tillgångar bör organisationen utfärda åtkomstuppgifter som visar att personen som begär åtkomst har nödvändiga rättigheter att komma åt tillgångar såsom enheter, datalager och fysiska utrymmen. Användare kan vara personer (interna eller externa för organisationen) samt enheter, system eller processer som kräver åtkomst till tillgångar. Rättigheterna associerade med dessa referenser bör vara förenliga med funktionella krav.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-1b, ACCESS-1d, ACCESS-1g, ACCESS-1h, ACCESS-1i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-1c">Identiteter avaktiveras när de inte längre behövs.</PracticeTitle>
+
+### Betydelse
+
+Kontrollerat borttagande av identiteter är kritiskt eftersom:
+- **Oanvända identiteter kan utgöra en säkerhetsrisk.** Om gamla åtkomsträttigheter inte tas bort kan de hamna i händerna på en angripare.
+- **Tillgång till organisationens resurser av tidigare anställda eller entreprenörer måste förhindras.** Utan korrekt hantering kan tidigare användare ha tillgång till känslig information.
+- **Automatiserad åtkomsthantering minskar manuellt arbete och mänskliga fel.** Ett IAM-system kan hantera automatiskt borttagande av åtkomsträttigheter.
+- **Granskningsbara åtkomsträttigheter säkerställer att åtkomsträttigheter alltid är uppdaterade.** Detta stöder organisationens säkerhetspolicy och minskar insiderhot.
+
+Bedömningsfrågor:
+- Har organisationen en tydlig process för att ta bort identiteter och åtkomsträttigheter när de inte längre behövs?
+- Tas anställdas åtkomsträttigheter bort omedelbart när anställningen avslutas?
+- Hanteras enhets- och systemåtkomsträttigheter på samma sätt som personalidentiteter?
+- Är processen automatiserad med ett IAM-system (Identity and Access Management)?
+- Granskas och övervakas gamla identiteters åtkomsträttigheter regelbundet?
+
+Organisationen bör säkerställa att följande åtgärder är på plats:
+
+1. **Identitets- och åtkomstborttagningsprocess**
+   - **När en anställd, enhet eller system lämnar organisationen** måste den associerade identiteten och alla relaterade åtkomsträttigheter tas bort omedelbart.
+   - Ett **IAM-system** används som automatiserar åtkomsthantering och borttagning.
+
+2. **Åtkomsthantering när anställning eller partnerskapsavtal avslutas**
+   - När en anställd eller entreprenör lämnar tas **alla åtkomsträttigheter bort samtidigt med deras sista arbetsdag**.
+   - IT-avdelningen säkerställer att **avgången dokumenteras och bekräftas med HR**.
+
+3. **Enhets- och systemidentitetshantering**
+   - Gamla enheter och system **certifikat och åtkomstidentifierare återkallas** när de tas bort från organisationens tillgångar.
+   - Automatiserade processer, såsom **Device Identity Management**, säkerställer att åtkomsträttigheter inte förblir i kraft.
+
+4. **Granskning och övervakning**
+   - Organisationen utför regelbundna **kontroller för att avgöra om gamla åtkomsträttigheter fortfarande är i kraft**.
+   - **Avvikelser dokumenteras och hanteras** för att förbättra åtkomsthantering.
+
+5. **Kombinera manuella och automatiserade processer**
+   - IAM-system kan **automatisera åtkomstborttagning**, men **HR och IT-avdelningen måste säkerställa att alla åtgärder utförs korrekt**.
+   - Särskilt **användare på hög nivå**, såsom systemadministratörer, kräver **ytterligare övervakning** under borttagningsprocessen.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Identitetsborttagningsprocessen är inte definierad och åtkomsträttigheter tas inte bort regelbundet.
+- **Delvis implementerad**: Vissa identiteter tas bort, men processen täcker inte alla system eller är oklar.
+- **Till största delen implementerad**: De flesta identiteter tas bort systematiskt, men till exempel utförs manuella kontroller inte regelbundet.
+- **Helt implementerad**: Organisationen har en omfattande och automatisk åtkomstborttagningsprocess som dokumenteras och granskas regelbundet.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Livsmedelsföretaget använder ett identitets- och åtkomsthanteringssystem som automatiskt tar bort åtkomsträttigheter när en anställd lämnar organisationen. Dessutom utförs en manuell kontroll kvartalsvis för att säkerställa att alla rättigheter har tagits bort.
+
+> **Transportföretag**
+I logistikföretaget tas förares och underhållspersonals åtkomsträttigheter till fordonssystem automatiskt bort efter deras sista arbetsdag. IT-avdelningen utför en veckovis kontroll för att säkerställa att gamla referenser inte har blivit kvar i system.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen använder ett identitets- och åtkomsthanteringssystem och manuella processer för att säkerställa att systemåtkomsträttigheter tas bort omedelbart när en användare inte längre behöver dem. Borttagningsprocessen inkluderar även återkallande av certifikat och enhetsåtkomstidentifierare.
+
+> **Kraftbolag**
+Energibolaget har implementerat Zero Trust-baserad åtkomsthantering, där identiteter automatiskt avaktiveras när de inte längre behövs. Administratörsrättigheter granskas separat innan borttagning.
+
+### Ytterligare information
+
+- **När en anställd, enhet eller system lämnar organisationen måste identiteten tas bort omedelbart.**
+- **Identitets- och åtkomsthanteringssystem kan automatisera åtkomsthantering och förhindra säkerhetshot.**
+- **Borttagningsprocessen bör inkludera återkallande av systemreferenser, nycklar och certifikat.**
+- **Granskningar säkerställer att gamla åtkomsträttigheter inte förblir i kraft.**
+- **Särskilt åtkomsträttigheter på hög nivå (admin, kritiska system) kräver ytterligare övervakning.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+När en person, enhet, system eller process upphör att existera i organisationen måste den associerade identiteten och alla associerade åtkomsträttigheter och restriktioner tas bort. Underlåtenhet att ta bort identiteten kan utgöra en betydande operativ risk för organisationen, eftersom den kan tillhandahålla en identitet som en obehörig (och möjligen okänd) person, subjekt eller entitet kan använda. Om detta händer och dess åtkomsträttigheter inte har tagits bort kan identiteten stjälas med alla befintliga privilegier.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-1a, ACCESS-1c, ACCESS-1e, ACCESS-1f, ACCESS-1j.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="access-2">Logisk åtkomsthantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-2a">Logiska åtkomstkontrollåtgärder är på plats.</PracticeTitle>
+
+### Betydelse
+
+Logisk åtkomstkontroll är kritisk eftersom:
+- **Den säkerställer att endast auktoriserade personer kan använda informationssystem.** Detta förhindrar obehörig åtkomst till känslig information och kritiska system.
+- **Åtkomstkontroll skyddar organisationens tillgångar.** Att skydda system, datalager och programvara är väsentligt för säkerhet.
+- **Missbruk och säkerhetsintrång kan upptäckas tidigt.** Korrekt implementerade kontroller, såsom loggning och analys, hjälper till att identifiera misstänkt aktivitet.
+- **Det hjälper till att uppfylla säkerhetsstandarder och lagkrav.** Till exempel kräver **ISO 27001** och **NIST 800-53** åtkomstkontrollövervakning.
+
+Bedömningsfrågor:
+- Har organisationen ett system för att bevilja, granska och ta bort åtkomsträttigheter?
+- Är åtkomsträttigheter definierade efter behov enligt olika roller och uppgifter (**principen om minsta privilegium**)?
+- Används flernivåautentisering (t.ex. **MFA**) för kritiska system?
+- Har åtkomsträttigheter granskats och granskats regelbundet?
+- Är åtkomsthantering dokumenterad och övervakad så att potentiellt missbruk upptäcks tidigt?
+
+Organisationen bör säkerställa att följande kontroller är på plats:
+
+1. **Åtkomsthanteringsprinciper**
+   - Varje användare har åtkomsträttigheter endast till den information och de system som är nödvändiga för att utföra sina uppgifter (**principen om minsta privilegium**).
+   - **Zero Trust-modellen** tillämpas: åtkomsträttigheter beviljas inte permanent utan utvärderas kontinuerligt.
+
+2. **Multifaktorautentisering (MFA)**
+   - Multifaktorautentisering används i alla kritiska system och fjärråtkomst.
+   - Åtkomsträttigheter verifieras genom flera autentiseringsnivåer, såsom ett lösenord och mobilapplikationsgodkännande.
+
+3. **Granskning och regelbundna granskningar**
+   - Åtkomsträttigheter granskas regelbundet minst **halvårsvis** för att säkerställa att de är uppdaterade.
+   - Alla ändringar av åtkomsträttigheter loggas och deras motivering dokumenteras.
+
+4. **Automatiserade övervakningsverktyg och åtkomstanalys**
+   - Ändringar av åtkomsträttigheter och misstänkt aktivitet kan identifieras med **Security Information and Event Management (SIEM)**-system.
+   - Exceptionell eller misstänkt aktivitet utlöser en varning som undersöks av säkerhetsteamet.
+
+5. **Avvikelsehantering och respons**
+   - Om avvikelser hittas i systemåtkomsträttigheter (t.ex. en användare med fler rättigheter än nödvändigt) undersöks de och begränsas vid behov.
+   - Alla åtkomstrelaterade ändringar och avvikelser dokumenteras och utvärderas av säkerhetsteamet.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Logiska åtkomstkontrollåtgärder är inte på plats eller det finns ingen information om dem.
+- **Delvis implementerad**: Vissa åtkomstkontrollåtgärder är på plats, men de täcker inte hela organisationen.
+- **Till största delen implementerad**: De flesta åtkomstkontrollåtgärder är på plats, men till exempel är granskningspraxis inte helt omfattande.
+- **Helt implementerad**: Organisationen har ett omfattande åtkomstkontrollsystem som inkluderar regelbundna granskningar, automatiserade övervakningsverktyg och spårning av åtkomständringar.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Livsmedelsindustrin använder ett identitets- och åtkomsthanteringssystem som hanterar åtkomsträttigheter i produktionsprocesskontrollsystem. Ett SIEM-system övervakar åtkomständringar och utlöser varningar om avvikelser upptäcks.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen använder strikt begränsade åtkomsträttigheter i sina system. Varje operativt system är skyddat med minst tvåfaktorsautentisering och åtkomständringar registreras i ett centraliserat loggningssystem.
+
+> **Kraftbolag**
+Energibolaget har implementerat Zero Trust-modellen, där åtkomsträttigheter inte beviljas permanent utan utvärderas dynamiskt baserat på användarens och systemets driftmiljö. Ett SIEM-system analyserar användares inloggningsmönster och varnar för misstänkt aktivitet.
+
+### Ytterligare information
+
+- **Logisk åtkomstkontroll är en viktig del av att skydda tillgångar (enheter, programvara, datalager).**
+- **Beviljande och övervakning av åtkomsträttigheter baseras på principen om minsta privilegium.**
+- **Granskning och övervakning säkerställer att åtkomsträttigheter förblir uppdaterade och förhindrar missbruk.**
+- **Multifaktorautentisering (MFA) är en väsentlig del av att skydda kritiska system.**
+- **Automatiserade system såsom IAM och SIEM underlättar åtkomsthantering och övervakning.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Logisk eller informationssystems åtkomsthantering är en viktig del av att skydda tillgångar (enheter, programvara och datalager). Åtkomsträttigheter och restriktioner beskriver nivån och omfattningen av identitetsåtkomsträttigheter. Åtkomsträttigheter bör vara proportionella mot de olika roller som representeras av identiteten.
+
+Relaterade metoder:
+
+- Input: Implementering av ARCHITECTURE-3a ger information som kan vara användbar för att implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-2a, ACCESS-2c, ACCESS-2d, ACCESS-2e, ACCESS-2f
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-2b">Åtkomsträttigheter återkallas när de inte längre behövs.</PracticeTitle>
+
+### Betydelse
+
+Kontrollerat borttagande av åtkomsträttigheter är kritiskt eftersom:
+- **Oanvända åtkomsträttigheter kan utgöra en betydande säkerhetsrisk.** Om gamla åtkomsträttigheter inte tas bort kan de hamna i händerna på en angripare.
+- **Tillgång till organisationens resurser av tidigare anställda eller de som har bytt roll måste förhindras.** Om åtkomsträttigheter inte tas bort kan organisationen utsättas för dataintrång och insiderhot.
+- **Automatiserad åtkomsthantering minskar manuellt arbete och mänskliga fel.** Identitets- och åtkomsthantering (IAM)-system kan automatiskt ta bort rättigheter när en roll eller anställning ändras.
+- **Ackumulering av åtkomsträttigheter kan äventyra säkerheten.** Organisationen bör säkerställa att anställda och system endast får åtkomsträttigheter som är nödvändiga för sina uppgifter (**principen om minsta privilegium**).
+
+Bedömningsfrågor:
+- Har organisationen en definierad process för att ta bort åtkomsträttigheter automatiskt eller manuellt?
+- Vem i organisationen ansvarar för att hantera och ta bort åtkomsträttigheter?
+- Tas anställdas åtkomsträttigheter bort omedelbart när de flyttar bort från organisationen eller deras uppgift?
+- Hanteras programvaru-, enhets- och datalageråtkomsträttigheter på samma sätt som personalåtkomsträttigheter?
+- Finns det ett system (t.ex. IAM) som automatiserar åtkomstgranskning och borttagning?
+- Utför organisationen regelbundna åtkomstgranskningar för att säkerställa att onödiga rättigheter inte förblir i kraft?
+
+Organisationen bör säkerställa att följande åtgärder är på plats:
+
+1. **Åtkomstborttagningsprocess**
+   - När en anställd, enhet eller system **inte längre behöver åtkomst till organisationens resurser** måste alla åtkomsträttigheter tas bort omedelbart.
+   - Ett **IAM-system** används som automatiserar åtkomsthantering och borttagning.
+
+2. **Rollförändringar och uppgiftsöverföringar**
+   - Om en anställd **flyttar till en ny uppgift** granskas deras gamla åtkomsträttigheter och onödiga rättigheter tas bort.
+   - Åtkomsthantering baseras på **principen om minsta privilegium**.
+
+3. **Enhets- och systemidentitetshantering**
+   - Gamla enheter och system **certifikat och åtkomstidentifierare återkallas** när de tas bort från användning.
+   - Automatiserade processer såsom **Device Identity Management** säkerställer att åtkomsträttigheter inte förblir i kraft.
+
+4. **Granskning och övervakning**
+   - Organisationen utför **regelbundna åtkomstgranskningar** för att säkerställa att inga onödiga rättigheter har blivit kvar i kraft.
+   - Avvikelser dokumenteras och hanteras omedelbart.
+
+5. **Manuell och automatiserad åtkomsthantering**
+   - IAM-system kan **automatisera åtkomstborttagning**, men **HR och IT-avdelningen måste säkerställa att alla åtgärder utförs korrekt**.
+   - Särskilt **användare på hög nivå**, såsom systemadministratörer, kräver **ytterligare övervakning** under åtkomstborttagningsprocessen.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Åtkomstborttagningsprocessen är inte definierad och åtkomsträttigheter tas inte bort regelbundet.
+- **Delvis implementerad**: Vissa åtkomsträttigheter tas bort, men processen täcker inte alla system eller baseras på manuella kontroller.
+- **Till största delen implementerad**: De flesta åtkomsträttigheter tas bort systematiskt, men till exempel är granskningspraxis inte helt omfattande.
+- **Helt implementerad**: Organisationen har en omfattande och automatisk åtkomstborttagningsprocess som dokumenteras och granskas regelbundet.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+I livsmedelsindustrin tar IAM-systemet automatiskt bort åtkomsträttigheter när en anställd flyttar till en annan uppgift eller lämnar företaget. Granskning utförs halvårsvis för att säkerställa att alla åtkomsträttigheter är uppdaterade.
+
+> **Transportföretag**
+Logistikföretaget använder Zero Trust-modellen, där åtkomsträttigheter verifieras vid varje inloggning. När en förare eller underhållspersonal lämnar organisationen tas deras åtkomsträttigheter till fordonshanteringssystem och GPS-spårningsenheter automatiskt bort.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen använder strikt hanterade åtkomsträttigheter för system. Varje användares rättigheter granskas månadsvis och borttagningsprocessen är integrerad i IAM-systemet, som automatiskt tar bort utgångna åtkomsträttigheter.
+
+> **Kraftbolag**
+Energibolaget har implementerat Zero Trust-baserad åtkomsthantering, där användarrättigheter verifieras i realtid. Åtkomsträttigheter på hög nivå (t.ex. administratörsrättigheter) tas bort genom en separat tvåstegs godkännandeprocess.
+
+### Ytterligare information
+
+- **Att ta bort åtkomsträttigheter är en viktig del av säker åtkomsthantering.**
+- **Identitets- och åtkomsthantering (IAM)-system kan automatisera åtkomsthantering och förhindra säkerhetshot.**
+- **Åtkomsthantering bör granskas regelbundet** för att säkerställa att inga onödiga åtkomsträttigheter förblir i kraft.
+- **Borttagningsprocessen bör inkludera återkallande av systemreferenser, nycklar och certifikat.**
+- **Särskilt åtkomsträttigheter på hög nivå (admin, kritiska system) kräver ytterligare övervakning och manuell bekräftelse innan borttagning.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Tillgångsägare och innehavare är ansvariga för att avsluta logiska åtkomsträttigheter när de inte längre behövs, såsom när en anställd säger upp sig eller flyttar till en ny position. Generellt sett bör personal upprätthålla de minimiprivilegier som är nödvändiga för att utföra sina tilldelade uppgifter. Att avsluta onödiga åtkomsträttigheter förhindrar ackumulering av åtkomsträttigheter.
+
+Relaterade metoder:
+
+- Input: Implementering av ARCHITECTURE-3a ger input som kan vara användbar för att implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-2b, ACCESS-2g, ACCESS-2h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="access-3">Fysisk åtkomsthantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="access-3a">Fysiska åtkomstkontrollåtgärder är på plats, såsom staket, lås eller skyltar.</PracticeTitle>
+
+### Betydelse
+
+Fysisk åtkomstkontroll är kritisk eftersom:
+- **Den förhindrar obehörig åtkomst till organisationens lokaler, kritiska system och information.** Fysiska säkerhetsåtgärder utgör grunden för cybersäkerhet.
+- **Välhanterade åtkomstkontrollsystem minskar interna och externa hot.** Obehörig åtkomst kan leda till datastöld, utrustningssabotage eller driftstörningar.
+- **Åtkomstkontrolldokumentation hjälper till att undersöka avvikelser.** Till exempel, baserat på loggdata, är det möjligt att spåra vem som rörde sig var och när.
+- **Fysisk åtkomstkontroll stöder organisationens bredare cybersäkerhetsstrategi.** Att begränsa åtkomsträttigheter och effektiv övervakning är en del av **Zero Trust-modellen** och **ISO 27001-standarden**.
+
+Bedömningsfrågor:
+- Har organisationen fysiska åtkomstkontrollåtgärder på plats, såsom staket, lås, övervakningskameror eller åtkomstkontrollsystem?
+- Övervakas åtkomst till särskilt kritiska utrymmen, såsom serverrum eller kontrollrum där det finns känslig information eller system?
+- Hur hanteras och skyddas nycklar, åtkomstkort och andra fysiska åtkomstidentifierare?
+- Är fysiska åtkomstsystem integrerade med organisationens andra säkerhet, såsom logisk åtkomstkontroll?
+- Utför organisationen regelbundna granskningar av fysisk åtkomstkontrolleffektivitet?
+
+Organisationen bör säkerställa att följande kontroller är på plats:
+
+1. **Åtkomstkontrollsystem och barriärer**
+   - **Låsta dörrar och portar:** Tillgång till kritiska utrymmen är begränsad till auktoriserade personer.
+   - **Åtkomstkort och nyckelhantering:** Hantering av nycklar, åtkomstkort och andra fysiska identifierare övervakas strikt.
+   - **Staket och barriärer:** Runt byggnader och i inomhusutrymmen förhindras obehörig åtkomst till begränsade områden.
+
+2. **Övervakning och identifieringsmetoder**
+   - **Kameraövervakning (CCTV):** Övervakningskameror registrerar och analyserar trafik i kritiska områden.
+   - **Biometrisk autentisering:** Fingeravtrycks- eller ansiktsigenkänning säkerställer att endast auktoriserade personer får tillgång till vissa utrymmen.
+   - **Larmsystem:** Meddelar om misstänkt aktivitet, såsom obehörig dörröppning.
+
+3. **Fysisk identifierare och åtkomsthantering**
+   - Åtkomstkort beviljas **efter behov**, och de avaktiveras när en person inte längre behöver dem.
+   - Förlorade eller missbrukade nycklar och åtkomstkort rapporteras och hanteras omedelbart.
+   - Fysiska åtkomsträttigheter är **i linje med logiska åtkomsträttigheter** (t.ex. kräver serverrumsåtkomst även systemrättigheter).
+
+4. **Granskning och övervakning**
+   - **Regelbundna granskningar och tester:** Fysisk åtkomstkontrolleffektivitet utvärderas regelbundet.
+   - **Åtkomstkontrollloggar:** Alla personer som har fått tillgång till lokaler och tider dokumenteras och analyseras vid behov.
+   - **Avvikelsehantering:** Identifierade säkerhetsbrister reageras på omedelbart och driftmodeller utvecklas baserat på dem.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Fysiska åtkomstkontrollåtgärder är inte på plats eller det finns ingen information om dem.
+- **Delvis implementerad**: Vissa fysiska åtkomstkontrollåtgärder är på plats, men de täcker inte hela organisationen eller deras hantering är inte systematisk.
+- **Till största delen implementerad**: De flesta fysiska åtkomstkontrollåtgärder är på plats, men till exempel är åtkomsthantering och granskning inte helt omfattande.
+- **Helt implementerad**: Organisationen har ett omfattande fysiskt åtkomstkontrollsystem som inkluderar barriärer, övervakningssystem, regelbundna granskningar och avvikelsehantering.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+I livsmedelsindustrin är kritiska produktionsanläggningar och servercenter skyddade med **låsta dörrar och åtkomstkontrollsystem**. Övervakningskameror täcker alla produktionslinjeområden och anställdas åtkomstdata loggas.
+
+> **Transportföretag**
+Logistikföretaget använder RFID-baserad åtkomstkontroll för att hantera lager- och fordonsåtkomst. Alla anställda behöver ett åtkomstkort för att komma åt vissa delar av lagret och övervakningskameror registrerar trafik i lastningsområden.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen skyddar sin kritiska infrastruktur med låsta anläggningar som endast är tillgängliga för auktoriserad personal och fysisk åtkomst övervakas i realtid.
+
+### Ytterligare information
+- **Fysiska åtkomstkontrollåtgärder inkluderar barriärer, identifieringsmetoder och övervakning.**
+- **Hantering av åtkomstkoder, åtkomstkort och nycklar är en kritisk del av fysisk säkerhet.**
+- **Åtkomsträttigheter måste vara i linje med logisk åtkomstkontroll.**
+- **Granskning och avvikelsehantering säkerställer att fysiska åtkomstkontrollmekanismer förblir effektiva.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+I denna modell är fysiska åtkomstkontrollåtgärder avsedda att skydda informationsteknik, organiserad teknik och informationstillgångar (till exempel lås som kontrollerar åtkomst till serverrum). Dessutom är det viktigt att notera att effektiviteten hos vissa fysiska åtkomstkontrollmedel, såsom nycklar och åtkomstkort, kan påverkas avsevärt av de sätt på vilka de hanteras och skyddas.
+
+Relaterade metoder:
+
+- Input: Implementering av ARCHITECTURE-3a ger input som kan vara användbar för att implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-3a, ACCESS-3d, ACCESS-3e, ACCESS-3f, ACCESS-3g.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-3b">Åtkomsträttigheter återkallas när de inte längre behövs.</PracticeTitle>
+
+### Betydelse
+
+Kontrollerat borttagande av fysiska åtkomsträttigheter är kritiskt eftersom:
+- **Oanvända åtkomsträttigheter kan utgöra en betydande säkerhetsrisk.** Om gamla åtkomstkort eller nycklar inte tas bort eller returneras kan de hamna i händerna på en angripare.
+- **Tillgång till organisationens lokaler av tidigare anställda eller överförda personer måste förhindras.** Om åtkomsträttigheter inte tas bort kan organisationen utsättas för fysiska säkerhetsintrång och insiderhot.
+- **Automatiserad åtkomsthantering minskar manuellt arbete och mänskliga fel.** Åtkomstkontrollsystem kan automatiskt ta bort rättigheter när en roll eller anställning ändras.
+- **Ackumulering av fysiska åtkomsträttigheter kan äventyra organisationens säkerhet.** Organisationen bör säkerställa att anställda och utomstående endast får åtkomsträttigheter som är nödvändiga för sina uppgifter (**principen om minsta privilegium**).
+
+Bedömningsfrågor:
+- Har organisationen en definierad process för att ta bort fysiska åtkomsträttigheter när en person byter uppgifter eller lämnar organisationen?
+- Vem ansvarar för att hantera och ta bort fysiska åtkomsträttigheter?
+- Hanteras åtkomsträttigheter centralt och är deras användning granskad?
+- Finns det ett system (t.ex. åtkomstkontrollsystem) som automatiserar åtkomsthantering och borttagning?
+- Utför organisationen regelbundna kontroller för att säkerställa att onödiga fysiska åtkomsträttigheter inte förblir i kraft?
+
+Organisationen bör säkerställa att följande åtgärder är på plats:
+
+1. **Åtkomstborttagningsprocess**
+   - När en anställd, entreprenör eller annan person **inte längre behöver åtkomst till organisationens lokaler** måste alla fysiska åtkomsträttigheter tas bort omedelbart.
+   - Ett **åtkomstkontrollsystem** används som automatiserar åtkomsthantering och borttagning.
+
+2. **Rollförändringar och uppgiftsöverföringar**
+   - Om en anställd **flyttar till en ny uppgift** granskas deras gamla åtkomsträttigheter och onödiga rättigheter tas bort.
+   - Åtkomsthantering baseras på **principen om minsta privilegium**.
+
+3. **Nyckel-, åtkomstkorts- och identifierarhantering**
+   - Gamla enheter och system **fysiska identifierare, nycklar och åtkomstkoder återkallas** när de tas bort från användning.
+   - Automatiserade processer såsom **åtkomstkontroll- och autentiseringssystem** säkerställer att åtkomsträttigheter inte förblir i kraft.
+
+4. **Granskning och övervakning**
+   - Organisationen utför **regelbundna åtkomstgranskningar** för att säkerställa att inga onödiga rättigheter har blivit kvar i kraft.
+   - Avvikelser dokumenteras och hanteras omedelbart.
+
+5. **Manuell och automatiserad åtkomsthantering**
+   - Åtkomstkontrollsystem kan **automatisera åtkomstborttagning**, men **HR och säkerhetsavdelningen måste säkerställa att alla åtgärder utförs korrekt**.
+   - Särskilt **användare på hög nivå**, såsom systemadministratörer och kritiska infrastrukturanvändare, kräver **ytterligare övervakning** under åtkomstborttagningsprocessen.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Åtkomstborttagningsprocessen är inte definierad och åtkomsträttigheter tas inte bort regelbundet.
+- **Delvis implementerad**: Vissa åtkomsträttigheter tas bort, men processen täcker inte alla utrymmen eller baseras på manuella kontroller.
+- **Till största delen implementerad**: De flesta åtkomsträttigheter tas bort systematiskt, men till exempel är granskningspraxis inte helt omfattande.
+- **Helt implementerad**: Organisationen har en omfattande och automatisk åtkomstborttagningsprocess som dokumenteras och granskas regelbundet.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Livsmedelsindustrin använder ett åtkomstkontrollsystem som automatiskt tar bort åtkomsträttigheter när en anställd flyttar till en annan uppgift eller lämnar företaget. Granskning utförs halvårsvis för att säkerställa att alla åtkomsträttigheter är uppdaterade.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen använder strikt hanterade åtkomstkort och nyckelhantering. Varje användares åtkomsträttigheter granskas månadsvis och borttagningsprocessen är integrerad i åtkomstkontrollsystemet, som automatiskt tar bort utgångna åtkomsträttigheter.
+
+> **Kraftbolag**
+Energibolaget har implementerat Zero Trust-baserad åtkomsthantering, där användarrättigheter verifieras i realtid. Åtkomsträttigheter på hög nivå tas bort genom en separat tvåstegs godkännandeprocess.
+
+### Ytterligare information
+
+- **Att ta bort åtkomsträttigheter är en viktig del av säker fysisk åtkomsthantering.**
+- **Åtkomstkontrollsystem kan automatisera åtkomsthantering och förhindra säkerhetshot.**
+- **Åtkomsthantering bör granskas regelbundet** för att säkerställa att inga onödiga åtkomsträttigheter förblir i kraft.
+- **Borttagningsprocessen bör inkludera återkallande av nycklar, åtkomstkort och identifierare.**
+- **Särskilt åtkomsträttigheter på hög nivå (admin, kritiska system) kräver ytterligare övervakning och manuell bekräftelse innan borttagning.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Tillgångsägare och innehavare är ansvariga för att avsluta fysiska åtkomsträttigheter när personen eller annan part till vilken rättigheterna beviljades inte längre behöver dem, såsom när en anställd säger upp sig eller flyttar till en ny position. Generellt sett bör personal upprätthålla de minimiprivilegier som är nödvändiga för att utföra sina tilldelade uppgifter. När fysiska åtkomsträttigheter som inte längre behövs återkallas kan onödig ackumulering av åtkomsträttigheter förhindras.
+
+Relaterade metoder:
+
+- Input: Implementering av ARCHITECTURE-3a ger input som kan vara användbar för att implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-3b, ACCESS-3h, ACCESS-3i.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="access-3c">Loggar upprätthålls av åtkomstanvändning.</PracticeTitle>
+
+### Betydelse
+
+Att upprätthålla loggar över åtkomstanvändning är kritiskt eftersom:
+- **Det möjliggör upptäckt av obehörig eller misstänkt aktivitet.** Baserat på loggdata kan säkerhetsrelaterade avvikelser identifieras och undersökas.
+- **Loggning stöder säkerhets- och regelkrav.** Många standarder, såsom **ISO 27001 och NIST 800-53**, kräver att loggar upprätthålls som en del av åtkomsthantering.
+- **Organisationen kan granska åtkomstanvändning.** Regelbundna granskningar hjälper till att säkerställa att endast auktoriserade personer har använt åtkomsträttigheter.
+- **Dokumentation relaterad till åtkomstanvändning förbättrar organisationens responsförmåga till säkerhetsintrång.** Loggdata är centrala för att undersöka säkerhetsintrång eller obehörig fysisk åtkomst.
+
+Bedömningsfrågor:
+- Har organisationen ett systematiskt sätt att registrera fysisk åtkomstanvändning?
+- Registreras åtkomstanvändning automatiskt genom åtkomstkontrollsystem eller manuellt, till exempel som besöksloggar?
+- Hur lagras, analyseras och används loggdata för säkerhetssyften?
+- Vem ansvarar för att upprätthålla fysisk åtkomstloggdata och övervaka användning?
+- Har organisationen en definierad policy för lagringstider för loggdata och deras granskning?
+
+Organisationen bör säkerställa att följande loggningspraxis är på plats:
+
+1. **Automatisk och manuell loggning**
+   - **Åtkomstkontrollsystem:** Automatisk loggning relaterad till åtkomstanvändning baseras på elektroniska system, såsom data som samlas in av RFID-kort eller biometrisk autentisering.
+   - **Manuella loggar:** Pappersloggar eller besöksregister kan komplettera automatisk loggning i utrymmen där elektronisk övervakning inte används.
+
+2. **Ansvar och ägande**
+   - **Tillgångsägare** är ansvariga för att säkerställa att åtkomstanvändning registreras på lämpligt sätt.
+   - IT- och säkerhetsavdelningar kan administrera loggningssystem och analysera dem från ett säkerhetsperspektiv.
+
+3. **Lagring och analys av loggdata**
+   - Loggdata måste lagras **enligt organisationens säkerhetspolicyer och regelkrav**.
+   - **Analys- och larmsystem** kan hjälpa till att identifiera misstänkt aktivitet och reagera på den i tid.
+
+4. **Granskning och regelbunden granskning**
+   - Organisationen utför **regelbundna kontroller** som utvärderar loggdatatäckning och noggrannhet.
+   - Avvikelser och misstänkt aktivitet dokumenteras och hanteras omedelbart.
+
+5. **Säkerhetsavvikelsehantering**
+   - Loggdata används för **händelseanalys** om misstänkt aktivitet upptäcks.
+   - Säkerhetsteamet ansvarar för **respons och utredningar** om avvikelser hittas baserat på loggdata.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Loggar upprätthålls inte av åtkomstanvändning eller det finns ingen information om det.
+- **Delvis implementerad**: Vissa åtkomstanvändningshändelser loggas, men systemet täcker inte alla utrymmen eller baseras huvudsakligen på manuell registrering.
+- **Till största delen implementerad**: Det mesta av åtkomstanvändningen registreras automatiskt, men det kan finnas brister i analys- och granskningspraxis.
+- **Helt implementerad**: Organisationen har ett omfattande och automatiserat åtkomstloggningssystem som dokumenteras och granskas regelbundet.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Livsmedelsindustrins produktionsanläggningar är skyddade med ett åtkomstkontrollsystem som automatiskt registrerar alla in- och utcheckningar. Besökare registrerar sin information i en manuell logg och åtkomstanvändning granskas kvartalsvis.
+
+> **Transportföretag**
+Logistikföretagets lager använder RFID-baserad åtkomstkontroll som registrerar alla anställdas och besökares rörelser i lagerutrymmen. Åtkomsträttigheter och loggdata granskas regelbundet för att förhindra potentiellt missbruk.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen använder RFID-baserad åtkomstkontroll i kontrollrummet och alla åtkomsthändelser registreras automatiskt i ett centraliserat loggningssystem. Loggdata lagras i ett år och analyseras regelbundet för misstänkt aktivitet.
+
+> **Kraftbolag**
+Tillgång till energibolagets högsäkerhetsutrymmen registreras både elektroniskt och manuellt och varje inträde kräver godkännande från kontrollrummet. Loggdata integreras i ett SIEM-system som analyserar och varnar för misstänkta händelser i realtid.
+
+### Ytterligare information
+
+- **Loggning av åtkomstanvändning kan vara manuell (t.ex. papperslogg) eller automatiserad (t.ex. åtkomstkontrollsystem).**
+- **Loggning möjliggör upptäckt av obehörig aktivitet och undersökning av säkerhetsintrång.**
+- **Tillgångsägare är ansvariga för att säkerställa att loggning uppfyller organisationens säkerhetskrav.**
+- **Lagringstider för loggdata och analyspraxis måste definieras i organisationens säkerhetspolicy.**
+- **Regelbunden granskning säkerställer att loggdata används effektivt för säkerhetshantering.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Tillgångsägaren ansvarar för att säkerställa att fysisk åtkomstloggning uppfyller skydds- och underhållskraven för tillgångarna under ägarens kontroll. Loggning kan utföras manuellt, till exempel med en papperslogg, eller automatiskt, till exempel från data som samlas in genom fysiska åtkomstkontrollsystem.
+
+Relaterade metoder:
+
+- Input: Implementering av ARCHITECTURE-3a ger input som kan vara användbar för att implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: ACCESS-3c, ACCESS-3j.
+</CollapsibleSection>
+
+---
+
+_Vägledning uppdaterad: 18.3.2025_

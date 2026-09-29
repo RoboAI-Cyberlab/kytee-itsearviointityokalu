@@ -1,0 +1,449 @@
+{
+  "controls": {
+    "1": {
+      "fi": "Kyberturvallisuutta koskevan riskienhallinnan toimintaperiaatteet ja hallintatoimenpiteiden vaikuttavuuden arviointi",
+      "en": "Cybersecurity risk management policy and assessing the effectiveness of risk management measures",
+      "sv": "Riktlinjer för hantering av cybersäkerhetsrisker samt bedömningen av effektiviteten i fråga om åtgärderna"
+    },
+    "1.1": {
+      "fi": "Kyberturvallisuuden riskienhallinnan toimintamalli",
+      "en": "Cybersecurity risk management procedure",
+      "sv": "Handlingsmodell för hantering av cybersäkerhetsrisker"
+    },
+    "1.1.1": {
+      "fi": "Riskienhallinnan toimintamalli - laajennettu ohjeistus",
+      "en": "Risk management procedure - extended instructions",
+      "sv": "Handlingsmodell för riskhantering - utökade anvisningar"
+    },
+    "1.2": {
+      "fi": "Kaikki vaaratekijät huomioiva lähestymistapa",
+      "en": "All-hazards approach",
+      "sv": "Ett tillvägagångssätt som beaktar alla riskfaktorer"
+    },
+    "1.3": {
+      "fi": "Tarpeiden ja toimintojen tunnistaminen",
+      "en": "Identifying needs and activities",
+      "sv": "Identifiering av behov och funktioner"
+    },
+    "1.4": {
+      "fi": "Kyberuhkien tunnistaminen",
+      "en": "Cyber threat identification",
+      "sv": "Identifiering av cyberhot"
+    },
+    "1.4.1": {
+      "fi": "Uhka-analyysi - laajennettu ohjeistus",
+      "en": "Threat analysis - extended instructions",
+      "sv": "Hotanalys - utökade anvisningar"
+    },
+    "1.5": {
+      "fi": "Riskien käsittely",
+      "en": "Risk treatment",
+      "sv": "Riskhantering"
+    },
+    "1.6": {
+      "fi": "Riskienhallinnan vaikuttavuuden arviointi ja mittaristo",
+      "en": "Risk management effectiveness assessment and metrics",
+      "sv": "Riskhanteringens ändamålsenlighet och indikatorer"
+    },
+    "1.6.1": {
+      "fi": "Riskienhallinnan vaikuttavuuden arviointi ja mittaristo - laajennettu ohjeistus",
+      "en": "Risk management effectiveness assessment and metrics - extended instructions",
+      "sv": "Riskhanteringens effektivitet och indikatorer - utökade anvisningar"
+    },
+    "2": {
+      "fi": "Viestintäverkkojen ja tietojärjestelmien turvallisuutta koskevat toimintaperiaatteet",
+      "en": "Information security policy of networks and information systems",
+      "sv": "Riktlinjer som gäller säkerheten i kommunikationsnät och informationssystem"
+    },
+    "2.1": {
+      "fi": "Turvallisuutta koskevat toimintaperiaatteet ja menettelyt",
+      "en": "Information security policies and procedures",
+      "sv": "Riktlinjer och förfaranden som gäller säkerheten"
+    },
+    "2.1.1": {
+      "fi": "Turvallisuutta koskevat toimintaperiaatteet ja menettelyt - laajennettu ohjeistus",
+      "en": "Information security policy and procedures - extended instructions",
+      "sv": "Riktlinjer och förfaranden som gäller säkerheten - utökade anvisningar"
+    },
+    "2.2": {
+      "fi": "Henkilöstön sitouttaminen",
+      "en": "Engaging the personnel",
+      "sv": "Engagerande av personalen"
+    },
+    "2.3": {
+      "fi": "Turvallisuusmenettelyjen valinta",
+      "en": "Selection of security procedures",
+      "sv": "Val av säkerhetsförfaranden"
+    },
+    "3": {
+      "fi": "Viestintäverkkojen ja tietojärjestelmien hankinnan, kehittämisen ja ylläpidon turvallisuus sekä tarvittavat menettelyt haavoittuvuuksien käsittelemiseksi ja julkistamiseksi",
+      "en": "Security in network and information systems acquisition, development and maintenance and the necessary procedures for vulnerability handling and disclosure",
+      "sv": "Säkerheten vid förvärv, utveckling och underhåll av kommunikationsnät och informationssystem samt behövliga förfaranden för hantering av sårbarheter och delgivning av information om sårbarheter"
+    },
+    "3.1": {
+      "fi": "Viestintäverkkojen ja tietojärjestelmien suojaus elinkaaren ajan",
+      "en": "Network and information system security throughout their lifecycle",
+      "sv": "Skydd av kommunikationsnät och informationssystem under hela livscykeln"
+    },
+    "3.1.1": {
+      "fi": "Turvallinen tuotekehitys - laajennettu ohjeistus",
+      "en": "Secure product development - extended instructions",
+      "sv": "Säker produktutveckling - utvidgade anvisningar"
+    },
+    "3.2": {
+      "fi": "Hankinnan kohteen turvallisuus",
+      "en": "Security in object acquisition",
+      "sv": "Säkerheten hos föremålet för upphandlingen"
+    },
+    "3.3": {
+      "fi": "Järjestelmäkovennukset",
+      "en": "System hardening",
+      "sv": "Systemhärdningar"
+    },
+    "3.3.1": {
+      "fi": "Järjestelmäkovennukset viestintäverkkoon ja tietojärjestelmään toteutetaan järjestelmällisesti ja kattavasti - laajennettu ohjeistus",
+      "en": "System hardening of the network and information system is implemented systematically and comprehensively - extended instructions",
+      "sv": "Systemhärdningar i kommunikationsnät och informationssystem genomförs systematiskt och i stor omfattning - utökade anvisningar"
+    },
+    "3.4": {
+      "fi": "Muutosten ja päivitysten hallinta",
+      "en": "Change and update management",
+      "sv": "Hantering av ändringar och uppdateringar"
+    },
+    "3.4.1": {
+      "fi": "Muutosten ja päivitysten hallinta on järjestelmällistä - laajennettu ohjeistus",
+      "en": "Change and update management is systematic - extended instructions",
+      "sv": "Hanteringen av ändringar och uppdateringar är systematiskt - utökade anvisningar"
+    },
+    "3.5": {
+      "fi": "Turvallisuuden testaus",
+      "en": "Security testing",
+      "sv": "Testning av säkerheten"
+    },
+    "3.6": {
+      "fi": "Haavoittuvuuksien käsittely ja julkistaminen",
+      "en": "Vulnerability handling and disclosure",
+      "sv": "Behandling och offentliggörande av sårbarheter"
+    },
+    "3.7": {
+      "fi": "Toimitettavien palveluiden turvallisuus",
+      "en": "Security of supplied services",
+      "sv": "Säkerhet vid utveckling"
+    },
+    "3.8": {
+      "fi": "Viestintäverkkojen rakenteellinen turvallisuus",
+      "en": "Structural security of networks",
+      "sv": "Strukturell säkerhet i kommunikationsnät"
+    },
+    "3.9": {
+      "fi": "Haittaliikennesuojaukset",
+      "en": "Malicious traffic protections",
+      "sv": "Skydd mot skadlig trafik"
+    },
+    "4": {
+      "fi": "Toimitusketjun välittömien toimittajien tuotteiden ja palveluntarjoajien palvelujen yleinen laatu ja häiriönsietokyky, niihin sisällytetyt hallintatoimenpiteet sekä välittömien toimittajien ja palveluntarjoajien kyberturvallisuuskäytännöt",
+      "en": "Product security, overall quality of suppliers' services, resilience, cyber security risk management measures and cyber security practices of supply chains, their direct suppliers and service providers",
+      "sv": "Den övergripande kvaliteten och resiliensen hos leveranskedjan för direkta leverantörers produkter och tjänsteleverantörers tjänster och de åtgärder för hantering av cybersäkerhetsrisker som är inbyggda i dem samt cybersäkerhetspraxis hos leverantörer och tjänsteleverantörer"
+    },
+    "4.1": {
+      "fi": "Listaus toimittajista ja palveluntarjoajista",
+      "en": "List of suppliers and service providers",
+      "sv": "Förteckning över leverantörer och tjänsteleverantörer"
+    },
+    "4.2": {
+      "fi": "Toimitusketjujen riskienhallinta",
+      "en": "Supply chain risk management",
+      "sv": "Riskhantering för leveranskedjor"
+    },
+    "5": {
+      "fi": "Omaisuudenhallinta ja sen turvallisuuden kannalta tärkeiden toimintojen tunnistaminen",
+      "en": "Asset management and identification of important operations",
+      "sv": "Tillgångsförvaltning och identifiering av funktioner som är viktiga med tanke på dess säkerhet"
+    },
+    "5.1": {
+      "fi": "Omaisuudenhallinnan menettelyt ja ohjeet",
+      "en": "Asset management procedures and instructions",
+      "sv": "Förfaranden och anvisningar för tillgångsförvaltning"
+    },
+    "5.2": {
+      "fi": "Omaisuusluettelo ja omaisuuden luokittelu",
+      "en": "Asset list and asset classification",
+      "sv": "Tillgångsförteckning och klassificering"
+    },
+    "5.3": {
+      "fi": "Omaisuusluettelon käyttö",
+      "en": "Using the asset list",
+      "sv": "Användning av tillgångsförteckningen"
+    },
+    "6": {
+      "fi": "Henkilöstöturvallisuus ja kyberturvallisuuskoulutus",
+      "en": "Personnel security and cybersecurity training",
+      "sv": "Personalsäkerhet och utbildning i cybersäkerhet"
+    },
+    "6.1": {
+      "fi": "Henkilöstöturvallisuuden menettelyt",
+      "en": "Human resources security procedures",
+      "sv": "Förfaranden för personalsäkerheten"
+    },
+    "6.2": {
+      "fi": "Henkilöstöturvallisuuden menettelytavat",
+      "en": "Human resources security practices",
+      "sv": "Förfaringssätt för personalsäkerheten"
+    },
+    "6.3": {
+      "fi": "Salassapito ja velvollisuudet",
+      "en": "Confidentiality and obligations",
+      "sv": "Sekretess och skyldigheter"
+    },
+    "6.4": {
+      "fi": "Taustatarkistukset",
+      "en": "Background checks",
+      "sv": "Bakgrundskontroller"
+    },
+    "6.5": {
+      "fi": "Henkilöstökoulutus",
+      "en": "Security training",
+      "sv": "Personalutbildning"
+    },
+    "6.5.1": {
+      "fi": "Henkilöstökoulutus - laajennettu ohjeistus",
+      "en": "Security training - extended instructions",
+      "sv": "Personalutbildning - utökade anvisningar"
+    },
+    "6.6": {
+      "fi": "Johdon perehtyneisyys",
+      "en": "Familiarity among management",
+      "sv": "Ledningens förtrogenhet"
+    },
+    "7": {
+      "fi": "Pääsynhallinnan ja todentamisen menettelyt",
+      "en": "Access management and authentication procedures",
+      "sv": "Åtkomsthantering och autentisering"
+    },
+    "7.1": {
+      "fi": "Pääsynhallinnan menettelyt",
+      "en": "Access control procedures",
+      "sv": "Förfaranden för åtkomsthantering"
+    },
+    "7.2": {
+      "fi": "Pääsynhallinnan ja käyttöoikeuksien jatkuva ylläpito",
+      "en": "Continuous maintenance of access control and access rights",
+      "sv": "Kontinuerligt upprätthållande av åtkomsthantering och åtkomsträttigheter"
+    },
+    "7.3": {
+      "fi": "Pääsynhallinnan valvonta",
+      "en": "Access control monitoring",
+      "sv": "Övervakning av åtkomsthanteringen"
+    },
+    "7.3.1": {
+      "fi": "Pääsynhallinnan tapahtumakirjausten valvonta - laajennettu ohjeistus",
+      "en": "Access control event log monitoring - extended instructions",
+      "sv": "Tillsynen av händelseregistreringar över åtkomsthantering - utökade anvisningar"
+    },
+    "7.4": {
+      "fi": "Pääsynhallintaan liittyvä kirjanpito ja vähimpien oikeuksien periaate",
+      "en": "Access control records and the principle of least privilege",
+      "sv": "Dokumentering för åtkomsthantering och principen om lägsta behörighet"
+    },
+    "7.5": {
+      "fi": "Pääkäyttäjätunnukset",
+      "en": "Administrator accounts",
+      "sv": "Huvudanvändarnamn"
+    },
+    "7.6": {
+      "fi": "Turvallisten todennusmenetelmien valinta ja luotettava todennus",
+      "en": "Selection of secure authentication methods and reliable authentication",
+      "sv": "Val av säkra kontrollmetoder och tillförlitlig autentisering"
+    },
+    "8": {
+      "fi": "Salausmenetelmien käyttämistä koskevat toimintaperiaatteet ja menettelyt sekä tarvittaessa toimenpiteet suojatun sähköisen viestinnän käyttämiseksi",
+      "en": "Policies and procedures regarding the use of cryptographic methods and, where appropriate, measures for using secured electronic communication",
+      "sv": "Riktlinjer och förfaranden för användning av krypteringsmetoder samt vid behov åtgärder för användning av säker elektronisk kommunikation"
+    },
+    "8.1": {
+      "fi": "Kryptografian toimintaperiaatteet ja menettelyt",
+      "en": "Policies and procedures in cryptography",
+      "sv": "Riktlinjer och förfaranden för kryptografi"
+    },
+    "8.2": {
+      "fi": "Tiedon salaustekniikat",
+      "en": "Data encryption technologies",
+      "sv": "Krypteringsteknik för information"
+    },
+    "8.3": {
+      "fi": "Salauksen elinkaari",
+      "en": "Encryption lifecycle",
+      "sv": "Krypteringens livscykel"
+    },
+    "9": {
+      "fi": "Poikkeamien havainnointi ja käsittely turvallisuuden ja toimintavarmuuden palauttamiseksi ja ylläpitämiseksi",
+      "en": "Incident detection and handling in order to maintain and recover security and reliability",
+      "sv": "Upptäckande och hantering av incidenter i syfte att återställa och upprätthålla säkerheten och driftsäkerheten"
+    },
+    "9.1": {
+      "fi": "Poikkeamanhallinnan menettelyt",
+      "en": "Incident response procedures",
+      "sv": "Förfaranden för incidenthantering"
+    },
+    "9.2": {
+      "fi": "Poikkeamien raportointikanavat",
+      "en": "Incident reporting channels",
+      "sv": "Rapporteringskanaler för incidenter"
+    },
+    "9.3": {
+      "fi": "Tapahtumien kirjaaminen ja havainnointi",
+      "en": "Event logging and detection",
+      "sv": "Registrering och upptäckande av händelser"
+    },
+    "9.4": {
+      "fi": "Poikkeamien analysointi ja luokittelu",
+      "en": "Incident analysis and classification",
+      "sv": "Analys och klassificering av incidenter"
+    },
+    "9.5": {
+      "fi": "Poikkeaman käsittely",
+      "en": "Incident handling",
+      "sv": "Hantering av en incident"
+    },
+    "9.6": {
+      "fi": "Juurisyyanalyysi ja kokemuksista oppiminen",
+      "en": "Root cause analysis and learning from experiences",
+      "sv": "Analys av grundorsaken och lärdom av erfarenheter"
+    },
+    "9.7": {
+      "fi": "Merkittävien poikkeamien lisäsuositukset",
+      "en": "Additional recommendations for significant incidents",
+      "sv": "Kompletterande rekommendationer för betydande incidenter"
+    },
+    "9.8": {
+      "fi": "Tiedon jakamisen turvallisuus poikkeamatilanteessa",
+      "en": "Security of information sharing in incidents",
+      "sv": "Säkerheten vid spridning av information i incidenter"
+    },
+    "9.9": {
+      "fi": "Poikkeamanhallinnan elinkaaren hallinta",
+      "en": "Incident response lifecycle management",
+      "sv": "Hantering av incidenthanteringens livscykel"
+    },
+    "10": {
+      "fi": "Varmuuskopiointi, palautumissuunnittelu, kriisinhallinta ja muu toiminnan jatkuvuuden hallinta ja tarvittaessa suojattujen varaviestintäjärjestelmien käyttö",
+      "en": "Backup management, disaster recovery planning, crisis management and continuity management of operations and, where appropriate, the use of protected backup/emergency communication systems",
+      "sv": "Säkerhetskopiering, katastrofhantering, krishantering och övrig driftskontinuitet och vid behov användning av säkrade reservkommunikationssystem"
+    },
+    "10.1": {
+      "fi": "Jatkuvuus- ja toipumissuunnittelu",
+      "en": "Continuity and recovery planning",
+      "sv": "Kontinuitets- och återhämtningsplanering"
+    },
+    "10.2": {
+      "fi": "Varmuuskopiot ja varajärjestelmät",
+      "en": "Backup copies and backup systems",
+      "sv": "Säkerhetskopior och reservsystem"
+    },
+    "10.3": {
+      "fi": "Palautustestaus ja varmuuskopioiden suojaaminen",
+      "en": "Recovery testing and backup copy protection",
+      "sv": "Återställningstest och skyddande av säkerhetskopior"
+    },
+    "10.4": {
+      "fi": "Varaviestintäjärjestelmät",
+      "en": "Backup communication systems",
+      "sv": "Reservkommunikationssystem"
+    },
+    "11": {
+      "fi": "Perustason tietoturvakäytännöt toiminnan, tietoliikenneturvallisuuden, laitteisto- ja ohjelmistoturvallisuuden ja tietoaineistoturvallisuuden varmistamiseksi",
+      "en": "Baseline information security practices to ensure the security of operations, network and communication systems, hardware, software and applications",
+      "sv": "Grundläggande praxis för informationssäkerhet för att säkerställa verksamheten samt säkerheten i datakommunikationen, maskinvaran, programvaran och datamaterialet"
+    },
+    "11.1": {
+      "fi": "Toimija on ohjeistanut perustason tietoturvakäytännöt henkilöstölle, alihankkijoille ja muille kumppaneille",
+      "en": "The entity has provided instruction on the baseline information security practices to personnel, subcontractors and other partners",
+      "sv": "Aktören har instruerat personalen, underleverantörer och andra partner om grundläggande praxis för informationssäkerhet"
+    },
+    "11.1.1": {
+      "fi": "Ohjelma kybertietoisuuden lisäämiseksi - laajennettu ohjeistus",
+      "en": "Cyber awareness programme - extended instructions",
+      "sv": "Program för att öka cybermedvetenheten - utvidgade anvisningar"
+    },
+    "11.2": {
+      "fi": "Toimija on tunnistanut kriittisimmän omaisuutensa",
+      "en": "The entity has identified its most critical assets",
+      "sv": "Aktören har identifierat sina mest kritiska tillgångar"
+    },
+    "11.3": {
+      "fi": "Toimija on suojannut viestintäverkkonsa ja tietojärjestelmänsä",
+      "en": "The entity has secured its network and information system",
+      "sv": "Aktören har skyddat sina kommunikationsnät och informationssystem"
+    },
+    "11.4": {
+      "fi": "Toimija on erottanut kriittiset ja haavoittuvat viestintäverkot ja tietojärjestelmät muista ympäristöistä",
+      "en": "The entity has separated its critical and vulnerable networks and information systems from other environments",
+      "sv": "Aktören har differentierat kritiska och sårbara kommunikationsnät och informationssystem från andra miljöer"
+    },
+    "11.5": {
+      "fi": "Toimija on suojannut viestintäverkkonsa ja tietojärjestelmänsä haitallisia ja luvattomia ohjelmistoja vastaan",
+      "en": "The entity has secured its networks and information systems against malicious and unauthorised software",
+      "sv": "Aktören har skyddat sina kommunikationsnät och informationssystem mot skadlig och olovlig programvara"
+    },
+    "11.6": {
+      "fi": "Toimija on järjestänyt tunnistautumisen sisäisiin ja ulkoisiin palveluihinsa ja laitteisiinsa turvallisesti",
+      "en": "The entity has organised secure identification into its internal and external services and devices",
+      "sv": "Aktören har ordnat identifieringen av sina interna och externa tjänster och enheter på ett säkert sätt"
+    },
+    "11.7": {
+      "fi": "Toimija on erottanut järjestelmiensä pääkäyttäjätunnukset ja korotettujen oikeuksien tunnukset muista tunnuksista",
+      "en": "The entity has separated the administrator accounts and accounts with elevated privileges from other accounts in its systems",
+      "sv": "Aktören har i sina system differentierat huvudanvändarnamn och användarnamn med förhöjda rättigheter från andra användarnamn"
+    },
+    "11.8": {
+      "fi": "Toimija on varmistanut, että sen luottamuksellista tietoa käsitellään turvallisesti",
+      "en": "The entity has ensured that its confidential data is processed securely",
+      "sv": "Aktören har säkerställt att konfidentiella uppgifter behandlas på ett säkert sätt"
+    },
+    "11.9": {
+      "fi": "Toimija on huolehtinut, että sen järjestelmiä päivitetään säännöllisesti ja kriittiset päivitykset asennetaan viivytyksettä",
+      "en": "The entity has ensured that its systems are updated regularly and that critical updates are installed without delay",
+      "sv": "Aktören har sett till att systemen uppdateras regelbundet och kritiska uppdateringar installeras utan dröjsmål"
+    },
+    "11.10": {
+      "fi": "Toimija on huolehtinut, että sen palvelut ja laitteet on turvallisesti konfiguroitu",
+      "en": "The entity has ensured that its services and devices are configured securely",
+      "sv": "Aktören har sett till att tjänsterna och enheterna är säkert konfigurerade"
+    },
+    "11.11": {
+      "fi": "Toimija on huolehtinut, että sen kriittiset palvelut ja tieto-omaisuus on varmuuskopioitu",
+      "en": "The entity has ensured that its critical services and information assets are backed up",
+      "sv": "Aktören har sett till att kritiska tjänster och dataegendom är säkerhetskopierade"
+    },
+    "11.12": {
+      "fi": "Toimija on varautunut, miten sen toiminta voidaan ylläpitää vakavissa poikkeamissa",
+      "en": "The entity is prepared to maintain its operations in severe incidents",
+      "sv": "Aktören har förberett sig på hur verksamheten kan upprätthållas vid allvarliga incidenter"
+    },
+    "11.13": {
+      "fi": "Toimijalla on käytössäān kriittisten toimintojen tapahtumakirjaus (loki)",
+      "en": "The entity employs event logging of critical activities",
+      "sv": "Aktören har i bruk registrering av händelser (logg) i fråga om kritiska funktioner"
+    },
+    "12": {
+      "fi": "Toimenpiteet viestintäverkkojen ja tietojärjestelmien fyysisen ympäristön ja tilaturvallisuuden sekä välttämättömien resurssien varmistamiseksi",
+      "en": "Measures to secure the physical environment and premises of networks and information systems as well as availability of the necessary resources",
+      "sv": "Åtgärder för att säkerställa den fysiska miljön, lokalsäkerheten och nödvändiga resurser i fråga om kommunikationsnät och informationssystem"
+    },
+    "12.1": {
+      "fi": "Tilaturvallisuus ja fyysinen pääsynvalvonta",
+      "en": "Premises security and physical access control",
+      "sv": "Lokalsäkerhet och fysisk åtkomstövervakning"
+    },
+    "12.2": {
+      "fi": "Suojaus fyysisiä ja ympäristön aiheuttamia uhkia vastaan",
+      "en": "Protection against physical and environmental threats",
+      "sv": "Skydd mot fysiska hot och hot som miljön orsakar"
+    },
+    "12.3": {
+      "fi": "Toiminnalle välttämättömien resurssien jatkuvuuden varmistaminen",
+      "en": "Ensuring the continuity of resources necessary for operations",
+      "sv": "Säkerställande av kontinuiteten för resurser som är nödvändiga för verksamheten"
+    }
+  }
+}

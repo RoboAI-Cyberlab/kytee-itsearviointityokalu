@@ -1,0 +1,17 @@
+{
+  "progress": "Framsteg",
+  "progress_aria": "Självbedömningens framsteg",
+  "progress_aria_label": "{{answered}} praxis besvarade av {{total}}",
+  "practices_count": "praxis",
+  "download_as_image": "Ladda ner som bild",
+  "loading": "Laddar...",
+  "identifier": "ID",
+  "practice": "Praxis",
+  "answer": "Svar",
+  "answer_not_implemented": "Inte implementerad eller ingen information",
+  "answer_partially_implemented": "Delvis implementerad",
+  "answer_mostly_implemented": "Mestadels implementerad",
+  "answer_fully_implemented": "Helt implementerad",
+  "participant_roles": "Deltagarroller",
+  "answer_options": "Svarsinstruktioner"
+}

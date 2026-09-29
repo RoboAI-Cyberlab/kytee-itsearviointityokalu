@@ -1,0 +1,543 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Personalhantering och utveckling
+
+<Roles>
+- Cybersäkerhetsledning
+- IT-ledning
+- OT-ledning
+- IT- och OT-teamspecialister ansvariga för logisk och fysisk åtkomsthantering
+- Personalavdelningsrepresentant
+- Cybersäkerhetsutbildningsspecialist
+- Specialist för kompetensbedömning och utbildningsprogram
+</Roles>
+
+---
+<ObjectiveTitle name="workforce-1">Tilldelning av cybersäkerhetsansvar</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-1a">Olika kontroller, såsom bakgrundskontroller och drogtester, utförs vid anställning av nya medarbetare.</PracticeTitle>
+
+### Betydelse
+
+Bakgrundskontroller för nya medarbetare är en viktig del av organisationens cybersäkerhet eftersom:
+- **Insiderhot minskas.** Finansiell instabilitet, brottsregister eller annat misstänkt beteende kan indikera en potentiell säkerhetsrisk.
+- **Tillförlitlighet och säkerhet förbättras.** Bakgrundskontroller säkerställer att endast pålitlig personal har tillgång till organisationens informationssystem och kritiska resurser.
+- **HR kan fatta bättre rekryteringsbeslut.** Kontroller hjälper till att identifiera potentiella varningssignaler i kandidaters historik.
+- **Entreprenör- och tjänsteleverantörspersonal kan utgöra säkerhetsrisker.** Det är viktigt att även utkontrakterade arbetare genomgår likvärdiga kontroller.
+
+Bedömningsfrågor:
+- Utför organisationen bakgrundskontroller på nya medarbetare, särskilt de med tillgång till känslig information eller system?
+- Används bakgrundskontroller som till exempel brottsregisterkontroller, säkerhetsprövningar eller drogtester?
+- Finns det en process för att analysera kandidatens tidigare anställningsförhållanden, referenser och rekommendationer?
+- Har HR tydliga riktlinjer för när och hur kontroller utförs?
+- Har organisationen krav på att även entreprenörer utför likvärdiga kontroller på sina anställda?
+
+Organisationen bör säkerställa att följande kontroller utförs på tillämpliga nya medarbetare och entreprenörer:
+- **Säkerhetsprövning:** Brottsregisterkontroll, eventuell säkerhetsprövning från myndigheter.
+- **Drogtester:** Enligt tillämpliga lagar och organisationens praxis.
+- **Verifiering av referenser och tidigare anställning:** Säkerställ att informationen som kandidaten lämnat är korrekt.
+- **Utvärdering av information från referenser:** Identifiera potentiella varningssignaler i kandidatens historik.
+- **Internt eller externt utförda kontroller:** HR måste säkerställa att kontroller utförs i enlighet med lagar och förordningar.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Bakgrundskontroller utförs inte eller det finns ingen information om dem.
+- **Delvis implementerad**: Vissa kontroller utförs, men processen är inte omfattande eller systematisk.
+- **Till största delen implementerad**: De flesta anställda genomgår kontroller, men det finns utrymme för förbättring i praktisk implementering.
+- **Helt implementerad**: Alla kritiska anställda och entreprenörer genomgår systematiska bakgrundskontroller och processen följs konsekvent.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Livsmedelsföretaget utför bakgrundskontroller och säkerställer att anställda med tillgång till produktionsanläggningar inte utgör ett säkerhetshot. IT-personal genomgår brottsregisterkontroll innan anställningen börjar.
+
+> **Kraftbolag**
+Energibolaget utför grundliga bakgrundskontroller på alla anställda med tillgång till kritiska system och kräver att tjänsteleverantörer följer samma praxis.
+
+### Ytterligare information
+
+- **Samordna med HR för att säkerställa att lämpliga kontroller utförs på personal.**
+- **Kontroller kan inkludera:**
+  - Säkerhetsprövningar
+  - Drogtester
+  - Verifiering av referenser och tidigare anställning
+  - Utvärdering av information från referenser
+- **Målet är att hitta alla bevis eller tecken på att en kandidat kan bli ett insiderhot.**
+- **För entreprenörer, säkerställ att de utför likvärdiga kontroller på sina anställda.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Samordna med HR för att säkerställa att lämpliga kontroller utförs på personal, såsom säkerhetsprövningar, drogtester, referenser och tidigare anställning samt eventuella andra kontroller. I vissa fall kan du kanske acceptera en ömsesidig bakgrundskontroll från en tidigare arbetsgivare. Utvärdera även all information som lämnats av kandidatens referens som väcker oro för kandidatens tillförlitlighet. Målet är att hitta alla bevis eller tecken på att en kandidat kan bli ett insiderhot (t.ex. finansiell instabilitet, brottshistoria, misstänkt eller störande beteende på tidigare arbetsplatser, lögner).
+HR-personal kan utföra kontrollen internt eller tilldela den till en leverantör, men i båda fallen måste kontrollen utföras av personer som känner till alla tillämpliga lagar och förordningar. För utkontrakterade aktiviteter, kräv att tjänsteleverantörer utför liknande kontroll på alla entreprenörer med tillgång till organisationens tillgångar.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: WORKFORCE-1a, WORKFORCE-1c, WORKFORCE-1f.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="workforce-1b">Anställningsavslutningsprocedurer tar hänsyn till cybersäkerhet.</PracticeTitle>
+
+### Betydelse
+
+Cybersäkerhetsåtgärder relaterade till anställningsavslut är kritiska eftersom:
+- **Insiderhotrisken minskas.** Tidigare anställda bör inte ha tillgång till system eller känslig information efter att anställningen avslutats.
+- **Dataintrångsrisken minskar.** Förplanerade metoder förhindrar att information når externa parter såsom konkurrenter eller kriminella aktörer.
+- **Organisationen behåller kontrollen över sin IT-miljö.** Åtkomsthantering säkerställer att tidigare anställda inte kan göra ändringar i system.
+- **Enheter och andra företagstillgångar returneras i tid.** En kontrollerad process kan säkerställa att enheter och dokument med företagsinformation inte lämnas kvar hos den anställde.
+
+Bedömningsfrågor:
+- Har organisationen tydliga procedurer för att ta bort anställdas åtkomst när anställningen avslutas?
+- Måste enheter, identitetshandlingar och dokument som använts av den anställde returneras innan anställningen avslutas?
+- Övervakas aktiviteten hos särskilt högriskmedarbetare under uppsägningstiden, till exempel om de har haft tillgång till känslig information?
+- Samordnar organisationen med HR, IT och säkerhetsansvariga för att säkerställa att alla åtkomsträttigheter tas bort i tid?
+- Finns det separata försiktighetsåtgärder vid uppsägning, till exempel i anställningsförhållanden som avslutas till följd av förhandlingar eller tvister?
+
+Organisationen bör säkerställa att följande åtgärder utförs systematiskt:
+1. **Ta bort åtkomsträttigheter**
+   - Ta bort den anställdes åtkomsträttigheter till alla system (interna och molntjänster).
+   - Ta även bort åtkomsträttigheter från tredjepartstjänster, såsom finansiella institutioner och kundhanteringssystem.
+   - Återkalla admin- eller andra högnivårättigheter.
+   - Ta bort fjärråtkomsträttigheter (VPN, RDP, MFA-identiteter).
+2. **Återlämning av enheter och andra tillgångar**
+   - Returnera alla arbetsverktyg (bärbara datorer, telefoner, nycklar, ID-kort, företagskreditkort).
+   - Säkerställ att den anställde inte besitter företagets pappersdokument eller fysiska medier.
+3. **Riskprofilbaserade ytterligare åtgärder**
+   - Om den anställde har haft **tillgång till känslig information** (IP, finansiell data, PII), kan nätverksaktivitetsövervakning under de sista arbetsdagarna övervägas.
+   - Vid förhandlingar eller andra risksituationer kan åtkomsträttigheter **tas bort omedelbart** vid meddelande.
+4. **Samordning med HR och IT**
+   - Säkerställ att HR, IT och cyberteamet arbetar tillsammans och schemalägger borttagning av åtkomst korrekt.
+   - Definiera ansvar: vem ansvarar för att ta bort åtkomsträttigheter, returnera enheter och dokumentation?
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Anställningsavslut inkluderar inte cybersäkerhetspraxis eller det finns ingen information om dem.
+- **Delvis implementerad**: Det finns vissa metoder, men borttagning av åtkomsträttigheter eller returnering av enheter är inte systematisk.
+- **Till största delen implementerad**: I de flesta fall tas åtkomsträttigheter bort och enheter returneras, men processen tillämpas kanske inte konsekvent på alla anställda.
+- **Helt implementerad**: Organisationen har en tydlig och konsekvent process där alla åtkomsträttigheter tas bort, enheter returneras och en riskbedömning görs innan anställningen avslutas.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Företagets IT-avdelning tar bort åtkomsträttigheter från alla system och säkerställer att avgående anställda returnerar alla företagsenheter och identitetshandlingar. Säkerhetsteamet övervakar nätverksaktiviteten hos de högsta riskmedarbetarna under deras sista arbetsdagar.
+
+> **Vattenförsörjning**
+Systemåtkomsträttigheter tas bort omedelbart när en anställd säger upp sig eller dennes anställning avslutas. Organisationen säkerställer att även entreprenörer returnerar alla arbetsverktyg och identitetshandlingar innan arbetet avslutas.
+
+> **Kraftbolag**
+Energibolaget kräver att rättigheterna för alla anställda med tillgång till system och kritisk infrastruktur tas bort omedelbart. Vid förhandlingar förlorar anställda i riskgruppen sina åtkomsträttigheter innan det faktiska uppsägningsdatumet.
+
+### Ytterligare information
+
+- **Säkerställ att avgående personal inte längre har tillgång till organisationens tillgångar.**
+- **Ta bort och återkalla åtkomsträttigheter till system, enheter och data omedelbart när anställningen avslutas.**
+- **Samla in enheter, ID-kort och företagstillgångar som innehas av den anställde.**
+- **Samordna med HR och IT så att alla åtgärder utförs i tid och ansvariga personer är identifierade.**
+- **Övervaka användningen av kritiska system innan den anställdes avgång om nödvändigt.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Säkerställ att avgående personal inte längre har tillgång till tillgångar, särskilt de med privilegierad åtkomst eller åtkomst till finansiell information, PII eller IP-tillgångar. Skapa procedurer för att ta bort, återkalla eller inaktivera åtkomst till alla organisationens tillgångar från och med den anställdes uppsägningsdatum. Börja med att identifiera alla anställdas konton (inklusive alla konton som den anställde har hos tredjepartstjänsteleverantörer, såsom företagskonton hos finansiella institutioner), alla typer av förhöjda åtkomsträttigheter, såsom admin-rättigheter, alla enheter som innehas av den anställde samt alla system, data och andra tillgångar som den anställde har tillgång till. Inaktivera alla konton, ta bort åtkomst till alla relevanta tillgångar, ta bort fjärråtkomst och samla in den anställdes enheter, ID-kort, identitetshandlingar, papperskopior av dokument, företagskreditkort etc. Samordna med HR om tidpunkten för händelser och vem som är ansvarig för vad. Om anställda har privilegierad åtkomst eller åtkomst till känslig information kan du vilja övervaka deras nätverksaktivitet för att upptäcka tecken på dataöverföring.
+
+Om en anställds anställning avslutas till exempel till följd av förhandlingar, överväg att ta bort, återkalla eller inaktivera åtkomsträttigheter till alla tillgångar omedelbart vid meddelande om uppsägning. Eskoortera den anställde ut från lokalerna omedelbart efter meddelandet.
+
+Relaterade metoder:
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: WORKFORCE-1b, WORKFORCE-1d.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="workforce-2">Utveckling av cybersäkerhetsfokuserad personal</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-2a">Personalens cybersäkerhetsmedvetenhet höjs genom olika aktiviteter.</PracticeTitle>
+
+### Betydelse
+
+Att främja cybersäkerhetsmedvetenhet är kritiskt eftersom:
+- **Människor är ofta organisationens största säkerhetsrisk.** Många dataintrång och cyberattacker lyckas på grund av mänskliga fel eller okunnighet.
+- **Säkerhetsutbildning hjälper till att förhindra attacker.** När personal kan identifiera till exempel e-postbedrägerier och andra attackmetoder minskar risken för cyberattacker avsevärt.
+- **Ökad medvetenhet stödjer efterlevnad av lagstiftning och standarder.** Till exempel kräver GDPR och NIS2-direktivet att organisationer förstår och tillämpar cybersäkerhetspraxis.
+- **Personer i speciella roller behöver skräddarsydd utbildning.** Finans-, IT- och HR-personal möter olika cyberrisker än resten av organisationen, så utbildning måste vara riktad.
+
+Bedömningsfrågor:
+- Har organisationen regelbunden cybersäkerhetsutbildning för all personal?
+- Erbjuder organisationen särskild utbildning för olika roller (t.ex. IT-personal, ekonomi, kundservice)?
+- Riktar sig medvetenhetsaktiviteter även mot affärspartner och entreprenörer?
+- Används olika inlärningsmetoder, såsom e-post, onlinekurser, briefingar, simuleringar och tester?
+- Utvecklas cybersäkerhetsmedvetenhet kontinuerligt och hålls utbildningsmaterial uppdaterat?
+
+Organisationen bör använda olika metoder för att utveckla medvetenhet, såsom:
+
+1. **Allmänna medvetenhetsaktiviteter för all personal**
+   - Regelbundna e-postmeddelanden och nyhetsbrev om cybersäkerhetsteman.
+   - Kvartalsvisa briefingar och utbildningssessioner.
+   - Cybersäkerhetsfokuserade onlinekurser och tester.
+   - Säkerhetsaffischer på arbetsplatsen och på intranätet.
+
+2. **Rollspecifik utbildning och briefingar**
+   - **För finans- och kundservicepersonal**: Risker relaterade till social ingenjörskonst och bedrägeri.
+   - **För IT-personal**: Molnsäkerhet, identitetshantering och fjärranslutningar.
+   - **För ledningen**: Cybersäkerhetspolicyer, regulatoriska krav och riskhantering.
+
+3. **Medvetenhetsaktiviteter för affärspartner och entreprenörer**
+   - Vägledning om hantering av personuppgifter (PII).
+   - Presentation av standarder och organisationens säkerhetskrav.
+
+4. **Specialåtgärder och praktiska övningar**
+   - Simulerade nätfiskeövningar som testar personalens förmåga att identifiera bedrägerimeddelanden.
+   - Övningar om händelserapportering och anomalidetektering.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Personalens cybersäkerhetsutbildning finns inte eller det finns ingen information om den.
+- **Delvis implementerad**: Det finns vissa medvetenhetsaktiviteter, men de är sporadiska eller täcker bara en del av personalen.
+- **Till största delen implementerad**: De flesta anställda deltar i regelbunden utbildning, men det kan finnas utrymme för förbättring till exempel i rollspecifik utbildning eller hänsyn till affärspartner.
+- **Helt implementerad**: Organisationen har omfattande och systematisk cybersäkerhetsutbildning som inkluderar allmän och rollspecifik utbildning, tester och övningar samt regelbundna uppdateringar.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Företaget organiserar kvartalsvisa briefingar för personal som täcker e-postbedrägerier och säkerhetsbästa praxis. IT-personal får ytterligare utbildning om industriautomationscybersäkerhet.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen organiserar regelbunden cybersäkerhetsutbildning för systemadministratörer och säkerställer att entreprenörer också får information om säkerhetspraxis.
+
+> **Kraftbolag**
+Energibolaget implementerar ett omfattande cybersäkerhetsprogram som inkluderar en intranätportal där säkerhetsbulletiner delas samt obligatorisk utbildning för personal som arbetar i kritisk infrastruktur.
+
+### Ytterligare information
+
+- **Implementera cybersäkerhetsmedvetenhetsaktiviteter** för att förbättra personalens kunskap om cyberrisker och organisationens säkerhetskrav.
+- **Ämnen kan vara allmänna eller rollspecifika**, till exempel:
+  - Social ingenjörskonst och nätfiske.
+  - Identifiering av insiderhot.
+  - Händelse- och anomalirapportering.
+  - Säker användning av molntjänster och fjärranslutningar.
+- **Medvetenhetsaktiviteter kan organiseras för affärspartner**, särskilt om hantering av personuppgifter och efterlevnad av standarder.
+- **Använd olika medel**, såsom e-postbulletiner, onlinekurser, övningar och en intranätportal.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Implementera cybersäkerhetsmedvetenhetsaktiviteter för att förbättra personalens kunskap om cyberrisker, cybersäkerhetsrelaterade lagar och förordningar som gäller för organisationen samt cybersäkerhetspolicyer, procedurer och krav. Ämnen kan vara allmänna och täcka all personal (såsom händelserapportering) eller specifikt för vissa roller (såsom risker för social ingenjörskonst som påverkar finanspersonal). All cybersäkerhetspersonal bör vara medveten om cybersäkerhetsprogramstrategin (PROGRAM-1a), så briefingar om den bör inkluderas i medvetenhetsaktiviteter. Det kan vara nödvändigt att kommunicera medvetenhet med affärspartner, till exempel om hur PII hanteras och hur efterlevnad av standarder uppnås.
+Cybersäkerhetsmedvetenhetsaktiviteter kan inkludera cybersäkerhetsfokuserade e-postmeddelanden från erkända experter, kvartalsvisa påfyllningssessioner, lunch- och lärsessioner, affischer och en dedikerad intranätsida som publicerar nyheter om aktuella cybersäkerhetshändelser och relevanta artiklar, memon, varningar etc.
+
+Exempel på medvetenhetsteman inkluderar: e-postbedrägerier och andra sociala ingenjörskonst taktiker, identifiering av insiderhotindikatorer, identifiering av händelser och anomalier, dataklassificering och hantering, acceptabel användningspraxis, identitetshantering, inklusive molnkonton, fjärranslutningar och mobil enhetssäkerhet.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: WORKFORCE-2a, WORKFORCE-2b, WORKFORCE-2c, WORKFORCE-2d, WORKFORCE-2e, WORKFORCE-2f, WORKFORCE-2g.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="workforce-3">Personalavdelningsprocesser</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-3a">Cybersäkerhetsansvar relaterade till funktionen har identifierats.</PracticeTitle>
+
+### Betydelse
+
+Att identifiera cybersäkerhetsansvar är kritiskt eftersom:
+- **Tydliga roller minskar tvetydighet.** När ansvar är fördelat kan cybersäkerhetsaktiviteter implementeras mer effektivt.
+- **Cybersäkerhet är inte bara IT-avdelningens uppgift.** HR, upphandling och operativ personal är också nyckelpersoner för att upprätthålla säkerheten.
+- **Riskhanteringen förbättras.** Säkerhetsrelaterade uppgifter kan distribueras över olika nivåer i organisationen, vilket säkerställer att risker identifieras och hanteras i tid.
+- **Tredjepartshantering blir enklare.** När ansvar är definierat kan det säkerställas att även utkontrakterade tjänsteleverantörer följer organisationens säkerhetspraxis.
+
+Bedömningsfrågor:
+- Har organisationen definierat individer eller team ansvariga för cybersäkerhet?
+- Är cybersäkerhetsansvar definierade för andra än IT-avdelningens anställda, såsom HR, upphandling och operativ personal?
+- Är det tydligt definierat hur tredje parter och entreprenörer deltar i cybersäkerhetsrelaterade uppgifter?
+- Används ramverk såsom **NICE Cybersecurity Workforce Framework** (NIST SP 800-181) för att beskriva och definiera ansvar?
+- Är ansvarsdefinitioner dokumenterade och kommunicerade inom organisationen?
+
+Organisationen bör identifiera och definiera cybersäkerhetsansvar för olika roller:
+
+1. **Traditionella cybersäkerhetsroller**
+   - **Chief Information Security Officer (CISO, eller likvärdig)**: Ansvarig för cybersäkerhetsstrategi och riskhantering.
+   - **Nätverksadministratör**: Säkerställer nätverkssäkerhet och övervakar trafik.
+   - **Säkerhetsadministratör**: Hanterar säkerhetspolicyer och tekniska skyddslösningar.
+
+2. **Operativa och stödroller**
+   - **Driftingenjörer och produktionspersonal**: Följer säkerhetspraxis och rapporterar avvikelser.
+   - **Personalavdelning**: Ansvarig för säkerhetsutbildning och bakgrundskontroller.
+   - **Upphandlingsavdelning**: Utvärderar leverantörers cybersäkerhetspraxis före kontrakt.
+
+3. **Tredjepartiers och entreprenörers roller**
+   - Tjänsteleverantörer och entreprenörer kan ha tillgång till organisationens system, så deras cybersäkerhetspraxis måste definieras och övervakas.
+
+4. **Utnyttjande av ramverk**
+   - **NICE Cybersecurity Workforce Framework (NIST SP 800-181)** kan hjälpa till att definiera roller och ansvar.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Cybersäkerhetsansvar har inte definierats eller det finns ingen information om dem.
+- **Delvis implementerad**: Vissa ansvar har identifierats, men de täcker inte alla organisatoriska funktioner.
+- **Till största delen implementerad**: De flesta nyckelroller och ansvar är definierade, men de är inte omfattande dokumenterade eller täcker inte hela organisationen.
+- **Helt implementerad**: Cybersäkerhetsansvar är omfattande identifierade, dokumenterade och kommunicerade inom organisationen. Ansvar täcker alla organisatoriska funktioner, inklusive tredje parter.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Livsmedelsföretaget har definierat tydliga cybersäkerhetsroller för att säkra produktionsprocesser och försörjningskedjan. IT-avdelningen ansvarar för teknisk säkerhet, medan upphandlingsavdelningen utvärderar leverantörers säkerhetspraxis.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen har identifierat säkerhetsansvar relaterade till systemövervakning och underhåll. Driftingenjörer och teknisk personal får särskild utbildning om systemskydd.
+
+> **Kraftbolag**
+På energibolaget är cybersäkerhetsansvar fördelat över olika nivåer. Ledningsgruppen ansvarar för strategiskt beslutsfattande, IT-teamet för teknisk implementering och fältpersonal för operativa säkerhetsåtgärder. Externa tjänsteleverantörer följer också organisationens säkerhetspraxis.
+
+### Ytterligare information
+
+- **Definiera roller och aktiviteter som behövs för att möta funktionens cybersäkerhetsprogrambehov.**
+- **Observera att cybersäkerhetsansvar inte är begränsat till IT-avdelningen.** HR, upphandling och operativ personal är också involverade i säkerheten.
+- **Överväg att använda ramverk såsom NICE Cybersecurity Workforce Framework (NIST SP 800-181) för att identifiera och beskriva ansvar.**
+- **Säkerställ att tredjepartiers roller och ansvar är definierade och övervakade.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Definiera roller och aktiviteter som behövs för att möta funktionens cybersäkerhetsprogrambehov. Detta inkluderar typiska cybersäkerhetsroller, såsom säkerhetsadministratör, nätverksadministratör och chief information security officer (eller likvärdig roll), och de aktiviteter som tilldelats dem. Cybersäkerhetsansvar är inte begränsat till traditionella cybersäkerhets- eller IT-roller. Till exempel har driftingenjörer, HR-specialister och upphandlingsspecialister vanligtvis cybersäkerhetsrelaterade uppgifter, och dessa uppgifter kan också utföras av tredje parter. Det kan vara användbart att överväga att använda bästa praxis eller ramverk, såsom NICE Cybersecurity Workforce Framework (NIST Special Publication 800-181), för att hjälpa till att identifiera och beskriva grundläggande cybersäkerhetsansvar.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: WORKFORCE-3a, WORKFORCE-3d, WORKFORCE-3e.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="workforce-3b">Cybersäkerhetsansvar har tilldelats namngivna individer.</PracticeTitle>
+
+### Betydelse
+
+Att tilldela cybersäkerhetsansvar till namngivna individer är kritiskt eftersom:
+- **Ansvariga personer säkerställer att säkerhetsåtgärder implementeras.** Utan tydliga ansvar kan cybersäkerhetspraxis förbli oimplementerad eller vag.
+- **Organisationens säkerhet förblir under kontroll.** När ansvariga personer är kända kan cybersäkerhetsåtgärder utvecklas och upprätthållas konsekvent.
+- **Att fördela ansvar säkerställer effektivitet.** Allt säkerhetsansvar behöver inte koncentreras till IT-avdelningen utan kan distribueras till olika affärsenheter.
+- **Personalens medvetenhet om cybersäkerhet ökar.** När anställda tilldelas ansvar förstår de bättre cybersäkerhetens betydelse i sitt eget arbete.
+
+Bedömningsfrågor:
+- Har organisationen definierat och dokumenterat vem som är ansvarig för cybersäkerhetsrelaterade uppgifter?
+- Är ansvar tilldelade till heltidsanställda cybersäkerhetspersonal eller som en del av andra anställdas uppgifter?
+- Är en ansvarig person definierad för varje cybersäkerhetsprogramaktivitet?
+- Har ansvariga personer fått nödvändig utbildning och resurser för att utföra sina uppgifter?
+- Har ansvarsfördelningen tydligt kommunicerats inom organisationen?
+
+Organisationen bör definiera och tilldela följande cybersäkerhetsansvar:
+
+1. **Heltids cybersäkerhetsuppgifter**
+   - **Chief Information Security Officer (CISO eller likvärdig)**: Ansvarig för organisationens cybersäkerhetsstrategi och policy.
+   - **Nätverks- och systemadministratörer**: Ansvariga för trafik- och IT-systemsäkerhet.
+   - **Säkerhetsanalytiker**: Övervakar säkerhetsavvikelser och analyserar hot.
+
+2. **Partiella cybersäkerhetsansvar för andra anställda**
+   - **Personalavdelning (HR)**: Ansvarig för ny anställds säkerhetsutbildning och bakgrundskontroller.
+   - **Upphandlingsavdelning**: Säkerställer att leverantörer och entreprenörer uppfyller cybersäkerhetskrav.
+   - **Driftingenjörer och operativ personal**: Följer säkerhetspraxis och rapporterar misstänkta händelser.
+
+3. **Utbildning och resursering av ansvariga personer**
+   - Varje ansvarig person måste ges utbildning och verktyg för att utföra cybersäkerhetsuppgifter.
+   - Organisationen måste säkerställa att ansvariga personer har tillräcklig tid och resurser för att utföra sina uppgifter.
+
+4. **Dokumentation och kommunikation**
+   - Alla cybersäkerhetsansvar måste dokumenteras och tydligt kommuniceras inom organisationen.
+   - Personal måste veta vem de ska rapportera cybersäkerhetsrelaterade problem och hot till.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Cybersäkerhetsansvar har inte tilldelats specifika individer eller det finns ingen information om dem.
+- **Delvis implementerad**: Vissa ansvariga personer har utsetts, men ansvar täcker inte alla cybersäkerhetsområden eller är inte tydligt definierade.
+- **Till största delen implementerad**: De flesta cybersäkerhetsansvar är tilldelade, men roller är inte fullt dokumenterade eller organisationen har inte säkerställt att alla ansvariga personer har tillräckliga resurser.
+- **Helt implementerad**: Alla cybersäkerhetsuppgifter är tilldelade till specifika individer, dokumenterade och kommunicerade inom organisationen. Ansvariga personer har tillräcklig utbildning och resurser för att utföra sina uppgifter.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Företaget har en chief information security officer som ansvarar för övergripande säkerhet samt säkerhetsansvariga på produktionslinjer som säkerställer att anställda följer säkerhetspraxis.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen har tilldelat driftingenjörer ansvar för systemsäkerhet, och chief information security officer koordinerar deras arbete för att säkerställa att system är skyddade.
+
+> **Kraftbolag**
+På energibolaget hanterar IT-avdelningen teknisk säkerhet, men även enhetschefer har sina egna säkerhetsansvar. Varje kritisk enhet har en utsedd säkerhetsansvarig som rapporterar risker och fungerar som primär kontaktperson.
+
+### Ytterligare information
+
+- **Tilldela individualiserade cybersäkerhetsansvar till personal.**
+- **Cybersäkerhetsansvar kan vara heltidsuppgifter eller bara en del av en anställds bredare roll.**
+- **Säkerställ att en ansvarig person är utsedd för varje cybersäkerhetsrelaterad aktivitet.**
+- **Ge ansvariga personer utbildning och resurser för att utföra sina uppgifter.**
+- **Dokumentera och kommunicera ansvar tydligt inom organisationen.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Tilldela till personal cybersäkerhetsansvaren som identifierats i WORKFORCE-3a. Dessa kan vara heltidsuppgifter eller bara en liten uppsättning ansvar som ges till en person vars primära roll är inom ett annat område. Huvudmålet är att säkerställa att en specifik person (eller personer) är ansvarig för alla aktiviteter som behövs för att implementera funktionens cybersäkerhetsprogram.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: WORKFORCE-3b, WORKFORCE-3c, WORKFORCE-3f.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="workforce-4">Utbildning och förbättring av cybersäkerhetsmedvetenhet</ObjectiveTitle>
+---
+
+<PracticeTitle name="workforce-4a">Cybersäkerhetsutbildning finns tillgänglig för anställda som har tilldelats cybersäkerhetsansvar.</PracticeTitle>
+
+### Betydelse
+
+Cybersäkerhetsutbildning är kritisk eftersom:
+- **Välutbildade anställda minskar cyberrisker.** Utan utbildning kan säkerhetsansvar förbli oklart och risker kanske inte upptäcks i tid.
+- **Cybersäkerhet är inte bara IT-avdelningens uppgift.** Driftingenjörer, HR och upphandling möter sina egna cybersäkerhetsutmaningar för vilka de måste få utbildning.
+- **Organisationens säkerhetspraxis förblir uppdaterad.** Cybersäkerhet utvecklas ständigt och regelbunden utbildning hjälper organisationen att hålla sig aktuell med de senaste hoten och skyddsmetoderna.
+- **Certifierade anställda kan stärka organisationens trovärdighet.** Certifieringar som CISSP, CISM eller CEH kan förbättra organisationens cybersäkerhetsexpertis och konkurrenskraft.
+
+Bedömningsfrågor:
+- Har organisationen ett systematiskt utbildningsprogram för anställda ansvariga för cybersäkerhet?
+- Finansieras cybersäkerhetsutbildning från organisationens budget?
+- Finns utbildning endast tillgänglig för IT-personal eller även för andra, såsom driftingenjörer, HR och upphandling?
+- Finns utbildning tillgänglig både internt och externt (t.ex. konferenser, leverantörsspecifik utbildning, certifieringsprogram)?
+- Krävs det att utbildning slutförs innan ansvarsfulla uppgifter accepteras?
+
+Organisationen bör säkerställa att följande utbildningspraxis är på plats:
+
+1. **Omfattande utbildning för alla ansvariga för cybersäkerhetsuppgifter**
+   - Varje anställd med cybersäkerhetsansvar får utbildning som är lämplig för sin roll.
+   - Utbildningen täcker grunderna (t.ex. säkerhetspolicyer, riskhantering) och specialiserade ämnen (t.ex. OT-säkerhet, molnsäkerhet).
+
+2. **Utbildningsfinansiering och organisation**
+   - Cybersäkerhetsutbildning är budgeterad och kan finansieras antingen i förväg eller på prestationsbasis.
+   - Organisationen organiserar intern utbildning och utnyttjar externa utbildningstjänster.
+
+3. **Mångsidiga inlärningsmöjligheter**
+   - **Intern utbildning**: Verktygsanvändningsutbildning, säkerhetsövningar och simuleringar.
+   - **Extern utbildning**: Konferenser, certifieringsprogram och leverantörsspecifik utbildning.
+   - **Självstudier och onlinekurser**: Möjlighet att slutföra kurser online enligt eget schema.
+
+4. **Inriktning av utbildning på olika roller**
+   - **IT-personal**: Nätverkssäkerhet, säkerhetsarkitektur, attackförsvar.
+   - **Driftingenjörer och produktionspersonal**: OT-systemsäkerhet, SCADA-säkerhet.
+   - **Upphandlingsavdelning**: Leverantörssäkerhetspraxis och riskbedömning.
+   - **HR och personalhantering**: Anställdas säkerhetsansvar och dataskyddslagstiftning.
+
+5. **Övervakning och utvärdering**
+   - Organisationen övervakar utbildningsslutförande och utvärderar utbildningseffektivitet.
+   - Ansvariga personer bör rapportera hur utbildning har förbättrat deras förmåga att utföra sina uppgifter.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Cybersäkerhetsutbildning har inte organiserats för ansvariga personer eller det finns ingen information om den.
+- **Delvis implementerad**: Viss utbildning finns tillgänglig, men den täcker inte alla personer som arbetar med cybersäkerhetsuppgifter.
+- **Till största delen implementerad**: De flesta ansvariga personer får utbildning, men utbildningstäckning och aktualitet kan förbättras.
+- **Helt implementerad**: Organisationen har ett omfattande och regelbundet utbildningsprogram som inkluderar rollriktad utbildning, externa och interna inlärningsmöjligheter samt utbildningsövervakning.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Företaget organiserar säkerhetscertifieringar för IT-personal och produktionsprocesssäkerhetsutbildning för driftingenjörer. Upphandlingsavdelningen får utbildning om leverantörssäkerhetskrav.
+
+> **Transportföretag**
+Logistikföretaget organiserar säkerhetssimulationer för kundservicepersonal, med särskilt fokus på att identifiera bedrägeriförsök och nätfiske.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen erbjuder specialiserad cybersäkerhetsutbildning för systemadministratörer och säkerställer att entreprenörer också får nödvändig säkerhetsutbildning.
+
+> **Kraftbolag**
+Energibolaget säkerställer att all personal med ansvar relaterat till kritisk infrastruktur har uppdaterad säkerhetsutbildning och erbjuder personal möjligheter att delta i internationella cybersäkerhetskonferenser.
+
+### Ytterligare information
+
+- **Säkerställ att personal i ansvarsområden har nödvändig kunskap och färdigheter för att utföra sina uppgifter.**
+- **Utbildning kan organiseras internt eller genom extern utbildning.**
+- **Cybersäkerhetsansvar är inte begränsat till IT-personal utan gäller även till exempel driftingenjörer, HR och upphandling.**
+- **Utbildning kan inkludera konferenser, leverantörsspecifik utbildning och certifieringsprogram.**
+- **I vissa fall kan betalning för extern utbildning och certifieringar vara beroende av framgångsrikt slutförande av utbildningen.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Säkerställ att personal i ansvarsområdena för WORKFORCE-3b har nödvändig kunskap och färdigheter för att utföra dessa ansvar. Organisera cybersäkerhetsutbildning internt eller inkludera finansiering i cybersäkerhetsprogrambudgeten för personalutbildningstjänster. Om utbildning tillhandahålls internt bör den relatera till de aktiviteter som definierats i WORKFORCE-3a. Dessutom, som noterat i WORKFORCE-3a vägledningstexten, är cybersäkerhetsansvar inte begränsat till traditionella cybersäkerhets- eller IT-roller. Till exempel har driftingenjörer, HR-specialister och upphandlingsspecialister vanligtvis cybersäkerhetsrelaterade uppgifter. Cybersäkerhetsrelaterade uppgifter kan också utföras av tredje parter.
+Utbildning kan inkludera deltagande i konferenser med djupdykning sessioner, leverantörsspecifik utbildning om använda verktyg och certifieringsprogram. Betalning för extern utbildning och certifieringar kan endast ske på ersättningsbasis efter framgångsrikt slutförande av utbildningen.
+
+Relaterade metoder:
+
+- Input: Implementering av WORKFORCE-3b ger information som kan vara användbar för att implementera denna metod.
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementeringar av aktiviteter. Metoderna i denna progression inkluderar: WORKFORCE-4a, WORKFORCE-4d, WORKFORCE-4f.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="workforce-4b">Cybersäkerhetsrelaterade kunskaper, färdigheter och förmågor samt eventuella luckor har identifierats för både nuvarande och framtida behov.</PracticeTitle>
+
+### Betydelse
+
+Att identifiera och utveckla cybersäkerhetskompetens är kritiskt eftersom:
+- **Utan uppdaterad kunskap kan organisationen utsättas för risker.** Otillräcklig kompetens kan leda till säkerhetsintrång och dålig riskhantering.
+- **Brist på lämpliga cybersäkerhetsfärdigheter kan bromsa svaret på hot.** Kompetensluckor kan förhindra organisationen från att skydda IT- och OT-system tillräckligt.
+- **Att förstå framtida behov hjälper till att förbereda för förändrade hot.** Teknologier och cyberhot utvecklas ständigt, så kompetensbehov förändras också.
+- **Att utveckla säkerhetskompetens kan minska beroendet av externa tjänsteleverantörer.** Att öka intern kompetens kan förbättra organisationens cybersäkerhetshantering på lång sikt.
+
+Bedömningsfrågor:
+- Har organisationen en systematisk process för att kartlägga cybersäkerhetskompetens?
+- Har nuvarande anställdas kunskaper och färdigheter bedömts och dokumenterats?
+- Har organisationen definierat vilka säkerhetsfärdigheter som kommer att behövas i framtiden?
+- Har kompetensluckor identifierats och hur påverkar de cybersäkerhetshanteringen?
+- Har organisationen en plan för att fylla kompetensluckor, till exempel genom utbildning eller rekrytering?
+
+Organisationen bör säkerställa att följande åtgärder är på plats:
+
+1. **Inventering av nuvarande färdigheter**
+   - Förbered en **kompetenslista** som kartlägger och dokumenterar personalens nuvarande cybersäkerhetsfärdigheter.
+   - Identifiera vilka cybersäkerhetsrelaterade färdigheter organisationen redan har tillgängliga.
+
+2. **Identifiering av kompetensluckor**
+   - Jämför personalens nuvarande kompetens med organisationens cybersäkerhetsansvar.
+   - Identifiera kritiska kompetensluckor och bedöm deras påverkan på cybersäkerhetshantering.
+
+3. **Definiera framtida kompetensbehov**
+   - Granska organisationens utvecklande behov och teknologiska förändringar (t.ex. molntjänster, OT-systemsäkerhet, AI-baserade cyberhot).
+   - Förutse vilka färdigheter som kommer att behövas i framtiden och hur de skiljer sig från nuvarande färdigheter.
+
+4. **Plan för att fylla kompetensluckor**
+   - Bestäm hur kompetensluckor kan åtgärdas:
+     - **Genom utbildning och certifieringar** (t.ex. CISSP, CISM, CEH, OT-säkerhetsutbildningar).
+     - **Genom rekrytering** för att anställa nya cybersäkerhetsspecialister.
+     - **Genom konsult- och outsourcinglösningar** om nödvändig kompetens inte kan utvecklas internt.
+
+5. **Kontinuerlig övervakning och utvärdering**
+   - Organisationen övervakar och uppdaterar kompetenskartan regelbundet för att säkerställa att personalfärdigheter utvecklas och svarar på förändrade cyberhot.
+
+<AnswerOptions>
+- **Ej implementerad eller ingen information**: Cybersäkerhetskompetens har inte kartlagts eller det finns ingen information om den.
+- **Delvis implementerad**: Vissa kompetensluckor har identifierats, men kompetenskartläggning är inte omfattande eller systematisk.
+- **Till största delen implementerad**: De flesta cybersäkerhetsrelaterade kompetensbehov har identifierats, men en plan för att fylla luckor är inte helt implementerad.
+- **Helt implementerad**: Organisationen har en omfattande och kontinuerligt uppdaterad kompetenskarta som inkluderar nuvarande och framtida kompetensbehov samt en plan för att åtgärda luckor.
+</AnswerOptions>
+
+### Exempel från olika sektorer
+
+> **Livsmedelsföretag**
+Företaget förbereder en årlig cybersäkerhetskompetenskarta och säkerställer att produktionsprocess IT-personal har tillräcklig OT-säkerhetskompetens.
+
+> **Vattenförsörjning**
+Vattenförsörjningsorganisationen identifierar systemsäkerhetskompetensluckor och organiserar särskild utbildning för driftingenjörer. Dessutom rekryteras nya cybersäkerhetsspecialister för kritiska uppgifter.
+
+> **Kraftbolag**
+Energibolaget analyserar regelbundet sin cybersäkerhetskompetens och identifierar ett växande behov av systemsäkerhetskompetens. Den årliga budgeten inkluderar en anslag för cybersäkerhetscertifikat och extern expertutbildning.
+
+### Ytterligare information
+
+- **För att identifiera luckor kan du förbereda en kompetenslista** som kartlägger och dokumenterar organisationens personals nuvarande färdigheter.
+- **Färdighetslistan jämförs med organisationens cybersäkerhetsansvar** för att identifiera vilka färdigheter som saknas.
+- **En kompetenslucka kan förhindra organisationen från att agera lämpligt i cybersäkerhetshantering**, vilket kan orsaka ytterligare risker.
+- **Efter att ha identifierat kompetensbehov kan riktad utbildning, rekrytering eller outsourcing planeras** för att utveckla kompetens.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+För att identifiera luckor kan du först förbereda en kompetenslista som kartlägger och dokumenterar organisationens personals nuvarande färdigheter. Denna inventering ger en ögonblicksbild av nuvarande kapacitet och kan användas för att bedöma resursbrister och luckor mot både nuvarande och framtida personalbehovs.
+
+Färdighetslistan jämförs med funktionens identifierade cybersäkerhetsansvar (WORKFORCE-3a) för att identifiera färdigheter som organisationen inte har. Den resulterande kompetensluckan ger information om organisationens nuvarande och framtida kompetensbehov. Dessa färdighetsluckor kan förhindra organisationen från att agera lämpligt i cybersäkerhetshantering och orsaka ytterligare risk.
+</CollapsibleSection>
+
+---
+
+_Vägledning uppdaterad: 17.3.2025_

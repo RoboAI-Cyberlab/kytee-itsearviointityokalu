@@ -1,0 +1,253 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Tillgångs-, förändrings- och konfigurationshantering
+
+<Roles>
+- Cybersäkerhetsledning
+- IT-ledning
+- OT-ledning
+- IT- och OT-teamspecialister ansvariga för tillgångsinventeringshantering
+</Roles>
+
+---
+<ObjectiveTitle name="asset-1">Enhets- och programvaruhantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-1a">Ett inventarium finns för IT- och OT-enheter och programvara som är kritisk för funktionen</PracticeTitle>
+
+### Fråga
+
+Har er organisation ett inventarium som inkluderar IT- och OT-enheter som är kritiska för verksamheten, samt relaterade datarepositorier såsom kunddata, programvaru- och enhetskonfigurationer eller produktionsprocessdata? (IT-enheter avser informationsbehandlingssystem såsom servrar och databaser, och OT-enheter avser enheter för kontroll av fysiska processer, såsom produktionslinj kontrolsystem och automationssystem.)
+
+### Betydelse
+
+Ett inventarium av IT- och OT-enheter och programvara som är kritiska för verksamheten är en viktig del av cybersäkerhetshantering. Inventariet hjälper organisationen att få en uppdaterad helhetsbild av utrustning och programvara, vilket är väsentligt för riskhantering och beredskapsåtgärder. Till exempel, när organisationen behöver identifiera enheter med programvara som kräver uppdateringar, påskyndar ett omfattande inventarium åtgärder och förbättrar beredskapen att svara på cyberhot.
+
+<AnswerOptions>
+Bedöm i vilken utsträckning organisationen har ett omfattande och uppdaterat inventarium av IT- och OT-enheter och programvara som är kritisk för verksamheten:
+
+1. **Ej implementerat eller ingen information**: Inget inventarium finns eller information är otillgänglig.
+1. **Delvis implementerat**: Ett inventarium finns, men innehållet är ofullständigt eller uppdateras inte regelbundet.
+1. **Mestadels implementerat**: Inventariet täcker de flesta nyckelenheter och programvara, men det finns utrymme för förbättring i uppdateringar eller datadetaljer.
+1. **Fullt implementerat**: Inventariet är omfattande, innehåller all nyckelinformation och underhålls regelbundet.
+</AnswerOptions>
+
+### Exempel
+
+Företaget har ett inventarium som innehåller information om alla IT- och OT-enheter och programvara som behövs för att leverera kritiska tjänster. Inventariet täcker IT-miljöaspekter såsom servrar, routrar och ERP-system, samt SCADA-system och programmerbara logikstyrenheter (PLCs) som används i OT-miljön. Även om inventeringsunderhåll ännu inte är systematiskt, har den viktigaste informationen, såsom enhetsmodeller, programvaruversioner och installationsplatser, identifierats och registrerats. I framtiden strävar företaget efter att utveckla mer systematiska underhålls- och uppdateringsmetoder.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Värdet och betydelsen av tillgångar—enheter, programvara och datarepositorier—bestäms av hur de relaterar till funktionsområdena där de används och stöds. Att identifiera och inventera värdefulla IT- och OT-tillgångar hjälper till att välja och tillämpa lämpliga kontroller. På den lägsta mognadsnivån (MIL1) kan inventariet sammanställas från fall till fall. Organisationer bör överväga olika typer av IT- och OT-tillgångar som kan vara inom självbedömningens räckvidd, såsom:
+
+- virtualiserade tillgångar
+- tredjepartsförvaltade tillgångar
+- programvara
+- anställdas egna enheter för arbetsbruk (bring your own device)
+- molntillgångar (offentligt, hybrid eller privat moln, programvara som tjänst (SaaS), plattform som tjänst (PaaS), infrastruktur som tjänst (IaaS), etc.
+- mobilenhetstillgångar
+- fälttillgångar
+- tillgångar anslutna genom olika nätverk eller kommunikationsteknologier (t.ex. telefonmodem, mobiltelefon)
+- nätverks- och kommunikationstillgångar
+- reserv-, backup- och redundanttillgångar, inklusive inaktiva virtualiserade tillgångar
+- oanvända, reparerbara och underhållstillgångar
+- tillgångar beroende av särskild infrastruktur, såsom trådlösa nätverk, positionerings-, navigerings- och tidsbestämningstjänster och globalt positioneringssystem
+- tillgångar som kan betraktas som en del av Sakernas Internet eller Industriella Sakernas Internet
+- tillgångar som kan vara ospårade, outtagna eller annars förbisedda, såsom äldre tillgångar, kommunikationsenheter och tillgångar som stöder flera grupper.
+
+Inventering innebär inte att ett enda inventarium behövs; flera källor, databaser, dokument eller system kan användas för att implementera denna metod. Dock bör organisationer överväga om inventarier kan konsolideras vid behov för att undvika potentiella risker förknippade med hantering av flera källor.
+
+Relaterade metoder:
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av aktiviteter. Metoderna i denna progression inkluderar: ASSET-1a, ASSET-1b, ASSET-1f, ASSET-1g.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="asset-2">Datarepositioriehantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-2a">Ett inventarium finns för datarepositorier som är kritiska för funktionen</PracticeTitle>
+
+### Fråga
+
+Har er organisation ett inventarium av data som är kritisk för verksamheten (datarepositorier)? Sådan data kan inkludera till exempel kunddata, enhets- och programvarukonfigurationer och produktions- eller driftmiljödata, såsom industriell utrustningsdata i OT-miljöer. (Syftet med denna lista är att underlätta informationshantering, upptäckt och uppdatering, till exempel vid störningar)
+
+### Betydelse
+
+Ett inventarium av datarepositorier som är kritiska för verksamheten är en viktig del av cybersäkerhets- och operativ effektivitetshantering. Det hjälper organisationen att identifiera och hantera kritisk data, såsom kunddata och enhetskonfigurationer, som är väsentliga för affärskontinuitet och riskhantering. Inventariet säkerställer till exempel att nödvändig data snabbt är tillgänglig vid störningssituationer och att datarelaterade uppdateringar kan implementeras på ett planerat sätt.
+
+<AnswerOptions>
+Bedöm i vilken utsträckning organisationen har ett omfattande och uppdaterat inventarium av datarepositorier som är kritiska för verksamheten:
+
+1. **Ej implementerat eller ingen information**: Inget inventarium finns eller information är otillgänglig.
+1. **Delvis implementerat**: Ett inventarium finns, men innehållet är ofullständigt eller uppdateras inte regelbundet.
+1. **Mestadels implementerat**: Inventariet täcker de flesta nyckeldatarepositorier, men det finns utrymme för förbättring i uppdateringar eller datadetaljer.
+1. **Fullt implementerat**: Inventariet är omfattande, innehåller all nyckelinformation och underhålls regelbundet.
+</AnswerOptions>
+
+### Exempel
+
+Företaget har ett inventarium som innehåller information om alla kritiska datarepositorier, såsom kunddata, enhets- och programvarukonfigurationer och OT-miljödata. Inventariet täcker till exempel kunddatabaser, ERP- och SCADA-systemkonfigurationer och OT-miljöprocessdata och produktionsutrustningsprogrammeringsdata.
+
+Även om inventeringsunderhåll ännu inte är systematiskt, har den viktigaste datan, såsom kundkontakter, enhetsinställningar och programvarukonfigurationer, identifierats och registrerats. Inventeringsuppdateringar görs främst när nya system distribueras, men regelbundna granskningsmetoder saknas.
+
+I framtiden avser företaget att utveckla mer systematiska underhållsmetoder som säkerställer dataaktualitet och stöder företagsriskhantering.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Värdet och betydelsen av tillgångar—enheter, programvara och datarepositorier—bestäms av hur de relaterar till funktionsområdena där de används och stöds. Att identifiera och inventera viktiga/värdefulla IT- och OT-tillgångar hjälper till att välja och tillämpa lämpliga kontroller. Viktiga/värdefulla datarepositorier kan också inkludera datarepositorier som kan utgöra ekonomiska, lagstiftnings- eller ansvarsrisker, såsom personuppgifter, känslig operativ data och konfidentiell affärsinformation. Organisationer bör överväga olika typer av IT- och OT-tillgångar som kan innehålla operativt viktig data, såsom:
+
+- virtualiserade tillgångar (inklusive inaktiva och säkerhetskopierade tillgångar)
+- molntillgångar
+- BYOD-tillgångar (bring your own device)
+- fälttillgångar
+- mobila enheter
+
+Organisationer bör också överväga olika potentiella källor till värdefull data, såsom:
+
+- data belägen utanför lokalen
+- lagrad eller arkiverad data
+- säkerhetskopieringsdata
+- tredjepartsförvaltad data
+- data på olika klassificerings- eller känslighetsnivåer
+
+Vid MIL1 kan inventariet/registret/listan produceras från fall till fall.
+Listan innebär inte att endast en lista behövs; flera arkiv, dokument eller system kan användas för att implementera denna metod. Dock bör organisationer överväga om listor kan konsolideras vid behov för att undvika potentiella risker förknippade med hantering av flera arkiv.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av aktiviteter. Metoderna i denna progression inkluderar: ASSET-2a, ASSET-2b, ASSET-2f, ASSET-2g.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="asset-3">Konfigurationshantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-3a">Standardiserade baslinjekonfigurationer har skapats för enhets-, programvaru- och datarepositorie-konfigurationer</PracticeTitle>
+
+### Fråga
+
+Har er organisation definierat standardinställningar som används i enhets-, programvaru- och datahantering? Till exempel, har ni konsekventa metoder eller riktlinjer för hur enheter och programvara distribueras eller hur viktig data, såsom kund- och produktionsdata, organiseras och skyddas?
+
+### Betydelse
+
+Standardiserade baslinjekonfigurationer är en väsentlig del av konfigurationshantering, eftersom de säkerställer enhets-, programvaru- och datarepositorie-kompatibilitet, drift och säkerhet. Dokumenterade inställningar underlättar problemhantering och förbättrar organisationens förmåga att svara på förändringar, såsom enhetsuppdateringar, programvaruförändringar och cybersäkerhetshotminskning. Utan standardiserade baslinjekonfigurationer kan organisationen möta risker såsom enhets- och programvaruinkompatibilitet eller säkerhetsluckor.
+
+<AnswerOptions>
+Bedöm i vilken utsträckning organisationen har omfattande och dokumenterade baslinjekonfigurationer för enheter, programvara och datarepositorier:
+
+1. **Ej implementerat eller ingen information**: Baslinjekonfigurationer har inte definierats eller information är otillgänglig.
+1. **Delvis implementerat**: Baslinjekonfigurationer har definierats, men de är ofullständiga eller uppdateras inte regelbundet.
+1. **Mestadels implementerat**: Baslinjekonfigurationer täcker de flesta nyckelenheter, programvara och datarepositorier, men det finns utrymme för förbättring.
+1. **Fullt implementerat**: Baslinjekonfigurationer är omfattande, uppdaterade och underhålls regelbundet.
+</AnswerOptions>
+
+### Exempel
+
+Företaget har definierat standardiserade baslinjekonfigurationer för organisationens nyckelenheter, programvara och datarepositorier. Baslinjekonfigurationer stöder enhets- och systemkompatibilitet och säkerställer grundfunktionernas kontinuitet.
+
+- Enheter och programvara: Baslinjekonfigurationer har skapats till exempel för produktionskritiska enheter och IT-systemservrar. Dessa inkluderar programvarukonfigurationer, operativsystemversioner och kommunikationsinställningar. Dessa inställningar används vid distribution av nya enheter och återställning av gamla system vid störningssituationer.
+- Datarepositorier: Företaget har dokumenterat baslinjeinställningar relaterade till skydd av nyckeldatarepositorier, såsom kunddata och produktionsprocessdata. Dessa inkluderar till exempel säkerhetskopieringskonfigurationer och åtkomsträttsinställningar.
+
+Även om baslinjekonfigurationshantering inte är helt systematisk eller regelbunden, ger de en viktig utgångspunkt för att säkerställa konfigurationskonsistens och funktionalitet.
+
+I framtiden kan företaget övergå till mer omfattande underhåll där baslinjekonfigurationer granskas och uppdateras regelbundet och dokumentation utökas för att täcka alla systemlivscykelstadier. Detta stöder företagets förmåga att svara på systemförändringar och förbättrar cybersäkerhet.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Att skapa baslinjekonfigurationer/inställningar för OT, IT och datatillgångar skapar grunden för hantering av tillgångsintegritet när de förändras under sin livscykel. Periodiskt sparande av tillgångs (konfigurerbar enhets) inställningar säkerställer att dessa tillgångar kan återställas till ett acceptabelt tillstånd efter störning när obehöriga ändringar inträffar eller under omständigheter där integritet är tveksam, och ger en kontrollmetod för förändringar som potentiellt kan störa tillgångsanvändning i leverans av organisationstjänster.
+
+Organisationer kan överväga integritetsgranskningsmekanismer (manuella eller automatiska) när de gör regelbundna sparningar av tillgångs- och tillgångskonfigurationer/inställningar. Användning av integritetsgranskningsmekanismer för att verifiera regelbundna sparningar före återställning kan säkerställa att de är funktionella och tillgängliga/återställbara.
+
+Implementering av denna metod kräver inte dokumenterade policyer och procedurer för baslinjekonfiguration eller underhåll.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av aktiviteter. Metoderna i denna progression inkluderar: ASSET-3a, ASSET-3c, ASSET-3d.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="asset-4">Förändringshantering</ObjectiveTitle>
+---
+
+<PracticeTitle name="asset-4a">Ändringar av enheter, programvara och datarepositorier bedöms och godkänns före implementering</PracticeTitle>
+
+### Fråga
+
+Hur hanterar er organisation ändringar som görs i enheter, programvara och datarepositorier före implementering? Bedömer och godkänner ni ändringar före implementering, och är denna process en del av den dagliga verksamheten eller görs den endast vid behov från fall till fall?
+
+### Betydelse
+
+Förändringshantering är en viktig del av organisationens cybersäkerhet och operativa effektivitet. Den säkerställer att alla ändringar i enheter, programvara och datarepositorier inte orsakar störningar eller säkerhetsrisker. Bedömning och godkännande hjälper till att minska oväntade problem och säkerställer att förändringseffekter förstås före implementering.
+
+<AnswerOptions>
+Bedöm hur väl organisationens förändringshanteringsprocess täcker ändringar i enheter, programvara och datarepositorier:
+
+1. **Ej implementerat eller ingen information**: Förändringsbe bedömning och godkännande finns inte, eller information är otillgänglig.
+1. **Delvis implementerat**: Ändringar bedöms från fall till fall, men processen är inte systematisk eller regelbunden.
+1. **Mestadels implementerat**: Ändringar bedöms och godkänns i de flesta fall, men processen är delvis inkonsekvent eller ofullständig.
+1. **Fullt implementerat**: Alla ändringar bedöms och godkänns före implementering och processen är systematisk och regelbunden.
+</AnswerOptions>
+
+### Exempel
+
+Ändringar i företagets enheter, programvara och datarepositorier bedöms från fall till fall före implementering. Processen är inte systematisk utan ändringar hanteras ad hoc när de direkt påverkar kritiska funktioner eller processer. Till exempel bedöms produktionslinjeutrustningsförändringar, ERP- eller SCADA-systemprogramvaruuppdateringar och kunddatabasuppdateringar separat men utan en systematisk granskningsprocess.
+
+Förändringsbe bedömning och godkännande görs vanligtvis när ändringar direkt kan påverka produktions-, distributions- eller andra kritiska funktioners smidighet. Bedömningen beaktar risker såsom potentiella störningar i produktionsprocesser eller säkerhetsproblem. Ändringar godkänns av avdelningschefer, såsom IT- eller OT-avdelningar, men dokumentation är inte alltid regelbunden eller omfattande.
+
+Även om förändringsbe bedömning sker från fall till fall, garanterar detta tillvägagångssätt inte omfattande förändringsut värdering eller långsiktiga effekter. I framtiden avser företaget att utveckla en mer systematisk förändringshanteringsprocess som säkerställer förändrings dokumentation och effektbedömning.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Alla föreslagna ändringar av inventerade tillgångar bedöms för att förstå deras prioritet, fördelar, risker och påverkan på funktionalitet och säkerhet hos de funktioner de producerar. Det bör noteras att dessa kan variera mellan olika typer av IT, OT och datatillgångar, såsom virtualiserade tillgångar, reglerade tillgångar, tredjepartsförvaltade tillgångar, BYOD-tillgångar, molntillgångar, mobila tillgångar, fälttillgångar, tillgångar beroende av särskild infrastruktur såsom trådlösa nätverk eller globalt positioneringssystem, och tillgångar som kan betraktas som en del av Sakernas Internet eller Industriella Sakernas Internet.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av aktiviteter. Metoderna i denna progression inkluderar: ASSET-4a, ASSET-4d, ASSET-4e, ASSET-4f, ASSET-4h.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="asset-4b">En logg underhålls av ändringar som gjorts i enheter, programvara och datarepositorier</PracticeTitle>
+
+### Fråga
+
+Underhåller er organisation en logg av ändringar som gjorts i enheter, programvara och datarepositorier? Detta innebär att för varje ändring, såsom programvaruuppdateringar, enhetskonfigurationsförändringar eller datarepositorie-uppdateringar, bör det finnas information någonstans. Vad som är viktigt är dock att organisationen vet vilka ändringar som har gjorts och när, så att potentiella problem kan spåras och bättre förstås.
+
+### Betydelse
+
+Förändringsloggning är viktig eftersom den förbättrar förändrings spårbarhet och stöder störningshantering. Förändrings dokumentation hjälper till att identifiera och analysera potentiella effekter på organisationsverksamhet, säkerhet och riskhantering. Utan förändrings registrering kan organisationen ha svårigheter att lösa problem eller uppfylla regulatoriska krav.
+Genom loggar kan organisationen:
+
+- Förbättra operativ effektivitet genom att identifiera problemorsaker.
+- Upprätthålla säkerhet genom att övervaka förändringseffekter på kritiska system.
+- Producera dokumentation till exempel för revisioner eller regulatoriska myndigheter.
+
+<AnswerOptions>
+Bedöm omfattningen och regelbundenheten av organisationens förändrings loggningsmetoder:
+
+1. **Ej implementerat eller ingen information**: Ingen logg underhålls av ändringar eller information är otillgänglig.
+1. **Delvis implementerat**: En logg underhålls från fall till fall, men metoderna är inkonsekventa.
+1. **Mestadels implementerat**: Ändringar loggas mestadels, men loggning är inte helt omfattande eller regelbunden.
+1. **Fullt implementerat**: Alla ändringar dokumenteras systematiskt och omfattande.
+</AnswerOptions>
+
+### Exempel
+
+Företaget underhåller en logg av ändringar som gjorts i enheter, programvara och datarepositorier från fall till fall. Stora ändringar i IT-enheter, såsom servrar och nätverksenheter, loggas, men mindre fixar går ofta oregistrerade. I OT-enheter, såsom SCADA-system, dokumenteras betydande uppdateringar, men underhållsaktiviteter hamnar vanligtvis inte i loggen. Betydande uppdateringar och nya funktioner till ERP- och SCADA-programvara registreras från fall till fall, medan mindre konfigurationsförändringar kan förbises.
+Betydande ändringar i kunddata och produktionsdata, såsom databasuppdateringar, registreras, men rutinändringar går ofta oregistrerade. Loggningsmetoden är inte systematisk, vilket gör förändrings spårning svår, men företaget strävar efter att utveckla en mer systematisk loggningsmetod för att förbättra spårbarhet och säkerhet.
+
+<CollapsibleSection title="Cybermittari version 2.1">
+Alla ändringar som gjorts i inventerade/registrerade tillgångar sparas i ett format som enkelt kan refereras under felsökning eller störningsutredning. Ändringar kan inkludera till exempel ändring av nätverksenhets inställningar såsom routing- och portdefinitioner, tillägg eller borttagning av komponenter och ändring av åtkomsträttigheter. Registrerade attribut inkluderar bland annat ändringens datum och tid, vem som gjorde ändringen, ändringens påverkan på andra tillgångar och en beskrivning av risker förknippade med ändringen.
+
+Relaterade metoder:
+
+- Progression: Denna metod är en del av en metodprogression. Metodprogressioner är grupper av relaterade metoder som representerar allt mer kompletta eller mer avancerade implementationer av aktiviteter. Metoderna i denna progression inkluderar: ASSET-4b, ASSET-4c, ASSET-4i.
+</CollapsibleSection>
+
+---
+
+_Vägledningen uppdaterad: 19.3.2025_

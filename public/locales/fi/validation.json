@@ -1,0 +1,6 @@
+{
+  "email_invalid": "Anna kelvollinen sähköpostiosoite.",
+  "phone_invalid": "Puhelinnumero saa sisältää vain numeroita ja välilyöntejä.",
+  "business_id_invalid": "Y-tunnus tulee olla muodossa 1234567-8.",
+  "economic_area_required": "Toimiala on pakollinen."
+}

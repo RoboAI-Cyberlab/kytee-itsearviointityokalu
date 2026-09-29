@@ -1,0 +1,451 @@
+import C2M2Doc from "@/app/components/markdown/C2M2Doc";
+import Box from "@/app/components/markdown/Box";
+import ExampleDocument from "@/app/components/markdown/ExampleDocument";
+import Roles from "@/app/components/markdown/Roles";
+import TableOfContents from "@/app/components/markdown/TableOfContents";
+import AnswerOptions from "@/app/components/markdown/AnswerOptions";
+import ObjectiveTitle from "@/app/components/markdown/ObjectiveTitle";
+import PracticeTitle from "@/app/components/markdown/PracticeTitle";
+import CollapsibleSection from "@/app/components/markdown/CollapsibleSection";
+
+# Cyber architecture
+
+<Roles>
+- Cybersecurity leadership
+- IT leadership
+- OT leadership
+- Enterprise security architecture specialist
+- Network security specialist
+- IT system administrator
+- OT system administrator
+- Internal audit representative
+</Roles>
+
+---
+<ObjectiveTitle name="architecture-1">Cyber architecture development</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-1a">The organization's cyber architecture is guided by a strategy or other management-level documentation. Development and maintenance need not be systematic and regular</PracticeTitle>
+
+### Question
+
+Does the organization have a cyber architecture strategy or management-level documentation that defines how IT and OT system security, network protection, and data protection are developed and maintained?
+
+### Significance
+
+A cyber architecture strategy is a key part of the organization's cybersecurity management. It provides direction for IT and OT system security development and helps the organization respond to changing cyber threats. A clear strategy supports business continuity and enables proactive risk management.
+
+### Answer instructions
+
+Assess the extent to which the organization has a cyber architecture strategy and related documentation:
+- **Not implemented or no information**: No strategy or information is unavailable.
+- **Partially implemented**: The strategy exists but is incomplete or not systematically followed.
+- **Mostly implemented**: The strategy is comprehensive, but its updating or implementation practices need improvement.
+- **Fully implemented**: The strategy is comprehensive, up to date, and systematically implemented.
+
+### Example
+
+The company has developed a cyber architecture strategy that defines security objectives for both IT and OT systems. The strategy includes guidelines for network segmentation, access management, data protection, and development processes for security architecture. Although the strategy is not yet fully systematic, important security measures such as network segmentation and IT/OT separation are already in use. The company plans to develop the strategy by implementing regular reviews and updating security objectives as threats evolve.
+
+<CollapsibleSection title="Cybermeter version 2.1">
+The organization develops, implements, and maintains a cybersecurity architecture strategy that describes at a high level how the organization structures and uses its technologies and technical architecture to achieve IT and OT systems cybersecurity objectives and minimize cyber risks.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: ARCHITECTURE-1a, ARCHITECTURE-1b.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-2">Network protection</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-2a">Network defense architecture capabilities are in place to protect against unauthorized access. Capabilities may include for example firewalls, demilitarized zones (DMZ), intrusion detection systems (IDS), or intrusion prevention systems (IPS).</PracticeTitle>
+
+### Significance
+
+Network defense capabilities are critical to cybersecurity because:
+- **They prevent unauthorized access to critical systems.** For example, firewalls and IDS/IPS systems detect and block attacks before they reach the organization's internal network.
+- **Network segmentation limits the spread of attacks.** If an attacker gains access to one segment, they cannot easily move to other parts of the network.
+- **IT and OT system separation protects industrial control systems.** Production and operational technology systems are particularly vulnerable to cyberattacks, making separation critical.
+- **DMZ zones protect critical services.** For example, email servers and web services in DMZ zones reduce the risk of spreading attacks to the internal network.
+
+Assessment questions:
+- Does the organization have firewalls and IDS/IPS systems in place?
+- Is the network segmented so that IT and OT systems are separated?
+- Are DMZ zones in use and how are they configured?
+- How are network defense capabilities monitored and updated?
+- Are Zero Trust principles applied in the network architecture?
+
+Network defense capabilities in the organization:
+
+**1. Firewalls and IDS/IPS systems**
+- **Perimeter defense:** Firewalls restrict traffic between the organization's network and external networks.
+- **Intrusion detection systems (IDS):** Monitor network traffic and detect abnormal activity.
+- **Intrusion prevention systems (IPS):** Actively block detected threats and prevent attacks.
+
+**2. Network segmentation and IT/OT separation**
+- **Network segmentation divides the network into isolated zones**, such as administrative, production, and external service zones.
+- **IT and OT systems are separated**, meaning production and operational technology systems operate in their own network segment and do not have direct connections to IT network segments.
+- **DMZ (demilitarized zone) protects critical services** such as email servers and web services from external attacks.
+
+**3. Zero Trust architecture**
+- **Zero Trust principle:** All access, both external and internal, is verified and authorized.
+- **Micro-segmentation:** The network is divided into very small zones, each with its own access policies and controls.
+- **Continuous authentication:** Each connection is verified, regardless of whether it originates from the internal or external network.
+
+**4. Monitoring and management**
+- **SIEM (Security Information and Event Management) systems collect and analyze network activity.**
+- **Logs and events** are stored and analyzed for potential security breaches.
+- **Network defense capabilities are updated and improved** based on evolving threat landscapes.
+
+<AnswerOptions>
+- **Not implemented or no information**: Network defense capabilities are not in use or information is unavailable.
+- **Partially implemented**: Some capabilities such as firewalls exist, but network segmentation, IDS/IPS, or DMZ zones are missing or incomplete.
+- **Mostly implemented**: Most network defense capabilities are in place, but their management, monitoring, or updating may need improvement.
+- **Fully implemented**: The organization has comprehensive network defense capabilities including firewalls, IDS/IPS, network segmentation, IT/OT separation, and DMZ zones. Capabilities are regularly monitored and updated.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The food industry company has segmented its production network separate from the administrative network. Production systems have their own firewall and IDS/IPS systems that monitor unauthorized access attempts.
+
+> **Logistics company**
+The logistics company has separated its operational technology systems (e.g., warehouse automation) from IT systems using a DMZ zone that allows controlled data exchange without direct connections.
+
+> **Water utility**
+The water utility organization has a clear network segmentation where control systems (SCADA) operate in an isolated network. Access to the control network requires a secure remote access solution (VPN) and strong authentication.
+
+> **Power company**
+The energy company has implemented a Zero Trust architecture where all access to control systems is verified and authorization is checked on each connection. Micro-segmentation ensures that even internal users do not have unrestricted access to all network areas.
+
+### Additional information
+
+- **Network segmentation and DMZ zones are key components of defense-in-depth strategy.**
+- **IDS/IPS systems enable real-time threat detection and response.**
+- **Zero Trust architecture improves security by requiring verification for all access.**
+- **IT and OT separation is critical in industrial and critical infrastructure environments.**
+- **Regular updates and security configuration reviews ensure network defense capabilities remain effective.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Network defense capabilities may include, for example, firewalls, demilitarized zones (DMZ), intrusion detection systems (IDS), or intrusion prevention systems (IPS).
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: ARCHITECTURE-2a, ARCHITECTURE-2b, ARCHITECTURE-2c, ARCHITECTURE-2d, ARCHITECTURE-2e, ARCHITECTURE-2f, ARCHITECTURE-2g, ARCHITECTURE-2h.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="architecture-2b">Systems, applications, or network assets in IT environment are logically separated from those in OT environment. Segmentation allows for access control between IT and OT environments, for example using firewall, router access control lists, or access control policies.</PracticeTitle>
+
+### Significance
+
+Separating IT and OT environments is critical because:
+- **OT systems are often vulnerable and difficult to update.** Production systems may run on older platforms that do not support modern security updates.
+- **IT system attacks can spread to OT environments if networks are not separated.** For example, ransomware can disrupt production systems if IT and OT networks are interconnected.
+- **Access control between environments enables critical service protection.** When IT and OT environments are separated, it is easier to control who can access production systems.
+- **IT/OT separation supports compliance.** Many regulations, such as IEC 62443 and NIST 800-82, require IT and OT system separation.
+
+Assessment questions:
+- Are IT and OT systems separated into their own network segments?
+- Is access between IT and OT environments controlled and restricted?
+- Are firewalls, routers, or access control policies used for segmentation?
+- Is data exchange between IT and OT environments monitored and logged?
+- Are DMZ zones used to enable controlled data exchange?
+
+IT and OT segmentation implementation:
+
+**1. Logical separation**
+- **IT and OT networks are separate**, meaning production and operational technology systems operate in their own network segment and do not have direct connections to IT network segments.
+- **Firewalls, routers, and access control lists (ACL) restrict access** between IT and OT environments.
+
+**2. DMZ zones and controlled data exchange**
+- **DMZ (demilitarized zone) enables controlled data exchange** between IT and OT environments without direct connections.
+- **Unidirectional data flows (data diodes)** allow data to flow from OT to IT but prevent reverse connections, reducing attack risk.
+
+**3. Access control and authentication**
+- **Access to OT environment is limited to authorized personnel only.**
+- **Strong authentication and multi-factor authentication (MFA)** are required when accessing OT systems from IT environment.
+
+**4. Monitoring and logging**
+- **All access between IT and OT environments is logged and monitored.**
+- **SIEM systems analyze network traffic** between IT and OT environments and alert on abnormal activities.
+
+<AnswerOptions>
+- **Not implemented or no information**: IT and OT environments are not separated or information is unavailable.
+- **Partially implemented**: Some segmentation exists, but access control between environments is incomplete or missing.
+- **Mostly implemented**: IT and OT environments are separated and access control is in place, but monitoring or DMZ configuration may need improvement.
+- **Fully implemented**: IT and OT environments are fully separated and access between them is controlled with firewalls, routers, or access policies. Monitoring is comprehensive and DMZ zones are in use where necessary.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+The company has separated its production control systems (OT) from administrative systems (IT). Access between environments is restricted with firewalls and all access is logged.
+
+> **Water utility**
+The water utility organization has a clear IT/OT separation where control systems operate in an isolated network. Access to the control network requires a secure remote access solution (VPN) and strong authentication.
+
+> **Power company**
+The energy company uses DMZ zones to enable controlled data exchange between IT and OT systems. Unidirectional data flows prevent attacks from spreading from IT to OT environment.
+
+### Additional information
+
+- **IT and OT separation is a fundamental part of critical infrastructure protection.**
+- **Firewalls, routers, and access control lists (ACL) are key technologies for segmentation.**
+- **DMZ zones enable controlled data exchange without direct connections between IT and OT environments.**
+- **IEC 62443 and NIST 800-82 standards provide guidance for IT/OT separation implementation.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Logical segmentation of IT and OT environments is crucial for protecting OT systems and reducing cyber risk. Segmentation allows for access control between IT and OT environments, for example using firewall, router access control lists, or access control policies. Segmentation and filtering of IT/OT network traffic facilitate threat detection and may make organization's IT environment recovery processes easier.
+
+Depending on the organization's IT and OT environment size and complexity, organizations may benefit from establishing a demilitarized zone (DMZ) to separate IT and OT environments. IT systems can access data from OT systems via the DMZ in a controlled manner that avoids direct IT-to-OT system connectivity, which could expose vulnerabilities in production and operational systems. In high-risk scenarios, organizations may consider unidirectional gateway technology (data diode) that physically prevents reverse data flow from IT to OT.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: ARCHITECTURE-2a, ARCHITECTURE-2b, ARCHITECTURE-2c, ARCHITECTURE-2d, ARCHITECTURE-2e, ARCHITECTURE-2f, ARCHITECTURE-2g, ARCHITECTURE-2h.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-3">Device and software security as part of cyber architecture</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-3a">Access control and access management controls/protection mechanisms are in place for devices, software, and data repositories critical to the function.</PracticeTitle>
+
+### Significance
+
+Access management controls and protection mechanisms are central to cybersecurity because:
+- **They prevent unauthorized access to critical systems and data.** Without access management mechanisms, attackers can gain control of sensitive information and systems.
+- **Access management supports information security standards and regulatory requirements.** For example, **ISO 27001, NIST CSF, and IEC 62443** require access management implementation and monitoring.
+- **Logs enable anomaly detection and investigation.** Without monitoring, it is difficult to identify unauthorized access attempts.
+- **Physical and logical access management controls protect both IT and OT environments.** Restricting access reduces insider threats and cyberattack risks.
+
+Assessment questions:
+- Does the organization have technical and administrative controls related to access management?
+- Are IT and OT systems protected with authentication and access management mechanisms?
+- Is physical access control implemented for physical assets (e.g., servers, workstations) (e.g., locks, access card systems)?
+- Are logging and monitoring systems used to identify suspicious activity?
+- Are access management-related risks included in the cyber architecture strategy?
+
+Access management control implementation in the organization:
+
+1. **Logical controls**
+   - **Administrative controls:** Access policies, procedures, and approval processes for access rights.
+   - **Operational controls:** Regular review of access rights, system capacity management.
+   - **Technical controls:** Multi-factor authentication (MFA), role-based access control (RBAC), logging systems.
+
+2. **Physical controls**
+   - **Administrative controls:** Policies and guidelines for access rights.
+   - **Operational controls:** Fences, locks, camera surveillance, security guards.
+   - **Technical controls:** Electronic access cards, motion sensors, automatic logging of entry points.
+
+3. **IT and OT environment protection**
+   - IT and OT system access management is **segregated and restricted to authorized users only**.
+   - **Separate management networks and secure remote access solutions (VPN, jump host solutions)** are in use.
+
+4. **Logging and monitoring**
+   - **SIEM (Security Information and Event Management) systems** analyze and alert on suspicious activity.
+   - **Access and access management audits** are conducted regularly.
+
+5. **Documentation and continuous improvement**
+   - **Access management practices and controls are documented in the cyber architecture strategy.**
+   - Control effectiveness is **regularly assessed and improved based on new threats**.
+
+<AnswerOptions>
+- **Not implemented or no information**: Access management control mechanisms are not in use or information about their status is unavailable.
+- **Partially implemented**: Some access management controls are in use, but they do not cover all devices, software, or data repositories critical to the function.
+- **Mostly implemented**: Access management controls are widely in use, but their documentation or monitoring may have gaps.
+- **Fully implemented**: The organization has comprehensive access management controls that cover all critical devices, software, and data repositories, and their effectiveness is monitored and assessed regularly.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+In the food company, access to production facility systems is restricted to authorized employees only, and multi-factor authentication (MFA) and role-based access control (RBAC) are in use. Physical spaces are protected with access card systems.
+
+> **Water utility**
+The water utility organization's systems are on a separate management network, and access requires an approved remote access solution (VPN) and strong authentication. All access rights are logged and analyzed for security anomalies.
+
+> **Power company**
+The energy company uses a Zero Trust access management model where all users' and devices' access rights are verified at each login. Access management is based on roles, and monitoring is continuous with SIEM system.
+
+### Additional information
+
+- **Logical and physical controls are central to access management.**
+- **Multi-factor authentication (MFA) and role-based access control (RBAC) should be used for user authentication.**
+- **Access management documentation is important to ensure system and data security.**
+- **Physical monitoring measures such as camera surveillance and access cards help prevent unauthorized access to critical spaces.**
+- **Logs and analytics help identify suspicious activity and enable rapid detection of security anomalies.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Cybersecurity controls are implemented to manage risks related to unauthorized and/or inappropriate access to IT, OT assets and data repositories, including physical assets. Logical controls may be administrative (e.g., policies, procedures), operational (e.g., system maintenance, capacity management), and technical (e.g., authentication systems, system logging). Physical monitoring may also be administrative (e.g., policies, procedures), operational (e.g., fences, locks, signs), and technical (e.g., electronic access card readers, motion sensors, entry point logging).
+
+Related practices:
+
+- Input: Implementation of ASSET-1a and ASSET-2a provides information that may be useful in implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: ARCHITECTURE-3a, ARCHITECTURE-3b, ARCHITECTURE-3c, ARCHITECTURE-3d, ARCHITECTURE-3h, ARCHITECTURE-3k.
+</CollapsibleSection>
+
+---
+
+<PracticeTitle name="architecture-3b">Endpoint protection mechanisms, such as secure configurations, security software, and endpoint monitoring, are in place for devices, software, and data repositories critical to the function.</PracticeTitle>
+
+### Significance
+
+Endpoint protection mechanisms are critical to cybersecurity because:
+- **Endpoints are primary targets for cyberattacks.** Poorly protected devices can act as attack vectors for the entire organization.
+- **Secure configurations and hardened settings reduce attack surface.** Default settings may contain security vulnerabilities that attackers can exploit.
+- **Malware prevention and endpoint monitoring detect and prevent intrusion attempts.** EDR and HID systems analyze behavior patterns and automatically block anomalies.
+- **Data loss prevention (DLP) prevents leakage of sensitive information.** Human errors can lead to accidental data leaks without protective measures.
+- **Endpoint protection supports regulatory and standards compliance.** For example, **ISO 27001, NIST 800-171, and IEC 62443** require endpoint security controls.
+
+Assessment questions:
+- Does the organization have **secure configurations and hardened settings** for endpoints?
+- Are **EDR and HID systems** used on endpoints to prevent malware and intrusions?
+- Are security software such as **malware prevention software and firewalls** installed and updated?
+- Is endpoint use and traffic **monitored and analyzed** to detect suspicious activity?
+- Are data loss prevention (DLP) policies and software in use?
+
+Endpoint protection mechanism implementation in the organization:
+
+1. **Secure configurations and hardening**
+   - Default settings are removed and **secure configurations are implemented** for IT and OT devices.
+   - **Configuration policies and rules** are in use that define endpoint security settings.
+
+2. **Security software and endpoint monitoring**
+   - **Malware prevention software** (e.g., antivirus, endpoint protection).
+   - **EDR (Endpoint Detection and Response)** systems for detecting and preventing malicious activity.
+   - **Host-based intrusion detection (HID)** and firewalls to protect endpoints.
+
+3. **Data protection and loss prevention (DLP)**
+   - **DLP tools** are in use that prevent sensitive information from leaving the organization.
+   - Data classification policies and access management prevent inappropriate access to information.
+
+4. **Logging and endpoint monitoring**
+   - **Monitoring software analyzes endpoint activity** and alerts on anomalies.
+   - **Usage logs are stored and regularly analyzed** for security anomalies.
+
+5. **Documentation and continuous improvement**
+   - **Endpoint protection mechanisms are defined and documented in the cyber architecture strategy.**
+   - Security settings and practices are **regularly reviewed and updated according to new threats**.
+
+<AnswerOptions>
+- **Not implemented or no information**: Endpoint protection mechanisms are not in use or information about their status is unavailable.
+- **Partially implemented**: Some endpoint protections are in use, but they do not cover all critical devices, software, or data repositories.
+- **Mostly implemented**: Protection mechanisms are widely in use, but their documentation, monitoring, or tracking may have gaps.
+- **Fully implemented**: The organization has comprehensive endpoint protection mechanisms that cover all critical devices, software, and data repositories, and their effectiveness is monitored and assessed regularly.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+In food industry production facilities, all endpoints are protected with EDR systems and role-based access control (RBAC). Workstations have malware prevention installed and endpoint security settings are standardized.
+
+> **Water utility**
+In water utility, system endpoints are hardened and isolated to separate management networks, and their use requires strong authentication. HID systems analyze endpoint traffic for anomalies.
+
+> **Power company**
+The energy company uses Zero Trust principle where endpoints are verified at each login. SIEM systems analyze endpoint logs, and security anomalies are automatically reported.
+
+### Additional information
+
+- **Endpoint protection prevents malware and prevents data leaks.**
+- **Configuration hardening and standardized settings reduce vulnerabilities.**
+- **EDR and HID systems enable rapid anomaly detection and response.**
+- **DLP tools prevent accidental or unauthorized leakage of sensitive information.**
+- **Regular security audits and reviews ensure protection mechanisms function properly.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Endpoint protection refers to cybersecurity controls applied directly to IT and OT assets. These controls should focus on preventing endpoint security risks such as vulnerability exploitation, attacks, and accidental data leaks due to human error. Endpoint protections may include configuration hardening, configuration policies and rules, endpoint detection and response (EDR) software, malware prevention software, monitoring software, data loss prevention (DLP) tools, host-based intrusion detection (HID) and firewalls, and other protections.
+
+Related practices:
+
+- Input: Implementation of ASSET-1a provides input that may be useful in assessing and implementing this practice.
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: ARCHITECTURE-3a, ARCHITECTURE-3b, ARCHITECTURE-3c, ARCHITECTURE-3d, ARCHITECTURE-3h, ARCHITECTURE-3k.
+</CollapsibleSection>
+
+---
+<ObjectiveTitle name="architecture-5">Data protection as part of cyber architecture</ObjectiveTitle>
+---
+
+<PracticeTitle name="architecture-5a">Stored sensitive information ("data at rest") is protected.</PracticeTitle>
+
+### Significance
+
+Protecting stored sensitive information is important because:
+- **Data leaks can cause significant financial and reputational damage.** Security breaches can lead to fines and loss of customer trust.
+- **Laws and regulations require protection of sensitive information.** For example, **GDPR, NIST 800-53, and ISO 27001** define requirements for data protection.
+- **Unencrypted and unmonitored data is vulnerable to unauthorized use and manipulation.**
+- **Data protection reduces the impact of security breaches and cyberattacks.** If an attacker obtains encrypted data, exploiting it without the key is more difficult.
+
+Assessment questions:
+- Does the organization have encryption methods in use to protect stored data?
+- Is access to sensitive information restricted and controlled with access rights?
+- Is stored information protected with authorization and authentication techniques?
+- Is data masking or tokenization used to protect sensitive information?
+- Are backups protected and managed at the same level as production data?
+
+Stored information protection in the organization:
+
+1. **Authentication techniques and access management**
+   - **Multi-factor authentication (MFA)** for accessing sensitive information.
+   - **Role-based access control (RBAC)** restricts access only to users who need it for their job functions.
+   - **Digital certificates** and strong authentication protect access to files and databases.
+
+2. **Authorization techniques and access control**
+   - **Access control mechanisms** are in use that prevent unauthorized access to sensitive information.
+   - **Audit logs record all data requests and access attempts**, and suspicious activity alerts monitoring systems.
+
+3. **Encryption and data masking (masking, tokenization)**
+   - **Data encryption (AES-256, RSA)** at storage phase and at rest (data at rest).
+   - **Data masking and tokenization** prevent sensitive information disclosure to unnecessary users.
+
+4. **Backups and data integrity**
+   - **Backups are encrypted and stored in secure locations**, separate from production environment.
+   - **Data integrity checks (hashing) ensure information has not been modified without authorization.**
+
+5. **Documentation and continuous improvement**
+   - **Data protection policies are documented and their compliance is monitored regularly.**
+   - **Encryption key and access management policies are updated** as security threats evolve.
+
+<AnswerOptions>
+- **Not implemented or no information**: Mechanisms for protecting stored sensitive information are not in use or information about their status is unavailable.
+- **Partially implemented**: Some protective measures are in use, but they do not cover all sensitive information or have significant gaps.
+- **Mostly implemented**: Protection methods are widely in use, but their documentation, management, or monitoring may need improvement.
+- **Fully implemented**: The organization has comprehensive data protection mechanisms that cover all critical information, and their effectiveness is monitored and assessed regularly.
+</AnswerOptions>
+
+### Examples from different industries
+
+> **Food company**
+Production data and recipes are protected with AES-256 encryption and role-based access control. Access to sensitive information requires multi-factor authentication.
+
+> **Logistics company**
+The logistics company's customer information and route plans are stored in encrypted databases, and access requires strong authentication.
+
+> **Water utility**
+Water utility system logs are stored on a separate encrypted server accessible only to authorized users. Data integrity is verified with hash functions.
+
+> **Power company**
+The energy company's customer and billing information is protected with tokenization, allowing only authorized systems to restore data to its original form.
+
+### Additional information
+
+- **Stored sensitive information must be protected with encryption, access management, and monitoring systems.**
+- **Data masking and tokenization help prevent unnecessary information disclosure.**
+- **Audit logs and data integrity checks ensure data manipulation can be detected.**
+- **Information security standards such as GDPR, NIST, and ISO 27001 set requirements for protecting sensitive information.**
+- **Backups must be protected the same way as production data so they are not vulnerable to attacks.**
+
+<CollapsibleSection title="Cybermeter version 2.1">
+Authentication techniques (e.g., access management, digital certificates, biometric authentication, multi-factor authentication), authorization techniques (e.g., access control mechanisms), and protection techniques (e.g., encryption and data masking) are typical architecture tactics for protecting sensitive information that could cause harm to the function in case of, for example, a data leak. This includes, for example, personal data, financial data, business confidential information, confidential legal and contract information. Implementation of this practice does not require application of multiple techniques. Data at rest may include information stored in virtualized resources at rest.
+
+Related practices:
+
+- Progression: This practice is part of a practice progression. Practice progressions are groups of related practices that represent increasingly complete or more advanced implementations of an activity. The practices in this progression include: ARCHITECTURE-5a, ARCHITECTURE-5b, ARCHITECTURE-5c, ARCHITECTURE-5d, ARCHITECTURE-5e, ARCHITECTURE-5g, ARCHITECTURE-5h.
+</CollapsibleSection>
+
+---
+
+_Guide updated: 3/19/2025_

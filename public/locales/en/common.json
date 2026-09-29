@@ -1,0 +1,17 @@
+{
+  "progress": "Progress",
+  "progress_aria": "Self-assessment progress",
+  "progress_aria_label": "{{answered}} practices answered out of {{total}}",
+  "practices_count": "practices",
+  "download_as_image": "Download as image",
+  "loading": "Loading...",
+  "identifier": "ID",
+  "practice": "Practice",
+  "answer": "Answer",
+  "answer_not_implemented": "Not implemented or no information",
+  "answer_partially_implemented": "Partially implemented",
+  "answer_mostly_implemented": "Mostly implemented",
+  "answer_fully_implemented": "Fully implemented",
+  "participant_roles": "Participant roles",
+  "answer_options": "Answer instructions"
+}

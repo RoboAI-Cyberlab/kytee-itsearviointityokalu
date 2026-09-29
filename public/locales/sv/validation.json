@@ -1,0 +1,6 @@
+{
+  "email_invalid": "Ange en giltig e-postadress.",
+  "phone_invalid": "Telefonnummer får endast innehålla siffror och mellanslag.",
+  "business_id_invalid": "FO-nummer måste vara i formatet 1234567-8.",
+  "economic_area_required": "Bransch är obligatorisk."
+}
